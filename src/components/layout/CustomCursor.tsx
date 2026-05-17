@@ -1,12 +1,20 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function CustomCursor() {
   const dotRef  = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
+  // Start false (SSR-safe); effect immediately corrects on touch devices.
+  const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
+    // Touch-only devices have no hover pointer — don't render the custom cursor.
+    if (window.matchMedia("(hover: none) and (pointer: coarse)").matches) {
+      setIsTouch(true);
+      return;
+    }
+
     const dot  = dotRef.current;
     const ring = ringRef.current;
     if (!dot || !ring) return;
@@ -33,6 +41,9 @@ export default function CustomCursor() {
       observer.disconnect();
     };
   }, []);
+
+  // Nothing to render on touch devices — let the browser cursor through.
+  if (isTouch) return null;
 
   return (
     <>

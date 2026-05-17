@@ -49,6 +49,17 @@ export const LiquidCursor = () => {
     };
     window.addEventListener("mousemove", handleMouseMove);
 
+    // Touch support — drive particles with the first finger while dragging.
+    // passive: true so this listener never blocks scroll.
+    const handleTouchMove = (e: TouchEvent) => {
+      const touch = e.touches[0];
+      if (!touch) return;
+      mouseRef.current.x = touch.clientX;
+      mouseRef.current.y = touch.clientY;
+      mouseRef.current.moved = true;
+    };
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
+
     const addPoint = (x: number, y: number) => {
       const angle = Math.random() * Math.PI * 2;
       const speed = Math.random() * 0.5;
@@ -114,6 +125,7 @@ export const LiquidCursor = () => {
     return () => {
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, []);

@@ -39,12 +39,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  cursor: none;
 }
 
-/* Touch devices: restore native cursor */
-@media (hover: none) {
-  body, button, a { cursor: auto; }
+/* Custom cursor only on real pointer devices — never hide cursor on touch */
+@media (hover: hover) and (pointer: fine) {
+  body, button, a { cursor: none; }
 }
 
 h1, h2, h3, h4, h5, h6 {

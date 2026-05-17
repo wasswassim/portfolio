@@ -53,25 +53,21 @@ const CARDS = [
 const TRANSITIONS = CARDS.length - 1;
 
 const PILLS = [
-  // Row 1 — top (y ≈ 24px)
   { label: "Figma",       bg: "#F24E1E", color: "#ffffff", x: "5%",  y: 24  },
   { label: "Blender",     bg: "#E87D0D", color: "#ffffff", x: "24%", y: 24  },
   { label: "Claude",      bg: "#D4A27F", color: "#ffffff", x: "44%", y: 24  },
   { label: "Tailwind",    bg: "#38BDF8", color: "#ffffff", x: "63%", y: 24  },
   { label: "Framer",      bg: "#0055FF", color: "#ffffff", x: "82%", y: 24  },
-  // Row 2 (y ≈ 104px)
   { label: "WordPress",   bg: "#21759B", color: "#ffffff", x: "13%", y: 104 },
   { label: "Google Ads",  bg: "#4285F4", color: "#ffffff", x: "33%", y: 104 },
   { label: "Notion",      bg: "#ffffff", color: "#0a0a0a", x: "53%", y: 104 },
   { label: "Adobe Ps",    bg: "#31A8FF", color: "#ffffff", x: "72%", y: 104 },
   { label: "Adobe Ai",    bg: "#FF9A00", color: "#ffffff", x: "88%", y: 104 },
-  // Row 3 (y ≈ 184px)
   { label: "Shopify",     bg: "#96BF48", color: "#ffffff", x: "6%",  y: 184 },
   { label: "Meta Ads",    bg: "#0081FB", color: "#ffffff", x: "26%", y: 184 },
   { label: "Adobe Ae",    bg: "#9999FF", color: "#ffffff", x: "46%", y: 184 },
   { label: "Canva",       bg: "#00C4CC", color: "#ffffff", x: "65%", y: 184 },
   { label: "VSCode",      bg: "#007ACC", color: "#ffffff", x: "84%", y: 184 },
-  // Row 4 — floor (y ≈ 264px)
   { label: "TikTok",      bg: "#111111", color: "#ffffff", x: "14%", y: 264, border: "1px solid rgba(255,255,255,0.18)" },
   { label: "GitHub",      bg: "#333333", color: "#ffffff", x: "40%", y: 264, border: "1px solid rgba(255,255,255,0.18)" },
   { label: "Next.js",     bg: "#111111", color: "#ffffff", x: "68%", y: 264, border: "1px solid rgba(255,255,255,0.18)" },
@@ -86,11 +82,17 @@ export default function SkillsSection() {
   const descRefs            = useRef<(HTMLDivElement | null)[]>([]);
   const gravityRef          = useRef<GravityRef>(null);
   const gravityContainerRef = useRef<HTMLDivElement>(null);
+  const mobilePillsRef      = useRef<HTMLDivElement>(null);
 
-  const [cursorPos, setCursorPos]   = useState({ x: 0, y: 0 });
-  const [showCursor, setShowCursor] = useState(false);
+  const [cursorPos, setCursorPos]       = useState({ x: 0, y: 0 });
+  const [showCursor, setShowCursor]     = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
+  // ── Main GSAP setup ──────────────────────────────────────────────────────
   useEffect(() => {
+    const isTouch = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+    setIsTouchDevice(isTouch);
+
     const cards  = cardRefs.current.filter(Boolean)  as HTMLDivElement[];
     const labels = labelRefs.current.filter(Boolean) as HTMLSpanElement[];
     const titles = titleRefs.current.filter(Boolean) as HTMLHeadingElement[];
@@ -104,7 +106,6 @@ export default function SkillsSection() {
     for (let i = 2; i < cards.length; i++) {
       gsap.set(cards[i], { y: "100vh" });
     }
-
     cards.forEach((_, i) => {
       gsap.set(labels[i], { y: 14, opacity: 0 });
       gsap.set(titles[i], { y: 52, opacity: 0 });
@@ -125,14 +126,11 @@ export default function SkillsSection() {
       for (let i = 0; i < TRANSITIONS; i++) {
         const startPct = (i / TRANSITIONS) * 100;
         const endPct   = ((i + 1) / TRANSITIONS) * 100;
-
         const tl = gsap.timeline({
           scrollTrigger: { trigger: wrap, start: `${startPct}% top`, end: `${endPct}% top`, scrub: true },
         });
-
-        tl.to(cards[i], { scale: 0.82, z: -90, opacity: 0.4, filter: "blur(7px)", transformOrigin: "50% 50%", ease: "power1.in", duration: 1 }, 0);
+        tl.to(cards[i],     { scale: 0.82, z: -90, opacity: 0.4, filter: "blur(7px)", transformOrigin: "50% 50%", ease: "power1.in",  duration: 1 }, 0);
         tl.to(cards[i + 1], { y: 0, ease: "power1.out", duration: 1 }, 0);
-
         if (i + 2 < cards.length) {
           tl
             .to(cards[i + 2],  { y: "50vh", ease: "power1.out", duration: 1 }, 0)
@@ -142,21 +140,45 @@ export default function SkillsSection() {
         }
       }
 
-      // Gravity drop — start physics when container enters viewport, stop when it
-      // leaves. startEngine guards against double-start so repeated scroll is safe.
-      ScrollTrigger.create({
-        trigger: gravityContainerRef.current,
-        start:        "top bottom",
-        end:          "bottom top",
-        onEnter:      () => gravityRef.current?.start(),
-        onLeave:      () => gravityRef.current?.stop(),
-        onEnterBack:  () => gravityRef.current?.start(),
-        onLeaveBack:  () => gravityRef.current?.stop(),
-      });
+      // Physics pills — desktop only. gravityContainerRef is not rendered on touch.
+      if (!isTouch) {
+        ScrollTrigger.create({
+          trigger: gravityContainerRef.current,
+          start:       "top bottom",
+          end:         "bottom top",
+          onEnter:     () => gravityRef.current?.start(),
+          onLeave:     () => gravityRef.current?.stop(),
+          onEnterBack: () => gravityRef.current?.start(),
+          onLeaveBack: () => gravityRef.current?.stop(),
+        });
+      }
     }, sectionRef);
 
     return () => ctx.revert();
   }, []);
+
+  // ── Mobile pill entrance animation ───────────────────────────────────────
+  // Runs after setIsTouchDevice(true) triggers a re-render that mounts
+  // mobilePillsRef, so the ref is guaranteed to be attached here.
+  useEffect(() => {
+    if (!isTouchDevice || !mobilePillsRef.current) return;
+    const pills = Array.from(mobilePillsRef.current.children) as HTMLElement[];
+    const ctx = gsap.context(() => {
+      gsap.from(pills, {
+        opacity: 0,
+        y: 20,
+        duration: 0.45,
+        ease: "power2.out",
+        stagger: 0.04,
+        scrollTrigger: {
+          trigger: mobilePillsRef.current!,
+          start: "top 88%",
+          once: true,
+        },
+      });
+    }, mobilePillsRef);
+    return () => ctx.revert();
+  }, [isTouchDevice]);
 
   return (
     <section
@@ -177,13 +199,8 @@ export default function SkillsSection() {
       </div>
 
       {/* ── Scroll-stack cards ── */}
-      <div
-        ref={cardsWrapRef}
-        style={{ position: "relative", height: `${CARDS.length * 100}vh` }}
-      >
-        <div
-          style={{ position: "sticky", top: 0, height: "100vh", overflow: "hidden", perspective: "900px" }}
-        >
+      <div ref={cardsWrapRef} style={{ position: "relative", height: `${CARDS.length * 100}vh` }}>
+        <div style={{ position: "sticky", top: 0, height: "100vh", overflow: "hidden", perspective: "900px" }}>
           {CARDS.map((card, i) => (
             <div
               key={card.num}
@@ -215,55 +232,92 @@ export default function SkillsSection() {
         </div>
       </div>
 
-      {/* ── Gravity pills — sits flush after the last card in DOM flow ── */}
-      <div
-        ref={gravityContainerRef}
-        className="gravity-zone"
-        style={{ position: "relative", height: "320px", background: "#0a0a0a" }}
-        onMouseMove={(e) => setCursorPos({ x: e.clientX, y: e.clientY })}
-        onMouseEnter={() => { setShowCursor(true);  document.body.classList.add("custom-cursor-hidden"); }}
-        onMouseLeave={() => { setShowCursor(false); document.body.classList.remove("custom-cursor-hidden"); }}
-      >
-        <Gravity
-          ref={gravityRef}
-          gravity={{ x: 0, y: 2 }}
-          grabCursor={false}
-          addTopWall={false}
-          autoStart={false}
+      {/* ── Pills — physics on desktop, static flex on touch ── */}
+      {isTouchDevice ? (
+        // Static mobile layout — flexbox wrap, GSAP stagger fade-in on scroll
+        <div
+          ref={mobilePillsRef}
+          style={{
+            padding: "2.5rem 1.5rem 3rem",
+            background: "#0a0a0a",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "0.55rem",
+          }}
         >
           {PILLS.map((pill) => (
-            <MatterBody
+            <div
               key={pill.label}
-              x={pill.x}
-              y={pill.y}
-              matterBodyOptions={{ friction: 0.45, restitution: 0.3, density: 0.002 }}
-              isDraggable
-              bodyType="rectangle"
+              style={{
+                fontFamily: "var(--font-inter)",
+                fontSize: "0.95rem",
+                fontWeight: 600,
+                letterSpacing: "0.04em",
+                padding: "0.65rem 1.5rem",
+                borderRadius: "999px",
+                whiteSpace: "nowrap",
+                background: pill.bg,
+                color: pill.color,
+                border: (pill as { border?: string }).border ?? "none",
+                userSelect: "none",
+              }}
             >
-              <div
-                style={{
-                  fontFamily: "var(--font-inter)",
-                  fontSize: "1.15rem",
-                  fontWeight: 600,
-                  letterSpacing: "0.04em",
-                  padding: "0.9rem 2.2rem",
-                  borderRadius: "999px",
-                  whiteSpace: "nowrap",
-                  background: pill.bg,
-                  color: pill.color,
-                  border: (pill as { border?: string }).border ?? "none",
-                  userSelect: "none",
-                }}
-              >
-                {pill.label}
-              </div>
-            </MatterBody>
+              {pill.label}
+            </div>
           ))}
-        </Gravity>
-      </div>
+        </div>
+      ) : (
+        // Physics simulation — desktop only
+        <div
+          ref={gravityContainerRef}
+          className="gravity-zone"
+          style={{ position: "relative", height: "320px", background: "#0a0a0a" }}
+          onMouseMove={(e) => setCursorPos({ x: e.clientX, y: e.clientY })}
+          onMouseEnter={() => { setShowCursor(true);  document.body.classList.add("custom-cursor-hidden"); }}
+          onMouseLeave={() => { setShowCursor(false); document.body.classList.remove("custom-cursor-hidden"); }}
+        >
+          <Gravity
+            ref={gravityRef}
+            gravity={{ x: 0, y: 2 }}
+            grabCursor={false}
+            addTopWall={false}
+            autoStart={false}
+          >
+            {PILLS.map((pill) => (
+              <MatterBody
+                key={pill.label}
+                x={pill.x}
+                y={pill.y}
+                matterBodyOptions={{ friction: 0.45, restitution: 0.3, density: 0.002 }}
+                isDraggable
+                bodyType="rectangle"
+              >
+                <div
+                  style={{
+                    fontFamily: "var(--font-inter)",
+                    fontSize: "1.15rem",
+                    fontWeight: 600,
+                    letterSpacing: "0.04em",
+                    padding: "0.9rem 2.2rem",
+                    borderRadius: "999px",
+                    whiteSpace: "nowrap",
+                    background: pill.bg,
+                    color: pill.color,
+                    border: (pill as { border?: string }).border ?? "none",
+                    userSelect: "none",
+                  }}
+                >
+                  {pill.label}
+                </div>
+              </MatterBody>
+            ))}
+          </Gravity>
+        </div>
+      )}
 
-      {/* ── Custom white hand cursor ── */}
-      {showCursor && (
+      {/* ── Hand cursor — desktop only (touch has no hover pointer) ── */}
+      {!isTouchDevice && showCursor && (
         <div style={{ position: "fixed", left: cursorPos.x, top: cursorPos.y, transform: "translate(-40%, -20%)", pointerEvents: "none", zIndex: 9999, userSelect: "none" }}>
           <svg width="64" height="64" viewBox="0 0 40 50" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
             <rect x="15" y="0"  width="8"  height="30" rx="4" />
