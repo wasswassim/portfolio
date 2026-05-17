@@ -63,20 +63,29 @@ export default function JourneySection() {
   }, []);
 
   // ── Form submission ───────────────────────────────────────────────────────────
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!formRef.current) return;
     setStatus("sending");
+
+    // Diagnostic: confirm env vars are present at call time
+    console.log("[EmailJS] serviceId:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ? "defined" : "UNDEFINED");
+    console.log("[EmailJS] templateId:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ? "defined" : "UNDEFINED");
+    console.log("[EmailJS] publicKey:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ? "defined" : "UNDEFINED");
+
     try {
+      // v4 API: 4th arg is { publicKey } options object, not a bare string.
+      // Form field name= attributes map 1-to-1 with {{variable}} in the template.
       await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! },
       );
       setStatus("success");
       formRef.current.reset();
-    } catch {
+    } catch (err) {
+      console.error("[EmailJS] send error:", err);
       setStatus("error");
     }
   };
@@ -224,10 +233,10 @@ export default function JourneySection() {
           <div ref={(el) => { rightRefs.current[3] = el; }}>
             <form ref={formRef} onSubmit={handleSubmit}>
               <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
-                <input suppressHydrationWarning type="text"  name="from_name" placeholder="Your name"                  required className="cj-input" />
-                <input suppressHydrationWarning type="email" name="reply_to"  placeholder="Your email"                 required className="cj-input" />
-                <input suppressHydrationWarning type="text"  name="subject"   placeholder="Subject"                    required className="cj-input" />
-                <textarea           suppressHydrationWarning name="message"   placeholder="Tell me about your project..." required rows={5} className="cj-input" style={{ resize: "none", lineHeight: 1.6 }} />
+                <input suppressHydrationWarning type="text"  name="name"    placeholder="Your name"                  required className="cj-input" />
+                <input suppressHydrationWarning type="email" name="email"   placeholder="Your email"                 required className="cj-input" />
+                <input suppressHydrationWarning type="text"  name="subject" placeholder="Subject"                    required className="cj-input" />
+                <textarea           suppressHydrationWarning name="message" placeholder="Tell me about your project..." required rows={5} className="cj-input" style={{ resize: "none", lineHeight: 1.6 }} />
               </div>
 
               {status === "idle" || status === "sending" ? (
