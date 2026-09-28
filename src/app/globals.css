@@ -29,6 +29,9 @@
 
 html {
   background: #0A0A0A;
+  /* Stop iOS from inflating text on rotate */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   /* scroll-behavior: smooth removed — conflicts with GSAP ScrollTrigger scrub */
 }
 
@@ -70,10 +73,15 @@ button {
 ::-webkit-scrollbar-track { background: #0A0A0A; }
 ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); }
 
-/* Menu marquee */
+/* Marquees — the track holds two copies of the content, so -50% loops seamlessly */
 @keyframes marqueeLeft {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
 }
 
 .menu-marquee-track {
@@ -87,7 +95,25 @@ button {
   animation-play-state: running;
 }
 
+/* Endless decorative loops stop for reduced motion (!important beats inline styles) */
+@media (prefers-reduced-motion: reduce) {
+  .motion-loop,
+  .menu-marquee-track { animation: none !important; }
+}
+
+/* Bigger tap targets on touch */
+@media (pointer: coarse) {
+  .tap-target { min-height: 44px; }
+}
+
 /* Force cursor:none inside gravity container and all Matter.js injected children */
+/* Height lives in CSS so the first layout is final — ScrollTrigger measures
+   the pins below before React knows it's a touch device */
+.gravity-zone { height: 320px; }
+@media (hover: none) and (pointer: coarse) {
+  .gravity-zone { height: 440px; }
+}
+
 .gravity-zone,
 .gravity-zone * {
   cursor: none !important;

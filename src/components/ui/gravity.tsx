@@ -9,11 +9,10 @@ import {
   useEffect,
   useImperativeHandle,
   useRef,
-  useState,
 } from "react";
-import { debounce } from "lodash";
 import Matter, {
   Bodies,
+  Body,
   Common,
   Engine,
   Events,
@@ -21,7 +20,6 @@ import Matter, {
   MouseConstraint,
   Query,
   Render,
-  Runner,
   World,
 } from "matter-js";
 
@@ -47,6 +45,8 @@ type GravityProps = {
   grabCursor?: boolean;
   addTopWall?: boolean;
   autoStart?: boolean;
+  /** Start/stop the simulation automatically as the container enters/leaves the viewport. */
+  runWhenVisible?: boolean;
   className?: string;
 };
 
@@ -54,6 +54,12 @@ type PhysicsBody = {
   element: HTMLElement;
   body: Matter.Body;
   props: MatterBodyProps;
+  w: number;
+  h: number;
+  // last written transform — lets us skip DOM writes for resting bodies
+  lx: number;
+  ly: number;
+  la: number;
 };
 
 type MatterBodyProps = {
@@ -77,6 +83,11 @@ const GravityContext = createContext<{
   registerElement: (id: string, element: HTMLElement, props: MatterBodyProps) => void;
   unregisterElement: (id: string) => void;
 } | null>(null);
+
+// Fixed physics step (same as Matter.Runner's default) so speed doesn't
+// depend on the display refresh rate.
+const STEP = 1000 / 60;
+const MAX_STEPS = 3;
 
 export const MatterBody = ({
   children,
@@ -119,6 +130,7 @@ export const MatterBody = ({
     <div
       ref={elementRef}
       className={`absolute ${className ?? ""} ${isDraggable ? "pointer-events-none" : ""}`}
+      style={{ top: 0, left: 0, willChange: "transform" }}
     >
       {children}
     </div>
@@ -135,35 +147,64 @@ export const Gravity = forwardRef<GravityRef, GravityProps>(
       resetOnResize = true,
       addTopWall = true,
       autoStart = true,
+      runWhenVisible = false,
       className,
       ...props
     },
     ref
   ) => {
     const canvas = useRef<HTMLDivElement>(null);
-    const engine = useRef(Engine.create());
+    const engine = useRef<Matter.Engine | null>(null);
+    if (!engine.current) engine.current = Engine.create();
     const render          = useRef<Render | undefined>(undefined);
-    const runner          = useRef<Runner | undefined>(undefined);
     const bodiesMap       = useRef(new Map<string, PhysicsBody>());
+    const walls           = useRef<Matter.Body[]>([]);
     const frameId         = useRef<number | undefined>(undefined);
+    const lastTime        = useRef(0);
+    const acc             = useRef(0);
     const mouseConstraint = useRef<Matter.MouseConstraint | undefined>(undefined);
-    const mouseDown = useRef(false);
-    const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
-    const isRunning = useRef(false);
+    const detachInput     = useRef<(() => void) | undefined>(undefined);
+    const mouseDown       = useRef(false);
+    const size            = useRef({ width: 0, height: 0 });
+    const isRunning       = useRef(false);
 
+    // ── DOM sync ──────────────────────────────────────────────────────────
+    const syncEntry = (entry: PhysicsBody, force = false) => {
+      const { x, y } = entry.body.position;
+      const a = entry.body.angle;
+      if (!force && Math.abs(x - entry.lx) < 0.05 && Math.abs(y - entry.ly) < 0.05 && Math.abs(a - entry.la) < 0.001) return;
+      entry.lx = x; entry.ly = y; entry.la = a;
+      entry.element.style.transform =
+        `translate3d(${x - entry.w / 2}px, ${y - entry.h / 2}px, 0) rotate(${a * (180 / Math.PI)}deg)`;
+    };
+
+    const syncAll = useCallback((force = false) => {
+      bodiesMap.current.forEach((entry) => syncEntry(entry, force));
+    }, []);
+
+    const placeBody = (entry: PhysicsBody) => {
+      const { width, height } = size.current;
+      const x = calculatePosition(entry.props.x, width, entry.w);
+      const y = calculatePosition(entry.props.y, height, entry.h);
+      Body.setPosition(entry.body, { x, y });
+      Body.setAngle(entry.body, (entry.props.angle || 0) * (Math.PI / 180));
+      Body.setVelocity(entry.body, { x: 0, y: 0 });
+      Body.setAngularVelocity(entry.body, 0);
+    };
+
+    // ── Body registration ─────────────────────────────────────────────────
     const registerElement = useCallback(
       (id: string, element: HTMLElement, props: MatterBodyProps) => {
         if (!canvas.current) return;
-        const width = element.offsetWidth;
-        const height = element.offsetHeight;
-        const canvasRect = canvas.current.getBoundingClientRect();
+        const w = element.offsetWidth;
+        const h = element.offsetHeight;
+        if (!size.current.width) {
+          size.current = { width: canvas.current.offsetWidth, height: canvas.current.offsetHeight };
+        }
+        const x = calculatePosition(props.x, size.current.width, w);
+        const y = calculatePosition(props.y, size.current.height, h);
         const angle = (props.angle || 0) * (Math.PI / 180);
-        const x = calculatePosition(props.x, canvasRect.width, width);
-        const y = calculatePosition(props.y, canvasRect.height, height);
 
-        // Strip null from matterBodyOptions before passing to Matter.js Bodies —
-        // IBodyDefinition.chamfer is IChamfer|undefined but the user-facing prop
-        // allows null to make it easier to spread conditionally.
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const bodyOpts = props.matterBodyOptions as any;
         const sharedOpts = {
@@ -176,16 +217,14 @@ export const Gravity = forwardRef<GravityRef, GravityProps>(
           },
         };
 
-        let body: Matter.Body;
-        if (props.bodyType === "circle") {
-          const radius = Math.max(width, height) / 2;
-          body = Bodies.circle(x, y, radius, sharedOpts);
-        } else {
-          body = Bodies.rectangle(x, y, width, height, sharedOpts);
-        }
+        const body = props.bodyType === "circle"
+          ? Bodies.circle(x, y, Math.max(w, h) / 2, sharedOpts)
+          : Bodies.rectangle(x, y, w, h, sharedOpts);
 
-        World.add(engine.current.world, [body]);
-        bodiesMap.current.set(id, { element, body, props });
+        World.add(engine.current!.world, [body]);
+        const entry: PhysicsBody = { element, body, props, w, h, lx: NaN, ly: NaN, la: NaN };
+        bodiesMap.current.set(id, entry);
+        syncEntry(entry, true);
       },
       [debug]
     );
@@ -193,240 +232,273 @@ export const Gravity = forwardRef<GravityRef, GravityProps>(
     const unregisterElement = useCallback((id: string) => {
       const entry = bodiesMap.current.get(id);
       if (entry) {
-        World.remove(engine.current.world, entry.body);
+        World.remove(engine.current!.world, entry.body);
         bodiesMap.current.delete(id);
       }
     }, []);
 
-    const updateElements = useCallback(() => {
-      bodiesMap.current.forEach(({ element, body }) => {
-        const { x, y } = body.position;
-        const rotation = body.angle * (180 / Math.PI);
-        element.style.transform = `translate(${x - element.offsetWidth / 2}px, ${
-          y - element.offsetHeight / 2
-        }px) rotate(${rotation}deg)`;
-      });
-      frameId.current = requestAnimationFrame(updateElements);
+    // ── Loop — one rAF drives both physics and DOM ─────────────────────────
+    const loop = useCallback((time: number) => {
+      const dt = lastTime.current ? Math.min(time - lastTime.current, STEP * MAX_STEPS) : STEP;
+      lastTime.current = time;
+      acc.current += dt;
+      let steps = 0;
+      while (acc.current >= STEP && steps < MAX_STEPS) {
+        Engine.update(engine.current!, STEP);
+        acc.current -= STEP;
+        steps++;
+      }
+      if (steps) syncAll();
+      frameId.current = requestAnimationFrame(loop);
+    }, [syncAll]);
+
+    const startEngine = useCallback(() => {
+      if (isRunning.current) return;
+      isRunning.current = true;
+      lastTime.current = 0;
+      acc.current = 0;
+      if (render.current) Render.run(render.current);
+      frameId.current = requestAnimationFrame(loop);
+    }, [loop]);
+
+    const stopEngine = useCallback(() => {
+      if (!isRunning.current) return;
+      isRunning.current = false;
+      if (frameId.current) cancelAnimationFrame(frameId.current);
+      frameId.current = undefined;
+      if (render.current) Render.stop(render.current);
     }, []);
 
-    const initializeRenderer = useCallback(() => {
-      if (!canvas.current) return;
-      const height = canvas.current.offsetHeight;
-      const width = canvas.current.offsetWidth;
+    // ── World setup (walls, mouse, optional debug renderer) ───────────────
+    const buildWorld = useCallback(() => {
+      const el = canvas.current;
+      if (!el) return;
+      const eng = engine.current!;
+      const width = el.offsetWidth;
+      const height = el.offsetHeight;
+      size.current = { width, height };
 
-      // poly-decomp: safe dynamic require (only needed for concave SVG bodies)
       try {
         // eslint-disable-next-line @typescript-eslint/no-require-imports
         Common.setDecomp(require("poly-decomp"));
       } catch {
-        // not needed for rectangle/circle bodies
+        // only needed for concave SVG bodies
       }
 
-      engine.current.gravity.x = gravity.x;
-      engine.current.gravity.y = gravity.y;
+      eng.gravity.x = gravity.x;
+      eng.gravity.y = gravity.y;
 
-      render.current = Render.create({
-        element: canvas.current,
-        engine: engine.current,
-        options: {
-          width,
-          height,
-          wireframes: false,
-          background: "#00000000",
-        },
-      });
-
-      // Bind mouse to the container div, not the canvas, so the canvas
-      // can be pointer-events:none and never block page scroll.
-      const mouse = Mouse.create(canvas.current!);
-
-      // Matter.js v0.20 registers a non-passive 'wheel' listener (and legacy
-      // aliases) that calls event.preventDefault(), blocking page scroll.
-      // Remove all three so wheel events propagate normally to the document.
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const mouseAny = mouse as any;
-      mouse.element.removeEventListener("wheel",           mouseAny.mousewheel);
-      mouse.element.removeEventListener("mousewheel",      mouseAny.mousewheel);
-      mouse.element.removeEventListener("DOMMouseScroll",  mouseAny.mousewheel);
-
-      // The canvas itself must not capture any events — it is purely visual.
-      if (render.current.canvas) {
+      // The canvas renderer only draws invisible bodies unless debugging,
+      // so skip it entirely — saves a full-size canvas redraw every frame.
+      if (debug) {
+        render.current = Render.create({
+          element: el,
+          engine: eng,
+          options: { width, height, wireframes: false, background: "#00000000" },
+        });
         render.current.canvas.style.pointerEvents = "none";
       }
 
-      mouseConstraint.current = MouseConstraint.create(engine.current, {
-        mouse,
-        constraint: {
-          stiffness: 0.2,
-          render: { visible: debug },
-        },
+      const m = Mouse.create(el);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const mm = m as any;
+      // Matter binds a non-passive wheel listener (blocks page scroll) and
+      // touch listeners that preventDefault anywhere in the zone. Drop them;
+      // touch is re-added below so it only captures touches that land on a body.
+      el.removeEventListener("wheel",      mm.mousewheel);
+      el.removeEventListener("touchmove",  mm.mousemove);
+      el.removeEventListener("touchstart", mm.mousedown);
+      el.removeEventListener("touchend",   mm.mouseup);
+
+      // Everything added below registers its own remover here
+      const cleanups: (() => void)[] = [];
+      detachInput.current = () => cleanups.forEach((f) => f());
+      cleanups.push(() => {
+        el.removeEventListener("mousemove", mm.mousemove);
+        el.removeEventListener("mousedown", mm.mousedown);
+        el.removeEventListener("mouseup",   mm.mouseup);
       });
 
-      const walls = [
-        Bodies.rectangle(width / 2, height + 10, width, 20, {
-          isStatic: true,
-          friction: 1,
-          render: { visible: debug },
-        }),
-        Bodies.rectangle(width + 10, height / 2, 20, height, {
-          isStatic: true,
-          friction: 1,
-          render: { visible: debug },
-        }),
-        Bodies.rectangle(-10, height / 2, 20, height, {
-          isStatic: true,
-          friction: 1,
-          render: { visible: debug },
-        }),
-      ];
+      const bodyAt = (e: TouchEvent) => {
+        const t = e.touches[0] ?? e.changedTouches[0];
+        if (!t) return false;
+        const r = el.getBoundingClientRect();
+        return Query.point(
+          Array.from(bodiesMap.current.values(), (b) => b.body),
+          { x: t.clientX - r.left, y: t.clientY - r.top }
+        ).length > 0;
+      };
+      // Only touchstart is non-passive up front. Move/end listeners go on when
+      // a touch lands on a pill and come off when it ends, so swipes elsewhere
+      // never wait on JS.
+      const opts = { passive: false };
+      const onTouchMove = (e: TouchEvent) => mm.mousemove(e);
+      const onTouchEnd  = (e: TouchEvent) => {
+        mm.mouseup(e);
+        stopDrag();
+      };
+      const stopDrag = () => {
+        el.removeEventListener("touchmove",   onTouchMove);
+        el.removeEventListener("touchend",    onTouchEnd);
+        el.removeEventListener("touchcancel", onTouchEnd);
+      };
+      const onTouchStart = (e: TouchEvent) => {
+        if (!bodyAt(e)) return;
+        mm.mousedown(e);
+        el.addEventListener("touchmove",   onTouchMove, opts);
+        el.addEventListener("touchend",    onTouchEnd,  opts);
+        el.addEventListener("touchcancel", onTouchEnd,  opts);
+      };
+      el.addEventListener("touchstart", onTouchStart, opts);
+      cleanups.push(() => el.removeEventListener("touchstart", onTouchStart), stopDrag);
 
-      if (addTopWall) {
-        walls.push(
-          Bodies.rectangle(width / 2, -10, width, 20, {
-            isStatic: true,
-            friction: 1,
-            render: { visible: debug },
-          })
-        );
-      }
+      mouseConstraint.current = MouseConstraint.create(eng, {
+        mouse: m,
+        constraint: { stiffness: 0.2, render: { visible: debug } },
+      });
+
+      const wallOpts = { isStatic: true, friction: 1, render: { visible: debug } };
+      const wall = (x: number, y: number, w: number, h: number) => Bodies.rectangle(x, y, w, h, wallOpts);
+      walls.current = [
+        wall(width / 2, height + 10, width, 20),
+        wall(width + 10, height / 2, 20, height),
+        wall(-10, height / 2, 20, height),
+      ];
+      if (addTopWall) walls.current.push(wall(width / 2, -10, width, 20));
 
       const touchingMouse = () =>
-        Query.point(
-          engine.current.world.bodies,
-          mouseConstraint.current?.mouse.position || { x: 0, y: 0 }
-        ).length > 0;
+        Query.point(eng.world.bodies, mouseConstraint.current?.mouse.position || { x: 0, y: 0 }).length > 0;
 
       if (grabCursor) {
-        Events.on(engine.current, "beforeUpdate", () => {
-          if (canvas.current) {
-            canvas.current.style.cursor =
-              !mouseDown.current && !touchingMouse()
-                ? "default"
-                : touchingMouse()
-                ? mouseDown.current
-                  ? "grabbing"
-                  : "grab"
-                : "default";
-          }
-        });
-        canvas.current.addEventListener("mousedown", () => {
+        const onBeforeUpdate = () => {
+          el.style.cursor = touchingMouse() ? (mouseDown.current ? "grabbing" : "grab") : "default";
+        };
+        const onDown = () => {
           mouseDown.current = true;
-          if (canvas.current)
-            canvas.current.style.cursor = touchingMouse() ? "grabbing" : "default";
-        });
-        canvas.current.addEventListener("mouseup", () => {
+          el.style.cursor = touchingMouse() ? "grabbing" : "default";
+        };
+        const onUp = () => {
           mouseDown.current = false;
-          if (canvas.current)
-            canvas.current.style.cursor = touchingMouse() ? "grab" : "default";
-        });
+          el.style.cursor = touchingMouse() ? "grab" : "default";
+        };
+        Events.on(eng, "beforeUpdate", onBeforeUpdate);
+        cleanups.push(() => Events.off(eng, "beforeUpdate", onBeforeUpdate));
+        el.addEventListener("mousedown", onDown);
+        cleanups.push(() => el.removeEventListener("mousedown", onDown));
+        el.addEventListener("mouseup", onUp);
+        cleanups.push(() => el.removeEventListener("mouseup", onUp));
       }
 
-      World.add(engine.current.world, [mouseConstraint.current, ...walls]);
-      render.current.mouse = mouse;
-      runner.current = Runner.create();
-      Render.run(render.current);
-      updateElements();
-      runner.current.enabled = false;
-
-      if (autoStart) {
-        runner.current.enabled = true;
-        startEngine();
-      }
+      World.add(eng.world, [mouseConstraint.current, ...walls.current]);
+      if (render.current) render.current.mouse = m;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [updateElements, debug, autoStart]);
+    }, [debug, addTopWall, grabCursor]);
 
-    const clearRenderer = useCallback(() => {
-      if (frameId.current) cancelAnimationFrame(frameId.current);
-      if (mouseConstraint.current) World.remove(engine.current.world, mouseConstraint.current);
+    const teardownWorld = useCallback(() => {
+      const eng = engine.current!;
+      detachInput.current?.();
+      detachInput.current = undefined;
+      if (mouseConstraint.current) World.remove(eng.world, mouseConstraint.current);
+      // MouseConstraint.create registers its own beforeUpdate handler; without
+      // this every rebuild would leave one more running on each physics step
+      Events.off(eng, "beforeUpdate");
+      if (walls.current.length) World.remove(eng.world, walls.current);
+      walls.current = [];
       if (render.current) {
-        Mouse.clearSourceEvents(render.current.mouse);
         Render.stop(render.current);
         render.current.canvas.remove();
+        render.current = undefined;
       }
-      if (runner.current) Runner.stop(runner.current);
-      World.clear(engine.current.world, false);
-      Engine.clear(engine.current);
-      bodiesMap.current.clear();
     }, []);
 
-    const handleResize = useCallback(() => {
-      if (!canvas.current || !resetOnResize) return;
-      setCanvasSize({
-        width: canvas.current.offsetWidth,
-        height: canvas.current.offsetHeight,
-      });
-      clearRenderer();
-      initializeRenderer();
-    }, [clearRenderer, initializeRenderer, resetOnResize]);
-
-    const startEngine = useCallback(() => {
-      if (isRunning.current) return; // guard: already running, don't double-start rAF
-      if (runner.current) {
-        runner.current.enabled = true;
-        Runner.run(runner.current, engine.current);
-      }
-      if (render.current) Render.run(render.current);
-      frameId.current = requestAnimationFrame(updateElements);
-      isRunning.current = true;
-    }, [updateElements]);
-
-    const stopEngine = useCallback(() => {
-      if (!isRunning.current) return;
-      if (runner.current) Runner.stop(runner.current);
-      if (render.current) Render.stop(render.current);
-      if (frameId.current) cancelAnimationFrame(frameId.current);
-      isRunning.current = false;
-    }, []);
-
-    const reset = useCallback(() => {
+    // Resize keeps the registered bodies — only walls/mouse are rebuilt and
+    // bodies are put back at their start positions.
+    const rebuild = useCallback(() => {
+      const wasRunning = isRunning.current;
       stopEngine();
-      bodiesMap.current.forEach(({ element, body, props }) => {
-        body.angle = props.angle || 0;
-        const x = calculatePosition(props.x, canvasSize.width, element.offsetWidth);
-        const y = calculatePosition(props.y, canvasSize.height, element.offsetHeight);
-        body.position.x = x;
-        body.position.y = y;
-      });
-      updateElements();
-      handleResize();
-    }, [stopEngine, canvasSize, updateElements, handleResize]);
+      teardownWorld();
+      buildWorld();
+      bodiesMap.current.forEach(placeBody);
+      syncAll(true);
+      if (wasRunning) startEngine();
+    }, [stopEngine, teardownWorld, buildWorld, syncAll, startEngine]);
 
-    useImperativeHandle(ref, () => ({ start: startEngine, stop: stopEngine, reset }), [
+    useImperativeHandle(ref, () => ({ start: startEngine, stop: stopEngine, reset: rebuild }), [
       startEngine,
       stopEngine,
-      reset,
+      rebuild,
     ]);
 
+    // Mount / unmount
+    useEffect(() => {
+      const eng = engine.current!;
+      const bodies = bodiesMap.current;
+      buildWorld();
+      syncAll(true);
+      if (autoStart && !runWhenVisible) startEngine();
+      return () => {
+        stopEngine();
+        teardownWorld();
+        World.clear(eng.world, false);
+        Engine.clear(eng);
+        bodies.clear();
+      };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    // Rebuild only when the width actually changes — phones fire resize
+    // constantly as the URL bar shows/hides.
     useEffect(() => {
       if (!resetOnResize) return;
-      const debouncedResize = debounce(handleResize, 500);
-      window.addEventListener("resize", debouncedResize);
-      return () => {
-        window.removeEventListener("resize", debouncedResize);
-        debouncedResize.cancel();
+      let t: ReturnType<typeof setTimeout> | undefined;
+      const onResize = () => {
+        clearTimeout(t);
+        t = setTimeout(() => {
+          const el = canvas.current;
+          if (!el || el.offsetWidth === size.current.width) return;
+          rebuild();
+        }, 300);
       };
-    }, [handleResize, resetOnResize]);
+      window.addEventListener("resize", onResize, { passive: true });
+      return () => {
+        clearTimeout(t);
+        window.removeEventListener("resize", onResize);
+      };
+    }, [rebuild, resetOnResize]);
 
+    // Pause when offscreen and when the tab is hidden.
     useEffect(() => {
-      initializeRenderer();
-      return clearRenderer;
-    }, [initializeRenderer, clearRenderer]);
+      const el = canvas.current;
+      let visible = !runWhenVisible;
+      let wasRunning = false;
+      const update = () => {
+        if (visible && !document.hidden && (runWhenVisible || wasRunning)) startEngine();
+        else stopEngine();
+      };
 
-    // Pause physics and rAF when the tab is hidden; resume only if engine
-    // was already running so autoStart=false components stay paused on return.
-    useEffect(() => {
-      const wasRunning = { current: false };
+      let io: IntersectionObserver | undefined;
+      if (runWhenVisible && el) {
+        io = new IntersectionObserver(([entry]) => {
+          visible = entry.isIntersecting;
+          update();
+        });
+        io.observe(el);
+      }
+
       const onVisibilityChange = () => {
         if (document.hidden) {
-          wasRunning.current = isRunning.current;
+          wasRunning = isRunning.current;
           stopEngine();
-        } else if (wasRunning.current) {
-          startEngine();
+        } else {
+          update();
         }
       };
       document.addEventListener("visibilitychange", onVisibilityChange);
-      return () => document.removeEventListener("visibilitychange", onVisibilityChange);
-    }, [startEngine, stopEngine]);
+      return () => {
+        io?.disconnect();
+        document.removeEventListener("visibilitychange", onVisibilityChange);
+      };
+    }, [runWhenVisible, startEngine, stopEngine]);
 
     return (
       <GravityContext.Provider value={{ registerElement, unregisterElement }}>

@@ -10,6 +10,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 type Status = "idle" | "sending" | "success" | "error";
 
+// Inlined at build time (GitHub Actions secrets in CI, .env.local locally)
+const EMAILJS = {
+  serviceId:  process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID?.trim(),
+  templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID?.trim(),
+  publicKey:  process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY?.trim(),
+};
+
 export default function JourneySection() {
   const sectionRef  = useRef<HTMLElement>(null);
   const formRef     = useRef<HTMLFormElement>(null);
@@ -63,29 +70,31 @@ export default function JourneySection() {
   }, []);
 
   // ── Form submission ───────────────────────────────────────────────────────────
+  // Field name= attributes map 1-to-1 onto {{name}}, {{email}}, {{subject}},
+  // {{message}} and {{time}} in the EmailJS template.
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!formRef.current) return;
+
+    if (!EMAILJS.serviceId || !EMAILJS.templateId || !EMAILJS.publicKey) {
+      console.error("[EmailJS] Missing NEXT_PUBLIC_EMAILJS_* env vars at build time.");
+      setStatus("error");
+      return;
+    }
+
+    const timeField = formRef.current.elements.namedItem("time") as HTMLInputElement | null;
+    if (timeField) timeField.value = new Date().toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" });
+
     setStatus("sending");
-
-    // Diagnostic: confirm env vars are present at call time
-    console.log("[EmailJS] serviceId:", process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ? "defined" : "UNDEFINED");
-    console.log("[EmailJS] templateId:", process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ? "defined" : "UNDEFINED");
-    console.log("[EmailJS] publicKey:", process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ? "defined" : "UNDEFINED");
-
     try {
-      // v4 API: 4th arg is { publicKey } options object, not a bare string.
-      // Form field name= attributes map 1-to-1 with {{variable}} in the template.
-      await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        formRef.current,
-        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! },
-      );
+      await emailjs.sendForm(EMAILJS.serviceId, EMAILJS.templateId, formRef.current, {
+        publicKey: EMAILJS.publicKey,
+      });
       setStatus("success");
       formRef.current.reset();
     } catch (err) {
-      console.error("[EmailJS] send error:", err);
+      // EmailJS returns { status, text } — the text says exactly what's wrong
+      console.error("[EmailJS] send failed:", err);
       setStatus("error");
     }
   };
@@ -138,7 +147,7 @@ export default function JourneySection() {
         <div ref={leftColRef} className="cj-photo-col" style={{ position: "relative", overflow: "hidden" }}>
           {/* Background layer — full bleed (studio shot / wassimage2) */}
           <Image
-            src="/wassimage2.png"
+            src="/img/wassimage2.webp"
             alt=""
             fill
             style={{ objectFit: "cover", objectPosition: "center" }}
@@ -165,12 +174,11 @@ export default function JourneySection() {
               }}
             >
               <Image
-                src="/wassimage.png"
+                src="/img/wassimage.webp"
                 alt="Wassim Gatri"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top" }}
                 sizes="35vw"
-                priority
               />
             </div>
           </div>
@@ -232,6 +240,7 @@ export default function JourneySection() {
           {/* Form */}
           <div ref={(el) => { rightRefs.current[3] = el; }}>
             <form ref={formRef} onSubmit={handleSubmit}>
+              <input type="hidden" name="time" />
               <div style={{ display: "flex", flexDirection: "column", gap: "0.3rem" }}>
                 <input suppressHydrationWarning type="text"  name="name"    placeholder="Your name"                  required className="cj-input" />
                 <input suppressHydrationWarning type="email" name="email"   placeholder="Your email"                 required className="cj-input" />
@@ -278,10 +287,30 @@ export default function JourneySection() {
                   fontFamily: "var(--font-inter)", fontSize: "0.82rem",
                   lineHeight: 1.5, color: "rgba(0,0,0,0.65)", textAlign: "center",
                 }}>
-                  Something went wrong. Try emailing me directly at{" "}
+                  Something went wrong. Try again, or email me directly at{" "}
                   <a href="mailto:wassimgatri4@gmail.com" style={{ color: "#0a0a0a", fontWeight: 600, textDecoration: "none" }}>
                     wassimgatri4@gmail.com
                   </a>
+                  {/* Fields keep their values after a failure, so this just resends them */}
+                  <button
+                    type="submit"
+                    className="tap-target"
+                    style={{
+                      display: "block",
+                      width: "100%",
+                      marginTop: "1rem",
+                      background: "transparent",
+                      color: "#0a0a0a",
+                      border: "1px solid rgba(0,0,0,0.35)",
+                      padding: "0.75rem",
+                      fontFamily: "var(--font-bebas)",
+                      fontSize: "1.15rem",
+                      letterSpacing: "0.08em",
+                      borderRadius: "2px",
+                    }}
+                  >
+                    TRY AGAIN ↻
+                  </button>
                 </div>
               )}
             </form>

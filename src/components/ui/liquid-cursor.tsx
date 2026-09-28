@@ -25,7 +25,7 @@ const COLORS = [
 export const LiquidCursor = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointsRef = useRef<Point[]>([]);
-  const mouseRef = useRef({ x: 0, y: 0, lastX: 0, lastY: 0, moved: false });
+  const mouseRef = useRef({ x: 0, y: 0, lastX: 0, lastY: 0, moved: false, seen: false });
   const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -43,22 +43,14 @@ export const LiquidCursor = () => {
     resize();
 
     const handleMouseMove = (e: MouseEvent) => {
-      mouseRef.current.x = e.clientX;
-      mouseRef.current.y = e.clientY;
-      mouseRef.current.moved = true;
+      const m = mouseRef.current;
+      // First event: start the trail here instead of streaking in from (0, 0)
+      if (!m.seen) { m.lastX = e.clientX; m.lastY = e.clientY; m.seen = true; }
+      m.x = e.clientX;
+      m.y = e.clientY;
+      m.moved = true;
     };
-    window.addEventListener("mousemove", handleMouseMove);
-
-    // Touch support — drive particles with the first finger while dragging.
-    // passive: true so this listener never blocks scroll.
-    const handleTouchMove = (e: TouchEvent) => {
-      const touch = e.touches[0];
-      if (!touch) return;
-      mouseRef.current.x = touch.clientX;
-      mouseRef.current.y = touch.clientY;
-      mouseRef.current.moved = true;
-    };
-    window.addEventListener("touchmove", handleTouchMove, { passive: true });
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
 
     const addPoint = (x: number, y: number) => {
       const angle = Math.random() * Math.PI * 2;
@@ -125,7 +117,6 @@ export const LiquidCursor = () => {
     return () => {
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("touchmove", handleTouchMove);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
   }, []);

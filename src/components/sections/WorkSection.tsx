@@ -22,7 +22,7 @@ const PROJECTS = [
     desc:     "A full-stack web application for managing employee data, performance monitoring and HR processes. Built for ESPRIT School of Business final year project. Graded 16/20.",
     github:   null as string | null,
     live:     null as string | null,
-    image:    "/HR.png" as string | null,
+    image:    "/img/work/hr.webp" as string | null,
     accent:   "#0c1a2e",
   },
   {
@@ -34,7 +34,7 @@ const PROJECTS = [
     desc:     "End-to-end digital marketing campaign including ad creatives, lead generation strategy and campaign management for a food brand in Tunisia.",
     github:   null as string | null,
     live:     null as string | null,
-    image:    "/eva.png" as string | null,
+    image:    "/img/work/eva.webp" as string | null,
     accent:   "#1e0d00",
   },
   {
@@ -46,7 +46,7 @@ const PROJECTS = [
     desc:     "UX-focused redesign and development for two e-commerce clients — Mekni Tunisian Distribution and EREMA Furniture — improving user experience and conversion.",
     github:   null as string | null,
     live:     null as string | null,
-    image:    "/Ecomerce.png" as string | null,
+    image:    "/img/work/ecomerce.webp" as string | null,
     accent:   "#150a26",
   },
   {
@@ -58,7 +58,7 @@ const PROJECTS = [
     desc:     "An SEO SaaS landing page — clean, fast and conversion focused.",
     github:   "https://github.com/wasswassim/Rankly",
     live:     "https://wasswassim.github.io/Rankly/",
-    image:    "/Rankly.png" as string | null,
+    image:    "/img/work/rankly.webp" as string | null,
     accent:   "#0c1e38",
   },
   {
@@ -70,7 +70,7 @@ const PROJECTS = [
     desc:     "An ecommerce web app that tracks everything for your online store — inventory, sales and performance in one place.",
     github:   "https://github.com/wasswassim/nexus-dashboard",
     live:     "https://wasswassim.github.io/nexus-dashboard/",
-    image:    "/nexus.png" as string | null,
+    image:    "/img/work/nexus.webp" as string | null,
     accent:   "#1e0d00",
   },
   {
@@ -82,7 +82,7 @@ const PROJECTS = [
     desc:     "A restaurant website with online ordering and a full digital menu — built for a real kebab restaurant.",
     github:   "https://github.com/wasswassim/cirokebap",
     live:     "https://wasswassim.github.io/cirokebap/",
-    image:    "/chirokebap.png" as string | null,
+    image:    "/img/work/chirokebap.webp" as string | null,
     accent:   "#0c1e38",
   },
 ];
@@ -128,16 +128,18 @@ export default function WorkSection() {
     >
       {/* ── Component-scoped styles ── */}
       <style>{`
-        /* Card lift on hover */
+        /* Card lift on hover — real pointers only, avoids sticky hover on tap */
         .ws-card {
           transition: transform 0.35s cubic-bezier(0.34,1.4,0.64,1),
                       border-color 0.28s ease,
                       box-shadow 0.28s ease;
         }
-        .ws-card:hover {
-          transform: translateY(-9px);
-          border-color: rgba(143,170,139,0.32) !important;
-          box-shadow: 0 22px 50px rgba(0,0,0,0.55);
+        @media (hover: hover) {
+          .ws-card:hover {
+            transform: translateY(-9px);
+            border-color: rgba(143,170,139,0.32) !important;
+            box-shadow: 0 22px 50px rgba(0,0,0,0.55);
+          }
         }
 
         /* Hover overlay on placeholder */
@@ -153,6 +155,18 @@ export default function WorkSection() {
           z-index: 2;
         }
         .ws-ph:hover .ws-ov { opacity: 1; }
+        .ws-ph:focus-within .ws-ov { opacity: 1; }
+        .ws-ph:focus { outline: none; }
+        .ws-ph:focus-visible { outline: 1px solid #8faa8b; outline-offset: 2px; }
+
+        /* Touch: first tap on the image reveals the overlay (focus), second tap
+           hits the link. Hidden overlay can't swallow taps. */
+        @media (hover: none) {
+          .ws-ov { pointer-events: none; }
+          .ws-ph:hover .ws-ov { opacity: 0; }
+          .ws-ph:focus-within .ws-ov { opacity: 1; pointer-events: auto; }
+          .ws-link { display: inline-flex; align-items: center; padding: 0 0.75rem; }
+        }
 
         /* Link style inside overlay */
         .ws-link {
@@ -166,7 +180,7 @@ export default function WorkSection() {
         .ws-link:hover { color: #ffffff; }
 
         /* Filter pill button */
-        .ws-filter { transition: all 0.2s ease; }
+        .ws-filter { transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
 
         @media (max-width: 767px) {
           .ws-grid   { grid-template-columns: 1fr !important; }
@@ -217,7 +231,7 @@ export default function WorkSection() {
             <button
               key={f}
               suppressHydrationWarning
-              className="ws-filter"
+              className="ws-filter tap-target"
               onClick={() => setFilter(f)}
               style={{
                 padding: "0.45rem 1.4rem",
@@ -269,7 +283,7 @@ export default function WorkSection() {
                   }}
                 >
                   {/* ── Image / placeholder + hover overlay ── */}
-                  <div className="ws-ph">
+                  <div className="ws-ph" tabIndex={project.github ? 0 : -1}>
                     <div
                       className="ws-ph-inner"
                       style={{
@@ -282,8 +296,10 @@ export default function WorkSection() {
                           src={project.image}
                           alt={project.title}
                           fill
+                          loading="lazy"
+                          decoding="async"
                           style={{ objectFit: "cover", objectPosition: "top center" }}
-                          sizes="(max-width: 1440px) 33vw, 480px"
+                          sizes="(max-width: 767px) 100vw, (max-width: 1440px) 33vw, 480px"
                         />
                       ) : (
                         /* Accent gradient for client-work cards without images */
@@ -325,7 +341,7 @@ export default function WorkSection() {
                             href={project.github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="ws-link"
+                            className="ws-link tap-target"
                           >
                             → View on GitHub
                           </a>
@@ -335,7 +351,7 @@ export default function WorkSection() {
                               isStatic={false}
                               width={200}
                               height={125}
-                              className="ws-link"
+                              className="ws-link tap-target"
                             >
                               → View Live
                             </LinkPreview>

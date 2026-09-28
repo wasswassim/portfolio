@@ -1,10 +1,10 @@
 "use client";
 
-import { useRef, useEffect, useCallback } from "react";
+import { useRef, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import type { GalleryControls } from "@/components/ui/infinite-gallery";
+import { MQ, matches } from "@/lib/media";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,100 +13,96 @@ const InfiniteGallery = dynamic(
   { ssr: false }
 );
 
-const AI_IMAGES = [
-  "/tarislula_a_close_up_studio_portrait_features_a_fair_skinned__d2f2881a-1014-431c-be34-59bdabdb3b38_2.png",
-  "/vittorio8763_In_Mirrors_2026_Doron_B_creates_an_instrument_fo_e8cacb0d-c1af-408b-9288-9b130531d1e2_2.png",
-  "/jmgcg_an_eye-catching_label_for__night_mask_with_text_in_engl_f4c0201d-5434-4e24-921e-0a8e4feaaeb2_1.png",
-  "/hmnm_a_unique_outdoor_sofa_in_soft_blush_pink_linen_sits_amid_9324b9eb-2036-43b9-9105-4747f172e018_3.png",
-  "/depaula_A_seamless_texture_pattern_of_multiple_identical_bold_a97dda1e-3de6-42c0-8b26-feb79775888a_3.png",
-  "/Blue_Ivy_I_waited_and_I_waited_It_was_something_in_my_heart_-_3363a26a-facb-417e-b85e-cb7b2509c786_0.png",
-  "/danaeanime_Test_photo_--profile_qwi2equ_--v_8.1_20c7570d-a661-4f74-991b-d21872a1cc0b_2.png",
-  "/Creator_Human_A_young_man_with_dark_messy_hair_and_thick-rimm_552288d1-5108-4311-91f8-f7056c75b8a4_3.png",
-  "/Volveri_moment_psychology_impact_creapy_--chaos_20_--ar_916_-_5c5d42be-b4bb-4376-b7c6-081028827df3_1.png",
-  "/dzued_61293_two_stylized_children_characters_standing_side_by_094355f6-cdb9-4608-aa63-96cf48cfc766_0.png",
-];
+const AI_IMAGES = Array.from({ length: 10 }, (_, i) => `/img/ai/ai-${String(i + 1).padStart(2, "0")}.webp`);
 
 const HEADLINE_LINES = ["PROMPT", "ENGINEER."];
 
 export default function AISection() {
-  const sectionRef     = useRef<HTMLElement>(null);
-  const lineRefs       = useRef<HTMLDivElement[]>([]);
-  const taglineRef     = useRef<HTMLParagraphElement>(null);
-  const tagsRef        = useRef<HTMLDivElement>(null);
-  const statementRef   = useRef<HTMLDivElement>(null);
-  const addVelocityRef = useRef<((v: number) => void) | null>(null);
+  const sectionRef   = useRef<HTMLElement>(null);
+  const lineRefs     = useRef<HTMLDivElement[]>([]);
+  const taglineRef   = useRef<HTMLParagraphElement>(null);
+  const tagsRef      = useRef<HTMLDivElement>(null);
+  const statementRef = useRef<HTMLDivElement>(null);
 
-  const handleGalleryReady = useCallback((controls: GalleryControls) => {
-    addVelocityRef.current = controls.addVelocity;
-  }, []);
+  // Written by the pinned ScrollTrigger, read by the gallery every frame
+  const progressRef = useRef(0);
+  const [galleryMounted, setGalleryMounted] = useState(false);
+  const [galleryActive, setGalleryActive]   = useState(false);
+  const [isMobile, setIsMobile]             = useState(false);
 
   useEffect(() => {
     const section = sectionRef.current;
     if (!section) return;
+
+    const mobile = matches(MQ.mobile);
+    setIsMobile(mobile);
 
     const lines   = lineRefs.current.filter(Boolean) as HTMLDivElement[];
     const tagline = taglineRef.current;
     const tags    = tagsRef.current;
     const stmt    = statementRef.current;
 
-    gsap.set(lines,   { yPercent: 110 });
-    if (tagline) gsap.set(tagline, { opacity: 0, y: 18 });
-    if (tags)    gsap.set(tags,    { opacity: 0, y: 12 });
-
     const ctx = gsap.context(() => {
-      // ── Text reveal — triggers as section enters viewport ──────────────
+      // ── Text reveal — plays on the way in, reverses on the way back ───
+      gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: "top 75%",
+          toggleActions: "play none none reverse",
+        },
+      })
+        .fromTo(lines,   { yPercent: 110 }, { yPercent: 0, duration: 1.1, ease: "power4.out", stagger: 0.1 })
+        .fromTo(tagline, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, "-=0.6")
+        .fromTo(tags,    { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, "-=0.45");
+
+      // ── WebGL gallery: download one screen early ────────────────────
       ScrollTrigger.create({
         trigger: section,
-        start: "top 75%",
+        start: "top bottom+=100%",
         once: true,
-        onEnter() {
-          gsap.timeline()
-            .to(lines, { yPercent: 0, duration: 1.1, ease: "power4.out", stagger: 0.1 })
-            .to(tagline, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, "-=0.6")
-            .to(tags,    { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, "-=0.45");
-        },
+        onEnter: () => setGalleryMounted(true),
       });
 
-      // ── Pin section and route scroll velocity into the gallery ─────────
-      // Images stay static until you scroll — forward scrolls them toward
-      // you, backward pulls them away. Auto-play is disabled (initialAutoPlay=false).
+      // ── Pinned scroll cycle ───────────────────────────────────────────
+      // progress 0 → 1 maps straight onto the gallery's depth travel, so the
+      // cycle starts when the pin engages, finishes before the pin releases,
+      // and scrolling back up replays it exactly in reverse.
       ScrollTrigger.create({
         trigger: section,
         start: "top top",
-        end: "+=150%",          // section stays pinned for 150vh of scroll
+        end: mobile ? "+=110%" : "+=150%",
         pin: true,
         pinSpacing: true,
-        onUpdate(self) {
-          const v = self.getVelocity();   // px/s from the scroller
-          // Forward-only: only push images when scrolling down.
-          // Scrolling back up releases the pin normally — no image reversal.
-          if (v > 8) {
-            addVelocityRef.current?.(v * 0.0016);
-          }
-        },
+        anticipatePin: 1,
+        scrub: true,
+        onUpdate: (self) => { progressRef.current = self.progress; },
       });
 
-      // ── Statement strip reveal ─────────────────────────────────────────
+      // ── Statement strip reveal ────────────────────────────────────────
       if (stmt) {
-        gsap.set(stmt, { opacity: 0 });
-        ScrollTrigger.create({
-          trigger: stmt,
-          start: "top 88%",
-          once: true,
-          onEnter() {
-            gsap.to(stmt, { opacity: 1, duration: 0.8, ease: "power2.out" });
-          },
+        gsap.fromTo(stmt, { opacity: 0 }, {
+          opacity: 1, duration: 0.8, ease: "power2.out",
+          scrollTrigger: { trigger: stmt, start: "top 88%", toggleActions: "play none none reverse" },
         });
       }
     }, section);
 
-    return () => ctx.revert();
+    // Render only while on screen. An observer sees the real (pinned) layout,
+    // which a ScrollTrigger on the same element measured pre-pin would not.
+    const io = new IntersectionObserver(([entry]) => setGalleryActive(entry.isIntersecting));
+    io.observe(section);
+
+    return () => {
+      io.disconnect();
+      ctx.revert();
+    };
   }, []);
 
   return (
     <>
       <section
         ref={sectionRef}
+        className="ai-section"
         suppressHydrationWarning
         style={{
           position: "relative",
@@ -115,25 +111,27 @@ export default function AISection() {
           background: "#0a0a0a",
         }}
       >
-        {/* Gallery — fills section, scroll-driven (no auto-play) */}
+        <style>{`
+          @supports (height: 100svh) {
+            .ai-section { height: 100svh !important; }
+          }
+          @media (max-width: 767px) {
+            .ai-text-overlay  { padding: 0 1.5rem 3rem !important; }
+            .ai-bottom-row    { gap: 1.2rem !important; flex-direction: column !important; align-items: flex-start !important; }
+            .ai-statement     { padding: 2rem 1.5rem !important; flex-direction: column !important; gap: 1rem !important; }
+            .ai-statement-txt { font-size: clamp(1rem, 4.5vw, 1.6rem) !important; }
+          }
+        `}</style>
+        {/* Gallery — fills section, scroll-driven */}
         <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <InfiniteGallery
+          {galleryMounted && <InfiniteGallery
             images={AI_IMAGES}
             style={{ width: "100%", height: "100%", background: "#0a0a0a" }}
-            speed={1.2}
-            visibleCount={10}
-            initialAutoPlay={false}
-            onReady={handleGalleryReady}
-            fadeSettings={{
-              fadeIn:  { start: 0.04, end: 0.20 },
-              fadeOut: { start: 0.82, end: 0.96 },
-            }}
-            blurSettings={{
-              blurIn:  { start: 0.0,  end: 0.08 },
-              blurOut: { start: 0.88, end: 1.0  },
-              maxBlur: 6.0,
-            }}
-          />
+            visibleCount={isMobile ? 6 : 10}
+            travel={60}
+            progress={progressRef}
+            active={galleryActive}
+          />}
         </div>
 
         {/* Dark veil — tones down bright image backgrounds */}
@@ -159,11 +157,14 @@ export default function AISection() {
         }} />
 
         {/* Text overlay */}
-        <div style={{
-          position: "absolute", inset: 0, zIndex: 2,
-          display: "flex", flexDirection: "column", justifyContent: "flex-end",
-          padding: "0 4rem 5rem",
-        }}>
+        <div
+          className="ai-text-overlay"
+          style={{
+            position: "absolute", inset: 0, zIndex: 2,
+            display: "flex", flexDirection: "column", justifyContent: "flex-end",
+            padding: "0 4rem 5rem",
+          }}
+        >
           <span style={{
             display: "block",
             fontFamily: "var(--font-inter)", fontSize: "0.6rem",
@@ -191,7 +192,7 @@ export default function AISection() {
             ))}
           </h2>
 
-          <div style={{ display: "flex", gap: "4rem", alignItems: "flex-end", flexWrap: "wrap", maxWidth: "56rem" }}>
+          <div className="ai-bottom-row" style={{ display: "flex", gap: "4rem", alignItems: "flex-end", flexWrap: "wrap", maxWidth: "56rem" }}>
             <p
               ref={taglineRef}
               style={{
@@ -241,6 +242,7 @@ export default function AISection() {
       {/* Statement strip */}
       <div
         ref={statementRef}
+        className="ai-statement"
         style={{
           background: "#0a0a0a",
           borderTop: "1px solid rgba(255,255,255,0.07)",
@@ -253,13 +255,16 @@ export default function AISection() {
           opacity: 0,
         }}
       >
-        <p style={{
-          fontFamily: "var(--font-bebas)",
-          fontSize: "clamp(1.1rem, 2.4vw, 2.4rem)",
-          lineHeight: 1, letterSpacing: "0.02em",
-          color: "rgba(255,255,255,0.15)",
-          maxWidth: "62rem", margin: 0,
-        }}>
+        <p
+          className="ai-statement-txt"
+          style={{
+            fontFamily: "var(--font-bebas)",
+            fontSize: "clamp(1.1rem, 2.4vw, 2.4rem)",
+            lineHeight: 1, letterSpacing: "0.02em",
+            color: "rgba(255,255,255,0.15)",
+            maxWidth: "62rem", margin: 0,
+          }}
+        >
           IN AN ERA WHERE EVERY BRAND NEEDS AI-GRADE VISUAL OUTPUT,
           PROMPT ENGINEERING IS THE SILENT SUPERPOWER OF MODERN DESIGN.
         </p>

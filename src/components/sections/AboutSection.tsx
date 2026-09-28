@@ -21,6 +21,7 @@ class SplineErrorBoundary extends Component<
 const Spline = dynamic(() => import("@splinetool/react-spline"), { ssr: false });
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { getLenis } from "@/lib/lenis";
+import { MQ, matches } from "@/lib/media";
 import { LinkPreview } from "@/components/ui/link-preview";
 import { Magnetic } from "@/components/ui/magnetic";
 import { LiquidCursor } from "@/components/ui/liquid-cursor";
@@ -60,34 +61,66 @@ export default function AboutSection() {
   // Panel 1 parallax wrapper
   const p1InnerRef = useRef<HTMLDivElement>(null);
 
-  // LiquidCursor — driven by elementFromPoint on every mousemove, the same way
-  // CustomCursor continuously reads its position. panel 3 is tagged with
-  // data-liquid-cursor so .closest() finds it from any child element.
+  // Liquid cursor — desktop (fine pointer) only, shown while panel 3 is under the mouse
   const [showLiquidCursor, setShowLiquidCursor] = useState(false);
+  // Spline is several MB — only fetch it once the section is close
+  const [loadSpline, setLoadSpline] = useState(false);
+  const [isTouch, setIsTouch]       = useState(false);
+  const panel3Ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
     const track   = trackRef.current;
-    if (!section || !track) return;
+    const panel3  = panel3Ref.current;
+    if (!section || !track || !panel3) return;
 
-    // ── Liquid cursor: elementFromPoint hit-test on every mousemove ──────────
-    // Mirrors how CustomCursor continuously reads position. Works regardless of
-    // whether the mouse moved onto the panel or the panel scrolled under the cursor
-    // (elementFromPoint always reflects the current rendered state of the DOM).
-    const onMouseMove = (e: MouseEvent) => {
-      const el     = document.elementFromPoint(e.clientX, e.clientY);
-      const active = !!el?.closest("[data-liquid-cursor]");
-      setShowLiquidCursor(active);
-      document.body.classList.toggle("custom-cursor-hidden", active);
+    const finePointer = matches(MQ.fine);
+    setIsTouch(!finePointer);
+
+    // ── Liquid cursor hit-test ────────────────────────────────────────────
+    // Runs on mouse move and on scroll (the panel can slide under a still
+    // cursor), at most once per frame, and only while About is on screen.
+    // The normal cursor dot stays on top so links are still easy to click.
+    let pointerX = -1, pointerY = -1, rafId = 0;
+    const hitTest = () => {
+      rafId = 0;
+      const r = panel3.getBoundingClientRect();
+      setShowLiquidCursor(pointerX >= r.left && pointerX <= r.right && pointerY >= r.top && pointerY <= r.bottom);
     };
-    window.addEventListener("mousemove", onMouseMove);
+    const queueHitTest = () => { if (!rafId) rafId = requestAnimationFrame(hitTest); };
+    const onMouseMove  = (e: MouseEvent) => { pointerX = e.clientX; pointerY = e.clientY; queueHitTest(); };
+    const trackPointer = (on: boolean) => {
+      if (on) {
+        window.addEventListener("mousemove", onMouseMove, { passive: true });
+        window.addEventListener("scroll", queueHitTest, { passive: true });
+      } else {
+        window.removeEventListener("mousemove", onMouseMove);
+        window.removeEventListener("scroll", queueHitTest);
+        setShowLiquidCursor(false);
+      }
+    };
+
+    // Observer rather than a ScrollTrigger: it sees the pinned layout, so it
+    // stays "on" for the whole horizontal run
+    const io = finePointer
+      ? new IntersectionObserver(([entry]) => trackPointer(entry.isIntersecting))
+      : null;
+    io?.observe(section);
 
     // lenis.start() reused as unlockScroll in both Panel 1 and Panel 2
     const unlockScroll = () => getLenis()?.start();
 
-    const isMobile = window.innerWidth < 768;
+    const isMobile = matches(MQ.mobile);
 
     const ctx = gsap.context(() => {
+      ScrollTrigger.create({
+        trigger: isMobile ? panel3 : section,
+        start: "top bottom+=75%",
+        once: true,
+        onEnter: () => setLoadSpline(true),
+      });
+
+
       const viewW   = window.innerWidth;
       const travelX = -(track.scrollWidth - viewW);
 
@@ -174,6 +207,8 @@ export default function AboutSection() {
       let p2LockApplied = false;
 
       const tl = gsap.timeline({
+        // The track keeps sliding while the scrub catches up — re-check the cursor
+        onUpdate: finePointer ? queueHitTest : undefined,
         scrollTrigger: {
           trigger: section,
           start: "top top",
@@ -218,12 +253,11 @@ export default function AboutSection() {
     }, section);
 
     return () => {
-      window.removeEventListener("mousemove", onMouseMove);
+      io?.disconnect();
+      trackPointer(false);
+      if (rafId) cancelAnimationFrame(rafId);
       ctx.revert();
       unlockScroll();
-      // Ensure cursor state is clean on unmount
-      setShowLiquidCursor(false);
-      document.body.classList.remove("custom-cursor-hidden");
     };
   }, []);
 
@@ -253,6 +287,8 @@ export default function AboutSection() {
           .about-panel-1 { padding: 0 1.5rem !important; }
           .about-panel-2 { padding: 0 1.5rem !important; }
           .about-panel-3 { padding: 0 !important; }
+          /* Push panel 3 text below the background copy on mobile */
+          .about-p3-content { padding-top: 44vh !important; }
         }
       `}</style>
       <div
@@ -423,7 +459,7 @@ export default function AboutSection() {
                 <LinkPreview
                   url="https://www.linkedin.com/in/wassim-gatri-683a12259/?locale=fr"
                   isStatic={true}
-                  imageSrc="/linkdin.png"
+                  imageSrc="/img/linkedin.webp"
                   width={220}
                   height={130}
                   style={{
@@ -446,8 +482,8 @@ export default function AboutSection() {
             Panel 3 — I PAINT.   bg: Spline 3D
         ════════════════════════════════════════ */}
         <div
+          ref={panel3Ref}
           className="about-panel about-panel-3"
-          data-liquid-cursor="true"
           style={{
             width: "100vw", height: "100vh", flexShrink: 0,
             position: "relative", overflow: "hidden",
@@ -455,12 +491,18 @@ export default function AboutSection() {
           }}
         >
           {/* ── Spline 3D scene — full-panel background ── */}
-          <SplineErrorBoundary>
-            <Spline
-              scene="https://prod.spline.design/Y6qwPytKdu4Vr5ru/scene.splinecode"
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
-            />
-          </SplineErrorBoundary>
+          {loadSpline && (
+            <SplineErrorBoundary>
+              <Spline
+                scene="https://prod.spline.design/Y6qwPytKdu4Vr5ru/scene.splinecode"
+                style={{
+                  position: "absolute", inset: 0, width: "100%", height: "100%",
+                  // On touch screens the scene is decorative — don't let it swallow scroll
+                  pointerEvents: isTouch ? "none" : "auto",
+                }}
+              />
+            </SplineErrorBoundary>
+          )}
 
           {/* Subtle dark scrim so text is always legible over the scene */}
           <div style={{
@@ -472,6 +514,7 @@ export default function AboutSection() {
           {/* ── Parallax content wrapper — centred mid-panel ── */}
           <div
             ref={p3InnerRef}
+            className="about-p3-content"
             style={{
               position: "absolute", inset: 0, zIndex: 2,
               display: "flex", flexDirection: "column",
@@ -505,7 +548,7 @@ export default function AboutSection() {
                   <LinkPreview
                     url="https://www.tiktok.com/@wassimgatri1"
                     isStatic={true}
-                    imageSrc="/tiktik.jpeg"
+                    imageSrc="/img/tiktok.webp"
                     width={140}
                     height={240}
                     style={{
@@ -524,14 +567,13 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* ── Mouse hint ── */}
-          <div style={{
+          {/* ── Pointer hint (desktop) ── */}
+          {!isTouch && <div style={{
             position: "absolute", top: "2.2rem", left: "50%",
             transform: "translateX(-50%)",
             zIndex: 3, pointerEvents: "none",
             display: "flex", alignItems: "center", gap: "0.55rem",
           }}>
-            {/* Mini cursor icon */}
             <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L1 10L4 7.5L5.5 11.5L7 11L5.5 7L9 7L1 1Z" fill="rgba(255,255,255,0.3)" />
             </svg>
@@ -542,7 +584,7 @@ export default function AboutSection() {
             }}>
               Move your cursor to paint
             </span>
-          </div>
+          </div>}
         </div>
 
       </div>

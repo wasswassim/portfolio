@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { getLenis } from "@/lib/lenis";
+import { scrollToY } from "@/lib/lenis";
 
 const ITEMS = [
   { num: "01", label: "HOME",    id: "hero"    },
@@ -27,9 +27,17 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
       const el = document.getElementById(id);
       if (!el) return;
       const target = el.getBoundingClientRect().top + window.scrollY;
-      getLenis()?.scrollTo(target, { duration: 1.3 });
+      scrollToY(target, 1.3);
     }, 380);
   }, [onClose]);
+
+  // Escape closes the menu
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [isOpen, onClose]);
 
   return (
     <AnimatePresence>
@@ -46,6 +54,10 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
           }}
         >
           <style>{`
+            /* Keep link text centred in its taller touch target */
+            @media (pointer: coarse) {
+              .mn-foot-link { display: inline-flex; align-items: center; }
+            }
             @media (max-width: 767px) {
               .mn-nav   { padding: 0.8rem 1.5rem !important; }
               .mn-label { font-size: clamp(2rem, 11vw, 7.5rem) !important; }
@@ -76,6 +88,8 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
             {/* Close */}
             <button
               onClick={onClose}
+              className="tap-target"
+              aria-label="Close menu"
               style={{
                 display: "flex", alignItems: "center", gap: "0.55rem",
                 background: "none", border: "none", cursor: "none",
@@ -168,6 +182,7 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                   href={link.href}
                   target={link.href.startsWith("mailto") ? undefined : "_blank"}
                   rel="noopener noreferrer"
+                  className="mn-foot-link tap-target"
                   style={{
                     fontFamily: "var(--font-inter)", fontSize: "0.65rem",
                     letterSpacing: "0.1em", textTransform: "uppercase",

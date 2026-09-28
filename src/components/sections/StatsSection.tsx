@@ -39,7 +39,16 @@ export default function StatsSection() {
       });
     }, section);
 
-    return () => ctx.revert();
+    // Pause the marquees while the section is off screen
+    const io = new IntersectionObserver(([entry]) => {
+      section.toggleAttribute("data-offscreen", !entry.isIntersecting);
+    });
+    io.observe(section);
+
+    return () => {
+      io.disconnect();
+      ctx.revert();
+    };
   }, []);
 
   return (
@@ -49,8 +58,7 @@ export default function StatsSection() {
       style={{ background: "#0a0a0a" }}
     >
       <style>{`
-        @keyframes marquee-left  { from { transform: translateX(0);    } to { transform: translateX(-50%); } }
-        @keyframes marquee-right { from { transform: translateX(-50%); } to { transform: translateX(0);     } }
+        [data-offscreen] .stats-marquee { animation-play-state: paused !important; }
         @media (max-width: 767px) {
           .stats-row  { flex-direction: column !important; padding: 3rem 1.5rem !important; gap: 0 !important; }
           .stats-item { padding: 1.2rem 0 !important; border-bottom: 1px solid rgba(255,255,255,0.08); }
@@ -90,14 +98,14 @@ export default function StatsSection() {
       {/* ── Dual marquee ── */}
       <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
         <div style={{ overflow: "hidden", padding: "1.1rem 0", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-          <div style={{ display: "flex", width: "max-content", whiteSpace: "nowrap", animation: "marquee-left 28s linear infinite" }}>
+          <div className="stats-marquee motion-loop" style={{ display: "flex", width: "max-content", whiteSpace: "nowrap", animation: "marqueeLeft 28s linear infinite" }}>
             {[MARQUEE_TEXT, MARQUEE_TEXT].map((t, i) => (
               <span key={i} style={{ fontFamily: "var(--font-inter)", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", color: "#ffffff" }}>{t}</span>
             ))}
           </div>
         </div>
         <div style={{ overflow: "hidden", padding: "1.1rem 0" }}>
-          <div style={{ display: "flex", width: "max-content", whiteSpace: "nowrap", animation: "marquee-right 28s linear infinite" }}>
+          <div className="stats-marquee motion-loop" style={{ display: "flex", width: "max-content", whiteSpace: "nowrap", animation: "marqueeRight 28s linear infinite" }}>
             {[MARQUEE_TEXT, MARQUEE_TEXT].map((t, i) => (
               <span key={i} style={{ fontFamily: "var(--font-inter)", fontSize: "0.68rem", letterSpacing: "0.18em", textTransform: "uppercase", color: "#8faa8b" }}>{t}</span>
             ))}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { MQ, matches } from "@/lib/media";
 
 export default function CustomCursor() {
   const dotRef  = useRef<HTMLDivElement>(null);
@@ -10,7 +11,7 @@ export default function CustomCursor() {
 
   useEffect(() => {
     // Touch-only devices have no hover pointer — don't render the custom cursor.
-    if (window.matchMedia("(hover: none) and (pointer: coarse)").matches) {
+    if (matches(MQ.touch)) {
       setIsTouch(true);
       return;
     }

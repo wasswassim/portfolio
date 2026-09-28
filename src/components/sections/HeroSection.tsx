@@ -1,8 +1,13 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { WordsPullUpMultiStyle } from "@/components/ui/words-pull-up";
+import { scrollToY } from "@/lib/lenis";
+import { MQ, matches } from "@/lib/media";
+
+const HERO_VIDEO =
+  "https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4";
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -31,12 +36,53 @@ const LABEL: React.CSSProperties = {
 };
 
 export default function HeroSection({ onMenuOpen }: { onMenuOpen?: () => void }) {
-  const bottomRef = useRef<HTMLDivElement>(null);
-  const inView    = useInView(bottomRef, { once: true });
+  const sectionRef = useRef<HTMLElement>(null);
+  const videoRef   = useRef<HTMLVideoElement>(null);
+  const bottomRef  = useRef<HTMLDivElement>(null);
+  const inView     = useInView(bottomRef, { once: true });
+
+  // ── Video: play only while the hero is on screen ──
+  // Started from JS (not autoPlay) so it doesn't compete with the JS bundle
+  // on first load — the preloader covers the hero for the first ~3s anyway.
+  useEffect(() => {
+    const video   = videoRef.current;
+    const section = sectionRef.current;
+    if (!video || !section) return;
+
+    const reduceMotion = matches(MQ.reduced);
+    const saveData = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData;
+    video.muted = true;
+    if (reduceMotion || saveData) {
+      // Still show a frame, just don't loop it
+      video.preload = "auto";
+      return;
+    }
+
+    let onScreen = false;
+    const sync = () => {
+      if (onScreen && !document.hidden) video.play().catch(() => {});
+      else video.pause();
+    };
+    const io = new IntersectionObserver(([entry]) => { onScreen = entry.isIntersecting; sync(); }, { threshold: 0.05 });
+    io.observe(section);
+
+    const onVisibility = sync;
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => {
+      io.disconnect();
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
+  }, []);
+
+  const scrollDown = () => {
+    scrollToY(window.innerHeight);
+  };
 
   return (
     <section
       id="hero"
+      ref={sectionRef}
+      className="hero-root"
       suppressHydrationWarning
       style={{
         position: "relative",
@@ -49,6 +95,13 @@ export default function HeroSection({ onMenuOpen }: { onMenuOpen?: () => void })
       }}
     >
       <style>{`
+        /* Small-viewport height so the bottom bar isn't hidden behind mobile browser UI */
+        @supports (height: 100svh) { .hero-root { height: 100svh !important; } }
+        @keyframes hero-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(5px); } }
+        .hero-arrow { display: inline-block; animation: hero-bob 1.6s ease-in-out infinite; }
+        @media (pointer: coarse) {
+          .hero-menu-btn { padding: 0.45rem 1.2rem 0.45rem 0.9rem !important; }
+        }
         @media (max-width: 767px) {
           .hero-topbar   { padding: 1.2rem 1.4rem !important; }
           .hero-statsbar { display: none !important; }
@@ -60,10 +113,14 @@ export default function HeroSection({ onMenuOpen }: { onMenuOpen?: () => void })
       `}</style>
       {/* ── Video background ── */}
       <video
-        autoPlay
+        ref={videoRef}
         loop
         muted
         playsInline
+        preload="metadata"
+        disablePictureInPicture
+        aria-hidden="true"
+        tabIndex={-1}
         style={{
           position: "absolute",
           inset: 0,
@@ -72,7 +129,7 @@ export default function HeroSection({ onMenuOpen }: { onMenuOpen?: () => void })
           objectFit: "cover",
           zIndex: 0,
         }}
-        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"
+        src={HERO_VIDEO}
       />
 
       {/* ── Gradient overlay — keeps top/bottom readable ── */}
@@ -128,6 +185,7 @@ export default function HeroSection({ onMenuOpen }: { onMenuOpen?: () => void })
         {/* Menu pill */}
         <button
           suppressHydrationWarning
+          className="hero-menu-btn tap-target"
           onClick={onMenuOpen}
           style={{
             display: "flex",
@@ -273,10 +331,11 @@ export default function HeroSection({ onMenuOpen }: { onMenuOpen?: () => void })
           initial={{ y: 18, opacity: 0 }}
           animate={inView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 0.7, delay: 0.3, ease: EASE }}
-          onClick={() => window.scrollBy({ top: window.innerHeight, behavior: "smooth" })}
+          className="tap-target"
+          onClick={scrollDown}
           style={{
             background: "none", border: "none", cursor: "none",
-            display: "flex", flexDirection: "column", alignItems: "center", gap: "0.35rem",
+            display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "0.35rem",
           }}
         >
           <span style={{
@@ -286,13 +345,13 @@ export default function HeroSection({ onMenuOpen }: { onMenuOpen?: () => void })
           }}>
             Learn more
           </span>
-          <motion.span
-            animate={{ y: [0, 5, 0] }}
-            transition={{ repeat: Infinity, duration: 1.6, ease: "easeInOut" }}
+          {/* CSS bob instead of an infinite JS animation */}
+          <span
+            className="hero-arrow motion-loop"
             style={{ color: "rgba(255,255,255,0.3)", fontSize: "0.9rem", lineHeight: 1 }}
           >
             ↓
-          </motion.span>
+          </span>
         </motion.button>
       </div>
     </section>

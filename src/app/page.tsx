@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import HeroSection from "@/components/sections/HeroSection";
 import SkillsSection from "@/components/sections/SkillsSection";
 import StatsSection from "@/components/sections/StatsSection";
@@ -15,11 +15,17 @@ export default function HomePage() {
   const [preloaderDone, setPreloaderDone] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  /* Refresh all ScrollTrigger instances once after everything mounts.
-     This recalculates pin spacers and trigger positions that depend on
-     the full rendered page height, preventing dead scroll zones.       */
+  // Stable handlers so Menu/Hero don't re-subscribe on every render
+  const openMenu  = useCallback(() => setMenuOpen(true), []);
+  const closeMenu = useCallback(() => setMenuOpen(false), []);
+
+  // ScrollTrigger already refreshes on window load, but web fonts swapping in
+  // change text heights after that — re-measure once they're ready so pin
+  // spacers and trigger positions line up.
   useEffect(() => {
-    const t = setTimeout(async () => {
+    let cancelled = false;
+    const refresh = async () => {
+      if (cancelled) return;
       try {
         const { ScrollTrigger } = await import("gsap/ScrollTrigger");
         ScrollTrigger.refresh();
@@ -27,8 +33,9 @@ export default function HomePage() {
         // Non-fatal — ScrollTrigger chunk failed to load; pin spacers may be off
         // but the page remains functional.
       }
-    }, 300);
-    return () => clearTimeout(t);
+    };
+    document.fonts?.ready.then(refresh);
+    return () => { cancelled = true; };
   }, []);
 
   return (
@@ -36,8 +43,8 @@ export default function HomePage() {
       {!preloaderDone && (
         <Preloader onDone={() => setPreloaderDone(true)} />
       )}
-      <Menu isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
-      <HeroSection onMenuOpen={() => setMenuOpen(true)} />
+      <Menu isOpen={menuOpen} onClose={closeMenu} />
+      <HeroSection onMenuOpen={openMenu} />
       <SkillsSection />
       <StatsSection />
       <AboutSection />

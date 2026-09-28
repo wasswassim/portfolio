@@ -1,57 +1,51 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useCallback } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Gravity, MatterBody, type GravityRef } from "@/components/ui/gravity";
+import { MQ, matches } from "@/lib/media";
+
+// matter-js is loaded on demand when the pills get close to the viewport
+type GravityModule = typeof import("@/components/ui/gravity");
 
 gsap.registerPlugin(ScrollTrigger);
 
 const CARDS = [
   {
-    num: "01",
-    label: "Web & Development",
+    num: "01", label: "Web & Development",
     title: "WEB DESIGN &\nDEVELOPMENT",
     desc: "Building fast, responsive, and visually polished websites and web apps. From clean frontend architecture to robust backend logic — every project is crafted for performance and scalability.",
-    bg: "#f0ede6",
-    ghost: "rgba(0,0,0,0.06)",
+    bg: "#f0ede6", ghost: "rgba(0,0,0,0.06)",
   },
   {
-    num: "02",
-    label: "Visual & Creative",
+    num: "02", label: "Visual & Creative",
     title: "GRAPHIC &\n3D DESIGN",
     desc: "Designing visual identities, marketing creatives, and 3D assets that communicate with clarity and style. Every pixel is intentional.",
-    bg: "#8faa8b",
-    ghost: "rgba(0,0,0,0.09)",
+    bg: "#8faa8b", ghost: "rgba(0,0,0,0.09)",
   },
   {
-    num: "03",
-    label: "Growth & Acquisition",
+    num: "03", label: "Growth & Acquisition",
     title: "DIGITAL\nMARKETING",
     desc: "Planning and executing data-driven digital marketing strategies — from advertising campaigns and lead generation to copywriting and email marketing.",
-    bg: "#f0ede6",
-    ghost: "rgba(0,0,0,0.06)",
+    bg: "#f0ede6", ghost: "rgba(0,0,0,0.06)",
   },
   {
-    num: "04",
-    label: "Direction & Delivery",
+    num: "04", label: "Direction & Delivery",
     title: "PROJECT\nMANAGEMENT",
     desc: "Coordinating projects from brief to launch with clear communication, structured planning, and reliable delivery at every stage.",
-    bg: "#8faa8b",
-    ghost: "rgba(0,0,0,0.09)",
+    bg: "#8faa8b", ghost: "rgba(0,0,0,0.09)",
   },
   {
-    num: "05",
-    label: "Insight & Optimisation",
+    num: "05", label: "Insight & Optimisation",
     title: "DATA ANALYSIS\n& SEO",
     desc: "Analysing online performance and applying SEO best practices to improve visibility, user engagement, and long-term organic growth.",
-    bg: "#f0ede6",
-    ghost: "rgba(0,0,0,0.06)",
+    bg: "#f0ede6", ghost: "rgba(0,0,0,0.06)",
   },
 ];
 
 const TRANSITIONS = CARDS.length - 1;
 
+// Full desktop pill set — 18 bodies, full gravity
 const PILLS = [
   { label: "Figma",       bg: "#F24E1E", color: "#ffffff", x: "5%",  y: 24  },
   { label: "Blender",     bg: "#E87D0D", color: "#ffffff", x: "24%", y: 24  },
@@ -73,6 +67,19 @@ const PILLS = [
   { label: "Next.js",     bg: "#111111", color: "#ffffff", x: "68%", y: 264, border: "1px solid rgba(255,255,255,0.18)" },
 ];
 
+// Reduced mobile pill set — 9 bodies, lighter physics
+const PILLS_MOBILE = [
+  { label: "Figma",      bg: "#F24E1E", color: "#ffffff", x: "15%", y: 20  },
+  { label: "Claude",     bg: "#D4A27F", color: "#ffffff", x: "60%", y: 20  },
+  { label: "WordPress",  bg: "#21759B", color: "#ffffff", x: "18%", y: 110 },
+  { label: "Google Ads", bg: "#4285F4", color: "#ffffff", x: "62%", y: 110 },
+  { label: "Notion",     bg: "#ffffff", color: "#0a0a0a", x: "15%", y: 200 },
+  { label: "Adobe Ps",   bg: "#31A8FF", color: "#ffffff", x: "60%", y: 200 },
+  { label: "Shopify",    bg: "#96BF48", color: "#ffffff", x: "15%", y: 290 },
+  { label: "TikTok",     bg: "#111111", color: "#ffffff", x: "52%", y: 290, border: "1px solid rgba(255,255,255,0.18)" },
+  { label: "GitHub",     bg: "#333333", color: "#ffffff", x: "78%", y: 290, border: "1px solid rgba(255,255,255,0.18)" },
+];
+
 export default function SkillsSection() {
   const sectionRef          = useRef<HTMLElement>(null);
   const cardsWrapRef        = useRef<HTMLDivElement>(null);
@@ -80,18 +87,20 @@ export default function SkillsSection() {
   const labelRefs           = useRef<(HTMLSpanElement | null)[]>([]);
   const titleRefs           = useRef<(HTMLHeadingElement | null)[]>([]);
   const descRefs            = useRef<(HTMLDivElement | null)[]>([]);
-  const gravityRef          = useRef<GravityRef>(null);
   const gravityContainerRef = useRef<HTMLDivElement>(null);
-  const mobilePillsRef      = useRef<HTMLDivElement>(null);
+  const handCursorRef       = useRef<HTMLDivElement | null>(null);
+  const handPos             = useRef({ x: 0, y: 0 });
 
-  const [cursorPos, setCursorPos]       = useState({ x: 0, y: 0 });
-  const [showCursor, setShowCursor]     = useState(false);
-  const [isTouchDevice, setIsTouchDevice] = useState(false);
+  const [showCursor, setShowCursor]       = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState<boolean | null>(null);
+  const [gravityMod, setGravityMod]       = useState<GravityModule | null>(null);
 
   // ── Main GSAP setup ──────────────────────────────────────────────────────
   useEffect(() => {
-    const isTouch = window.matchMedia("(hover: none) and (pointer: coarse)").matches;
+    const isTouch = matches(MQ.touch);
     setIsTouchDevice(isTouch);
+    // Scrubbed blur on full-width cards repaints every frame — too costly on phones
+    const lowPower = isTouch || matches(MQ.mobile);
 
     const cards  = cardRefs.current.filter(Boolean)  as HTMLDivElement[];
     const labels = labelRefs.current.filter(Boolean) as HTMLSpanElement[];
@@ -103,9 +112,7 @@ export default function SkillsSection() {
     cards.forEach((card, i) => { gsap.set(card, { zIndex: i + 1 }); });
     gsap.set(cards[0], { y: 0 });
     gsap.set(cards[1], { y: "50vh" });
-    for (let i = 2; i < cards.length; i++) {
-      gsap.set(cards[i], { y: "100vh" });
-    }
+    for (let i = 2; i < cards.length; i++) gsap.set(cards[i], { y: "100vh" });
     cards.forEach((_, i) => {
       gsap.set(labels[i], { y: 14, opacity: 0 });
       gsap.set(titles[i], { y: 52, opacity: 0 });
@@ -129,7 +136,7 @@ export default function SkillsSection() {
         const tl = gsap.timeline({
           scrollTrigger: { trigger: wrap, start: `${startPct}% top`, end: `${endPct}% top`, scrub: true },
         });
-        tl.to(cards[i],     { scale: 0.82, z: -90, opacity: 0.4, filter: "blur(7px)", transformOrigin: "50% 50%", ease: "power1.in",  duration: 1 }, 0);
+        tl.to(cards[i],     { scale: 0.82, z: -90, opacity: 0.4, ...(lowPower ? {} : { filter: "blur(7px)" }), transformOrigin: "50% 50%", ease: "power1.in",  duration: 1 }, 0);
         tl.to(cards[i + 1], { y: 0, ease: "power1.out", duration: 1 }, 0);
         if (i + 2 < cards.length) {
           tl
@@ -139,56 +146,77 @@ export default function SkillsSection() {
             .to(descs[i + 2],  { y: 0, opacity: 1, duration: 0.28, ease: "power2.out" }, 0.88);
         }
       }
-
-      // Physics pills — desktop only. gravityContainerRef is not rendered on touch.
-      if (!isTouch) {
-        ScrollTrigger.create({
-          trigger: gravityContainerRef.current,
-          start:       "top bottom",
-          end:         "bottom top",
-          onEnter:     () => gravityRef.current?.start(),
-          onLeave:     () => gravityRef.current?.stop(),
-          onEnterBack: () => gravityRef.current?.start(),
-          onLeaveBack: () => gravityRef.current?.stop(),
-        });
-      }
     }, sectionRef);
 
     return () => ctx.revert();
   }, []);
 
-  // ── Mobile pill entrance animation ───────────────────────────────────────
-  // Runs after setIsTouchDevice(true) triggers a re-render that mounts
-  // mobilePillsRef, so the ref is guaranteed to be attached here.
+  // ── Lazy-load physics once the device is known and the zone is near ─────
+  // Mounting only after detection means the world is built with the final
+  // container size and pill set, so no post-mount reset is needed.
+  // Gravity itself starts/stops as the zone enters/leaves the viewport.
   useEffect(() => {
-    if (!isTouchDevice || !mobilePillsRef.current) return;
-    const pills = Array.from(mobilePillsRef.current.children) as HTMLElement[];
-    const ctx = gsap.context(() => {
-      gsap.from(pills, {
-        opacity: 0,
-        y: 20,
-        duration: 0.45,
-        ease: "power2.out",
-        stagger: 0.04,
-        scrollTrigger: {
-          trigger: mobilePillsRef.current!,
-          start: "top 88%",
-          once: true,
-        },
-      });
-    }, mobilePillsRef);
-    return () => ctx.revert();
-  }, [isTouchDevice]);
+    const el = gravityContainerRef.current;
+    if (isTouchDevice === null || !el || gravityMod) return;
+    let cancelled = false;
+    const io = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      io.disconnect();
+      import("@/components/ui/gravity").then((m) => { if (!cancelled) setGravityMod(m); });
+    }, { rootMargin: "600px 0px" });
+    io.observe(el);
+    return () => { cancelled = true; io.disconnect(); };
+  }, [isTouchDevice, gravityMod]);
+
+  // Don't leave the system cursor hidden if we unmount mid-hover
+  useEffect(() => () => document.body.classList.remove("custom-cursor-hidden"), []);
+
+  // Hand cursor follows the mouse via a direct style write — no re-render per move
+  const placeHand = useCallback(() => {
+    const el = handCursorRef.current;
+    if (el) el.style.transform = `translate3d(${handPos.current.x}px, ${handPos.current.y}px, 0) translate(-40%, -20%)`;
+  }, []);
+  const moveHand = (e: React.MouseEvent) => {
+    handPos.current = { x: e.clientX, y: e.clientY };
+    placeHand();
+  };
+  const handRef = useCallback((el: HTMLDivElement | null) => {
+    handCursorRef.current = el;
+    placeHand();
+  }, [placeHand]);
+
+  // No hand cursor on touch
+  const hoverHandlers = isTouchDevice ? undefined : {
+    onMouseMove: moveHand,
+    onMouseEnter: (e: React.MouseEvent) => {
+      moveHand(e);
+      setShowCursor(true);
+      document.body.classList.add("custom-cursor-hidden");
+    },
+    onMouseLeave: () => {
+      setShowCursor(false);
+      document.body.classList.remove("custom-cursor-hidden");
+    },
+  };
+
+  const pills      = isTouchDevice ? PILLS_MOBILE : PILLS;
+  const gravityY   = isTouchDevice ? 1.2 : 2;
+  const pillFont   = isTouchDevice ? "0.88rem" : "1.15rem";
+  const pillPad    = isTouchDevice ? "0.65rem 1.4rem" : "0.9rem 2.2rem";
 
   return (
-    <section
-      id="skills"
-      ref={sectionRef}
-      suppressHydrationWarning
-      style={{ background: "#0a0a0a" }}
-    >
+    <section id="skills" ref={sectionRef} suppressHydrationWarning style={{ background: "#0a0a0a" }}>
+      <style>{`
+        @media (max-width: 767px) {
+          /* Reduce the top padding so the section header doesn't start too far down */
+          .sk-header  { padding: 4rem 1.5rem 2.5rem !important; }
+          /* Tighten card padding horizontally on small viewports */
+          .sk-card-inner { padding: 1.5rem !important; }
+        }
+      `}</style>
+
       {/* ── Section header ── */}
-      <div style={{ padding: "8rem 3rem 5rem", background: "#0a0a0a" }}>
+      <div className="sk-header" style={{ padding: "8rem 3rem 5rem", background: "#0a0a0a" }}>
         <span style={{ display: "block", fontFamily: "var(--font-inter)", fontSize: "0.62rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginBottom: "1.5rem" }}>
           Strategy
         </span>
@@ -205,6 +233,7 @@ export default function SkillsSection() {
             <div
               key={card.num}
               ref={(el) => { cardRefs.current[i] = el; }}
+              className="sk-card-inner"
               style={{
                 position: "absolute", top: 0, left: 0, right: 0, height: "50vh",
                 background: card.bg, display: "flex", flexDirection: "column",
@@ -232,93 +261,54 @@ export default function SkillsSection() {
         </div>
       </div>
 
-      {/* ── Pills — physics on desktop, static flex on touch ── */}
-      {isTouchDevice ? (
-        // Static mobile layout — flexbox wrap, GSAP stagger fade-in on scroll
-        <div
-          ref={mobilePillsRef}
-          style={{
-            padding: "2.5rem 1.5rem 3rem",
-            background: "#0a0a0a",
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            gap: "0.55rem",
-          }}
+      {/* ── Gravity pills — touches that miss a pill still scroll the page ── */}
+      <div
+        ref={gravityContainerRef}
+        className="gravity-zone"
+        style={{ position: "relative", background: "#0a0a0a" }}
+        {...hoverHandlers}
+      >
+        {gravityMod && (
+        <gravityMod.Gravity
+          gravity={{ x: 0, y: gravityY }}
+          grabCursor={false}
+          addTopWall={false}
+          autoStart={false}
+          runWhenVisible
         >
-          {PILLS.map((pill) => (
-            <div
+          {pills.map((pill) => (
+            <gravityMod.MatterBody
               key={pill.label}
-              style={{
+              x={pill.x}
+              y={pill.y}
+              matterBodyOptions={{ friction: 0.45, restitution: 0.3, density: 0.002 }}
+              isDraggable
+              bodyType="rectangle"
+            >
+              <div style={{
                 fontFamily: "var(--font-inter)",
-                fontSize: "0.95rem",
+                fontSize: pillFont,
                 fontWeight: 600,
                 letterSpacing: "0.04em",
-                padding: "0.65rem 1.5rem",
+                padding: pillPad,
                 borderRadius: "999px",
                 whiteSpace: "nowrap",
                 background: pill.bg,
                 color: pill.color,
                 border: (pill as { border?: string }).border ?? "none",
                 userSelect: "none",
-              }}
-            >
-              {pill.label}
-            </div>
+              }}>
+                {pill.label}
+              </div>
+            </gravityMod.MatterBody>
           ))}
-        </div>
-      ) : (
-        // Physics simulation — desktop only
-        <div
-          ref={gravityContainerRef}
-          className="gravity-zone"
-          style={{ position: "relative", height: "320px", background: "#0a0a0a" }}
-          onMouseMove={(e) => setCursorPos({ x: e.clientX, y: e.clientY })}
-          onMouseEnter={() => { setShowCursor(true);  document.body.classList.add("custom-cursor-hidden"); }}
-          onMouseLeave={() => { setShowCursor(false); document.body.classList.remove("custom-cursor-hidden"); }}
-        >
-          <Gravity
-            ref={gravityRef}
-            gravity={{ x: 0, y: 2 }}
-            grabCursor={false}
-            addTopWall={false}
-            autoStart={false}
-          >
-            {PILLS.map((pill) => (
-              <MatterBody
-                key={pill.label}
-                x={pill.x}
-                y={pill.y}
-                matterBodyOptions={{ friction: 0.45, restitution: 0.3, density: 0.002 }}
-                isDraggable
-                bodyType="rectangle"
-              >
-                <div
-                  style={{
-                    fontFamily: "var(--font-inter)",
-                    fontSize: "1.15rem",
-                    fontWeight: 600,
-                    letterSpacing: "0.04em",
-                    padding: "0.9rem 2.2rem",
-                    borderRadius: "999px",
-                    whiteSpace: "nowrap",
-                    background: pill.bg,
-                    color: pill.color,
-                    border: (pill as { border?: string }).border ?? "none",
-                    userSelect: "none",
-                  }}
-                >
-                  {pill.label}
-                </div>
-              </MatterBody>
-            ))}
-          </Gravity>
-        </div>
-      )}
+        </gravityMod.Gravity>
+        )}
+      </div>
 
-      {/* ── Hand cursor — desktop only (touch has no hover pointer) ── */}
-      {!isTouchDevice && showCursor && (
-        <div style={{ position: "fixed", left: cursorPos.x, top: cursorPos.y, transform: "translate(-40%, -20%)", pointerEvents: "none", zIndex: 9999, userSelect: "none" }}>
+      {/* ── Hand cursor — desktop only ── */}
+      {showCursor && (
+        <div ref={handRef} style={{ position: "fixed", left: 0, top: 0, pointerEvents: "none", zIndex: 9999, userSelect: "none" }}>
           <svg width="64" height="64" viewBox="0 0 40 50" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
             <rect x="15" y="0"  width="8"  height="30" rx="4" />
             <rect x="24" y="5"  width="8"  height="25" rx="4" />

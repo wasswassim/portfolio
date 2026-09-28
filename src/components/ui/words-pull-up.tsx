@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -32,6 +32,8 @@ export function WordsPullUp({
 }: WordsPullUpProps) {
   const ref    = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once });
+  // Reduced motion: render words in place, no reveal
+  const reduce = useReducedMotion();
   const words  = text.split(" ");
 
   return (
@@ -43,7 +45,7 @@ export function WordsPullUp({
       {words.map((word, i) => (
         <motion.span
           key={i}
-          initial={{ y: 28, opacity: 0 }}
+          initial={reduce ? false : { y: 28, opacity: 0 }}
           animate={inView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration, delay: wordDelay + i * stagger, ease: EASE }}
           style={{ display: "inline-block", marginRight: i < words.length - 1 ? "0.2em" : 0 }}
@@ -87,6 +89,7 @@ export function WordsPullUpMultiStyle({
 }: WordsPullUpMultiStyleProps) {
   const ref    = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once });
+  const reduce = useReducedMotion();
 
   // Flatten all segments into a single word list preserving per-word style
   const words: { word: string; className?: string; style?: React.CSSProperties }[] = [];
@@ -105,7 +108,7 @@ export function WordsPullUpMultiStyle({
       {words.map((w, i) => (
         <motion.span
           key={i}
-          initial={{ y: 28, opacity: 0 }}
+          initial={reduce ? false : { y: 28, opacity: 0 }}
           animate={inView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration, delay: wordDelay + i * stagger, ease: EASE }}
           className={w.className ?? ""}

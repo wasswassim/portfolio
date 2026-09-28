@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import gsap from "gsap";
+import { MQ, matches } from "@/lib/media";
 
 export default function Preloader({ onDone }: { onDone: () => void }) {
   const [visible, setVisible]   = useState(true);
@@ -48,6 +49,9 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
 
     // Breathe at 100 before exiting
     tl.to({}, { duration: 0.35 });
+
+    // Reduced motion: same sequence, just much quicker
+    if (matches(MQ.reduced)) tl.timeScale(4);
 
     return () => { tl.kill(); };
   }, []);

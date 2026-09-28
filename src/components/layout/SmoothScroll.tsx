@@ -5,14 +5,21 @@ import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { setLenis } from "@/lib/lenis";
+import { MQ, matches } from "@/lib/media";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroll({ children }: { children: React.ReactNode }) {
   useEffect(() => {
+    const reduceMotion = matches(MQ.reduced);
+
+    // Touch devices keep native (momentum) scrolling — Lenis only smooths the
+    // wheel. It stays mounted everywhere so stop()/start()/scrollTo() work.
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: !reduceMotion,
+      syncTouch: false,
     });
 
     setLenis(lenis);
