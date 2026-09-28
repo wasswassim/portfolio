@@ -33,8 +33,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   /* scroll-behavior: smooth removed — conflicts with GSAP ScrollTrigger scrub */
-  /* iOS Safari ignores overflow-x on body alone; clip (unlike hidden) doesn't
-     create a scroll container, so ScrollTrigger pins keep working */
+  /* iOS Safari ignores overflow-x on body alone, so clip here as well */
   overflow-x: clip;
 }
 
@@ -44,7 +43,16 @@ body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* Must be clip, not hidden: with html no longer "visible", hidden would make
+     body its own (never-scrolling) scroll container and break position: sticky
+     in SkillsSection */
+  overflow-x: clip;
+}
+
+/* Browsers without clip also drop it on html, so body's hidden propagates to
+   the viewport as before — no scroll container, sticky still works */
+@supports not (overflow-x: clip) {
+  body { overflow-x: hidden; }
 }
 
 /* Custom cursor only on real pointer devices — never hide cursor on touch */
