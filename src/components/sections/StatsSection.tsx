@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const STATS = [
   { target: 10, suffix: "+", label: "Projects Completed" },
   { target: 3,  suffix: "+", label: "Years of Experience" },
-  { target: 4,  suffix: "",  label: "Countries Worked With" },
+  { target: 2,  suffix: "",  label: "Countries Worked With" },
 ];
 
 const MARQUEE_TEXT =
