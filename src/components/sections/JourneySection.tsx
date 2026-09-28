@@ -134,6 +134,11 @@ export default function JourneySection() {
           transition: color 0.2s ease;
         }
         .cj-social:hover { color: rgba(0,0,0,0.85); }
+        /* iOS zooms into any field under 16px on focus and stays zoomed —
+           the page then pans sideways past its edges */
+        @media (pointer: coarse), (max-width: 767px) {
+          .cj-input { font-size: 16px; }
+        }
         @media (max-width: 767px) {
           .cj-grid      { grid-template-columns: 1fr !important; }
           /* Photos drop below the form instead of disappearing */
