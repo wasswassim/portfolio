@@ -34,13 +34,15 @@ export default function JourneySection() {
 
     const ctx = gsap.context(() => {
       const trigger = { trigger: section, start: "top 80%", once: true };
+      // Photos sit below the form on mobile, so reveal them when they arrive
+      const photoTrigger = { trigger: leftColRef.current, start: "top 85%", once: true };
 
       // Left column: slides in from left while fading
       gsap.from(leftColRef.current, {
         x: -50, opacity: 0,
         duration: 1.05,
         ease: "power3.out",
-        scrollTrigger: trigger,
+        scrollTrigger: photoTrigger,
       });
 
       // Portrait: rises from below inside the column (short delay so it follows the column)
@@ -49,7 +51,7 @@ export default function JourneySection() {
         duration: 1.0,
         ease: "power3.out",
         delay: 0.22,
-        scrollTrigger: trigger,
+        scrollTrigger: photoTrigger,
       });
 
       // Right column: each semantic block staggers up
@@ -134,7 +136,9 @@ export default function JourneySection() {
         .cj-social:hover { color: rgba(0,0,0,0.85); }
         @media (max-width: 767px) {
           .cj-grid      { grid-template-columns: 1fr !important; }
-          .cj-photo-col { display: none !important; }
+          /* Photos drop below the form instead of disappearing */
+          .cj-photo-col { order: 2; min-height: 125vw; }
+          .cj-portrait-wrap { padding: 0 1.5rem 2.5rem !important; }
           .cj-form-col  { padding: 4rem 1.5rem !important; }
           .cj-footer    { padding: 1.2rem 1.5rem !important; }
         }
@@ -151,11 +155,11 @@ export default function JourneySection() {
             alt=""
             fill
             style={{ objectFit: "cover", objectPosition: "center" }}
-            sizes="50vw"
+            sizes="(max-width: 767px) 100vw, 50vw"
           />
           {/* Foreground portrait — smaller, pushed toward bottom so more
               of the background environment shows above it */}
-          <div style={{
+          <div className="cj-portrait-wrap" style={{
             position: "absolute",
             inset: 0,
             display: "flex",
@@ -178,7 +182,7 @@ export default function JourneySection() {
                 alt="Wassim Gatri"
                 fill
                 style={{ objectFit: "cover", objectPosition: "center top" }}
-                sizes="35vw"
+                sizes="(max-width: 767px) 60vw, 35vw"
               />
             </div>
           </div>
