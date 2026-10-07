@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Syne, Bebas_Neue, IBM_Plex_Sans_Arabic } from "next/font/google";
 import "../blog.css";
-import { DEFAULT_LANG, DIR, LANGS, isLang } from "@/lib/i18n/config";
+import { DIR } from "@/lib/i18n/config";
+import { langStaticParams, toLang } from "@/lib/i18n/params";
 import { SITE_URL } from "@/lib/seo/site";
 import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
 
@@ -25,7 +26,7 @@ const plexArabic = IBM_Plex_Sans_Arabic({
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return LANGS.map((lang) => ({ lang }));
+  return langStaticParams();
 }
 
 export const metadata: Metadata = {
@@ -43,7 +44,7 @@ export default async function BlogRootLayout({
   params,
 }: Readonly<{ children: React.ReactNode; params: Promise<{ lang: string }> }>) {
   const { lang: raw } = await params;
-  const lang = isLang(raw) ? raw : DEFAULT_LANG;
+  const lang = toLang(raw);
   return (
     <html lang={lang} dir={DIR[lang]} className={`${syne.variable} ${bebasNeue.variable} ${plexArabic.variable}`}>
       <body>

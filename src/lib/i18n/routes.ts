@@ -2,7 +2,6 @@ import { LANGS, type Lang } from "./config";
 
 // Every URL ends in "/" because next.config.ts sets trailingSlash: true.
 export const homePath = (): string => "/";
-export const langHomePath = (lang: Lang): string => `/${lang}/`;
 export const blogPath = (lang: Lang): string => `/${lang}/blog/`;
 export const articlePath = (lang: Lang, slug: string): string => `/${lang}/blog/${slug}/`;
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LANGS, DEFAULT_LANG, isLang, type Lang } from "@/lib/i18n/config";
+import { langStaticParams, toLang, type LangPageProps as Props } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n";
 import { blogPath } from "@/lib/i18n/routes";
 
@@ -8,11 +8,8 @@ import { blogPath } from "@/lib/i18n/routes";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return LANGS.map((lang) => ({ lang }));
+  return langStaticParams();
 }
-
-type Props = { params: Promise<{ lang: string }> };
-const toLang = (raw: string): Lang => (isLang(raw) ? raw : DEFAULT_LANG);
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const lang = toLang((await params).lang);

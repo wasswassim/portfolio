@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { LANGS, DEFAULT_LANG, DIR, LANG_LABEL, LOCALE, isLang, type Lang } from "@/lib/i18n/config";
+import { LANGS, DEFAULT_LANG, DIR, LANG_LABEL, LOCALE, type Lang } from "@/lib/i18n/config";
+import { langStaticParams, toLang, type LangPageProps as Props } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n";
 import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
 import { articlesForLang, langsWithArticles } from "@/content/articles";
@@ -13,12 +14,8 @@ import BidiText from "@/components/blog/BidiText";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return LANGS.map((lang) => ({ lang }));
+  return langStaticParams();
 }
-
-type Props = { params: Promise<{ lang: string }> };
-
-const toLang = (raw: string): Lang => (isLang(raw) ? raw : DEFAULT_LANG);
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const lang = toLang((await params).lang);

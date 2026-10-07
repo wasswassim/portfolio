@@ -18,14 +18,6 @@ for (const article of ARTICLES) {
   }
 }
 
-export function articleById(id: string): Article | undefined {
-  return ARTICLES.find((a) => a.id === id);
-}
-
-export function translationFor(article: Article, lang: Lang): ArticleTranslation | undefined {
-  return article.translations[lang];
-}
-
 export function articleBySlug(
   lang: Lang,
   slug: string,

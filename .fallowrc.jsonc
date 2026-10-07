@@ -1,0 +1,7 @@
+{
+  // Fallow (https://fallow.tools): `npx fallow dead-code`
+  // The article template is copied by `npm run new-article`; nothing imports it.
+  "ignorePatterns": ["src/content/articles/_template/**"],
+  // Loaded by name from eslint.config.mjs (compat.extends "next/core-web-vitals"), not imported.
+  "ignoreDependencies": ["eslint-config-next"]
+}

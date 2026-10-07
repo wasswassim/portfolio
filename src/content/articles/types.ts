@@ -1,7 +1,6 @@
 import type { Lang } from "@/lib/i18n/config";
 
-export const CATEGORIES = ["documents", "work", "language", "daily-life"] as const;
-export type CategoryId = (typeof CATEGORIES)[number];
+export type CategoryId = "documents" | "work" | "language" | "daily-life";
 
 /**
  * Article body as typed blocks. Text fields accept light inline markup:
