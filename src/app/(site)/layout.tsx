@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Syne, Bebas_Neue } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import CustomCursor from "@/components/layout/CustomCursor";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 
