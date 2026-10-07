@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "check:articles": "node scripts/check-articles.mjs",
+    "new-article": "node scripts/new-article.mjs",
+    "prebuild": "node scripts/check-articles.mjs",
     "clean": "rimraf .next",
     "dev:clean": "rimraf .next && next dev"
   },
