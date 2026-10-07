@@ -3,7 +3,7 @@
 //   id: lowercase letters, digits, hyphens (e.g. renting-a-flat-in-milan)
 //   category: documents | work | language | daily-life (default daily-life)
 // Add --root <dir> to run against another project copy (used for testing).
-import { cpSync, existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 

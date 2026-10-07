@@ -3,6 +3,7 @@ import { Syne, Bebas_Neue } from "next/font/google";
 import "../globals.css";
 import CustomCursor from "@/components/layout/CustomCursor";
 import SmoothScroll from "@/components/layout/SmoothScroll";
+import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
 
 // Syne: geometric, editorial, high-fashion — replaces Inter across the whole site.
 // We keep --font-inter as the variable name so every component picks it up with zero changes.
@@ -46,6 +47,7 @@ export default function RootLayout({
         className={`${syne.variable} ${bebasNeue.variable}`}
         suppressHydrationWarning
       >
+        <AhrefsAnalytics />
         <CustomCursor />
         <SmoothScroll>{children}</SmoothScroll>
       </body>

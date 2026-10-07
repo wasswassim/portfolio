@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Syne, Bebas_Neue } from "next/font/google";
 import Link from "next/link";
+import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
 import "./(blog)/blog.css";
 
 // Global 404 (becomes out/404.html, which GitHub Pages serves for unknown URLs).
@@ -19,6 +20,7 @@ export default function GlobalNotFound() {
   return (
     <html lang="en" dir="ltr" className={`${syne.variable} ${bebasNeue.variable}`}>
       <body>
+        <AhrefsAnalytics />
         <main className="blog-main" style={{ display: "grid", placeContent: "center", textAlign: "center" }}>
           <p className="blog-eyebrow">404</p>
           <h1 className="blog-h1">Page not found</h1>

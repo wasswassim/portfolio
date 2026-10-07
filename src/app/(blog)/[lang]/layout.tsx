@@ -3,6 +3,7 @@ import { Syne, Bebas_Neue, IBM_Plex_Sans_Arabic } from "next/font/google";
 import "../blog.css";
 import { DEFAULT_LANG, DIR, LANGS, isLang } from "@/lib/i18n/config";
 import { SITE_URL } from "@/lib/seo/site";
+import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
 
 // Second root layout (route group "(blog)"): it owns <html lang dir> so every
 // blog page ships the correct language and direction in its static HTML.
@@ -45,7 +46,10 @@ export default async function BlogRootLayout({
   const lang = isLang(raw) ? raw : DEFAULT_LANG;
   return (
     <html lang={lang} dir={DIR[lang]} className={`${syne.variable} ${bebasNeue.variable} ${plexArabic.variable}`}>
-      <body>{children}</body>
+      <body>
+        <AhrefsAnalytics />
+        {children}
+      </body>
     </html>
   );
 }
