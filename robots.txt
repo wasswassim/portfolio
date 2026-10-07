@@ -1,0 +1,13 @@
+User-Agent: *
+Allow: /
+
+User-Agent: GPTBot
+User-Agent: OAI-SearchBot
+User-Agent: ChatGPT-User
+User-Agent: ClaudeBot
+User-Agent: Claude-SearchBot
+User-Agent: PerplexityBot
+User-Agent: Google-Extended
+Allow: /
+
+Sitemap: https://wassimgatri.com/sitemap.xml
