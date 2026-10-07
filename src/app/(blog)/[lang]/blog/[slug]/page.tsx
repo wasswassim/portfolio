@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LANGS, DEFAULT_LANG, LOCALE, isLang, type Lang } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
-import { articlePath, blogPath, languageAlternates } from "@/lib/i18n/routes";
+import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
 import { allArticleParams, articleBySlug } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { JsonLd, personLd, blogPostingLd, breadcrumbLd, faqLd } from "@/lib/seo/jsonld";
-import { faqPairsOf, headingsOf, readingMinutes } from "@/content/articles/blocks";
+import { JsonLd, personLd, blogPostingLd, breadcrumbLd, faqLd, videoLd } from "@/lib/seo/jsonld";
+import { faqPairsOf, headingsOf, readingMinutes, videosOf, wordCountOf } from "@/content/articles/blocks";
+import { SITE_NAME, SITE_URL } from "@/lib/seo/site";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogFooter from "@/components/blog/BlogFooter";
 import BidiText from "@/components/blog/BidiText";
 import GuideCard from "@/components/blog/GuideCard";
 import ArticleBody from "@/components/blog/ArticleBody";
-import TableOfContents from "@/components/blog/TableOfContents";
 
 export const dynamicParams = false;
 
@@ -37,8 +37,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     const t = article.translations[l];
     return t ? articlePath(l, t.slug) : null;
   };
-  // x-default: the English edition when it exists, otherwise the English blog home
-  const xDefault = pathFor(DEFAULT_LANG) ?? blogPath(DEFAULT_LANG);
+  // x-default: the first language the article exists in (English first), else the English blog home
+  const xDefault = preferredPath(pathFor, blogPath(DEFAULT_LANG));
   return buildMetadata({
     lang,
     path: articlePath(lang, translation.slug),
@@ -48,6 +48,8 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
     type: "article",
     publishedTime: article.publishedAt,
     modifiedTime: article.updatedAt,
+    section: getDictionary(lang).categories[article.category],
+    image: article.image && { ...article.image, alt: translation.imageAlt ?? translation.title },
   });
 }
 
@@ -66,8 +68,11 @@ export default async function ArticlePage(props: Props) {
   const fmt = (iso: string) => dateFmt.format(new Date(iso));
   const guide = translation.guide ?? [];
   const minutes = readingMinutes(lang, "", translation.body);
-  const headings = headingsOf(translation.body);
+  const headings = headingsOf(translation.body).filter((h) => h.level === 2);
   const faq = faqLd(faqPairsOf([...translation.body, ...guide]));
+  const videos = videosOf([...translation.body, ...guide])
+    .map((v) => videoLd(v))
+    .filter((v): v is NonNullable<typeof v> => v !== null);
 
   return (
     <>
@@ -85,6 +90,7 @@ export default async function ArticlePage(props: Props) {
               <BidiText lang={lang}>{translation.title}</BidiText>
             </h1>
             <p className="blog-meta">
+              <span>{dict.article.by} <a href={SITE_URL} rel="author">{SITE_NAME}</a></span>
               <span>{dict.article.published} <time dateTime={article.publishedAt}>{fmt(article.publishedAt)}</time></span>
               <span>{dict.article.updated} <time dateTime={article.updatedAt}>{fmt(article.updatedAt)}</time></span>
               <span>{dict.article.readTime(minutes)}</span>
@@ -93,11 +99,10 @@ export default async function ArticlePage(props: Props) {
               )}
               <a href="#guide" className="blog-guide-jump">{dict.article.guide} <span aria-hidden="true">↓</span></a>
             </p>
-            <TableOfContents headings={headings} lang={lang} dict={dict} />
             <ArticleBody body={translation.body} lang={lang} dict={dict} />
             {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
           </article>
-          <GuideCard summary={translation.summary} guide={guide} lang={lang} dict={dict} />
+          <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
         </div>
       </main>
       <BlogFooter dict={dict} />
@@ -109,14 +114,22 @@ export default async function ArticlePage(props: Props) {
             path,
             headline: translation.title,
             description: translation.metaDescription,
+            abstract: translation.summary,
+            image: article.image,
+            keywords: translation.keywords,
+            section: dict.categories[article.category],
+            wordCount: wordCountOf(translation.summary, [...translation.body, ...guide]),
+            minutes,
             publishedAt: article.publishedAt,
             updatedAt: article.updatedAt,
           }),
           breadcrumbLd([
+            { name: SITE_NAME, path: "/" },
             { name: dict.blogName, path: blogPath(lang) },
             { name: translation.title, path },
           ]),
           ...(faq ? [faq] : []),
+          ...videos,
         ]}
       />
     </>

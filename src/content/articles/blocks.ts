@@ -3,13 +3,22 @@ import type { Block } from "./types";
 
 export type Heading = { id: string; text: string; level: 2 | 3 };
 
-/** Table-of-contents entries. */
+/** Table-of-contents entries (h2/h3 blocks plus FAQ/sources blocks that carry their own id + title). */
 export function headingsOf(body: Block[]): Heading[] {
-  return body.flatMap((b) =>
-    b.type === "h2" || b.type === "h3"
-      ? [{ id: b.id, text: stripMarkup(b.text), level: b.type === "h2" ? (2 as const) : (3 as const) }]
-      : [],
-  );
+  return body.flatMap((b): Heading[] => {
+    if (b.type === "h2" || b.type === "h3") {
+      return [{ id: b.id, text: stripMarkup(b.text), level: b.type === "h2" ? 2 : 3 }];
+    }
+    if ((b.type === "faq" || b.type === "sources") && b.id && b.title) {
+      return [{ id: b.id, text: stripMarkup(b.title), level: 2 }];
+    }
+    return [];
+  });
+}
+
+/** Every heading id in a block list; used to reject duplicates at build time. */
+export function headingIdsOf(blocks: Block[]): string[] {
+  return headingsOf(blocks).map((h) => h.id);
 }
 
 export function stripMarkup(text: string): string {
@@ -32,6 +41,10 @@ function blockText(b: Block): string {
     case "callout":
     case "quote":
       return b.text;
+    case "figure":
+      return b.caption;
+    case "video":
+      return b.title + " " + b.caption;
     case "steps":
       return b.items.map((i) => `${i.title} ${i.text}`).join(" ");
     case "keyFacts":
@@ -49,6 +62,16 @@ export function readingMinutes(lang: Lang, summary: string, body: Block[]): numb
   const text = stripMarkup([summary, ...body.map(blockText)].join(" "));
   const words = text.split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / WORDS_PER_MINUTE[lang]));
+}
+
+export function wordCountOf(summary: string, body: Block[]): number {
+  return stripMarkup([summary, ...body.map(blockText)].join(" ")).split(/\s+/).filter(Boolean).length;
+}
+
+export type VideoBlock = Extract<Block, { type: "video" }>;
+
+export function videosOf(blocks: Block[]): VideoBlock[] {
+  return blocks.filter((b): b is VideoBlock => b.type === "video");
 }
 
 /** Plain-text FAQ pairs for FAQPage JSON-LD (markup stripped). */

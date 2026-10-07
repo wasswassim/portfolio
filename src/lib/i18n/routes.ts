@@ -19,3 +19,12 @@ export function languageAlternates(
   out["x-default"] = xDefault;
   return out;
 }
+
+/** x-default for an article: the first language it exists in (en, fr, ar order), else the fallback. */
+export function preferredPath(pathFor: (lang: Lang) => string | null, fallback: string): string {
+  for (const lang of LANGS) {
+    const path = pathFor(lang);
+    if (path) return path;
+  }
+  return fallback;
+}

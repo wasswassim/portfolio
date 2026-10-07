@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { LANGS } from "@/lib/i18n/config";
-import { articlePath, blogPath, homePath, languageAlternates } from "@/lib/i18n/routes";
-import { ARTICLES } from "@/content/articles";
+import { articlePath, blogPath, homePath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
+import { ARTICLES, langsWithArticles } from "@/content/articles";
 import { absoluteUrl } from "@/lib/seo/site";
 
 export const dynamic = "force-static";
@@ -15,11 +15,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const entries: MetadataRoute.Sitemap = [{ url: abs(homePath()) }];
 
-  for (const lang of LANGS) {
+  const live = langsWithArticles();
+  const landingFor = (l: (typeof LANGS)[number]) => (live.includes(l) ? blogPath(l) : null);
+  const landingAlternates = absAll(languageAlternates(landingFor, preferredPath(landingFor, blogPath("en"))));
+  for (const lang of live) {
     entries.push({
       url: abs(blogPath(lang)),
       lastModified: latestUpdate,
-      alternates: { languages: absAll(languageAlternates(blogPath, blogPath("en"))) },
+      alternates: { languages: landingAlternates },
     });
   }
 
@@ -28,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const t = article.translations[l];
       return t ? articlePath(l, t.slug) : null;
     };
-    const xDefault = pathFor("en") ?? blogPath("en");
+    const xDefault = preferredPath(pathFor, blogPath("en"));
     const languages = absAll(languageAlternates(pathFor, xDefault));
     for (const lang of LANGS) {
       const t = article.translations[lang];

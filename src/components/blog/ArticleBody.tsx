@@ -1,6 +1,7 @@
 import type { Lang } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n";
 import type { Block } from "@/content/articles/types";
+import Image from "next/image";
 import Inline from "./Inline";
 
 function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dictionary }) {
@@ -54,6 +55,26 @@ function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dict
           </dl>
         </section>
       );
+    case "figure":
+      return (
+        <figure className="blog-figure">
+          <Image
+            src={block.src}
+            width={block.width}
+            height={block.height}
+            alt={block.alt}
+            sizes="(min-width: 64rem) 42rem, 100vw"
+          />
+          <figcaption>
+            {t(block.caption)}
+            {block.credit && (
+              <small>
+                <a href={block.credit.url} rel="noopener noreferrer" target="_blank">{block.credit.text}</a>
+              </small>
+            )}
+          </figcaption>
+        </figure>
+      );
     case "quote":
       return (
         <blockquote className="blog-quote">
@@ -64,19 +85,66 @@ function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dict
     case "faq":
       return (
         <section className="blog-faq">
-          <h2 className="blog-h2">{dict.article.faq}</h2>
-          {block.items.map((item, i) => (
-            <div key={i}>
-              <h3 className="blog-h3">{t(item.q)}</h3>
-              <p>{t(item.a)}</p>
-            </div>
-          ))}
+          <h2 id={block.id} className="blog-h2">{block.title ?? dict.article.faq}</h2>
+          {/* Native <details>: no JS, keyboard and screen-reader friendly, answers stay in the HTML.
+              Items share a name, so opening one closes the others where the browser supports it. */}
+          <div className="blog-accordion">
+            {block.items.map((item, i) => (
+              <details key={i} name={"faq-" + (block.id ?? "faq")} className="blog-acc-item">
+                <summary>
+                  <h3 className="blog-acc-q">{t(item.q)}</h3>
+                  <span className="blog-acc-icon" aria-hidden="true" />
+                </summary>
+                <div className="blog-acc-panel">
+                  <p>{t(item.a)}</p>
+                </div>
+              </details>
+            ))}
+          </div>
         </section>
       );
+    case "video": {
+      const ratio = (block.width ?? 16) + " / " + (block.height ?? 9);
+      const src =
+        block.provider === "youtube"
+          ? "https://www.youtube-nocookie.com/embed/" + block.id + "?rel=0"
+          : "https://player.vimeo.com/video/" + block.id + "?dnt=1";
+      return (
+        <figure className="blog-figure blog-video">
+          <div className="blog-video-frame" style={{ aspectRatio: ratio }}>
+            {block.provider === "file" ? (
+              <video controls preload="metadata" playsInline poster={block.thumbnail} aria-label={block.title}>
+                <source src={block.id} />
+                {block.captions && (
+                  <track kind="captions" src={block.captions.src} srcLang={block.captions.lang} label={block.captions.label} />
+                )}
+              </video>
+            ) : (
+              <iframe
+                src={src}
+                title={block.title}
+                loading="lazy"
+                allow="accelerometer; encrypted-media; picture-in-picture; fullscreen"
+                allowFullScreen
+                referrerPolicy="strict-origin-when-cross-origin"
+              />
+            )}
+          </div>
+          <figcaption>
+            {t(block.caption)}
+            {block.credit && (
+              <small>
+                <a href={block.credit.url} rel="noopener noreferrer" target="_blank">{block.credit.text}</a>
+              </small>
+            )}
+          </figcaption>
+        </figure>
+      );
+    }
     case "sources":
       return (
         <section className="blog-sources">
-          <h2 className="blog-h2">{dict.article.sources}</h2>
+          <h2 id={block.id} className="blog-h2">{block.title ?? dict.article.sources}</h2>
           <ol>
             {block.items.map((item, i) => <li key={i}>{t(`[${item.label}](${item.url})`)}</li>)}
           </ol>

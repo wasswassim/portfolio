@@ -61,7 +61,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-skip:focus { inset-block-start: 1rem; }
 
 /* ── Header ── */
+/* The header keeps one physical layout in every language: logo left, links and the
+   language toggle right, toggle order en / fr / ar. direction: ltr here (not on <html>)
+   stops the Arabic page from mirroring it; page content below still follows dir. */
 .blog-header {
+  direction: ltr;
   display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
   padding-block: 1.25rem; padding-inline: var(--gutter);
   border-block-end: 1px solid var(--border);
@@ -75,19 +79,38 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-header nav { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
 .blog-nav-link {
   font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
-  min-block-size: 44px; display: inline-flex; align-items: center; transition: color 0.2s ease;
+  min-block-size: 44px; display: inline-flex; align-items: center; justify-content: center;
+  /* fixed slot, label centred: translated labels of different widths do not shift neighbours */
+  min-inline-size: 5.4rem; transition: color 0.2s ease;
 }
+/* letter-spacing would break Arabic letter joining */
+:lang(ar) .blog-nav-link { letter-spacing: 0; text-transform: none; font-size: 0.8rem; }
 .blog-nav-link:hover, .blog-nav-link[aria-current] { color: var(--fg); }
 
-.blog-langs { display: flex; gap: 0.35rem; }
-.blog-lang {
-  font-size: 0.7rem; letter-spacing: 0.08em; padding-inline: 0.8rem;
-  min-block-size: 36px; display: inline-flex; align-items: center;
-  border: 1px solid var(--border); border-radius: 999px; color: var(--muted);
-  transition: color 0.2s ease, border-color 0.2s ease;
+/* Language toggle: a thumb behind three equal segments. --i is the active index; the
+   thumb's inline-start offset is logical, so it also slides correctly in RTL. */
+.blog-toggle {
+  --seg: 5.2rem; --pad: 3px;
+  position: relative; display: inline-block; padding: var(--pad);
+  border: 1px solid var(--border); border-radius: 999px; background: var(--surface);
 }
-.blog-lang:hover { color: var(--fg); border-color: rgba(255, 255, 255, 0.4); }
-.blog-lang[aria-current="page"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.blog-toggle-options { position: relative; z-index: 1; list-style: none; display: grid; grid-template-columns: repeat(3, var(--seg)); }
+.blog-toggle-thumb {
+  position: absolute; inset-block: var(--pad); inline-size: var(--seg);
+  inset-inline-start: calc(var(--pad) + var(--i) * var(--seg));
+  border-radius: 999px; background: var(--fg);
+  transition: inset-inline-start 0.4s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+.blog-lang {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  min-block-size: 36px; font-size: 0.7rem; letter-spacing: 0.06em; color: var(--muted); white-space: nowrap;
+  transition: color 0.25s ease, transform 0.15s ease;
+}
+.blog-lang:hover { color: var(--fg); }
+.blog-lang:active { transform: scale(0.94); }
+.blog-lang[aria-current="page"] { color: var(--bg); font-weight: 600; }
+.blog-lang:focus-visible { outline-offset: -2px; border-radius: 999px; }
+@media (max-width: 30rem) { .blog-toggle { --seg: 4.3rem; } .blog-lang { font-size: 0.66rem; letter-spacing: 0; } }
 
 /* ── Main ── */
 .blog-main { flex: 1; padding-block: clamp(2.5rem, 7vw, 5rem); padding-inline: var(--gutter); inline-size: 100%; max-inline-size: 72rem; margin-inline: auto; }
@@ -180,6 +203,47 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-steps strong { font-size: 1.05rem; }
 .blog-steps span { color: var(--muted); }
 
+.blog-figure { margin-block: 2rem; }
+.blog-figure img { display: block; inline-size: 100%; block-size: auto; border-radius: 0.8rem; border: 1px solid var(--border); background: var(--surface); }
+.blog-figure figcaption { margin-block-start: 0.7rem; font-size: 0.82rem; line-height: 1.6; color: var(--muted); }
+.blog-figure figcaption small { display: block; margin-block-start: 0.2rem; font-size: 0.72rem; }
+.blog-figure figcaption a { color: inherit; text-decoration: underline; text-underline-offset: 0.2em; }
+.blog-figure figcaption a:hover { color: var(--fg); }
+
+/* FAQ accordion (native <details>) */
+.blog-accordion { border: 1px solid var(--border); border-radius: 0.9rem; overflow: hidden; background: var(--surface); }
+.blog-acc-item + .blog-acc-item { border-block-start: 1px solid var(--border); }
+.blog-acc-item summary {
+  list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1rem 1.2rem; min-block-size: 44px; transition: background 0.2s ease;
+}
+.blog-acc-item summary::-webkit-details-marker { display: none; }
+.blog-acc-item summary:hover { background: rgba(255, 255, 255, 0.03); }
+.blog-acc-item summary:focus-visible { outline-offset: -2px; }
+.blog-acc-q { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.5; letter-spacing: 0; }
+.blog-acc-icon { position: relative; flex: none; inline-size: 1rem; block-size: 1rem; }
+.blog-acc-icon::before, .blog-acc-icon::after {
+  content: ""; position: absolute; inset-inline-start: 0; inset-block-start: calc(50% - 1px);
+  inline-size: 100%; block-size: 2px; border-radius: 2px; background: var(--accent);
+  transition: transform 0.3s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+.blog-acc-icon::after { transform: rotate(90deg); }
+.blog-acc-item[open] .blog-acc-icon::after { transform: rotate(0deg); }
+.blog-acc-panel { padding: 0 1.2rem 1.1rem; color: rgba(255, 255, 255, 0.82); }
+.blog-acc-panel p { margin: 0; font-size: 0.98rem; }
+.blog-acc-item[open] .blog-acc-panel { animation: blog-acc-in 0.3s ease; }
+@keyframes blog-acc-in { from { opacity: 0; transform: translateY(-4px); } }
+/* Smooth height where the browser supports animating <details> content */
+@supports (selector(::details-content)) {
+  :root { interpolate-size: allow-keywords; }
+  .blog-acc-item::details-content { block-size: 0; overflow: clip; transition: block-size 0.3s ease, content-visibility 0.3s allow-discrete; }
+  .blog-acc-item[open]::details-content { block-size: auto; }
+}
+
+/* Video embeds keep their space (no layout shift) via aspect-ratio set inline */
+.blog-video-frame { position: relative; overflow: hidden; border-radius: 0.8rem; border: 1px solid var(--border); background: #000; }
+.blog-video-frame iframe, .blog-video-frame video { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; border: 0; }
+
 .blog-quote { margin-block: 2rem; padding-inline-start: 1.2rem; border-inline-start: 2px solid var(--border); font-size: 1.2rem; font-style: italic; }
 .blog-quote footer { font-size: 0.85rem; font-style: normal; color: var(--muted); }
 
@@ -230,6 +294,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-prose--compact .blog-steps li { padding-inline-start: 2.6rem; padding-block-end: 1.1rem; }
 .blog-prose--compact .blog-steps strong { font-size: 0.95rem; }
 
+/* Section list inside the card: flat, no box of its own */
+.blog-guide .blog-toc { margin-block: 1.1rem 0; padding: 0; border: 0; background: none; }
+.blog-guide .blog-toc a { font-size: 0.85rem; padding-block: 0.2rem; }
+
 /* Small screens: show the jump link, card sits below the article */
 .blog-guide-jump { color: var(--accent); }
 @media (min-width: 64rem) {
@@ -259,26 +327,33 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
    Cross-document View Transitions (Chrome 126+, Safari 18.2+): plain links keep
    working everywhere, supporting browsers animate. The card title morphs into the
    article title (matching view-transition-name "post-{id}"); the header stays put;
-   the rest cross-fades with a short rise. Both pages must opt in, so this covers
+   the rest simply fades out and back in. Both pages must opt in, so this covers
    blog-to-blog navigation (list, article, language switch). */
 @view-transition { navigation: auto; }
 
 .blog-header { view-transition-name: blog-header; }
+.blog-toggle-thumb { view-transition-name: lang-thumb; }
+.blog-toggle-options { view-transition-name: lang-labels; }
 
-::view-transition-old(root) { animation: blog-vt-out 0.2s ease both; }
-::view-transition-new(root) { animation: blog-vt-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both; }
+/* Content only fades (no movement); the header is excluded from the fade entirely */
+::view-transition-old(root) { animation: blog-vt-out 0.18s ease both; }
+::view-transition-new(root) { animation: blog-vt-in 0.32s ease 0.08s both; }
 ::view-transition-group(*) { animation-duration: 0.55s; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+::view-transition-old(blog-header) { display: none; }
+::view-transition-new(blog-header) { animation: none; }
 
 @keyframes blog-vt-out { to { opacity: 0; } }
-@keyframes blog-vt-in { from { opacity: 0; transform: translateY(16px); } }
+@keyframes blog-vt-in { from { opacity: 0; } }
 
-/* Browsers without view transitions get a gentle staggered entrance instead */
+/* Browsers without view transitions get a gentle fade-in instead */
 @supports not (view-transition-name: none) {
-  .blog-article > *, .blog-main > .blog-h1, .blog-list > li { animation: blog-rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .blog-toggle-thumb { animation: blog-thumb-in 0.45s cubic-bezier(0.34, 1.4, 0.64, 1) both; }
+  @keyframes blog-thumb-in { from { transform: scale(0.7); opacity: 0; } }
+  .blog-article > *, .blog-main > .blog-h1, .blog-list > li { animation: blog-rise 0.45s ease both; }
   .blog-article > :nth-child(2) { animation-delay: 0.05s; }
   .blog-article > :nth-child(3) { animation-delay: 0.1s; }
   .blog-article > :nth-child(n+4) { animation-delay: 0.15s; }
-  @keyframes blog-rise { from { opacity: 0; transform: translateY(14px); } }
+  @keyframes blog-rise { from { opacity: 0; } }
 }
 
 @media (prefers-reduced-motion: reduce) {

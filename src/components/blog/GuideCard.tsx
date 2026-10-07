@@ -2,7 +2,9 @@ import type { Lang } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n";
 import type { Block } from "@/content/articles/types";
 import ArticleBody from "./ArticleBody";
+import type { Heading } from "@/content/articles/blocks";
 import Inline from "./Inline";
+import TableOfContents from "./TableOfContents";
 
 /**
  * Explanation and guidance live here, not in the article column, so readers see the
@@ -12,11 +14,13 @@ import Inline from "./Inline";
  */
 export default function GuideCard({
   summary,
+  headings,
   guide,
   lang,
   dict,
 }: {
   summary: string;
+  headings: Heading[];
   guide: Block[];
   lang: Lang;
   dict: Dictionary;
@@ -29,6 +33,7 @@ export default function GuideCard({
           <span className="blog-summary-label">{dict.article.summary}</span>
           <Inline lang={lang} text={summary} />
         </p>
+        <TableOfContents headings={headings} lang={lang} dict={dict} />
         <ArticleBody body={guide} lang={lang} dict={dict} className="blog-prose--compact" />
       </div>
     </aside>
