@@ -5,6 +5,7 @@ import { DIR } from "@/lib/i18n/config";
 import { langStaticParams, toLang } from "@/lib/i18n/params";
 import { SITE_URL } from "@/lib/seo/site";
 import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
+import ViewTransitionTypes from "@/components/blog/ViewTransitionTypes";
 
 // Second root layout (route group "(blog)"): it owns <html lang dir> so every
 // blog page ships the correct language and direction in its static HTML.
@@ -47,6 +48,9 @@ export default async function BlogRootLayout({
   const lang = toLang(raw);
   return (
     <html lang={lang} dir={DIR[lang]} className={`${syne.variable} ${bebasNeue.variable} ${plexArabic.variable}`}>
+      <head>
+        <ViewTransitionTypes />
+      </head>
       <body>
         <AhrefsAnalytics />
         {children}

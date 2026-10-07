@@ -78,33 +78,35 @@ export default async function ArticlePage(props: Props) {
     <>
       <a href="#main" className="blog-skip">{dict.nav.skip}</a>
       <BlogHeader lang={lang} dict={dict} switcherPaths={switcherPaths} />
-      <main id="main" className="blog-main blog-main--article">
-        <div className="blog-article-layout">
-          <article className="blog-article">
-            <a href={blogPath(lang)} className="blog-back">
-              <span className="blog-arrow" aria-hidden="true">→</span>
-              {dict.article.back}
-            </a>
-            <p className="blog-eyebrow" style={{ marginBlockStart: "1.5rem" }}>{dict.categories[article.category]}</p>
-            <h1 className="blog-h1" style={{ viewTransitionName: `post-${article.id}` }}>
-              <BidiText lang={lang}>{translation.title}</BidiText>
-            </h1>
-            <p className="blog-meta">
-              <span>{dict.article.by} <a href={SITE_URL} rel="author">{SITE_NAME}</a></span>
-              <span>{dict.article.published} <time dateTime={article.publishedAt}>{fmt(article.publishedAt)}</time></span>
-              <span>{dict.article.updated} <time dateTime={article.updatedAt}>{fmt(article.updatedAt)}</time></span>
-              <span>{dict.article.readTime(minutes)}</span>
-              {article.lastVerified && (
-                <span>{dict.article.verified} <time dateTime={article.lastVerified}>{fmt(article.lastVerified)}</time></span>
-              )}
-              <a href="#guide" className="blog-guide-jump">{dict.article.guide} <span aria-hidden="true">↓</span></a>
-            </p>
-            <ArticleBody body={translation.body} lang={lang} dict={dict} />
-            {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
-          </article>
-          <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
-        </div>
-      </main>
+      <div className="blog-paper">
+        <main id="main" className="blog-main blog-main--article">
+          <div className="blog-article-layout">
+            <article className="blog-article">
+              <a href={blogPath(lang)} className="blog-back">
+                <span className="blog-arrow" aria-hidden="true">→</span>
+                {dict.article.back}
+              </a>
+              <p className="blog-eyebrow" style={{ marginBlockStart: "1.5rem" }}>{dict.categories[article.category]}</p>
+              <h1 className="blog-h1" style={{ viewTransitionName: `post-${article.id}` }}>
+                <BidiText lang={lang}>{translation.title}</BidiText>
+              </h1>
+              <p className="blog-meta">
+                <span>{dict.article.by} <a href={SITE_URL} rel="author">{SITE_NAME}</a></span>
+                <span>{dict.article.published} <time dateTime={article.publishedAt}>{fmt(article.publishedAt)}</time></span>
+                <span>{dict.article.updated} <time dateTime={article.updatedAt}>{fmt(article.updatedAt)}</time></span>
+                <span>{dict.article.readTime(minutes)}</span>
+                {article.lastVerified && (
+                  <span>{dict.article.verified} <time dateTime={article.lastVerified}>{fmt(article.lastVerified)}</time></span>
+                )}
+                <a href="#guide" className="blog-guide-jump">{dict.article.guide} <span aria-hidden="true">↓</span></a>
+              </p>
+              <ArticleBody body={translation.body} lang={lang} dict={dict} />
+              {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
+            </article>
+            <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
+          </div>
+        </main>
+      </div>
       <BlogFooter dict={dict} />
       <JsonLd
         data={[

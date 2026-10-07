@@ -11,6 +11,12 @@
   --soft-green: #8faa8b;
   --border: rgba(255, 255, 255, 0.1);
   --surface: #111111;
+  --text-strong: rgba(255, 255, 255, 0.85);
+  --text-soft: rgba(255, 255, 255, 0.82);
+  --hover: rgba(255, 255, 255, 0.03);
+  --scroll-thumb: rgba(255, 255, 255, 0.2);
+  --warning: #ffb454;
+  --paper: #f0ede6; /* the light gray of the Skills cards */
   --font-body: var(--font-inter), "Syne", system-ui, sans-serif;
   --font-display: var(--font-bebas), "Bebas Neue", Impact, sans-serif;
   --gutter: clamp(1.25rem, 5vw, 4rem);
@@ -18,6 +24,28 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Post page: light gray paper between the dark header and footer ──
+   Re-declares the same tokens, so every component inside (text, cards, FAQ, callouts,
+   guide card) adapts without its own overrides. Lime stays on the dark pages; on paper the
+   accent becomes a deep green so links and labels keep their contrast. */
+.blog-paper {
+  --bg: var(--paper);
+  --fg: #0a0a0a;
+  --muted: rgba(10, 10, 10, 0.62);
+  --border: rgba(10, 10, 10, 0.12);
+  --surface: #fbfaf7;
+  --accent: #35563a;
+  --soft-green: #4f6b4c;
+  --text-strong: rgba(10, 10, 10, 0.88);
+  --text-soft: rgba(10, 10, 10, 0.82);
+  --hover: rgba(10, 10, 10, 0.04);
+  --scroll-thumb: rgba(10, 10, 10, 0.25);
+  --warning: #9a5b00;
+  flex: 1; display: flex; flex-direction: column;
+  background: var(--paper); color: var(--fg);
+}
+.blog-paper > .blog-main { flex: 1; }
 
 html {
   background: var(--bg);
@@ -161,7 +189,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-list-body li::marker { color: var(--soft-green); }
 
 /* Answer-first summary */
-.blog-summary { margin-block: 1.75rem 0; padding-inline-start: 1.1rem; border-inline-start: 2px solid var(--accent); font-size: 1.1rem; color: rgba(255, 255, 255, 0.85); }
+.blog-summary { margin-block: 1.75rem 0; padding-inline-start: 1.1rem; border-inline-start: 2px solid var(--accent); font-size: 1.1rem; color: var(--text-strong); }
 .blog-summary-label { display: block; font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-block-end: 0.3rem; }
 :lang(ar) .blog-summary-label { letter-spacing: 0; font-size: 0.8rem; }
 
@@ -181,8 +209,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 :lang(ar) .blog-callout-title { letter-spacing: 0; font-size: 0.85rem !important; }
 .blog-callout--tip { border-inline-start-color: var(--accent); }
 .blog-callout--tip .blog-callout-title { color: var(--accent); }
-.blog-callout--warning { border-inline-start-color: #ffb454; }
-.blog-callout--warning .blog-callout-title { color: #ffb454; }
+.blog-callout--warning { border-inline-start-color: var(--warning); }
+.blog-callout--warning .blog-callout-title { color: var(--warning); }
 .blog-callout--note { border-inline-start-color: var(--soft-green); }
 .blog-callout--note .blog-callout-title { color: var(--soft-green); }
 
@@ -218,7 +246,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   padding: 1rem 1.2rem; min-block-size: 44px; transition: background 0.2s ease;
 }
 .blog-acc-item summary::-webkit-details-marker { display: none; }
-.blog-acc-item summary:hover { background: rgba(255, 255, 255, 0.03); }
+.blog-acc-item summary:hover { background: var(--hover); }
 .blog-acc-item summary:focus-visible { outline-offset: -2px; }
 .blog-acc-q { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.5; letter-spacing: 0; }
 .blog-acc-icon { position: relative; flex: none; inline-size: 1rem; block-size: 1rem; }
@@ -229,7 +257,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .blog-acc-icon::after { transform: rotate(90deg); }
 .blog-acc-item[open] .blog-acc-icon::after { transform: rotate(0deg); }
-.blog-acc-panel { padding: 0 1.2rem 1.1rem; color: rgba(255, 255, 255, 0.82); }
+.blog-acc-panel { padding: 0 1.2rem 1.1rem; color: var(--text-soft); }
 .blog-acc-panel p { margin: 0; font-size: 0.98rem; }
 .blog-acc-item[open] .blog-acc-panel { animation: blog-acc-in 0.3s ease; }
 @keyframes blog-acc-in { from { opacity: 0; transform: translateY(-4px); } }
@@ -275,7 +303,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 :lang(ar) .blog-guide-title { letter-spacing: 0; font-size: 0.85rem; }
 .blog-guide-scroll {
   flex: 1; min-block-size: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0.4rem 1.2rem 1.4rem;
-  scrollbar-width: thin; scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+  scrollbar-width: thin; scrollbar-color: var(--scroll-thumb) transparent;
   /* soft fade at the bottom edge hints that the card scrolls */
   mask-image: linear-gradient(to bottom, #000 calc(100% - 1.6rem), transparent);
 }
@@ -345,9 +373,26 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 @keyframes blog-vt-out { to { opacity: 0; } }
 @keyframes blog-vt-in { from { opacity: 0; } }
 
+/* Opening or leaving a post slides along the same direction as the card's hover push
+   (toward the inline end: right in LTR, left in RTL). Language switches and everything else
+   keep the plain fade above. The navigation type is set by ViewTransitionTypes. */
+:root { --vt-dir: 1; }
+:root[dir="rtl"] { --vt-dir: -1; }
+
+:root:active-view-transition-type(open)::view-transition-old(root) { animation: blog-slide-out 0.35s ease both; }
+:root:active-view-transition-type(open)::view-transition-new(root) { animation: blog-slide-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+:root:active-view-transition-type(close)::view-transition-old(root) { animation: blog-slide-out-back 0.35s ease both; }
+:root:active-view-transition-type(close)::view-transition-new(root) { animation: blog-slide-in-back 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
+
+@keyframes blog-slide-in       { from { opacity: 0; transform: translateX(calc(var(--vt-dir) * -8vw)); } }
+@keyframes blog-slide-out      { to   { opacity: 0; transform: translateX(calc(var(--vt-dir) * 5vw)); } }
+@keyframes blog-slide-in-back  { from { opacity: 0; transform: translateX(calc(var(--vt-dir) * 8vw)); } }
+@keyframes blog-slide-out-back { to   { opacity: 0; transform: translateX(calc(var(--vt-dir) * -5vw)); } }
+
 /* Browsers without view transitions get a gentle fade-in instead */
 @supports not (view-transition-name: none) {
   .blog-toggle-thumb { animation: blog-thumb-in 0.45s cubic-bezier(0.34, 1.4, 0.64, 1) both; }
+  .blog-paper { animation: blog-slide-in 0.55s cubic-bezier(0.16, 1, 0.3, 1) both; }
   @keyframes blog-thumb-in { from { transform: scale(0.7); opacity: 0; } }
   .blog-article > *, .blog-main > .blog-h1, .blog-list > li { animation: blog-rise 0.45s ease both; }
   .blog-article > :nth-child(2) { animation-delay: 0.05s; }
