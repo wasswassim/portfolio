@@ -296,10 +296,10 @@ export default function JourneySection() {
                   fontFamily: "var(--font-inter)", fontSize: "0.82rem",
                   lineHeight: 1.5, color: "rgba(0,0,0,0.65)", textAlign: "center",
                 }}>
-                  Something went wrong. Try again, or email me directly at{" "}
-                  <a href="mailto:wassimgatri4@gmail.com" style={{ color: "#0a0a0a", fontWeight: 600, textDecoration: "none" }}>
-                    wassimgatri4@gmail.com
-                  </a>
+                  Something went wrong. Please try again, or message me on{" "}
+                  <a href="https://www.linkedin.com/in/wassim-gatri-683a12259/" target="_blank" rel="noopener noreferrer" style={{ color: "#0a0a0a", fontWeight: 600, textDecoration: "none" }}>
+                    LinkedIn
+                  </a>.
                   {/* Fields keep their values after a failure, so this just resends them */}
                   <button
                     type="submit"
