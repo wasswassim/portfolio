@@ -1,0 +1,286 @@
+/* Blog stylesheet. Deliberately independent of globals.css: that file hides the
+   system cursor, sets .gsap-reveal { opacity: 0 } and feeds the homepage's GSAP
+   pinning, none of which may reach blog pages. Tokens mirror the homepage values.
+   Logical properties only, so one stylesheet serves LTR and RTL. */
+
+:root {
+  --bg: #0a0a0a;
+  --fg: #ffffff;
+  --muted: rgba(255, 255, 255, 0.55);
+  --accent: #c8ff00;
+  --soft-green: #8faa8b;
+  --border: rgba(255, 255, 255, 0.1);
+  --surface: #111111;
+  --font-body: var(--font-inter), "Syne", system-ui, sans-serif;
+  --font-display: var(--font-bebas), "Bebas Neue", Impact, sans-serif;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --measure: 42rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  /* clip, not hidden: hidden would turn body into a scroll container and break sticky */
+  overflow-x: clip;
+}
+
+body {
+  min-block-size: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  /* normal system cursor everywhere */
+  cursor: auto;
+}
+
+@supports not (overflow-x: clip) { body { overflow-x: hidden; } }
+
+/* Arabic: Plex Arabic covers Arabic + Latin; Bebas has no Arabic glyphs */
+:lang(ar) { --font-body: var(--font-arabic), system-ui, sans-serif; --font-display: var(--font-arabic), system-ui, sans-serif; }
+:lang(ar) body { line-height: 1.95; }
+
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+::selection { background: var(--accent); color: var(--bg); }
+
+/* Latin terms inside RTL text: isolate so punctuation and spacing don't flip */
+.blog-ltr { unicode-bidi: isolate; direction: ltr; }
+
+.blog-skip {
+  position: absolute; inset-inline-start: 1rem; inset-block-start: -4rem;
+  background: var(--accent); color: var(--bg); padding: 0.6rem 1rem; border-radius: 999px; z-index: 10;
+}
+.blog-skip:focus { inset-block-start: 1rem; }
+
+/* ── Header ── */
+.blog-header {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  padding-block: 1.25rem; padding-inline: var(--gutter);
+  border-block-end: 1px solid var(--border);
+}
+.blog-logo {
+  inline-size: 2.4rem; block-size: 2.4rem; border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 0.6rem; font-weight: 500;
+}
+.blog-header nav { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+.blog-nav-link {
+  font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted);
+  min-block-size: 44px; display: inline-flex; align-items: center; transition: color 0.2s ease;
+}
+.blog-nav-link:hover, .blog-nav-link[aria-current] { color: var(--fg); }
+
+.blog-langs { display: flex; gap: 0.35rem; }
+.blog-lang {
+  font-size: 0.7rem; letter-spacing: 0.08em; padding-inline: 0.8rem;
+  min-block-size: 36px; display: inline-flex; align-items: center;
+  border: 1px solid var(--border); border-radius: 999px; color: var(--muted);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.blog-lang:hover { color: var(--fg); border-color: rgba(255, 255, 255, 0.4); }
+.blog-lang[aria-current="page"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+/* ── Main ── */
+.blog-main { flex: 1; padding-block: clamp(2.5rem, 7vw, 5rem); padding-inline: var(--gutter); inline-size: 100%; max-inline-size: 72rem; margin-inline: auto; }
+
+.blog-eyebrow { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--soft-green); }
+:lang(ar) .blog-eyebrow { letter-spacing: 0; }
+
+.blog-h1 {
+  font-family: var(--font-display); font-weight: 400; line-height: 0.95;
+  font-size: clamp(2.8rem, 9vw, 6.5rem); letter-spacing: 0.01em; margin-block: 0.6rem 1rem;
+}
+:lang(ar) .blog-h1 { font-weight: 700; line-height: 1.25; letter-spacing: 0; font-size: clamp(2rem, 7vw, 4.5rem); }
+.blog-lead { color: var(--muted); max-inline-size: 38rem; font-size: 1.05rem; }
+
+/* ── Article list ── */
+.blog-list { list-style: none; margin-block-start: clamp(2rem, 6vw, 4rem); border-block-start: 1px solid var(--border); }
+.blog-card a {
+  display: flex; flex-direction: column; gap: 0.5rem; padding-block: 1.6rem;
+  border-block-end: 1px solid var(--border); transition: padding-inline-start 0.3s ease;
+}
+.blog-card a:hover { padding-inline-start: 0.9rem; }
+.blog-card h2 { font-size: clamp(1.3rem, 3.4vw, 1.9rem); font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
+:lang(ar) .blog-card h2 { letter-spacing: 0; line-height: 1.5; }
+.blog-card p { color: var(--muted); max-inline-size: 40rem; }
+.blog-meta { font-size: 0.75rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; }
+.blog-meta .blog-cat { color: var(--soft-green); }
+.blog-arrow { display: inline-block; }
+[dir="rtl"] .blog-arrow { transform: scaleX(-1); }
+
+/* ── Article ── */
+.blog-article { max-inline-size: var(--measure); margin-inline: auto; }
+.blog-article .blog-h1 { font-size: clamp(2.2rem, 6.5vw, 4rem); line-height: 1.05; }
+:lang(ar) .blog-article .blog-h1 { font-size: clamp(1.9rem, 5.5vw, 3.2rem); }
+.blog-prose { margin-block-start: 2rem; }
+.blog-prose p { margin-block-end: 1.25rem; font-size: 1.05rem; }
+.blog-prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+.blog-prose a:hover { text-decoration-thickness: 2px; }
+.blog-prose strong { font-weight: 600; }
+.blog-prose code { font-size: 0.9em; padding: 0.1em 0.4em; background: var(--surface); border: 1px solid var(--border); border-radius: 0.3rem; }
+
+.blog-h2, .blog-h3 { scroll-margin-block-start: 1.5rem; font-weight: 600; line-height: 1.25; letter-spacing: -0.01em; }
+.blog-h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin-block: 2.75rem 1rem; }
+.blog-h3 { font-size: 1.15rem; margin-block: 1.75rem 0.6rem; }
+:lang(ar) .blog-h2, :lang(ar) .blog-h3 { letter-spacing: 0; line-height: 1.5; }
+
+.blog-list-body { margin-block-end: 1.25rem; padding-inline-start: 1.4rem; font-size: 1.05rem; }
+.blog-list-body li { margin-block-end: 0.5rem; padding-inline-start: 0.3rem; }
+.blog-list-body li::marker { color: var(--soft-green); }
+
+/* Answer-first summary */
+.blog-summary { margin-block: 1.75rem 0; padding-inline-start: 1.1rem; border-inline-start: 2px solid var(--accent); font-size: 1.1rem; color: rgba(255, 255, 255, 0.85); }
+.blog-summary-label { display: block; font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-block-end: 0.3rem; }
+:lang(ar) .blog-summary-label { letter-spacing: 0; font-size: 0.8rem; }
+
+/* Table of contents */
+.blog-toc { margin-block: 2rem 0; padding: 1.1rem 1.3rem; border: 1px solid var(--border); border-radius: 0.8rem; background: var(--surface); }
+.blog-toc-title { font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-block-end: 0.6rem; }
+:lang(ar) .blog-toc-title { letter-spacing: 0; font-size: 0.8rem; }
+.blog-toc ol { list-style: none; }
+.blog-toc li[data-level="3"] { padding-inline-start: 1.1rem; }
+.blog-toc a { display: inline-block; padding-block: 0.25rem; color: var(--fg); font-size: 0.9rem; }
+.blog-toc a:hover { color: var(--accent); }
+
+/* Callouts */
+.blog-callout { margin-block: 1.75rem; padding: 1rem 1.2rem; border-radius: 0.7rem; border: 1px solid var(--border); background: var(--surface); border-inline-start-width: 3px; }
+.blog-callout p:last-child { margin-block-end: 0; }
+.blog-callout-title { font-size: 0.7rem !important; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; margin-block-end: 0.4rem !important; }
+:lang(ar) .blog-callout-title { letter-spacing: 0; font-size: 0.85rem !important; }
+.blog-callout--tip { border-inline-start-color: var(--accent); }
+.blog-callout--tip .blog-callout-title { color: var(--accent); }
+.blog-callout--warning { border-inline-start-color: #ffb454; }
+.blog-callout--warning .blog-callout-title { color: #ffb454; }
+.blog-callout--note { border-inline-start-color: var(--soft-green); }
+.blog-callout--note .blog-callout-title { color: var(--soft-green); }
+
+/* Key facts */
+.blog-facts { margin-block: 1.75rem; border: 1px solid var(--border); border-radius: 0.8rem; overflow: hidden; }
+.blog-facts-title { margin: 0; padding: 0.7rem 1.2rem; font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--soft-green); background: var(--surface); border-block-end: 1px solid var(--border); }
+:lang(ar) .blog-facts-title { letter-spacing: 0; font-size: 0.85rem; }
+.blog-facts dl > div { display: grid; grid-template-columns: minmax(6rem, 10rem) 1fr; gap: 1rem; padding: 0.8rem 1.2rem; border-block-end: 1px solid var(--border); }
+.blog-facts dl > div:last-child { border-block-end: 0; }
+.blog-facts dt { color: var(--muted); font-size: 0.9rem; }
+@media (max-width: 30rem) { .blog-facts dl > div { grid-template-columns: 1fr; gap: 0.2rem; } }
+
+/* Numbered steps */
+.blog-steps { list-style: none; counter-reset: step; margin-block: 1.75rem; }
+.blog-steps li { counter-increment: step; position: relative; display: flex; flex-direction: column; gap: 0.2rem; padding-inline-start: 3rem; padding-block-end: 1.4rem; }
+.blog-steps li::before { content: counter(step); position: absolute; inset-inline-start: 0; inset-block-start: 0; inline-size: 2rem; block-size: 2rem; display: grid; place-items: center; border: 1px solid var(--accent); border-radius: 50%; color: var(--accent); font-size: 0.8rem; font-weight: 600; }
+.blog-steps li:not(:last-child)::after { content: ""; position: absolute; inset-inline-start: 1rem; inset-block-start: 2.2rem; inset-block-end: 0.2rem; inline-size: 1px; background: var(--border); }
+.blog-steps strong { font-size: 1.05rem; }
+.blog-steps span { color: var(--muted); }
+
+.blog-quote { margin-block: 2rem; padding-inline-start: 1.2rem; border-inline-start: 2px solid var(--border); font-size: 1.2rem; font-style: italic; }
+.blog-quote footer { font-size: 0.85rem; font-style: normal; color: var(--muted); }
+
+.blog-sources ol { padding-inline-start: 1.4rem; }
+.blog-sources li { margin-block-end: 0.4rem; word-break: break-word; }
+
+.blog-back { display: inline-flex; align-items: center; gap: 0.5rem; min-block-size: 44px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.blog-back:hover { color: var(--fg); }
+/* "Back" arrow points toward the start edge: flipped in LTR, natural in RTL */
+.blog-back .blog-arrow { transform: scaleX(-1); }
+[dir="rtl"] .blog-back .blog-arrow { transform: none; }
+.blog-unverified { margin-block-start: 2rem; padding: 0.9rem 1.1rem; border: 1px dashed var(--border); border-radius: 0.6rem; font-size: 0.8rem; color: var(--muted); }
+
+/* ── Article layout: reader-first article + sticky guide card ──────────────
+   Logical grid columns, so the card sits on the inline-end edge (right in LTR,
+   left in RTL). Below 64rem the card falls under the article. */
+.blog-main--article { max-inline-size: 84rem; }
+.blog-article-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 3rem; align-items: start; }
+.blog-article-layout .blog-article { inline-size: 100%; }
+
+.blog-guide {
+  border: 1px solid var(--border); border-radius: 1rem; background: var(--surface);
+  display: flex; flex-direction: column; min-block-size: 0; max-block-size: 28rem;
+}
+.blog-guide-title {
+  flex: none; margin: 0; padding: 0.9rem 1.2rem; font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase;
+  font-weight: 600; color: var(--accent); border-block-end: 1px solid var(--border);
+}
+:lang(ar) .blog-guide-title { letter-spacing: 0; font-size: 0.85rem; }
+.blog-guide-scroll {
+  flex: 1; min-block-size: 0; overflow-y: auto; overscroll-behavior: contain; padding: 0.4rem 1.2rem 1.4rem;
+  scrollbar-width: thin; scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+  /* soft fade at the bottom edge hints that the card scrolls */
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 1.6rem), transparent);
+}
+.blog-guide-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: 0 0 1rem 1rem; }
+
+/* Compact typography inside the card */
+.blog-guide .blog-summary { margin-block: 1rem 0; font-size: 0.95rem; }
+.blog-prose--compact { margin-block-start: 0.5rem; }
+.blog-prose--compact p, .blog-prose--compact .blog-list-body { font-size: 0.9rem; margin-block-end: 0.9rem; }
+.blog-prose--compact .blog-h2 { font-size: 1.05rem; margin-block: 1.6rem 0.6rem; }
+.blog-prose--compact .blog-h3 { font-size: 0.95rem; margin-block: 1.1rem 0.4rem; }
+.blog-prose--compact .blog-callout, .blog-prose--compact .blog-facts, .blog-prose--compact .blog-steps { margin-block: 1.1rem; }
+.blog-prose--compact .blog-callout { padding: 0.8rem 0.9rem; }
+.blog-prose--compact .blog-facts dl > div { grid-template-columns: 1fr; gap: 0.15rem; padding: 0.65rem 0.9rem; }
+.blog-prose--compact .blog-facts-title { padding: 0.55rem 0.9rem; }
+.blog-prose--compact .blog-steps li { padding-inline-start: 2.6rem; padding-block-end: 1.1rem; }
+.blog-prose--compact .blog-steps strong { font-size: 0.95rem; }
+
+/* Small screens: show the jump link, card sits below the article */
+.blog-guide-jump { color: var(--accent); }
+@media (min-width: 64rem) {
+  .blog-article-layout { grid-template-columns: minmax(0, 1fr) 22rem; gap: 4rem; }
+  .blog-article-layout .blog-article { margin-inline: auto; }
+  .blog-guide {
+    position: sticky; inset-block-start: 1.5rem;
+    max-block-size: calc(100dvh - 3rem);
+  }
+  .blog-guide-jump { display: none; }
+}
+
+/* ── Footer ── */
+.blog-footer {
+  padding-block: 1.4rem; padding-inline: var(--gutter);
+  border-block-start: 1px solid var(--border);
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  font-size: 0.7rem; letter-spacing: 0.05em; color: var(--muted);
+}
+.blog-footer a:hover { color: var(--fg); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+/* ── Page transitions ──────────────────────────────────────────────────────
+   Cross-document View Transitions (Chrome 126+, Safari 18.2+): plain links keep
+   working everywhere, supporting browsers animate. The card title morphs into the
+   article title (matching view-transition-name "post-{id}"); the header stays put;
+   the rest cross-fades with a short rise. Both pages must opt in, so this covers
+   blog-to-blog navigation (list, article, language switch). */
+@view-transition { navigation: auto; }
+
+.blog-header { view-transition-name: blog-header; }
+
+::view-transition-old(root) { animation: blog-vt-out 0.2s ease both; }
+::view-transition-new(root) { animation: blog-vt-in 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both; }
+::view-transition-group(*) { animation-duration: 0.55s; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+
+@keyframes blog-vt-out { to { opacity: 0; } }
+@keyframes blog-vt-in { from { opacity: 0; transform: translateY(16px); } }
+
+/* Browsers without view transitions get a gentle staggered entrance instead */
+@supports not (view-transition-name: none) {
+  .blog-article > *, .blog-main > .blog-h1, .blog-list > li { animation: blog-rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .blog-article > :nth-child(2) { animation-delay: 0.05s; }
+  .blog-article > :nth-child(3) { animation-delay: 0.1s; }
+  .blog-article > :nth-child(n+4) { animation-delay: 0.15s; }
+  @keyframes blog-rise { from { opacity: 0; transform: translateY(14px); } }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}
