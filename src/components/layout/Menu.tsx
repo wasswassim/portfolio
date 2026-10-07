@@ -4,15 +4,33 @@ import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { scrollToY } from "@/lib/lenis";
 
-const ITEMS = [
+type MenuItem = { num: string; label: string; id: string; href?: string };
+
+const ITEMS: MenuItem[] = [
   { num: "01", label: "HOME",    id: "hero"    },
   { num: "02", label: "SKILLS",  id: "skills"  },
   { num: "03", label: "ABOUT",   id: "about"   },
   { num: "04", label: "WORK",    id: "work"    },
   { num: "05", label: "CONTACT", id: "contact" },
+  // Real link (own page, own root layout), not an in-page scroll target
+  { num: "06", label: "BLOG",    id: "blog", href: "/en/blog/" },
 ];
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
+
+type RowProps = {
+  href?: string;
+  onClick: () => void;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
+  style: React.CSSProperties;
+  children: React.ReactNode;
+};
+
+// Scroll items are buttons; the blog item is a real anchor with identical styling
+function Row({ href, onClick, ...rest }: RowProps) {
+  return href ? <a href={href} {...rest} /> : <button onClick={onClick} {...rest} />;
+}
 
 export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -120,7 +138,8 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                   exit={{ y: "110%" }}
                   transition={{ duration: 0.55, delay: i * 0.07 + 0.05, ease: EASE }}
                 >
-                  <button
+                  <Row
+                    href={item.href}
                     onClick={() => goTo(item.id)}
                     onMouseEnter={() => setHovered(item.id)}
                     onMouseLeave={() => setHovered(null)}
@@ -152,7 +171,7 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                     }}>
                       {item.label}
                     </span>
-                  </button>
+                  </Row>
                 </motion.div>
               </div>
             ))}
