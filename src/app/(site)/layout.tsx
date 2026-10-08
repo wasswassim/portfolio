@@ -4,6 +4,8 @@ import "../globals.css";
 import CustomCursor from "@/components/layout/CustomCursor";
 import SmoothScroll from "@/components/layout/SmoothScroll";
 import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
+import { JsonLd, personLd } from "@/lib/seo/jsonld";
+import { SITE_NAME, SITE_URL } from "@/lib/seo/site";
 
 // Syne: geometric, editorial, high-fashion — replaces Inter across the whole site.
 // We keep --font-inter as the variable name so every component picks it up with zero changes.
@@ -22,10 +24,25 @@ const bebasNeue = Bebas_Neue({
   display: "swap",
 });
 
+const TITLE = "Wassim Gatri — Web Designer & Digital Marketer";
+const DESCRIPTION =
+  "Wassim Gatri is a web designer and digital marketer based in Tunisia and Italy, building digital experiences that work. See his projects and his guides on life in Italy.";
+const PORTRAIT = { url: "/img/wassimage.webp", width: 832, height: 1280, alt: SITE_NAME };
+
 export const metadata: Metadata = {
-  title: "Wassim Gatri — Portfolio",
-  description:
-    "Web Designer & Digital Marketer based in Tunisia & Italy. Building digital experiences that work.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: SITE_NAME,
+    title: TITLE,
+    description: DESCRIPTION,
+    images: [PORTRAIT],
+  },
+  twitter: { card: "summary", title: TITLE, description: DESCRIPTION, images: [PORTRAIT.url] },
 };
 
 export const viewport: Viewport = {
@@ -48,6 +65,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <AhrefsAnalytics />
+        <JsonLd data={personLd()} />
         <CustomCursor />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
