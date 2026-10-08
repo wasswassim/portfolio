@@ -61,6 +61,9 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
     <AnimatePresence>
       {isOpen && (
         <motion.div
+          // data-lenis-prevent: Lenis would otherwise swallow the wheel and scroll the page behind
+          data-lenis-prevent
+          className="mn-root"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -72,18 +75,22 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
           }}
         >
           <style>{`
+            /* Fits any screen: the label size also follows the window height (six items must fit
+               on short laptop windows); if it still does not, the menu scrolls. */
+            .mn-root { height: 100vh; height: 100dvh; overflow-y: auto; overscroll-behavior: contain; }
+            .mn-top  { position: sticky; top: 0; z-index: 2; background: #0a0a0a; }
             /* Keep link text centred in its taller touch target */
             @media (pointer: coarse) {
               .mn-foot-link { display: inline-flex; align-items: center; }
             }
             @media (max-width: 767px) {
               .mn-nav   { padding: 0.8rem 1.5rem !important; }
-              .mn-label { font-size: clamp(2rem, 11vw, 7.5rem) !important; }
+              .mn-label { font-size: clamp(2rem, min(11vw, 8.5vh), 7.5rem) !important; }
               .mn-foot  { padding: 1rem 1.5rem !important; flex-wrap: wrap !important; gap: 0.8rem !important; }
             }
           `}</style>
           {/* ── Top bar ── */}
-          <div style={{
+          <div className="mn-top" style={{
             display: "flex", justifyContent: "space-between", alignItems: "center",
             padding: "1.5rem 2.5rem",
             borderBottom: "1px solid rgba(255,255,255,0.08)",
@@ -126,7 +133,7 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
 
           {/* ── Nav items ── */}
           <div className="mn-nav" style={{
-            flex: 1, display: "flex", flexDirection: "column",
+            flex: "1 0 auto", display: "flex", flexDirection: "column",
             justifyContent: "center", padding: "1rem 4rem",
             gap: "0",
           }}>
@@ -164,7 +171,7 @@ export default function Menu({ isOpen, onClose }: { isOpen: boolean; onClose: ()
                     </span>
                     <span className="mn-label" style={{
                       fontFamily: "var(--font-bebas)",
-                      fontSize: "clamp(3rem, 7vw, 7.5rem)",
+                      fontSize: "clamp(2.4rem, min(7vw, 9.5vh), 7.5rem)",
                       lineHeight: 0.92, letterSpacing: "0.01em",
                       color: hovered === item.id ? "#8faa8b" : "#ffffff",
                       transition: "color 0.2s ease",
