@@ -77,8 +77,8 @@ export default async function ArticlePage(props: Props) {
   return (
     <>
       <a href="#main" className="blog-skip">{dict.nav.skip}</a>
-      <BlogHeader lang={lang} dict={dict} switcherPaths={switcherPaths} />
       <div className="blog-paper">
+        <BlogHeader lang={lang} dict={dict} switcherPaths={switcherPaths} />
         <main id="main" className="blog-main blog-main--article">
           <div className="blog-article-layout">
             <article className="blog-article">
@@ -106,8 +106,8 @@ export default async function ArticlePage(props: Props) {
             <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
           </div>
         </main>
+        <BlogFooter dict={dict} />
       </div>
-      <BlogFooter dict={dict} />
       <JsonLd
         data={[
           personLd(),

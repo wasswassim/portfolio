@@ -17,6 +17,7 @@
   --scroll-thumb: rgba(255, 255, 255, 0.2);
   --warning: #ffb454;
   --paper: #f0ede6; /* the light gray of the Skills cards */
+  --logo-border: rgba(255, 255, 255, 0.4);
   --font-body: var(--font-inter), "Syne", system-ui, sans-serif;
   --font-display: var(--font-bebas), "Bebas Neue", Impact, sans-serif;
   --gutter: clamp(1.25rem, 5vw, 4rem);
@@ -25,7 +26,10 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ── Post page: light gray paper between the dark header and footer ──
+/* Post pages tint the whole canvas too, so overscroll and page transitions stay light */
+html:has(.blog-paper) { background: var(--paper); }
+
+/* ── Post page: one light gray from top to bottom (header, content, footer) ──
    Re-declares the same tokens, so every component inside (text, cards, FAQ, callouts,
    guide card) adapts without its own overrides. Lime stays on the dark pages; on paper the
    accent becomes a deep green so links and labels keep their contrast. */
@@ -42,6 +46,7 @@
   --hover: rgba(10, 10, 10, 0.04);
   --scroll-thumb: rgba(10, 10, 10, 0.25);
   --warning: #9a5b00;
+  --logo-border: rgba(10, 10, 10, 0.35);
   flex: 1; display: flex; flex-direction: column;
   background: var(--paper); color: var(--fg);
 }
@@ -100,7 +105,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .blog-logo {
   inline-size: 2.4rem; block-size: 2.4rem; border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--logo-border);
   display: inline-flex; align-items: center; justify-content: center;
   font-size: 0.6rem; font-weight: 500;
 }
@@ -373,26 +378,35 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 @keyframes blog-vt-out { to { opacity: 0; } }
 @keyframes blog-vt-in { from { opacity: 0; } }
 
-/* Opening or leaving a post slides along the same direction as the card's hover push
-   (toward the inline end: right in LTR, left in RTL). Language switches and everything else
-   keep the plain fade above. The navigation type is set by ViewTransitionTypes. */
-:root { --vt-dir: 1; }
-:root[dir="rtl"] { --vt-dir: -1; }
+/* Opening a post: the new page slides in across the whole screen, from the left edge to the
+   right, pushing the blog page out to the right. Leaving a post mirrors it (new page from the
+   right edge, old page out to the left). This is physical screen direction in every language,
+   RTL included. Language switches and everything else keep the plain fade above. The
+   navigation type is set by ViewTransitionTypes. */
+:root:active-view-transition-type(open)::view-transition-old(root),
+:root:active-view-transition-type(open)::view-transition-new(root),
+:root:active-view-transition-type(close)::view-transition-old(root),
+:root:active-view-transition-type(close)::view-transition-new(root) {
+  mix-blend-mode: normal; /* opaque pages side by side: no additive blending */
+  animation-duration: 0.65s;
+  animation-timing-function: cubic-bezier(0.7, 0, 0.2, 1);
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+:root:active-view-transition-type(open)::view-transition-old(root)  { animation-name: blog-pan-out-right; }
+:root:active-view-transition-type(open)::view-transition-new(root)  { animation-name: blog-pan-in-from-left; }
+:root:active-view-transition-type(close)::view-transition-old(root) { animation-name: blog-pan-out-left; }
+:root:active-view-transition-type(close)::view-transition-new(root) { animation-name: blog-pan-in-from-right; }
 
-:root:active-view-transition-type(open)::view-transition-old(root) { animation: blog-slide-out 0.35s ease both; }
-:root:active-view-transition-type(open)::view-transition-new(root) { animation: blog-slide-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
-:root:active-view-transition-type(close)::view-transition-old(root) { animation: blog-slide-out-back 0.35s ease both; }
-:root:active-view-transition-type(close)::view-transition-new(root) { animation: blog-slide-in-back 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both; }
-
-@keyframes blog-slide-in       { from { opacity: 0; transform: translateX(calc(var(--vt-dir) * -8vw)); } }
-@keyframes blog-slide-out      { to   { opacity: 0; transform: translateX(calc(var(--vt-dir) * 5vw)); } }
-@keyframes blog-slide-in-back  { from { opacity: 0; transform: translateX(calc(var(--vt-dir) * 8vw)); } }
-@keyframes blog-slide-out-back { to   { opacity: 0; transform: translateX(calc(var(--vt-dir) * -5vw)); } }
+@keyframes blog-pan-in-from-left  { from { transform: translateX(-100%); } }
+@keyframes blog-pan-out-right     { to   { transform: translateX(100%); } }
+@keyframes blog-pan-in-from-right { from { transform: translateX(100%); } }
+@keyframes blog-pan-out-left      { to   { transform: translateX(-100%); } }
 
 /* Browsers without view transitions get a gentle fade-in instead */
 @supports not (view-transition-name: none) {
   .blog-toggle-thumb { animation: blog-thumb-in 0.45s cubic-bezier(0.34, 1.4, 0.64, 1) both; }
-  .blog-paper { animation: blog-slide-in 0.55s cubic-bezier(0.16, 1, 0.3, 1) both; }
+  .blog-paper { animation: blog-pan-in-from-left 0.65s cubic-bezier(0.7, 0, 0.2, 1) both; }
   @keyframes blog-thumb-in { from { transform: scale(0.7); opacity: 0; } }
   .blog-article > *, .blog-main > .blog-h1, .blog-list > li { animation: blog-rise 0.45s ease both; }
   .blog-article > :nth-child(2) { animation-delay: 0.05s; }
