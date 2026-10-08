@@ -358,21 +358,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 /* ── Page transitions ──────────────────────────────────────────────────────
    Cross-document View Transitions (Chrome 126+, Safari 18.2+): plain links keep
-   working everywhere, supporting browsers animate. The card title morphs into the
-   article title (matching view-transition-name "post-{id}"); the header stays put;
-   the rest simply fades out and back in. Both pages must opt in, so this covers
-   blog-to-blog navigation (list, article, language switch). */
+   working everywhere, supporting browsers animate. Only the header (and its language
+   toggle) has a transition name, so it stays put; everything else, titles included, is
+   one page snapshot that fades (language switch) or slides (open/close a post) together.
+   Never give a title or any content element its own name: it would animate on its own,
+   outside the page. Both pages must opt in, so this covers blog-to-blog navigation. */
 @view-transition { navigation: auto; }
 
 .blog-header { view-transition-name: blog-header; }
-/* Card title <-> post title: a shared name makes the browser animate them as their own element
-   (a cross-fade), outside the page. While a post is opening or closing the page itself slides,
-   so the name is switched off and the title travels with the page like the rest of the text.
-   It stays for other navigations (e.g. switching language on a post). */
-.blog-vt-title { view-transition-name: var(--vt-name, none); }
-:root:active-view-transition-type(open) .blog-vt-title,
-:root:active-view-transition-type(close) .blog-vt-title { view-transition-name: none; }
-
 .blog-toggle-thumb { view-transition-name: lang-thumb; }
 .blog-toggle-options { view-transition-name: lang-labels; }
 

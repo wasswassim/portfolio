@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { CSSProperties } from "react";
 import { notFound } from "next/navigation";
 import { LANGS, DEFAULT_LANG, LOCALE, isLang, type Lang } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
@@ -88,7 +87,7 @@ export default async function ArticlePage(props: Props) {
                 {dict.article.back}
               </a>
               <p className="blog-eyebrow" style={{ marginBlockStart: "1.5rem" }}>{dict.categories[article.category]}</p>
-              <h1 className="blog-h1 blog-vt-title" style={{ "--vt-name": `post-${article.id}` } as CSSProperties}>
+              <h1 className="blog-h1">
                 <BidiText lang={lang}>{translation.title}</BidiText>
               </h1>
               <p className="blog-meta">
