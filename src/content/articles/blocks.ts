@@ -43,6 +43,8 @@ function blockText(b: Block): string {
       return b.text;
     case "figure":
       return b.caption;
+    case "gallery":
+      return b.items.map((i) => i.label).join(" ") + " " + b.caption;
     case "video":
       return b.title + " " + b.caption;
     case "steps":

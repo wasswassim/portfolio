@@ -83,6 +83,22 @@ Add a block anywhere in `body`; it renders between the neighbouring paragraphs.
 }
 ```
 
+Several photos for one idea (for example, the trades a post covers) go in one `gallery` block: a compact bento grid
+(one large tile, small labelled tiles; 3 columns on phones, 4 on wider screens) instead of a stack of full-width pictures.
+Put 800 px wide WebP files in `public/blog/gallery/`; 9 photos fill the grid exactly.
+
+```ts
+{
+  type: "gallery",
+  caption: "What the photos have in common.",
+  items: [
+    { src: "/blog/gallery/hospitality.webp", width: 800, height: 600, alt: "...", label: "Hospitality",
+      credit: { text: "Author, CC BY-SA 4.0", url: "https://commons.wikimedia.org/wiki/File:..." } },
+    // ...
+  ],
+}
+```
+
 Rules for media:
 
 - Pictures: WebP, at most 1600 px wide, ideally under 250 KB. Real width and height are required (they prevent layout shift). Alt text and caption in **every** language.

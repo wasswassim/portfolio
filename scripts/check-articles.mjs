@@ -102,13 +102,16 @@ for (const folder of folders) {
 
     // alt text is mandatory for every picture; videos need a title
     const figures = count(t, /type:\s*"figure"/g);
-    if (count(t, /^\s+alt:\s*"[^"]+"/gm) < figures) errors.push(where + ": every figure needs alt text");
+    // gallery photos live under /blog/gallery/; with figures, each one needs alt text
+    const tiles = count(t, /^\s+src:\s*"\/blog\/gallery\//gm);
+    if (count(t, /^\s+alt:\s*"[^"]+"/gm) < figures + tiles) errors.push(where + ": every figure and gallery photo needs alt text");
     const videos = count(t, /type:\s*"video"/g);
     if (count(t, /^\s+title:\s*"[^"]+"/gm) < 1 + videos) errors.push(where + ": every video needs a title");
 
     structure[lang] = {
       headings: [...t.matchAll(/\bid:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]).sort().join(","),
       figures,
+      tiles,
       videos,
     };
   }
@@ -120,6 +123,7 @@ for (const folder of folders) {
     const b = structure[lang];
     if (a.headings !== b.headings) errors.push(id + ": heading ids differ between " + langs[0] + " and " + lang);
     if (a.figures !== b.figures) errors.push(id + ": " + langs[0] + " has " + a.figures + " pictures, " + lang + " has " + b.figures);
+    if (a.tiles !== b.tiles) errors.push(id + ": " + langs[0] + " has " + a.tiles + " gallery photos, " + lang + " has " + b.tiles);
     if (a.videos !== b.videos) errors.push(id + ": " + langs[0] + " has " + a.videos + " videos, " + lang + " has " + b.videos);
   }
 }

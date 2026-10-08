@@ -75,6 +75,38 @@ function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dict
           </figcaption>
         </figure>
       );
+    case "gallery":
+      // Bento grid: one large tile and smaller ones, so every trade shows without a long stack of photos
+      return (
+        <figure className="blog-gallery">
+          <ul className="blog-gallery-grid">
+            {block.items.map((item, i) => (
+              <li key={item.src} className={i === 0 ? "blog-gallery-tile blog-gallery-tile--lead" : "blog-gallery-tile"}>
+                <Image
+                  src={item.src}
+                  width={item.width}
+                  height={item.height}
+                  alt={item.alt}
+                  sizes={i === 0 ? "(min-width: 64rem) 21rem, 100vw" : "(min-width: 64rem) 10rem, 50vw"}
+                />
+                <span className="blog-gallery-label">{t(item.label)}</span>
+              </li>
+            ))}
+          </ul>
+          <figcaption>
+            {t(block.caption)}
+            <small>
+              {dict.article.photos}{" "}
+              {block.items.map((item, i) => (
+                <span key={item.src}>
+                  {i > 0 && " · "}
+                  <a href={item.credit.url} rel="noopener noreferrer" target="_blank">{item.credit.text}</a>
+                </span>
+              ))}
+            </small>
+          </figcaption>
+        </figure>
+      );
     case "quote":
       return (
         <blockquote className="blog-quote">

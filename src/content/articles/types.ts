@@ -49,6 +49,21 @@ export type Block =
       captions?: { src: string; lang: string; label: string };
       credit?: { text: string; url: string };
     }
+  | {
+      type: "gallery";
+      /** Shown under the grid, e.g. what the trades have in common */
+      caption: string;
+      /** 3 to 9 photos; the first one is the large tile. Use small files (800 px wide) under /public/blog/gallery/ */
+      items: {
+        src: string;
+        width: number;
+        height: number;
+        alt: string;
+        /** Short label on the tile, e.g. "Hospitality" */
+        label: string;
+        credit: { text: string; url: string };
+      }[];
+    }
   | { type: "quote"; text: string; cite?: string }
   // id + title give the block its own h2 (and a table-of-contents entry); without them a default label is used
   | { type: "faq"; id?: string; title?: string; items: { q: string; a: string }[] }
