@@ -84,9 +84,6 @@ export default function SkillsSection() {
   const sectionRef          = useRef<HTMLElement>(null);
   const cardsWrapRef        = useRef<HTMLDivElement>(null);
   const cardRefs            = useRef<(HTMLDivElement | null)[]>([]);
-  const labelRefs           = useRef<(HTMLSpanElement | null)[]>([]);
-  const titleRefs           = useRef<(HTMLHeadingElement | null)[]>([]);
-  const descRefs            = useRef<(HTMLDivElement | null)[]>([]);
   const gravityContainerRef = useRef<HTMLDivElement>(null);
   const handCursorRef       = useRef<HTMLDivElement | null>(null);
   const handPos             = useRef({ x: 0, y: 0 });
@@ -96,54 +93,32 @@ export default function SkillsSection() {
   const [gravityMod, setGravityMod]       = useState<GravityModule | null>(null);
 
   // ── Main GSAP setup ──────────────────────────────────────────────────────
+  // Only the cards move: the next card slides up while the previous one shrinks and fades.
+  // The text inside stays static, and there is no blur or 3D depth: every scrubbed frame
+  // only moves/scales/fades whole layers, which the compositor does without repainting.
   useEffect(() => {
-    const isTouch = matches(MQ.touch);
-    setIsTouchDevice(isTouch);
-    // Scrubbed blur on full-width cards repaints every frame — too costly on phones
-    const lowPower = isTouch || matches(MQ.mobile);
+    setIsTouchDevice(matches(MQ.touch));
 
-    const cards  = cardRefs.current.filter(Boolean)  as HTMLDivElement[];
-    const labels = labelRefs.current.filter(Boolean) as HTMLSpanElement[];
-    const titles = titleRefs.current.filter(Boolean) as HTMLHeadingElement[];
-    const descs  = descRefs.current.filter(Boolean)  as HTMLDivElement[];
-    const wrap   = cardsWrapRef.current;
+    const cards = cardRefs.current.filter(Boolean) as HTMLDivElement[];
+    const wrap  = cardsWrapRef.current;
     if (!wrap || cards.length === 0) return;
 
     cards.forEach((card, i) => { gsap.set(card, { zIndex: i + 1 }); });
     gsap.set(cards[0], { y: 0 });
     gsap.set(cards[1], { y: "50vh" });
     for (let i = 2; i < cards.length; i++) gsap.set(cards[i], { y: "100vh" });
-    cards.forEach((_, i) => {
-      gsap.set(labels[i], { y: 14, opacity: 0 });
-      gsap.set(titles[i], { y: 52, opacity: 0 });
-      gsap.set(descs[i],  { y: 18, opacity: 0 });
-    });
 
     const ctx = gsap.context(() => {
-      gsap.timeline({ scrollTrigger: { trigger: wrap, start: "top 80%", once: true } })
-        .to(labels[0], { y: 0, opacity: 1, duration: 0.4,  ease: "power2.out" })
-        .to(titles[0], { y: 0, opacity: 1, duration: 0.65, ease: "power3.out" }, "-=0.25")
-        .to(descs[0],  { y: 0, opacity: 1, duration: 0.4,  ease: "power2.out" }, "-=0.35");
-
-      gsap.timeline({ scrollTrigger: { trigger: wrap, start: "top 65%", once: true } })
-        .to(labels[1], { y: 0, opacity: 1, duration: 0.4,  ease: "power2.out" })
-        .to(titles[1], { y: 0, opacity: 1, duration: 0.65, ease: "power3.out" }, "-=0.25")
-        .to(descs[1],  { y: 0, opacity: 1, duration: 0.4,  ease: "power2.out" }, "-=0.35");
-
       for (let i = 0; i < TRANSITIONS; i++) {
         const startPct = (i / TRANSITIONS) * 100;
         const endPct   = ((i + 1) / TRANSITIONS) * 100;
         const tl = gsap.timeline({
           scrollTrigger: { trigger: wrap, start: `${startPct}% top`, end: `${endPct}% top`, scrub: true },
         });
-        tl.to(cards[i],     { scale: 0.82, z: -90, opacity: 0.4, ...(lowPower ? {} : { filter: "blur(7px)" }), transformOrigin: "50% 50%", ease: "power1.in",  duration: 1 }, 0);
+        tl.to(cards[i],     { scale: 0.75, opacity: 0.4, transformOrigin: "50% 50%", ease: "power1.in",  duration: 1 }, 0);
         tl.to(cards[i + 1], { y: 0, ease: "power1.out", duration: 1 }, 0);
         if (i + 2 < cards.length) {
-          tl
-            .to(cards[i + 2],  { y: "50vh", ease: "power1.out", duration: 1 }, 0)
-            .to(labels[i + 2], { y: 0, opacity: 1, duration: 0.28, ease: "power2.out" }, 0.60)
-            .to(titles[i + 2], { y: 0, opacity: 1, duration: 0.38, ease: "power3.out" }, 0.72)
-            .to(descs[i + 2],  { y: 0, opacity: 1, duration: 0.28, ease: "power2.out" }, 0.88);
+          tl.to(cards[i + 2], { y: "50vh", ease: "power1.out", duration: 1 }, 0);
         }
       }
     }, sectionRef);
@@ -228,7 +203,7 @@ export default function SkillsSection() {
 
       {/* ── Scroll-stack cards ── */}
       <div ref={cardsWrapRef} style={{ position: "relative", height: `${CARDS.length * 100}vh` }}>
-        <div style={{ position: "sticky", top: 0, height: "100vh", overflow: "hidden", perspective: "900px" }}>
+        <div style={{ position: "sticky", top: 0, height: "100vh", overflow: "hidden" }}>
           {CARDS.map((card, i) => (
             <div
               key={card.num}
@@ -238,20 +213,22 @@ export default function SkillsSection() {
                 position: "absolute", top: 0, left: 0, right: 0, height: "50vh",
                 background: card.bg, display: "flex", flexDirection: "column",
                 justifyContent: "space-between", padding: "2rem 3rem", overflow: "hidden",
+                // own compositor layer from the start (no mid-scroll promotion hitch); cards only shrink
+                willChange: "transform, opacity",
               }}
             >
               <div style={{ position: "absolute", bottom: "-1rem", right: "1.5rem", fontFamily: "var(--font-bebas)", fontSize: "clamp(7rem, 20vw, 18rem)", color: card.ghost, lineHeight: 1, userSelect: "none", pointerEvents: "none", zIndex: 0 }}>
                 {card.num}
               </div>
               <div style={{ position: "relative", zIndex: 1 }}>
-                <span ref={(el) => { labelRefs.current[i] = el; }} style={{ display: "block", fontFamily: "var(--font-inter)", fontSize: "0.62rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(0,0,0,0.4)", marginBottom: "0.75rem" }}>
+                <span style={{ display: "block", fontFamily: "var(--font-inter)", fontSize: "0.62rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "rgba(0,0,0,0.4)", marginBottom: "0.75rem" }}>
                   {card.label}
                 </span>
-                <h2 ref={(el) => { titleRefs.current[i] = el; }} style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 7vw, 7rem)", lineHeight: 0.9, letterSpacing: "0.01em", color: "#0a0a0a", margin: 0, whiteSpace: "pre-line" }}>
+                <h2 style={{ fontFamily: "var(--font-bebas)", fontSize: "clamp(3rem, 7vw, 7rem)", lineHeight: 0.9, letterSpacing: "0.01em", color: "#0a0a0a", margin: 0, whiteSpace: "pre-line" }}>
                   {card.title}
                 </h2>
               </div>
-              <div ref={(el) => { descRefs.current[i] = el; }} style={{ position: "relative", zIndex: 1, textAlign: "center", maxWidth: "36rem", margin: "0 auto" }}>
+              <div style={{ position: "relative", zIndex: 1, textAlign: "center", maxWidth: "36rem", margin: "0 auto" }}>
                 <p style={{ fontFamily: "var(--font-inter)", fontSize: "0.82rem", lineHeight: 1.6, color: "rgba(0,0,0,0.55)" }}>
                   {card.desc}
                 </p>
