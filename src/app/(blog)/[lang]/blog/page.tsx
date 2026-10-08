@@ -48,11 +48,25 @@ export default async function BlogLandingPage({ params }: Props) {
     <>
       <a href="#main" className="blog-skip">{dict.nav.skip}</a>
       <BlogHeader lang={lang} dict={dict} switcherPaths={switcherPaths} />
-      <main id="main" className="blog-main">
-        <p className="blog-eyebrow">{dict.nav.blog}</p>
-        <h1 className="blog-h1"><BidiText lang={lang}>{dict.landing.heading}</BidiText></h1>
-        <p className="blog-lead"><BidiText lang={lang}>{dict.blogTagline}</BidiText></p>
+      <main id="main" className="blog-landing">
+        {/* Hero: satellite view of Italy (NASA MODIS, public domain) behind the title, via CSS */}
+        <section className="blog-hero">
+          <div className="blog-hero-inner">
+            <p className="blog-eyebrow">{dict.nav.blog}</p>
+            <h1 className="blog-h1"><BidiText lang={lang}>{dict.landing.heading}</BidiText></h1>
+            <p className="blog-lead"><BidiText lang={lang}>{dict.blogTagline}</BidiText></p>
+          </div>
+          <a
+            className="blog-hero-credit"
+            href="https://commons.wikimedia.org/wiki/File:Late_Summer_in_Italy_(MODIS_2025-09-21).jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {dict.landing.imageCredit}
+          </a>
+        </section>
 
+        <div className="blog-main">
         {items.length === 0 ? (
           <>
             <p className="blog-lead" style={{ marginBlockStart: "2.5rem" }}>{dict.landing.empty}</p>
@@ -96,12 +110,13 @@ export default async function BlogLandingPage({ params }: Props) {
             ))}
           </ul>
         )}
+        </div>
       </main>
       <BlogFooter dict={dict} />
       <JsonLd
         data={[
           personLd(),
-          blogLd(lang, blogPath(lang), dict.landing.metaDescription),
+          blogLd(lang, blogPath(lang), dict.blogName, dict.landing.metaDescription),
           breadcrumbLd([
             { name: SITE_NAME, path: "/" },
             { name: dict.blogName, path: blogPath(lang) },

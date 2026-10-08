@@ -1,4 +1,4 @@
-import { AUTHOR_ID, BLOG_NAME, SITE_NAME, SITE_URL, SOCIAL_PROFILES, absoluteUrl } from "./site";
+import { AUTHOR_ID, SITE_NAME, SITE_URL, SOCIAL_PROFILES, absoluteUrl } from "./site";
 
 type JsonLdValue = Record<string, unknown>;
 
@@ -24,10 +24,10 @@ export const personLd = (): JsonLdValue => ({
   sameAs: SOCIAL_PROFILES,
 });
 
-export const blogLd = (lang: string, path: string, description: string): JsonLdValue => ({
+export const blogLd = (lang: string, path: string, name: string, description: string): JsonLdValue => ({
   "@context": "https://schema.org",
   "@type": "Blog",
-  name: BLOG_NAME,
+  name,
   description,
   inLanguage: lang,
   url: absoluteUrl(path),

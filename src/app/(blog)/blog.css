@@ -145,6 +145,42 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-lang:focus-visible { outline-offset: -2px; border-radius: 999px; }
 @media (max-width: 30rem) { .blog-toggle { --seg: 4.3rem; } .blog-lang { font-size: 0.66rem; letter-spacing: 0; } }
 
+/* ── Blog list: hero with the satellite image, then the posts ── */
+.blog-landing { flex: 1; display: flex; flex-direction: column; }
+.blog-hero {
+  position: relative; isolation: isolate; overflow: hidden;
+  display: flex; align-items: flex-end;
+  min-block-size: clamp(22rem, 56vh, 34rem);
+  padding-block: clamp(2.5rem, 7vw, 5rem) clamp(2rem, 5vw, 3.5rem);
+}
+/* NASA MODIS true-colour view of Italy (public domain), kept subtle behind the text */
+.blog-hero::before {
+  content: ""; position: absolute; inset: 0; z-index: -2;
+  background: url("/blog/italy-satellite.webp") 50% 62% / cover no-repeat;
+}
+/* Dark wash for legibility, fading into the page background so the list below stays black */
+.blog-hero::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(to bottom, rgba(10, 10, 10, 0.38) 0%, rgba(10, 10, 10, 0.1) 35%, rgba(10, 10, 10, 0.55) 74%, var(--bg) 100%),
+    linear-gradient(to right, rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0) 60%);
+}
+/* Same container metrics as .blog-main, so the title lines up with the post list below */
+.blog-hero-inner { inline-size: 100%; max-inline-size: 72rem; margin-inline: auto; padding-inline: var(--gutter); }
+.blog-hero .blog-eyebrow { color: #b9d1b5; text-shadow: 0 1px 12px rgba(0, 0, 0, 0.6); }
+.blog-hero .blog-h1 { margin-block-end: 1rem; text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55); }
+.blog-hero .blog-lead { color: rgba(255, 255, 255, 0.82); text-shadow: 0 1px 14px rgba(0, 0, 0, 0.6); }
+.blog-hero-credit {
+  position: absolute; inset-block-end: 0.7rem; inset-inline-end: var(--gutter);
+  font-size: 0.6rem; letter-spacing: 0.04em; color: rgba(255, 255, 255, 0.45);
+}
+.blog-hero-credit:hover { color: rgba(255, 255, 255, 0.85); }
+:lang(ar) .blog-hero-credit { letter-spacing: 0; }
+
+/* The list keeps the standard page container, with less space above it than the old title block */
+.blog-landing > .blog-main { padding-block-start: clamp(0.5rem, 2vw, 1.5rem); }
+.blog-landing > .blog-main .blog-list { margin-block-start: 0; }
+
 /* ── Main ── */
 .blog-main { flex: 1; padding-block: clamp(2.5rem, 7vw, 5rem); padding-inline: var(--gutter); inline-size: 100%; max-inline-size: 72rem; margin-inline: auto; }
 
