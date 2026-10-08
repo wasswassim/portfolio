@@ -194,7 +194,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "visa-timing", text: "10. When must the visa application be filed?" },
     {
       type: "p",
-      text: "For workers who completed training programs abroad, there are special rules setting the period in which the visa application can be filed after training ends. According to the current information for this route, the period extends to 12 months from the end of training, subject to the stated conditions and procedures.",
+      text: "For workers who completed training programs abroad, a deadline counted from the end of training applies to the visa application. Official sources give different figures depending on the date and the step (earlier Ministry guidance stated 6 months for the visa, while the SIISL rules mention 12 months for requesting the Nulla Osta), so check the Ministry's current FAQ for the exact deadline in your case before you plan anything.",
     },
 
     { type: "h2", id: "after-arrival", text: "11. What happens after arriving in Italy?" },
@@ -315,7 +315,7 @@ export const en: ArticleTranslation = {
       type: "keyFacts",
       items: [
         { label: "Who files the Nulla Osta", value: "The Italian employer, not the worker" },
-        { label: "Visa application window", value: "Up to 12 months after training ends, under the stated conditions" },
+        { label: "Deadline after training", value: "Counted from the end of training; confirm the current figure with the Ministry" },
         { label: "Contratto di soggiorno", value: "Within 15 days of entering Italy" },
       ],
     },

@@ -200,7 +200,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "visa-timing", text: "10. Quand faut-il déposer la demande de visa ?" },
     {
       type: "p",
-      text: "Pour les travailleurs qui ont terminé des programmes de formation à l'étranger, des règles particulières fixent la période pendant laquelle la demande de visa peut être déposée après la fin de la formation. D'après les informations actuelles sur cette voie, cette période s'étend jusqu'à 12 mois après la fin de la formation, selon les conditions et procédures prévues.",
+      text: "Pour les travailleurs qui ont terminé des programmes de formation à l'étranger, un délai compté à partir de la fin de la formation s'applique à la demande de visa. Les sources officielles donnent des chiffres différents selon la date et l'étape (les indications antérieures du ministère mentionnaient 6 mois pour le visa, tandis que les règles du SIISL évoquent 12 mois pour demander le Nulla Osta) : consultez la FAQ actuelle du ministère pour connaître le délai exact dans votre cas avant de planifier quoi que ce soit.",
     },
 
     { type: "h2", id: "after-arrival", text: "11. Que se passe-t-il après l'arrivée en Italie ?" },
@@ -321,7 +321,7 @@ export const fr: ArticleTranslation = {
       type: "keyFacts",
       items: [
         { label: "Qui dépose le Nulla Osta", value: "L'employeur italien, et non le travailleur" },
-        { label: "Délai de demande de visa", value: "Jusqu'à 12 mois après la fin de la formation, selon les conditions prévues" },
+        { label: "Délai après la formation", value: "Compté depuis la fin de la formation ; vérifiez le chiffre actuel auprès du ministère" },
         { label: "Contratto di soggiorno", value: "Dans les 15 jours suivant l'entrée en Italie" },
       ],
     },
