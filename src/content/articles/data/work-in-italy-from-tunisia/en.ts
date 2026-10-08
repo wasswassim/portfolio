@@ -8,7 +8,7 @@ export const en: ArticleTranslation = {
   metaDescription:
     "How Tunisians can work in Italy legally outside the Decreto Flussi quotas: who qualifies, approved training programs, documents, job offers and scams.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["work in Italy from Tunisia", "work in Italy outside quotas", "jobs in Italy for Tunisians", "job offers in Italy", "Decreto Flussi", "THAMM Plus"],
+  keywords: ["work in Italy from Tunisia", "work in Italy outside quotas", "work in Italy with a BTP or BTS", "jobs in Italy for Tunisians", "job offers in Italy", "Decreto Flussi", "THAMM Plus"],
   summary:
     "There is a legal route that lets foreign workers who completed approved vocational, language and civic training in their home country enter Italy to work outside the Decreto Flussi quotas. It is not an open visa for every Tunisian: you need an approved program and, after the training, an Italian employer who files the Nulla Osta request.",
   body: [
@@ -191,7 +191,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-match-requirements", text: "Step 2: Make sure your occupation matches the offer's requirements" },
     {
       type: "p",
-      text: "Each offer sets its own requirements. You may be asked, for example, for a vocational training certificate, a certificate of competence, documented work experience, a professional driving licence for some jobs, or other requirements tied to the occupation or the program. Do not rely on a general list posted on social media; read the official offer itself.",
+      text: "Each offer sets its own requirements. You may be asked, for example, for a vocational training diploma (for example a BTP, brevet de technicien professionnel, or a BTS, brevet de technicien supérieur, the Tunisian vocational diplomas), a certificate of competence, documented work experience, a professional driving licence for some jobs, or other requirements tied to the occupation or the program. Do not rely on a general list posted on social media; read the official offer itself.",
     },
     {
       type: "p",
@@ -214,7 +214,7 @@ export const en: ArticleTranslation = {
       items: [
         "**National identity card:** a clear copy, still valid.",
         "**Passport:** make sure it is valid.",
-        "**Vocational certificate** or the required training or competence certificate.",
+        "**Vocational diploma** (such as a BTP or BTS) or the required training or competence certificate.",
         "**Previous work certificates,** especially when experience is part of the offer's requirements.",
         "**Proof of work experience,** such as official documents showing employment dates when they are required.",
         "**Criminal record certificate** when requested.",
@@ -232,7 +232,7 @@ export const en: ArticleTranslation = {
     { type: "p", text: "Training is the core of this route." },
     {
       type: "p",
-      text: "A program can include vocational training, Italian language, civic training, and occupational safety basics.",
+      text: "A program can include vocational training, Italian language, civic training, and occupational safety basics. If you already hold a BTP or a BTS in your trade, keep it ready: some offers ask for a vocational diploma on top of the program's training.",
     },
     {
       type: "figure",

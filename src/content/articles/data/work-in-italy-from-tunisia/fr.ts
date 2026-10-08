@@ -8,7 +8,7 @@ export const fr: ArticleTranslation = {
   metaDescription:
     "Travailler en Italie pour les Tunisiens, hors quotas du Decreto Flussi : qui peut en bénéficier, programmes agréés, documents, offres d'emploi, arnaques.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["travailler en Italie pour les Tunisiens", "travailler en Italie", "emploi Italie Tunisie", "offre d'emploi en Italie", "trouver un job en Italie", "travailler en Italie hors quotas", "Decreto Flussi", "THAMM Plus"],
+  keywords: ["travailler en Italie pour les Tunisiens", "travailler en Italie", "emploi Italie Tunisie", "offre d'emploi en Italie", "trouver un job en Italie", "travailler en Italie hors quotas", "travailler en Italie avec un BTP ou un BTS", "Decreto Flussi", "THAMM Plus"],
   summary:
     "Il existe une voie légale qui permet à des travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Ce n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et, après la formation, un employeur italien qui dépose la demande de Nulla Osta.",
   body: [
@@ -194,7 +194,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "step-match-requirements", text: "Étape 2 : vérifiez que votre métier correspond aux conditions de l'offre" },
     {
       type: "p",
-      text: "Chaque offre fixe ses propres conditions. On peut vous demander, par exemple, un certificat de formation professionnelle, un certificat d'aptitude, une expérience professionnelle documentée, un permis de conduire professionnel pour certains postes, ou d'autres conditions liées au métier ou au programme. Ne vous fiez pas à une liste générale publiée sur les réseaux sociaux ; lisez l'offre officielle elle-même.",
+      text: "Chaque offre fixe ses propres conditions. On peut vous demander, par exemple, un diplôme de formation professionnelle (par exemple un BTP, brevet de technicien professionnel, ou un BTS, brevet de technicien supérieur), un certificat d'aptitude, une expérience professionnelle documentée, un permis de conduire professionnel pour certains postes, ou d'autres conditions liées au métier ou au programme. Ne vous fiez pas à une liste générale publiée sur les réseaux sociaux ; lisez l'offre officielle elle-même.",
     },
     {
       type: "p",
@@ -217,7 +217,7 @@ export const fr: ArticleTranslation = {
       items: [
         "**Carte d'identité nationale :** une copie lisible et en cours de validité.",
         "**Passeport :** vérifiez sa validité.",
-        "**Certificat professionnel,** ou certificat de formation ou d'aptitude exigé.",
+        "**Diplôme de formation professionnelle** (BTP, BTS) ou certificat de formation ou d'aptitude exigé.",
         "**Attestations de travail précédentes,** surtout lorsque l'expérience fait partie des conditions de l'offre.",
         "**Preuve de l'expérience professionnelle,** par exemple des documents officiels attestant les dates d'emploi lorsqu'ils sont exigés.",
         "**Casier judiciaire** lorsqu'il est demandé.",
@@ -235,7 +235,7 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "La formation est la partie essentielle de cette voie." },
     {
       type: "p",
-      text: "Un programme peut comprendre une formation professionnelle, des cours d'italien, une formation civique et des notions de sécurité au travail.",
+      text: "Un programme peut comprendre une formation professionnelle, des cours d'italien, une formation civique et des notions de sécurité au travail. Si vous avez déjà un BTP ou un BTS dans votre métier, gardez-le à portée de main : certaines offres demandent un diplôme professionnel en plus de la formation du programme.",
     },
     {
       type: "figure",
