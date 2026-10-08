@@ -3,12 +3,12 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "contrat-de-travail-en-italie",
-  title: "Contrat de travail en Italie depuis la Tunisie : Nulla Osta, visa et arrivée",
+  title: "Contrat de travail en Italie pour les Tunisiens : Nulla Osta, visa et arrivée",
   seoTitle: "Contrat de travail en Italie : Nulla Osta et visa",
   metaDescription:
     "Après une formation agréée en Tunisie : obtenir un contrat de travail en Italie, le Nulla Osta déposé par l'employeur, le visa D et les démarches à l'arrivée.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["contrat de travail en Italie", "contrat travail Italie", "contrat de travail en Italie depuis la Tunisie", "Nulla Osta", "visa de travail Italie Tunisiens", "Contratto di soggiorno", "Permesso di soggiorno"],
+  keywords: ["contrat de travail en Italie", "contrat travail Italie", "contrat de travail en Italie pour les Tunisiens", "Nulla Osta", "visa de travail Italie Tunisiens", "Contratto di soggiorno", "Permesso di soggiorno"],
   summary:
     "Sur la voie de la formation à l'étranger, le contrat de travail vient d'un employeur italien, qui dépose aussi la demande de Nulla Osta : le travailleur ne peut pas la déposer seul. Une fois le Nulla Osta délivré, vous demandez un National Visa D depuis la Tunisie, puis vous accomplissez le Contratto di soggiorno dans les 15 jours suivant l'entrée en Italie.",
   body: [
@@ -21,7 +21,7 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "**Vous avez terminé une formation agréée en Tunisie. Comment passer de là à un contrat de travail en Italie ?**" },
     {
       type: "p",
-      text: "Voici la partie 2 de notre guide pour [travailler en Italie depuis la Tunisie](article:work-in-italy-from-tunisia). La partie 1 explique la voie de la formation à l'étranger, qui peut en bénéficier, les documents et la formation elle-même. Cette partie couvre la suite : l'employeur italien, le contrat de travail, le Nulla Osta, le visa de travail et vos premières démarches en Italie.",
+      text: "Voici la partie 2 de notre guide pour [travailler en Italie pour les Tunisiens](article:work-in-italy-from-tunisia). La partie 1 explique la voie de la formation à l'étranger, qui peut en bénéficier, les documents et la formation elle-même. Cette partie couvre la suite : l'employeur italien, le contrat de travail, le Nulla Osta, le visa de travail et vos premières démarches en Italie.",
     },
     {
       type: "p",
@@ -42,7 +42,7 @@ export const fr: ArticleTranslation = {
       text: "Pour les travailleurs qui remplissent les conditions de la voie de formation à l'étranger, les démarches d'entrée suivent le système propre à cette voie, en dehors des quotas du Decreto Flussi.",
     },
 
-    { type: "h2", id: "work-contract", text: "2. Comment obtenir un contrat de travail en Italie depuis la Tunisie ?" },
+    { type: "h2", id: "work-contract", text: "2. Contrat de travail en Italie pour les Tunisiens : comment l'obtenir ?" },
     {
       type: "p",
       text: "Un contrat de travail légitime ne s'achète pas et ne se reçoit pas d'un intermédiaire. Sur cette voie, il vient d'un employeur italien mis en relation avec vous dans le cadre d'un programme agréé, et qui dépose ensuite la demande de Nulla Osta.",
@@ -84,6 +84,10 @@ export const fr: ArticleTranslation = {
       text: "En résumé : le travailleur est qualifié → il y a un employeur italien → l'employeur dépose la demande de Nulla Osta → après l'accord, l'étape du visa commence.",
     },
     {
+      type: "p",
+      text: "Votre employeur dépose cette demande en ligne, sur le [Portale Servizi ALI](https://portaleservizi.dlci.interno.it/AliSportello/ali/home.htm) du ministère italien de l'Intérieur, avec le formulaire réservé aux travailleurs formés à l'étranger. Le portail vérifie que votre nom figure sur la liste des travailleurs ayant terminé un programme agréé : une demande de Nulla Osta ne peut donc pas être déposée pour quelqu'un qui n'y figure pas. Si votre employeur a besoin d'aide, le Portale Integrazione Migranti propose un [guide pas à pas pour les employeurs](https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro).",
+    },
+    {
       type: "callout",
       tone: "warning",
       title: "Attention",
@@ -99,8 +103,12 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Des procédures ont été fixées pour l'inscription dans ce système des citoyens étrangers qui ont terminé des programmes de formation dans leur pays d'origine dans le cadre de cette voie. C'est un ajout récent : vous pouvez donc trouver en ligne d'anciens guides qui ne mentionnent pas le SIISL.",
     },
+    {
+      type: "p",
+      text: "Selon les nouvelles règles, les travailleurs qui ont terminé un programme agréé sont inscrits automatiquement : vous n'avez pas à vous inscrire vous-même. La plateforme se trouve sur [siisl.lavoro.gov.it](https://siisl.lavoro.gov.it/).",
+    },
 
-    { type: "h2", id: "work-visa", text: "5. Comment demander le visa de travail depuis la Tunisie ?" },
+    { type: "h2", id: "work-visa", text: "5. Comment demander le visa de travail quand on est Tunisien ?" },
     {
       type: "p",
       text: "Une fois le Nulla Osta délivré, l'étape de la demande de visa commence. Pour les personnes résidant en Tunisie, il faut se fier aux informations publiées par l'ambassade d'Italie en Tunisie et par l'organisme agréé qui traite les demandes de visa.",
@@ -124,6 +132,10 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Où déposer la demande de visa : [Où demander un visa](https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/)",
+    },
+    {
+      type: "p",
+      text: "Les demandes de visa depuis la Tunisie passent par le prestataire de l'ambassade, ALMAVIVA ([avs.com.tn](https://avs.com.tn/)), qui gère les rendez-vous. L'ambassade elle-même ne donne pas de rendez-vous et n'accepte pas de demandes de visa par e-mail.",
     },
 
     { type: "h2", id: "visa-timing", text: "6. Quand faut-il déposer la demande de visa ?" },
@@ -236,6 +248,14 @@ export const fr: ArticleTranslation = {
         {
           label: "Ambassade d'Italie en Tunisie : où demander un visa",
           url: "https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/",
+        },
+        {
+          label: "Ministère italien de l'Intérieur : Portale Servizi ALI (demandes des employeurs)",
+          url: "https://portaleservizi.dlci.interno.it/AliSportello/ali/home.htm",
+        },
+        {
+          label: "Portale Integrazione Migranti : embaucher des travailleurs formés à l'étranger, guide pour les employeurs",
+          url: "https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro",
         },
       ],
     },

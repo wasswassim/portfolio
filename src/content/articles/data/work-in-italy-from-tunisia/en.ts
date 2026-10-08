@@ -97,6 +97,10 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
+      text: "To see which approved programs exist for Tunisia and where each one stands (starting, in progress), check the [official list of approved training programs abroad](https://www.integrazionemigranti.gov.it/it-it/Altre-info/e/2/o/57/id/143) on Portale Integrazione Migranti.",
+    },
+    {
+      type: "p",
       text: "A program appearing on the official list does not mean applications are open right now. It may be at the launch stage, under way, or its application period may have ended. So always check the current announcement and the program's status with the official source.",
     },
 
@@ -110,16 +114,31 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "For some Italy-related job offers, applicants must register with their local employment office and then use the international employment system to apply.",
     },
-    { type: "p", text: "ANETI International: [aneti-international.tn](https://www.aneti-international.tn/)" },
+    {
+      type: "p",
+      text: "**Create your candidate account on ANETI International.** Registration is free: [create a candidate account](https://www.aneti-international.tn/user/create/candidat). Already registered? [Log in here](https://www.aneti-international.tn/user/login). Some offers ask you to be registered both at your local employment office and on ANETI International, with the same national ID card (CIN) number.",
+    },
+    {
+      type: "p",
+      text: "**See the current offers for Italy.** ANETI International lists the offers it is currently publishing, and you can filter them by country: [current job offers for Italy](https://www.aneti-international.tn/offres?field_pays_target_id=1277). Open each offer to read its requirements, contract, documents and deadline.",
+    },
     { type: "h3", id: "step-match-requirements", text: "Step 2: Make sure your occupation matches the offer's requirements" },
     {
       type: "p",
       text: "Each offer sets its own requirements. You may be asked, for example, for a vocational training certificate, a certificate of competence, documented work experience, a professional driving licence for some jobs, or other requirements tied to the occupation or the program. Do not rely on a general list posted on social media; read the official offer itself.",
     },
+    {
+      type: "p",
+      text: "**Apply through the form named in the offer.** For recent offers, applying is not a button on the offer page: you fill in a form on ANETI's [applications platform](https://candidatures.aneti.tn/), using the exact link given in the offer. Always start from the offer, never from a link someone sends you privately.",
+    },
     { type: "h3", id: "step-tests-interviews", text: "Step 3: Pass the tests and interviews" },
     {
       type: "p",
       text: "In some projects, once initial applications are accepted, applicants go through an interview and/or a practical trade test. The test may be directly tied to the occupation, especially for technical and skilled-trade jobs.",
+    },
+    {
+      type: "p",
+      text: "**Get help to prepare.** ANETI International offers help with your CV, job interviews, technical tests and your application file: see [Your project abroad](https://www.aneti-international.tn/node/44919).",
     },
 
     { type: "h2", id: "documents", text: "5. Which documents should you prepare?" },
@@ -175,7 +194,7 @@ export const en: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**ANETI and ANETI International:** publish the job and training programs for Tunisians, as described in section 4.",
+        "**ANETI and ANETI International:** publish the job and training programs for Tunisians, as described in section 4. [See the current offers for Italy](https://www.aneti-international.tn/offres?field_pays_target_id=1277).",
         "**The official announcement of each program:** read the requirements, the sector and the application period yourself.",
         "**Official Italian portals:** the Ministry of Labour and Portale Integrazione Migranti list the approved training programs abroad.",
       ],

@@ -81,6 +81,10 @@ export const en: ArticleTranslation = {
       text: "In simple terms: the worker is qualified → there is an Italian employer → the employer files the Nulla Osta request → after approval, the visa stage begins.",
     },
     {
+      type: "p",
+      text: "Your employer files this request online, on the Italian Ministry of the Interior's [Portale Servizi ALI](https://portaleservizi.dlci.interno.it/AliSportello/ali/home.htm), with the form for workers trained abroad. The portal checks that your name is on the list of workers who completed an approved program, so a Nulla Osta request cannot be filed for someone who is not on it. If your employer needs help, Portale Integrazione Migranti has a [step-by-step guide for employers](https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro).",
+    },
+    {
       type: "callout",
       tone: "warning",
       title: "Warning",
@@ -95,6 +99,10 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Procedures have been set for registering, in this system, foreign citizens who completed training programs in their home country under this route. This is a recent addition, so you may find older guides online that do not mention SIISL.",
+    },
+    {
+      type: "p",
+      text: "Under the new rules, workers who completed an approved program are registered automatically, so you do not need to sign up yourself. The platform is at [siisl.lavoro.gov.it](https://siisl.lavoro.gov.it/).",
     },
 
     { type: "h2", id: "work-visa", text: "5. How do you apply for the work visa from Tunisia?" },
@@ -121,6 +129,10 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Where to apply for a visa: [Where to apply for a visa](https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/)",
+    },
+    {
+      type: "p",
+      text: "Visa applications from Tunisia go through the embassy's service provider, ALMAVIVA ([avs.com.tn](https://avs.com.tn/)), which handles appointments. The embassy itself does not give appointments or accept visa applications by email.",
     },
 
     { type: "h2", id: "visa-timing", text: "6. When must the visa application be filed?" },
@@ -233,6 +245,14 @@ export const en: ArticleTranslation = {
         {
           label: "Italian Embassy in Tunisia: where to apply for a visa",
           url: "https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/",
+        },
+        {
+          label: "Italian Ministry of the Interior: Portale Servizi ALI (employer requests)",
+          url: "https://portaleservizi.dlci.interno.it/AliSportello/ali/home.htm",
+        },
+        {
+          label: "Portale Integrazione Migranti: hiring workers trained abroad, guide for employers",
+          url: "https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro",
         },
       ],
     },

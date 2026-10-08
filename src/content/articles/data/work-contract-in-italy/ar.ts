@@ -82,6 +82,10 @@ export const ar: ArticleTranslation = {
       text: "بشكل مبسط: العامل مؤهل → يوجد صاحب عمل إيطالي → صاحب العمل يقدم طلب Nulla Osta → بعد الموافقة تبدأ مرحلة التأشيرة.",
     },
     {
+      type: "p",
+      text: "يقدم صاحب العمل هذا الطلب عبر الإنترنت على [Portale Servizi ALI](https://portaleservizi.dlci.interno.it/AliSportello/ali/home.htm) التابع لوزارة الداخلية الإيطالية، باستعمال الاستمارة الخاصة بالعمال المكوّنين في الخارج. تتحقق المنصة من أن اسمك موجود في قائمة العمال الذين أتموا برنامجًا معتمدًا، ولذلك لا يمكن تقديم طلب Nulla Osta لشخص غير موجود فيها. وإذا احتاج صاحب العمل إلى مساعدة، فإن Portale Integrazione Migranti يوفر [دليلًا خطوة بخطوة لأصحاب العمل](https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro).",
+    },
+    {
       type: "callout",
       tone: "warning",
       title: "تحذير",
@@ -96,6 +100,10 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "تم تحديد إجراءات تتعلق بتسجيل المواطنين الأجانب الذين أتموا برامج التكوين في بلدهم الأصلي ضمن هذا المسار في هذا النظام. هذه إضافة حديثة، ولذلك قد تجد أدلة قديمة على الإنترنت لا تذكر SIISL.",
+    },
+    {
+      type: "p",
+      text: "وفق القواعد الجديدة، يُسجَّل العمال الذين أتموا برنامجًا معتمدًا بشكل تلقائي، فلا تحتاج إلى التسجيل بنفسك. المنصة متاحة على [siisl.lavoro.gov.it](https://siisl.lavoro.gov.it/).",
     },
 
     { type: "h2", id: "work-visa", text: "5. كيف يتم طلب تأشيرة العمل من تونس؟" },
@@ -122,6 +130,10 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "أين يتم طلب التأشيرة: [أين تطلب التأشيرة](https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/)",
+    },
+    {
+      type: "p",
+      text: "تمر طلبات التأشيرة من تونس عبر مزود الخدمة المعتمد لدى السفارة، ALMAVIVA (موقع [avs.com.tn](https://avs.com.tn/))، وهو الذي يتولى المواعيد. أما السفارة نفسها فلا تمنح مواعيد ولا تقبل طلبات التأشيرة عبر البريد الإلكتروني.",
     },
 
     { type: "h2", id: "visa-timing", text: "6. متى يجب تقديم طلب التأشيرة؟" },
@@ -234,6 +246,14 @@ export const ar: ArticleTranslation = {
         {
           label: "سفارة إيطاليا في تونس: أين تطلب التأشيرة",
           url: "https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/",
+        },
+        {
+          label: "وزارة الداخلية الإيطالية: Portale Servizi ALI (طلبات أصحاب العمل)",
+          url: "https://portaleservizi.dlci.interno.it/AliSportello/ali/home.htm",
+        },
+        {
+          label: "Portale Integrazione Migranti: توظيف العمال المكوّنين في الخارج، دليل لأصحاب العمل",
+          url: "https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro",
         },
       ],
     },

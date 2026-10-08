@@ -18,7 +18,7 @@ export const SERIES: readonly Series[] = [
     id: "work-in-italy-from-tunisia",
     title: {
       en: "Working in Italy from Tunisia",
-      fr: "Travailler en Italie depuis la Tunisie",
+      fr: "Travailler en Italie pour les Tunisiens",
       ar: "العمل في إيطاليا من تونس",
     },
     articleIds: ["work-in-italy-from-tunisia", "work-contract-in-italy"],

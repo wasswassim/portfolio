@@ -3,12 +3,12 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "travailler-en-italie-depuis-la-tunisie",
-  title: "Travailler en Italie depuis la Tunisie : la voie par la formation",
-  seoTitle: "Travailler en Italie depuis la Tunisie : guide 2026",
+  title: "Travailler en Italie pour les Tunisiens : la voie par la formation",
+  seoTitle: "Travailler en Italie pour les Tunisiens : guide 2026",
   metaDescription:
-    "Comment travailler en Italie depuis la Tunisie, hors quotas du Decreto Flussi : qui peut en bénéficier, programmes agréés, documents, offres d'emploi, arnaques.",
+    "Travailler en Italie pour les Tunisiens, hors quotas du Decreto Flussi : qui peut en bénéficier, programmes agréés, documents, offres d'emploi, arnaques.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["travailler en Italie depuis la Tunisie", "travailler en Italie", "emploi Italie Tunisie", "offre d'emploi en Italie", "trouver un job en Italie", "travailler en Italie hors quotas", "Decreto Flussi", "THAMM Plus"],
+  keywords: ["travailler en Italie pour les Tunisiens", "travailler en Italie", "emploi Italie Tunisie", "offre d'emploi en Italie", "trouver un job en Italie", "travailler en Italie hors quotas", "Decreto Flussi", "THAMM Plus"],
   summary:
     "Il existe une voie légale qui permet à des travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Ce n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et, après la formation, un employeur italien qui dépose la demande de Nulla Osta.",
   body: [
@@ -18,7 +18,7 @@ export const fr: ArticleTranslation = {
       title: "Avertissement important",
       text: "Ce guide est fourni à titre informatif et ne constitue pas un conseil juridique. Les programmes d'immigration, leurs conditions et leurs procédures peuvent changer : vérifiez toujours les sources officielles avant de candidater ou de payer quoi que ce soit.",
     },
-    { type: "p", text: "**Vous cherchez un moyen légal de travailler en Italie depuis la Tunisie ?**" },
+    { type: "p", text: "**Vous êtes Tunisien et vous cherchez un moyen légal de travailler en Italie ?**" },
     {
       type: "p",
       text: "La loi italienne sur l'immigration prévoit un mécanisme particulier qui permet, dans des cas précis, aux travailleurs étrangers ayant terminé des programmes de formation professionnelle, linguistique et civique agréés dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi.",
@@ -100,10 +100,14 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
+      text: "Pour voir quels programmes agréés existent pour la Tunisie et où en est chacun (lancement, en cours), consultez la [liste officielle des programmes de formation à l'étranger agréés](https://www.integrazionemigranti.gov.it/it-it/Altre-info/e/2/o/57/id/143) sur le Portale Integrazione Migranti.",
+    },
+    {
+      type: "p",
       text: "Le fait qu'un programme figure dans la liste officielle ne signifie pas que les candidatures sont ouvertes actuellement. Il peut être en phase de lancement, en cours, ou sa période de candidature peut être terminée. Vérifiez donc toujours l'annonce en vigueur et l'état du programme auprès de la source officielle.",
     },
 
-    { type: "h2", id: "how-to-start", text: "4. Comment commencer depuis la Tunisie ?" },
+    { type: "h2", id: "how-to-start", text: "4. Par où commencer quand on est Tunisien ?" },
     { type: "h3", id: "step-follow-official", text: "Étape 1 : suivez les canaux officiels" },
     {
       type: "p",
@@ -113,16 +117,31 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Pour certaines offres d'emploi liées à l'Italie, le candidat doit s'inscrire auprès de son bureau d'emploi local, puis utiliser le système d'emploi international pour postuler.",
     },
-    { type: "p", text: "ANETI International : [aneti-international.tn](https://www.aneti-international.tn/)" },
+    {
+      type: "p",
+      text: "**Créez votre compte candidat sur ANETI International.** L'inscription est gratuite : [créer un compte candidat](https://www.aneti-international.tn/user/create/candidat). Déjà inscrit ? [Connectez-vous ici](https://www.aneti-international.tn/user/login). Certaines offres demandent d'être inscrit à la fois au bureau d'emploi local et sur ANETI International, avec le même numéro de carte d'identité nationale (CIN).",
+    },
+    {
+      type: "p",
+      text: "**Consultez les offres actuelles pour l'Italie.** ANETI International publie la liste des offres en cours, que vous pouvez filtrer par pays : [offres d'emploi actuelles pour l'Italie](https://www.aneti-international.tn/offres?field_pays_target_id=1277). Ouvrez chaque offre pour lire les conditions, le contrat, les documents demandés et la date limite.",
+    },
     { type: "h3", id: "step-match-requirements", text: "Étape 2 : vérifiez que votre métier correspond aux conditions de l'offre" },
     {
       type: "p",
       text: "Chaque offre fixe ses propres conditions. On peut vous demander, par exemple, un certificat de formation professionnelle, un certificat d'aptitude, une expérience professionnelle documentée, un permis de conduire professionnel pour certains postes, ou d'autres conditions liées au métier ou au programme. Ne vous fiez pas à une liste générale publiée sur les réseaux sociaux ; lisez l'offre officielle elle-même.",
     },
+    {
+      type: "p",
+      text: "**Postulez via le formulaire indiqué dans l'offre.** Pour les offres récentes, la candidature ne se fait pas par un bouton sur la page de l'offre : vous remplissez un formulaire sur la [plateforme de candidatures de l'ANETI](https://candidatures.aneti.tn/), avec le lien exact donné dans l'offre. Partez toujours de l'offre, jamais d'un lien envoyé en message privé.",
+    },
     { type: "h3", id: "step-tests-interviews", text: "Étape 3 : réussissez les tests et les entretiens" },
     {
       type: "p",
       text: "Dans certains projets, une fois les dossiers initiaux acceptés, les candidats passent un entretien et/ou un test professionnel pratique. Le test peut être directement lié au métier, en particulier pour les postes techniques et manuels.",
+    },
+    {
+      type: "p",
+      text: "**Faites-vous aider pour vous préparer.** ANETI International propose une aide pour le CV, les entretiens d'embauche, les tests techniques et le dossier de candidature : voir [Votre projet à l'international](https://www.aneti-international.tn/node/44919).",
     },
 
     { type: "h2", id: "documents", text: "5. Quels documents faut-il préparer ?" },
@@ -178,7 +197,7 @@ export const fr: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**ANETI et ANETI International :** publient les programmes d'emploi et de formation destinés aux Tunisiens, comme décrit à la section 4.",
+        "**ANETI et ANETI International :** publient les programmes d'emploi et de formation destinés aux Tunisiens, comme décrit à la section 4. [Voir les offres actuelles pour l'Italie](https://www.aneti-international.tn/offres?field_pays_target_id=1277).",
         "**L'annonce officielle de chaque programme :** lisez vous-même les conditions, le secteur et la période de candidature.",
         "**Les portails officiels italiens :** le ministère du Travail et le Portale Integrazione Migranti présentent les programmes de formation agréés à l'étranger.",
       ],
@@ -227,7 +246,7 @@ export const fr: ArticleTranslation = {
           a: "Il n'y a pas de durée unique pour tous les programmes. Elle varie selon le programme, le secteur et le métier.",
         },
         {
-          q: "Où trouver une offre d'emploi en Italie depuis la Tunisie ?",
+          q: "Où trouver une offre d'emploi en Italie pour les Tunisiens ?",
           a: "Commencez par l'ANETI et l'annonce officielle de chaque programme. Ne vous fiez pas aux publications sur les réseaux sociaux ni aux intermédiaires qui demandent de l'argent.",
         },
       ],
