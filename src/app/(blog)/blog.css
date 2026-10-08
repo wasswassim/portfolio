@@ -365,6 +365,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 @view-transition { navigation: auto; }
 
 .blog-header { view-transition-name: blog-header; }
+/* Card title <-> post title: a shared name makes the browser animate them as their own element
+   (a cross-fade), outside the page. While a post is opening or closing the page itself slides,
+   so the name is switched off and the title travels with the page like the rest of the text.
+   It stays for other navigations (e.g. switching language on a post). */
+.blog-vt-title { view-transition-name: var(--vt-name, none); }
+:root:active-view-transition-type(open) .blog-vt-title,
+:root:active-view-transition-type(close) .blog-vt-title { view-transition-name: none; }
+
 .blog-toggle-thumb { view-transition-name: lang-thumb; }
 .blog-toggle-options { view-transition-name: lang-labels; }
 

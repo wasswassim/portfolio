@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import { LANGS, DEFAULT_LANG, DIR, LANG_LABEL, LOCALE, type Lang } from "@/lib/i18n/config";
 import { langStaticParams, toLang, type LangPageProps as Props } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n";
@@ -84,7 +85,7 @@ export default async function BlogLandingPage({ params }: Props) {
                     <span className="blog-cat">{dict.categories[article.category]}</span>
                     <time dateTime={article.publishedAt}>{dateFmt.format(new Date(article.publishedAt))}</time>
                   </span>
-                  <h2 style={{ viewTransitionName: `post-${article.id}` }}>
+                  <h2 className="blog-vt-title" style={{ "--vt-name": `post-${article.id}` } as CSSProperties}>
                     <BidiText lang={lang}>{translation.title}</BidiText>
                   </h2>
                   <p><BidiText lang={lang}>{translation.metaDescription}</BidiText></p>
