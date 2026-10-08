@@ -6,9 +6,9 @@ export const fr: ArticleTranslation = {
   title: "Travailler en Italie quand on est Tunisien : la voie par la formation",
   seoTitle: "Travailler en Italie depuis la Tunisie : guide 2026",
   metaDescription:
-    "Guide pas à pas pour les Tunisiens qui veulent travailler légalement en Italie hors quotas du Decreto Flussi : conditions, documents, Nulla Osta, visa, arnaques",
+    "Guide pour travailler en Italie depuis la Tunisie, hors quotas du Decreto Flussi : conditions, documents, contrat de travail, Nulla Osta, visa, arnaques.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["travailler en Italie depuis la Tunisie", "Decreto Flussi", "Nulla Osta", "visa de travail Italie Tunisiens", "travailler en Italie hors quotas"],
+  keywords: ["travailler en Italie depuis la Tunisie", "Decreto Flussi", "Nulla Osta", "visa de travail Italie Tunisiens", "travailler en Italie hors quotas", "contrat de travail en Italie", "emploi Italie Tunisie"],
   summary:
     "Il existe une voie légale qui permet à des travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Ce n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et un employeur italien qui dépose la demande de Nulla Osta.",
   body: [
@@ -236,7 +236,42 @@ export const fr: ArticleTranslation = {
       text: "Des procédures ont été fixées pour l'inscription dans ce système des citoyens étrangers qui ont terminé des programmes de formation dans leur pays d'origine dans le cadre de cette voie. C'est un ajout récent : vous pouvez donc trouver en ligne d'anciens guides qui ne mentionnent pas le SIISL.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "13. Méfiez-vous des arnaques" },
+    { type: "h2", id: "work-contract", text: "13. Comment obtenir un contrat de travail depuis la Tunisie ?" },
+    {
+      type: "p",
+      text: "Un contrat de travail légitime ne s'achète pas et ne se reçoit pas d'un intermédiaire. Sur cette voie, il vient d'un employeur italien mis en relation avec vous dans le cadre d'un programme agréé, et qui dépose ensuite la demande de Nulla Osta.",
+    },
+    {
+      type: "p",
+      text: "Ne confondez pas deux documents différents. Le contrat de travail (contratto di lavoro) est l'accord entre vous et l'employeur. Le Contratto di soggiorno est le contrat de séjour que vous accomplissez après l'arrivée en Italie, comme expliqué à la section 11.",
+    },
+    { type: "p", text: "Avant d'accepter une offre, vérifiez que :" },
+    {
+      type: "ul",
+      items: [
+        "Le nom et les coordonnées de l'employeur sont indiqués, et vous pouvez vérifier de qui il s'agit.",
+        "Le poste, le secteur et le programme correspondent à votre formation.",
+        "La demande passe par un canal officiel, pas par un message privé.",
+        "Personne ne vous demande de payer pour un contrat ou un visa garanti.",
+      ],
+    },
+
+    { type: "h2", id: "find-job-offers", text: "14. Où trouver des offres d'emploi ?" },
+    { type: "p", text: "Commencez par les canaux officiels, pas par les groupes sur les réseaux sociaux." },
+    {
+      type: "ul",
+      items: [
+        "**ANETI et ANETI International :** publient les programmes d'emploi et de formation destinés aux Tunisiens, comme décrit à la section 4.",
+        "**L'annonce officielle de chaque programme :** lisez vous-même les conditions, le secteur et la période de candidature.",
+        "**Les portails officiels italiens :** le ministère du Travail et le Portale Integrazione Migranti présentent les programmes de formation agréés à l'étranger.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Les publications qui promettent un emploi garanti en Italie sont un signal d'alerte classique. Si une offre est introuvable sur un canal officiel, considérez-la comme non vérifiée.",
+    },
+
+    { type: "h2", id: "avoid-scams", text: "15. Méfiez-vous des arnaques" },
     {
       type: "callout",
       tone: "warning",
@@ -281,6 +316,18 @@ export const fr: ArticleTranslation = {
         {
           q: "Que faire après l'arrivée en Italie ?",
           a: "Vous accomplissez les démarches du Contratto di soggiorno et du Permesso di soggiorno, selon les règles et les délais applicables à votre situation.",
+        },
+        {
+          q: "Quelle est la différence entre un contrat de travail et le Contratto di soggiorno ?",
+          a: "Le contrat de travail est l'accord entre vous et l'employeur. Le Contratto di soggiorno est le contrat de séjour que vous accomplissez après l'arrivée en Italie.",
+        },
+        {
+          q: "Peut-on travailler en Italie sans contrat ?",
+          a: "Pas légalement sur cette voie. Un employeur italien doit d'abord déposer la demande de Nulla Osta. Méfiez-vous de toute offre de travail en Italie qui saute ces étapes.",
+        },
+        {
+          q: "Où trouver une offre d'emploi en Italie depuis la Tunisie ?",
+          a: "Commencez par l'ANETI et l'annonce officielle de chaque programme. Ne vous fiez pas aux publications sur les réseaux sociaux ni aux intermédiaires qui demandent de l'argent.",
         },
       ],
     },

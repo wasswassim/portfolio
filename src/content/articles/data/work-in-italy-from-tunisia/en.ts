@@ -6,9 +6,9 @@ export const en: ArticleTranslation = {
   title: "Working in Italy as a Tunisian: The Training-Abroad Route",
   seoTitle: "Work in Italy from Tunisia: Legal Guide (2026)",
   metaDescription:
-    "Step-by-step guide for Tunisians who want to work in Italy legally outside the Decreto Flussi quotas: eligibility, documents, Nulla Osta, visa and scams.",
+    "Step-by-step guide for Tunisians to work in Italy legally outside the Decreto Flussi quotas: documents, work contract, Nulla Osta, visa and scams.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["work in Italy from Tunisia", "Decreto Flussi", "Nulla Osta", "Italy work visa for Tunisians", "work in Italy outside quotas"],
+  keywords: ["work in Italy from Tunisia", "Decreto Flussi", "Nulla Osta", "Italy work visa for Tunisians", "work in Italy outside quotas", "work contract in Italy", "jobs in Italy for Tunisians"],
   summary:
     "There is a legal route that lets foreign workers who completed approved vocational, language and civic training in their home country enter Italy to work outside the Decreto Flussi quotas. It is not an open visa for every Tunisian: you need an approved program and an Italian employer who files the Nulla Osta request.",
   body: [
@@ -230,7 +230,42 @@ export const en: ArticleTranslation = {
       text: "Procedures have been set for registering, in this system, foreign citizens who completed training programs in their home country under this route. This is a recent addition, so you may find older guides online that do not mention SIISL.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "13. Beware of scams" },
+    { type: "h2", id: "work-contract", text: "13. How do you get a work contract from Tunisia?" },
+    {
+      type: "p",
+      text: "A legitimate work contract is not something you buy or receive from an intermediary. On this route, it comes from an Italian employer who has been matched with you through an approved program, and who then files the Nulla Osta request.",
+    },
+    {
+      type: "p",
+      text: "Do not confuse two different documents. The work contract (contratto di lavoro) is the agreement between you and the employer. The Contratto di soggiorno is the residence contract you complete after arriving in Italy, as explained in section 11.",
+    },
+    { type: "p", text: "Before you accept an offer, check that:" },
+    {
+      type: "ul",
+      items: [
+        "The employer's name and details are given, and you can verify who they are.",
+        "The job, the sector and the program match what you trained for.",
+        "The request goes through an official channel, not a private message.",
+        "Nobody asks you to pay for a contract or a guaranteed visa.",
+      ],
+    },
+
+    { type: "h2", id: "find-job-offers", text: "14. Where can you find job offers?" },
+    { type: "p", text: "Start with the official channels, not social media groups." },
+    {
+      type: "ul",
+      items: [
+        "**ANETI and ANETI International:** publish the job and training programs for Tunisians, as described in section 4.",
+        "**The official announcement of each program:** read the requirements, the sector and the application period yourself.",
+        "**Official Italian portals:** the Ministry of Labour and Portale Integrazione Migranti list the approved training programs abroad.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Posts promising a guaranteed job in Italy are a classic warning sign. If an offer cannot be found on an official channel, treat it as unverified.",
+    },
+
+    { type: "h2", id: "avoid-scams", text: "15. Beware of scams" },
     {
       type: "callout",
       tone: "warning",
@@ -275,6 +310,18 @@ export const en: ArticleTranslation = {
         {
           q: "What do I do after arriving in Italy?",
           a: "You complete the Contratto di soggiorno and Permesso di soggiorno procedures, according to the rules and deadlines that apply to your case.",
+        },
+        {
+          q: "What is the difference between a work contract and the Contratto di soggiorno?",
+          a: "The work contract is the agreement between you and the employer. The Contratto di soggiorno is the residence contract you complete after arriving in Italy.",
+        },
+        {
+          q: "Can I work in Italy without a contract?",
+          a: "Not legally on this route. An Italian employer must file the Nulla Osta request first. Be wary of any offer of work in Italy that skips these steps.",
+        },
+        {
+          q: "Where can I find a job offer in Italy from Tunisia?",
+          a: "Start with ANETI and the official announcement of each program. Do not rely on social media posts or on intermediaries who ask for money.",
         },
       ],
     },
