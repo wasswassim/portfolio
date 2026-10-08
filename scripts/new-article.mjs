@@ -64,3 +64,4 @@ writeFileSync(indexPath, index);
 console.log("Created src/content/articles/data/" + id + "/ (article.ts, en.ts, fr.ts, ar.ts) and registered it.");
 console.log("Next: replace every TODO in the three language files, add pictures/videos between paragraphs,");
 console.log("set lastVerified once the facts are checked, then run: npm run check:articles");
+console.log("Part of a series? Append \"" + id + "\" to its articleIds in src/content/articles/series.ts.");

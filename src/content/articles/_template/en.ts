@@ -25,6 +25,8 @@ export const en: ArticleTranslation = {
 
     { type: "h2", id: "first-section", text: "1. TODO: first section heading" },
     { type: "p", text: "TODO: paragraph." },
+    // LINK to another post: [descriptive anchor](article:other-article-id#heading-id). It resolves to that
+    // post in the same language; the check fails if the article or heading does not exist.
 
     // PICTURE between paragraphs: copy this block to any spot in `body`. Put the file in /public/blog/
     // (WebP, max 1600px wide, under 250 KB) and write alt text and a caption in every language.

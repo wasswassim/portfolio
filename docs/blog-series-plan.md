@@ -1,9 +1,11 @@
 # Plan: split the first blog post into a 3-part series + keyword/SEO work
 
 Handoff document for a fresh chat in this project (written 2026-10-08).
-Status: **plan only. Nothing in this plan has been implemented yet.**
-The user has approved the direction ("three posts") but has not seen the final structure or text.
-Do not commit or push anything until the user asks.
+Status (2026-10-08): **implemented as a 2-part series, not 3.** The real text was ~1,950 words (EN, with FAQ),
+so parts 2 and 3 would each have been under the 600-word floor in section 3; they were merged into
+`work-contract-in-italy` (fr `contrat-de-travail-en-italie`). Series registry: `src/content/articles/series.ts`;
+how-to: `src/content/articles/README.md` ("Links between posts", "Series"). The sections below are the original plan.
+Open: native review of the new French/Arabic sentences; EN/AR keyword data (Mangools returned none).
 
 ---
 

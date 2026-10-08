@@ -31,6 +31,30 @@ Replace every `TODO`. `npm run check:articles` (and every `npm run build`) fails
 
 Per language: `slug`, `title` (the H1), `seoTitle`, `metaDescription`, `imageAlt`, `keywords`, `summary` (answer-first, two sentences), `body`, `guide`.
 
+## Links between posts
+
+Write `[descriptive anchor](article:other-article-id)` or `[anchor](article:other-article-id#heading-id)`.
+The link resolves to that post in the reader's language, so slugs never appear in the text.
+Use an anchor that says what the reader will find ("how to get a work contract in Italy"), never "click here".
+The check fails when the article, its translation or the heading does not exist.
+
+## Series (Part 1 of N)
+
+A topic that is too big for one page is split into a series, one search intent per post
+(see `docs/blog-series-plan.md`). The parts are listed in `series.ts`:
+
+```ts
+{ id: "work-in-italy-from-tunisia", title: { en: "...", fr: "...", ar: "..." },
+  articleIds: ["work-in-italy-from-tunisia", "work-contract-in-italy"] } // reading order, hub first
+```
+
+- Each part is a normal article (own folder, slug, FAQ, sources, guide card).
+- The page then shows a "Part n of N" strip under the byline, a "Next step" card after the article,
+  a part chip on the blog list, and `isPartOf` / `position` in the BlogPosting JSON-LD.
+- Each part must stand alone: open with a one or two sentence recap and a link to the hub, and do not copy sections between parts.
+  The check fails when two parts share a section heading or a FAQ question, or when a part is missing a language.
+- To add a part: `npm run new-article -- new-part-id work`, write it, then append `"new-part-id"` to `articleIds`.
+
 ## Pictures and videos between paragraphs
 
 Add a block anywhere in `body`; it renders between the neighbouring paragraphs.
