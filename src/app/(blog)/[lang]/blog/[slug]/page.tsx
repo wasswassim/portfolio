@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { LANGS, DEFAULT_LANG, LOCALE, isLang, type Lang } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
 import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
-import { allArticleParams, articleBySlug } from "@/content/articles";
+import { allArticleParams, articleBySlug, seriesPosition } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd, personLd, blogPostingLd, breadcrumbLd, faqLd, videoLd } from "@/lib/seo/jsonld";
 import { faqPairsOf, headingsOf, readingMinutes, videosOf, wordCountOf } from "@/content/articles/blocks";
@@ -13,6 +13,7 @@ import BlogFooter from "@/components/blog/BlogFooter";
 import BidiText from "@/components/blog/BidiText";
 import GuideCard from "@/components/blog/GuideCard";
 import ArticleBody from "@/components/blog/ArticleBody";
+import { SeriesNav, SeriesStrip } from "@/components/blog/SeriesNav";
 
 export const dynamicParams = false;
 
@@ -70,6 +71,7 @@ export default async function ArticlePage(props: Props) {
   const minutes = readingMinutes(lang, "", translation.body);
   const headings = headingsOf(translation.body).filter((h) => h.level === 2);
   const faq = faqLd(faqPairsOf([...translation.body, ...guide]));
+  const series = seriesPosition(article, lang);
   const videos = videosOf([...translation.body, ...guide])
     .map((v) => videoLd(v))
     .filter((v): v is NonNullable<typeof v> => v !== null);
@@ -100,7 +102,9 @@ export default async function ArticlePage(props: Props) {
                 )}
                 <a href="#guide" className="blog-guide-jump">{dict.article.guide} <span aria-hidden="true">↓</span></a>
               </p>
+              {series && <SeriesStrip position={series} lang={lang} dict={dict} />}
               <ArticleBody body={translation.body} lang={lang} dict={dict} />
+              {series && <SeriesNav position={series} lang={lang} dict={dict} />}
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
             </article>
             <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
@@ -124,6 +128,11 @@ export default async function ArticlePage(props: Props) {
             minutes,
             publishedAt: article.publishedAt,
             updatedAt: article.updatedAt,
+            series: series && {
+              name: series.series.title[lang],
+              hubPath: articlePath(lang, series.hub.translation.slug),
+              position: series.part,
+            },
           }),
           breadcrumbLd([
             { name: SITE_NAME, path: "/" },

@@ -206,6 +206,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-card p { color: var(--muted); max-inline-size: 40rem; }
 .blog-meta { font-size: 0.75rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; }
 .blog-meta .blog-cat { color: var(--soft-green); }
+.blog-meta .blog-part { padding-inline: 0.55rem; border: 1px solid var(--border); border-radius: 999px; color: var(--fg); }
 .blog-arrow { display: inline-block; }
 [dir="rtl"] .blog-arrow { transform: scaleX(-1); }
 
@@ -324,6 +325,50 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 /* "Back" arrow points toward the start edge: flipped in LTR, natural in RTL */
 .blog-back .blog-arrow { transform: scaleX(-1); }
 [dir="rtl"] .blog-back .blog-arrow { transform: none; }
+/* ── Series: index strip under the byline, next/previous card after the article ──
+   Plain links; logical properties, so arrows and the hover shift follow the reading direction. */
+.blog-series-strip { margin-block-start: 1.5rem; padding: 0.9rem 1.1rem; border: 1px solid var(--border); border-radius: 0.8rem; background: var(--surface); font-size: 0.85rem; }
+.blog-series-strip-label { display: flex; flex-wrap: wrap; gap: 0.4rem; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--soft-green); margin-block-end: 0.5rem; }
+:lang(ar) .blog-series-strip-label { letter-spacing: 0; font-size: 0.8rem; }
+.blog-series-strip ol { padding-inline-start: 1.3rem; display: grid; }
+.blog-series-strip [aria-current] { display: inline-block; padding-block: 0.55rem; }
+.blog-series-strip li::marker { color: var(--soft-green); }
+.blog-series-strip a { display: inline-block; padding-block: 0.55rem; color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+.blog-series-strip a:hover { text-decoration-thickness: 2px; }
+.blog-series-strip [aria-current] { font-weight: 600; }
+
+.blog-series-nav { margin-block-start: 3rem; display: grid; gap: 1rem; }
+.blog-series-kicker { display: block; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--soft-green); }
+:lang(ar) .blog-series-kicker { letter-spacing: 0; font-size: 0.8rem; }
+.blog-series-next {
+  position: relative; display: flex; flex-direction: column; gap: 0.5rem;
+  padding: 1.4rem 1.5rem; padding-inline-end: 4.5rem;
+  border: 1px solid var(--border); border-inline-start: 3px solid var(--accent); border-radius: 1rem;
+  background: var(--surface); transition: background-color 0.3s ease;
+}
+/* No padding change on hover: it would rewrap the text and move the links below */
+.blog-series-next:hover { background: var(--hover); }
+.blog-series-go { transition: background-color 0.3s ease, color 0.3s ease; }
+.blog-series-next:focus-visible, .blog-series-prev:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.blog-series-title { font-size: clamp(1.2rem, 3vw, 1.5rem); font-weight: 600; line-height: 1.3; letter-spacing: -0.01em; }
+:lang(ar) .blog-series-title { letter-spacing: 0; line-height: 1.6; }
+.blog-series-desc { color: var(--muted); font-size: 0.95rem; }
+.blog-series-go {
+  position: absolute; inset-inline-end: 1.4rem; inset-block-start: 50%; translate: 0 -50%;
+  inline-size: 2.4rem; block-size: 2.4rem; display: grid; place-items: center;
+  border: 1px solid var(--accent); border-radius: 50%; color: var(--accent);
+}
+.blog-series-next:hover .blog-series-go { background: var(--accent); color: var(--surface); }
+.blog-series-prev { display: inline-flex; align-items: center; gap: 0.8rem; min-block-size: 44px; padding-block: 0.4rem; color: var(--fg); font-size: 0.95rem; }
+.blog-series-prev:hover { color: var(--accent); }
+/* "Previous" points toward the start edge, like the back link */
+.blog-series-prev .blog-arrow { transform: scaleX(-1); }
+[dir="rtl"] .blog-series-prev .blog-arrow { transform: none; }
+@media (max-width: 30rem) {
+  .blog-series-next { padding-inline-end: 1.5rem; }
+  .blog-series-go { position: static; translate: none; align-self: flex-end; }
+}
+
 .blog-unverified { margin-block-start: 2rem; padding: 0.9rem 1.1rem; border: 1px dashed var(--border); border-radius: 0.6rem; font-size: 0.8rem; color: var(--muted); }
 
 /* ── Article layout: reader-first article + sticky guide card ──────────────

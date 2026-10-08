@@ -3,14 +3,14 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "travailler-en-italie-depuis-la-tunisie",
-  title: "Travailler en Italie quand on est Tunisien : la voie par la formation",
+  title: "Travailler en Italie depuis la Tunisie : la voie par la formation",
   seoTitle: "Travailler en Italie depuis la Tunisie : guide 2026",
   metaDescription:
-    "Guide pour travailler en Italie depuis la Tunisie, hors quotas du Decreto Flussi : conditions, documents, contrat de travail, Nulla Osta, visa, arnaques.",
+    "Comment travailler en Italie depuis la Tunisie, hors quotas du Decreto Flussi : qui peut en bénéficier, programmes agréés, documents, offres d'emploi, arnaques.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["travailler en Italie depuis la Tunisie", "Decreto Flussi", "Nulla Osta", "visa de travail Italie Tunisiens", "travailler en Italie hors quotas", "contrat de travail en Italie", "emploi Italie Tunisie"],
+  keywords: ["travailler en Italie depuis la Tunisie", "travailler en Italie", "emploi Italie Tunisie", "offre d'emploi en Italie", "trouver un job en Italie", "travailler en Italie hors quotas", "Decreto Flussi", "THAMM Plus"],
   summary:
-    "Il existe une voie légale qui permet à des travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Ce n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et un employeur italien qui dépose la demande de Nulla Osta.",
+    "Il existe une voie légale qui permet à des travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Ce n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et, après la formation, un employeur italien qui dépose la demande de Nulla Osta.",
   body: [
     {
       type: "callout",
@@ -39,19 +39,23 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/giorgia-meloni-2023.webp",
-      width: 1200,
-      height: 800,
-      alt: "Portrait officiel de Giorgia Meloni, présidente du Conseil italien, devant les drapeaux italien et européen",
-      caption: "Giorgia Meloni, présidente du Conseil des ministres italien. Les quotas du Decreto Flussi sont fixés par un décret du gouvernement italien.",
+      src: "/blog/palazzo-chigi-rome.webp",
+      width: 1600,
+      height: 791,
+      alt: "Façade du Palazzo Chigi à Rome, avec les drapeaux italien et européen au-dessus de l'entrée",
+      caption: "Le Palazzo Chigi à Rome, siège du gouvernement italien. Les quotas du Decreto Flussi sont fixés par un décret du gouvernement ; cette voie fonctionne en dehors de ces quotas.",
       credit: {
-        text: "Photo : Governo italiano, CC BY 3.0 IT, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Giorgia_Meloni_Official_2023.jpg",
+        text: "Photo : Blackcat (Sergio D'Afflitto), CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Palazzo_Chigi_Roma_giugno_2024.jpg",
       },
     },
     {
       type: "p",
       text: "On peut résumer le parcours ainsi : formation agréée en Tunisie → embauche, ou mise en relation du travailleur avec un employeur → demande de Nulla Osta par l'employeur italien → visa de travail → voyage en Italie → démarches de séjour et de travail.",
+    },
+    {
+      type: "p",
+      text: "Cette première partie couvre le début de ce parcours, jusqu'à la fin de la formation. La suite, de l'employeur à votre arrivée en Italie, se trouve dans [la partie 2 : contrat de travail en Italie, Nulla Osta et visa](article:work-contract-in-italy).",
     },
 
     { type: "h2", id: "who-can-apply", text: "2. Qui peut utiliser cette voie ?" },
@@ -81,6 +85,18 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Parmi les projets connus figure THAMM Plus, un programme de coopération qui vise à former et à insérer des travailleurs tunisiens en Italie, notamment dans le secteur du bâtiment.",
+    },
+    {
+      type: "figure",
+      src: "/blog/construction-site-tunisia.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Une pompe à béton coule une dalle sur un immeuble en construction en Tunisie",
+      caption: "Un chantier en Tunisie. Le bâtiment fait partie des secteurs couverts par des programmes comme THAMM Plus.",
+      credit: {
+        text: "Photo : Habib M'henni, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Coulage_de_b%C3%A9ton_pour_dalle,_Tunisie.jpg",
+      },
     },
     {
       type: "p",
@@ -137,126 +153,27 @@ export const fr: ArticleTranslation = {
       text: "Un programme peut comprendre une formation professionnelle, des cours d'italien, une formation civique et des notions de sécurité au travail.",
     },
     {
-      type: "p",
-      text: "La durée de la formation varie d'un programme à l'autre : il ne faut donc pas présenter une durée unique comme une règle générale pour tous les programmes.",
-    },
-
-    { type: "h2", id: "after-training", text: "7. Que se passe-t-il après la formation ?" },
-    {
-      type: "p",
-      text: "Une fois le programme qualifiant terminé, commencent l'étape de l'embauche et les démarches d'entrée en Italie.",
-    },
-    {
-      type: "p",
-      text: "C'est l'employeur italien qui dépose la demande de Nulla Osta au nom du travailleur. Le travailleur ne dépose pas lui-même la demande de Nulla Osta.",
-    },
-    {
-      type: "p",
-      text: "Pour les travailleurs qui remplissent les conditions de la voie de formation à l'étranger, les démarches d'entrée suivent le système propre à cette voie, en dehors des quotas du Decreto Flussi.",
-    },
-
-    { type: "h2", id: "nulla-osta", text: "8. Qu'est-ce que le Nulla Osta ?" },
-    {
-      type: "p",
-      text: "Le Nulla Osta al lavoro est l'autorisation nécessaire pour mener à bien la procédure d'entrée d'un travailleur étranger en Italie pour y travailler.",
-    },
-    {
-      type: "p",
-      text: "En résumé : le travailleur est qualifié → il y a un employeur italien → l'employeur dépose la demande de Nulla Osta → après l'accord, l'étape du visa commence.",
-    },
-    {
-      type: "callout",
-      tone: "warning",
-      title: "Attention",
-      text: "Ne payez personne qui vous vend un « Nulla Osta prêt à l'emploi ». Vous devez savoir qui est l'employeur et par quel canal officiel la demande est déposée.",
-    },
-
-    { type: "h2", id: "work-visa", text: "9. Comment demander le visa de travail depuis la Tunisie ?" },
-    {
-      type: "p",
-      text: "Une fois le Nulla Osta délivré, l'étape de la demande de visa commence. Pour les personnes résidant en Tunisie, il faut se fier aux informations publiées par l'ambassade d'Italie en Tunisie et par l'organisme agréé qui traite les demandes de visa.",
-    },
-    {
-      type: "p",
-      text: "Pour un séjour de longue durée pour travail, le visa est un National Visa D, selon la nature du dossier.",
-    },
-    {
       type: "figure",
-      src: "/blog/italy-tunisia-flags.svg",
-      width: 1200,
-      height: 520,
-      alt: "Les drapeaux de l'Italie et de la Tunisie côte à côte",
-      caption: "L'Italie et la Tunisie. L'étape du visa se déroule depuis la Tunisie, via l'ambassade d'Italie et l'organisme agréé. (Illustration)",
-    },
-    {
-      type: "p",
-      text: "Informations sur les visas : [Ambassade d'Italie en Tunisie : visas](https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/)",
-    },
-    {
-      type: "p",
-      text: "Où déposer la demande de visa : [Où demander un visa](https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/)",
-    },
-
-    { type: "h2", id: "visa-timing", text: "10. Quand faut-il déposer la demande de visa ?" },
-    {
-      type: "p",
-      text: "Pour les travailleurs qui ont terminé des programmes de formation à l'étranger, un délai compté à partir de la fin de la formation s'applique à la demande de visa. Les sources officielles donnent des chiffres différents selon la date et l'étape (les indications antérieures du ministère mentionnaient 6 mois pour le visa, tandis que les règles du SIISL évoquent 12 mois pour demander le Nulla Osta) : consultez la FAQ actuelle du ministère pour connaître le délai exact dans votre cas avant de planifier quoi que ce soit.",
-    },
-
-    { type: "h2", id: "after-arrival", text: "11. Que se passe-t-il après l'arrivée en Italie ?" },
-    {
-      type: "p",
-      text: "Arriver en Italie ne veut pas dire que les démarches sont terminées. Il faut accomplir les démarches relatives au Contratto di soggiorno, puis au Permesso di soggiorno, selon les procédures applicables à votre situation.",
-    },
-    {
-      type: "figure",
-      src: "/blog/colosseum-rome.webp",
+      src: "/blog/welding-training.webp",
       width: 1600,
-      height: 1200,
-      alt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-      caption: "Le Colisée à Rome, orné du drapeau italien pour la fête de la République 2022.",
+      height: 1065,
+      alt: "Gros plan sur des mains qui soudent une pièce métallique au chalumeau, avec des étincelles",
+      caption: "La formation porte sur le métier lui-même, avec l'italien, la formation civique et la sécurité au travail.",
       credit: {
-        text: "Photo : Horcrux, CC0, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:2022_Italian_Republic_Day_parade_(12).jpg",
+        text: "Photo : Mendel264, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Art_m%C3%A9tallique_-_Soudure_autog%C3%A8ne.jpg",
       },
     },
     {
       type: "p",
-      text: "Pour cette voie, le Contratto di soggiorno doit être conclu dans les 15 jours suivant l'entrée en Italie, selon les règles actuelles.",
-    },
-    { type: "p", text: "Conservez toujours des copies des demandes, des reçus, des rendez-vous, des courriers et des documents officiels." },
-
-    { type: "h2", id: "siisl", text: "12. Qu'est-ce que le SIISL ?" },
-    {
-      type: "p",
-      text: "Il y a en 2026 une mise à jour importante que les candidats ne doivent pas manquer. Le SIISL est le Sistema Informativo per l'Inclusione Sociale e Lavorativa, un système italien qui vise à faciliter l'accès à des opportunités d'inclusion et d'emploi.",
+      text: "La durée de la formation varie d'un programme à l'autre : il ne faut donc pas présenter une durée unique comme une règle générale pour tous les programmes.",
     },
     {
       type: "p",
-      text: "Des procédures ont été fixées pour l'inscription dans ce système des citoyens étrangers qui ont terminé des programmes de formation dans leur pays d'origine dans le cadre de cette voie. C'est un ajout récent : vous pouvez donc trouver en ligne d'anciens guides qui ne mentionnent pas le SIISL.",
+      text: "Une fois la formation terminée, l'étape de l'embauche commence. Lisez [comment obtenir un contrat de travail en Italie](article:work-contract-in-italy#work-contract) pour la suite.",
     },
 
-    { type: "h2", id: "work-contract", text: "13. Comment obtenir un contrat de travail depuis la Tunisie ?" },
-    {
-      type: "p",
-      text: "Un contrat de travail légitime ne s'achète pas et ne se reçoit pas d'un intermédiaire. Sur cette voie, il vient d'un employeur italien mis en relation avec vous dans le cadre d'un programme agréé, et qui dépose ensuite la demande de Nulla Osta.",
-    },
-    {
-      type: "p",
-      text: "Ne confondez pas deux documents différents. Le contrat de travail (contratto di lavoro) est l'accord entre vous et l'employeur. Le Contratto di soggiorno est le contrat de séjour que vous accomplissez après l'arrivée en Italie, comme expliqué à la section 11.",
-    },
-    { type: "p", text: "Avant d'accepter une offre, vérifiez que :" },
-    {
-      type: "ul",
-      items: [
-        "Le nom et les coordonnées de l'employeur sont indiqués, et vous pouvez vérifier de qui il s'agit.",
-        "Le poste, le secteur et le programme correspondent à votre formation.",
-        "La demande passe par un canal officiel, pas par un message privé.",
-        "Personne ne vous demande de payer pour un contrat ou un visa garanti.",
-      ],
-    },
-
-    { type: "h2", id: "find-job-offers", text: "14. Où trouver des offres d'emploi ?" },
+    { type: "h2", id: "find-job-offers", text: "7. Où trouver des offres d'emploi ?" },
     { type: "p", text: "Commencez par les canaux officiels, pas par les groupes sur les réseaux sociaux." },
     {
       type: "ul",
@@ -271,7 +188,7 @@ export const fr: ArticleTranslation = {
       text: "Les publications qui promettent un emploi garanti en Italie sont un signal d'alerte classique. Si une offre est introuvable sur un canal officiel, considérez-la comme non vérifiée.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "15. Méfiez-vous des arnaques" },
+    { type: "h2", id: "avoid-scams", text: "8. Méfiez-vous des arnaques" },
     {
       type: "callout",
       tone: "warning",
@@ -297,10 +214,6 @@ export const fr: ArticleTranslation = {
         },
         { q: "Cette voie est-elle ouverte à tous les Tunisiens ?", a: "Non. Il faut remplir les conditions d'un programme qualifiant." },
         {
-          q: "Ai-je besoin d'un employeur ?",
-          a: "Oui. À l'étape du Nulla Osta, un employeur italien doit déposer la demande nominative.",
-        },
-        {
           q: "Puis-je acheter un contrat de travail ?",
           a: "Non. Passez uniquement par les canaux officiels, et considérez toute personne qui demande de l'argent en échange d'un contrat ou d'un visa garanti comme un signal d'alerte.",
         },
@@ -312,18 +225,6 @@ export const fr: ArticleTranslation = {
         {
           q: "Combien de temps dure la formation ?",
           a: "Il n'y a pas de durée unique pour tous les programmes. Elle varie selon le programme, le secteur et le métier.",
-        },
-        {
-          q: "Que faire après l'arrivée en Italie ?",
-          a: "Vous accomplissez les démarches du Contratto di soggiorno et du Permesso di soggiorno, selon les règles et les délais applicables à votre situation.",
-        },
-        {
-          q: "Quelle est la différence entre un contrat de travail et le Contratto di soggiorno ?",
-          a: "Le contrat de travail est l'accord entre vous et l'employeur. Le Contratto di soggiorno est le contrat de séjour que vous accomplissez après l'arrivée en Italie.",
-        },
-        {
-          q: "Peut-on travailler en Italie sans contrat ?",
-          a: "Pas légalement sur cette voie. Un employeur italien doit d'abord déposer la demande de Nulla Osta. Méfiez-vous de toute offre de travail en Italie qui saute ces étapes.",
         },
         {
           q: "Où trouver une offre d'emploi en Italie depuis la Tunisie ?",
@@ -344,11 +245,6 @@ export const fr: ArticleTranslation = {
           label: "Portale Integrazione Migranti : programmes de formation à l'étranger agréés",
           url: "https://www.integrazionemigranti.gov.it/it-it/Altre-info/e/2/o/57/id/143",
         },
-        {
-          label: "Ministère italien du Travail : informations sur le SIISL pour les travailleurs formés dans leur pays d'origine",
-          url: "https://www.lavoro.gov.it/notizie/pagine/sistema-informativo-per-l-inclusione-sociale-e-lavorativa-siisl-pubblicato-il-decreto-interministeriale-che-definisce-le-modalita-di-iscrizione-dei-cittadini-stranieri-formati-nei-paesi-di-origine",
-        },
-        { label: "Ambassade d'Italie en Tunisie : visas", url: "https://ambtunisi.esteri.it/" },
         { label: "ANETI International", url: "https://www.aneti-international.tn/" },
         {
           label: "Ministère tunisien de l'Emploi et de la Formation professionnelle",
@@ -367,9 +263,9 @@ export const fr: ArticleTranslation = {
     {
       type: "keyFacts",
       items: [
-        { label: "Qui dépose le Nulla Osta", value: "L'employeur italien, et non le travailleur" },
-        { label: "Délai après la formation", value: "Compté depuis la fin de la formation ; vérifiez le chiffre actuel auprès du ministère" },
-        { label: "Contratto di soggiorno", value: "Dans les 15 jours suivant l'entrée en Italie" },
+        { label: "Pour qui", value: "Les travailleurs qui terminent un programme de formation agréé dans leur pays d'origine" },
+        { label: "Quotas", value: "Entrée en dehors des quotas du Decreto Flussi" },
+        { label: "Par où commencer", value: "L'ANETI et l'annonce officielle de chaque programme" },
       ],
     },
     { type: "h2", id: "path-in-brief", text: "Le parcours complet en bref" },
@@ -381,11 +277,11 @@ export const fr: ArticleTranslation = {
         "Candidater depuis la Tunisie",
         "Tests et entretiens",
         "Terminer la formation",
-        "Embauche / mise en relation avec un employeur",
-        "Nulla Osta déposé par l'employeur italien",
-        "Demander le visa de travail",
+        "[Embauche / mise en relation avec un employeur](article:work-contract-in-italy#work-contract)",
+        "[Nulla Osta déposé par l'employeur italien](article:work-contract-in-italy#nulla-osta)",
+        "[Demander le visa de travail](article:work-contract-in-italy#work-visa)",
         "Voyager en Italie",
-        "Contratto di soggiorno",
+        "[Contratto di soggiorno](article:work-contract-in-italy#after-arrival)",
         "Permesso di soggiorno",
         "Continuer à travailler et à séjourner légalement",
       ],

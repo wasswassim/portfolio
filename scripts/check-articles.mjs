@@ -7,6 +7,9 @@
 //   - SEO: title 30-60 characters, description 120-160, image alt, 3+ keywords
 //   - structure: FAQ block (id "faq"), sources block (id "official-sources")
 //   - all languages mirror each other (same heading ids, same number of pictures and videos)
+//   - series (src/content/articles/series.ts): every part exists in every language, in-text links
+//     [label](article:<id>#<heading>) point to a real article and heading, and parts of a series
+//     do not repeat each other's section headings or FAQ questions (duplicate content)
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 
 const dataDir = new URL("../src/content/articles/data/", import.meta.url);
@@ -30,6 +33,8 @@ const read = (folder, file) =>
 const count = (text, re) => (text.match(re) || []).length;
 
 const ids = [];
+// id -> lang -> file text, for the cross-article checks at the end
+const texts = {};
 const slugsByLang = Object.fromEntries(LANGS.map((l) => [l, []]));
 
 for (const folder of folders) {
@@ -65,6 +70,7 @@ for (const folder of folders) {
     }
     const t = read(folder, lang + ".ts");
     const where = id + " (" + lang + ")";
+    (texts[id] ??= {})[lang] = t;
 
     if (/TODO/.test(t)) errors.push(where + ": still contains TODO from the template");
 
@@ -115,6 +121,60 @@ for (const folder of folders) {
     if (a.headings !== b.headings) errors.push(id + ": heading ids differ between " + langs[0] + " and " + lang);
     if (a.figures !== b.figures) errors.push(id + ": " + langs[0] + " has " + a.figures + " pictures, " + lang + " has " + b.figures);
     if (a.videos !== b.videos) errors.push(id + ": " + langs[0] + " has " + a.videos + " videos, " + lang + " has " + b.videos);
+  }
+}
+
+// ── Cross-article checks: in-text article links and series ──
+const headingIds = (t) => new Set([...t.matchAll(/\bid:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]));
+for (const [id, byLang] of Object.entries(texts)) {
+  for (const [lang, t] of Object.entries(byLang)) {
+    for (const m of t.matchAll(/\]\(article:([^)#\s]*)(#[^)\s]*)?\)/gi)) {
+      const [target, anchor] = [m[1], m[2]?.slice(1)];
+      // same shape as resolveArticleLink in index.ts; anything else would render as plain text
+      if (!/^article:[a-z0-9-]+(#[a-z0-9-]+)?$/.test(m[0].slice(2, -1))) {
+        errors.push(id + " (" + lang + "): malformed article link " + m[0].slice(1) + " (use article:<id> or article:<id>#<heading>)");
+        continue;
+      }
+      const where = id + " (" + lang + "): link to article:" + target + (anchor !== undefined ? "#" + anchor : "");
+      if (!texts[target]) errors.push(where + " points to an unknown article");
+      else if (!texts[target][lang]) errors.push(where + " has no " + lang + " translation to point to");
+      else if (anchor && !headingIds(texts[target][lang]).has(anchor)) errors.push(where + ": no heading with that id");
+    }
+  }
+}
+
+const seriesFile = new URL("../src/content/articles/series.ts", import.meta.url);
+const seriesText = existsSync(seriesFile) ? readFileSync(seriesFile, "utf8").replace(/^\s*\/\/.*$/gm, "") : "";
+const norm = (s) => s.replace(/^\d+\.\s*/, "").trim().toLowerCase();
+for (const m of seriesText.matchAll(/id:\s*"([^"]+)"[\s\S]*?articleIds:\s*\[([^\]]*)\]/g)) {
+  const seriesId = m[1];
+  const parts = [...m[2].matchAll(/"([^"]+)"/g)].map((x) => x[1]);
+  if (parts.length < 2) errors.push("series " + seriesId + ": needs at least 2 articles");
+  for (const d of new Set(dup(parts))) errors.push("series " + seriesId + ": lists " + d + " twice");
+  for (const part of parts) {
+    if (!texts[part]) {
+      errors.push("series " + seriesId + ": unknown article " + part);
+      continue;
+    }
+    for (const lang of LANGS) if (!texts[part][lang]) errors.push("series " + seriesId + ": " + part + " has no " + lang + " translation");
+  }
+  // Each part answers its own question: no shared body section heading or FAQ question
+  for (const lang of LANGS) {
+    const seen = new Map();
+    for (const part of parts) {
+      const t = texts[part]?.[lang];
+      if (!t) continue;
+      // body only: the guide card's "path in brief" heading is shared on purpose
+      const guideAt = t.search(/^\s{2}guide:/m);
+      const body = guideAt < 0 ? t : t.slice(0, guideAt);
+      const h2 = [...body.matchAll(/type:\s*"h2",\s*id:\s*"[^"]*",\s*text:\s*"([^"]*)"/g)].map((x) => ["heading", x[1]]);
+      const faq = [...body.matchAll(/\bq:\s*"([^"]*)"/g)].map((x) => ["FAQ question", x[1]]);
+      for (const [kind, text] of [...h2, ...faq]) {
+        const key = kind + ":" + norm(text);
+        if (seen.has(key)) errors.push("series " + seriesId + " (" + lang + "): " + part + " repeats the " + kind + ' "' + text + '" from ' + seen.get(key));
+        else seen.set(key, part);
+      }
+    }
   }
 }
 

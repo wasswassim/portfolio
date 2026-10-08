@@ -1,7 +1,10 @@
 import type { Lang } from "@/lib/i18n/config";
+import { resolveArticleLink } from "@/content/articles";
 import BidiText from "./BidiText";
 
 // **bold**, *italic*, `code`, [label](url). Split with a capture group so tokens land on odd indexes.
+// A link to another post is written [label](article:<id>#<heading>) and resolves to that post in the
+// current language, so slugs never appear in the text.
 // URLs may contain one level of parentheses (e.g. Wikipedia); a lone "*" with spaces around it stays literal.
 const URL_PART = String.raw`(?:[^()\s]|\([^()\s]*\))+`;
 const TOKEN = new RegExp(
@@ -10,11 +13,12 @@ const TOKEN = new RegExp(
 );
 const LINK = new RegExp(String.raw`^\[([^\]]+)\]\((${URL_PART})\)$`);
 
-/** Only http(s), mailto and site-relative URLs become links; anything else (javascript:, data:) is dropped. */
-function safeHref(url: string): string | null {
+/** Only http(s), mailto, site-relative and article: URLs become links; anything else (javascript:, data:) is dropped. */
+function safeHref(url: string, lang: Lang): string | null {
   // Browsers drop tab/newline and treat "\" as "/", so "/\evil.com" would become "//evil.com"
   const u = url.replace(/[\t\n\r]/g, "").trim();
   if (u.includes("\\")) return null;
+  if (u.startsWith("article:")) return resolveArticleLink(lang, u);
   if (/^https?:\/\//i.test(u) || /^mailto:/i.test(u)) return u;
   if (u.startsWith("/") && !u.startsWith("//")) return u;
   return null;
@@ -31,7 +35,7 @@ export default function Inline({ lang, text }: { lang: Lang; text: string }) {
         if (part.startsWith("*")) return <em key={i}><BidiText lang={lang}>{part.slice(1, -1)}</BidiText></em>;
         if (part.startsWith("`")) return <code key={i} className="blog-ltr">{part.slice(1, -1)}</code>;
         const m = LINK.exec(part);
-        const href = m ? safeHref(m[2]) : null;
+        const href = m ? safeHref(m[2], lang) : null;
         if (!m || !href) return m ? <BidiText key={i} lang={lang}>{m[1]}</BidiText> : part;
         const external = /^https?:\/\//i.test(href);
         return (

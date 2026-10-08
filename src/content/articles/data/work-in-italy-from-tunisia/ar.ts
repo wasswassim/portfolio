@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "work-in-italy-from-tunisia",
-  title: "العمل في إيطاليا للتونسيين: مسار التكوين في الخارج",
+  title: "العمل في إيطاليا من تونس: مسار التكوين في الخارج",
   seoTitle: "العمل في إيطاليا من تونس: دليل قانوني (2026)",
   metaDescription:
-    "دليل خطوة بخطوة للتونسيين الراغبين في العمل بإيطاليا بشكل قانوني خارج حصص Decreto Flussi: الشروط والوثائق وعقد العمل وNulla Osta والتأشيرة وتجنب الاحتيال.",
+    "كيف يعمل التونسيون في إيطاليا بشكل قانوني خارج حصص Decreto Flussi: من يمكنه الاستفادة، البرامج المعتمدة، الوثائق، عروض العمل، وتجنب الاحتيال.",
   imageAlt: "الكولوسيوم في روما وعلى جانبه علم إيطالي ضخم والحشود أمامه",
-  keywords: ["العمل في إيطاليا من تونس", "Decreto Flussi", "Nulla Osta", "تأشيرة عمل إيطاليا", "العمل في إيطاليا خارج الحصص", "عقد عمل في إيطاليا", "وظائف في إيطاليا للتونسيين"],
+  keywords: ["العمل في إيطاليا من تونس", "العمل في إيطاليا", "وظائف في إيطاليا للتونسيين", "عروض عمل في إيطاليا", "العمل في إيطاليا خارج الحصص", "Decreto Flussi", "THAMM Plus"],
   summary:
-    "هناك مسار قانوني يسمح لعمال أجانب أتموا تكوينًا مهنيًا ولغويًا ومدنيًا معتمدًا في بلدهم بالدخول إلى إيطاليا للعمل خارج حصص Decreto Flussi. وهي ليست فيزا مفتوحة لكل تونسي: يلزم برنامج معتمد وصاحب عمل إيطالي يقدم طلب Nulla Osta.",
+    "هناك مسار قانوني يسمح لعمال أجانب أتموا تكوينًا مهنيًا ولغويًا ومدنيًا معتمدًا في بلدهم بالدخول إلى إيطاليا للعمل خارج حصص Decreto Flussi. وهي ليست فيزا مفتوحة لكل تونسي: يلزم برنامج معتمد، ثم بعد التكوين صاحب عمل إيطالي يقدم طلب Nulla Osta.",
   body: [
     {
       type: "callout",
@@ -40,19 +40,23 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/giorgia-meloni-2023.webp",
-      width: 1200,
-      height: 800,
-      alt: "صورة رسمية لجورجيا ميلوني، رئيسة وزراء إيطاليا، أمام العلمين الإيطالي والأوروبي",
-      caption: "جورجيا ميلوني، رئيسة وزراء إيطاليا. تُحدَّد حصص Decreto Flussi بمرسوم من الحكومة الإيطالية.",
+      src: "/blog/palazzo-chigi-rome.webp",
+      width: 1600,
+      height: 791,
+      alt: "واجهة قصر Palazzo Chigi في روما وفوق مدخله العلمان الإيطالي والأوروبي",
+      caption: "قصر Palazzo Chigi في روما، مقر الحكومة الإيطالية. تُحدَّد حصص Decreto Flussi بمرسوم من الحكومة، وهذا المسار يعمل خارج هذه الحصص.",
       credit: {
-        text: "الصورة: Governo italiano، رخصة CC BY 3.0 IT، عبر Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Giorgia_Meloni_Official_2023.jpg",
+        text: "الصورة: Blackcat (Sergio D'Afflitto)، رخصة CC BY-SA 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Palazzo_Chigi_Roma_giugno_2024.jpg",
       },
     },
     {
       type: "p",
       text: "يمكن تبسيط المسار بالشكل التالي: تكوين معتمد في تونس → التوظيف أو ربط العامل بصاحب العمل → طلب Nulla Osta من صاحب العمل الإيطالي → تأشيرة العمل → السفر إلى إيطاليا → إجراءات الإقامة والعمل.",
+    },
+    {
+      type: "p",
+      text: "يغطي هذا الجزء الأول بداية هذا المسار حتى نهاية التكوين. أما الخطوات التالية، من صاحب العمل إلى وصولك إلى إيطاليا، فتجدها في [الجزء الثاني: عقد العمل وNulla Osta والتأشيرة](article:work-contract-in-italy).",
     },
 
     { type: "h2", id: "who-can-apply", text: "2. من يمكنه الاستفادة من هذا المسار؟" },
@@ -79,6 +83,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "من بين المشاريع المعروفة THAMM Plus، وهو برنامج تعاون يهدف إلى تدريب وإدماج عمال تونسيين في إيطاليا، خصوصًا في قطاع البناء.",
+    },
+    {
+      type: "figure",
+      src: "/blog/construction-site-tunisia.webp",
+      width: 1600,
+      height: 1200,
+      alt: "مضخة خرسانة تصب سقفًا في عمارة قيد البناء في تونس",
+      caption: "حضيرة بناء في تونس. البناء من القطاعات التي تشملها برامج مثل THAMM Plus.",
+      credit: {
+        text: "الصورة: Habib M'henni، رخصة CC BY-SA 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Coulage_de_b%C3%A9ton_pour_dalle,_Tunisie.jpg",
+      },
     },
     {
       type: "p",
@@ -135,123 +151,27 @@ export const ar: ArticleTranslation = {
       text: "يمكن أن يتضمن البرنامج التكوين المهني، اللغة الإيطالية، التكوين المدني، ومبادئ السلامة المهنية.",
     },
     {
-      type: "p",
-      text: "تختلف مدة التكوين من برنامج إلى آخر، لذلك لا ينبغي تقديم مدة واحدة باعتبارها قاعدة عامة لجميع البرامج.",
-    },
-
-    { type: "h2", id: "after-training", text: "7. ماذا يحدث بعد إتمام التكوين؟" },
-    { type: "p", text: "بعد إنهاء البرنامج المؤهل تبدأ مرحلة التوظيف والإجراءات المتعلقة بالدخول إلى إيطاليا." },
-    {
-      type: "p",
-      text: "صاحب العمل الإيطالي هو الذي يقدم طلب Nulla Osta باسم العامل. العامل نفسه لا يقدم طلب Nulla Osta بشكل مستقل.",
-    },
-    {
-      type: "p",
-      text: "وبالنسبة للعمال الذين استوفوا شروط المسار الخاص بالتكوين في الخارج، تتم إجراءات الدخول وفق النظام الخاص بهذا المسار وخارج حصص Decreto Flussi.",
-    },
-
-    { type: "h2", id: "nulla-osta", text: "8. ما هو Nulla Osta؟" },
-    {
-      type: "p",
-      text: "Nulla Osta al lavoro هو الترخيص المطلوب لاستكمال إجراءات دخول العامل الأجنبي للعمل في إيطاليا.",
-    },
-    {
-      type: "p",
-      text: "بشكل مبسط: العامل مؤهل → يوجد صاحب عمل إيطالي → صاحب العمل يقدم طلب Nulla Osta → بعد الموافقة تبدأ مرحلة التأشيرة.",
-    },
-    {
-      type: "callout",
-      tone: "warning",
-      title: "تحذير",
-      text: "لا تدفع لشخص يبيع لك “Nulla Osta جاهز”. يجب أن تعرف من هو صاحب العمل وما هي القناة الرسمية التي يتم عبرها تقديم الطلب.",
-    },
-
-    { type: "h2", id: "work-visa", text: "9. كيف يتم طلب تأشيرة العمل من تونس؟" },
-    {
-      type: "p",
-      text: "بعد صدور Nulla Osta، تبدأ مرحلة طلب التأشيرة. بالنسبة للمقيمين في تونس، يجب الاعتماد على المعلومات المنشورة من سفارة إيطاليا في تونس والجهة المعتمدة لمعالجة طلبات التأشيرة.",
-    },
-    {
-      type: "p",
-      text: "بالنسبة للإقامة الطويلة من أجل العمل، تكون التأشيرة من نوع National Visa D حسب طبيعة الملف.",
-    },
-    {
       type: "figure",
-      src: "/blog/italy-tunisia-flags.svg",
-      width: 1200,
-      height: 520,
-      alt: "علما إيطاليا وتونس جنبًا إلى جنب",
-      caption: "إيطاليا وتونس. تُنجَز مرحلة التأشيرة من تونس عبر سفارة إيطاليا والجهة المعتمدة. (رسم توضيحي)",
-    },
-    {
-      type: "p",
-      text: "معلومات التأشيرات: [سفارة إيطاليا في تونس: التأشيرات](https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/)",
-    },
-    {
-      type: "p",
-      text: "أين يتم طلب التأشيرة: [أين تطلب التأشيرة](https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/)",
-    },
-
-    { type: "h2", id: "visa-timing", text: "10. متى يجب تقديم طلب التأشيرة؟" },
-    {
-      type: "p",
-      text: "بالنسبة للعمال الذين أكملوا برامج التكوين في الخارج، توجد مهلة تُحسب من نهاية التكوين لتقديم طلب التأشيرة. تعطي المصادر الرسمية أرقامًا مختلفة بحسب التاريخ والمرحلة (فقد ذكرت توجيهات سابقة لوزارة العمل 6 أشهر للتأشيرة، بينما تشير قواعد SIISL إلى 12 شهرًا لطلب Nulla Osta)، لذلك راجع الأسئلة الشائعة الحالية للوزارة لمعرفة المهلة الدقيقة في حالتك قبل أن تخطط لأي شيء.",
-    },
-
-    { type: "h2", id: "after-arrival", text: "11. ماذا يحدث بعد الوصول إلى إيطاليا؟" },
-    {
-      type: "p",
-      text: "الوصول إلى إيطاليا لا يعني أن الإجراءات انتهت. يجب استكمال الإجراءات المتعلقة بـ Contratto di soggiorno ثم Permesso di soggiorno وفق الإجراءات المعمول بها في حالتك.",
-    },
-    {
-      type: "figure",
-      src: "/blog/colosseum-rome.webp",
+      src: "/blog/welding-training.webp",
       width: 1600,
-      height: 1200,
-      alt: "الكولوسيوم في روما وعلى جانبه علم إيطالي ضخم والحشود أمامه",
-      caption: "الكولوسيوم في روما مزيّنًا بالعلم الإيطالي في العيد الوطني للجمهورية 2022.",
+      height: 1065,
+      alt: "صورة مقربة ليدين تلحمان قطعة معدنية بالغاز مع تطاير الشرر",
+      caption: "يشمل التكوين المهنة نفسها، إلى جانب اللغة الإيطالية والتكوين المدني والسلامة المهنية.",
       credit: {
-        text: "الصورة: Horcrux، رخصة CC0، عبر Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:2022_Italian_Republic_Day_parade_(12).jpg",
+        text: "الصورة: Mendel264، رخصة CC BY-SA 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Art_m%C3%A9tallique_-_Soudure_autog%C3%A8ne.jpg",
       },
     },
     {
       type: "p",
-      text: "وفي هذا المسار، يجب إتمام Contratto di soggiorno خلال 15 يومًا من الدخول إلى إيطاليا وفق القواعد الحالية.",
-    },
-    { type: "p", text: "احتفظ دائمًا بنسخ من الطلبات والإيصالات والمواعيد والمراسلات والوثائق الرسمية." },
-
-    { type: "h2", id: "siisl", text: "12. ما هو SIISL؟" },
-    {
-      type: "p",
-      text: "هناك تحديث مهم في 2026 يجب ألا يغفله الباحثون. SIISL هو Sistema Informativo per l'Inclusione Sociale e Lavorativa، وهو نظام إيطالي يهدف إلى دعم الوصول إلى فرص الإدماج والعمل.",
+      text: "تختلف مدة التكوين من برنامج إلى آخر، لذلك لا ينبغي تقديم مدة واحدة باعتبارها قاعدة عامة لجميع البرامج.",
     },
     {
       type: "p",
-      text: "تم تحديد إجراءات تتعلق بتسجيل المواطنين الأجانب الذين أتموا برامج التكوين في بلدهم الأصلي ضمن هذا المسار في هذا النظام. هذه إضافة حديثة، ولذلك قد تجد أدلة قديمة على الإنترنت لا تذكر SIISL.",
+      text: "بعد إتمام التكوين تبدأ مرحلة التوظيف. اقرأ [كيف تحصل على عقد عمل في إيطاليا](article:work-contract-in-italy#work-contract) لمعرفة ما يلي.",
     },
 
-    { type: "h2", id: "work-contract", text: "13. كيف تحصل على عقد عمل من تونس؟" },
-    {
-      type: "p",
-      text: "عقد العمل الشرعي لا يُشترى ولا يُستلم من وسيط. في هذا المسار يأتي من صاحب عمل إيطالي جرى ربطه بك عبر برنامج معتمد، ثم يقدم بعد ذلك طلب Nulla Osta.",
-    },
-    {
-      type: "p",
-      text: "لا تخلط بين وثيقتين مختلفتين. عقد العمل (contratto di lavoro) هو الاتفاق بينك وبين صاحب العمل. أما Contratto di soggiorno فهو عقد الإقامة الذي تستكمله بعد الوصول إلى إيطاليا، كما شرحنا في القسم 11.",
-    },
-    { type: "p", text: "قبل أن تقبل أي عرض، تأكد من أن:" },
-    {
-      type: "ul",
-      items: [
-        "اسم صاحب العمل وبياناته مذكوران، ويمكنك التحقق من هويته.",
-        "الوظيفة والقطاع والبرنامج تتوافق مع تكوينك.",
-        "الطلب يمر عبر قناة رسمية وليس عبر رسالة خاصة.",
-        "لا أحد يطلب منك دفع مال مقابل عقد أو فيزا مضمونة.",
-      ],
-    },
-
-    { type: "h2", id: "find-job-offers", text: "14. أين تجد عروض العمل؟" },
+    { type: "h2", id: "find-job-offers", text: "7. أين تجد عروض العمل؟" },
     { type: "p", text: "ابدأ بالقنوات الرسمية وليس بمجموعات مواقع التواصل." },
     {
       type: "ul",
@@ -266,7 +186,7 @@ export const ar: ArticleTranslation = {
       text: "المنشورات التي تعد بوظيفة مضمونة في إيطاليا علامة تحذير معروفة. وإذا لم تجد العرض في قناة رسمية فاعتبره غير موثق.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "15. احذر من الاحتيال" },
+    { type: "h2", id: "avoid-scams", text: "8. احذر من الاحتيال" },
     {
       type: "callout",
       tone: "warning",
@@ -292,10 +212,6 @@ export const ar: ArticleTranslation = {
         },
         { q: "هل هذا المسار متاح لكل تونسي؟", a: "لا. يجب أن تستوفي شروط برنامج مؤهل." },
         {
-          q: "هل أحتاج إلى صاحب عمل؟",
-          a: "نعم، في مرحلة طلب Nulla Osta يجب أن يوجد صاحب عمل إيطالي يقدم الطلب الاسمي.",
-        },
-        {
           q: "هل يمكنني شراء عقد عمل؟",
           a: "لا. تعامل فقط مع القنوات الرسمية، واعتبر أي شخص يطلب المال مقابل عقد مضمون أو فيزا مضمونة علامة تحذير.",
         },
@@ -307,18 +223,6 @@ export const ar: ArticleTranslation = {
         {
           q: "كم تستغرق دورة التكوين؟",
           a: "لا توجد مدة واحدة ثابتة لكل البرامج. تختلف المدة حسب البرنامج والقطاع والمهنة.",
-        },
-        {
-          q: "ماذا أفعل بعد الوصول إلى إيطاليا؟",
-          a: "تستكمل إجراءات Contratto di soggiorno وPermesso di soggiorno وفق القواعد والمواعيد المطبقة على حالتك.",
-        },
-        {
-          q: "ما الفرق بين عقد العمل وContratto di soggiorno؟",
-          a: "عقد العمل هو الاتفاق بينك وبين صاحب العمل. أما Contratto di soggiorno فهو عقد الإقامة الذي تستكمله بعد الوصول إلى إيطاليا.",
-        },
-        {
-          q: "هل يمكن العمل في إيطاليا دون عقد؟",
-          a: "ليس بشكل قانوني في هذا المسار. يجب أن يقدم صاحب عمل إيطالي طلب Nulla Osta أولًا. احذر من أي عرض عمل في إيطاليا يتجاوز هذه الخطوات.",
         },
         {
           q: "أين أجد عرض عمل في إيطاليا من تونس؟",
@@ -339,11 +243,6 @@ export const ar: ArticleTranslation = {
           label: "Portale Integrazione Migranti: البرامج المعتمدة للتكوين في الخارج",
           url: "https://www.integrazionemigranti.gov.it/it-it/Altre-info/e/2/o/57/id/143",
         },
-        {
-          label: "وزارة العمل الإيطالية: معلومات SIISL الخاصة بالعمال المكوّنين في بلدانهم الأصلية",
-          url: "https://www.lavoro.gov.it/notizie/pagine/sistema-informativo-per-l-inclusione-sociale-e-lavorativa-siisl-pubblicato-il-decreto-interministeriale-che-definisce-le-modalita-di-iscrizione-dei-cittadini-stranieri-formati-nei-paesi-di-origine",
-        },
-        { label: "سفارة إيطاليا في تونس: التأشيرات", url: "https://ambtunisi.esteri.it/" },
         { label: "ANETI International", url: "https://www.aneti-international.tn/" },
         { label: "وزارة التشغيل والتكوين المهني التونسية", url: "https://www.emploi.gov.tn/" },
       ],
@@ -360,9 +259,9 @@ export const ar: ArticleTranslation = {
     {
       type: "keyFacts",
       items: [
-        { label: "من يقدم Nulla Osta", value: "صاحب العمل الإيطالي، وليس العامل" },
-        { label: "المهلة بعد انتهاء التكوين", value: "تُحسب من نهاية التكوين؛ تأكد من الرقم الحالي لدى الوزارة" },
-        { label: "Contratto di soggiorno", value: "خلال 15 يومًا من الدخول إلى إيطاليا" },
+        { label: "لمن هذا المسار", value: "العمال الذين يتمون برنامج تكوين معتمدًا في بلدهم الأصلي" },
+        { label: "الحصص", value: "الدخول خارج حصص Decreto Flussi" },
+        { label: "من أين تبدأ", value: "ANETI والإعلان الرسمي لكل برنامج" },
       ],
     },
     { type: "h2", id: "path-in-brief", text: "المسار الكامل باختصار" },
@@ -374,11 +273,11 @@ export const ar: ArticleTranslation = {
         "الترشح من تونس",
         "الاختبارات والمقابلات",
         "إتمام التكوين",
-        "التوظيف / ربط العامل بصاحب العمل",
-        "Nulla Osta من صاحب العمل الإيطالي",
-        "طلب تأشيرة العمل",
+        "[التوظيف / ربط العامل بصاحب العمل](article:work-contract-in-italy#work-contract)",
+        "[Nulla Osta من صاحب العمل الإيطالي](article:work-contract-in-italy#nulla-osta)",
+        "[طلب تأشيرة العمل](article:work-contract-in-italy#work-visa)",
         "السفر إلى إيطاليا",
-        "Contratto di soggiorno",
+        "[Contratto di soggiorno](article:work-contract-in-italy#after-arrival)",
         "Permesso di soggiorno",
         "استكمال العمل والإقامة بشكل قانوني",
       ],

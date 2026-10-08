@@ -3,7 +3,7 @@ import { LANGS, DEFAULT_LANG, DIR, LANG_LABEL, LOCALE, type Lang } from "@/lib/i
 import { langStaticParams, toLang, type LangPageProps as Props } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n";
 import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
-import { articlesForLang, langsWithArticles } from "@/content/articles";
+import { articlesForLang, langsWithArticles, seriesPosition } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { SITE_NAME } from "@/lib/seo/site";
 import { JsonLd, personLd, blogLd, breadcrumbLd } from "@/lib/seo/jsonld";
@@ -91,12 +91,15 @@ export default async function BlogLandingPage({ params }: Props) {
           </>
         ) : (
           <ul className="blog-list">
-            {items.map(({ article, translation }) => (
+            {items.map(({ article, translation }) => {
+              const series = seriesPosition(article, lang);
+              return (
               <li key={article.id} className="blog-card">
                 <a href={articlePath(lang, translation.slug)}>
                   <span className="blog-meta">
                     <span className="blog-cat">{dict.categories[article.category]}</span>
                     <time dateTime={article.publishedAt}>{dateFmt.format(new Date(article.publishedAt))}</time>
+                    {series && <span className="blog-part">{dict.series.part(series.part, series.total)}</span>}
                   </span>
                   <h2>
                     <BidiText lang={lang}>{translation.title}</BidiText>
@@ -107,7 +110,8 @@ export default async function BlogLandingPage({ params }: Props) {
                   </span>
                 </a>
               </li>
-            ))}
+              );
+            })}
           </ul>
         )}
         </div>

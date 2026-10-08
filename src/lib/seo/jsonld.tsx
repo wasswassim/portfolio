@@ -59,6 +59,8 @@ export const blogPostingLd = (a: {
   minutes: number;
   publishedAt: string;
   updatedAt: string;
+  /** Series membership: the hub's path identifies the series (CreativeWorkSeries), position is the part number */
+  series?: { name: string; hubPath: string; position: number };
 }): JsonLdValue =>
   clean({
     "@context": "https://schema.org",
@@ -79,6 +81,16 @@ export const blogPostingLd = (a: {
     wordCount: a.wordCount,
     timeRequired: `PT${a.minutes}M`,
     isAccessibleForFree: true,
+    isPartOf: a.series
+      ? {
+          "@type": "CreativeWorkSeries",
+          "@id": absoluteUrl(a.series.hubPath) + "#series",
+          name: a.series.name,
+          url: absoluteUrl(a.series.hubPath),
+          inLanguage: a.lang,
+        }
+      : undefined,
+    position: a.series?.position,
     author: { "@id": AUTHOR_ID },
     publisher: { "@id": AUTHOR_ID },
   });

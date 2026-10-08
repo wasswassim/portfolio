@@ -3,14 +3,14 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const en: ArticleTranslation = {
   slug: "work-in-italy-from-tunisia",
-  title: "Working in Italy as a Tunisian: The Training-Abroad Route",
+  title: "Working in Italy from Tunisia: The Training-Abroad Route",
   seoTitle: "Work in Italy from Tunisia: Legal Guide (2026)",
   metaDescription:
-    "Step-by-step guide for Tunisians to work in Italy legally outside the Decreto Flussi quotas: documents, work contract, Nulla Osta, visa and scams.",
+    "How Tunisians can work in Italy legally outside the Decreto Flussi quotas: who qualifies, approved training programs, documents, job offers and scams.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["work in Italy from Tunisia", "Decreto Flussi", "Nulla Osta", "Italy work visa for Tunisians", "work in Italy outside quotas", "work contract in Italy", "jobs in Italy for Tunisians"],
+  keywords: ["work in Italy from Tunisia", "work in Italy outside quotas", "jobs in Italy for Tunisians", "job offers in Italy", "Decreto Flussi", "THAMM Plus"],
   summary:
-    "There is a legal route that lets foreign workers who completed approved vocational, language and civic training in their home country enter Italy to work outside the Decreto Flussi quotas. It is not an open visa for every Tunisian: you need an approved program and an Italian employer who files the Nulla Osta request.",
+    "There is a legal route that lets foreign workers who completed approved vocational, language and civic training in their home country enter Italy to work outside the Decreto Flussi quotas. It is not an open visa for every Tunisian: you need an approved program and, after the training, an Italian employer who files the Nulla Osta request.",
   body: [
     {
       type: "callout",
@@ -39,19 +39,23 @@ export const en: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/giorgia-meloni-2023.webp",
-      width: 1200,
-      height: 800,
-      alt: "Official portrait of Giorgia Meloni, Italy's prime minister, in front of the Italian and European Union flags",
-      caption: "Giorgia Meloni, Italy's prime minister. The Decreto Flussi quotas are set by a decree of the Italian government.",
+      src: "/blog/palazzo-chigi-rome.webp",
+      width: 1600,
+      height: 791,
+      alt: "Façade of Palazzo Chigi in Rome, with the Italian and European Union flags above the entrance",
+      caption: "Palazzo Chigi in Rome, seat of the Italian government. The Decreto Flussi quotas are set by a government decree; this route works outside them.",
       credit: {
-        text: "Photo: Governo italiano, CC BY 3.0 IT, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Giorgia_Meloni_Official_2023.jpg",
+        text: "Photo: Blackcat (Sergio D'Afflitto), CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Palazzo_Chigi_Roma_giugno_2024.jpg",
       },
     },
     {
       type: "p",
       text: "The route can be simplified as follows: approved training in Tunisia → hiring, or matching the worker with an employer → Nulla Osta request from the Italian employer → work visa → travel to Italy → residence and work procedures.",
+    },
+    {
+      type: "p",
+      text: "This first part covers the start of that path, up to the end of the training. The next steps, from the employer to your arrival in Italy, are in [part 2: work contract, Nulla Osta and visa](article:work-contract-in-italy).",
     },
 
     { type: "h2", id: "who-can-apply", text: "2. Who can use this route?" },
@@ -78,6 +82,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "One well-known project is THAMM Plus, a cooperation program that aims to train and integrate Tunisian workers in Italy, especially in the construction sector.",
+    },
+    {
+      type: "figure",
+      src: "/blog/construction-site-tunisia.webp",
+      width: 1600,
+      height: 1200,
+      alt: "A concrete pump pouring a floor slab on a block of flats under construction in Tunisia",
+      caption: "A building site in Tunisia. Construction is one of the sectors covered by programs such as THAMM Plus.",
+      credit: {
+        text: "Photo: Habib M'henni, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Coulage_de_b%C3%A9ton_pour_dalle,_Tunisie.jpg",
+      },
     },
     {
       type: "p",
@@ -134,123 +150,27 @@ export const en: ArticleTranslation = {
       text: "A program can include vocational training, Italian language, civic training, and occupational safety basics.",
     },
     {
-      type: "p",
-      text: "The length of training varies from one program to another, so no single duration should be presented as a general rule for all programs.",
-    },
-
-    { type: "h2", id: "after-training", text: "7. What happens after the training is completed?" },
-    { type: "p", text: "After finishing the qualifying program, the hiring stage and the procedures for entering Italy begin." },
-    {
-      type: "p",
-      text: "The Italian employer is the one who files the Nulla Osta request on the worker's behalf. The worker does not file a Nulla Osta request independently.",
-    },
-    {
-      type: "p",
-      text: "For workers who met the conditions of the training-abroad route, entry procedures follow the system specific to this route, outside the Decreto Flussi quotas.",
-    },
-
-    { type: "h2", id: "nulla-osta", text: "8. What is the Nulla Osta?" },
-    {
-      type: "p",
-      text: "Nulla Osta al lavoro is the authorization required to complete the process of a foreign worker entering Italy to work.",
-    },
-    {
-      type: "p",
-      text: "In simple terms: the worker is qualified → there is an Italian employer → the employer files the Nulla Osta request → after approval, the visa stage begins.",
-    },
-    {
-      type: "callout",
-      tone: "warning",
-      title: "Warning",
-      text: "Do not pay anyone who sells you a “ready-made Nulla Osta”. You must know who the employer is and which official channel the request is filed through.",
-    },
-
-    { type: "h2", id: "work-visa", text: "9. How do you apply for the work visa from Tunisia?" },
-    {
-      type: "p",
-      text: "Once the Nulla Osta is issued, the visa application stage begins. For residents of Tunisia, rely on the information published by the Italian Embassy in Tunisia and the authorized body that processes visa applications.",
-    },
-    {
-      type: "p",
-      text: "For a long stay for work, the visa is a National Visa D, depending on the nature of the case.",
-    },
-    {
       type: "figure",
-      src: "/blog/italy-tunisia-flags.svg",
-      width: 1200,
-      height: 520,
-      alt: "The flags of Italy and Tunisia side by side",
-      caption: "Italy and Tunisia. The visa stage is handled from Tunisia, through the Italian Embassy and its authorized body. (Illustration)",
-    },
-    {
-      type: "p",
-      text: "Visa information: [Italian Embassy in Tunisia: visas](https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/)",
-    },
-    {
-      type: "p",
-      text: "Where to apply for a visa: [Where to apply for a visa](https://ambtunisi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/dove-chiedere-un-visto/)",
-    },
-
-    { type: "h2", id: "visa-timing", text: "10. When must the visa application be filed?" },
-    {
-      type: "p",
-      text: "For workers who completed training programs abroad, a deadline counted from the end of training applies to the visa application. Official sources give different figures depending on the date and the step (earlier Ministry guidance stated 6 months for the visa, while the SIISL rules mention 12 months for requesting the Nulla Osta), so check the Ministry's current FAQ for the exact deadline in your case before you plan anything.",
-    },
-
-    { type: "h2", id: "after-arrival", text: "11. What happens after arriving in Italy?" },
-    {
-      type: "p",
-      text: "Arriving in Italy does not mean the procedures are over. You must complete the procedures for the Contratto di soggiorno and then the Permesso di soggiorno, according to the procedures that apply to your case.",
-    },
-    {
-      type: "figure",
-      src: "/blog/colosseum-rome.webp",
+      src: "/blog/welding-training.webp",
       width: 1600,
-      height: 1200,
-      alt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-      caption: "The Colosseum in Rome, decorated with the Italian flag for Republic Day 2022.",
+      height: 1065,
+      alt: "Close-up of hands gas-welding a metal part, with sparks flying",
+      caption: "Training covers the trade itself, along with Italian, civic training and safety at work.",
       credit: {
-        text: "Photo: Horcrux, CC0, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:2022_Italian_Republic_Day_parade_(12).jpg",
+        text: "Photo: Mendel264, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Art_m%C3%A9tallique_-_Soudure_autog%C3%A8ne.jpg",
       },
     },
     {
       type: "p",
-      text: "For this route, the Contratto di soggiorno must be completed within 15 days of entering Italy under the current rules.",
-    },
-    { type: "p", text: "Always keep copies of applications, receipts, appointments, correspondence and official documents." },
-
-    { type: "h2", id: "siisl", text: "12. What is SIISL?" },
-    {
-      type: "p",
-      text: "There is an important update in 2026 that job seekers should not miss. SIISL is the Sistema Informativo per l'Inclusione Sociale e Lavorativa, an Italian system that aims to support access to inclusion and job opportunities.",
+      text: "The length of training varies from one program to another, so no single duration should be presented as a general rule for all programs.",
     },
     {
       type: "p",
-      text: "Procedures have been set for registering, in this system, foreign citizens who completed training programs in their home country under this route. This is a recent addition, so you may find older guides online that do not mention SIISL.",
+      text: "Once the training is complete, the hiring stage begins. Read [how to get a work contract in Italy](article:work-contract-in-italy#work-contract) for what happens next.",
     },
 
-    { type: "h2", id: "work-contract", text: "13. How do you get a work contract from Tunisia?" },
-    {
-      type: "p",
-      text: "A legitimate work contract is not something you buy or receive from an intermediary. On this route, it comes from an Italian employer who has been matched with you through an approved program, and who then files the Nulla Osta request.",
-    },
-    {
-      type: "p",
-      text: "Do not confuse two different documents. The work contract (contratto di lavoro) is the agreement between you and the employer. The Contratto di soggiorno is the residence contract you complete after arriving in Italy, as explained in section 11.",
-    },
-    { type: "p", text: "Before you accept an offer, check that:" },
-    {
-      type: "ul",
-      items: [
-        "The employer's name and details are given, and you can verify who they are.",
-        "The job, the sector and the program match what you trained for.",
-        "The request goes through an official channel, not a private message.",
-        "Nobody asks you to pay for a contract or a guaranteed visa.",
-      ],
-    },
-
-    { type: "h2", id: "find-job-offers", text: "14. Where can you find job offers?" },
+    { type: "h2", id: "find-job-offers", text: "7. Where can you find job offers?" },
     { type: "p", text: "Start with the official channels, not social media groups." },
     {
       type: "ul",
@@ -265,7 +185,7 @@ export const en: ArticleTranslation = {
       text: "Posts promising a guaranteed job in Italy are a classic warning sign. If an offer cannot be found on an official channel, treat it as unverified.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "15. Beware of scams" },
+    { type: "h2", id: "avoid-scams", text: "8. Beware of scams" },
     {
       type: "callout",
       tone: "warning",
@@ -291,10 +211,6 @@ export const en: ArticleTranslation = {
         },
         { q: "Is this route open to every Tunisian?", a: "No. You must meet the requirements of a qualifying program." },
         {
-          q: "Do I need an employer?",
-          a: "Yes. At the Nulla Osta stage, there must be an Italian employer who files the nominative request.",
-        },
-        {
           q: "Can I buy a work contract?",
           a: "No. Deal only with official channels, and treat anyone who asks for money in exchange for a guaranteed contract or visa as a warning sign.",
         },
@@ -306,18 +222,6 @@ export const en: ArticleTranslation = {
         {
           q: "How long does the training course take?",
           a: "There is no single fixed duration for all programs. It varies by program, sector and occupation.",
-        },
-        {
-          q: "What do I do after arriving in Italy?",
-          a: "You complete the Contratto di soggiorno and Permesso di soggiorno procedures, according to the rules and deadlines that apply to your case.",
-        },
-        {
-          q: "What is the difference between a work contract and the Contratto di soggiorno?",
-          a: "The work contract is the agreement between you and the employer. The Contratto di soggiorno is the residence contract you complete after arriving in Italy.",
-        },
-        {
-          q: "Can I work in Italy without a contract?",
-          a: "Not legally on this route. An Italian employer must file the Nulla Osta request first. Be wary of any offer of work in Italy that skips these steps.",
         },
         {
           q: "Where can I find a job offer in Italy from Tunisia?",
@@ -338,11 +242,6 @@ export const en: ArticleTranslation = {
           label: "Portale Integrazione Migranti: approved training programs abroad",
           url: "https://www.integrazionemigranti.gov.it/it-it/Altre-info/e/2/o/57/id/143",
         },
-        {
-          label: "Italian Ministry of Labour: SIISL information for workers trained in their home countries",
-          url: "https://www.lavoro.gov.it/notizie/pagine/sistema-informativo-per-l-inclusione-sociale-e-lavorativa-siisl-pubblicato-il-decreto-interministeriale-che-definisce-le-modalita-di-iscrizione-dei-cittadini-stranieri-formati-nei-paesi-di-origine",
-        },
-        { label: "Italian Embassy in Tunisia: visas", url: "https://ambtunisi.esteri.it/" },
         { label: "ANETI International", url: "https://www.aneti-international.tn/" },
         {
           label: "Tunisian Ministry of Employment and Vocational Training",
@@ -361,9 +260,9 @@ export const en: ArticleTranslation = {
     {
       type: "keyFacts",
       items: [
-        { label: "Who files the Nulla Osta", value: "The Italian employer, not the worker" },
-        { label: "Deadline after training", value: "Counted from the end of training; confirm the current figure with the Ministry" },
-        { label: "Contratto di soggiorno", value: "Within 15 days of entering Italy" },
+        { label: "Who it is for", value: "Workers who complete an approved training program in their home country" },
+        { label: "Quotas", value: "Entry outside the Decreto Flussi quotas" },
+        { label: "Where to start", value: "ANETI and the official announcement of each program" },
       ],
     },
     { type: "h2", id: "path-in-brief", text: "The full path in brief" },
@@ -375,11 +274,11 @@ export const en: ArticleTranslation = {
         "Apply from Tunisia",
         "Tests and interviews",
         "Complete the training",
-        "Hiring / matching the worker with an employer",
-        "Nulla Osta from the Italian employer",
-        "Apply for the work visa",
+        "[Hiring / matching the worker with an employer](article:work-contract-in-italy#work-contract)",
+        "[Nulla Osta from the Italian employer](article:work-contract-in-italy#nulla-osta)",
+        "[Apply for the work visa](article:work-contract-in-italy#work-visa)",
         "Travel to Italy",
-        "Contratto di soggiorno",
+        "[Contratto di soggiorno](article:work-contract-in-italy#after-arrival)",
         "Permesso di soggiorno",
         "Continue working and staying legally",
       ],
