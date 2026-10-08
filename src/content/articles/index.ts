@@ -1,10 +1,10 @@
 import { LANGS, type Lang } from "@/lib/i18n/config";
 import { headingIdsOf } from "./blocks";
-import { article23Tunisia } from "./data/article-23-tunisia/article";
+import { workInItalyFromTunisia } from "./data/work-in-italy-from-tunisia/article";
 import type { Article, ArticleTranslation } from "./types";
 
 // One file per article under ./data; add it to this list to publish it.
-export const ARTICLES: readonly Article[] = [article23Tunisia];
+export const ARTICLES: readonly Article[] = [workInItalyFromTunisia];
 
 // Fail the build on content mistakes: duplicate heading ids would break the table of
 // contents and in-page links.

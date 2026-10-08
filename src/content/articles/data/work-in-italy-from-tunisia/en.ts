@@ -2,15 +2,15 @@ import type { ArticleTranslation } from "../../types";
 
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const en: ArticleTranslation = {
-  slug: "work-in-italy-tunisians-article-23",
-  title: "Working in Italy as a Tunisian under Article 23",
-  seoTitle: "Article 23 Italy: How Tunisians Can Work in Italy (2026)",
+  slug: "work-in-italy-from-tunisia",
+  title: "Working in Italy as a Tunisian: The Training-Abroad Route",
+  seoTitle: "Work in Italy from Tunisia: Legal Guide (2026)",
   metaDescription:
-    "Step-by-step guide to Article 23: how Tunisians can work in Italy outside the Decreto Flussi. Eligibility, documents, Nulla Osta, visa and scams to avoid.",
+    "Step-by-step guide for Tunisians who want to work in Italy legally outside the Decreto Flussi quotas: eligibility, documents, Nulla Osta, visa and scams.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["Article 23 Italy", "work in Italy from Tunisia", "Decreto Flussi", "Nulla Osta", "Italy work visa for Tunisians"],
+  keywords: ["work in Italy from Tunisia", "Decreto Flussi", "Nulla Osta", "Italy work visa for Tunisians", "work in Italy outside quotas"],
   summary:
-    "Article 23 is a legal route that lets foreign workers who completed approved vocational, language and civic training in their home country enter Italy to work outside the Decreto Flussi quotas. It is not an open visa for every Tunisian: you need an approved program and an Italian employer who files the Nulla Osta request.",
+    "There is a legal route that lets foreign workers who completed approved vocational, language and civic training in their home country enter Italy to work outside the Decreto Flussi quotas. It is not an open visa for every Tunisian: you need an approved program and an Italian employer who files the Nulla Osta request.",
   body: [
     {
       type: "callout",
@@ -21,17 +21,17 @@ export const en: ArticleTranslation = {
     { type: "p", text: "**Looking for a legal way to work in Italy from Tunisia?**" },
     {
       type: "p",
-      text: "There is a special mechanism under Article 23 of the Italian immigration law that allows, in specific cases, foreign workers who have completed approved vocational, language and civic training programs in their home country to enter Italy to work outside the Decreto Flussi quotas.",
+      text: "There is a special mechanism under Italian immigration law that allows, in specific cases, foreign workers who have completed approved vocational, language and civic training programs in their home country to enter Italy to work outside the Decreto Flussi quotas.",
     },
     {
       type: "p",
       text: "But one essential point needs to be clear: this is not an open work visa for every Tunisian, and it does not mean the Italian government gives every applicant a job contract automatically. You must meet the requirements of an approved program, and then the hiring procedure and the Nulla Osta request follow the legal route.",
     },
 
-    { type: "h2", id: "what-is-article-23", text: "1. What is Article 23?" },
+    { type: "h2", id: "what-is-this-route", text: "1. What is this route?" },
     {
       type: "p",
-      text: "Article 23 of the Italian immigration law, the Testo Unico Immigrazione, regulates a special route for certain foreign workers who completed vocational, language and civic training in their home country, provided the programs are approved under Italian rules.",
+      text: "The Italian immigration law, the Testo Unico Immigrazione, regulates a special route for certain foreign workers who completed vocational, language and civic training in their home country, provided the programs are approved under Italian rules.",
     },
     {
       type: "p",
@@ -62,7 +62,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "There is no single fixed list saying Article 23 is always limited to six occupations. Occupations and sectors depend on the programs that are approved and currently open.",
+      text: "There is no single fixed list saying this route is always limited to six occupations. Occupations and sectors depend on the programs that are approved and currently open.",
     },
     {
       type: "p",
@@ -124,7 +124,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Important",
-      text: "This is not a single list for all Article 23 programs. The final documents depend on the announcement and the program you apply to.",
+      text: "This is not a single list for all programs. The final documents depend on the announcement and the program you apply to.",
     },
 
     { type: "h2", id: "training", text: "6. How does the training work?" },
@@ -135,7 +135,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The length of training varies from one program to another, so no single duration should be presented as a general rule for all Article 23 programs.",
+      text: "The length of training varies from one program to another, so no single duration should be presented as a general rule for all programs.",
     },
 
     { type: "h2", id: "after-training", text: "7. What happens after the training is completed?" },
@@ -146,7 +146,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "For workers who met the conditions of the training-abroad route, entry procedures follow the system specific to Article 23, outside the Decreto Flussi quotas.",
+      text: "For workers who met the conditions of the training-abroad route, entry procedures follow the system specific to this route, outside the Decreto Flussi quotas.",
     },
 
     { type: "h2", id: "nulla-osta", text: "8. What is the Nulla Osta?" },
@@ -227,7 +227,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Procedures have been set for registering, in this system, foreign citizens who completed training programs in their home country under the Article 23 route. This is a recent addition, so you may find older guides online that do not mention SIISL.",
+      text: "Procedures have been set for registering, in this system, foreign citizens who completed training programs in their home country under this route. This is a recent addition, so you may find older guides online that do not mention SIISL.",
     },
 
     { type: "h2", id: "avoid-scams", text: "13. Beware of scams" },
@@ -254,7 +254,7 @@ export const en: ArticleTranslation = {
           q: "Can a Tunisian work in Italy outside the Decreto Flussi?",
           a: "Yes, in specific cases, through the route for workers who completed qualifying training programs abroad.",
         },
-        { q: "Is Article 23 open to every Tunisian?", a: "No. You must meet the requirements of a qualifying program." },
+        { q: "Is this route open to every Tunisian?", a: "No. You must meet the requirements of a qualifying program." },
         {
           q: "Do I need an employer?",
           a: "Yes. At the Nulla Osta stage, there must be an Italian employer who files the nominative request.",
@@ -284,7 +284,7 @@ export const en: ArticleTranslation = {
       title: "Official sources",
       items: [
         {
-          label: "Italian Ministry of Labour and Social Policies: training abroad and Article 23",
+          label: "Italian Ministry of Labour and Social Policies: training abroad",
           url: "https://www.lavoro.gov.it/temi-e-priorita/immigrazione/focus-on/ingresso-e-soggiorno-per-lavoro-in-italia/pagine/formazione-all-estero",
         },
         {

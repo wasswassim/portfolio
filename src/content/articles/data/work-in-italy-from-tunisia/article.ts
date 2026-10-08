@@ -5,8 +5,8 @@ import { fr } from "./fr";
 
 // Dates and lastVerified follow the author's document ("last updated / last verified:
 // October 2026"); adjust if they differ.
-export const article23Tunisia: Article = {
-  id: "article-23-tunisia",
+export const workInItalyFromTunisia: Article = {
+  id: "work-in-italy-from-tunisia",
   category: "work",
   publishedAt: "2026-10-07",
   updatedAt: "2026-10-07",

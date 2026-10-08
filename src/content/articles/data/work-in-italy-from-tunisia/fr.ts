@@ -2,15 +2,15 @@ import type { ArticleTranslation } from "../../types";
 
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
-  slug: "travailler-en-italie-tunisiens-article-23",
-  title: "Travailler en Italie quand on est Tunisien : l'article 23",
-  seoTitle: "Article 23 Italie : travailler en Italie depuis la Tunisie",
+  slug: "travailler-en-italie-depuis-la-tunisie",
+  title: "Travailler en Italie quand on est Tunisien : la voie par la formation",
+  seoTitle: "Travailler en Italie depuis la Tunisie : guide 2026",
   metaDescription:
-    "Guide pas à pas sur l'article 23 : comment les Tunisiens peuvent travailler en Italie hors Decreto Flussi. Conditions, documents, Nulla Osta, visa, arnaques.",
+    "Guide pas à pas pour les Tunisiens qui veulent travailler légalement en Italie hors quotas du Decreto Flussi : conditions, documents, Nulla Osta, visa, arnaques",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["article 23 Italie", "travailler en Italie depuis la Tunisie", "Decreto Flussi", "Nulla Osta", "visa de travail Italie Tunisiens"],
+  keywords: ["travailler en Italie depuis la Tunisie", "Decreto Flussi", "Nulla Osta", "visa de travail Italie Tunisiens", "travailler en Italie hors quotas"],
   summary:
-    "L'article 23 est une voie légale qui permet à des travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Ce n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et un employeur italien qui dépose la demande de Nulla Osta.",
+    "Il existe une voie légale qui permet à des travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Ce n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et un employeur italien qui dépose la demande de Nulla Osta.",
   body: [
     {
       type: "callout",
@@ -21,17 +21,17 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "**Vous cherchez un moyen légal de travailler en Italie depuis la Tunisie ?**" },
     {
       type: "p",
-      text: "L'article 23 de la loi italienne sur l'immigration prévoit un mécanisme particulier qui permet, dans des cas précis, aux travailleurs étrangers ayant terminé des programmes de formation professionnelle, linguistique et civique agréés dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi.",
+      text: "La loi italienne sur l'immigration prévoit un mécanisme particulier qui permet, dans des cas précis, aux travailleurs étrangers ayant terminé des programmes de formation professionnelle, linguistique et civique agréés dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi.",
     },
     {
       type: "p",
       text: "Mais un point essentiel doit être clair : il ne s'agit pas d'un visa de travail ouvert à tous les Tunisiens, et cela ne veut pas dire que le gouvernement italien accorde automatiquement un contrat de travail à chaque candidat. Il faut remplir les conditions d'un programme agréé, puis la procédure d'embauche et la demande de Nulla Osta suivent la voie légale.",
     },
 
-    { type: "h2", id: "what-is-article-23", text: "1. Qu'est-ce que l'article 23 ?" },
+    { type: "h2", id: "what-is-this-route", text: "1. Qu'est-ce que cette voie ?" },
     {
       type: "p",
-      text: "L'article 23 de la loi italienne sur l'immigration, le Testo Unico Immigrazione, encadre une voie particulière pour certains travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique dans leur pays d'origine, à condition que ces programmes soient agréés selon les règles italiennes.",
+      text: "La loi italienne sur l'immigration, le Testo Unico Immigrazione, encadre une voie particulière pour certains travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique dans leur pays d'origine, à condition que ces programmes soient agréés selon les règles italiennes.",
     },
     {
       type: "p",
@@ -62,7 +62,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Il n'existe pas de liste unique et fixe disant que l'article 23 est toujours réservé à six métiers seulement. Les métiers et les secteurs dépendent des programmes agréés et actuellement ouverts.",
+      text: "Il n'existe pas de liste unique et fixe disant que cette voie est toujours réservée à six métiers seulement. Les métiers et les secteurs dépendent des programmes agréés et actuellement ouverts.",
     },
     {
       type: "p",
@@ -127,7 +127,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Important",
-      text: "Ce n'est pas une liste unique pour tous les programmes de l'article 23. Les documents définitifs dépendent de l'annonce et du programme auquel vous candidatez.",
+      text: "Ce n'est pas une liste unique pour tous les programmes. Les documents définitifs dépendent de l'annonce et du programme auquel vous candidatez.",
     },
 
     { type: "h2", id: "training", text: "6. Comment se déroule la formation ?" },
@@ -138,7 +138,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "La durée de la formation varie d'un programme à l'autre : il ne faut donc pas présenter une durée unique comme une règle générale pour tous les programmes de l'article 23.",
+      text: "La durée de la formation varie d'un programme à l'autre : il ne faut donc pas présenter une durée unique comme une règle générale pour tous les programmes.",
     },
 
     { type: "h2", id: "after-training", text: "7. Que se passe-t-il après la formation ?" },
@@ -152,7 +152,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Pour les travailleurs qui remplissent les conditions de la voie de formation à l'étranger, les démarches d'entrée suivent le système propre à l'article 23, en dehors des quotas du Decreto Flussi.",
+      text: "Pour les travailleurs qui remplissent les conditions de la voie de formation à l'étranger, les démarches d'entrée suivent le système propre à cette voie, en dehors des quotas du Decreto Flussi.",
     },
 
     { type: "h2", id: "nulla-osta", text: "8. Qu'est-ce que le Nulla Osta ?" },
@@ -233,7 +233,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Des procédures ont été fixées pour l'inscription dans ce système des citoyens étrangers qui ont terminé des programmes de formation dans leur pays d'origine dans le cadre de la voie de l'article 23. C'est un ajout récent : vous pouvez donc trouver en ligne d'anciens guides qui ne mentionnent pas le SIISL.",
+      text: "Des procédures ont été fixées pour l'inscription dans ce système des citoyens étrangers qui ont terminé des programmes de formation dans leur pays d'origine dans le cadre de cette voie. C'est un ajout récent : vous pouvez donc trouver en ligne d'anciens guides qui ne mentionnent pas le SIISL.",
     },
 
     { type: "h2", id: "avoid-scams", text: "13. Méfiez-vous des arnaques" },
@@ -260,7 +260,7 @@ export const fr: ArticleTranslation = {
           q: "Un Tunisien peut-il travailler en Italie en dehors du Decreto Flussi ?",
           a: "Oui, dans des cas précis, par la voie réservée aux travailleurs qui ont terminé à l'étranger des programmes de formation qualifiants.",
         },
-        { q: "L'article 23 est-il ouvert à tous les Tunisiens ?", a: "Non. Il faut remplir les conditions d'un programme qualifiant." },
+        { q: "Cette voie est-elle ouverte à tous les Tunisiens ?", a: "Non. Il faut remplir les conditions d'un programme qualifiant." },
         {
           q: "Ai-je besoin d'un employeur ?",
           a: "Oui. À l'étape du Nulla Osta, un employeur italien doit déposer la demande nominative.",
@@ -290,7 +290,7 @@ export const fr: ArticleTranslation = {
       title: "Sources officielles",
       items: [
         {
-          label: "Ministère italien du Travail et des Politiques sociales : formation à l'étranger et article 23",
+          label: "Ministère italien du Travail et des Politiques sociales : formation à l'étranger",
           url: "https://www.lavoro.gov.it/temi-e-priorita/immigrazione/focus-on/ingresso-e-soggiorno-per-lavoro-in-italia/pagine/formazione-all-estero",
         },
         {

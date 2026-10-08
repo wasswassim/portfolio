@@ -1,6 +1,6 @@
 # Writing a blog article
 
-Every article follows the same template as the first one (`data/article-23-tunisia/`).
+Every article follows the same template as the first one (`data/work-in-italy-from-tunisia/`).
 Do not invent a new layout: fill in the template, and add pictures or videos wherever they help.
 
 ## Create a post
