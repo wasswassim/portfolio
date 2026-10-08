@@ -11,7 +11,7 @@ export const ar: ArticleTranslation = {
   imageAlt: "الكولوسيوم في روما وعلى جانبه علم إيطالي ضخم والحشود أمامه",
   keywords: ["عقد عمل في إيطاليا", "عقد عمل في إيطاليا من تونس", "Nulla Osta", "تأشيرة عمل إيطاليا للتونسيين", "Contratto di soggiorno", "Permesso di soggiorno", "SIISL"],
   summary:
-    "في مسار التكوين في الخارج، يأتي عقد العمل من صاحب عمل إيطالي، وهو نفسه من يقدم طلب Nulla Osta؛ ولا يمكن للعامل تقديمه وحده. بعد صدور Nulla Osta تطلب تأشيرة National Visa D من تونس، ثم تستكمل Contratto di soggiorno خلال 15 يومًا من الدخول إلى إيطاليا.",
+    "في مسار التكوين في الخارج، يأتي عقد العمل من صاحب عمل إيطالي، وهو نفسه من يقدم طلب Nulla Osta؛ ولا يمكن للعامل تقديمه وحده. بعد صدور Nulla Osta تطلب تأشيرة National Visa D من تونس، ثم تطلب من Sportello Unico، خلال 8 أيام عمل من الدخول إلى إيطاليا، موعدًا لإمضاء Contratto di soggiorno.",
   body: [
     {
       type: "callout",
@@ -26,7 +26,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "باختصار: صاحب عمل إيطالي جرى ربطه بك عبر برنامج معتمد يقدم لك عقد العمل ويقدم طلب Nulla Osta. بعد صدور Nulla Osta تطلب تأشيرة National Visa D من تونس. وبعد وصولك تستكمل Contratto di soggiorno خلال 15 يومًا، ثم إجراءات Permesso di soggiorno.",
+      text: "باختصار: صاحب عمل إيطالي جرى ربطه بك عبر برنامج معتمد يقدم لك عقد العمل ويقدم طلب Nulla Osta. بعد صدور Nulla Osta تطلب تأشيرة National Visa D من تونس. وبعد وصولك تطلب من Sportello Unico خلال 8 أيام عمل موعدًا لإمضاء Contratto di soggiorno، ثم تأتي إجراءات Permesso di soggiorno.",
     },
 
     { type: "h2", id: "after-training", text: "1. ماذا يحدث بعد إتمام التكوين؟" },
@@ -161,7 +161,13 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "وفي هذا المسار، يجب إتمام Contratto di soggiorno خلال 15 يومًا من الدخول إلى إيطاليا وفق القواعد الحالية.",
+      text: "وفق [الدليل الرسمي على Portale Integrazione Migranti](https://www.integrazionemigranti.gov.it/it-it/Altre-info/id/144/Ingresso-e-assunzione-dei-lavoratori-formati-allestero)، يجب عليك خلال 8 أيام عمل من دخولك إلى إيطاليا أن تطلب من Sportello Unico per l'Immigrazione موعدًا لإمضاء Contratto di soggiorno. وعند الإمضاء يسلمك Sportello Unico أيضًا شهادة الرمز الجبائي ويجعلك تمضي طلب Permesso di soggiorno.",
+    },
+    {
+      type: "callout",
+      tone: "note",
+      title: "تحقق من هذه المهلة بنفسك",
+      text: "تشير بعض المصادر الحديثة إلى أن هذه المهلة أصبحت 15 يومًا بعد تعديل قانوني في 2025، كما تختلف طريقة حجز المواعيد من Prefettura إلى أخرى. قبل السفر، تأكد من المهلة المعمول بها لدى Sportello Unico في الإقليم الذي ستعمل فيه، أو لدى صاحب العمل.",
     },
     { type: "p", text: "احتفظ دائمًا بنسخ من الطلبات والإيصالات والمواعيد والمراسلات والوثائق الرسمية." },
 
@@ -173,7 +179,7 @@ export const ar: ArticleTranslation = {
         "تعرف من هو صاحب عملك، والوظيفة تتوافق مع تكوينك المعتمد.",
         "قدم صاحب العمل طلب Nulla Osta عبر القناة الرسمية، وصدر Nulla Osta.",
         "طلبت تأشيرة National Visa D من تونس ضمن المهلة المطبقة على حالتك.",
-        "أنت مستعد لإتمام Contratto di soggiorno خلال 15 يومًا من الدخول إلى إيطاليا.",
+        "تعرف أنه يجب عليك طلب موعد من Sportello Unico خلال 8 أيام عمل من الدخول إلى إيطاليا لإمضاء Contratto di soggiorno، وقد تحققت من المهلة المعمول بها.",
         "تستكمل بعد ذلك إجراءات Permesso di soggiorno.",
         "تحتفظ بنسخة من كل طلب وإيصال وموعد ووثيقة رسمية.",
       ],
@@ -222,7 +228,7 @@ export const ar: ArticleTranslation = {
         },
         {
           q: "ماذا أفعل بعد الوصول إلى إيطاليا؟",
-          a: "تستكمل Contratto di soggiorno خلال 15 يومًا من الدخول إلى إيطاليا، ثم إجراءات Permesso di soggiorno وفق القواعد المطبقة على حالتك.",
+          a: "خلال 8 أيام عمل من الدخول إلى إيطاليا، تطلب من Sportello Unico per l'Immigrazione موعدًا لإمضاء Contratto di soggiorno، ثم تستكمل إجراءات Permesso di soggiorno. تأكد من المهلة المعمول بها لدى Sportello Unico لأن القواعد قد تتغير.",
         },
       ],
     },
@@ -255,6 +261,10 @@ export const ar: ArticleTranslation = {
           label: "Portale Integrazione Migranti: توظيف العمال المكوّنين في الخارج، دليل لأصحاب العمل",
           url: "https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro",
         },
+        {
+          label: "Portale Integrazione Migranti: دخول وتوظيف العمال المكوّنين في الخارج (الدليل الرسمي)",
+          url: "https://www.integrazionemigranti.gov.it/it-it/Altre-info/id/144/Ingresso-e-assunzione-dei-lavoratori-formati-allestero",
+        },
       ],
     },
     {
@@ -272,7 +282,7 @@ export const ar: ArticleTranslation = {
         { label: "من يقدم Nulla Osta", value: "صاحب العمل الإيطالي، وليس العامل" },
         { label: "التأشيرة", value: "National Visa D، تُطلب من تونس" },
         { label: "المهلة بعد انتهاء التكوين", value: "تُحسب من نهاية التكوين؛ تأكد من الرقم الحالي لدى الوزارة" },
-        { label: "Contratto di soggiorno", value: "خلال 15 يومًا من الدخول إلى إيطاليا" },
+        { label: "Contratto di soggiorno", value: "طلب الموعد خلال 8 أيام عمل من الدخول إلى إيطاليا (الدليل الرسمي)؛ تأكد لدى Sportello Unico" },
       ],
     },
     { type: "h2", id: "path-in-brief", text: "المسار الكامل باختصار" },

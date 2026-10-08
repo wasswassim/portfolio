@@ -10,7 +10,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
   keywords: ["contrat de travail en Italie", "contrat travail Italie", "contrat de travail en Italie pour les Tunisiens", "Nulla Osta", "visa de travail Italie Tunisiens", "Contratto di soggiorno", "Permesso di soggiorno"],
   summary:
-    "Sur la voie de la formation à l'étranger, le contrat de travail vient d'un employeur italien, qui dépose aussi la demande de Nulla Osta : le travailleur ne peut pas la déposer seul. Une fois le Nulla Osta délivré, vous demandez un National Visa D depuis la Tunisie, puis vous accomplissez le Contratto di soggiorno dans les 15 jours suivant l'entrée en Italie.",
+    "Sur la voie de la formation à l'étranger, le contrat de travail vient d'un employeur italien, qui dépose aussi la demande de Nulla Osta : le travailleur ne peut pas la déposer seul. Une fois le Nulla Osta délivré, vous demandez un National Visa D depuis la Tunisie, puis, dans les 8 jours ouvrables suivant l'entrée en Italie, vous demandez au Sportello Unico un rendez-vous pour signer le Contratto di soggiorno.",
   body: [
     {
       type: "callout",
@@ -25,7 +25,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "En bref : un employeur italien mis en relation avec vous par un programme agréé propose le contrat de travail et dépose la demande de Nulla Osta. Une fois le Nulla Osta délivré, vous demandez un National Visa D depuis la Tunisie. Après votre arrivée, vous accomplissez le Contratto di soggiorno dans les 15 jours, puis la démarche du Permesso di soggiorno.",
+      text: "En bref : un employeur italien mis en relation avec vous par un programme agréé propose le contrat de travail et dépose la demande de Nulla Osta. Une fois le Nulla Osta délivré, vous demandez un National Visa D depuis la Tunisie. Après votre arrivée, vous demandez au Sportello Unico, dans les 8 jours ouvrables, un rendez-vous pour signer le Contratto di soggiorno, puis vient la démarche du Permesso di soggiorno.",
     },
 
     { type: "h2", id: "after-training", text: "1. Que se passe-t-il après la formation ?" },
@@ -163,7 +163,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Pour cette voie, le Contratto di soggiorno doit être conclu dans les 15 jours suivant l'entrée en Italie, selon les règles actuelles.",
+      text: "Selon le [guide officiel du Portale Integrazione Migranti](https://www.integrazionemigranti.gov.it/it-it/Altre-info/id/144/Ingresso-e-assunzione-dei-lavoratori-formati-allestero), dans les 8 jours ouvrables suivant votre entrée en Italie, vous devez demander au Sportello Unico per l'Immigrazione un rendez-vous pour signer le Contratto di soggiorno. Lors de la signature, le Sportello Unico vous remet aussi l'attestation de votre code fiscal et vous fait signer la demande de Permesso di soggiorno.",
+    },
+    {
+      type: "callout",
+      tone: "note",
+      title: "Vérifiez ce délai vous-même",
+      text: "Certaines sources récentes indiquent que ce délai est passé à 15 jours après une modification de la loi en 2025, et la prise de rendez-vous varie d'une Prefettura à l'autre. Avant de partir, vérifiez le délai en vigueur auprès du Sportello Unico de la province où vous travaillerez, ou auprès de votre employeur.",
     },
     { type: "p", text: "Conservez toujours des copies des demandes, des reçus, des rendez-vous, des courriers et des documents officiels." },
 
@@ -175,7 +181,7 @@ export const fr: ArticleTranslation = {
         "Vous savez qui est votre employeur, et le poste correspond à votre formation agréée.",
         "Votre employeur a déposé la demande de Nulla Osta par le canal officiel, et le Nulla Osta a été délivré.",
         "Vous avez demandé le National Visa D depuis la Tunisie dans le délai applicable à votre situation.",
-        "Vous êtes prêt à accomplir le Contratto di soggiorno dans les 15 jours suivant l'entrée en Italie.",
+        "Vous savez que vous devez demander au Sportello Unico un rendez-vous dans les 8 jours ouvrables suivant l'entrée en Italie pour signer le Contratto di soggiorno, et vous avez vérifié le délai en vigueur.",
         "Vous accomplissez ensuite la démarche du Permesso di soggiorno.",
         "Vous conservez une copie de chaque demande, reçu, rendez-vous et document officiel.",
       ],
@@ -224,7 +230,7 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Que faire après l'arrivée en Italie ?",
-          a: "Vous accomplissez le Contratto di soggiorno dans les 15 jours suivant l'entrée en Italie, puis la démarche du Permesso di soggiorno, selon les règles applicables à votre situation.",
+          a: "Dans les 8 jours ouvrables suivant l'entrée en Italie, vous demandez au Sportello Unico per l'Immigrazione un rendez-vous pour signer le Contratto di soggiorno, puis vous accomplissez la démarche du Permesso di soggiorno. Vérifiez le délai en vigueur auprès du Sportello Unico, car les règles peuvent changer.",
         },
       ],
     },
@@ -257,6 +263,10 @@ export const fr: ArticleTranslation = {
           label: "Portale Integrazione Migranti : embaucher des travailleurs formés à l'étranger, guide pour les employeurs",
           url: "https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro",
         },
+        {
+          label: "Portale Integrazione Migranti : entrée et embauche des travailleurs formés à l'étranger (guide officiel)",
+          url: "https://www.integrazionemigranti.gov.it/it-it/Altre-info/id/144/Ingresso-e-assunzione-dei-lavoratori-formati-allestero",
+        },
       ],
     },
     {
@@ -273,7 +283,7 @@ export const fr: ArticleTranslation = {
         { label: "Qui dépose le Nulla Osta", value: "L'employeur italien, et non le travailleur" },
         { label: "Visa", value: "National Visa D, demandé depuis la Tunisie" },
         { label: "Délai après la formation", value: "Compté depuis la fin de la formation ; vérifiez le chiffre actuel auprès du ministère" },
-        { label: "Contratto di soggiorno", value: "Dans les 15 jours suivant l'entrée en Italie" },
+        { label: "Contratto di soggiorno", value: "Demander le rendez-vous dans les 8 jours ouvrables suivant l'entrée en Italie (guide officiel) ; à confirmer auprès du Sportello Unico" },
       ],
     },
     { type: "h2", id: "path-in-brief", text: "Le parcours complet en bref" },

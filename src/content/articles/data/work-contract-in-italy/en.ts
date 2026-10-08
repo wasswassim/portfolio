@@ -10,7 +10,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["work contract in Italy", "work contract in Italy from Tunisia", "Nulla Osta", "Italy work visa for Tunisians", "Contratto di soggiorno", "Permesso di soggiorno", "SIISL"],
   summary:
-    "On the training-abroad route, the work contract comes from an Italian employer, who also files the Nulla Osta request; the worker cannot file it alone. Once the Nulla Osta is issued, you apply for a National Visa D from Tunisia, then complete the Contratto di soggiorno within 15 days of entering Italy.",
+    "On the training-abroad route, the work contract comes from an Italian employer, who also files the Nulla Osta request; the worker cannot file it alone. Once the Nulla Osta is issued, you apply for a National Visa D from Tunisia, then, within 8 working days of entering Italy, ask the Sportello Unico for an appointment to sign the Contratto di soggiorno.",
   body: [
     {
       type: "callout",
@@ -25,7 +25,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "In short: an Italian employer matched with you through an approved program offers the work contract and files the Nulla Osta request. Once the Nulla Osta is issued, you apply for a National Visa D from Tunisia. After you arrive, you complete the Contratto di soggiorno within 15 days, then the Permesso di soggiorno procedure.",
+      text: "In short: an Italian employer matched with you through an approved program offers the work contract and files the Nulla Osta request. Once the Nulla Osta is issued, you apply for a National Visa D from Tunisia. After you arrive, you ask the Sportello Unico for an appointment within 8 working days to sign the Contratto di soggiorno, and the Permesso di soggiorno procedure follows.",
     },
 
     { type: "h2", id: "after-training", text: "1. What happens after the training is completed?" },
@@ -160,7 +160,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "For this route, the Contratto di soggiorno must be completed within 15 days of entering Italy under the current rules.",
+      text: "According to the [official guide on Portale Integrazione Migranti](https://www.integrazionemigranti.gov.it/it-it/Altre-info/id/144/Ingresso-e-assunzione-dei-lavoratori-formati-allestero), within 8 working days of entering Italy you must ask the Sportello Unico per l'Immigrazione for an appointment to sign the Contratto di soggiorno. When you sign it, the Sportello Unico also issues your tax code certificate and has you sign the Permesso di soggiorno application.",
+    },
+    {
+      type: "callout",
+      tone: "note",
+      title: "Confirm this deadline yourself",
+      text: "Some recent sources say this deadline became 15 days after a 2025 change in the law, and booking procedures differ from one Prefettura to another. Before you travel, confirm the current deadline with the Sportello Unico of the province where you will work, or with your employer.",
     },
     { type: "p", text: "Always keep copies of applications, receipts, appointments, correspondence and official documents." },
 
@@ -172,7 +178,7 @@ export const en: ArticleTranslation = {
         "You know who your employer is, and the job matches your approved training.",
         "Your employer filed the Nulla Osta request through the official channel, and it has been issued.",
         "You applied for the National Visa D from Tunisia within the deadline that applies to your case.",
-        "You are ready to complete the Contratto di soggiorno within 15 days of entering Italy.",
+        "You know you must ask the Sportello Unico for an appointment within 8 working days of entering Italy to sign the Contratto di soggiorno, and you have confirmed the current deadline.",
         "You then complete the Permesso di soggiorno procedure.",
         "You keep copies of every application, receipt, appointment and official document.",
       ],
@@ -221,7 +227,7 @@ export const en: ArticleTranslation = {
         },
         {
           q: "What do I do after arriving in Italy?",
-          a: "You complete the Contratto di soggiorno within 15 days of entering Italy, then the Permesso di soggiorno procedure, according to the rules that apply to your case.",
+          a: "Within 8 working days of entering Italy, you ask the Sportello Unico per l'Immigrazione for an appointment to sign the Contratto di soggiorno, then you complete the Permesso di soggiorno procedure. Confirm the current deadline with the Sportello Unico, as the rules can change.",
         },
       ],
     },
@@ -254,6 +260,10 @@ export const en: ArticleTranslation = {
           label: "Portale Integrazione Migranti: hiring workers trained abroad, guide for employers",
           url: "https://www.integrazionemigranti.gov.it/Altre-info/id/145/Lavoratori-formati-allestero-cosi-le-domande-dei-datori-di-lavoro",
         },
+        {
+          label: "Portale Integrazione Migranti: entry and hiring of workers trained abroad (official guide)",
+          url: "https://www.integrazionemigranti.gov.it/it-it/Altre-info/id/144/Ingresso-e-assunzione-dei-lavoratori-formati-allestero",
+        },
       ],
     },
     {
@@ -270,7 +280,7 @@ export const en: ArticleTranslation = {
         { label: "Who files the Nulla Osta", value: "The Italian employer, not the worker" },
         { label: "Visa", value: "National Visa D, requested from Tunisia" },
         { label: "Deadline after training", value: "Counted from the end of training; confirm the current figure with the Ministry" },
-        { label: "Contratto di soggiorno", value: "Within 15 days of entering Italy" },
+        { label: "Contratto di soggiorno", value: "Ask for the appointment within 8 working days of entering Italy (official guide); confirm with the Sportello Unico" },
       ],
     },
     { type: "h2", id: "path-in-brief", text: "The full path in brief" },
