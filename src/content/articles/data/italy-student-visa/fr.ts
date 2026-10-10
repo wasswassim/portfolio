@@ -168,6 +168,12 @@ export const fr: ArticleTranslation = {
       ],
     },
     {
+      type: "fees",
+      title: "Frais du visa d'études",
+      feeIds: ["visa-study-d"],
+      hub: true,
+    },
+    {
       type: "p",
       text: "Consultez la [page des frais](https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/quanto-costa-un-visto-e-come-pagare/) de l'Ambassade quelques jours avant votre rendez-vous, car les montants en dinars suivent le taux de change.",
     },

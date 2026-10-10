@@ -3,14 +3,14 @@ import type { ArticleTranslation } from "../../types";
 // Facts: DiSCo Lazio call 2026/27 (bando + Allegato L + international FAQ). 2027/28 dates are projected.
 export const en: ArticleTranslation = {
   slug: "lazio-disco-scholarship",
-  title: "Lazio DiSCo Scholarship for Tunisian Students: Apply, ISEEUP and Payments",
-  seoTitle: "Lazio DiSCo Scholarship for Tunisian Students",
+  title: "Lazio DiSCo Scholarship in Rome for Tunisian Students: Apply, ISEEUP and Payments",
+  seoTitle: "Lazio DiSCo Scholarship in Rome for Tunisian Students",
   metaDescription:
-    "How Tunisian students get the Lazio DiSCo scholarship in Rome: amounts, eligibility, 2027/28 calendar, family documents from Tunisia, ISEEUP and payments.",
+    "How Tunisian students get the DiSCo Lazio scholarship in Rome and across Lazio: amounts up to EUR 7,556.78, eligibility, 2027/28 calendar, ISEEUP and payments.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["Lazio DiSCo scholarship for Tunisian students", "scholarships in Italy", "DiSCo Lazio", "ISEEUP", "ISEE parificato", "scholarship in Rome"],
+  keywords: ["Lazio DiSCo scholarship for Tunisian students", "scholarships in Italy", "DiSCo Lazio", "ISEEUP", "ISEE parificato", "scholarship in Rome", "DiSCo scholarship Rome"],
   summary:
-    "The Lazio DiSCo scholarship gives an off-site student enrolled at a university in Rome up to EUR 6,571.11 a year plus two free meals a day (2026/27 values), ranked for first-years on family economic data only. For 2027/28 you apply online around June-July 2027 without SPID, prepare your family documents from Tunisia in advance, then sign the ISEEUP at a DiSCo partner CAF after you arrive.",
+    "The Lazio DiSCo scholarship gives an off-site student enrolled at a university in Rome or elsewhere in Lazio up to EUR 7,556.78 a year in cash plus two free meals a day (2026/27 values; EUR 6,571.11 at the standard rate), ranked for first-years on family economic data only. For 2027/28 you apply online around June-July 2027 without SPID, prepare your family documents from Tunisia in advance, then sign the ISEEUP at a DiSCo partner CAF after you arrive.",
   body: [
     {
       type: "callout",
@@ -21,14 +21,14 @@ export const en: ArticleTranslation = {
     { type: "p", text: "**Can a Tunisian student in Rome get a scholarship that pays for most of the year?**" },
     {
       type: "p",
-      text: "Yes. The Lazio DiSCo scholarship (borsa di studio) is open to international students, with a separate ranking for non-EU students. An off-site student receives up to EUR 6,571.11 in cash plus two free meals a day (2026/27 call), and can also ask for a place in a DiSCo residence.",
+      text: "Yes. The Lazio DiSCo scholarship (borsa di studio) is open to international students, with a separate ranking for non-EU students. It covers universities in Rome and across Lazio (Cassino, Viterbo, Latina, Frosinone). An off-site student receives EUR 6,571.11 a year in cash, up to EUR 7,556.78 for the lowest family incomes, plus two free meals a day (2026/27 call), and can also ask for a place in a DiSCo residence.",
     },
     {
       type: "p",
       text: "This is part 4 of our [study in Italy guide for Tunisian students](article:study-in-italy). The 2026/27 call closed on **22 July 2026**, so everything below prepares you for **2027/28**. Dates marked “expected” come from the 2026/27 calendar and must be confirmed in the new call.",
     },
 
-    { type: "h2", id: "what-you-get", text: "1. What does the DiSCo scholarship give you?" },
+    { type: "h2", id: "what-you-get", text: "1. What does the DiSCo scholarship in Rome give you?" },
     {
       type: "p",
       text: "If you live abroad and at least half of your family lives abroad, DiSCo treats you as **fuori sede** (off-site) automatically, without a rental contract (except for online courses). In the 2026/27 call, a fuori sede student gets:",
@@ -55,11 +55,31 @@ export const en: ArticleTranslation = {
       ],
     },
     {
+      type: "callout",
+      tone: "note",
+      title: "From my experience",
+      text: "In my case, with the supplements, the scholarship came to about **EUR 8,000 a year in cash**, on top of the canteen meals (about EUR 600). That is my own experience, not the official amount: the call above sets the official figures, and supplements depend on your situation.",
+    },
+    {
+      type: "fees",
+      title: "DiSCo scholarship amounts, 2026/27 call (official)",
+      feeIds: ["disco-base", "disco-max", "disco-meals"],
+    },
+    {
       type: "p",
       text: "Tuition is a separate question that depends on your university. At Tor Vergata the flat fee for foreign students still applies to DiSCo winners, and at Sapienza students who pay the flat fee get no refund. Check with your university's student office.",
     },
+    {
+      type: "fees",
+      title: "What you still pay to enrol, even as a DiSCo winner",
+      text: "Winners still pay the Lazio regional tax and the revenue stamp. If the payment is not validated, you lose the enrolment and the DiSCo benefits.",
+      feeIds: ["lazio-regional-tax", "uni-stamp"],
+      total: true,
+      tnd: true,
+      hub: true,
+    },
 
-    { type: "h2", id: "eligibility", text: "2. Who is eligible for the DiSCo scholarship?" },
+    { type: "h2", id: "eligibility", text: "2. Who is eligible for the DiSCo scholarship in Rome and Lazio?" },
     { type: "p", text: "In the 2026/27 call you had to meet all of these conditions:" },
     {
       type: "ul",
@@ -247,7 +267,7 @@ export const en: ArticleTranslation = {
     {
       type: "keyFacts",
       items: [
-        { label: "Fuori sede amount", value: "EUR 6,571.11/year + 2 free meals a day (2026/27)" },
+        { label: "Fuori sede amount", value: "EUR 6,571.11 to 7,556.78/year + 2 free meals a day (2026/27)" },
         { label: "Application 2027/28", value: "Expected ~10 Jun - 22 Jul 2027, 12:00 (check the call)" },
         { label: "SPID", value: "Not needed: DiSCo credentials with your passport" },
         { label: "ISEEUP", value: "Only at a DiSCo partner CAF, free, by ~10 Dec" },

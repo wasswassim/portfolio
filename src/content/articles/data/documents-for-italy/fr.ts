@@ -100,6 +100,13 @@ export const fr: ArticleTranslation = {
       text: "Votre université doit aussi savoir ce que vaut votre diplôme dans le système italien. Deux documents répondent à cette question :",
     },
     {
+      type: "fees",
+      title: "Frais de l'attestation CIMEA",
+      feeIds: ["cimea-cv"],
+      tnd: true,
+      hub: true,
+    },
+    {
       type: "ul",
       items: [
         "**Dichiarazione di Valore (DOV)** : délivrée par l'Ambassade d'Italie à Tunis. Elle décrit votre diplôme (l'établissement, la durée des études, le niveau). Elle est descriptive : ce n'est pas une équivalence.",

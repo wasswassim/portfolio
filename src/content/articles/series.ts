@@ -52,4 +52,32 @@ export const SERIES: readonly Series[] = [
       "student-housing-rome",
     ],
   },
+  {
+    id: "pay-in-euros-from-tunisia",
+    title: {
+      en: "Paying Italian fees from Tunisia",
+      fr: "Payer ses frais en Italie pour les Tunisiens",
+      ar: "دفع المصاريف الإيطالية من تونس",
+    },
+    topic: {
+      en: "How to pay university fees from Tunisia with an international card",
+      fr: "Payer ses frais d'inscription en Italie avec une carte internationale",
+      ar: "كيف تدفع رسوم التسجيل في إيطاليا ببطاقة دولية من تونس",
+    },
+    articleIds: ["international-card-tunisia", "technology-card-tunisia", "pay-pagopa-from-abroad", "redotpay-tunisia"],
+  },
+  {
+    id: "settling-in-rome",
+    title: {
+      en: "After arriving in Rome",
+      fr: "Après l'arrivée à Rome",
+      ar: "بعد الوصول إلى روما",
+    },
+    topic: {
+      en: "Bank account, residenza and student jobs in Rome",
+      fr: "Compte bancaire, residenza et job étudiant à Rome",
+      ar: "الحساب البنكي والريزيدنزا وعمل الطلاب في روما",
+    },
+    articleIds: ["bank-account-italy-student", "residenza-rome", "student-jobs-rome"],
+  },
 ];

@@ -1,6 +1,8 @@
 import type { Lang } from "@/lib/i18n/config";
+import type { FeeId } from "@/content/fees";
+import type { ReferralId } from "@/content/referrals";
 
-export type CategoryId = "documents" | "work" | "studies" | "language" | "daily-life";
+export type CategoryId = "documents" | "work" | "studies" | "language" | "daily-life" | "money";
 
 /**
  * Article body as typed blocks. Text fields accept light inline markup:
@@ -74,6 +76,14 @@ export type Block =
       rows: string[][];
     }
   | { type: "quote"; text: string; cite?: string }
+  /**
+   * Fee box: amounts come from src/content/fees.ts (never typed in the article). `total` adds a
+   * sum row (same currency only), `tnd` shows "about X TND" for EUR rows, `hub` links to the
+   * payment guide. No `id` field, so the cross-language id check is not affected.
+   */
+  | { type: "fees"; title?: string; text?: string; feeIds: FeeId[]; total?: boolean; tnd?: boolean; hub?: boolean }
+  /** Referral card for a provider in src/content/referrals.ts; adds the affiliate disclosure. */
+  | { type: "referral"; provider: ReferralId; text?: string }
   // id + title give the block its own h2 (and a table-of-contents entry); without them a default label is used
   | { type: "faq"; id?: string; title?: string; items: { q: string; a: string }[] }
   | { type: "sources"; id?: string; title?: string; items: { label: string; url: string }[] };

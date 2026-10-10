@@ -168,6 +168,12 @@ export const en: ArticleTranslation = {
       ],
     },
     {
+      type: "fees",
+      title: "Study visa fee",
+      feeIds: ["visa-study-d"],
+      hub: true,
+    },
+    {
       type: "p",
       text: "Check the Embassy's [fees page](https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/quanto-costa-un-visto-e-come-pagare/) a few days before your appointment, as the dinar amounts follow the exchange rate.",
     },

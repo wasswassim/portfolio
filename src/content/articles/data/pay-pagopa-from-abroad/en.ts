@@ -1,0 +1,280 @@
+import type { ArticleTranslation } from "../../types";
+
+// Part 3 of the payment series. French and Arabic mirror this structure (same heading ids, one table, two fee boxes).
+export const en: ArticleTranslation = {
+  slug: "pay-pagopa-with-paypal-from-tunisia",
+  title: "How to Pay a pagoPA Notice from Tunisia with PayPal or an International Card",
+  seoTitle: "How to Pay pagoPA from Tunisia with PayPal or a Card",
+  metaDescription:
+    "Pay an Italian pagoPA notice from Tunisia with PayPal or an international card: no SPID needed, step by step, fees, and what to do when your card is declined.",
+  imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
+  keywords: ["pay pagoPA from abroad", "pagoPA PayPal", "pay pagoPA from Tunisia", "pagoPA foreign card", "checkout.pagopa.it", "avviso di pagamento"],
+  summary:
+    "You can pay an Italian pagoPA notice from Tunisia on checkout.pagopa.it, without SPID, by typing the Codice Avviso and the creditor's tax code and choosing PayPal or a Visa, Mastercard or other international card. PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 3% if PayPal converts the currency; pay in full, test with a small notice first and keep a card as a backup.",
+  body: [
+    {
+      type: "callout",
+      tone: "warning",
+      title: "Important notice",
+      text: "This guide is for information only and is not legal or financial advice. Payment methods, provider fees and Tunisian exchange rules can change, so always check the official sources linked below before you pay.",
+    },
+    { type: "p", text: "**Your Italian university sent you a pagoPA notice, but you are still in Tunisia. Can you pay it with PayPal or a Tunisian international card?**" },
+    {
+      type: "p",
+      text: "Usually, yes. Open [checkout.pagopa.it](https://checkout.pagopa.it), type the Codice Avviso and the Codice Fiscale Ente Creditore (or scan the QR code), and choose PayPal or a credit, debit or prepaid card. You do not need SPID, an Italian bank account or a codice fiscale of your own to pay a notice.",
+    },
+    {
+      type: "p",
+      text: "One honest caveat: PayPal is an official pagoPA method, but no official source confirms that a **Tunisia-registered** PayPal account goes through. Test with a small notice first and keep a card ready as a backup.",
+    },
+    {
+      type: "p",
+      text: "This is part 3 of our [guide to paying Italian fees from Tunisia](article:international-card-tunisia), which compares every way to pay. For the full list of study costs, see [what studying in Italy costs](article:study-in-italy#costs).",
+    },
+
+    { type: "h2", id: "what-is-pagopa", text: "1. What is pagoPA, and which student fees use it?" },
+    {
+      type: "p",
+      text: "pagoPA is the Italian public payment system. A public body (a university, the Lazio region, a ministry) issues a payment notice, the **avviso di pagamento**, and you pay it through a payment provider (PSP) of your choice. The provider, not pagoPA, sets and collects the fee.",
+    },
+    {
+      type: "ul",
+      items: [
+        "**Sapienza**: you generate the payment on Infostud and pay it only through pagoPA; the rules say no other method is accepted ([Sapienza fee rules 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
+        "**Tor Vergata**: the EUR 30 application fee is paid through pagoPA ([application procedure](https://web.uniroma2.it/allegato/45147/contenuto/application_procedure)), and enrolment fees are generated on Delphi.",
+        "**Lazio regional tax**: EUR 140 plus a EUR 16 stamp, paid with the first instalment by every student at a public university in Lazio, DiSCo applicants included ([Sapienza: regional tax and stamp](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
+      ],
+    },
+    {
+      type: "fees",
+      title: "Example notice: regional tax and stamp (2026/27)",
+      text: "A typical first pagoPA notice from a public university in Rome. Amounts as of October 2026.",
+      feeIds: ["lazio-regional-tax", "uni-stamp"],
+      total: true,
+      tnd: true,
+    },
+    {
+      type: "p",
+      text: "Not everything is pagoPA: the residence permit kit is paid at the post office, and voluntary health cover with an F24 form, as explained in [your first 30 days in Rome](article:arriving-in-rome#residence-permit).",
+    },
+
+    { type: "h2", id: "what-you-need", text: "2. What you need before you pay" },
+    {
+      type: "ul",
+      items: [
+        "**The notice**: the PDF from Infostud, Delphi or another portal, with the 18-digit **Codice Avviso** and the **Codice Fiscale Ente Creditore** (the creditor's tax code), or its QR code. If you do not have it, ask the university: pagoPA cannot generate it for you.",
+        "**An email address**: the outcome of the payment is sent there.",
+        "**A way to pay**: a PayPal account with a confirmed linked card, or an international Visa, Mastercard, Maestro, Visa Electron or American Express card enabled for online and international payments.",
+        "**Enough allowance on the card**: the international technology card (CTI) is capped at 1,000 TND a year per person.",
+      ],
+    },
+    {
+      type: "p",
+      text: "To use PayPal, link your international card to the account first; our guide to the [international technology card in Tunisia](article:technology-card-tunisia) explains how to get one. PayPal may place a small temporary charge to confirm the card and refunds it after verification ([PayPal Tunisia fees](https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN)).",
+    },
+    {
+      type: "p",
+      text: "A Tunisian PayPal account is a contract with PayPal Pte. Ltd., a Singapore company. It lets you pay and send; receiving money is offered only “where available”, and PayPal's Tunisian site promotes only paying and sending ([PayPal user agreement, Tunisia](https://www.paypal.com/tn/legalhub/paypal/useragreement-full?locale.x=en_TN)). That is not a problem here, because your goal is to pay.",
+    },
+    {
+      type: "callout",
+      tone: "tip",
+      title: "Watch the 1,000 TND cap",
+      text: "The example notice above (about 525 TND) uses about half of a year's CTI allowance, and the CTI's list of allowed uses does not name university fees. Read [what the technology card may pay for](article:technology-card-tunisia#allowed-uses) before you rely on it for tuition.",
+    },
+
+    { type: "h2", id: "pay-with-paypal", text: "3. How to pay a pagoPA notice with PayPal, step by step" },
+    {
+      type: "p",
+      text: "These steps follow the official pagoPA article [Pagare con PayPal](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal).",
+    },
+    { type: "h3", id: "step-open-checkout", text: "Step 1: open checkout.pagopa.it" },
+    {
+      type: "p",
+      text: "Go to [checkout.pagopa.it](https://checkout.pagopa.it), or click the pagoPA button on your university portal. There is no login and no SPID.",
+    },
+    { type: "h3", id: "step-enter-codes", text: "Step 2: enter the notice codes" },
+    {
+      type: "p",
+      text: "Scan the QR code, or type the Codice Avviso and the Codice Fiscale Ente Creditore, then press **Vai al pagamento**. Check that the amount and the creditor's name match your notice.",
+    },
+    { type: "h3", id: "step-email", text: "Step 3: type your email twice" },
+    { type: "p", text: "Use an address you check: the outcome and the receipt details arrive there." },
+    { type: "h3", id: "step-choose-paypal", text: "Step 4: choose PayPal and a provider" },
+    {
+      type: "p",
+      text: "Select **PayPal (anche a rate)**. If several providers are offered (Intesa Sanpaolo, Mooney or Nexi), pick one, check the total with the fee included, and press **Paga**.",
+    },
+    { type: "h3", id: "step-paypal-login", text: "Step 5: log in to PayPal and pay in full" },
+    {
+      type: "p",
+      text: "You are sent to PayPal. Log in, choose your card or balance, and choose to pay **in full**: PayPal's instalments on pagoPA require you to live in Italy ([PayPal Italy: pagoPA](https://www.paypal.com/it/digital-wallet/pagopa)).",
+    },
+    { type: "h3", id: "step-outcome", text: "Step 6: read the outcome" },
+    { type: "p", text: "Back on pagoPA, the result is shown on screen and sent by email. Then save the receipt (section 6)." },
+    {
+      type: "fees",
+      title: "What paying with PayPal adds",
+      text: "On top of the notice amount. The pagoPA fee is set by the provider and can change.",
+      feeIds: ["pagopa-paypal", "paypal-fx"],
+      tnd: true,
+    },
+    {
+      type: "p",
+      text: "The 3% applies when PayPal converts the currency for you. Whether PayPal or your Tunisian bank converts a dinar card could not be confirmed, so compare the final amount on your bank statement after your test payment.",
+    },
+    {
+      type: "callout",
+      tone: "warning",
+      title: "Test with a small notice first",
+      text: "A Tunisian PayPal account on pagoPA is not officially confirmed, and pagoPA says methods can vary by notice and provider. Try a small amount first (for example a EUR 16 stamp, if your university issues it as a separate notice) well before the deadline, and keep a card as a backup.",
+    },
+
+    { type: "h2", id: "pay-with-card", text: "4. Paying with an international card instead" },
+    {
+      type: "p",
+      text: "pagoPA accepts credit, debit and prepaid cards on the American Express, Maestro, Mastercard, Visa and Visa Electron circuits, whatever the issuing country ([payment methods](https://assistenza.pagopa.gov.it/hc/it/articles/39527536398609)).",
+    },
+    {
+      type: "ol",
+      items: [
+        "After your email, choose **Carta di credito o debito**.",
+        "Type the holder's name, card number, expiry date and CVV.",
+        "Choose a provider; it does not have to be your bank.",
+        "Check the amount with the fee included, then press **Paga**.",
+        "Approve the payment on your bank's page or app (the 3-D Secure step).",
+      ],
+    },
+    {
+      type: "table",
+      caption: "Card fees on checkout.pagopa.it by notice amount (pagoPA cost data, snapshot of 10 October 2026; fees change).",
+      head: ["Notice amount", "Card offers", "Provider fee"],
+      rows: [
+        ["EUR 16", "24", "EUR 0.25 to 1.50"],
+        ["EUR 100", "25", "EUR 0.70 to 1.50"],
+        ["EUR 500", "24", "EUR 1.33 to 3.00"],
+        ["EUR 2,000", "13", "EUR 2.50 to 6.00"],
+      ],
+    },
+    {
+      type: "p",
+      text: "Compare providers on the official [cost transparency page](https://www.pagopa.gov.it/it/cittadini/trasparenza-costi/). If your card has no CVV, pagoPA says it is probably not enabled for online payments ([paying by card](https://assistenza.pagopa.gov.it/hc/it/articles/39529857745041)).",
+    },
+
+    { type: "h2", id: "card-declined", text: "5. Card declined or payment failed: what to do" },
+    {
+      type: "p",
+      text: "pagoPA's own help page for [foreign cards](https://assistenza.pagopa.gov.it/hc/it/articles/31958814436113) gives three fixes, in this order:",
+    },
+    {
+      type: "ol",
+      items: [
+        "**Check the card's restrictions**: international and online payments must be enabled. Look in your banking app or call your bank.",
+        "**Change the provider**: a provider can refuse a card because of its own policy. On the summary screen, press **modifica** next to the suggested provider and pick another.",
+        "**Change the method**: if the card fails, try PayPal, and if PayPal fails, try the card directly.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Also check that your CTI still has allowance left this year, and that you can receive your bank's confirmation code while you pay.",
+    },
+    {
+      type: "p",
+      text: "If money left your account but the outcome is negative, the provider may be holding it and will refund it, possibly after a few days ([debit without payment](https://assistenza.pagopa.gov.it/hc/it/articles/46234924012561)). Check the due date and pay again through another method so you do not miss it. If nothing works, see the [bank transfer option](article:international-card-tunisia#bank-transfer) in our payment guide.",
+    },
+
+    { type: "h2", id: "keep-the-receipt", text: "6. Keep the receipt and check the validation" },
+    {
+      type: "p",
+      text: "Download the receipt (**ricevuta**) as soon as the payment succeeds and keep the PDF with the email. Some offices ask for it as proof of payment.",
+    },
+    {
+      type: "p",
+      text: "The university then validates the payment on its portal, often after a few days. Check Infostud or Delphi; if nothing appears after about a week, send the receipt to the student office. Tor Vergata warns that if the regional tax payment is not validated, you are not enrolled and you lose your DiSCo benefits ([Tor Vergata student guide 2026/27](https://www-2023.studenti.uniroma2.it/wp-content/uploads/2026/07/Guida-dello-Studente-2026_2027v5.pdf)).",
+    },
+
+    {
+      type: "faq",
+      id: "faq",
+      title: "Frequently asked questions",
+      items: [
+        {
+          q: "Does pagoPA accept foreign cards?",
+          a: "Yes. Credit, debit and prepaid Visa, Mastercard, Maestro, Visa Electron and American Express cards are accepted, as long as the card is enabled for online and international payments and passes the 3-D Secure check.",
+        },
+        {
+          q: "Can I pay pagoPA in instalments from Tunisia?",
+          a: "No, not with PayPal: its instalments on pagoPA require you to live in Italy. Choose to pay in full when PayPal asks.",
+        },
+        {
+          q: "Do I need SPID to pay a pagoPA notice?",
+          a: "No. On checkout.pagopa.it you only need the Codice Avviso and the Codice Fiscale Ente Creditore (or the QR code), an email address and a payment method.",
+        },
+        {
+          q: "How much does it cost to pay pagoPA with PayPal?",
+          a: "EUR 1.50 up to EUR 248.50 and EUR 2.50 above (as of October 2026), plus about 3% if PayPal converts the currency for a Tunisian account.",
+        },
+        {
+          q: "How long until the university sees my payment?",
+          a: "Often a few days. Keep the receipt, check Infostud or Delphi, and contact the student office if the payment still does not appear after about a week.",
+        },
+        {
+          q: "I lost my Codice Avviso. Can pagoPA send it to me?",
+          a: "No. Only the body that issued the notice can give it to you, so download it again from your university portal or ask the student office.",
+        },
+      ],
+    },
+    {
+      type: "sources",
+      id: "official-sources",
+      title: "Official sources",
+      items: [
+        { label: "pagoPA: paying with pagoPA", url: "https://assistenza.pagopa.gov.it/hc/it/articles/31958790454417-Pagare-con-pagoPA" },
+        { label: "pagoPA: paying a notice from abroad if you are not Italian", url: "https://assistenza.pagopa.gov.it/hc/it/articles/37287486009617" },
+        { label: "pagoPA: accepted payment methods", url: "https://assistenza.pagopa.gov.it/hc/it/articles/39527536398609" },
+        { label: "pagoPA: paying with PayPal", url: "https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal" },
+        { label: "pagoPA: paying with credit or debit cards", url: "https://assistenza.pagopa.gov.it/hc/it/articles/39529857745041" },
+        { label: "pagoPA: I can't pay with a foreign card", url: "https://assistenza.pagopa.gov.it/hc/it/articles/31958814436113" },
+        { label: "pagoPA: money debited but payment failed", url: "https://assistenza.pagopa.gov.it/hc/it/articles/46234924012561" },
+        { label: "pagoPA: why providers charge fees", url: "https://assistenza.pagopa.gov.it/hc/it/articles/31958813866769" },
+        { label: "pagoPA: cost transparency", url: "https://www.pagopa.gov.it/it/cittadini/trasparenza-costi/" },
+        { label: "PayPal Italy: paying pagoPA with PayPal", url: "https://www.paypal.com/it/digital-wallet/pagopa" },
+        { label: "PayPal Tunisia: user agreement", url: "https://www.paypal.com/tn/legalhub/paypal/useragreement-full?locale.x=en_TN" },
+        { label: "PayPal Tunisia: consumer fees", url: "https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN" },
+        { label: "Sapienza: regional tax and revenue stamp", url: "https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo" },
+        { label: "Sapienza: fee rules 2026/27", url: "https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf" },
+        { label: "Tor Vergata: application procedure", url: "https://web.uniroma2.it/allegato/45147/contenuto/application_procedure" },
+        { label: "Tor Vergata: student guide 2026/27", url: "https://www-2023.studenti.uniroma2.it/wp-content/uploads/2026/07/Guida-dello-Studente-2026_2027v5.pdf" },
+        { label: "Banque Centrale de Tunisie: circular 2016-09 (technology card)", url: "https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf" },
+      ],
+    },
+    {
+      type: "callout",
+      tone: "note",
+      title: "Update note",
+      text: "Last verified: October 2026. Provider fees are a snapshot of 10 October 2026 and change often; whether a Tunisian PayPal account works on pagoPA is not officially confirmed. Check the official pages before you pay.",
+    },
+  ],
+  guide: [
+    {
+      type: "keyFacts",
+      items: [
+        { label: "Where to pay", value: "checkout.pagopa.it, no SPID needed" },
+        { label: "What you need", value: "Codice Avviso + Codice Fiscale Ente Creditore, or the QR code" },
+        { label: "PayPal fee", value: "EUR 1.50 (EUR 2.50 above EUR 248.50) + about 3% conversion" },
+        { label: "Instalments", value: "Italian residents only: pay in full from Tunisia" },
+      ],
+    },
+    { type: "h2", id: "payment-path", text: "Paying Italian fees from Tunisia" },
+    {
+      type: "ol",
+      items: [
+        "[Which payment method to choose](article:international-card-tunisia)",
+        "[The international technology card](article:technology-card-tunisia)",
+        "Paying pagoPA with PayPal or a card",
+        "[RedotPay and crypto cards](article:redotpay-tunisia)",
+        "[A bank account in Italy](article:bank-account-italy-student)",
+      ],
+    },
+  ],
+};

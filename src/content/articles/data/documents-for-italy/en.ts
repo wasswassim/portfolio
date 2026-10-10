@@ -100,6 +100,13 @@ export const en: ArticleTranslation = {
       text: "Your university also needs to know what your diploma is worth in the Italian system. Two documents answer that question:",
     },
     {
+      type: "fees",
+      title: "CIMEA statement fee",
+      feeIds: ["cimea-cv"],
+      tnd: true,
+      hub: true,
+    },
+    {
       type: "ul",
       items: [
         "**Dichiarazione di Valore (DOV)**: issued by the Italian Embassy in Tunis. It describes your qualification (the school, the length of studies, the level). It is descriptive, not an equivalence.",

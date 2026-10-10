@@ -114,12 +114,17 @@ export const en: ArticleTranslation = {
         "**Contract type:** is it a written lease, and for how long? Ask for a contract that matches your study period.",
         "**Deposit:** how much, and when exactly will it be returned?",
         "**Bills:** are electricity, gas, water, internet and building fees included, or split between flatmates?",
-        "**Registration:** will the owner register the lease? You need a registered lease for many procedures.",
+        "**Registration:** who registers the lease, and when? Either party can do it, and both are liable for the tax. You need a registered lease for many procedures.",
       ],
     },
     {
       type: "p",
-      text: "A new lease must be [registered with the Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) within 30 days. This is the owner's job, but ask for proof of registration and keep a copy. To sign a lease you may need a codice fiscale: you can get one at any Agenzia delle Entrate office (see [how to get your codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+      text: "A new lease must be [registered with the Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) within 30 days. Either the owner or the tenant can register it, and both are jointly liable for the tax; usually the owner does it, so ask for proof of registration and keep a copy. To sign a lease you may need a codice fiscale: you can get one at any Agenzia delle Entrate office (see [how to get your codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+    },
+    {
+      type: "fees",
+      title: "Lease registration tax",
+      feeIds: ["lease-registration-min"],
     },
     { type: "h3", id: "first-weeks", text: "Your first weeks: a temporary place" },
     {
@@ -208,7 +213,7 @@ export const en: ArticleTranslation = {
       items: [
         { label: "DiSCo residence", value: "About EUR 200-298/month in 2026/27, deducted from the scholarship" },
         { label: "How to request it", value: "Only in the yearly DiSCo application" },
-        { label: "Lease registration", value: "Within 30 days, by the owner; ask for proof" },
+        { label: "Lease registration", value: "Within 30 days, by either party; ask for proof" },
         { label: "Golden rule", value: "Never pay before seeing the room" },
       ],
     },

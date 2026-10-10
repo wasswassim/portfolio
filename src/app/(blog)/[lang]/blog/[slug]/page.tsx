@@ -6,7 +6,7 @@ import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/
 import { allArticleParams, articleBySlug, seriesPosition } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd, personLd, blogPostingLd, breadcrumbLd, faqLd, videoLd } from "@/lib/seo/jsonld";
-import { faqPairsOf, headingsOf, readingMinutes, videosOf, wordCountOf } from "@/content/articles/blocks";
+import { faqPairsOf, hasReferral, headingsOf, readingMinutes, videosOf, wordCountOf } from "@/content/articles/blocks";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/site";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogFooter from "@/components/blog/BlogFooter";
@@ -15,6 +15,7 @@ import GuideCard from "@/components/blog/GuideCard";
 import ArticleBody from "@/components/blog/ArticleBody";
 import { SeriesNav, SeriesStrip } from "@/components/blog/SeriesNav";
 import QuickGuide from "@/components/blog/QuickGuide";
+import NewsletterCard from "@/components/blog/NewsletterCard";
 
 export const dynamicParams = false;
 
@@ -73,6 +74,7 @@ export default async function ArticlePage(props: Props) {
   const headings = headingsOf(translation.body).filter((h) => h.level === 2);
   const faq = faqLd(faqPairsOf([...translation.body, ...guide]));
   const series = seriesPosition(article, lang);
+  const referral = hasReferral([...translation.body, ...guide]);
   const videos = videosOf([...translation.body, ...guide])
     .map((v) => videoLd(v))
     .filter((v): v is NonNullable<typeof v> => v !== null);
@@ -104,12 +106,17 @@ export default async function ArticlePage(props: Props) {
                 <a href="#guide" className="blog-guide-jump">{dict.article.guide} <span aria-hidden="true">↓</span></a>
               </p>
               {series && <SeriesStrip position={series} lang={lang} dict={dict} />}
+              {referral && <p className="blog-disclosure" role="note">{dict.referral.disclosure}</p>}
               <QuickGuide summary={translation.summary} headings={headings} lang={lang} dict={dict} />
               <ArticleBody body={translation.body} lang={lang} dict={dict} />
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
+              <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-end" className="blog-newsletter--end" />
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
             </article>
-            <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
+            <div className="blog-side">
+              <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
+              <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-side" className="blog-newsletter--side" />
+            </div>
           </div>
         </main>
         <BlogFooter dict={dict} />
@@ -139,6 +146,10 @@ export default async function ArticlePage(props: Props) {
           breadcrumbLd([
             { name: SITE_NAME, path: "/" },
             { name: dict.blogName, path: blogPath(lang) },
+            // Parts after the first sit under their series hub
+            ...(series && series.part > 1
+              ? [{ name: series.hub.translation.title, path: articlePath(lang, series.hub.translation.slug) }]
+              : []),
             { name: translation.title, path },
           ]),
           ...(faq ? [faq] : []),

@@ -10,6 +10,13 @@ import { lazioDiscoScholarship } from "./data/lazio-disco-scholarship/article";
 import { italyStudentVisa } from "./data/italy-student-visa/article";
 import { arrivingInRome } from "./data/arriving-in-rome/article";
 import { studentHousingRome } from "./data/student-housing-rome/article";
+import { internationalCardTunisia } from "./data/international-card-tunisia/article";
+import { technologyCardTunisia } from "./data/technology-card-tunisia/article";
+import { payPagopaFromAbroad } from "./data/pay-pagopa-from-abroad/article";
+import { redotpayTunisia } from "./data/redotpay-tunisia/article";
+import { bankAccountItalyStudent } from "./data/bank-account-italy-student/article";
+import { residenzaRome } from "./data/residenza-rome/article";
+import { studentJobsRome } from "./data/student-jobs-rome/article";
 import { SERIES, type Series } from "./series";
 import type { Article, ArticleTranslation } from "./types";
 
@@ -24,6 +31,13 @@ export const ARTICLES: readonly Article[] = [
   italyStudentVisa,
   arrivingInRome,
   studentHousingRome,
+  internationalCardTunisia,
+  technologyCardTunisia,
+  payPagopaFromAbroad,
+  redotpayTunisia,
+  bankAccountItalyStudent,
+  residenzaRome,
+  studentJobsRome,
 ];
 
 // Fail the build on content mistakes: duplicate heading ids would break the table of

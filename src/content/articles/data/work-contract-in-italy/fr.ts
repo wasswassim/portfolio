@@ -80,6 +80,11 @@ export const fr: ArticleTranslation = {
       text: "Le Nulla Osta al lavoro est l'autorisation nécessaire pour mener à bien la procédure d'entrée d'un travailleur étranger en Italie pour y travailler.",
     },
     {
+      type: "fees",
+      title: "Timbre du nulla osta",
+      feeIds: ["nulla-osta-stamp"],
+    },
+    {
       type: "p",
       text: "En résumé : le travailleur est qualifié → il y a un employeur italien → l'employeur dépose la demande de Nulla Osta → après l'accord, l'étape du visa commence.",
     },
@@ -112,6 +117,12 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Une fois le Nulla Osta délivré, l'étape de la demande de visa commence. Pour les personnes résidant en Tunisie, il faut se fier aux informations publiées par l'ambassade d'Italie en Tunisie et par l'organisme agréé qui traite les demandes de visa.",
+    },
+    {
+      type: "fees",
+      title: "Frais du visa de travail (visa national D)",
+      feeIds: ["visa-national-d"],
+      hub: true,
     },
     {
       type: "p",
@@ -148,6 +159,12 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Arriver en Italie ne veut pas dire que les démarches sont terminées. Il faut accomplir les démarches relatives au Contratto di soggiorno, puis au Permesso di soggiorno, selon les procédures applicables à votre situation.",
+    },
+    {
+      type: "fees",
+      title: "Kit du permis de séjour à la poste",
+      feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
+      total: true,
     },
     {
       type: "figure",

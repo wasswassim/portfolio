@@ -108,6 +108,17 @@ Rules for media:
 - Videos also publish `VideoObject` structured data automatically.
 - Optional share image for the article (1200x630 JPG in `public/blog/`): set `image` in `article.ts`.
 
+## Fee boxes and referral links
+
+- **Fees** live in `src/content/fees.ts` (amount, currency, official source, `lastVerified`). An article never
+  types a fee into a fee box; it lists ids: `{ type: "fees", title, feeIds: ["permit-stamp", "permit-postal"], total: true, tnd: true, hub: true }`.
+  `total` adds a sum row, `tnd` shows "about X TND" at the BCT rate stored in `fees.ts`, `hub` links to the payment guide.
+  When a fee changes, update it once in `fees.ts` (amount, source, date) and every article follows.
+- **Referral links** live in `src/content/referrals.ts`. Use `{ type: "referral", provider: "wise" }` only in the articles
+  listed for that provider, after a comparison table. The card uses `rel="sponsored nofollow noopener"` and the page adds the
+  affiliate disclosure at the top. Rewards are written only as the provider's terms state them; never paste a referral URL.
+  Fee boxes in other articles never carry referral links.
+
 ## SEO rules (enforced by the check)
 
 - `seoTitle`: 30-60 characters, main keyword first.

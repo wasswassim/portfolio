@@ -5,12 +5,12 @@ import ArticleBody from "./ArticleBody";
 import type { Heading } from "@/content/articles/blocks";
 import Inline from "./Inline";
 import TableOfContents from "./TableOfContents";
+import GuidePanel from "./GuidePanel";
 
 /**
  * Explanation and guidance live here, not in the article column, so readers see the
  * post first. Sticky and independently scrollable on wide screens (CSS only); it
- * drops below the article on small screens. tabIndex makes the scroll area
- * keyboard-reachable.
+ * drops below the article on small screens. The header button collapses it (GuidePanel).
  */
 export default function GuideCard({
   summary,
@@ -27,15 +27,14 @@ export default function GuideCard({
 }) {
   return (
     <aside id="guide" className="blog-guide" aria-labelledby="guide-title">
-      <h2 id="guide-title" className="blog-guide-title">{dict.article.guide}</h2>
-      <div className="blog-guide-scroll" tabIndex={0}>
+      <GuidePanel title={dict.article.guide} expandLabel={dict.guide.expand} collapseLabel={dict.guide.collapse}>
         <p className="blog-summary">
           <span className="blog-summary-label">{dict.article.summary}</span>
           <Inline lang={lang} text={summary} />
         </p>
         <TableOfContents headings={headings} lang={lang} dict={dict} />
         <ArticleBody body={guide} lang={lang} dict={dict} className="blog-prose--compact" />
-      </div>
+      </GuidePanel>
     </aside>
   );
 }

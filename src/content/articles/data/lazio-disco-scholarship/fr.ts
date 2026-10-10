@@ -3,14 +3,14 @@ import type { ArticleTranslation } from "../../types";
 // Traduction de en.ts. Les termes administratifs italiens restent en italien.
 export const fr: ArticleTranslation = {
   slug: "bourse-disco-lazio",
-  title: "Bourse DiSCo Lazio pour les étudiants tunisiens : demande, ISEEUP et paiements",
-  seoTitle: "Bourse DiSCo Lazio pour les étudiants tunisiens",
+  title: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens : demande, ISEEUP et paiements",
+  seoTitle: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens",
   metaDescription:
-    "Bourse DiSCo Lazio pour les étudiants tunisiens à Rome : montants, conditions, calendrier 2027/28, documents familiaux de Tunisie, ISEEUP et paiements.",
+    "Bourse DiSCo Lazio pour les étudiants tunisiens à Rome et dans tout le Latium : jusqu'à 7 556,78 EUR, conditions, calendrier 2027/28, ISEEUP et paiements.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["bourse DiSCo Lazio pour les étudiants tunisiens", "bourse d'études en Italie", "DiSCo Lazio", "ISEEUP", "ISEE parificato", "bourse d'études à Rome"],
+  keywords: ["bourse DiSCo Lazio pour les étudiants tunisiens", "bourse d'études en Italie", "DiSCo Lazio", "ISEEUP", "ISEE parificato", "bourse d'études à Rome", "bourse DiSCo Rome"],
   summary:
-    "La bourse DiSCo Lazio verse à un étudiant hors site inscrit dans une université de Rome jusqu'à 6 571,11 EUR par an, plus deux repas gratuits par jour (valeurs 2026/27) ; en première année, le classement se fait uniquement sur les données économiques de la famille. Pour 2027/28, vous postulez en ligne vers juin-juillet 2027 sans SPID, vous préparez à l'avance vos documents familiaux en Tunisie, puis vous signez l'ISEEUP dans un CAF partenaire de DiSCo après votre arrivée.",
+    "La bourse DiSCo Lazio verse à un étudiant hors site inscrit dans une université de Rome ou ailleurs dans le Latium jusqu'à 7 556,78 EUR par an en argent, plus deux repas gratuits par jour (valeurs 2026/27 ; 6 571,11 EUR au taux standard) ; en première année, le classement se fait uniquement sur les données économiques de la famille. Pour 2027/28, vous postulez en ligne vers juin-juillet 2027 sans SPID, vous préparez à l'avance vos documents familiaux en Tunisie, puis vous signez l'ISEEUP dans un CAF partenaire de DiSCo après votre arrivée.",
   body: [
     {
       type: "callout",
@@ -21,14 +21,14 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "**Un étudiant tunisien à Rome peut-il obtenir une bourse qui couvre l'essentiel de son année ?**" },
     {
       type: "p",
-      text: "Oui. La bourse DiSCo Lazio (borsa di studio) est ouverte aux étudiants internationaux, avec un classement séparé pour les étudiants non européens. Un étudiant hors site reçoit jusqu'à 6 571,11 EUR en argent, plus deux repas gratuits par jour (appel 2026/27), et peut aussi demander une place dans une résidence DiSCo.",
+      text: "Oui. La bourse DiSCo Lazio (borsa di studio) est ouverte aux étudiants internationaux, avec un classement séparé pour les étudiants non européens. Elle couvre les universités de Rome et de tout le Latium (Cassino, Viterbe, Latina, Frosinone). Un étudiant hors site reçoit 6 571,11 EUR par an en argent, jusqu'à 7 556,78 EUR pour les revenus familiaux les plus bas, plus deux repas gratuits par jour (appel 2026/27), et peut aussi demander une place dans une résidence DiSCo.",
     },
     {
       type: "p",
       text: "Ceci est la partie 4 de notre [guide pour étudier en Italie quand on est tunisien](article:study-in-italy). L'appel 2026/27 a fermé le **22 juillet 2026** : tout ce qui suit vous prépare donc pour **2027/28**. Les dates marquées « prévues » reprennent le calendrier 2026/27 et doivent être confirmées dans le nouvel appel.",
     },
 
-    { type: "h2", id: "what-you-get", text: "1. Que vous apporte la bourse DiSCo ?" },
+    { type: "h2", id: "what-you-get", text: "1. Que vous apporte la bourse DiSCo à Rome ?" },
     {
       type: "p",
       text: "Si vous résidez à l'étranger et qu'au moins la moitié de votre famille vit à l'étranger, DiSCo vous considère automatiquement comme **fuori sede** (hors site), sans contrat de location (sauf pour les cours en ligne). Dans l'appel 2026/27, un étudiant fuori sede reçoit :",
@@ -55,11 +55,31 @@ export const fr: ArticleTranslation = {
       ],
     },
     {
+      type: "callout",
+      tone: "note",
+      title: "Mon expérience",
+      text: "Dans mon cas, avec les suppléments, la bourse a atteint environ **8 000 EUR par an en argent**, en plus des repas au restaurant universitaire (environ 600 EUR). C'est mon expérience personnelle, pas le montant officiel : ce sont les chiffres de l'appel ci-dessus qui font foi, et les suppléments dépendent de votre situation.",
+    },
+    {
+      type: "fees",
+      title: "Montants de la bourse DiSCo, appel 2026/27 (officiels)",
+      feeIds: ["disco-base", "disco-max", "disco-meals"],
+    },
+    {
       type: "p",
       text: "Les frais d'inscription sont une autre question, qui dépend de votre université. À Tor Vergata, le forfait des étudiants étrangers s'applique aussi aux boursiers DiSCo, et à la Sapienza, les étudiants qui paient le forfait ne sont pas remboursés. Vérifiez auprès du service étudiants de votre université.",
     },
+    {
+      type: "fees",
+      title: "Ce que vous payez quand même pour vous inscrire, même boursier DiSCo",
+      text: "Les boursiers paient quand même la taxe régionale du Latium et le timbre fiscal. Si le paiement n'est pas validé, vous perdez l'inscription et les avantages DiSCo.",
+      feeIds: ["lazio-regional-tax", "uni-stamp"],
+      total: true,
+      tnd: true,
+      hub: true,
+    },
 
-    { type: "h2", id: "eligibility", text: "2. Qui peut obtenir la bourse DiSCo ?" },
+    { type: "h2", id: "eligibility", text: "2. Qui peut obtenir la bourse DiSCo à Rome et dans le Latium ?" },
     { type: "p", text: "Dans l'appel 2026/27, il fallait remplir toutes ces conditions :" },
     {
       type: "ul",
@@ -247,7 +267,7 @@ export const fr: ArticleTranslation = {
     {
       type: "keyFacts",
       items: [
-        { label: "Montant fuori sede", value: "6 571,11 EUR/an + 2 repas gratuits par jour (2026/27)" },
+        { label: "Montant fuori sede", value: "6 571,11 à 7 556,78 EUR/an + 2 repas gratuits par jour (2026/27)" },
         { label: "Demande 2027/28", value: "Prévue ~10 juin - 22 juil. 2027, 12h00 (à vérifier)" },
         { label: "SPID", value: "Inutile : identifiants DiSCo avec votre passeport" },
         { label: "ISEEUP", value: "Uniquement dans un CAF partenaire de DiSCo, gratuit, avant ~10 déc." },

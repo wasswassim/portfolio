@@ -3,6 +3,8 @@ import type { Dictionary } from "@/lib/i18n";
 import type { Block } from "@/content/articles/types";
 import Image from "next/image";
 import Inline from "./Inline";
+import FeeBox from "./FeeBox";
+import ReferralCard from "./ReferralCard";
 
 function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dictionary }) {
   const t = (text: string) => <Inline lang={lang} text={text} />;
@@ -126,6 +128,10 @@ function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dict
           </figcaption>
         </figure>
       );
+    case "fees":
+      return <FeeBox {...block} lang={lang} dict={dict} />;
+    case "referral":
+      return <ReferralCard provider={block.provider} text={block.text} lang={lang} dict={dict} />;
     case "quote":
       return (
         <blockquote className="blog-quote">

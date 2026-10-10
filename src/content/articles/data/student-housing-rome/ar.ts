@@ -115,12 +115,17 @@ export const ar: ArticleTranslation = {
         "**نوع العقد:** هل هو عقد كراء مكتوب، ولأي مدة؟ اطلب عقدًا يناسب فترة دراستك.",
         "**الضمان:** كم قيمته، ومتى بالضبط يُرجع؟",
         "**المصاريف:** هل الكهرباء والغاز والماء والإنترنت ومصاريف العمارة مشمولة، أم تُقسم بين الساكنين؟",
-        "**التسجيل:** هل سيسجل المالك العقد؟ تحتاج إلى عقد مسجل في إجراءات كثيرة.",
+        "**التسجيل:** من يسجل العقد ومتى؟ يمكن لأي من الطرفين القيام بذلك، وكلاهما مسؤول عن المعلوم. تحتاج إلى عقد مسجل في إجراءات كثيرة.",
       ],
     },
     {
       type: "p",
-      text: "يجب [تسجيل عقد الكراء الجديد لدى Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) خلال 30 يومًا. هذه مهمة المالك، لكن اطلب إثبات التسجيل واحتفظ بنسخة منه. وقد تحتاج إلى codice fiscale لإمضاء العقد: يمكنك الحصول عليه من أي مكتب لـAgenzia delle Entrate (اطلع على [كيفية الحصول على codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+      text: "يجب [تسجيل عقد الكراء الجديد لدى Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) خلال 30 يومًا. يمكن للمالك أو للمتسوغ تسجيله، وكلاهما مسؤول بالتضامن عن المعلوم؛ وعادة ما يقوم به المالك، لذا اطلب إثبات التسجيل واحتفظ بنسخة منه. وقد تحتاج إلى codice fiscale لإمضاء العقد: يمكنك الحصول عليه من أي مكتب لـAgenzia delle Entrate (اطلع على [كيفية الحصول على codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+    },
+    {
+      type: "fees",
+      title: "معلوم تسجيل عقد الكراء",
+      feeIds: ["lease-registration-min"],
     },
     { type: "h3", id: "first-weeks", text: "الأسابيع الأولى: سكن مؤقت" },
     {
@@ -209,7 +214,7 @@ export const ar: ArticleTranslation = {
       items: [
         { label: "إقامة DiSCo", value: "حوالي 200 إلى 298 يورو شهريًا في 2026/27، تُخصم من المنحة" },
         { label: "طريقة الطلب", value: "فقط في طلب DiSCo السنوي" },
-        { label: "تسجيل عقد الكراء", value: "خلال 30 يومًا، من طرف المالك؛ اطلب الإثبات" },
+        { label: "تسجيل عقد الكراء", value: "خلال 30 يومًا، من أي من الطرفين؛ اطلب الإثبات" },
         { label: "القاعدة الذهبية", value: "لا تدفع أبدًا قبل معاينة الغرفة" },
       ],
     },

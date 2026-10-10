@@ -100,6 +100,13 @@ export const ar: ArticleTranslation = {
       text: "تحتاج جامعتك أيضًا إلى معرفة قيمة شهادتك في النظام الإيطالي. وثيقتان تجيبان عن هذا السؤال:",
     },
     {
+      type: "fees",
+      title: "معلوم شهادة CIMEA",
+      feeIds: ["cimea-cv"],
+      tnd: true,
+      hub: true,
+    },
+    {
       type: "ul",
       items: [
         "**Dichiarazione di Valore (DOV)**: تصدرها سفارة إيطاليا في تونس. تصف شهادتك (المؤسسة، مدة الدراسة، المستوى). هي وثيقة وصفية وليست معادلة.",

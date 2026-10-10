@@ -114,9 +114,17 @@ export const en: ArticleTranslation = {
         ["Study visa", "EUR 50 (170.600 TND) + 68.300 TND visa-centre fee", "Paid in cash in TND; can change"],
         ["Blocked amount", "EUR 10,179.85 (2026/27)", "Not a fee: your own money, EUR 783.06 for 13 months"],
         ["Residence permit", "About EUR 116.46", "Stamp, postal fee and permit fee"],
-        ["Tuition per year", "Sapienza about EUR 300 (check the current fee page); Tor Vergata EUR 1,000 (EUR 2,500 some English courses); LUMSA EUR 4,390; LUISS EUR 15,000", "Roma Tre depends on your ISEE"],
+        ["Tuition per year", "Sapienza EUR 300 + EUR 140 regional tax + EUR 16 stamp = EUR 456 in year 1 (lowest band); Tor Vergata EUR 1,000 (EUR 2,500 some English courses); LUMSA EUR 4,390; LUISS EUR 15,000", "Roma Tre depends on your ISEE"],
         ["Italian account", "Postepay Evolution EUR 5 + EUR 19 per year", "Prepaid card with an IBAN"],
       ],
+    },
+    {
+      type: "fees",
+      title: "Sapienza in the first year (lowest band)",
+      feeIds: ["sapienza-band-a", "lazio-regional-tax", "uni-stamp"],
+      total: true,
+      tnd: true,
+      hub: true,
     },
     {
       type: "p",
@@ -159,7 +167,7 @@ export const en: ArticleTranslation = {
       items: [
         {
           q: "Can a Tunisian student study in Italy for free?",
-          a: "Not completely. Public tuition can be low (Sapienza charges a flat EUR 300 a year for Tunisia's band) and the DiSCo scholarship can cover living costs if you qualify, but you still pay application, document and visa fees, and you must show the blocked amount for the visa.",
+          a: "Not completely. Public tuition can be low (Sapienza charges a flat EUR 300 a year for Tunisia's band, plus the EUR 140 regional tax and a EUR 16 stamp) and the DiSCo scholarship can cover living costs if you qualify, but you still pay application, document and visa fees, and you must show the blocked amount for the visa.",
         },
         {
           q: "How much money do I need to study in Rome?",

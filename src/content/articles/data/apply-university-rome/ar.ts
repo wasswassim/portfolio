@@ -95,7 +95,14 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "معاليم الدراسة في الجامعات العمومية تتعلق بالدخل وبالبلد (المعلوم الجزافي في Sapienza لتونس، الفئة A، هو 300 يورو في السنة). اطلع على [التكاليف في الجزء الأول](article:study-in-italy#costs) وعلى [منحة DiSCo](article:lazio-disco-scholarship).",
+      text: "معاليم الدراسة في الجامعات العمومية تتعلق بالدخل وبالبلد (المعلوم الجزافي في Sapienza لتونس، الفئة A، هو 300 يورو في السنة، إضافة إلى 140 يورو ضريبة جهوية وطابع بـ 16 يورو: أي 456 يورو في السنة الأولى). اطلع على [التكاليف في الجزء الأول](article:study-in-italy#costs) وعلى [منحة DiSCo](article:lazio-disco-scholarship).",
+    },
+    {
+      type: "fees",
+      title: "معاليم الترشح في روما",
+      feeIds: ["sapienza-application", "torvergata-application"],
+      tnd: true,
+      hub: true,
     },
 
     { type: "h2", id: "private-universities", text: "4. الجامعات الخاصة: LUISS وLUMSA" },

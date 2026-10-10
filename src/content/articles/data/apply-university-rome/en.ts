@@ -94,7 +94,14 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Public tuition depends on income and country (Sapienza's flat fee for Tunisia, band A, is EUR 300 a year). See [the costs in part 1](article:study-in-italy#costs) and the [DiSCo scholarship](article:lazio-disco-scholarship).",
+      text: "Public tuition depends on income and country (Sapienza's flat fee for Tunisia, band A, is EUR 300 a year, plus the EUR 140 regional tax and a EUR 16 stamp: EUR 456 in the first year). See [the costs in part 1](article:study-in-italy#costs) and the [DiSCo scholarship](article:lazio-disco-scholarship).",
+    },
+    {
+      type: "fees",
+      title: "Application fees in Rome",
+      feeIds: ["sapienza-application", "torvergata-application"],
+      tnd: true,
+      hub: true,
     },
 
     { type: "h2", id: "private-universities", text: "4. Private universities: LUISS and LUMSA" },

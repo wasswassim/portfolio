@@ -114,12 +114,17 @@ export const fr: ArticleTranslation = {
         "**Type de contrat :** s'agit-il d'un bail écrit, et pour quelle durée ? Demandez un contrat adapté à votre période d'études.",
         "**Caution :** quel montant, et quand exactement sera-t-elle rendue ?",
         "**Charges :** électricité, gaz, eau, internet et charges d'immeuble sont-ils inclus, ou partagés entre colocataires ?",
-        "**Enregistrement :** le propriétaire va-t-il enregistrer le bail ? Un bail enregistré est demandé pour de nombreuses démarches.",
+        "**Enregistrement :** qui enregistre le bail, et quand ? Chacune des deux parties peut le faire, et les deux sont responsables de la taxe. Un bail enregistré est demandé pour de nombreuses démarches.",
       ],
     },
     {
       type: "p",
-      text: "Un nouveau bail doit être [enregistré auprès de l'Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) dans les 30 jours. C'est au propriétaire de le faire, mais demandez une preuve d'enregistrement et gardez-en une copie. Pour signer, on peut vous demander un codice fiscale : vous pouvez l'obtenir dans n'importe quel bureau de l'Agenzia delle Entrate (voir [comment obtenir votre codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+      text: "Un nouveau bail doit être [enregistré auprès de l'Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) dans les 30 jours. Le propriétaire comme le locataire peuvent l'enregistrer, et les deux sont solidairement responsables de la taxe ; en général c'est le propriétaire qui le fait, alors demandez une preuve d'enregistrement et gardez-en une copie. Pour signer, on peut vous demander un codice fiscale : vous pouvez l'obtenir dans n'importe quel bureau de l'Agenzia delle Entrate (voir [comment obtenir votre codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+    },
+    {
+      type: "fees",
+      title: "Taxe d'enregistrement du bail",
+      feeIds: ["lease-registration-min"],
     },
     { type: "h3", id: "first-weeks", text: "Les premières semaines : un logement temporaire" },
     {
@@ -208,7 +213,7 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Résidence DiSCo", value: "Environ 200 à 298 EUR/mois en 2026/27, retenus sur la bourse" },
         { label: "Comment la demander", value: "Uniquement dans la candidature DiSCo annuelle" },
-        { label: "Enregistrement du bail", value: "Dans les 30 jours, par le propriétaire ; demandez la preuve" },
+        { label: "Enregistrement du bail", value: "Dans les 30 jours, par l'une ou l'autre partie ; demandez la preuve" },
         { label: "Règle d'or", value: "Ne jamais payer avant d'avoir vu la chambre" },
       ],
     },

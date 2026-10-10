@@ -169,6 +169,12 @@ export const ar: ArticleTranslation = {
       ],
     },
     {
+      type: "fees",
+      title: "معلوم تأشيرة الدراسة",
+      feeIds: ["visa-study-d"],
+      hub: true,
+    },
+    {
       type: "p",
       text: "راجع [صفحة المعاليم](https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/quanto-costa-un-visto-e-come-pagare/) في موقع السفارة قبل موعدك ببضعة أيام، لأن المبالغ بالدينار تتبع سعر الصرف.",
     },

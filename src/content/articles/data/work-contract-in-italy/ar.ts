@@ -78,6 +78,11 @@ export const ar: ArticleTranslation = {
       text: "Nulla Osta al lavoro هو الترخيص المطلوب لاستكمال إجراءات دخول العامل الأجنبي للعمل في إيطاليا.",
     },
     {
+      type: "fees",
+      title: "طابع nulla osta",
+      feeIds: ["nulla-osta-stamp"],
+    },
+    {
       type: "p",
       text: "بشكل مبسط: العامل مؤهل → يوجد صاحب عمل إيطالي → صاحب العمل يقدم طلب Nulla Osta → بعد الموافقة تبدأ مرحلة التأشيرة.",
     },
@@ -110,6 +115,12 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "بعد صدور Nulla Osta، تبدأ مرحلة طلب التأشيرة. بالنسبة للمقيمين في تونس، يجب الاعتماد على المعلومات المنشورة من سفارة إيطاليا في تونس والجهة المعتمدة لمعالجة طلبات التأشيرة.",
+    },
+    {
+      type: "fees",
+      title: "معلوم تأشيرة العمل (التأشيرة الوطنية D)",
+      feeIds: ["visa-national-d"],
+      hub: true,
     },
     {
       type: "p",
@@ -146,6 +157,12 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "الوصول إلى إيطاليا لا يعني أن الإجراءات انتهت. يجب استكمال الإجراءات المتعلقة بـ Contratto di soggiorno ثم Permesso di soggiorno وفق الإجراءات المعمول بها في حالتك.",
+    },
+    {
+      type: "fees",
+      title: "ظرف طلب الإقامة في مكتب البريد",
+      feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
+      total: true,
     },
     {
       type: "figure",

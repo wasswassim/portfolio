@@ -55,6 +55,9 @@ function blockText(b: Block): string {
       return b.items.map((i) => `${i.label} ${i.value}`).join(" ");
     case "faq":
       return b.items.map((i) => `${i.q} ${i.a}`).join(" ");
+    case "fees":
+    case "referral":
+      return b.text ?? "";
     case "sources":
       return "";
   }
@@ -83,4 +86,9 @@ export function faqPairsOf(body: Block[]): { q: string; a: string }[] {
   return body.flatMap((b) =>
     b.type === "faq" ? b.items.map((i) => ({ q: stripMarkup(i.q), a: stripMarkup(i.a) })) : [],
   );
+}
+
+/** True when a post shows a referral link, so the page adds the affiliate disclosure at the top. */
+export function hasReferral(blocks: Block[]): boolean {
+  return blocks.some((b) => b.type === "referral");
 }

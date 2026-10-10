@@ -77,15 +77,12 @@ export const ar: ArticleTranslation = {
     },
     { type: "h3", id: "step-pay-receipt", text: "الخطوة 3: ادفع واحتفظ بالوصل" },
     {
-      type: "table",
-      caption: "تكلفة طلب الإقامة في مكتب البريد (مبالغ تم التحقق منها في أكتوبر 2026).",
-      head: ["البند", "التكلفة"],
-      rows: [
-        ["طابع جبائي (marca da bollo)", "16 يورو"],
-        ["رسوم خدمة البريد", "30 يورو"],
-        ["Bollettino: البطاقة الإلكترونية 30.46 يورو + مساهمة 40 يورو (إقامة من 3 إلى 12 شهرًا)", "70.46 يورو"],
-        ["**المجموع**", "**حوالي 116.46 يورو**"],
-      ],
+      type: "fees",
+      title: "كلفة مطلب بطاقة الإقامة في مكتب البريد",
+      text: "لإقامة تتجاوز سنة واحدة وحتى سنتين تكون المساهمة 50 يورو، فيصبح المجموع 126.46 يورو. اسأل في الشباك عن طرق الدفع المقبولة.",
+      feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
+      total: true,
+      hub: true,
     },
     {
       type: "p",
@@ -135,15 +132,17 @@ export const ar: ArticleTranslation = {
       text: "تحتاج إلى IBAN من أجل DiSCo والكراء والأجر. هناك خياران شائعان:",
     },
     {
-      type: "ul",
-      items: [
-        "**Postepay Evolution**: بطاقة مسبقة الدفع مع IBAN، بـ 5 يورو عند الإصدار ثم 19 يورو في السنة ([Poste Italiane](https://www.poste.it/carte-postepay/postepay-evolution)).",
-        "**حساب بنكي**: تطلب البنوك codice fiscale؛ قارن الرسوم الشهرية.",
-      ],
+      type: "p",
+      text: "أمامك بنك (Intesa Sanpaolo وغيره)، أو حساب عبر الإنترنت (Revolut وWise)، أو بطاقة Postepay Evolution المسبقة الدفع مع IBAN. تطلب البنوك الـ codice fiscale. الوثائق، والترتيب الذي تجرب به هذه الحلول، وما تفعله إذا رفضت وكالة فتح الحساب، كلها في [دليل فتح حساب بنكي في إيطاليا للطلاب](article:bank-account-italy-student).",
+    },
+    {
+      type: "fees",
+      title: "كلفة Postepay Evolution",
+      feeIds: ["postepay-issue", "postepay-year"],
     },
     {
       type: "p",
-      text: "حسب [Banca d'Italia](https://economiapertutti.bancaditalia.it/aree-tematiche/conto-corrente/il-conto-di-base/index.html)، يحق لكل شخص مقيم بصفة قانونية في الاتحاد الأوروبي فتح حساب أساسي (conto di base)، ولا يجوز للبنك رفض وصل الإقامة كوثيقة هوية.",
+      text: "حسب [Banca d'Italia](https://economiapertutti.bancaditalia.it/aree-tematiche/conto-corrente/il-conto-di-base/index.html)، يحق لكل شخص مقيم بصفة قانونية في الاتحاد الأوروبي فتح حساب أساسي (conto di base)، وتطلب توجيهاتها الصادرة في أوت 2026 من البنوك قبول وصل طلب الإقامة لفتح هذا الحساب.",
     },
 
     { type: "h2", id: "finalise-enrolment", text: "5. إتمام التسجيل الجامعي وملف المنحة" },
@@ -182,6 +181,11 @@ export const ar: ArticleTranslation = {
       type: "p",
       text: "يمكنك التسجيل طوعًا في المنظومة الصحية الوطنية (SSN) بحوالي 700 يورو في السنة ([Tor Vergata، 2024](https://web.uniroma2.it/en/contenuto/health-insurance))، أو الإبقاء على تأمين خاص. تحقق من المبلغ الحالي لدى ASL أو جامعتك.",
     },
+    {
+      type: "fees",
+      title: "معلوم التسجيل في الخدمة الصحية",
+      feeIds: ["ssn-voluntary"],
+    },
 
     { type: "h2", id: "first-month-budget", text: "6. ميزانية الشهر الأول في روما" },
     {
@@ -202,17 +206,22 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "كيف تصرف منحة الاستقرار (6,000 دينار) بحذر (المبلغان الأولان فقط مؤكدان).",
+      caption: "كيف تصرف منحة الاستقرار (6,000 دينار) بحذر (المبالغ الثلاثة الأولى فقط مؤكدة).",
       head: ["البند", "التكلفة", "نصيحة"],
       rows: [
         ["ظرف طلب الإقامة", "حوالي 116 يورو (مؤكد)", "ادفعه أولًا، في أسبوعك الأول."],
         ["Postepay Evolution", "5 يورو + 19 يورو في السنة (مؤكد)", "يمنحك IBAN من أجل DiSCo والكراء."],
-        ["اشتراك النقل العمومي", "تحقق من الأسعار الحالية", "قارن الاشتراك الشهري واشتراك الطلبة على موقع ATAC."],
+        ["اشتراك النقل العمومي", "35 يورو شهريًا أو 250 يورو سنويًا (مؤكد)", "تحقق من عروض الطلبة على موقع ATAC."],
         ["شريحة الهاتف والشهر الأول", "تحقق من الأسعار الحالية", "قارن العروض قبل الشراء."],
         ["الأكل لمدة شهر", "تحقق من الأسعار الحالية", "اطبخ في البيت؛ وجبات DiSCo لا تبدأ إلا بعد إسناد المنحة."],
         ["الغرفة: أول كراء والضمان", "تحقق من الأسعار الحالية", "اطلع على [دليل سكن الطلبة في روما](article:student-housing-rome)."],
         ["احتياطي للطوارئ", "10 إلى 15% من المنحة", "لا تلمسه إلا عند الضرورة."],
       ],
+    },
+    {
+      type: "fees",
+      title: "اشتراكات النقل العمومي في روما (ATAC)",
+      feeIds: ["atac-monthly", "atac-annual"],
     },
     {
       type: "p",
@@ -225,12 +234,8 @@ export const ar: ArticleTranslation = {
       text: "نعم، في حدود معينة: تسمح إقامة الدراسة بالعمل حتى **20 ساعة في الأسبوع**، وبحد أقصى **1,040 ساعة في السنة** ([DPR 394/1999، المادة 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). إذا لم يكن لديك سوى وصل الإقامة الأولى، فتحقق مع Questura أو جامعتك قبل أن تبدأ أي عمل.",
     },
     {
-      type: "ul",
-      items: [
-        "مكاتب التشغيل في الجامعات: [Sapienza](https://www.uniroma1.it/it/pagina/studenti-e-laureati-opportunita-di-lavoro-e-tirocinio)، [Tor Vergata](https://placement.uniroma2.it/)، [Roma Tre](https://uniroma3.jobsoul.it/studenti-e-laureati/ufficio-job-placement).",
-        "Regione Lazio: [عروض الشغل](https://www.regione.lazio.it/cittadini/lavoro/offerte-lavoro) و[SpazioLavoro](https://spaziolavoro.regione.lazio.it/).",
-        "مواقع التشغيل: [عروض الشغل على Subito](https://www.subito.it/annunci-italia/vendita/offerte-lavoro/)، [InfoJobs](https://www.infojobs.it)، [Indeed](https://it.indeed.com).",
-      ],
+      type: "p",
+      text: "أين تبحث (Subito وIndeed ووكالات التشغيل المؤقت ومكاتب التشغيل في الجامعات)، وكيف تنشر ملفك، وكيف تكشف العروض الكاذبة: اطلع على [العمل أثناء الدراسة في روما](article:student-jobs-rome).",
     },
     {
       type: "callout",

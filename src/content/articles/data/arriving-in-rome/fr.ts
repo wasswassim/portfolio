@@ -76,15 +76,12 @@ export const fr: ArticleTranslation = {
     },
     { type: "h3", id: "step-pay-receipt", text: "Étape 3 : payer et garder le récépissé" },
     {
-      type: "table",
-      caption: "Ce que coûte la demande de permis de séjour à la poste (montants vérifiés en octobre 2026).",
-      head: ["Poste de dépense", "Coût"],
-      rows: [
-        ["Timbre fiscal (marca da bollo)", "16 EUR"],
-        ["Frais de service postal", "30 EUR"],
-        ["Bollettino : carte électronique 30,46 EUR + contribution 40 EUR (permis de 3 à 12 mois)", "70,46 EUR"],
-        ["**Total**", "**environ 116,46 EUR**"],
-      ],
+      type: "fees",
+      title: "Ce que coûte la demande de permis de séjour à la poste",
+      text: "Pour un permis de plus d'un an et jusqu'à 2 ans, la contribution est de 50 EUR, soit 126,46 EUR au total. Demandez au guichet quels moyens de paiement sont acceptés.",
+      feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
+      total: true,
+      hub: true,
     },
     {
       type: "p",
@@ -134,15 +131,17 @@ export const fr: ArticleTranslation = {
       text: "Il vous faut un IBAN pour DiSCo, le loyer et un salaire. Deux options courantes :",
     },
     {
-      type: "ul",
-      items: [
-        "**Postepay Evolution** : une carte prépayée avec IBAN, 5 EUR à l’émission puis 19 EUR par an ([Poste Italiane](https://www.poste.it/carte-postepay/postepay-evolution)).",
-        "**Un compte bancaire** : les banques demandent votre codice fiscale ; comparez les frais mensuels.",
-      ],
+      type: "p",
+      text: "Vous pouvez choisir une banque (Intesa Sanpaolo et d'autres), un compte en ligne (Revolut, Wise) ou la carte prépayée Postepay Evolution avec un IBAN. Les banques demandent votre codice fiscale. Les documents, l'ordre dans lequel essayer et que faire si une agence refuse sont expliqués dans [comment ouvrir un compte bancaire en Italie quand on est étudiant](article:bank-account-italy-student).",
+    },
+    {
+      type: "fees",
+      title: "Coût de la Postepay Evolution",
+      feeIds: ["postepay-issue", "postepay-year"],
     },
     {
       type: "p",
-      text: "Selon la [Banca d’Italia](https://economiapertutti.bancaditalia.it/aree-tematiche/conto-corrente/il-conto-di-base/index.html), toute personne en séjour régulier dans l’UE a droit à un compte de base (conto di base), et une banque ne peut pas refuser le récépissé du permis de séjour comme pièce d’identité.",
+      text: "Selon la [Banca d’Italia](https://economiapertutti.bancaditalia.it/aree-tematiche/conto-corrente/il-conto-di-base/index.html), toute personne en séjour régulier dans l’UE a droit à un compte de base (conto di base), et ses orientations d’août 2026 demandent aux banques d’accepter le récépissé du permis de séjour pour ce compte.",
     },
 
     { type: "h2", id: "finalise-enrolment", text: "5. Finaliser l’inscription et votre dossier de bourse" },
@@ -181,6 +180,11 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Inscrivez-vous volontairement au service national de santé (SSN) pour environ 700 EUR par an ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)), ou gardez une assurance privée. Vérifiez le montant actuel auprès de votre ASL ou de votre université.",
     },
+    {
+      type: "fees",
+      title: "Coût de l'inscription au service de santé",
+      feeIds: ["ssn-voluntary"],
+    },
 
     { type: "h2", id: "first-month-budget", text: "6. Budget du premier mois à Rome" },
     {
@@ -201,17 +205,22 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "Comment dépenser prudemment l’allocation d’installation de 6 000 TND (seuls les deux premiers montants sont confirmés).",
+      caption: "Comment dépenser prudemment l’allocation d’installation de 6 000 TND (seuls les trois premiers montants sont confirmés).",
       head: ["Dépense", "Coût", "Conseil"],
       rows: [
         ["Kit du permis de séjour", "Environ 116 EUR (confirmé)", "Payez-le en premier, dès la première semaine."],
         ["Postepay Evolution", "5 EUR + 19 EUR par an (confirmé)", "Vous donne un IBAN pour DiSCo et le loyer."],
-        ["Abonnement de transport", "Vérifiez les prix actuels", "Comparez les abonnements mensuels et étudiants sur le site de l’ATAC."],
+        ["Abonnement de transport", "35 EUR par mois ou 250 EUR par an (confirmé)", "Vérifiez les offres étudiantes sur le site de l’ATAC."],
         ["Carte SIM et premier mois", "Vérifiez les prix actuels", "Comparez les offres avant d’acheter."],
         ["Nourriture du mois", "Vérifiez les prix actuels", "Cuisinez chez vous ; les repas DiSCo ne commencent qu’une fois la bourse attribuée."],
         ["Chambre : premier loyer et caution", "Vérifiez les prix actuels", "Voir notre [guide du logement étudiant à Rome](article:student-housing-rome)."],
         ["Réserve d’urgence", "10 à 15 % de l’allocation", "N’y touchez qu’en cas de besoin."],
       ],
+    },
+    {
+      type: "fees",
+      title: "Abonnements de transport à Rome (ATAC)",
+      feeIds: ["atac-monthly", "atac-annual"],
     },
     {
       type: "p",
@@ -224,12 +233,8 @@ export const fr: ArticleTranslation = {
       text: "Oui, dans certaines limites : le permis étudiant autorise jusqu’à **20 heures par semaine**, dans la limite de **1 040 heures par an** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). Si vous n’avez que le récépissé du premier permis, vérifiez auprès de la Questura ou de votre université avant de commencer un emploi.",
     },
     {
-      type: "ul",
-      items: [
-        "Services emploi des universités : [Sapienza](https://www.uniroma1.it/it/pagina/studenti-e-laureati-opportunita-di-lavoro-e-tirocinio), [Tor Vergata](https://placement.uniroma2.it/), [Roma Tre](https://uniroma3.jobsoul.it/studenti-e-laureati/ufficio-job-placement).",
-        "Regione Lazio : [offres d’emploi](https://www.regione.lazio.it/cittadini/lavoro/offerte-lavoro) et [SpazioLavoro](https://spaziolavoro.regione.lazio.it/).",
-        "Sites d’emploi : [annonces d’emploi Subito](https://www.subito.it/annunci-italia/vendita/offerte-lavoro/), [InfoJobs](https://www.infojobs.it), [Indeed](https://it.indeed.com).",
-      ],
+      type: "p",
+      text: "Où chercher (Subito, Indeed, agences d'intérim, services emploi des universités), comment publier votre profil et comment repérer les fausses offres : voir [job étudiant à Rome](article:student-jobs-rome).",
     },
     {
       type: "callout",

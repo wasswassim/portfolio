@@ -77,6 +77,11 @@ export const en: ArticleTranslation = {
       text: "Nulla Osta al lavoro is the authorization required to complete the process of a foreign worker entering Italy to work.",
     },
     {
+      type: "fees",
+      title: "Nulla osta stamp",
+      feeIds: ["nulla-osta-stamp"],
+    },
+    {
       type: "p",
       text: "In simple terms: the worker is qualified → there is an Italian employer → the employer files the Nulla Osta request → after approval, the visa stage begins.",
     },
@@ -109,6 +114,12 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Once the Nulla Osta is issued, the visa application stage begins. For residents of Tunisia, rely on the information published by the Italian Embassy in Tunisia and the authorized body that processes visa applications.",
+    },
+    {
+      type: "fees",
+      title: "Work visa (national D visa) fee",
+      feeIds: ["visa-national-d"],
+      hub: true,
     },
     {
       type: "p",
@@ -145,6 +156,12 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Arriving in Italy does not mean the procedures are over. You must complete the procedures for the Contratto di soggiorno and then the Permesso di soggiorno, according to the procedures that apply to your case.",
+    },
+    {
+      type: "fees",
+      title: "Residence permit kit at the post office",
+      feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
+      total: true,
     },
     {
       type: "figure",

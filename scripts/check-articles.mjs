@@ -10,6 +10,9 @@
 //   - series (src/content/articles/series.ts): every part exists in every language, in-text links
 //     [label](article:<id>#<heading>) point to a real article and heading, and parts of a series
 //     do not repeat each other's section headings or FAQ questions (duplicate content)
+//   - fee boxes only use ids from src/content/fees.ts; referral blocks only use providers from
+//     src/content/referrals.ts, only in the articles listed there, after a comparison table, and
+//     no referral URL is ever pasted into article text
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 
 const dataDir = new URL("../src/content/articles/data/", import.meta.url);
@@ -31,6 +34,17 @@ const validDate = (v) => /^\d{4}-\d{2}-\d{2}$/.test(v) && !Number.isNaN(Date.par
 const read = (folder, file) =>
   readFileSync(new URL(folder + "/" + file, dataDir), "utf8").replace(/^\s*\/\/.*$/gm, "");
 const count = (text, re) => (text.match(re) || []).length;
+
+// Fee ids and referral providers, read as text like the articles
+const srcFile = (rel) => readFileSync(new URL("../src/content/" + rel, import.meta.url), "utf8");
+const feesText = srcFile("fees.ts");
+const feeIds = new Set([...feesText.slice(feesText.indexOf("export const FEES")).matchAll(/^\s{2}"([a-z0-9-]+)":\s*\{/gm)].map((m) => m[1]));
+const referralsText = srcFile("referrals.ts");
+const referralArticles = {};
+for (const m of referralsText.matchAll(/^\s{2}([a-z0-9]+):\s*\{[\s\S]*?articles:\s*\[([^\]]*)\]/gm)) {
+  referralArticles[m[1]] = [...m[2].matchAll(/"([^"]+)"/g)].map((x) => x[1]);
+}
+const RAW_REFERRAL = /referralId=|referral-code=|wise\.com\/invite|getrizon|sng\.link/i;
 
 const ids = [];
 // id -> lang -> file text, for the cross-article checks at the end
@@ -108,7 +122,31 @@ for (const folder of folders) {
     const videos = count(t, /type:\s*"video"/g);
     if (count(t, /^\s+title:\s*"[^"]+"/gm) < 1 + videos) errors.push(where + ": every video needs a title");
 
+    if (lang === "fr" && /^\s{2}(title|seoTitle):\s*"[^"]*depuis la Tunisie/im.test(t)) {
+      errors.push(where + ': French titles say "pour les Tunisiens", not "depuis la Tunisie"');
+    }
+
+    // fee boxes and referral links
+    for (const m of t.matchAll(/feeIds:\s*\[([^\]]*)\]/g)) {
+      for (const f of [...m[1].matchAll(/"([^"]+)"/g)].map((x) => x[1])) {
+        if (!feeIds.has(f)) errors.push(where + ': unknown fee id "' + f + '" (add it to src/content/fees.ts)');
+      }
+    }
+    if (RAW_REFERRAL.test(t)) errors.push(where + ": referral URL pasted in the text; use a referral block (src/content/referrals.ts)");
+    const providers = [...t.matchAll(/type:\s*"referral",\s*provider:\s*"([^"]+)"/g)].map((m) => m[1]);
+    for (const p of providers) {
+      if (!referralArticles[p]) errors.push(where + ': unknown referral provider "' + p + '"');
+      else if (!referralArticles[p].includes(id)) errors.push(where + ": referral " + p + " is not allowed in this article (see referrals.ts)");
+    }
+    const firstRef = t.search(/type:\s*"referral"/);
+    if (firstRef >= 0) {
+      const firstTable = t.search(/type:\s*"table"/);
+      if (firstTable < 0 || firstTable > firstRef) errors.push(where + ": put a comparison table before the first referral link");
+    }
+
     structure[lang] = {
+      fees: count(t, /type:\s*"fees"/g),
+      referrals: providers.join(","),
       headings: [...t.matchAll(/\bid:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]).sort().join(","),
       figures,
       tiles,
@@ -126,6 +164,8 @@ for (const folder of folders) {
     if (a.figures !== b.figures) errors.push(id + ": " + langs[0] + " has " + a.figures + " pictures, " + lang + " has " + b.figures);
     if (a.tables !== b.tables) errors.push(id + ": " + langs[0] + " has " + a.tables + " tables, " + lang + " has " + b.tables);
     if (a.tiles !== b.tiles) errors.push(id + ": " + langs[0] + " has " + a.tiles + " gallery photos, " + lang + " has " + b.tiles);
+    if (a.fees !== b.fees) errors.push(id + ": " + langs[0] + " has " + a.fees + " fee boxes, " + lang + " has " + b.fees);
+    if (a.referrals !== b.referrals) errors.push(id + ": referral links differ between " + langs[0] + " and " + lang);
     if (a.videos !== b.videos) errors.push(id + ": " + langs[0] + " has " + a.videos + " videos, " + lang + " has " + b.videos);
   }
 }

@@ -76,15 +76,12 @@ export const en: ArticleTranslation = {
     },
     { type: "h3", id: "step-pay-receipt", text: "Step 3: pay and keep the receipt" },
     {
-      type: "table",
-      caption: "What the residence permit application costs at the post office (amounts checked October 2026).",
-      head: ["Item", "Cost"],
-      rows: [
-        ["Revenue stamp (marca da bollo)", "EUR 16"],
-        ["Postal service fee", "EUR 30"],
-        ["Bollettino: electronic card EUR 30.46 + contribution EUR 40 (permit of 3 to 12 months)", "EUR 70.46"],
-        ["**Total**", "**about EUR 116.46**"],
-      ],
+      type: "fees",
+      title: "What the residence permit application costs at the post office",
+      text: "For a permit of more than 1 year and up to 2 years the contribution is EUR 50, so the total becomes EUR 126.46. Ask at the counter which payment methods are accepted.",
+      feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
+      total: true,
+      hub: true,
     },
     {
       type: "p",
@@ -134,15 +131,17 @@ export const en: ArticleTranslation = {
       text: "You need an IBAN for DiSCo, rent and a salary. Two common options:",
     },
     {
-      type: "ul",
-      items: [
-        "**Postepay Evolution**: a prepaid card with an IBAN, EUR 5 to issue plus EUR 19 a year ([Poste Italiane](https://www.poste.it/carte-postepay/postepay-evolution)).",
-        "**A bank account**: banks ask for your codice fiscale; compare monthly fees.",
-      ],
+      type: "p",
+      text: "Your options are a bank (Intesa Sanpaolo and others), an online account (Revolut, Wise) or the Postepay Evolution prepaid card with an IBAN. Banks ask for your codice fiscale. The documents, the order to try them in and what to do if a branch refuses are in [how to open a bank account in Italy as a student](article:bank-account-italy-student).",
+    },
+    {
+      type: "fees",
+      title: "Postepay Evolution costs",
+      feeIds: ["postepay-issue", "postepay-year"],
     },
     {
       type: "p",
-      text: "According to the [Banca d'Italia](https://economiapertutti.bancaditalia.it/aree-tematiche/conto-corrente/il-conto-di-base/index.html), anyone legally staying in the EU has the right to a basic account (conto di base), and a bank may not refuse your residence permit receipt as an identity document.",
+      text: "According to the [Banca d'Italia](https://economiapertutti.bancaditalia.it/aree-tematiche/conto-corrente/il-conto-di-base/index.html), anyone legally staying in the EU has the right to a basic account (conto di base), and its August 2026 guidance tells banks to accept the residence permit receipt for this account.",
     },
 
     { type: "h2", id: "finalise-enrolment", text: "5. Finalise enrolment and your scholarship file" },
@@ -181,6 +180,11 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "Register voluntarily with the national health service (SSN) for about EUR 700 a year ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)), or keep private insurance. Check the current amount with your ASL or university.",
     },
+    {
+      type: "fees",
+      title: "Health service registration fee",
+      feeIds: ["ssn-voluntary"],
+    },
 
     { type: "h2", id: "first-month-budget", text: "6. Budget for your first month in Rome" },
     {
@@ -201,17 +205,22 @@ export const en: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "How to spend the 6,000 TND installation allowance carefully (only the first two amounts are confirmed).",
+      caption: "How to spend the 6,000 TND installation allowance carefully (only the first three amounts are confirmed).",
       head: ["Item", "Cost", "Tip"],
       rows: [
         ["Residence permit kit", "About EUR 116 (confirmed)", "Pay it first, in your first week."],
         ["Postepay Evolution", "EUR 5 + EUR 19 a year (confirmed)", "Gives you an IBAN for DiSCo and rent."],
-        ["Public transport pass", "Check current prices", "Compare monthly and student passes on the ATAC website."],
+        ["Public transport pass", "EUR 35 a month or EUR 250 a year (confirmed)", "Check student offers on the ATAC website."],
         ["SIM card and first month", "Check current prices", "Compare offers before you buy."],
         ["Food for the month", "Check current prices", "Cook at home; DiSCo meals start only once the grant is assigned."],
         ["Room: first rent and deposit", "Check current prices", "See our [student housing guide for Rome](article:student-housing-rome)."],
         ["Emergency reserve", "10 to 15% of the allowance", "Do not touch it unless you have to."],
       ],
+    },
+    {
+      type: "fees",
+      title: "Rome public transport passes (ATAC)",
+      feeIds: ["atac-monthly", "atac-annual"],
     },
     {
       type: "p",
@@ -224,12 +233,8 @@ export const en: ArticleTranslation = {
       text: "Yes, within limits: a student permit allows up to **20 hours a week**, for a maximum of **1,040 hours a year** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). If you only have the first-permit receipt, check with the Questura or your university before you start a job.",
     },
     {
-      type: "ul",
-      items: [
-        "University career offices: [Sapienza](https://www.uniroma1.it/it/pagina/studenti-e-laureati-opportunita-di-lavoro-e-tirocinio), [Tor Vergata](https://placement.uniroma2.it/), [Roma Tre](https://uniroma3.jobsoul.it/studenti-e-laureati/ufficio-job-placement).",
-        "Regione Lazio: [job offers](https://www.regione.lazio.it/cittadini/lavoro/offerte-lavoro) and [SpazioLavoro](https://spaziolavoro.regione.lazio.it/).",
-        "Job sites: [Subito job ads](https://www.subito.it/annunci-italia/vendita/offerte-lavoro/), [InfoJobs](https://www.infojobs.it), [Indeed](https://it.indeed.com).",
-      ],
+      type: "p",
+      text: "Where to look (Subito, Indeed, temp agencies, university job offices), how to post your profile and how to spot fake offers: see [student jobs in Rome](article:student-jobs-rome).",
     },
     {
       type: "callout",

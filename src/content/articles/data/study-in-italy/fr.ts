@@ -114,9 +114,17 @@ export const fr: ArticleTranslation = {
         ["Visa d'études", "50 EUR (170,600 TND) + 68,300 TND de frais du centre de visas", "En espèces, en TND ; peut changer"],
         ["Somme bloquée", "10 179,85 EUR (2026/27)", "Pas des frais : votre argent, 783,06 EUR sur 13 mois"],
         ["Permis de séjour", "Environ 116,46 EUR", "Timbre fiscal, frais postaux et coût du titre"],
-        ["Frais d'inscription par an", "Sapienza environ 300 EUR (vérifiez la page des frais en vigueur) ; Tor Vergata 1 000 EUR (2 500 EUR certaines formations en anglais) ; LUMSA 4 390 EUR ; LUISS 15 000 EUR", "Roma Tre dépend de votre ISEE"],
+        ["Frais d'inscription par an", "Sapienza 300 EUR + 140 EUR de taxe régionale + 16 EUR de timbre = 456 EUR en 1re année (tranche la plus basse) ; Tor Vergata 1 000 EUR (2 500 EUR certaines formations en anglais) ; LUMSA 4 390 EUR ; LUISS 15 000 EUR", "Roma Tre dépend de votre ISEE"],
         ["Compte italien", "Postepay Evolution 5 EUR + 19 EUR par an", "Carte prépayée avec IBAN"],
       ],
+    },
+    {
+      type: "fees",
+      title: "Sapienza en première année (tranche la plus basse)",
+      feeIds: ["sapienza-band-a", "lazio-regional-tax", "uni-stamp"],
+      total: true,
+      tnd: true,
+      hub: true,
     },
     {
       type: "p",
@@ -159,7 +167,7 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "Un étudiant tunisien peut-il étudier gratuitement en Italie ?",
-          a: "Pas complètement. Les frais d'inscription publics peuvent être bas (Sapienza demande un forfait de 300 EUR par an pour la tranche de la Tunisie) et la bourse DiSCo peut couvrir le coût de la vie si vous y avez droit, mais vous payez quand même les frais de candidature, de documents et de visa, et vous devez justifier la somme bloquée pour le visa.",
+          a: "Pas complètement. Les frais d'inscription publics peuvent être bas (Sapienza demande un forfait de 300 EUR par an pour la tranche de la Tunisie, plus 140 EUR de taxe régionale et un timbre de 16 EUR) et la bourse DiSCo peut couvrir le coût de la vie si vous y avez droit, mais vous payez quand même les frais de candidature, de documents et de visa, et vous devez justifier la somme bloquée pour le visa.",
         },
         {
           q: "Combien d'argent faut-il pour étudier à Rome ?",

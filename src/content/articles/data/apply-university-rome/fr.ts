@@ -94,7 +94,14 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les frais de scolarité publics dépendent des revenus et du pays (le forfait de Sapienza pour la Tunisie, bande A, est de 300 EUR par an). Voir [les coûts dans la partie 1](article:study-in-italy#costs) et la [bourse DiSCo](article:lazio-disco-scholarship).",
+      text: "Les frais de scolarité publics dépendent des revenus et du pays (le forfait de Sapienza pour la Tunisie, bande A, est de 300 EUR par an, plus 140 EUR de taxe régionale et un timbre de 16 EUR : 456 EUR la première année). Voir [les coûts dans la partie 1](article:study-in-italy#costs) et la [bourse DiSCo](article:lazio-disco-scholarship).",
+    },
+    {
+      type: "fees",
+      title: "Frais de candidature à Rome",
+      feeIds: ["sapienza-application", "torvergata-application"],
+      tnd: true,
+      hub: true,
     },
 
     { type: "h2", id: "private-universities", text: "4. Universités privées : LUISS et LUMSA" },
