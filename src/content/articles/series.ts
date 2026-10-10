@@ -9,6 +9,8 @@ export type Series = {
   id: string;
   /** Shown in the series strip and published as the CreativeWorkSeries name. */
   title: Record<Lang, string>;
+  /** Topic heading on the blog list (falls back to the title). */
+  topic?: Record<Lang, string>;
   /** Article ids in reading order. */
   articleIds: readonly string[];
 };
@@ -21,6 +23,11 @@ export const SERIES: readonly Series[] = [
       fr: "Travailler en Italie pour les Tunisiens",
       ar: "العمل في إيطاليا من تونس",
     },
+    topic: {
+      en: "Working in Italy with a BTP or BTS",
+      fr: "Travailler en Italie avec un BTP ou un BTS",
+      ar: "العمل في إيطاليا بشهادة BTP أو BTS",
+    },
     articleIds: ["work-in-italy-from-tunisia", "work-contract-in-italy"],
   },
   {
@@ -29,6 +36,11 @@ export const SERIES: readonly Series[] = [
       en: "Studying in Rome as a Tunisian student",
       fr: "Étudier à Rome pour les Tunisiens",
       ar: "الدراسة في روما للطلاب التونسيين",
+    },
+    topic: {
+      en: "Studying in Italy for Tunisian students",
+      fr: "Étudier en Italie pour les étudiants tunisiens",
+      ar: "الدراسة في إيطاليا للطلاب التونسيين",
     },
     articleIds: [
       "study-in-italy",

@@ -111,14 +111,13 @@ export default async function BlogLandingPage({ params }: Props) {
           <section key={group.key} className="blog-group" aria-labelledby={group.series ? "group-" + group.key : undefined}>
             {group.series && (
               <div className="blog-group-head">
-                <p className="blog-eyebrow">{dict.series.label}</p>
                 <h2 id={"group-" + group.key} className="blog-group-title">
-                  <BidiText lang={lang}>{group.series.series.title[lang]}</BidiText>
+                  <BidiText lang={lang}>{(group.series.series.topic ?? group.series.series.title)[lang]}</BidiText>
                 </h2>
                 <p className="blog-group-count">{dict.series.parts(group.series.total)}</p>
               </div>
             )}
-          <ul className="blog-list">
+          <ul className={group.series ? "blog-list blog-cards" : "blog-list"}>
             {group.items.map(({ article, translation, series }) => {
               const Title = group.series ? "h3" : "h2";
               return (
