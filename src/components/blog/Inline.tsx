@@ -13,6 +13,9 @@ const TOKEN = new RegExp(
 );
 const LINK = new RegExp(String.raw`^\[([^\]]+)\]\((${URL_PART})\)$`);
 
+// External links open in a new tab: say so to screen readers and show a small arrow
+const NEW_TAB: Record<Lang, string> = { en: "(opens in a new tab)", fr: "(s'ouvre dans un nouvel onglet)", ar: "(يفتح في علامة تبويب جديدة)" };
+
 /** Only http(s), mailto, site-relative and article: URLs become links; anything else (javascript:, data:) is dropped. */
 function safeHref(url: string, lang: Lang): string | null {
   // Browsers drop tab/newline and treat "\" as "/", so "/\evil.com" would become "//evil.com"
@@ -41,6 +44,12 @@ export default function Inline({ lang, text }: { lang: Lang; text: string }) {
         return (
           <a key={i} href={href} {...(external ? { rel: "noopener noreferrer", target: "_blank" } : {})}>
             <BidiText lang={lang}>{m[1]}</BidiText>
+            {external && (
+              <>
+                <span className="blog-ext" aria-hidden="true">↗</span>
+                <span className="blog-sr">{" " + NEW_TAB[lang]}</span>
+              </>
+            )}
           </a>
         );
       })}

@@ -3,7 +3,8 @@ import { LANGS, DEFAULT_LANG, DIR, LANG_LABEL, LOCALE, type Lang } from "@/lib/i
 import { langStaticParams, toLang, type LangPageProps as Props } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n";
 import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
-import { articlesForLang, langsWithArticles, seriesPosition } from "@/content/articles";
+import { articlesForLang, langsWithArticles, seriesPosition, type SeriesPosition } from "@/content/articles";
+import type { Article, ArticleTranslation } from "@/content/articles/types";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { SITE_NAME } from "@/lib/seo/site";
 import { JsonLd, personLd, blogLd, breadcrumbLd } from "@/lib/seo/jsonld";
@@ -12,6 +13,20 @@ import BlogFooter from "@/components/blog/BlogFooter";
 import BidiText from "@/components/blog/BidiText";
 
 export const dynamicParams = false;
+
+type ListItem = { article: Article; translation: ArticleTranslation; series: SeriesPosition | undefined };
+
+/** Consecutive posts of the same series become one group; other posts are grouped together. */
+function groupBySeries(items: ListItem[]): { key: string; series: SeriesPosition | undefined; items: ListItem[] }[] {
+  const groups: { key: string; series: SeriesPosition | undefined; items: ListItem[] }[] = [];
+  for (const item of items) {
+    const key = item.series?.series.id ?? "other";
+    const last = groups.at(-1);
+    if (last && last.key === key) last.items.push(item);
+    else groups.push({ key, series: item.series, items: [item] });
+  }
+  return groups;
+}
 
 export function generateStaticParams() {
   return langStaticParams();
@@ -90,9 +105,22 @@ export default async function BlogLandingPage({ params }: Props) {
             )}
           </>
         ) : (
+          // Posts of a series are listed together (articlesForLang keeps them adjacent, hub first)
+          // under the series name; posts outside a series form their own group without a heading.
+          groupBySeries(items.map((x) => ({ ...x, series: seriesPosition(x.article, lang) }))).map((group) => (
+          <section key={group.key} className="blog-group" aria-labelledby={group.series ? "group-" + group.key : undefined}>
+            {group.series && (
+              <div className="blog-group-head">
+                <p className="blog-eyebrow">{dict.series.label}</p>
+                <h2 id={"group-" + group.key} className="blog-group-title">
+                  <BidiText lang={lang}>{group.series.series.title[lang]}</BidiText>
+                </h2>
+                <p className="blog-group-count">{dict.series.parts(group.series.total)}</p>
+              </div>
+            )}
           <ul className="blog-list">
-            {items.map(({ article, translation }) => {
-              const series = seriesPosition(article, lang);
+            {group.items.map(({ article, translation, series }) => {
+              const Title = group.series ? "h3" : "h2";
               return (
               <li key={article.id} className="blog-card">
                 <a href={articlePath(lang, translation.slug)}>
@@ -101,9 +129,9 @@ export default async function BlogLandingPage({ params }: Props) {
                     <time dateTime={article.publishedAt}>{dateFmt.format(new Date(article.publishedAt))}</time>
                     {series && <span className="blog-part">{dict.series.part(series.part, series.total)}</span>}
                   </span>
-                  <h2>
+                  <Title>
                     <BidiText lang={lang}>{translation.title}</BidiText>
-                  </h2>
+                  </Title>
                   <p><BidiText lang={lang}>{translation.metaDescription}</BidiText></p>
                   <span className="blog-meta">
                     {dict.landing.read} <span className="blog-arrow" aria-hidden="true">→</span>
@@ -113,6 +141,8 @@ export default async function BlogLandingPage({ params }: Props) {
               );
             })}
           </ul>
+          </section>
+          ))
         )}
         </div>
       </main>

@@ -5,18 +5,24 @@ import type { SeriesPosition } from "@/content/articles";
 import BidiText from "./BidiText";
 
 /**
- * Compact series index under the byline: "Part 2 of 2" and every part of the series,
- * the current one marked instead of linked. Plain links, no JS.
+ * Compact series index under the byline: "Part 2 of 7" with every part of the series in a
+ * native disclosure (closed by default, so long series do not push the article down on
+ * phones). The current part is marked instead of linked. No JS.
  */
 export function SeriesStrip({ position, lang, dict }: { position: SeriesPosition; lang: Lang; dict: Dictionary }) {
   return (
     <nav className="blog-series-strip" aria-label={dict.series.label + ": " + position.series.title[lang]}>
-      <p className="blog-series-strip-label">
-        <span>{dict.series.part(position.part, position.total)}</span>
-        <span aria-hidden="true">·</span>
-        <BidiText lang={lang}>{position.series.title[lang]}</BidiText>
-      </p>
-      <ol>
+      <details>
+        <summary>
+          <span className="blog-series-strip-label">
+            <span>{dict.series.part(position.part, position.total)}</span>
+            <span aria-hidden="true">·</span>
+            <BidiText lang={lang}>{position.series.title[lang]}</BidiText>
+          </span>
+          <span className="blog-series-strip-hint">{dict.series.allParts}</span>
+          <span className="blog-acc-icon" aria-hidden="true" />
+        </summary>
+        <ol>
         {position.parts.map((p) => (
           <li key={p.article.id}>
             {p.part === position.part ? (
@@ -26,7 +32,8 @@ export function SeriesStrip({ position, lang, dict }: { position: SeriesPosition
             )}
           </li>
         ))}
-      </ol>
+        </ol>
+      </details>
     </nav>
   );
 }

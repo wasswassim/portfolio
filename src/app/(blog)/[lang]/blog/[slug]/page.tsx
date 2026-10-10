@@ -14,6 +14,7 @@ import BidiText from "@/components/blog/BidiText";
 import GuideCard from "@/components/blog/GuideCard";
 import ArticleBody from "@/components/blog/ArticleBody";
 import { SeriesNav, SeriesStrip } from "@/components/blog/SeriesNav";
+import QuickGuide from "@/components/blog/QuickGuide";
 
 export const dynamicParams = false;
 
@@ -103,6 +104,7 @@ export default async function ArticlePage(props: Props) {
                 <a href="#guide" className="blog-guide-jump">{dict.article.guide} <span aria-hidden="true">↓</span></a>
               </p>
               {series && <SeriesStrip position={series} lang={lang} dict={dict} />}
+              <QuickGuide summary={translation.summary} headings={headings} lang={lang} dict={dict} />
               <ArticleBody body={translation.body} lang={lang} dict={dict} />
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
