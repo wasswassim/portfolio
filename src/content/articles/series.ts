@@ -23,4 +23,21 @@ export const SERIES: readonly Series[] = [
     },
     articleIds: ["work-in-italy-from-tunisia", "work-contract-in-italy"],
   },
+  {
+    id: "study-in-rome-from-tunisia",
+    title: {
+      en: "Studying in Rome as a Tunisian student",
+      fr: "Étudier à Rome pour les Tunisiens",
+      ar: "الدراسة في روما للطلاب التونسيين",
+    },
+    articleIds: [
+      "study-in-italy",
+      "apply-university-rome",
+      "documents-for-italy",
+      "lazio-disco-scholarship",
+      "italy-student-visa",
+      "arriving-in-rome",
+      "student-housing-rome",
+    ],
+  },
 ];

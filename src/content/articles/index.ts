@@ -3,11 +3,28 @@ import { articlePath } from "@/lib/i18n/routes";
 import { headingIdsOf } from "./blocks";
 import { workInItalyFromTunisia } from "./data/work-in-italy-from-tunisia/article";
 import { workContractInItaly } from "./data/work-contract-in-italy/article";
+import { studyInItaly } from "./data/study-in-italy/article";
+import { applyUniversityRome } from "./data/apply-university-rome/article";
+import { documentsForItaly } from "./data/documents-for-italy/article";
+import { lazioDiscoScholarship } from "./data/lazio-disco-scholarship/article";
+import { italyStudentVisa } from "./data/italy-student-visa/article";
+import { arrivingInRome } from "./data/arriving-in-rome/article";
+import { studentHousingRome } from "./data/student-housing-rome/article";
 import { SERIES, type Series } from "./series";
 import type { Article, ArticleTranslation } from "./types";
 
 // One file per article under ./data; add it to this list to publish it.
-export const ARTICLES: readonly Article[] = [workInItalyFromTunisia, workContractInItaly];
+export const ARTICLES: readonly Article[] = [
+  workInItalyFromTunisia,
+  workContractInItaly,
+  studyInItaly,
+  applyUniversityRome,
+  documentsForItaly,
+  lazioDiscoScholarship,
+  italyStudentVisa,
+  arrivingInRome,
+  studentHousingRome,
+];
 
 // Fail the build on content mistakes: duplicate heading ids would break the table of
 // contents and in-page links.
