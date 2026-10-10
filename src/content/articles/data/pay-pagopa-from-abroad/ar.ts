@@ -11,7 +11,7 @@ export const ar: ArticleTranslation = {
   imageAlt: "الكولوسيوم في روما وعلى جانبه علم إيطالي ضخم والحشود أمامه",
   keywords: ["دفع pagoPA من تونس", "pagoPA PayPal", "PayPal تونس", "بطاقة دولية pagoPA", "خلاص رسوم الجامعة الإيطالية", "avviso di pagamento"],
   summary:
-    "يمكنك دفع إشعار pagoPA الإيطالي وأنت في تونس عبر موقع checkout.pagopa.it بدون SPID، بإدخال Codice Avviso والمعرّف الجبائي للجهة الدائنة ثم اختيار PayPal أو بطاقة Visa أو Mastercard أو بطاقة دولية أخرى. يكلّف PayPal مبلغ 1.50 يورو (2.50 يورو فوق 248.50 يورو) إضافة إلى حوالي 3% إذا حوّل PayPal العملة؛ ادفع المبلغ كاملًا، وجرّب أولًا بإشعار صغير، واحتفظ ببطاقة كخيار احتياطي.",
+    "يمكنك دفع إشعار pagoPA الإيطالي وأنت في تونس عبر موقع checkout.pagopa.it بدون SPID، بإدخال Codice Avviso والمعرّف الجبائي للجهة الدائنة ثم اختيار PayPal أو بطاقة Visa أو Mastercard أو بطاقة دولية أخرى. يكلّف PayPal مبلغ 1.50 يورو (2.50 يورو فوق 248.50 يورو) إضافة إلى حوالي 4% إذا حوّل PayPal العملة؛ ادفع المبلغ كاملًا، وجرّب أولًا بإشعار صغير، واحتفظ ببطاقة كخيار احتياطي.",
   body: [
     {
       type: "callout",
@@ -43,7 +43,7 @@ export const ar: ArticleTranslation = {
       items: [
         "**Sapienza**: تُنشئ عملية الدفع على Infostud وتدفعها عبر pagoPA فقط، وينصّ النظام على أنه لا تُقبل أي طريقة أخرى ([نظام رسوم Sapienza 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
         "**Tor Vergata**: يُدفع معلوم الترشح البالغ 30 يورو عبر pagoPA ([إجراءات الترشح](https://web.uniroma2.it/allegato/45147/contenuto/application_procedure))، وتُنشأ رسوم التسجيل على Delphi.",
-        "**الضريبة الجهوية لـ Lazio**: 140 يورو إضافة إلى طابع بـ 16 يورو، يدفعها مع القسط الأول كل طالب في جامعة عمومية في Lazio، بمن فيهم المترشحون لمنحة DiSCo ([Sapienza: الضريبة الجهوية والطابع](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
+        "**الضريبة الجهوية لـ Lazio**: 140 يورو إضافة إلى طابع بـ 16 يورو، يدفعها مع القسط الأول كل طالب تقريبًا في جامعة عمومية في Lazio، بمن فيهم المترشحون لمنحة DiSCo، والإعفاءات مذكورة في نظام الرسوم بجامعتك ([Sapienza: الضريبة الجهوية والطابع](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
       ],
     },
     {
@@ -122,7 +122,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "تُطبَّق نسبة 3% عندما يحوّل PayPal العملة نيابةً عنك. لم نتمكن من التأكد إن كان PayPal أم بنكك التونسي هو من يحوّل العملة لبطاقة بالدينار، لذلك قارن المبلغ النهائي في كشف حسابك بعد الدفعة التجريبية.",
+      text: "تُطبَّق نسبة 4% تقريبًا عندما يحوّل PayPal العملة نيابةً عنك. لم نتمكن من التأكد إن كان PayPal أم بنكك التونسي هو من يحوّل العملة لبطاقة بالدينار، لذلك قارن المبلغ النهائي في كشف حسابك بعد الدفعة التجريبية.",
     },
     {
       type: "callout",
@@ -213,7 +213,7 @@ export const ar: ArticleTranslation = {
         },
         {
           q: "كم تكلّف عملية دفع pagoPA عبر PayPal؟",
-          a: "1.50 يورو حتى 248.50 يورو، و2.50 يورو فوق ذلك (أكتوبر 2026)، إضافة إلى حوالي 3% إذا حوّل PayPal العملة لحساب تونسي.",
+          a: "1.50 يورو حتى 248.50 يورو، و2.50 يورو فوق ذلك (أكتوبر 2026)، إضافة إلى حوالي 4% إذا حوّل PayPal العملة لحساب تونسي.",
         },
         {
           q: "متى ترى الجامعة أنني دفعت؟",
@@ -262,7 +262,7 @@ export const ar: ArticleTranslation = {
       items: [
         { label: "أين تدفع", value: "checkout.pagopa.it، بدون SPID" },
         { label: "ما تحتاجه", value: "Codice Avviso + Codice Fiscale Ente Creditore، أو رمز QR" },
-        { label: "عمولة PayPal", value: "1.50 يورو (2.50 يورو فوق 248.50 يورو) + حوالي 3% للتحويل" },
+        { label: "عمولة PayPal", value: "1.50 يورو (2.50 يورو فوق 248.50 يورو) + حوالي 4% للتحويل" },
         { label: "التقسيط", value: "للمقيمين في إيطاليا فقط: ادفع المبلغ كاملًا من تونس" },
       ],
     },

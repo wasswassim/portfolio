@@ -55,7 +55,7 @@ export const en: ArticleTranslation = {
       rows: [
         ["Part-time employment contract", "The standard route: a declared contract with fixed weekly hours", "No more than 20 hours a week in the contract"],
         ["Occasional work (PrestO)", "Short INPS-managed jobs, capped at EUR 5,000 a year per worker", "No official source says whether these hours count toward the 20; ask the employer or a patronato"],
-        ["On-call contract (contratto a chiamata)", "Called in when needed; open to people under 24", "Your weekly 20-hour cap still applies"],
+        ["On-call contract (contratto a chiamata)", "Called in when needed; for people under 24 (work ending by age 25) or over 55, or for jobs listed in collective agreements", "Your weekly 20-hour cap still applies"],
         ["University 150-ore collaboration", "Paid campus work, not an employment contract", "One per academic year; see section 6"],
       ],
     },

@@ -4,7 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "job-etudiant-rome",
   title: "Job étudiant à Rome pour les Tunisiens : la règle des 20 heures, Subito, Indeed et agences d’intérim",
-  seoTitle: "Job étudiant à Rome : Subito, règles et agences",
+  seoTitle: "Job étudiant à Rome pour les Tunisiens : Subito, règles",
   metaDescription:
     "Job étudiant à Rome pour les Tunisiens : limite de 20 heures par semaine, annonce Subito pour un café, Indeed, agences d’intérim, 150 ore et arnaques à éviter.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
@@ -55,7 +55,7 @@ export const fr: ArticleTranslation = {
       rows: [
         ["Contrat salarié à temps partiel", "La voie normale : un contrat déclaré avec un horaire hebdomadaire fixe", "Pas plus de 20 heures par semaine dans le contrat"],
         ["Travail occasionnel (PrestO)", "Missions courtes gérées par l’INPS, plafonnées à 5 000 EUR par an et par travailleur", "Aucune source officielle ne dit si ces heures comptent dans les 20 ; demandez à l’employeur ou à un patronato"],
-        ["Contrat à l’appel (contratto a chiamata)", "On vous appelle selon les besoins ; ouvert aux moins de 24 ans", "Votre plafond de 20 heures par semaine s’applique toujours"],
+        ["Contrat à l’appel (contratto a chiamata)", "On vous appelle selon les besoins ; ouvert aux moins de 24 ans (travail terminé avant 25 ans) ou aux plus de 55 ans, ou pour les emplois prévus par les conventions collectives", "Votre plafond de 20 heures par semaine s’applique toujours"],
         ["Collaboration universitaire 150 ore", "Travail rémunéré sur le campus, pas un contrat de travail", "Une par année universitaire ; voir la partie 6"],
       ],
     },

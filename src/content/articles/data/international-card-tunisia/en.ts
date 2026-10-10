@@ -5,7 +5,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "pay-italian-university-fees-from-tunisia",
   title: "How to pay Italian university fees from Tunisia with an international card",
-  seoTitle: "Italian University Fees from Tunisia: International Card",
+  seoTitle: "How to Pay Italian University Fees from Tunisia (2026)",
   metaDescription:
     "How to pay Italian university fees from Tunisia: bank transfer, technology card, PayPal on pagoPA, Italian cards, crypto cards, exchange rules and scams.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
@@ -136,7 +136,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "For residents of Tunisia, no BCT text authorises buying crypto, so the legal status is unclear (see the next section). Rizon, another crypto card, [does not accept Tunisian passports](https://intercom.help/rizon/en/articles/13517852-is-rizon-available-for-me). Details in our [RedotPay explainer](article:redotpay-tunisia).",
+      text: "For residents of Tunisia, no BCT text authorises buying crypto, so the legal status is unclear (see the next section). Rizon, another crypto card, does not list Tunisia among the nationalities it accepts, so this guide does not cover it. Details in our [RedotPay explainer](article:redotpay-tunisia).",
     },
     {
       type: "p",
@@ -220,8 +220,7 @@ export const en: ArticleTranslation = {
         { label: "PayPal Italy: pagoPA", url: "https://www.paypal.com/it/digital-wallet/pagopa" },
         { label: "PayPal Tunisia: consumer fees", url: "https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN" },
         { label: "Sapienza: regional tax and revenue stamp", url: "https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo" },
-        { label: "RedotPay: terms of service", url: "https://www.redotpay.com/terms" },
-        { label: "Rizon: who can use it", url: "https://intercom.help/rizon/en/articles/13517852-is-rizon-available-for-me" },
+        { label: "RedotPay: terms of service", url: "https://www.redotpay.com/terms" },
       ],
     },
     {

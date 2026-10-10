@@ -20,7 +20,7 @@ export default function NewsletterCard({ lang, dict, idPrefix, className = "" }:
         <label htmlFor={idPrefix + "-email"}>{t.email}</label>
         <input id={idPrefix + "-email"} type="email" name="EMAIL" required autoComplete="email" inputMode="email" dir="ltr" />
         <div className="blog-newsletter-hp" aria-hidden="true">
-          <input type="text" name="email_address_check" tabIndex={-1} autoComplete="off" defaultValue="" />
+          <input type="text" name="email_address_check" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" defaultValue="" />
         </div>
         <input type="hidden" name="locale" value={lang} />
         <input type="hidden" name="html_type" value="simple" />

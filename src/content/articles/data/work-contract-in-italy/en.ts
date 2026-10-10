@@ -117,7 +117,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "fees",
-      title: "Work visa (national D visa) fee",
+      title: "National D visa fee (Embassy general rate: confirm it applies to your work visa)",
       feeIds: ["visa-national-d"],
       hub: true,
     },
@@ -160,6 +160,7 @@ export const en: ArticleTranslation = {
     {
       type: "fees",
       title: "Residence permit kit at the post office",
+      text: "The total assumes a permit of up to 1 year; for a permit of more than 1 year and up to 2 years the contribution is EUR 50, so the total is EUR 126.46",
       feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
       total: true,
     },

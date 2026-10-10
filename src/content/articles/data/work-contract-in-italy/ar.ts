@@ -118,7 +118,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "fees",
-      title: "معلوم تأشيرة العمل (التأشيرة الوطنية D)",
+      title: "معلوم التأشيرة الوطنية D (التعريفة العامة للسفارة: تأكد أنها تنطبق على تأشيرة العمل)",
       feeIds: ["visa-national-d"],
       hub: true,
     },
@@ -161,6 +161,7 @@ export const ar: ArticleTranslation = {
     {
       type: "fees",
       title: "ظرف طلب الإقامة في مكتب البريد",
+      text: "المجموع محسوب لإقامة حتى سنة واحدة؛ لإقامة تتجاوز سنة وحتى سنتين تكون المساهمة 50 يورو، فيصبح المجموع 126.46 يورو",
       feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
       total: true,
     },

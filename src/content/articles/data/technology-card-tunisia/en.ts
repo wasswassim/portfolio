@@ -166,7 +166,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "paypal-link", text: "7. Linking the CTI to a Tunisian PayPal account" },
     {
       type: "p",
-      text: "A PayPal account registered in Tunisia can **send payments**, funded by a linked international card such as the CTI. Receiving money is not generally available. PayPal adds about 3% when it converts the currency, and pagoPA charges EUR 1.50 to EUR 2.50 for a PayPal payment.",
+      text: "A PayPal account registered in Tunisia can **send payments**, funded by a linked international card such as the CTI. Receiving money is not generally available. PayPal adds about 4% when it converts the currency, and pagoPA charges EUR 1.50 to EUR 2.50 for a PayPal payment.",
     },
     {
       type: "p",

@@ -120,7 +120,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "fees",
-      title: "Frais du visa de travail (visa national D)",
+      title: "Frais du visa national D (tarif général de l'ambassade : vérifiez qu'il s'applique à votre visa de travail)",
       feeIds: ["visa-national-d"],
       hub: true,
     },
@@ -163,6 +163,7 @@ export const fr: ArticleTranslation = {
     {
       type: "fees",
       title: "Kit du permis de séjour à la poste",
+      text: "Le total vaut pour un permis jusqu'à 1 an ; pour un permis de plus d'un an et jusqu'à 2 ans, la contribution est de 50 EUR, soit 126,46 EUR au total",
       feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
       total: true,
     },

@@ -10,7 +10,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["demander la residenza à Rome", "residenza anagrafe Rome", "iscrizione anagrafica étranger Rome", "carta d'identità étranger Rome", "residenza étudiant étranger Italie", "TuPassi Rome anagrafe"],
   summary:
-    "Pour obtenir la residenza à Rome, vous envoyez une dichiarazione di residenza à Roma Capitale (en ligne avec SPID/CIE/CNS, par PEC, en recommandé ou au guichet) avec votre passeport, votre permesso di soggiorno ou son récépissé et votre bail ou la déclaration du propriétaire ; c'est gratuit. La commune vous inscrit en 2 jours ouvrables, la Polizia Locale vérifie l'adresse dans les 45 jours, puis vous pouvez demander la carte d'identité électronique (CIE) pour 22,21 EUR.",
+    "Pour obtenir la residenza à Rome, vous envoyez une dichiarazione di residenza à Roma Capitale (en ligne avec SPID/CIE/CNS, par PEC, en recommandé ou au guichet) avec votre passeport, votre permesso di soggiorno ou son récépissé (le récépissé d'un premier permis peut ne pas suffire dans tous les Municipi : vérifiez avant) et votre bail ou la déclaration du propriétaire ; c'est gratuit. La commune vous inscrit en 2 jours ouvrables, la Polizia Locale vérifie l'adresse dans les 45 jours, puis vous pouvez demander la carte d'identité électronique (CIE) pour 22,21 EUR.",
   body: [
     {
       type: "callout",
@@ -21,7 +21,7 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "**Vous avez une chambre et une demande de permis de séjour à Rome. Comment déclarer votre residenza à l'anagrafe, et est-ce que ça vaut la peine ?**" },
     {
       type: "p",
-      text: "La réponse courte : remplissez la *dichiarazione di residenza*, joignez votre passeport, votre permesso di soggiorno (ou son récépissé) et votre bail ou la déclaration du propriétaire, puis envoyez le tout par **un seul** canal : le service en ligne de Roma Capitale, la PEC, la lettre recommandée ou le guichet. C'est gratuit. Vous êtes inscrit en 2 jours ouvrables, et la Polizia Locale vérifie dans les 45 jours que vous habitez vraiment à l'adresse.",
+      text: "La réponse courte : remplissez la *dichiarazione di residenza*, joignez votre passeport, votre permesso di soggiorno (ou son récépissé ; celui d'un premier permis peut ne pas suffire dans tous les Municipi : vérifiez avant) et votre bail ou la déclaration du propriétaire, puis envoyez le tout par **un seul** canal : le service en ligne de Roma Capitale, la PEC, la lettre recommandée ou le guichet. C'est gratuit. Vous êtes inscrit en 2 jours ouvrables, et la Polizia Locale vérifie dans les 45 jours que vous habitez vraiment à l'adresse.",
     },
     {
       type: "p",

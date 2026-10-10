@@ -10,7 +10,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["how to apply for residenza in Rome", "residenza anagrafe Roma", "iscrizione anagrafica stranieri Roma", "carta d'identità stranieri Roma", "residenza for foreign students in Italy", "TuPassi Roma anagrafe"],
   summary:
-    "To get residenza in Rome, you send a dichiarazione di residenza to Roma Capitale (online with SPID/CIE/CNS, by PEC, by registered post or at the counter) with your passport, your permesso di soggiorno or its receipt and your lease or the owner's declaration; it is free. The Comune registers you within 2 working days, the Polizia Locale checks the address within 45 days, and once you are resident you can request the electronic identity card (CIE) for EUR 22.21.",
+    "To get residenza in Rome, you send a dichiarazione di residenza to Roma Capitale (online with SPID/CIE/CNS, by PEC, by registered post or at the counter) with your passport, your permesso di soggiorno or its receipt (a first-permit receipt may not be enough in every Municipio: check first) and your lease or the owner's declaration; it is free. The Comune registers you within 2 working days, the Polizia Locale checks the address within 45 days, and once you are resident you can request the electronic identity card (CIE) for EUR 22.21.",
   body: [
     {
       type: "callout",
@@ -21,7 +21,7 @@ export const en: ArticleTranslation = {
     { type: "p", text: "**You have a room and a residence permit request in Rome. How do you register your residenza at the anagrafe, and is it worth it?**" },
     {
       type: "p",
-      text: "The short answer: fill in the *dichiarazione di residenza*, attach your passport, your permesso di soggiorno (or its receipt) and your lease or the owner's declaration, and send it through **one** channel: the Roma Capitale online service, PEC, registered post or the counter. It is free. You are registered within 2 working days, and the Polizia Locale checks that you really live there within 45 days.",
+      text: "The short answer: fill in the *dichiarazione di residenza*, attach your passport, your permesso di soggiorno (or its receipt; a first-permit receipt may not be enough in every Municipio: check first) and your lease or the owner's declaration, and send it through **one** channel: the Roma Capitale online service, PEC, registered post or the counter. It is free. You are registered within 2 working days, and the Polizia Locale checks that you really live there within 45 days.",
     },
     {
       type: "p",

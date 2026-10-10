@@ -115,6 +115,11 @@ export const en: ArticleTranslation = {
       text: "Sapienza students can get help on campus: its [residence permit page](https://www.uniroma1.it/en/pagina/residence-permit-study-purposes) lists the campus police desk and the Questura immigration office (Via Teofilo Patini 23).",
     },
 
+    {
+      type: "p",
+      text: "Once you have a lease and your permit receipt, you can also register your residence at the anagrafe: see [how to apply for residenza in Rome](article:residenza-rome).",
+    },
+
     { type: "h2", id: "codice-fiscale", text: "3. How do you get your codice fiscale?" },
     {
       type: "p",
@@ -125,10 +130,10 @@ export const en: ArticleTranslation = {
       text: "If you need it earlier, go to any **Agenzia delle Entrate** office with form AA4/8 and your passport with the visa. The [Agenzia delle Entrate leaflet for foreign citizens](https://www.agenziaentrate.gov.it/portale/documents/20143/233505/Folder_CodiceFiscaleStranieri_08+03+23.pdf/218dc638-ced1-3b2d-f5f2-912686b1f7fe?t=1682082253716) explains the procedure. At Sapienza, the HELLO desk can help you with the forms.",
     },
 
-    { type: "h2", id: "bank-account", text: "4. Opening a student bank account in Italy" },
+    { type: "h2", id: "bank-account", text: "4. Get an IBAN in your first weeks" },
     {
       type: "p",
-      text: "You need an IBAN for DiSCo, rent and a salary. Two common options:",
+      text: "You need an IBAN for DiSCo, rent and a salary.",
     },
     {
       type: "p",

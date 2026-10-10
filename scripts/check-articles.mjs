@@ -38,7 +38,7 @@ const count = (text, re) => (text.match(re) || []).length;
 // Fee ids and referral providers, read as text like the articles
 const srcFile = (rel) => readFileSync(new URL("../src/content/" + rel, import.meta.url), "utf8");
 const feesText = srcFile("fees.ts");
-const feeIds = new Set([...feesText.slice(feesText.indexOf("export const FEES")).matchAll(/^\s{2}"([a-z0-9-]+)":\s*\{/gm)].map((m) => m[1]));
+const feeIds = new Set([...feesText.slice(feesText.indexOf("export const FEES")).matchAll(/^\s{2}"?([a-z0-9-]+)"?:\s*\{/gm)].map((m) => m[1]));
 const referralsText = srcFile("referrals.ts");
 const referralArticles = {};
 for (const m of referralsText.matchAll(/^\s{2}([a-z0-9]+):\s*\{[\s\S]*?articles:\s*\[([^\]]*)\]/gm)) {
@@ -133,11 +133,15 @@ for (const folder of folders) {
       }
     }
     if (RAW_REFERRAL.test(t)) errors.push(where + ": referral URL pasted in the text; use a referral block (src/content/referrals.ts)");
-    const providers = [...t.matchAll(/type:\s*"referral",\s*provider:\s*"([^"]+)"/g)].map((m) => m[1]);
+    const providers = [...t.matchAll(/\{\s*type:\s*"referral"[^}]*?provider:\s*"([^"]+)"/g)].map((m) => m[1]);
+    if (count(t, /type:\s*"referral"/g) !== providers.length) errors.push(where + ": could not read the provider of a referral block");
+    for (const m of t.matchAll(/feeIds:\s*\[\s*\]/g)) errors.push(where + ": empty fee box (" + m[0] + ")");
     for (const p of providers) {
       if (!referralArticles[p]) errors.push(where + ': unknown referral provider "' + p + '"');
       else if (!referralArticles[p].includes(id)) errors.push(where + ": referral " + p + " is not allowed in this article (see referrals.ts)");
     }
+    const guideStart = t.search(/^\s{2}guide:/m);
+    if (guideStart >= 0 && /type:\s*"referral"/.test(t.slice(guideStart))) errors.push(where + ": referral links belong in the body, not in the guide card");
     const firstRef = t.search(/type:\s*"referral"/);
     if (firstRef >= 0) {
       const firstTable = t.search(/type:\s*"table"/);

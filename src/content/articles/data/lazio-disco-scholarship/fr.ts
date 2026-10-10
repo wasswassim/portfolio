@@ -6,11 +6,11 @@ export const fr: ArticleTranslation = {
   title: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens : demande, ISEEUP et paiements",
   seoTitle: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens",
   metaDescription:
-    "Bourse DiSCo Lazio pour les étudiants tunisiens à Rome et dans tout le Latium : jusqu'à 7 556,78 EUR, conditions, calendrier 2027/28, ISEEUP et paiements.",
+    "Bourse DiSCo Lazio pour les étudiants tunisiens à Rome et dans tout le Latium : à partir de 6 571,11 EUR, conditions, calendrier 2027/28, ISEEUP et paiements.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["bourse DiSCo Lazio pour les étudiants tunisiens", "bourse d'études en Italie", "DiSCo Lazio", "ISEEUP", "ISEE parificato", "bourse d'études à Rome", "bourse DiSCo Rome"],
   summary:
-    "La bourse DiSCo Lazio verse à un étudiant hors site inscrit dans une université de Rome ou ailleurs dans le Latium jusqu'à 7 556,78 EUR par an en argent, plus deux repas gratuits par jour (valeurs 2026/27 ; 6 571,11 EUR au taux standard) ; en première année, le classement se fait uniquement sur les données économiques de la famille. Pour 2027/28, vous postulez en ligne vers juin-juillet 2027 sans SPID, vous préparez à l'avance vos documents familiaux en Tunisie, puis vous signez l'ISEEUP dans un CAF partenaire de DiSCo après votre arrivée.",
+    "La bourse DiSCo Lazio verse à un étudiant hors site inscrit dans une université de Rome ou ailleurs dans le Latium 6 571,11 EUR par an en argent, ou 7 556,78 EUR pour les revenus familiaux les plus bas, plus deux repas gratuits par jour (valeurs 2026/27 ; les suppléments et la retenue logement modifient le montant final) ; en première année, le classement se fait uniquement sur les données économiques de la famille. Pour 2027/28, vous postulez en ligne vers juin-juillet 2027 sans SPID, vous préparez à l'avance vos documents familiaux en Tunisie, puis vous signez l'ISEEUP dans un CAF partenaire de DiSCo après votre arrivée.",
   body: [
     {
       type: "callout",
@@ -72,7 +72,7 @@ export const fr: ArticleTranslation = {
     {
       type: "fees",
       title: "Ce que vous payez quand même pour vous inscrire, même boursier DiSCo",
-      text: "Les boursiers paient quand même la taxe régionale du Latium et le timbre fiscal. Si le paiement n'est pas validé, vous perdez l'inscription et les avantages DiSCo.",
+      text: "Les boursiers paient quand même la taxe régionale du Latium et le timbre fiscal. Le guide 2026/27 de Tor Vergata précise que si ce paiement n'est pas validé, vous n'êtes pas inscrit et vous perdez les avantages DiSCo ; vérifiez les règles de votre université.",
       feeIds: ["lazio-regional-tax", "uni-stamp"],
       total: true,
       tnd: true,
@@ -190,7 +190,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "En pratique, les versements peuvent arriver avec quelques semaines de retard, mais rarement plus d'un mois. Si votre ISEEUP est signé correctement après votre arrivée, les premiers versements suivent. Pour les recevoir, il vous faut un **IBAN** (compte italien ou SEPA), ajouté dans les 6 mois suivant l'attribution, et une **PEC** (e-mail certifié) ou un domicile élu. Voir [comment ouvrir un compte bancaire à Rome](article:arriving-in-rome#bank-account).",
+      text: "En pratique, les versements peuvent arriver avec quelques semaines de retard, mais rarement plus d'un mois. Si votre ISEEUP est signé correctement après votre arrivée, les premiers versements suivent. Pour les recevoir, il vous faut un **IBAN** (compte italien ou SEPA), ajouté dans les 6 mois suivant l'attribution, et une **PEC** (e-mail certifié) ou un domicile élu. Voir [comment ouvrir un compte bancaire à Rome](article:bank-account-italy-student).",
     },
     {
       type: "p",

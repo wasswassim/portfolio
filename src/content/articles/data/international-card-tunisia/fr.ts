@@ -4,7 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "payer-frais-universite-italie-carte-internationale",
   title: "Frais d’inscription en Italie : payer avec une carte internationale tunisienne",
-  seoTitle: "Frais d’inscription Italie : payer par carte internationale",
+  seoTitle: "Payer ses frais d’inscription en Italie : guide tunisien",
   metaDescription:
     "Payer ses frais d’inscription en Italie pour les Tunisiens : virement, carte technologique, PayPal sur pagoPA, carte italienne, règles de change et arnaques.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
@@ -135,7 +135,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Pour les résidents en Tunisie, aucun texte de la BCT n’autorise l’achat de crypto : le statut juridique reste flou (voir la section suivante). Rizon, une autre carte crypto, [n’accepte pas les passeports tunisiens](https://intercom.help/rizon/en/articles/13517852-is-rizon-available-for-me). Tous les détails dans notre [explication sur RedotPay](article:redotpay-tunisia).",
+      text: "Pour les résidents en Tunisie, aucun texte de la BCT n’autorise l’achat de crypto : le statut juridique reste flou (voir la section suivante). Rizon, une autre carte crypto, ne compte pas la Tunisie parmi les nationalités qu’elle accepte : ce guide n’en parle donc pas. Tous les détails dans notre [explication sur RedotPay](article:redotpay-tunisia).",
     },
     {
       type: "p",
@@ -219,8 +219,7 @@ export const fr: ArticleTranslation = {
         { label: "PayPal Italie : pagoPA", url: "https://www.paypal.com/it/digital-wallet/pagopa" },
         { label: "PayPal Tunisie : frais pour les particuliers", url: "https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN" },
         { label: "Sapienza : taxe régionale et timbre fiscal", url: "https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo" },
-        { label: "RedotPay : conditions d’utilisation", url: "https://www.redotpay.com/terms" },
-        { label: "Rizon : qui peut l’utiliser", url: "https://intercom.help/rizon/en/articles/13517852-is-rizon-available-for-me" },
+        { label: "RedotPay : conditions d’utilisation", url: "https://www.redotpay.com/terms" },
       ],
     },
     {

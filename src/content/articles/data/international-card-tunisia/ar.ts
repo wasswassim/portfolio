@@ -136,7 +136,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "بالنسبة للمقيمين في تونس، لا يوجد نص من البنك المركزي يرخص شراء العملات الرقمية، لذلك يبقى الوضع القانوني غير واضح (انظر القسم التالي). أما Rizon، وهي بطاقة رقمية أخرى، [فلا تقبل جوازات السفر التونسية](https://intercom.help/rizon/en/articles/13517852-is-rizon-available-for-me). التفاصيل في [شرحنا عن RedotPay](article:redotpay-tunisia).",
+      text: "بالنسبة للمقيمين في تونس، لا يوجد نص من البنك المركزي يرخص شراء العملات الرقمية، لذلك يبقى الوضع القانوني غير واضح (انظر القسم التالي). أما Rizon، وهي بطاقة رقمية أخرى، فلا تُدرج تونس ضمن الجنسيات التي تقبلها، لذلك لا يتناولها هذا الدليل. التفاصيل في [شرحنا عن RedotPay](article:redotpay-tunisia).",
     },
     {
       type: "p",
@@ -221,7 +221,6 @@ export const ar: ArticleTranslation = {
         { label: "PayPal تونس: معاليم الحسابات الشخصية", url: "https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN" },
         { label: "Sapienza: الضريبة الجهوية والطابع الجبائي", url: "https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo" },
         { label: "RedotPay: شروط الاستخدام", url: "https://www.redotpay.com/terms" },
-        { label: "Rizon: من يمكنه استعماله", url: "https://intercom.help/rizon/en/articles/13517852-is-rizon-available-for-me" },
       ],
     },
     {

@@ -115,6 +115,11 @@ export const fr: ArticleTranslation = {
       text: "Les étudiants de la Sapienza peuvent se faire aider sur le campus : sa [page sur le permis de séjour](https://www.uniroma1.it/en/pagina/residence-permit-study-purposes) indique le guichet de police du campus et le bureau immigration de la Questura (Via Teofilo Patini 23).",
     },
 
+    {
+      type: "p",
+      text: "Une fois que vous avez un bail et le récépissé de votre permis, vous pouvez aussi déclarer votre résidence à l'anagrafe : voir [comment demander la residenza à Rome](article:residenza-rome).",
+    },
+
     { type: "h2", id: "codice-fiscale", text: "3. Comment obtenir votre codice fiscale ?" },
     {
       type: "p",
@@ -125,10 +130,10 @@ export const fr: ArticleTranslation = {
       text: "Si vous en avez besoin plus tôt, allez dans n’importe quel bureau de l’**Agenzia delle Entrate** avec le formulaire AA4/8 et votre passeport avec le visa. Le [dépliant de l’Agenzia delle Entrate pour les citoyens étrangers](https://www.agenziaentrate.gov.it/portale/documents/20143/233505/Folder_CodiceFiscaleStranieri_08+03+23.pdf/218dc638-ced1-3b2d-f5f2-912686b1f7fe?t=1682082253716) explique la procédure. À la Sapienza, le guichet HELLO peut vous aider à remplir les formulaires.",
     },
 
-    { type: "h2", id: "bank-account", text: "4. Ouvrir un compte bancaire étudiant en Italie" },
+    { type: "h2", id: "bank-account", text: "4. Obtenir un IBAN dès les premières semaines" },
     {
       type: "p",
-      text: "Il vous faut un IBAN pour DiSCo, le loyer et un salaire. Deux options courantes :",
+      text: "Il vous faut un IBAN pour DiSCo, le loyer et un salaire.",
     },
     {
       type: "p",

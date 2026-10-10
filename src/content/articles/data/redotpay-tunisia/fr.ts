@@ -80,13 +80,13 @@ export const fr: ArticleTranslation = {
       caption: "Trois cartes sur lesquelles les Tunisiens s'interrogent, en octobre 2026.",
       head: ["", "RedotPay", "Rizon", "Carte technologique (CTI)"],
       rows: [
-        ["Qui peut l'ouvrir", "Les citoyens tunisiens ne sont pas exclus ; validation non garantie", "Pas les titulaires d'un passeport tunisien", "Résidents tunisiens ayant au moins le bac"],
+        ["Qui peut l'ouvrir", "Les citoyens tunisiens ne sont pas exclus ; validation non garantie", "Ne mentionne pas la Tunisie parmi les nationalités acceptées", "Résidents tunisiens ayant au moins le bac"],
         ["Réseau", "Visa", "Visa", "Non indiqué sur les pages des émetteurs"],
         ["Frais de carte", "10 USD virtuelle, 100 USD physique, pas de frais mensuels", "10 USD virtuelle (formule Standard)", "Selon l'émetteur (Banque Zitouna : 20 TND par an)"],
         ["Coût de change / conversion", "1,2 % de change + 1 % de conversion", "1,7 % + 0,10 USD (Standard)", "Taux et frais de votre banque"],
         ["Plafonds", "100 000 USD par opération", "Aucun plafond de carte indiqué", "1 000 TND par année civile"],
         ["Alimentation", "Dépôt crypto, carte bancaire (3 %), P2P", "USDC ou USDT uniquement", "Dinars dans une banque tunisienne ou à La Poste"],
-        ["Statut juridique pour un résident de Tunisie", "Aucun texte d'autorisation ; exposé au code des changes", "Fermé aux passeports tunisiens", "Légal, pour les usages listés par la BCT"],
+        ["Statut juridique pour un résident de Tunisie", "Aucun texte d'autorisation ; exposé au code des changes", "Tunisie absente des nationalités acceptées", "Légal, pour les usages listés par la BCT"],
         ["Principaux risques", "Gels, pas de garantie des dépôts, procès", "Refus KYC définitif", "Liste d'usages autorisés étroite"],
       ],
     },
@@ -103,7 +103,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "why-not-rizon", text: "4. Pourquoi ce guide ne recommande pas Rizon" },
     {
       type: "p",
-      text: "Rizon est une application de stablecoins avec une carte Visa, mais l'éligibilité dépend du **passeport**. La liste des nationalités acceptées de son centre d'aide (juillet 2026) ne comprend pas la Tunisie, ses conditions visent les résidents des États-Unis et d'Amérique latine, et son centre d'aide précise qu'un refus KYC est définitif. Un titulaire de passeport tunisien serait très probablement refusé : nous ne mettons donc pas de lien.",
+      text: "Rizon est une application de stablecoins avec une carte Visa, mais l'éligibilité dépend du **passeport**. Son centre d'aide (juillet 2026) ne mentionne pas la Tunisie parmi les nationalités acceptées, ses conditions visent les résidents des États-Unis et d'Amérique latine, et son centre d'aide précise qu'un refus KYC est définitif. Un titulaire de passeport tunisien serait très probablement refusé : nous ne mettons donc pas de lien.",
     },
 
     { type: "h2", id: "p2p-explained", text: "5. Le P2P expliqué : comment fonctionne une commande avec séquestre" },
@@ -111,7 +111,7 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Le P2P (pair à pair) consiste à acheter des cryptos directement à une autre personne sur une plateforme. Vous la payez en monnaie locale, et la plateforme bloque ses cryptos sous **séquestre** (escrow) jusqu'à ce qu'elle confirme votre paiement. Binance P2P et le P2P Marketplace de RedotPay fonctionnent ainsi. Les [conditions de Binance](https://www.binance.com/en/terms) excluent les utilisateurs pour qui l'usage serait illégal localement, même si leur pays ne figure pas sur sa [liste des pays interdits](https://www.binance.com/en/legal/list-of-prohibited-countries).",
     },
-    { type: "h3", id: "p2p-order-steps", text: "Le déroulement d'une commande sur Binance P2P" },
+    { type: "h3", id: "p2p-order-steps", text: "Ce que le séquestre protège (et ne protège pas) dans une commande P2P, pour les lecteurs vivant à l'étranger" },
     {
       type: "steps",
       items: [
@@ -124,7 +124,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "p2p-fees", text: "Les frais et la règle du nom" },
     {
       type: "p",
-      text: "Sur la [page des frais P2P de Binance](https://www.binance.com/en/fee/p2pFeeRate) (vérifiée le 10 octobre 2026), le preneur (taker) en zone P2P payait 0 %, l'annonceur (maker) 0,20 %, et l'Express coûtait 0,10 % au preneur. Le vrai coût est l'écart entre prix d'achat et de vente, plus les frais bancaires. Le nom du payeur doit correspondre au nom vérifié de la contrepartie. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges ([P2P Marketplace](https://www.redotpay.com/p2p-marketplace)) ; la prise en charge du dinar n'a pas pu être confirmée sur sa page actuelle.",
+      text: "Sur la [page des frais P2P de Binance](https://www.binance.com/en/fee/p2pFeeRate) (vérifiée le 10 octobre 2026), le preneur (taker) en zone P2P payait 0 %, l'annonceur (maker) 0,20 %, et l'Express coûtait 0,10 % au preneur. Le vrai coût est l'écart entre prix d'achat et de vente, plus les frais bancaires. Le nom du payeur doit correspondre au nom vérifié de la contrepartie. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges ([P2P Marketplace](https://www.redotpay.com/p2p-marketplace)). Acheter de la crypto avec des dinars depuis la Tunisie vous expose au regard du code des changes (voir la section 2) ; ce guide n'explique pas comment le faire.",
     },
     { type: "h3", id: "p2p-scams", text: "Les arnaques P2P courantes" },
     {
@@ -258,7 +258,7 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Carte RedotPay", value: "Visa ; 10 USD virtuelle, 100 USD physique, sans frais mensuels" },
         { label: "Coût d'un paiement en euros", value: "1,2 % de change + 1 % de conversion crypto" },
-        { label: "Rizon", value: "N'accepte pas les passeports tunisiens" },
+        { label: "Rizon", value: "Ne mentionne pas la Tunisie parmi les nationalités acceptées" },
         { label: "Résidents de Tunisie", value: "Aucun texte n'autorise les cryptos ; risque juridique" },
       ],
     },

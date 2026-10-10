@@ -116,6 +116,11 @@ export const ar: ArticleTranslation = {
       text: "يمكن لطلبة Sapienza الحصول على مساعدة داخل الحرم الجامعي: تذكر [صفحة الإقامة في Sapienza](https://www.uniroma1.it/en/pagina/residence-permit-study-purposes) شباك الشرطة في الجامعة ومكتب الهجرة في Questura (Via Teofilo Patini 23).",
     },
 
+    {
+      type: "p",
+      text: "بعد أن يكون لديك عقد كراء ووصل الإقامة، يمكنك أيضًا تسجيل إقامتك في الـ anagrafe: اطلع على [كيف تطلب الريزيدنزا في روما](article:residenza-rome).",
+    },
+
     { type: "h2", id: "codice-fiscale", text: "3. كيف تحصل على codice fiscale؟" },
     {
       type: "p",
@@ -126,10 +131,10 @@ export const ar: ArticleTranslation = {
       text: "إذا احتجته قبل ذلك، فاذهب إلى أي مكتب لـ **Agenzia delle Entrate** مع الاستمارة AA4/8 وجواز سفرك الذي يحمل التأشيرة. تشرح [مطوية Agenzia delle Entrate للمواطنين الأجانب](https://www.agenziaentrate.gov.it/portale/documents/20143/233505/Folder_CodiceFiscaleStranieri_08+03+23.pdf/218dc638-ced1-3b2d-f5f2-912686b1f7fe?t=1682082253716) الإجراء. وفي Sapienza يمكن لشباك HELLO مساعدتك في تعبئة الاستمارات.",
     },
 
-    { type: "h2", id: "bank-account", text: "4. فتح حساب بنكي للطالب في إيطاليا" },
+    { type: "h2", id: "bank-account", text: "4. احصل على IBAN في أسابيعك الأولى" },
     {
       type: "p",
-      text: "تحتاج إلى IBAN من أجل DiSCo والكراء والأجر. هناك خياران شائعان:",
+      text: "تحتاج إلى IBAN من أجل DiSCo والكراء والأجر.",
     },
     {
       type: "p",

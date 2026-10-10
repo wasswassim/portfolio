@@ -31,14 +31,13 @@ export default function GuidePanel({
   }, []);
 
   const toggle = () => {
-    setCollapsed((c) => {
-      try {
-        sessionStorage.setItem(KEY, c ? "0" : "1");
-      } catch {
-        // ignore
-      }
-      return !c;
-    });
+    const next = !collapsed;
+    setCollapsed(next);
+    try {
+      sessionStorage.setItem(KEY, next ? "1" : "0");
+    } catch {
+      // ignore
+    }
   };
 
   return (
@@ -56,7 +55,7 @@ export default function GuidePanel({
           <span className="blog-acc-icon" aria-hidden="true" />
         </button>
       </h2>
-      <div id="guide-panel" className="blog-guide-scroll" tabIndex={0} hidden={collapsed}>
+      <div id="guide-panel" className="blog-guide-scroll" tabIndex={0} role="region" aria-labelledby="guide-title" hidden={collapsed}>
         {children}
       </div>
     </>

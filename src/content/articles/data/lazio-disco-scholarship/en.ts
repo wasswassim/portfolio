@@ -6,11 +6,11 @@ export const en: ArticleTranslation = {
   title: "Lazio DiSCo Scholarship in Rome for Tunisian Students: Apply, ISEEUP and Payments",
   seoTitle: "Lazio DiSCo Scholarship in Rome for Tunisian Students",
   metaDescription:
-    "How Tunisian students get the DiSCo Lazio scholarship in Rome and across Lazio: amounts up to EUR 7,556.78, eligibility, 2027/28 calendar, ISEEUP and payments.",
+    "How Tunisian students get the DiSCo Lazio scholarship in Rome and across Lazio: amounts from EUR 6,571.11, eligibility, 2027/28 calendar, ISEEUP and payments.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["Lazio DiSCo scholarship for Tunisian students", "scholarships in Italy", "DiSCo Lazio", "ISEEUP", "ISEE parificato", "scholarship in Rome", "DiSCo scholarship Rome"],
   summary:
-    "The Lazio DiSCo scholarship gives an off-site student enrolled at a university in Rome or elsewhere in Lazio up to EUR 7,556.78 a year in cash plus two free meals a day (2026/27 values; EUR 6,571.11 at the standard rate), ranked for first-years on family economic data only. For 2027/28 you apply online around June-July 2027 without SPID, prepare your family documents from Tunisia in advance, then sign the ISEEUP at a DiSCo partner CAF after you arrive.",
+    "The Lazio DiSCo scholarship gives an off-site student enrolled at a university in Rome or elsewhere in Lazio EUR 6,571.11 a year in cash, or EUR 7,556.78 for the lowest family incomes, plus two free meals a day (2026/27 values; supplements and housing deductions change the final amount), ranked for first-years on family economic data only. For 2027/28 you apply online around June-July 2027 without SPID, prepare your family documents from Tunisia in advance, then sign the ISEEUP at a DiSCo partner CAF after you arrive.",
   body: [
     {
       type: "callout",
@@ -72,7 +72,7 @@ export const en: ArticleTranslation = {
     {
       type: "fees",
       title: "What you still pay to enrol, even as a DiSCo winner",
-      text: "Winners still pay the Lazio regional tax and the revenue stamp. If the payment is not validated, you lose the enrolment and the DiSCo benefits.",
+      text: "Winners still pay the Lazio regional tax and the revenue stamp. Tor Vergata's 2026/27 guide warns that if this payment is not validated you are not enrolled and lose the DiSCo benefits; check your university's rules.",
       feeIds: ["lazio-regional-tax", "uni-stamp"],
       total: true,
       tnd: true,
@@ -190,7 +190,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "In practice, payments can arrive a few weeks late, but rarely more than a month late. If your ISEEUP is signed correctly after you arrive, the first payments follow. To receive them you need an **IBAN** (Italian or SEPA account), added within 6 months of the award, and a **PEC** (certified email) or an elected domicile. See [how to open a bank account in Rome](article:arriving-in-rome#bank-account).",
+      text: "In practice, payments can arrive a few weeks late, but rarely more than a month late. If your ISEEUP is signed correctly after you arrive, the first payments follow. To receive them you need an **IBAN** (Italian or SEPA account), added within 6 months of the award, and a **PEC** (certified email) or an elected domicile. See [how to open a bank account in Rome](article:bank-account-italy-student).",
     },
     {
       type: "p",

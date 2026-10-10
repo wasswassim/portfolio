@@ -11,7 +11,7 @@ export const ar: ArticleTranslation = {
   imageAlt: "الكولوسيوم في روما وعلى جانبه علم إيطالي ضخم والحشود أمامه",
   keywords: ["كيف تطلب الريزيدنزا في روما", "residenza anagrafe Roma", "التسجيل في البلدية في روما للأجانب", "carta d'identità stranieri Roma", "بطاقة الهوية الإيطالية للأجانب", "TuPassi Roma anagrafe"],
   summary:
-    "للحصول على الـ residenza في روما، ترسل dichiarazione di residenza إلى Roma Capitale (عبر الإنترنت بـ SPID/CIE/CNS، أو بـ PEC، أو برسالة مضمونة، أو في الشباك) مع جواز سفرك وPermesso di soggiorno أو وصله وعقد الكراء أو تصريح المالك، والإجراء مجاني. تسجّلك البلدية خلال يومي عمل، وتتحقق Polizia Locale من العنوان خلال 45 يومًا، وبعدها يمكنك طلب بطاقة الهوية الإلكترونية (CIE) بـ 22.21 يورو.",
+    "للحصول على الـ residenza في روما، ترسل dichiarazione di residenza إلى Roma Capitale (عبر الإنترنت بـ SPID/CIE/CNS، أو بـ PEC، أو برسالة مضمونة، أو في الشباك) مع جواز سفرك وPermesso di soggiorno أو وصله (قد لا يكفي وصل الإذن الأول في كل Municipio، فتأكّد مسبقًا) وعقد الكراء أو تصريح المالك، والإجراء مجاني. تسجّلك البلدية خلال يومي عمل، وتتحقق Polizia Locale من العنوان خلال 45 يومًا، وبعدها يمكنك طلب بطاقة الهوية الإلكترونية (CIE) بـ 22.21 يورو.",
   body: [
     {
       type: "callout",
@@ -22,7 +22,7 @@ export const ar: ArticleTranslation = {
     { type: "p", text: "**عندك غرفة في روما وطلب إقامة (Permesso di soggiorno) جارٍ. كيف تسجّل الـ residenza في anagrafe، وهل يستحق الأمر ذلك؟**" },
     {
       type: "p",
-      text: "الجواب باختصار: املأ *dichiarazione di residenza*، وأرفق بها جواز سفرك وPermesso di soggiorno (أو وصله) وعقد الكراء أو تصريح المالك، ثم أرسلها عبر قناة **واحدة** فقط: خدمة Roma Capitale على الإنترنت، أو PEC، أو رسالة مضمونة، أو الشباك. الإجراء مجاني. تُسجَّل خلال يومي عمل، وتتحقق Polizia Locale خلال 45 يومًا من أنك تسكن فعلًا في العنوان.",
+      text: "الجواب باختصار: املأ *dichiarazione di residenza*، وأرفق بها جواز سفرك وPermesso di soggiorno (أو وصله، وقد لا يكفي وصل الإذن الأول في كل Municipio، فتأكّد مسبقًا) وعقد الكراء أو تصريح المالك، ثم أرسلها عبر قناة **واحدة** فقط: خدمة Roma Capitale على الإنترنت، أو PEC، أو رسالة مضمونة، أو الشباك. الإجراء مجاني. تُسجَّل خلال يومي عمل، وتتحقق Polizia Locale خلال 45 يومًا من أنك تسكن فعلًا في العنوان.",
     },
     {
       type: "p",

@@ -111,7 +111,7 @@ export const FEES = {
     label: { en: "Lazio regional tax for the right to study", fr: "Taxe régionale du Latium pour le droit aux études", ar: "الضريبة الجهوية لـ Lazio للحق في الدراسة" },
     amount: 140, currency: "EUR", per: "year",
     sourceUrl: "https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo", lastVerified: V,
-    note: { en: "Paid by every student, DiSCo winners included", fr: "Payée par tous les étudiants, boursiers DiSCo compris", ar: "يدفعها كل الطلبة، بمن فيهم المتحصلون على منحة DiSCo" },
+    note: { en: "Paid by almost every student, DiSCo winners included; exemptions are in your university's fee rules", fr: "Payée par presque tous les étudiants, boursiers DiSCo compris ; les exemptions figurent dans le règlement des frais de votre université", ar: "يدفعها تقريبًا كل الطلبة، بمن فيهم المتحصلون على منحة DiSCo؛ حالات الإعفاء مذكورة في نظام المعاليم بجامعتك" },
   },
   "uni-stamp": {
     label: { en: "Revenue stamp on enrolment", fr: "Timbre fiscal à l'inscription", ar: "الطابع الجبائي عند التسجيل" },
@@ -133,7 +133,7 @@ export const FEES = {
     label: { en: "Lease registration tax (2% of yearly rent, minimum)", fr: "Taxe d'enregistrement du bail (2 % du loyer annuel, minimum)", ar: "معلوم تسجيل عقد الكراء (2% من الكراء السنوي، الحد الأدنى)" },
     amount: 67, currency: "EUR", per: "once",
     sourceUrl: "https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario", lastVerified: V,
-    note: { en: "Plus a EUR 16 stamp per copy. Landlord and tenant are jointly liable", fr: "Plus un timbre de 16 EUR par exemplaire. Bailleur et locataire sont solidairement responsables", ar: "إضافة إلى طابع بـ 16 يورو لكل نسخة. المالك والمتسوغ مسؤولان بالتضامن" },
+    note: { en: "Plus a EUR 16 stamp per copy for every 4 pages. Landlord and tenant are jointly liable", fr: "Plus un timbre de 16 EUR par exemplaire, toutes les 4 pages. Bailleur et locataire sont solidairement responsables", ar: "إضافة إلى طابع بـ 16 يورو لكل نسخة عن كل 4 صفحات. المالك والمتسوغ مسؤولان بالتضامن" },
   },
   "nulla-osta-stamp": {
     label: { en: "Stamp on the nulla osta application (employer)", fr: "Timbre sur la demande de nulla osta (employeur)", ar: "الطابع على مطلب nulla osta (المشغّل)" },
@@ -166,12 +166,12 @@ export const FEES = {
   "pagopa-paypal": {
     label: { en: "pagoPA fee when paying with PayPal", fr: "Commission pagoPA pour un paiement PayPal", ar: "عمولة pagoPA عند الدفع بـ PayPal" },
     amount: 1.5, amountMax: 2.5, currency: "EUR", per: "once",
-    sourceUrl: "https://www.paypal.com/it/digital-wallet/pagopa", lastVerified: V,
+    sourceUrl: "https://www.pagopa.gov.it/it/cittadini/trasparenza-costi/", lastVerified: V,
     note: { en: "EUR 1.50 up to EUR 248.50, EUR 2.50 above (pagoPA provider list)", fr: "1,50 EUR jusqu'à 248,50 EUR, 2,50 EUR au-delà (liste des prestataires pagoPA)", ar: "1.50 يورو حتى 248.50 يورو، و2.50 يورو فوق ذلك (قائمة مزودي pagoPA)" },
   },
   "paypal-fx": {
-    label: { en: "PayPal currency conversion (Tunisian account)", fr: "Conversion de devises PayPal (compte tunisien)", ar: "تحويل العملة في PayPal (حساب تونسي)" },
-    amount: 3, currency: "%",
+    label: { en: "PayPal currency conversion when paying (Tunisian account)", fr: "Conversion de devises PayPal lors d'un paiement (compte tunisien)", ar: "تحويل العملة في PayPal عند الدفع (حساب تونسي)" },
+    amount: 4, currency: "%",
     sourceUrl: "https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN", lastVerified: V,
   },
   "redotpay-virtual": {

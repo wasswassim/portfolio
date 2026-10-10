@@ -81,13 +81,13 @@ export const en: ArticleTranslation = {
       caption: "Three cards Tunisians ask about, as of October 2026.",
       head: ["", "RedotPay", "Rizon", "Technology card (CTI)"],
       rows: [
-        ["Who can open it", "Tunisian citizens are not excluded; approval not guaranteed", "Not Tunisian passport holders", "Tunisian residents with at least the baccalaureate"],
+        ["Who can open it", "Tunisian citizens are not excluded; approval not guaranteed", "Does not list Tunisia among supported nationalities", "Tunisian residents with at least the baccalaureate"],
         ["Card network", "Visa", "Visa", "Not stated on issuer pages"],
         ["Card fee", "10 USD virtual, 100 USD physical, no monthly fee", "10 USD virtual (Standard plan)", "Varies by issuer (Banque Zitouna: 20 TND a year)"],
         ["FX / conversion cost", "1.2% FX + 1% conversion", "1.7% + 0.10 USD (Standard)", "Your bank's rate and fees"],
         ["Limits", "100,000 USD per transaction", "No card limit stated", "1,000 TND per calendar year"],
         ["How it is funded", "Crypto deposit, bank card (3%), P2P", "USDC or USDT only", "Dinars at a Tunisian bank or La Poste"],
-        ["Legal status for residents of Tunisia", "No authorising text; exposed under the exchange code", "Not open to Tunisian passports", "Legal, for the uses listed by the BCT"],
+        ["Legal status for residents of Tunisia", "No authorising text; exposed under the exchange code", "Tunisia not among supported nationalities", "Legal, for the uses listed by the BCT"],
         ["Main risks", "Freezes, no deposit insurance, lawsuit", "KYC rejection is final", "Narrow list of allowed uses"],
       ],
     },
@@ -104,7 +104,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "why-not-rizon", text: "4. Why this guide does not recommend Rizon" },
     {
       type: "p",
-      text: "Rizon is a stablecoin app with a Visa card, but it decides eligibility by **passport**. Its help centre's list of supported nationalities (July 2026) does not include Tunisia, its Terms say the product is intended for residents of the United States and Latin America, and its help centre says a KYC rejection is final. A Tunisian passport holder would very likely be refused, so we do not link to it.",
+      text: "Rizon is a stablecoin app with a Visa card, but it decides eligibility by **passport**. Its help centre (July 2026) does not list Tunisia among supported nationalities, its Terms say the product is intended for residents of the United States and Latin America, and its help centre says a KYC rejection is final. A Tunisian passport holder would very likely be refused, so we do not link to it.",
     },
 
     { type: "h2", id: "p2p-explained", text: "5. P2P explained: how an escrow order works" },
@@ -112,7 +112,7 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "P2P (peer-to-peer) means buying crypto directly from another person on a platform. You pay them in local money, and the platform holds their crypto in **escrow** until they confirm your payment. Binance P2P and RedotPay's P2P Marketplace both work this way. Binance's [Terms](https://www.binance.com/en/terms) exclude users for whom using it would be illegal locally, even if their country is not on its [prohibited list](https://www.binance.com/en/legal/list-of-prohibited-countries).",
     },
-    { type: "h3", id: "p2p-order-steps", text: "How an order works on Binance P2P" },
+    { type: "h3", id: "p2p-order-steps", text: "How escrow protects (and does not protect) a P2P order, for readers living abroad" },
     {
       type: "steps",
       items: [
@@ -125,7 +125,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "p2p-fees", text: "Fees and the name rule" },
     {
       type: "p",
-      text: "On Binance's [P2P fee page](https://www.binance.com/en/fee/p2pFeeRate) (checked 10 October 2026), a taker in the P2P zone paid 0%, a maker 0.20%, and Express cost the taker 0.10%. The real cost is the gap between buy and sell prices, plus bank fees. The payer's name must match the counterparty's verified name. RedotPay says its P2P \"does not guarantee the settlement\" of trades ([P2P Marketplace](https://www.redotpay.com/p2p-marketplace)); whether it supports dinars could not be confirmed on its current page.",
+      text: "On Binance's [P2P fee page](https://www.binance.com/en/fee/p2pFeeRate) (checked 10 October 2026), a taker in the P2P zone paid 0%, a maker 0.20%, and Express cost the taker 0.10%. The real cost is the gap between buy and sell prices, plus bank fees. The payer's name must match the counterparty's verified name. RedotPay says its P2P \"does not guarantee the settlement\" of trades ([P2P Marketplace](https://www.redotpay.com/p2p-marketplace)). Buying crypto with dinars from Tunisia is exposed under the exchange code (see section 2); this guide does not explain how to do it.",
     },
     { type: "h3", id: "p2p-scams", text: "Typical P2P scams" },
     {
@@ -259,7 +259,7 @@ export const en: ArticleTranslation = {
       items: [
         { label: "RedotPay card", value: "Visa; 10 USD virtual, 100 USD physical, no monthly fee" },
         { label: "Cost on a euro payment", value: "1.2% FX + 1% crypto conversion" },
-        { label: "Rizon", value: "Does not accept Tunisian passports" },
+        { label: "Rizon", value: "Does not list Tunisia among supported nationalities" },
         { label: "Residents of Tunisia", value: "No text authorises crypto; legally risky" },
       ],
     },

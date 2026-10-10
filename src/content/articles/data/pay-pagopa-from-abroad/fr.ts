@@ -10,7 +10,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["payer pagoPA", "pagoPA PayPal", "paiement pagoPA Tunisie", "PayPal Tunisie", "carte internationale pagoPA", "avviso di pagamento"],
   summary:
-    "Vous pouvez payer un avis pagoPA italien en restant en Tunisie sur checkout.pagopa.it, sans SPID, en saisissant le Codice Avviso et le code fiscal du créancier puis en choisissant PayPal ou une carte Visa, Mastercard ou autre carte internationale. PayPal coûte 1,50 EUR (2,50 EUR au-delà de 248,50 EUR), plus environ 3 % si PayPal convertit la devise ; payez en une fois, testez d’abord un petit avis et gardez une carte en secours.",
+    "Vous pouvez payer un avis pagoPA italien en restant en Tunisie sur checkout.pagopa.it, sans SPID, en saisissant le Codice Avviso et le code fiscal du créancier puis en choisissant PayPal ou une carte Visa, Mastercard ou autre carte internationale. PayPal coûte 1,50 EUR (2,50 EUR au-delà de 248,50 EUR), plus environ 4 % si PayPal convertit la devise ; payez en une fois, testez d’abord un petit avis et gardez une carte en secours.",
   body: [
     {
       type: "callout",
@@ -42,7 +42,7 @@ export const fr: ArticleTranslation = {
       items: [
         "**Sapienza** : vous générez le paiement sur Infostud et vous le réglez uniquement via pagoPA ; le règlement précise qu’aucun autre moyen n’est accepté ([règlement des frais Sapienza 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
         "**Tor Vergata** : les 30 EUR de frais de candidature se paient via pagoPA ([procédure de candidature](https://web.uniroma2.it/allegato/45147/contenuto/application_procedure)), et les frais d’inscription sont générés sur Delphi.",
-        "**Taxe régionale du Latium** : 140 EUR plus un timbre de 16 EUR, payés avec la première tranche par tout étudiant d’une université publique du Latium, candidats DiSCo compris ([Sapienza : taxe régionale et timbre](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
+        "**Taxe régionale du Latium** : 140 EUR plus un timbre de 16 EUR, payés avec la première tranche par presque tous les étudiants d’une université publique du Latium, candidats DiSCo compris ; les exonérations figurent dans le règlement des frais de votre université ([Sapienza : taxe régionale et timbre](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
       ],
     },
     {
@@ -121,7 +121,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les 3 % s’appliquent quand PayPal convertit la devise pour vous. Nous n’avons pas pu confirmer si c’est PayPal ou votre banque tunisienne qui convertit pour une carte en dinars : comparez le montant final sur votre relevé après votre paiement test.",
+      text: "Les 4 % environ s’appliquent quand PayPal convertit la devise pour vous. Nous n’avons pas pu confirmer si c’est PayPal ou votre banque tunisienne qui convertit pour une carte en dinars : comparez le montant final sur votre relevé après votre paiement test.",
     },
     {
       type: "callout",
@@ -212,7 +212,7 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Combien coûte un paiement pagoPA avec PayPal ?",
-          a: "1,50 EUR jusqu’à 248,50 EUR et 2,50 EUR au-delà (octobre 2026), plus environ 3 % si PayPal convertit la devise pour un compte tunisien.",
+          a: "1,50 EUR jusqu’à 248,50 EUR et 2,50 EUR au-delà (octobre 2026), plus environ 4 % si PayPal convertit la devise pour un compte tunisien.",
         },
         {
           q: "Combien de temps avant que l’université voie mon paiement ?",
@@ -261,7 +261,7 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Où payer", value: "checkout.pagopa.it, sans SPID" },
         { label: "Ce qu’il faut", value: "Codice Avviso + Codice Fiscale Ente Creditore, ou le QR code" },
-        { label: "Commission PayPal", value: "1,50 EUR (2,50 EUR au-delà de 248,50 EUR) + environ 3 % de conversion" },
+        { label: "Commission PayPal", value: "1,50 EUR (2,50 EUR au-delà de 248,50 EUR) + environ 4 % de conversion" },
         { label: "Paiement en plusieurs fois", value: "Réservé aux résidents en Italie : payez en une fois" },
       ],
     },

@@ -29,7 +29,7 @@ export const REFERRALS = {
       fr: "La page d'inscription de RedotPay affiche une récompense de bienvenue de 5 USD pour les nouveaux utilisateurs. Elle doit être utilisée sous 30 jours et ne paie pas les frais de carte. Le code ne peut être saisi qu'à l'inscription.",
       ar: "تعرض صفحة التسجيل في RedotPay مكافأة ترحيبية بقيمة 5 USD للمستخدمين الجدد. يجب استعمالها خلال 30 يومًا ولا يمكن دفع معلوم البطاقة بها. لا يمكن إدخال الرمز إلا عند التسجيل.",
     },
-    termsUrl: "https://helpcenter.redotpay.com/en/articles/10339297-how-do-i-use-my-5-usds-sign-up-reward",
+    termsUrl: "https://helpcenter.redotpay.com/en/articles/10339296-invite-friends-and-earn-rewards",
     lastVerified: "2026-10-10",
     articles: ["redotpay-tunisia"],
   },

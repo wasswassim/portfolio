@@ -4,7 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "carte-technologique-internationale",
   title: "Carte technologique internationale (CTI) en Tunisie : plafond, documents, usages et renouvellement",
-  seoTitle: "Carte technologique internationale (CTI) : plafond, demande",
+  seoTitle: "Carte technologique internationale en Tunisie : plafond",
   metaDescription:
     "La CTI donne aux résidents tunisiens bacheliers 1 000 TND par an (environ 297 EUR) pour payer en ligne. Documents, banque ou La Poste, usages et renouvellement.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
@@ -166,7 +166,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "paypal-link", text: "7. Associer la CTI à un compte PayPal tunisien" },
     {
       type: "p",
-      text: "Un compte PayPal ouvert en Tunisie peut **envoyer des paiements**, alimentés par une carte internationale associée comme la CTI. La réception d’argent n’est en général pas disponible. PayPal ajoute environ 3 % quand il convertit la devise, et pagoPA facture 1,50 à 2,50 EUR pour un paiement PayPal.",
+      text: "Un compte PayPal ouvert en Tunisie peut **envoyer des paiements**, alimentés par une carte internationale associée comme la CTI. La réception d’argent n’est en général pas disponible. PayPal ajoute environ 4 % quand il convertit la devise, et pagoPA facture 1,50 à 2,50 EUR pour un paiement PayPal.",
     },
     {
       type: "p",

@@ -10,7 +10,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["pay pagoPA from abroad", "pagoPA PayPal", "pay pagoPA from Tunisia", "pagoPA foreign card", "checkout.pagopa.it", "avviso di pagamento"],
   summary:
-    "You can pay an Italian pagoPA notice from Tunisia on checkout.pagopa.it, without SPID, by typing the Codice Avviso and the creditor's tax code and choosing PayPal or a Visa, Mastercard or other international card. PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 3% if PayPal converts the currency; pay in full, test with a small notice first and keep a card as a backup.",
+    "You can pay an Italian pagoPA notice from Tunisia on checkout.pagopa.it, without SPID, by typing the Codice Avviso and the creditor's tax code and choosing PayPal or a Visa, Mastercard or other international card. PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 4% if PayPal converts the currency; pay in full, test with a small notice first and keep a card as a backup.",
   body: [
     {
       type: "callout",
@@ -42,7 +42,7 @@ export const en: ArticleTranslation = {
       items: [
         "**Sapienza**: you generate the payment on Infostud and pay it only through pagoPA; the rules say no other method is accepted ([Sapienza fee rules 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
         "**Tor Vergata**: the EUR 30 application fee is paid through pagoPA ([application procedure](https://web.uniroma2.it/allegato/45147/contenuto/application_procedure)), and enrolment fees are generated on Delphi.",
-        "**Lazio regional tax**: EUR 140 plus a EUR 16 stamp, paid with the first instalment by every student at a public university in Lazio, DiSCo applicants included ([Sapienza: regional tax and stamp](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
+        "**Lazio regional tax**: EUR 140 plus a EUR 16 stamp, paid with the first instalment by almost every student at a public university in Lazio, DiSCo applicants included; exemptions are listed in your university's fee rules ([Sapienza: regional tax and stamp](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
       ],
     },
     {
@@ -121,7 +121,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The 3% applies when PayPal converts the currency for you. Whether PayPal or your Tunisian bank converts a dinar card could not be confirmed, so compare the final amount on your bank statement after your test payment.",
+      text: "The fee of about 4% applies when PayPal converts the currency for you. Whether PayPal or your Tunisian bank converts a dinar card could not be confirmed, so compare the final amount on your bank statement after your test payment.",
     },
     {
       type: "callout",
@@ -212,7 +212,7 @@ export const en: ArticleTranslation = {
         },
         {
           q: "How much does it cost to pay pagoPA with PayPal?",
-          a: "EUR 1.50 up to EUR 248.50 and EUR 2.50 above (as of October 2026), plus about 3% if PayPal converts the currency for a Tunisian account.",
+          a: "EUR 1.50 up to EUR 248.50 and EUR 2.50 above (as of October 2026), plus about 4% if PayPal converts the currency for a Tunisian account.",
         },
         {
           q: "How long until the university sees my payment?",
@@ -261,7 +261,7 @@ export const en: ArticleTranslation = {
       items: [
         { label: "Where to pay", value: "checkout.pagopa.it, no SPID needed" },
         { label: "What you need", value: "Codice Avviso + Codice Fiscale Ente Creditore, or the QR code" },
-        { label: "PayPal fee", value: "EUR 1.50 (EUR 2.50 above EUR 248.50) + about 3% conversion" },
+        { label: "PayPal fee", value: "EUR 1.50 (EUR 2.50 above EUR 248.50) + about 4% conversion" },
         { label: "Instalments", value: "Italian residents only: pay in full from Tunisia" },
       ],
     },
