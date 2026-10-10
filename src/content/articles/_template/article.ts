@@ -7,7 +7,7 @@ import { fr } from "./fr";
 // facts are checked against an official source, then to that date.
 export const articleTemplate: Article = {
   id: "template-article",
-  category: "daily-life", // documents | work | language | daily-life
+  category: "daily-life", // documents | work | studies | language | daily-life
   publishedAt: "2026-01-01",
   updatedAt: "2026-01-01",
   lastVerified: null,

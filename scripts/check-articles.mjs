@@ -112,6 +112,7 @@ for (const folder of folders) {
       headings: [...t.matchAll(/\bid:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]).sort().join(","),
       figures,
       tiles,
+      tables: count(t, /type:\s*"table"/g),
       videos,
     };
   }
@@ -123,6 +124,7 @@ for (const folder of folders) {
     const b = structure[lang];
     if (a.headings !== b.headings) errors.push(id + ": heading ids differ between " + langs[0] + " and " + lang);
     if (a.figures !== b.figures) errors.push(id + ": " + langs[0] + " has " + a.figures + " pictures, " + lang + " has " + b.figures);
+    if (a.tables !== b.tables) errors.push(id + ": " + langs[0] + " has " + a.tables + " tables, " + lang + " has " + b.tables);
     if (a.tiles !== b.tiles) errors.push(id + ": " + langs[0] + " has " + a.tiles + " gallery photos, " + lang + " has " + b.tiles);
     if (a.videos !== b.videos) errors.push(id + ": " + langs[0] + " has " + a.videos + " videos, " + lang + " has " + b.videos);
   }

@@ -13,6 +13,7 @@ export const en = {
   categories: {
     documents: "Documents",
     work: "Work",
+    studies: "Studies",
     language: "Language",
     "daily-life": "Daily life",
   } satisfies Record<CategoryId, string>,

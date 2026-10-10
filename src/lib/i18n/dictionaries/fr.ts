@@ -13,6 +13,7 @@ export const fr: Dictionary = {
   categories: {
     documents: "Documents",
     work: "Travail",
+    studies: "Études",
     language: "Langue",
     "daily-life": "Vie quotidienne",
   },

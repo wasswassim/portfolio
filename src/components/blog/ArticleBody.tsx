@@ -75,6 +75,25 @@ function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dict
           </figcaption>
         </figure>
       );
+    case "table":
+      // Plain table; the wrapper scrolls sideways on narrow screens instead of squeezing the columns
+      return (
+        <figure className="blog-table">
+          <figcaption>{t(block.caption)}</figcaption>
+          <div className="blog-table-scroll" tabIndex={0} role="region" aria-label={block.caption}>
+            <table>
+              <thead>
+                <tr>{block.head.map((h, i) => <th key={i} scope="col">{t(h)}</th>)}</tr>
+              </thead>
+              <tbody>
+                {block.rows.map((row, r) => (
+                  <tr key={r}>{row.map((cell, c) => (c === 0 ? <th key={c} scope="row">{t(cell)}</th> : <td key={c}>{t(cell)}</td>))}</tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </figure>
+      );
     case "gallery":
       // Bento grid: one large tile and smaller ones, so every trade shows without a long stack of photos
       return (

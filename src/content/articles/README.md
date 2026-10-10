@@ -10,7 +10,7 @@ npm run new-article -- my-article-id work
 ```
 
 - `my-article-id`: lowercase letters, digits and hyphens. It becomes the folder name and is shared by all languages.
-- Category: `documents`, `work`, `language` or `daily-life` (default `daily-life`).
+- Category: `documents`, `work`, `studies`, `language` or `daily-life` (default `daily-life`).
 
 This copies `_template/` into `data/my-article-id/` (`article.ts`, `en.ts`, `fr.ts`, `ar.ts`) and registers it in `index.ts`.
 Replace every `TODO`. `npm run check:articles` (and every `npm run build`) fails while a `TODO` or a template rule is broken, so an unfinished post cannot be deployed.

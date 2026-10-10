@@ -1,6 +1,6 @@
 import type { Lang } from "@/lib/i18n/config";
 
-export type CategoryId = "documents" | "work" | "language" | "daily-life";
+export type CategoryId = "documents" | "work" | "studies" | "language" | "daily-life";
 
 /**
  * Article body as typed blocks. Text fields accept light inline markup:
@@ -63,6 +63,15 @@ export type Block =
         label: string;
         credit: { text: string; url: string };
       }[];
+    }
+  | {
+      type: "table";
+      /** Short sentence above the table saying what it shows */
+      caption: string;
+      /** Column headings (2 to 4 columns keep it readable on phones) */
+      head: string[];
+      /** One array per row, same length as head; cells accept inline markup */
+      rows: string[][];
     }
   | { type: "quote"; text: string; cite?: string }
   // id + title give the block its own h2 (and a table-of-contents entry); without them a default label is used

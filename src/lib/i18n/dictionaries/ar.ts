@@ -13,6 +13,7 @@ export const ar: Dictionary = {
   categories: {
     documents: "الوثائق",
     work: "العمل",
+    studies: "الدراسة",
     language: "اللغة",
     "daily-life": "الحياة اليومية",
   },

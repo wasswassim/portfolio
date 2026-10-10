@@ -18,6 +18,11 @@ for (const article of ARTICLES) {
     const ids = headingIdsOf([...t.body, ...(t.guide ?? [])]);
     const dupe = ids.find((id, i) => ids.indexOf(id) !== i);
     if (dupe) throw new Error(`Article "${article.id}" (${lang}): duplicate heading id "${dupe}"`);
+    for (const b of [...t.body, ...(t.guide ?? [])]) {
+      if (b.type === "table" && b.rows.some((r) => r.length !== b.head.length)) {
+        throw new Error(`Article "${article.id}" (${lang}): a table row does not have ${b.head.length} cells ("${b.caption}")`);
+      }
+    }
   }
 }
 

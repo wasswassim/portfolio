@@ -1,7 +1,7 @@
 // Scaffold a new article from the template and register it.
 //   npm run new-article -- <id> [category]
 //   id: lowercase letters, digits, hyphens (e.g. renting-a-flat-in-milan)
-//   category: documents | work | language | daily-life (default daily-life)
+//   category: documents | work | studies | language | daily-life (default daily-life)
 // Add --root <dir> to run against another project copy (used for testing).
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
@@ -12,7 +12,7 @@ const rootFlag = args.indexOf("--root");
 const root = rootFlag >= 0 ? resolve(args.splice(rootFlag, 2)[1]) : resolve(fileURLToPath(new URL("..", import.meta.url)));
 const [id, category = "daily-life"] = args;
 
-const CATEGORIES = ["documents", "work", "language", "daily-life"];
+const CATEGORIES = ["documents", "work", "studies", "language", "daily-life"];
 const fail = (msg) => {
   console.error("error: " + msg);
   process.exit(1);
