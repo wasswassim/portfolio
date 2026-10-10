@@ -81,6 +81,18 @@ export const ar: ArticleTranslation = {
       text: "أغلب الطلاب يسكنون في غرفة داخل شقة مشتركة. هذه هي الأماكن المعتادة للبحث:",
     },
     {
+      type: "figure",
+      src: "/blog/garbatella-rome.webp",
+      width: 1600,
+      height: 1200,
+      alt: "عمارات سكنية بشرفات ونباتات في حي Garbatella بروما",
+      caption: "Garbatella، حي سكني قريب من منطقة Ostiense التابعة لـ Roma Tre. عاين الغرفة دائمًا، حضوريًا أو عبر مكالمة فيديو، قبل أن تدفع أي مبلغ.",
+      credit: {
+        text: "الصورة: Filadelfia، CC BY-SA 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Garbatella_2018.jpg",
+      },
+    },
+    {
       type: "table",
       caption: "أين تبحث عن غرفة في روما، وما الذي يجب الانتباه إليه.",
       head: ["الخيار", "مناسب لـ", "انتبه إلى"],

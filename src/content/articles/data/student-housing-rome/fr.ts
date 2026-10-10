@@ -80,6 +80,18 @@ export const fr: ArticleTranslation = {
       text: "La plupart des étudiants finissent dans une chambre en colocation. Voici où chercher en général :",
     },
     {
+      type: "figure",
+      src: "/blog/garbatella-rome.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Des immeubles d'habitation avec balcons et plantes dans le quartier de la Garbatella à Rome",
+      caption: "La Garbatella, un quartier résidentiel voisin du secteur Ostiense de Roma Tre. Visitez toujours une chambre, sur place ou en appel vidéo, avant de payer quoi que ce soit.",
+      credit: {
+        text: "Photo : Filadelfia, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Garbatella_2018.jpg",
+      },
+    },
+    {
       type: "table",
       caption: "Où chercher une chambre à Rome, et à quoi faire attention.",
       head: ["Option", "Idéal pour", "Attention"],

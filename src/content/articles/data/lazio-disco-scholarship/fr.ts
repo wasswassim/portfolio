@@ -34,6 +34,18 @@ export const fr: ArticleTranslation = {
       text: "Si vous résidez à l'étranger et qu'au moins la moitié de votre famille vit à l'étranger, DiSCo vous considère automatiquement comme **fuori sede** (hors site), sans contrat de location (sauf pour les cours en ligne). Dans l'appel 2026/27, un étudiant fuori sede reçoit :",
     },
     {
+      type: "figure",
+      src: "/blog/disco-residence-tor-vergata.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Un bâtiment de résidence et de restaurant universitaire sous des pins parasols à Tor Vergata, Rome",
+      caption: "Une résidence et un restaurant universitaires à Tor Vergata, gérés par l'organisme régional aujourd'hui appelé DiSCo Lazio. Le logement se demande dans la même candidature que la bourse.",
+      credit: {
+        text: "Photo : Gigi er Gigliola, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Residenze_Mense_Adisu_Tor_Vergata.jpg",
+      },
+    },
+    {
       type: "ul",
       items: [
         "**6 571,11 EUR par an**, portés à 7 556,78 EUR (115 %) si votre ISEE ne dépasse pas 14 169,94 EUR, et réduits progressivement jusqu'à 3 285,60 EUR si votre ISEE atteint 18 893,25 EUR ou plus.",

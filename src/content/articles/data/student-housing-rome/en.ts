@@ -80,6 +80,18 @@ export const en: ArticleTranslation = {
       text: "Most students end up in a room in a shared flat. These platforms are the usual places to look:",
     },
     {
+      type: "figure",
+      src: "/blog/garbatella-rome.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Residential buildings with balconies and plants in the Garbatella district of Rome",
+      caption: "Garbatella, a residential district next to Roma Tre's Ostiense area. Always see a room, in person or by video call, before you pay anything.",
+      credit: {
+        text: "Photo: Filadelfia, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Garbatella_2018.jpg",
+      },
+    },
+    {
       type: "table",
       caption: "Where to look for a room in Rome, and what to watch out for.",
       head: ["Option", "Good for", "Watch out"],

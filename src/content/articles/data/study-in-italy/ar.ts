@@ -35,6 +35,18 @@ export const ar: ArticleTranslation = {
       text: "هذه السلسلة موجهة للطلاب التونسيين المتحصلين على الباكالوريا أو على شهادة جامعية والراغبين في الدراسة حضوريًا في روما أو في جهة Lazio، في الإجازة (Laurea) أو الماجستير (Laurea Magistrale) أو الدكتوراه (Dottorato).",
     },
     {
+      type: "figure",
+      src: "/blog/university-library-italy.webp",
+      width: 1600,
+      height: 1068,
+      alt: "فضاء للمطالعة بأرائك برتقالية ورفوف كتب في مكتبة جامعية في إيطاليا",
+      caption: "مكتبة جامعية في إيطاليا (جامعة Bozen-Bolzano الحرة، فرع Brixen). كل المسار في هذا الدليل يبدأ باختيار التكوين.",
+      credit: {
+        text: "الصورة: Pressestelle unibz، CC BY-SA 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Universit%C3%A4tsbibliothek_Bozen_-_Standort_Brixen,_Innenansicht.jpg",
+      },
+    },
+    {
       type: "ul",
       items: [
         "**الجامعات العمومية:** Sapienza وTor Vergata وRoma Tre.",

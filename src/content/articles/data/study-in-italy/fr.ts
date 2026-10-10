@@ -34,6 +34,18 @@ export const fr: ArticleTranslation = {
       text: "Cette série s'adresse aux étudiants tunisiens titulaires du bac ou d'un diplôme universitaire qui veulent étudier en présentiel à Rome ou dans le Latium, en Licence (Laurea), en Master (Laurea Magistrale) ou en doctorat (Dottorato).",
     },
     {
+      type: "figure",
+      src: "/blog/university-library-italy.webp",
+      width: 1600,
+      height: 1068,
+      alt: "Espace de travail avec des canapés orange et des étagères dans une bibliothèque universitaire en Italie",
+      caption: "Une bibliothèque universitaire en Italie (Université libre de Bozen-Bolzano, campus de Brixen). Tout le parcours de ce guide commence par le choix d'une formation.",
+      credit: {
+        text: "Photo : Pressestelle unibz, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Universit%C3%A4tsbibliothek_Bozen_-_Standort_Brixen,_Innenansicht.jpg",
+      },
+    },
+    {
       type: "ul",
       items: [
         "**Universités publiques :** Sapienza, Tor Vergata et Roma Tre.",

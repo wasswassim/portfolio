@@ -341,12 +341,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 /* ── Gallery: bento grid (one large lead tile + small tiles with a label) ──
    Fixed row heights and object-fit keep it compact and shift-free; 3 columns on phones,
-   4 from 40rem. With 8 small tiles the last one widens on phones so the grid has no hole. */
+   4 from 40rem. On phones the last tile widens when the small tiles do not fill the last row
+   (9 photos: last spans 2; 5 photos: last spans 3), so the grid has no hole. */
 .blog-gallery { margin-block: 2rem; }
 .blog-gallery-grid { list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 6rem; gap: 0.45rem; }
 .blog-gallery-tile { position: relative; overflow: hidden; border-radius: 0.7rem; border: 1px solid var(--border); background: var(--surface); }
 .blog-gallery-tile--lead { grid-column: span 3; grid-row: span 2; }
 .blog-gallery-tile:last-child:nth-child(3n) { grid-column: span 2; }
+.blog-gallery-tile:last-child:nth-child(3n+2) { grid-column: span 3; }
 .blog-gallery-tile img { display: block; inline-size: 100%; block-size: 100%; object-fit: cover; transition: transform 0.6s ease; }
 .blog-gallery-tile:hover img { transform: scale(1.05); }
 .blog-gallery-label {
@@ -362,7 +364,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 @media (min-width: 40rem) {
   .blog-gallery-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: 7.5rem; }
   .blog-gallery-tile--lead { grid-column: span 2; }
-  .blog-gallery-tile:last-child:nth-child(3n) { grid-column: auto; }
+  .blog-gallery-tile:last-child:nth-child(3n), .blog-gallery-tile:last-child:nth-child(3n+2) { grid-column: auto; }
 }
 
 /* ── Series: index strip under the byline, next/previous card after the article ──

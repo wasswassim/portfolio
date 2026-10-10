@@ -35,6 +35,18 @@ export const ar: ArticleTranslation = {
       text: "إذا كنت تقيم في الخارج ونصف عائلتك على الأقل يعيش في الخارج، تعتبرك DiSCo تلقائيًا **fuori sede** (من خارج المدينة) دون الحاجة إلى عقد كراء (باستثناء الدراسة عن بعد). في إعلان 2026/27 يحصل الطالب fuori sede على:",
     },
     {
+      type: "figure",
+      src: "/blog/disco-residence-tor-vergata.webp",
+      width: 1600,
+      height: 1200,
+      alt: "مبنى إقامة ومطعم جامعي تحت أشجار الصنوبر في Tor Vergata بروما",
+      caption: "إقامة ومطعم جامعيان في Tor Vergata يديرهما الهيكل الجهوي المسمى اليوم DiSCo Lazio. يُطلب السكن في نفس مطلب المنحة.",
+      credit: {
+        text: "الصورة: Gigi er Gigliola، CC BY-SA 3.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Residenze_Mense_Adisu_Tor_Vergata.jpg",
+      },
+    },
+    {
       type: "ul",
       items: [
         "**6,571.11 يورو في السنة**، ترتفع إلى 7,556.78 يورو (115%) إذا كان ISEE لديك لا يتجاوز 14,169.94 يورو، وتنخفض تدريجيًا حتى 3,285.60 يورو إذا بلغ 18,893.25 يورو أو أكثر.",

@@ -48,6 +48,18 @@ export const ar: ArticleTranslation = {
       type: "p",
       text: "يجب أن تقدم الطلب خلال **8 أيام عمل** من دخولك إلى إيطاليا ([Polizia di Stato](https://www.poliziadistato.it/articolo/225)).",
     },
+    {
+      type: "figure",
+      src: "/blog/post-office-rome.webp",
+      width: 1600,
+      height: 1187,
+      alt: "مكتب البريد المركزي في Piazza di San Silvestro بروما تحت سماء زرقاء",
+      caption: "مكتب البريد المركزي في روما، Piazza di San Silvestro. يُودَع ظرف طلب الإقامة في مكتب بريد فيه شباك Sportello Amico.",
+      credit: {
+        text: "الصورة: Frank C. Müller, Baden-Baden، CC BY-SA 3.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Rom_2013_014_Piazza_di_San_Silvestro_Ufficio_Postale_(fcm).jpg",
+      },
+    },
     { type: "h3", id: "step-postal-kit", text: "الخطوة 1: احصل على الظرف ذي الشريط الأصفر" },
     {
       type: "p",
@@ -175,6 +187,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "يمكن لبنكك في تونس أن يحوّل منحة استقرار (allocation d'installation) تصل إلى **6,000 دينار** في السنة الجامعية (حوالي 1,782 يورو حسب سعر البنك المركزي التونسي في 7 أكتوبر 2026). التحويلات الشهرية لا تبدأ إلا بعد وصول وثائق التسجيل إلى البنك، لذلك يجب أن يكفيك هذا المبلغ حتى ذلك الحين.",
+    },
+    {
+      type: "figure",
+      src: "/blog/tram-rome.webp",
+      width: 1600,
+      height: 1067,
+      alt: "ترامواي أخضر وفضي على الخط 8 في Largo di Torre Argentina بروما",
+      caption: "ترامواي الخط 8 في Largo di Torre Argentina. تحقق من السعر الحالي للاشتراك الشهري لدى ATAC قبل وضع ميزانيتك.",
+      credit: {
+        text: "الصورة: Mariordo (Mario Roberto Durán Ortiz)، CC BY-SA 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Roma_ATAC_tram_04_2016_6386.JPG",
+      },
     },
     {
       type: "table",

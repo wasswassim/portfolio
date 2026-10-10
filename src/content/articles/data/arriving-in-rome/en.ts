@@ -47,6 +47,18 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "You must apply within **8 working days** of entering Italy ([Polizia di Stato](https://www.poliziadistato.it/articolo/225)).",
     },
+    {
+      type: "figure",
+      src: "/blog/post-office-rome.webp",
+      width: 1600,
+      height: 1187,
+      alt: "The central post office on Piazza di San Silvestro in Rome under a blue sky",
+      caption: "Rome's central post office on Piazza di San Silvestro. The residence permit kit is handed in at a post office with a Sportello Amico desk.",
+      credit: {
+        text: "Photo: Frank C. Müller, Baden-Baden, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Rom_2013_014_Piazza_di_San_Silvestro_Ufficio_Postale_(fcm).jpg",
+      },
+    },
     { type: "h3", id: "step-postal-kit", text: "Step 1: get the yellow-band kit" },
     {
       type: "p",
@@ -174,6 +186,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Your bank in Tunisia can send an installation allowance of up to **6,000 TND** per academic year (about EUR 1,782 at the BCT rate of 7 October 2026). The monthly transfers only start after your enrolment papers reach the bank, so this money must last until then.",
+    },
+    {
+      type: "figure",
+      src: "/blog/tram-rome.webp",
+      width: 1600,
+      height: 1067,
+      alt: "A green and silver line 8 tram at Largo di Torre Argentina in Rome",
+      caption: "A line 8 tram at Largo di Torre Argentina. Check ATAC's current price for a monthly pass before you plan your budget.",
+      credit: {
+        text: "Photo: Mariordo (Mario Roberto Durán Ortiz), CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Roma_ATAC_tram_04_2016_6386.JPG",
+      },
     },
     {
       type: "table",

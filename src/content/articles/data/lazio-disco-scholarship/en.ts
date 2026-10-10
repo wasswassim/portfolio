@@ -34,6 +34,18 @@ export const en: ArticleTranslation = {
       text: "If you live abroad and at least half of your family lives abroad, DiSCo treats you as **fuori sede** (off-site) automatically, without a rental contract (except for online courses). In the 2026/27 call, a fuori sede student gets:",
     },
     {
+      type: "figure",
+      src: "/blog/disco-residence-tor-vergata.webp",
+      width: 1600,
+      height: 1200,
+      alt: "A student residence and canteen building under umbrella pines at Tor Vergata, Rome",
+      caption: "A student residence and canteen at Tor Vergata, run by the regional body now called DiSCo Lazio. A housing place is requested in the same scholarship application.",
+      credit: {
+        text: "Photo: Gigi er Gigliola, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Residenze_Mense_Adisu_Tor_Vergata.jpg",
+      },
+    },
+    {
       type: "ul",
       items: [
         "**EUR 6,571.11 a year**, rising to EUR 7,556.78 (115%) if your ISEE is up to EUR 14,169.94, and falling gradually to EUR 3,285.60 if it is EUR 18,893.25 or more.",

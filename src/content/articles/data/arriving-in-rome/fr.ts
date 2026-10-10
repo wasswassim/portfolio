@@ -47,6 +47,18 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Vous devez faire la demande dans les **8 jours ouvrables** suivant votre entrée en Italie ([Polizia di Stato](https://www.poliziadistato.it/articolo/225)).",
     },
+    {
+      type: "figure",
+      src: "/blog/post-office-rome.webp",
+      width: 1600,
+      height: 1187,
+      alt: "La poste centrale de la Piazza di San Silvestro à Rome sous un ciel bleu",
+      caption: "La poste centrale de Rome, Piazza di San Silvestro. Le kit du permis de séjour se dépose dans un bureau de poste doté d'un guichet Sportello Amico.",
+      credit: {
+        text: "Photo : Frank C. Müller, Baden-Baden, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Rom_2013_014_Piazza_di_San_Silvestro_Ufficio_Postale_(fcm).jpg",
+      },
+    },
     { type: "h3", id: "step-postal-kit", text: "Étape 1 : récupérer le kit à bande jaune" },
     {
       type: "p",
@@ -174,6 +186,18 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Votre banque en Tunisie peut envoyer une allocation d’installation allant jusqu’à **6 000 TND** par année universitaire (environ 1 782 EUR au taux BCT du 7 octobre 2026). Les virements mensuels ne commencent qu’après l’arrivée de vos papiers d’inscription à la banque : cet argent doit tenir jusque-là.",
+    },
+    {
+      type: "figure",
+      src: "/blog/tram-rome.webp",
+      width: 1600,
+      height: 1067,
+      alt: "Un tram vert et argent de la ligne 8 au Largo di Torre Argentina à Rome",
+      caption: "Un tram de la ligne 8 au Largo di Torre Argentina. Vérifiez le prix actuel de l'abonnement mensuel ATAC avant de faire votre budget.",
+      credit: {
+        text: "Photo : Mariordo (Mario Roberto Durán Ortiz), CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Roma_ATAC_tram_04_2016_6386.JPG",
+      },
     },
     {
       type: "table",

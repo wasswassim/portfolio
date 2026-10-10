@@ -34,6 +34,18 @@ export const en: ArticleTranslation = {
       text: "This series is for Tunisian students who hold the bac or a university degree and want to study in person in Rome or Lazio, for a Bachelor (Laurea), a Master (Laurea Magistrale) or a PhD (Dottorato).",
     },
     {
+      type: "figure",
+      src: "/blog/university-library-italy.webp",
+      width: 1600,
+      height: 1068,
+      alt: "Study area with orange sofas and bookshelves in a university library in Italy",
+      caption: "A university library in Italy (Free University of Bozen-Bolzano, Brixen campus). Every path in this guide starts with choosing a course.",
+      credit: {
+        text: "Photo: Pressestelle unibz, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Universit%C3%A4tsbibliothek_Bozen_-_Standort_Brixen,_Innenansicht.jpg",
+      },
+    },
+    {
       type: "ul",
       items: [
         "**Public universities:** Sapienza, Tor Vergata and Roma Tre.",
