@@ -17,9 +17,12 @@ export default function OfferButtons({ dict }: { lang: Lang; dict: Dictionary })
               target="_blank"
               style={{ "--ref-btn": r.brand.button } as React.CSSProperties}
             >
-              <span className="blog-offer-ring" aria-hidden="true" />
-              {/* eslint-disable-next-line @next/next/no-img-element -- tiny static logo */}
-              <img src={r.logo} alt="" width={64} height={64} loading="lazy" />
+              {/* Logo and its ring float together; on hover a brand-coloured arc runs around the ring (CSS only) */}
+              <span className="blog-offer-logo">
+                <span className="blog-offer-ring" aria-hidden="true" />
+                {/* eslint-disable-next-line @next/next/no-img-element -- tiny static logo */}
+                <img src={r.logo} alt="" width={64} height={64} loading="lazy" />
+              </span>
               <span className="blog-offer-name">{r.name}</span>
               <span className="blog-sr">{" " + dict.referral.newTab}</span>
             </a>
