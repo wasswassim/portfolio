@@ -60,6 +60,18 @@ export const ar: ArticleTranslation = {
       text: "هذه أسهل طريق قانونية. يسمح [منشور البنك المركزي 2016-09](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf)، الملحق 1، البند 13، للمقيمين بتحويل معاليم المناظرات والامتحانات ودراسة الملفات للدراسة في الخارج، مقابل فاتورة. ولا يحدد النص **أي سقف ثابت**.",
     },
     {
+      type: "figure",
+      src: "/blog/avenue-habib-bourguiba-tunis.webp",
+      width: 1600,
+      height: 1200,
+      alt: "منظر جوي لشارع الحبيب بورقيبة المشجَّر وسط تونس العاصمة، وعلى اليمين برج زجاجي",
+      caption: "شارع الحبيب بورقيبة وسط تونس العاصمة. يُطلب التحويل من البنك الذي يحتفظ بملف دراستك، فهو أول مكان تقصده.",
+      credit: {
+        text: "الصورة: Dacoslett، CC0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:TunisAveHabibBourguiba.jpg",
+      },
+    },
+    {
       type: "p",
       text: "أما رسوم الدراسة فتمر عبر **ملف الدراسة** المفتوح في بنك واحد طوال السنة الجامعية. وحسب [منشور البنك المركزي 2025-10](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf)، تُدفع مقابل فاتورة الجامعة، وتضاف إليها منحتان. يشرح [قسم الحساب المجمد](article:italy-student-visa#blocked-account) كيف تفتح هذا الملف.",
     },
@@ -111,6 +123,18 @@ export const ar: ArticleTranslation = {
       text: "حساب PayPal التونسي يسمح **بالدفع والإرسال**، لكنه لا يسمح باستقبال المال. وهذا لا يضر هنا، لأنك تريد الدفع فقط. اربط به بطاقتك التكنولوجية كمصدر للتمويل.",
     },
     {
+      type: "figure",
+      src: "/blog/logos/paypal.webp",
+      width: 1600,
+      height: 400,
+      alt: "شعار PayPal",
+      caption: "PayPal علامة تجارية مسجلة لشركة PayPal, Inc.، ونعرض الشعار للتعريف بالخدمة فقط.",
+      credit: {
+        text: "الشعار: PayPal، ملكية عامة، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
+      },
+    },
+    {
       type: "p",
       text: "PayPal طريقة دفع رسمية على [checkout.pagopa.it](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal)، و[يقول PayPal](https://www.paypal.com/it/digital-wallet/pagopa) إن كل صاحب حساب ربط بطاقة يمكنه استعمالها. الدفع بالتقسيط يشترط الإقامة في إيطاليا، لذلك ادفع المبلغ كاملًا.",
     },
@@ -148,6 +172,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "تفرض [مجلة الصرف لسنة 1976](https://www.finances.gov.tn/sites/default/files/17.pdf) (Code des changes) على المقيمين المرور عبر البنك المركزي أو وسيط مرخص، مثل بنك أو البريد التونسي، في عمليات الصرف (الفصل 3). وتحويلات رؤوس الأموال خارج الإطار القانوني تحتاج إلى ترخيص (الفصل 1).",
+    },
+    {
+      type: "figure",
+      src: "/blog/central-bank-tunisia.webp",
+      width: 1600,
+      height: 890,
+      alt: "مقر البنك المركزي التونسي في تونس العاصمة، مبنى حديث كبير خلف أشجار النخيل",
+      caption: "البنك المركزي التونسي في تونس العاصمة. منشوراته تحدد ما يحق للمقيم دفعه في الخارج، وعن طريق أي وسيط.",
+      credit: {
+        text: "الصورة: DrFO.Jr.Tn، CC BY-SA 3.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:BCT_-_Tunis.jpg",
+      },
     },
     {
       type: "ul",

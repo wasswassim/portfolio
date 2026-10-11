@@ -59,6 +59,18 @@ export const fr: ArticleTranslation = {
       text: "C’est la voie légale la plus simple. La [circulaire BCT 2016-09](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf), annexe 1, point 13, permet aux résidents de transférer sur facture les frais de concours, d’examen et d’« examen de dossiers pour des études à l’étranger ». Le texte ne fixe **aucun plafond**.",
     },
     {
+      type: "figure",
+      src: "/blog/avenue-habib-bourguiba-tunis.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Vue aérienne de l'avenue Habib Bourguiba, bordée d'arbres, au centre de Tunis, avec une tour vitrée à droite",
+      caption: "L'avenue Habib Bourguiba, au centre de Tunis. Le virement se demande à la banque qui détient votre dossier d'études : c'est votre première étape.",
+      credit: {
+        text: "Photo : Dacoslett, CC0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:TunisAveHabibBourguiba.jpg",
+      },
+    },
+    {
       type: "p",
       text: "Les frais de scolarité passent par votre **dossier études**, domicilié dans une seule banque pour l’année universitaire. Selon la [circulaire BCT 2025-10](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf), ils sont payés sur présentation de la facture de l’université, et deux allocations s’y ajoutent. La [section sur le compte bloqué](article:italy-student-visa#blocked-account) explique comment ouvrir ce dossier.",
     },
@@ -110,6 +122,18 @@ export const fr: ArticleTranslation = {
       text: "Un compte PayPal tunisien peut **payer et envoyer**, mais pas recevoir d’argent. Ce n’est pas un problème ici, puisque vous voulez seulement payer. Reliez-y votre carte technologique comme source de financement.",
     },
     {
+      type: "figure",
+      src: "/blog/logos/paypal.webp",
+      width: 1600,
+      height: 400,
+      alt: "Logo de PayPal",
+      caption: "PayPal est une marque de PayPal, Inc. ; le logo sert seulement à identifier le service.",
+      credit: {
+        text: "Logo : PayPal, domaine public, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
+      },
+    },
+    {
       type: "p",
       text: "PayPal est un moyen de paiement officiel sur [checkout.pagopa.it](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal), et [PayPal indique](https://www.paypal.com/it/digital-wallet/pagopa) que tout titulaire d’un compte avec une carte reliée peut l’utiliser. Le paiement en plusieurs fois exige de résider en Italie : payez en une fois.",
     },
@@ -147,6 +171,18 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Le [Code des changes de 1976](https://www.finances.gov.tn/sites/default/files/17.pdf) impose aux résidents de passer par la BCT ou un intermédiaire agréé, comme une banque ou La Poste, pour les opérations de change (art. 3). Les transferts de capitaux hors du cadre réglementaire exigent une autorisation (art. 1).",
+    },
+    {
+      type: "figure",
+      src: "/blog/central-bank-tunisia.webp",
+      width: 1600,
+      height: 890,
+      alt: "Le siège de la Banque centrale de Tunisie à Tunis, un grand bâtiment moderne derrière des palmiers",
+      caption: "La Banque centrale de Tunisie (BCT) à Tunis. Ses circulaires fixent ce qu'un résident peut payer à l'étranger, et par quel intermédiaire.",
+      credit: {
+        text: "Photo : DrFO.Jr.Tn, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:BCT_-_Tunis.jpg",
+      },
     },
     {
       type: "ul",

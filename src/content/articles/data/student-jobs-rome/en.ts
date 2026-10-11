@@ -1,6 +1,6 @@
 import type { ArticleTranslation } from "../../types";
 
-// Part 3 of the settling-in-Rome series. French and Arabic mirror this structure (same heading ids, two tables, no figure).
+// Part 3 of the settling-in-Rome series. French and Arabic mirror this structure (same heading ids, two tables, two figures).
 export const en: ArticleTranslation = {
   slug: "student-jobs-rome",
   title: "Student Jobs in Rome for Tunisians",
@@ -77,6 +77,18 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "[Subito](https://www.subito.it) is Italy's big classifieds site, and Rome has plenty of café, bar and restaurant jobs on it. Instead of only answering employer ads, post your own ad in **Lavoro e servizi > Candidati in cerca di lavoro**, the section for job seekers. Private users get **20 free ads** there, and Subito refuses job offers that ask candidates for money ([Subito rules](https://assistenza.subito.it/hc/it/articles/360001165229-Quali-sono-le-regole-per-la-categoria-Lavoro-e-servizi-)).",
     },
+    {
+      type: "figure",
+      src: "/blog/trastevere-restaurant.webp",
+      width: 1600,
+      height: 1067,
+      alt: "Inside an empty restaurant in Trastevere, Rome, with chairs stacked on wooden tables and old posters on the walls",
+      caption: "A restaurant in Trastevere after closing time. Rome's cafés and restaurants post many of their job ads on Subito.",
+      credit: {
+        text: "Photo: Jorge Royan, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Night_life_at_Trastevere,_Rome_-_3398.jpg",
+      },
+    },
     { type: "h3", id: "step-subito-account", text: "Step 1: create your account" },
     {
       type: "p",
@@ -146,6 +158,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Universities pay students for part-time campus work, the **150-ore collaborations** (borse di collaborazione). Sapienza's 2025/26 call offered **250 places**, paying **EUR 1,295 for 150 hours**, tax-free. It is not an employment contract, and it required **Italian B2 and English B2** ([Sapienza call 2025/26](https://web.uniroma1.it/trasparenza/sites/default/files/Bando_2025_2026.pdf)). The 2025/26 deadline has passed, so watch for the new call in autumn.",
+    },
+    {
+      type: "figure",
+      src: "/blog/sapienza-department-entrance.webp",
+      width: 1600,
+      height: 900,
+      alt: "Steps leading to the entrance of a Sapienza University building in Rome, marked Fisiologia Generale",
+      caption: "The entrance to Sapienza's Charles Darwin department. 150-ore students work in university offices, libraries and departments like this one.",
+      credit: {
+        text: "Photo: CarloTunv, CC0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Ingresso_Dipartimento_Darwin_Universit%C3%A0_Sapienza_Roma.jpg",
+      },
     },
     {
       type: "p",

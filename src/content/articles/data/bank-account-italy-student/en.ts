@@ -58,6 +58,18 @@ export const en: ArticleTranslation = {
       text: "Intesa Sanpaolo is one of Italy's largest banks, with branches all over Rome. Its [official FAQ](https://www.intesasanpaolo.com/content/internetbanking/it/faq/common/faqHome/apertura-xme-conto-online.privati.html) says a foreign citizen living in Italy can open an account in the app, online or in a branch, **only with an Italian codice fiscale**.",
     },
     {
+      type: "figure",
+      src: "/blog/intesa-sanpaolo-branch.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Corner entrance of an Intesa Sanpaolo branch in Italy, with green signs above glass doors",
+      caption: "An Intesa Sanpaolo branch. Bring your passport, permit receipt and codice fiscale, and ask for a current account (conto corrente).",
+      credit: {
+        text: "Photo: Pava, CC BY-SA 3.0 IT, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:-_ITALY_-_Intesa_Sanpaolo_filiale.JPG",
+      },
+    },
+    {
       type: "fees",
       title: "Intesa Sanpaolo current account (as of October 2026)",
       feeIds: ["intesa-xme-silver"],
@@ -91,6 +103,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Revolut gives an **Italian IBAN** (starting with IT) to customers who live in Italy (Revolut help). As of October 2026 its plans cost: Standard free, Plus EUR 3.99, Premium EUR 9.99 and Metal EUR 15.99 a month.",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/revolut.webp",
+      width: 1600,
+      height: 400,
+      alt: "Revolut logo",
+      caption: "Revolut is a trademark of Revolut Ltd; the logo is shown only to identify the service.",
+      credit: {
+        text: "Logo: Revolut Ltd, Public domain, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Revolut_logo.svg",
+      },
     },
     {
       type: "p",
@@ -130,6 +154,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Wise is not a bank, but its account gives you **EUR account details** (issued by Wise Europe in Brussels, so the IBAN is Belgian) and a debit card. You need a registered address in a country where Wise offers EUR details (Wise help).",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/wise.webp",
+      width: 1600,
+      height: 400,
+      alt: "Wise logo",
+      caption: "Wise is a trademark of Wise PLC; the logo is shown only to identify the service.",
+      credit: {
+        text: "Logo: Wise PLC, Public domain, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Wise_Logo_512x124.svg",
+      },
     },
     {
       type: "fees",

@@ -35,6 +35,18 @@ export const fr: ArticleTranslation = {
       text: "RedotPay se présente comme « un prestataire de services fintech et non une banque » (RedotPay). Vous déposez des cryptos, surtout des stablecoins comme l'USDT ou l'USDC, et vous les dépensez avec une carte **Visa** (le réseau cité dans ses conditions). La carte physique fonctionne aussi aux distributeurs.",
     },
     {
+      type: "figure",
+      src: "/blog/card-payment-terminal.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Un terminal de paiement avec une carte Visa insérée dans son lecteur de puce",
+      caption: "Pour le commerçant, une carte crypto est une carte Visa ordinaire : la crypto est convertie dans la monnaie locale au moment du paiement.",
+      credit: {
+        text: "Photo : Basile Morin, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Credit_card_terminal_in_Laos.jpg",
+      },
+    },
+    {
       type: "fees",
       title: "Frais de la carte RedotPay (octobre 2026)",
       text: "Aucuns frais de tenue mensuels ou annuels. Recharger avec une carte bancaire coûte 3 % (minimum 1 USD).",
@@ -69,6 +81,18 @@ export const fr: ArticleTranslation = {
         "**Art. 21** : les règlements entre résidents se font en Tunisie et en dinars.",
         "**Art. 35** : les infractions sont punies d'un mois à cinq ans de prison et d'une amende d'au moins cinq fois le montant en cause.",
       ],
+    },
+    {
+      type: "figure",
+      src: "/blog/central-bank-tunisia-sign.webp",
+      width: 1600,
+      height: 681,
+      alt: "Plaque de la Banque centrale de Tunisie avec les armoiries nationales et son nom en arabe et en français",
+      caption: "La Banque centrale de Tunisie (BCT). Aucune de ses circulaires n'autorise expressément les résidents à acheter de la crypto.",
+      credit: {
+        text: "Photo : Wael Ghabara, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Tunisia441.jpg",
+      },
     },
     {
       type: "p",

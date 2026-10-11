@@ -720,3 +720,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-referral-benefits { margin: 0 0 0.8rem; padding-inline-start: 1.2rem; font-size: 0.95rem; }
 .blog-referral-benefits li { margin-block-end: 0.3rem; }
 .blog-referral-benefits li::marker { color: var(--accent); }
+/* Logos (public/blog/logos/): shown small, to identify a service, not as full-width photos */
+.blog-figure:has(img[src*="/blog/logos/"]) img { max-inline-size: min(22rem, 100%); margin-inline: auto; border-radius: 0.6rem; }
+.blog-figure:has(img[src*="/blog/logos/"]) figcaption { text-align: center; }

@@ -77,6 +77,18 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "[Subito](https://www.subito.it) est le grand site de petites annonces en Italie, et Rome y compte beaucoup d’offres dans les cafés, les bars et les restaurants. Au lieu de seulement répondre aux annonces des employeurs, publiez votre propre annonce dans **Lavoro e servizi > Candidati in cerca di lavoro**, la rubrique des candidats. Les particuliers ont droit à **20 annonces gratuites** dans cette rubrique, et Subito refuse les offres qui demandent de l’argent aux candidats ([règles Subito](https://assistenza.subito.it/hc/it/articles/360001165229-Quali-sono-le-regole-per-la-categoria-Lavoro-e-servizi-)).",
     },
+    {
+      type: "figure",
+      src: "/blog/trastevere-restaurant.webp",
+      width: 1600,
+      height: 1067,
+      alt: "Intérieur d'un restaurant vide du Trastevere, à Rome, avec les chaises posées sur les tables en bois et de vieilles affiches aux murs",
+      caption: "Un restaurant du Trastevere après la fermeture. Les cafés et restaurants de Rome publient beaucoup de leurs offres sur Subito.",
+      credit: {
+        text: "Photo : Jorge Royan, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Night_life_at_Trastevere,_Rome_-_3398.jpg",
+      },
+    },
     { type: "h3", id: "step-subito-account", text: "Étape 1 : créez votre compte" },
     {
       type: "p",
@@ -146,6 +158,18 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Les universités rémunèrent des étudiants pour un travail à temps partiel sur le campus : les **collaborations 150 ore** (borse di collaborazione). L’appel 2025/26 de la Sapienza proposait **250 places**, payées **1 295 EUR pour 150 heures**, sans impôt. Ce n’est pas un contrat de travail, et il fallait **un niveau B2 en italien et B2 en anglais** ([appel Sapienza 2025/26](https://web.uniroma1.it/trasparenza/sites/default/files/Bando_2025_2026.pdf)). La date limite 2025/26 est passée : surveillez le nouvel appel à l’automne.",
+    },
+    {
+      type: "figure",
+      src: "/blog/sapienza-department-entrance.webp",
+      width: 1600,
+      height: 900,
+      alt: "Des marches menant à l'entrée d'un bâtiment de l'université Sapienza à Rome, marqué Fisiologia Generale",
+      caption: "L'entrée du département Charles Darwin de la Sapienza. Les étudiants en 150 ore travaillent dans les bureaux, bibliothèques et départements comme celui-ci.",
+      credit: {
+        text: "Photo : CarloTunv, CC0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Ingresso_Dipartimento_Darwin_Universit%C3%A0_Sapienza_Roma.jpg",
+      },
     },
     {
       type: "p",

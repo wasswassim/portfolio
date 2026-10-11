@@ -39,6 +39,18 @@ export const en: ArticleTranslation = {
       text: "pagoPA is the Italian public payment system. A public body (a university, the Lazio region, a ministry) issues a payment notice, the **avviso di pagamento**, and you pay it through a payment provider (PSP) of your choice. The provider, not pagoPA, sets and collects the fee.",
     },
     {
+      type: "figure",
+      src: "/blog/logos/pagopa.webp",
+      width: 1600,
+      height: 400,
+      alt: "pagoPA logo",
+      caption: "Look for this logo on your payment notice and on the university portal: it marks a fee you can pay through pagoPA.",
+      credit: {
+        text: "Logo: PagoPA S.p.A., Public domain, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PagoPA_logo.png",
+      },
+    },
+    {
       type: "ul",
       items: [
         "**Sapienza**: you generate the payment on Infostud and pay it only through pagoPA; the rules say no other method is accepted ([Sapienza fee rules 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
@@ -88,6 +100,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "These steps follow the official pagoPA article [Pagare con PayPal](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal).",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/paypal.webp",
+      width: 1600,
+      height: 400,
+      alt: "PayPal logo",
+      caption: "PayPal is a trademark of PayPal, Inc.; the logo is shown only to identify the service.",
+      credit: {
+        text: "Logo: PayPal, Public domain, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
+      },
     },
     { type: "h3", id: "step-open-checkout", text: "Step 1: open checkout.pagopa.it" },
     {
@@ -174,6 +198,18 @@ export const en: ArticleTranslation = {
         "**Change the provider**: a provider can refuse a card because of its own policy. On the summary screen, press **modifica** next to the suggested provider and pick another.",
         "**Change the method**: if the card fails, try PayPal, and if PayPal fails, try the card directly.",
       ],
+    },
+    {
+      type: "figure",
+      src: "/blog/card-terminal-not-detected.webp",
+      width: 1600,
+      height: 1243,
+      alt: "Close-up of an Ingenico card terminal whose screen reads \"Merchant card not detected\"",
+      caption: "A refusal can come from your card, from the provider or from the connection. Work through the fixes in order before you try again.",
+      credit: {
+        text: "Photo: VulcanSphere, CC BY 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Ingenico_iCT250_payment_terminal_machine.jpg",
+      },
     },
     {
       type: "p",

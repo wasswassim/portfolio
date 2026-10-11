@@ -40,6 +40,18 @@ export const ar: ArticleTranslation = {
       text: "pagoPA هو نظام الدفع العمومي في إيطاليا. تُصدر جهة عمومية (جامعة، أو جهة Lazio، أو وزارة) إشعار دفع يُسمّى **avviso di pagamento**، وتدفعه عبر مزوّد خدمة دفع (PSP) تختاره أنت. المزوّد، وليس pagoPA، هو الذي يحدّد العمولة ويقبضها.",
     },
     {
+      type: "figure",
+      src: "/blog/logos/pagopa.webp",
+      width: 1600,
+      height: 400,
+      alt: "شعار pagoPA",
+      caption: "ابحث عن هذا الشعار في إشعار الدفع وفي بوابة الجامعة: فهو يدل على رسم يمكن دفعه عبر pagoPA.",
+      credit: {
+        text: "الشعار: PagoPA S.p.A.، ملكية عامة، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PagoPA_logo.png",
+      },
+    },
+    {
       type: "ul",
       items: [
         "**Sapienza**: تُنشئ عملية الدفع على Infostud وتدفعها عبر pagoPA فقط، وينصّ النظام على أنه لا تُقبل أي طريقة أخرى ([نظام رسوم Sapienza 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
@@ -89,6 +101,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "تتبع هذه الخطوات المقال الرسمي لـ pagoPA بعنوان [Pagare con PayPal](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal).",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/paypal.webp",
+      width: 1600,
+      height: 400,
+      alt: "شعار PayPal",
+      caption: "PayPal علامة تجارية مسجلة لشركة PayPal, Inc.، ونعرض الشعار للتعريف بالخدمة فقط.",
+      credit: {
+        text: "الشعار: PayPal، ملكية عامة، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
+      },
     },
     { type: "h3", id: "step-open-checkout", text: "الخطوة 1: افتح checkout.pagopa.it" },
     {
@@ -175,6 +199,18 @@ export const ar: ArticleTranslation = {
         "**غيّر المزوّد**: قد يرفض مزوّد ما بطاقة بسبب سياسته الخاصة. في شاشة الملخص، اضغط على `modifica` بجانب المزوّد المقترح واختر غيره.",
         "**غيّر طريقة الدفع**: إذا فشلت البطاقة جرّب PayPal، وإذا فشل PayPal جرّب البطاقة مباشرة.",
       ],
+    },
+    {
+      type: "figure",
+      src: "/blog/card-terminal-not-detected.webp",
+      width: 1600,
+      height: 1243,
+      alt: "صورة مقرّبة لجهاز دفع Ingenico تظهر على شاشته عبارة \"Merchant card not detected\"",
+      caption: "قد يأتي الرفض من بطاقتك أو من مزوّد الدفع أو من الاتصال. جرّب الحلول بالترتيب قبل أن تعيد المحاولة.",
+      credit: {
+        text: "الصورة: VulcanSphere، CC BY 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Ingenico_iCT250_payment_terminal_machine.jpg",
+      },
     },
     {
       type: "p",

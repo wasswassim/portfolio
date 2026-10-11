@@ -36,6 +36,18 @@ export const ar: ArticleTranslation = {
       text: "يقدّم RedotPay نفسه على أنه «مزود خدمات تكنولوجيا مالية وليس بنكًا» (RedotPay). تودع عملات رقمية، خاصة العملات المستقرة مثل USDT أو USDC، وتنفقها ببطاقة **Visa** (الشبكة المذكورة في شروطه). والبطاقة الفعلية تعمل أيضًا في الموزعات الآلية.",
     },
     {
+      type: "figure",
+      src: "/blog/card-payment-terminal.webp",
+      width: 1600,
+      height: 1200,
+      alt: "جهاز دفع إلكتروني أُدخلت في قارئه بطاقة Visa",
+      caption: "بالنسبة إلى التاجر، بطاقة العملات المشفرة بطاقة Visa عادية: تُحوَّل العملة المشفرة إلى العملة المحلية لحظة الدفع.",
+      credit: {
+        text: "الصورة: Basile Morin، CC BY-SA 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Credit_card_terminal_in_Laos.jpg",
+      },
+    },
+    {
       type: "fees",
       title: "رسوم بطاقة RedotPay (أكتوبر 2026)",
       text: "لا يوجد معلوم شهري أو سنوي لمسك الحساب. التعبئة ببطاقة بنكية تكلف 3% (بحد أدنى 1 USD).",
@@ -70,6 +82,18 @@ export const ar: ArticleTranslation = {
         "**الفصل 21**: التسويات بين المقيمين تتم في تونس وبالدينار.",
         "**الفصل 35**: المخالفات يُعاقب عليها بالسجن من شهر إلى خمس سنوات وبخطية لا تقل عن خمسة أضعاف المبلغ المعني.",
       ],
+    },
+    {
+      type: "figure",
+      src: "/blog/central-bank-tunisia-sign.webp",
+      width: 1600,
+      height: 681,
+      alt: "لافتة البنك المركزي التونسي وعليها شعار الجمهورية واسمه بالعربية والفرنسية",
+      caption: "البنك المركزي التونسي. لا يوجد أي منشور من منشوراته يرخّص صراحة للمقيمين في شراء العملات المشفرة.",
+      credit: {
+        text: "الصورة: Wael Ghabara، CC BY-SA 3.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Tunisia441.jpg",
+      },
     },
     {
       type: "p",

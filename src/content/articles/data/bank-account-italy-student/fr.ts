@@ -58,6 +58,18 @@ export const fr: ArticleTranslation = {
       text: "Intesa Sanpaolo est l'une des plus grandes banques d'Italie, avec des agences partout à Rome. Sa [FAQ officielle](https://www.intesasanpaolo.com/content/internetbanking/it/faq/common/faqHome/apertura-xme-conto-online.privati.html) indique qu'un étranger qui réside en Italie peut ouvrir un compte dans l'application, en ligne ou en agence, **seulement s'il a un codice fiscale italien**.",
     },
     {
+      type: "figure",
+      src: "/blog/intesa-sanpaolo-branch.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Entrée d'angle d'une agence Intesa Sanpaolo en Italie, avec des enseignes vertes au-dessus des portes vitrées",
+      caption: "Une agence Intesa Sanpaolo. Apportez votre passeport, le récépissé du permis et votre codice fiscale, et demandez un compte courant (conto corrente).",
+      credit: {
+        text: "Photo : Pava, CC BY-SA 3.0 IT, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:-_ITALY_-_Intesa_Sanpaolo_filiale.JPG",
+      },
+    },
+    {
       type: "fees",
       title: "Compte courant Intesa Sanpaolo (octobre 2026)",
       feeIds: ["intesa-xme-silver"],
@@ -91,6 +103,18 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Revolut donne un **IBAN italien** (qui commence par IT) aux clients qui résident en Italie (aide Revolut). En octobre 2026, ses formules coûtent : Standard gratuite, Plus 3,99 EUR, Premium 9,99 EUR et Metal 15,99 EUR par mois.",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/revolut.webp",
+      width: 1600,
+      height: 400,
+      alt: "Logo de Revolut",
+      caption: "Revolut est une marque de Revolut Ltd ; le logo sert seulement à identifier le service.",
+      credit: {
+        text: "Logo : Revolut Ltd, domaine public, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Revolut_logo.svg",
+      },
     },
     {
       type: "p",
@@ -130,6 +154,18 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Wise n'est pas une banque, mais son compte vous donne des **coordonnées bancaires en EUR** (émises par Wise Europe à Bruxelles, donc un IBAN belge) et une carte de débit. Il faut une adresse enregistrée dans un pays où Wise propose des coordonnées en EUR (aide Wise).",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/wise.webp",
+      width: 1600,
+      height: 400,
+      alt: "Logo de Wise",
+      caption: "Wise est une marque de Wise PLC ; le logo sert seulement à identifier le service.",
+      credit: {
+        text: "Logo : Wise PLC, domaine public, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Wise_Logo_512x124.svg",
+      },
     },
     {
       type: "fees",

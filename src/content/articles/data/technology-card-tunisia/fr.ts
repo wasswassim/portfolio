@@ -74,6 +74,18 @@ export const fr: ArticleTranslation = {
       ],
     },
     {
+      type: "figure",
+      src: "/blog/stb-bank-branch-tunisia.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Entrée d'une agence de la STB à La Marsa, avec son nom en arabe et en lettres latines au-dessus des portes vitrées",
+      caption: "Une agence de la STB à La Marsa. Beaucoup de banques délivrent la carte sans page en ligne : demandez à votre agence.",
+      credit: {
+        text: "Photo : Cimoi, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Agence_STB_La_Marsa.jpg",
+      },
+    },
+    {
       type: "p",
       text: "Le point essentiel : **chaque émetteur applique ses propres filtres**. Avant de choisir, demandez à l’agence quels types de marchands la carte accepte.",
     },
@@ -103,6 +115,18 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Il vous faut un compte courant postal (CCP) actif, votre CIN et une copie certifiée de votre diplôme. La procédure est décrite sur [idaraty.tn](https://idaraty.tn/fr/procedures/obtenir-la-carte-technologique-internationale-la-poste-personne-physique). Vous chargez la carte en dinars et la gérez sur e-dinar.",
+    },
+    {
+      type: "figure",
+      src: "/blog/la-poste-tunisienne-office.webp",
+      width: 1600,
+      height: 1137,
+      alt: "Un bureau de La Poste Tunisienne à Ettadhamen, blanc, avec une enseigne bleue en arabe et en français et une boîte aux lettres jaune",
+      caption: "Le bureau de poste d'Ettadhamen. À La Poste, la carte est rattachée à votre compte courant postal (CCP).",
+      credit: {
+        text: "Photo : Tunisie Guide 360, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Bureau_de_poste_ettadhamen.png",
+      },
     },
     { type: "h3", id: "step-activate", text: "Étape 4 : activez les paiements en ligne" },
     {
@@ -168,6 +192,18 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Un compte PayPal ouvert en Tunisie peut **envoyer des paiements**, alimentés par une carte internationale associée comme la CTI. La réception d’argent n’est en général pas disponible. PayPal ajoute environ 4 % quand il convertit la devise, et pagoPA facture 1,50 à 2,50 EUR pour un paiement PayPal.",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/paypal.webp",
+      width: 1600,
+      height: 400,
+      alt: "Logo de PayPal",
+      caption: "PayPal est une marque de PayPal, Inc. ; le logo sert seulement à identifier le service.",
+      credit: {
+        text: "Logo : PayPal, domaine public, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
+      },
     },
     {
       type: "p",

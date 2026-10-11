@@ -59,6 +59,18 @@ export const ar: ArticleTranslation = {
       text: "Intesa Sanpaolo من أكبر البنوك في إيطاليا، وفروعه منتشرة في كل روما. تقول [الأسئلة الشائعة الرسمية](https://www.intesasanpaolo.com/content/internetbanking/it/faq/common/faqHome/apertura-xme-conto-online.privati.html) إن الأجنبي المقيم في إيطاليا يمكنه فتح حساب عبر التطبيق أو الإنترنت أو في الفرع، **فقط إذا كان لديه codice fiscale إيطالي**.",
     },
     {
+      type: "figure",
+      src: "/blog/intesa-sanpaolo-branch.webp",
+      width: 1600,
+      height: 1200,
+      alt: "مدخل فرع لبنك Intesa Sanpaolo في إيطاليا عند زاوية شارع، ولافتات خضراء فوق أبواب زجاجية",
+      caption: "فرع لبنك Intesa Sanpaolo. أحضر جواز سفرك ووصل طلب الإقامة والـ codice fiscale، واطلب حسابًا جاريًا (conto corrente).",
+      credit: {
+        text: "الصورة: Pava، CC BY-SA 3.0 IT، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:-_ITALY_-_Intesa_Sanpaolo_filiale.JPG",
+      },
+    },
+    {
       type: "fees",
       title: "الحساب الجاري في Intesa Sanpaolo (أكتوبر 2026)",
       feeIds: ["intesa-xme-silver"],
@@ -92,6 +104,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "يعطي Revolut رقم **IBAN إيطاليًا** (يبدأ بـ IT) للحرفاء المقيمين في إيطاليا (مساعدة Revolut). في أكتوبر 2026، أسعار باقاته: Standard مجانية، وPlus بـ 3.99 يورو، وPremium بـ 9.99 يورو، وMetal بـ 15.99 يورو شهريًا.",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/revolut.webp",
+      width: 1600,
+      height: 400,
+      alt: "شعار Revolut",
+      caption: "Revolut علامة تجارية مسجلة لشركة Revolut Ltd، ونعرض الشعار للتعريف بالخدمة فقط.",
+      credit: {
+        text: "الشعار: Revolut Ltd، ملكية عامة، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Revolut_logo.svg",
+      },
     },
     {
       type: "p",
@@ -131,6 +155,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "Wise ليس بنكًا، لكن حسابه يعطيك **معطيات حساب باليورو** (تصدرها Wise Europe في بروكسل، أي رقم IBAN بلجيكي) وبطاقة دفع. يجب أن يكون لك عنوان مسجّل في بلد يوفّر فيه Wise معطيات باليورو (مساعدة Wise).",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/wise.webp",
+      width: 1600,
+      height: 400,
+      alt: "شعار Wise",
+      caption: "Wise علامة تجارية مسجلة لشركة Wise PLC، ونعرض الشعار للتعريف بالخدمة فقط.",
+      credit: {
+        text: "الشعار: Wise PLC، ملكية عامة، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Wise_Logo_512x124.svg",
+      },
     },
     {
       type: "fees",

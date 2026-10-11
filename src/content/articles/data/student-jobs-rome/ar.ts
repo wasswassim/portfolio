@@ -78,6 +78,18 @@ export const ar: ArticleTranslation = {
       type: "p",
       text: "[Subito](https://www.subito.it) هو أكبر موقع للإعلانات المبوبة في إيطاليا، وفيه عروض كثيرة في مقاهي وبارات ومطاعم روما. بدل أن تكتفي بالرد على إعلانات المشغّلين، انشر إعلانك أنت في **Lavoro e servizi > Candidati in cerca di lavoro**، وهو قسم الباحثين عن عمل. للأفراد **20 إعلانًا مجانيًا** في هذا القسم، وSubito يرفض عروض العمل التي تطلب مالًا من المترشحين ([قواعد Subito](https://assistenza.subito.it/hc/it/articles/360001165229-Quali-sono-le-regole-per-la-categoria-Lavoro-e-servizi-)).",
     },
+    {
+      type: "figure",
+      src: "/blog/trastevere-restaurant.webp",
+      width: 1600,
+      height: 1067,
+      alt: "داخل مطعم فارغ في حي Trastevere بروما، والكراسي مرفوعة على طاولات خشبية وملصقات قديمة على الجدران",
+      caption: "مطعم في Trastevere بعد الإغلاق. تنشر مقاهي روما ومطاعمها كثيرًا من عروض العمل على Subito.",
+      credit: {
+        text: "الصورة: Jorge Royan، CC BY-SA 3.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Night_life_at_Trastevere,_Rome_-_3398.jpg",
+      },
+    },
     { type: "h3", id: "step-subito-account", text: "الخطوة 1: أنشئ حسابك" },
     {
       type: "p",
@@ -147,6 +159,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "الجامعات تدفع لطلاب مقابل عمل جزئي داخل الحرم الجامعي، وهو **تعاون 150 ore** (borse di collaborazione). عرض Sapienza لسنة 2025/26 تضمّن **250 مكانًا**، بأجر **1295 يورو مقابل 150 ساعة**، معفى من الضرائب. ليس عقد عمل، وكان يشترط **مستوى B2 في الإيطالية وB2 في الإنجليزية** ([عرض Sapienza 2025/26](https://web.uniroma1.it/trasparenza/sites/default/files/Bando_2025_2026.pdf)). آخر أجل لسنة 2025/26 انتهى، فترقّب العرض الجديد في الخريف.",
+    },
+    {
+      type: "figure",
+      src: "/blog/sapienza-department-entrance.webp",
+      width: 1600,
+      height: 900,
+      alt: "درج يؤدي إلى مدخل مبنى تابع لجامعة Sapienza في روما، كُتب عليه Fisiologia Generale",
+      caption: "مدخل قسم Charles Darwin في جامعة Sapienza. يعمل طلبة الـ 150 ore في مكاتب الجامعة ومكتباتها وأقسامها مثل هذا القسم.",
+      credit: {
+        text: "الصورة: CarloTunv، CC0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Ingresso_Dipartimento_Darwin_Universit%C3%A0_Sapienza_Roma.jpg",
+      },
     },
     {
       type: "p",

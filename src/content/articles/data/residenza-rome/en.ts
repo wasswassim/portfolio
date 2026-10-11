@@ -92,6 +92,18 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "Use **one channel only**. Sending the same request twice slows everything down.",
     },
+    {
+      type: "figure",
+      src: "/blog/anagrafe-rome.webp",
+      width: 1375,
+      height: 898,
+      alt: "The Roman Temple of Portunus in front of the large brick anagrafe building on Via Luigi Petroselli in Rome",
+      caption: "Rome's central anagrafe building on Via Luigi Petroselli. Each municipio also has its own registry office.",
+      credit: {
+        text: "Photo: Indeciso42, Public domain, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Anagrafe_Roma.jpg",
+      },
+    },
     { type: "h3", id: "step-online", text: "Step 1: online with SPID, CIE or CNS" },
     {
       type: "p",
@@ -125,6 +137,18 @@ export const en: ArticleTranslation = {
         ["Within 45 days", "The Polizia Locale checks that you really live at the address."],
         ["After 45 days with no notice", "If you get no *preavviso di rigetto* (notice of rejection), the residence is confirmed by *silenzio-assenso*."],
       ],
+    },
+    {
+      type: "figure",
+      src: "/blog/polizia-locale-rome-sign.webp",
+      width: 1600,
+      height: 1106,
+      alt: "A white plaque on a wooden door reading Corpo Polizia Municipale, U.O. I Gruppo, Comune di Roma",
+      caption: "An older plaque of Rome's municipal police, now called Polizia Locale di Roma Capitale. Its officers carry out the address check.",
+      credit: {
+        text: "Photo: Wilfredor, CC0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Polizia_locale_di_Roma_Capitale.jpg",
+      },
     },
     {
       type: "p",

@@ -36,6 +36,18 @@ export const en: ArticleTranslation = {
       text: "RedotPay describes itself as \"a fintech service provider and not a bank\" (RedotPay). You deposit crypto, mainly stablecoins such as USDT or USDC, and spend it with a **Visa** card (the network named in its Terms). The physical card also works at ATMs.",
     },
     {
+      type: "figure",
+      src: "/blog/card-payment-terminal.webp",
+      width: 1600,
+      height: 1200,
+      alt: "A card payment terminal with a Visa card inserted in its chip reader",
+      caption: "For the shop, a crypto card is an ordinary Visa card: the crypto is converted into the local currency at the moment you pay.",
+      credit: {
+        text: "Photo: Basile Morin, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Credit_card_terminal_in_Laos.jpg",
+      },
+    },
+    {
       type: "fees",
       title: "RedotPay card fees (as of October 2026)",
       text: "There is no monthly or annual maintenance fee. Funding with a bank card costs 3% (minimum 1 USD).",
@@ -70,6 +82,18 @@ export const en: ArticleTranslation = {
         "**Art. 21**: settlements between residents take place in Tunisia and in dinars.",
         "**Art. 35**: offences are punishable by 1 month to 5 years in prison and a fine of at least five times the amount involved.",
       ],
+    },
+    {
+      type: "figure",
+      src: "/blog/central-bank-tunisia-sign.webp",
+      width: 1600,
+      height: 681,
+      alt: "Sign of the Central Bank of Tunisia with the national coat of arms and its name in Arabic and French",
+      caption: "The Central Bank of Tunisia (BCT). None of its circulars expressly authorises residents to buy crypto.",
+      credit: {
+        text: "Photo: Wael Ghabara, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Tunisia441.jpg",
+      },
     },
     {
       type: "p",

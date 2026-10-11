@@ -60,6 +60,18 @@ export const en: ArticleTranslation = {
       text: "This is the easiest legal route. [BCT circular 2016-09](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf), annex 1, item 13, lets residents transfer fees for exams, competitions and the assessment of files for studies abroad, against an invoice. The text sets **no fixed cap**.",
     },
     {
+      type: "figure",
+      src: "/blog/avenue-habib-bourguiba-tunis.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Aerial view of the tree-lined Avenue Habib Bourguiba in central Tunis, with a glass tower on the right",
+      caption: "Avenue Habib Bourguiba in central Tunis. The transfer is ordered at the bank that holds your study file, so that branch is your first stop.",
+      credit: {
+        text: "Photo: Dacoslett, CC0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:TunisAveHabibBourguiba.jpg",
+      },
+    },
+    {
       type: "p",
       text: "Tuition goes through your **study file**, domiciled at one bank for the academic year. Under [BCT circular 2025-10](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf), tuition is paid against the university invoice, and two allowances come on top. The [blocked account section](article:italy-student-visa#blocked-account) explains how to open the file.",
     },
@@ -111,6 +123,18 @@ export const en: ArticleTranslation = {
       text: "A Tunisian PayPal account can **pay and send**, but not receive money. That is fine here, because you only want to pay. Link your technology card to it as the funding source.",
     },
     {
+      type: "figure",
+      src: "/blog/logos/paypal.webp",
+      width: 1600,
+      height: 400,
+      alt: "PayPal logo",
+      caption: "PayPal is a trademark of PayPal, Inc.; the logo is shown only to identify the service.",
+      credit: {
+        text: "Logo: PayPal, Public domain, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
+      },
+    },
+    {
       type: "p",
       text: "PayPal is an official method on [checkout.pagopa.it](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal), and [PayPal says](https://www.paypal.com/it/digital-wallet/pagopa) any account holder with a linked card can use it. Instalments need Italian residency, so pay in full.",
     },
@@ -148,6 +172,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "The [Code des changes of 1976](https://www.finances.gov.tn/sites/default/files/17.pdf) requires residents to go through the BCT or an authorised intermediary, such as a bank or La Poste, for foreign exchange (art. 3). Capital transfers outside the rules need an authorisation (art. 1).",
+    },
+    {
+      type: "figure",
+      src: "/blog/central-bank-tunisia.webp",
+      width: 1600,
+      height: 890,
+      alt: "The headquarters of the Central Bank of Tunisia in Tunis, a large modern building behind palm trees",
+      caption: "The Central Bank of Tunisia (BCT) in Tunis. Its circulars set what a resident may pay abroad, and through which intermediary.",
+      credit: {
+        text: "Photo: DrFO.Jr.Tn, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:BCT_-_Tunis.jpg",
+      },
     },
     {
       type: "ul",

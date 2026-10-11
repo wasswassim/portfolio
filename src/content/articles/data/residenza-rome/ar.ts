@@ -93,6 +93,18 @@ export const ar: ArticleTranslation = {
       type: "p",
       text: "استعمل **قناة واحدة فقط**. إرسال الطلب نفسه مرتين يبطئ كل شيء.",
     },
+    {
+      type: "figure",
+      src: "/blog/anagrafe-rome.webp",
+      width: 1375,
+      height: 898,
+      alt: "معبد Portunus الروماني أمام مبنى الـ anagrafe الكبير المبني بالآجر في Via Luigi Petroselli بروما",
+      caption: "المبنى المركزي للـ anagrafe في روما، Via Luigi Petroselli. ولكل municipio أيضًا مكتب سجل سكان خاص به.",
+      credit: {
+        text: "الصورة: Indeciso42، ملكية عامة، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Anagrafe_Roma.jpg",
+      },
+    },
     { type: "h3", id: "step-online", text: "الخطوة 1: عبر الإنترنت بـ SPID أو CIE أو CNS" },
     {
       type: "p",
@@ -126,6 +138,18 @@ export const ar: ArticleTranslation = {
         ["خلال 45 يومًا", "تتحقق Polizia Locale من أنك تسكن فعلًا في العنوان."],
         ["بعد 45 يومًا دون إشعار", "إذا لم يصلك *preavviso di rigetto* (إشعار بالرفض)، تُثبَّت الإقامة بمبدأ *silenzio-assenso* (السكوت يعني الموافقة)."],
       ],
+    },
+    {
+      type: "figure",
+      src: "/blog/polizia-locale-rome-sign.webp",
+      width: 1600,
+      height: 1106,
+      alt: "لوحة بيضاء على باب خشبي كُتب عليها Corpo Polizia Municipale, U.O. I Gruppo, Comune di Roma",
+      caption: "لوحة قديمة للشرطة البلدية في روما، التي تُسمى اليوم Polizia Locale di Roma Capitale. أعوانها هم من يتحققون من العنوان.",
+      credit: {
+        text: "الصورة: Wilfredor، CC0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Polizia_locale_di_Roma_Capitale.jpg",
+      },
     },
     {
       type: "p",

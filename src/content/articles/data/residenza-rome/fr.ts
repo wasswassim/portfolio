@@ -92,6 +92,18 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Utilisez **un seul canal**. Envoyer deux fois la même demande ralentit tout.",
     },
+    {
+      type: "figure",
+      src: "/blog/anagrafe-rome.webp",
+      width: 1375,
+      height: 898,
+      alt: "Le temple romain de Portunus devant le grand bâtiment en brique de l'anagrafe, via Luigi Petroselli à Rome",
+      caption: "Le bâtiment central de l'anagrafe de Rome, via Luigi Petroselli. Chaque municipio a aussi son propre bureau d'état civil.",
+      credit: {
+        text: "Photo : Indeciso42, domaine public, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Anagrafe_Roma.jpg",
+      },
+    },
     { type: "h3", id: "step-online", text: "Étape 1 : en ligne avec SPID, CIE ou CNS" },
     {
       type: "p",
@@ -125,6 +137,18 @@ export const fr: ArticleTranslation = {
         ["Dans les 45 jours", "La Polizia Locale vérifie que vous habitez vraiment à l'adresse."],
         ["Après 45 jours sans avis", "Sans *preavviso di rigetto* (avis de rejet), la résidence est confirmée par *silenzio-assenso*."],
       ],
+    },
+    {
+      type: "figure",
+      src: "/blog/polizia-locale-rome-sign.webp",
+      width: 1600,
+      height: 1106,
+      alt: "Une plaque blanche sur une porte en bois : Corpo Polizia Municipale, U.O. I Gruppo, Comune di Roma",
+      caption: "Une ancienne plaque de la police municipale de Rome, aujourd'hui appelée Polizia Locale di Roma Capitale. Ce sont ses agents qui vérifient l'adresse.",
+      credit: {
+        text: "Photo : Wilfredor, CC0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Polizia_locale_di_Roma_Capitale.jpg",
+      },
     },
     {
       type: "p",

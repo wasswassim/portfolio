@@ -74,6 +74,18 @@ export const en: ArticleTranslation = {
       ],
     },
     {
+      type: "figure",
+      src: "/blog/stb-bank-branch-tunisia.webp",
+      width: 1600,
+      height: 1200,
+      alt: "Entrance of an STB bank branch in La Marsa, with its name in Arabic and Latin letters above glass doors",
+      caption: "An STB branch in La Marsa. Many banks issue the card without a product page online, so ask at your own branch.",
+      credit: {
+        text: "Photo: Cimoi, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Agence_STB_La_Marsa.jpg",
+      },
+    },
+    {
       type: "p",
       text: "The table shows the main point: **each issuer applies its own filters**. Before you choose, ask the branch which kinds of merchants the card accepts.",
     },
@@ -103,6 +115,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "You need an active postal current account (CCP), your CIN and a certified copy of your diploma. The procedure is on [idaraty.tn](https://idaraty.tn/fr/procedures/obtenir-la-carte-technologique-internationale-la-poste-personne-physique). You load the card in dinars and manage it on e-dinar.",
+    },
+    {
+      type: "figure",
+      src: "/blog/la-poste-tunisienne-office.webp",
+      width: 1600,
+      height: 1137,
+      alt: "A white La Poste Tunisienne office in Ettadhamen with a blue sign in Arabic and French and a yellow letterbox",
+      caption: "The Ettadhamen post office. At La Poste, the card is linked to your postal current account (CCP).",
+      credit: {
+        text: "Photo: Tunisie Guide 360, CC BY-SA 4.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Bureau_de_poste_ettadhamen.png",
+      },
     },
     { type: "h3", id: "step-activate", text: "Step 4: activate online payments" },
     {
@@ -168,6 +192,18 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "A PayPal account registered in Tunisia can **send payments**, funded by a linked international card such as the CTI. Receiving money is not generally available. PayPal adds about 4% when it converts the currency, and pagoPA charges EUR 1.50 to EUR 2.50 for a PayPal payment.",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/paypal.webp",
+      width: 1600,
+      height: 400,
+      alt: "PayPal logo",
+      caption: "PayPal is a trademark of PayPal, Inc.; the logo is shown only to identify the service.",
+      credit: {
+        text: "Logo: PayPal, Public domain, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
+      },
     },
     {
       type: "p",

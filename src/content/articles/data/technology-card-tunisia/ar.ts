@@ -75,6 +75,18 @@ export const ar: ArticleTranslation = {
       ],
     },
     {
+      type: "figure",
+      src: "/blog/stb-bank-branch-tunisia.webp",
+      width: 1600,
+      height: 1200,
+      alt: "مدخل فرع للشركة التونسية للبنك في المرسى، واسمه بالعربية واللاتينية فوق أبواب زجاجية",
+      caption: "فرع للشركة التونسية للبنك في المرسى. كثير من البنوك تصدر البطاقة دون صفحة تعريفية على الإنترنت، فاسأل في فرعك.",
+      credit: {
+        text: "الصورة: Cimoi، CC BY-SA 3.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Agence_STB_La_Marsa.jpg",
+      },
+    },
+    {
       type: "p",
       text: "الفكرة الأساسية من الجدول: **كل جهة مصدرة تطبّق تصفيتها الخاصة**. قبل أن تختار، اسأل الفرع عن أنواع التجار التي تقبلها البطاقة.",
     },
@@ -104,6 +116,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "تحتاج إلى حساب جارٍ بريدي (CCP) نشط، وبطاقة التعريف، ونسخة مطابقة للأصل من شهادتك. الإجراء مشروح على [idaraty.tn](https://idaraty.tn/fr/procedures/obtenir-la-carte-technologique-internationale-la-poste-personne-physique). تشحن البطاقة بالدينار وتديرها عبر e-dinar.",
+    },
+    {
+      type: "figure",
+      src: "/blog/la-poste-tunisienne-office.webp",
+      width: 1600,
+      height: 1137,
+      alt: "مكتب بريد أبيض في التضامن، عليه لافتة زرقاء بالعربية والفرنسية وصندوق رسائل أصفر",
+      caption: "مكتب بريد التضامن. في البريد التونسي ترتبط البطاقة بحسابك البريدي الجاري (CCP).",
+      credit: {
+        text: "الصورة: Tunisie Guide 360، CC BY-SA 4.0، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Bureau_de_poste_ettadhamen.png",
+      },
     },
     { type: "h3", id: "step-activate", text: "الخطوة 4: فعّل الدفع عبر الإنترنت" },
     {
@@ -169,6 +193,18 @@ export const ar: ArticleTranslation = {
     {
       type: "p",
       text: "حساب PayPal المسجّل في تونس يمكنه **إرسال المدفوعات**، بتمويل من بطاقة دولية مربوطة به مثل البطاقة التكنولوجية. أما استقبال الأموال فغير متاح عمومًا. يضيف PayPal حوالي 4% عند تحويل العملة، وتأخذ pagoPA ما بين 1.50 و2.50 يورو على الدفع عبر PayPal.",
+    },
+    {
+      type: "figure",
+      src: "/blog/logos/paypal.webp",
+      width: 1600,
+      height: 400,
+      alt: "شعار PayPal",
+      caption: "PayPal علامة تجارية مسجلة لشركة PayPal, Inc.، ونعرض الشعار للتعريف بالخدمة فقط.",
+      credit: {
+        text: "الشعار: PayPal، ملكية عامة، عبر Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
+      },
     },
     {
       type: "p",
