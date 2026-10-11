@@ -90,11 +90,11 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "revolut", text: "3. Revolut : un IBAN italien depuis l'application" },
     {
       type: "p",
-      text: "Revolut donne un **IBAN italien** (qui commence par IT) aux clients qui résident en Italie ([aide Revolut](https://help.revolut.com/it-IT/help/migration-to-italian-iban/question-getting-an-italian-iban/)). En octobre 2026, ses formules coûtent : Standard gratuite, Plus 3,99 EUR, Premium 9,99 EUR et Metal 15,99 EUR par mois.",
+      text: "Revolut donne un **IBAN italien** (qui commence par IT) aux clients qui résident en Italie (aide Revolut). En octobre 2026, ses formules coûtent : Standard gratuite, Plus 3,99 EUR, Premium 9,99 EUR et Metal 15,99 EUR par mois.",
     },
     {
       type: "p",
-      text: "Revolut n'ouvre pas de compte personnel aux résidents de Tunisie ([pays acceptés](https://help.revolut.com/en-US/help/profile-and-plan/profile-plan/verifying-identity/what-countries-are-supported/)) : ouvrez-le donc **après votre arrivée**, avec votre adresse italienne. Prévoyez une vérification d'identité avec selfie, et gardez votre codice fiscale sous la main au cas où l'application le demande.",
+      text: "Revolut n'ouvre pas de compte personnel aux résidents de Tunisie (pays acceptés) : ouvrez-le donc **après votre arrivée**, avec votre adresse italienne. Prévoyez une vérification d'identité avec selfie, et gardez votre codice fiscale sous la main au cas où l'application le demande.",
     },
     { type: "h3", id: "revolut-tessera-sanitaria", text: "Si l'application demande une Tessera Sanitaria" },
     {
@@ -129,7 +129,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "wise", text: "5. Wise : la dernière option, la plus simple" },
     {
       type: "p",
-      text: "Wise n'est pas une banque, mais son compte vous donne des **coordonnées bancaires en EUR** (émises par Wise Europe à Bruxelles, donc un IBAN belge) et une carte de débit. Il faut une adresse enregistrée dans un pays où Wise propose des coordonnées en EUR ([aide Wise](https://wise.com/help/articles/2978028/how-do-i-open-account-details-to-receive-money)).",
+      text: "Wise n'est pas une banque, mais son compte vous donne des **coordonnées bancaires en EUR** (émises par Wise Europe à Bruxelles, donc un IBAN belge) et une carte de débit. Il faut une adresse enregistrée dans un pays où Wise propose des coordonnées en EUR (aide Wise).",
     },
     {
       type: "fees",
@@ -139,14 +139,14 @@ export const fr: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "L'inscription et le compte sont gratuits ; la carte physique coûte 7 EUR ([frais de la carte Wise](https://wise.com/it/pricing/card-fees)).",
+        "L'inscription et le compte sont gratuits ; la carte physique coûte 7 EUR (frais de la carte Wise).",
         "Les retraits sont gratuits jusqu'à 250 EUR par mois, puis 2,69 % du montant au-delà.",
-        "La conversion de devises commence à 0,2 %, selon la devise ([tarifs Wise](https://wise.com/it/pricing/)).",
+        "La conversion de devises commence à 0,2 %, selon la devise (tarifs Wise).",
       ],
     },
     {
       type: "p",
-      text: "L'inscription semble possible en Tunisie, mais la carte Wise n'y est pas disponible ([pays de la carte](https://wise.com/help/articles/2968915/can-i-get-the-wise-card-in-my-country)). Je n'ai pas pu confirmer que Wise reçoit des virements en dinars depuis une banque tunisienne : ne prévoyez pas vos virements mensuels sur Wise.",
+      text: "L'inscription semble possible en Tunisie, mais la carte Wise n'y est pas disponible (pays de la carte). Je n'ai pas pu confirmer que Wise reçoit des virements en dinars depuis une banque tunisienne : ne prévoyez pas vos virements mensuels sur Wise.",
     },
     { type: "referral", provider: "wise" },
 

@@ -32,7 +32,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "what-is-redotpay", text: "1. Qu'est-ce que RedotPay et comment fonctionne la carte ?" },
     {
       type: "p",
-      text: "RedotPay se présente comme « un prestataire de services fintech et non une banque » ([RedotPay](https://www.redotpay.com/)). Vous déposez des cryptos, surtout des stablecoins comme l'USDT ou l'USDC, et vous les dépensez avec une carte **Visa** (le réseau cité dans ses [conditions](https://www.redotpay.com/terms)). La carte physique fonctionne aussi aux distributeurs.",
+      text: "RedotPay se présente comme « un prestataire de services fintech et non une banque » (RedotPay). Vous déposez des cryptos, surtout des stablecoins comme l'USDT ou l'USDC, et vous les dépensez avec une carte **Visa** (le réseau cité dans ses conditions). La carte physique fonctionne aussi aux distributeurs.",
     },
     {
       type: "fees",
@@ -43,8 +43,8 @@ export const fr: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**Plafonds** : jusqu'à 100 000 USD par opération ; retraits 3 par jour et 30 par mois, jusqu'à 3 750 USD par jour sur une carte en USD (moins dans certains pays) ([tableau des frais et plafonds](https://helpcenter.redotpay.com/en/articles/10339271-redotpay-card-limitations-fees)).",
-        "**KYC** : photo de votre pièce d'identité originale, scan du visage, adresse et 4 ou 5 questions sur votre métier et l'origine des fonds ([vérification d'identité](https://helpcenter.redotpay.com/en/articles/10920717-identity-verification-requirements)).",
+        "**Plafonds** : jusqu'à 100 000 USD par opération ; retraits 3 par jour et 30 par mois, jusqu'à 3 750 USD par jour sur une carte en USD (moins dans certains pays) (tableau des frais et plafonds).",
+        "**KYC** : photo de votre pièce d'identité originale, scan du visage, adresse et 4 ou 5 questions sur votre métier et l'origine des fonds (vérification d'identité).",
         "**Qui garde l'argent** : les soldes sont détenus par Red Dot Trust Ltd, une société fiduciaire de Hong Kong. Les conditions précisent que le compte n'est pas un compte bancaire, et aucune garantie des dépôts n'est mentionnée.",
         "**Binance Pay** : Binance a mis fin à Binance Pay sur RedotPay le 3 avril 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)) ; ne comptez pas sur ce moyen de recharge.",
       ],
@@ -125,7 +125,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "p2p-fees", text: "Les frais et la règle du nom" },
     {
       type: "p",
-      text: "Sur la [page des frais P2P de Binance](https://www.binance.com/en/fee/p2pFeeRate) (vérifiée le 10 octobre 2026), le preneur (taker) en zone P2P payait 0 %, l'annonceur (maker) 0,20 %, et l'Express coûtait 0,10 % au preneur. Le vrai coût est l'écart entre prix d'achat et de vente, plus les frais bancaires. Le nom du payeur doit correspondre au nom vérifié de la contrepartie. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges ([P2P Marketplace](https://www.redotpay.com/p2p-marketplace)). Acheter de la crypto avec des dinars depuis la Tunisie vous expose au regard du code des changes (voir la section 2) ; ce guide n'explique pas comment le faire.",
+      text: "Sur la [page des frais P2P de Binance](https://www.binance.com/en/fee/p2pFeeRate) (vérifiée le 10 octobre 2026), le preneur (taker) en zone P2P payait 0 %, l'annonceur (maker) 0,20 %, et l'Express coûtait 0,10 % au preneur. Le vrai coût est l'écart entre prix d'achat et de vente, plus les frais bancaires. Le nom du payeur doit correspondre au nom vérifié de la contrepartie. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges (P2P Marketplace). Acheter de la crypto avec des dinars depuis la Tunisie vous expose au regard du code des changes (voir la section 2) ; ce guide n'explique pas comment le faire.",
     },
     { type: "h3", id: "p2p-scams", text: "Les arnaques P2P courantes" },
     {
@@ -149,7 +149,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "step-coin-network", text: "Étape 1 : même jeton et même réseau des deux côtés" },
     {
       type: "p",
-      text: "Choisissez d'abord le jeton et le réseau dans l'application **qui reçoit**, puis exactement la même paire dans celle qui envoie ([retraits RedotPay](https://helpcenter.redotpay.com/en/articles/10339292-how-do-i-withdraw-crypto-from-redotpay-to-another-wallet-or-platform)).",
+      text: "Choisissez d'abord le jeton et le réseau dans l'application **qui reçoit**, puis exactement la même paire dans celle qui envoie (retraits RedotPay).",
     },
     { type: "callout", tone: "warning", title: "Stop, vérifiez", text: "L'USDT sur Tron (TRC20) n'est pas l'USDT sur BNB Smart Chain. Un réseau que le destinataire ne liste pas peut faire perdre les fonds. Un champ « mémo » inattendu signifie : arrêtez-vous." },
     { type: "h3", id: "step-copy-address", text: "Étape 2 : copiez l'adresse avec le bouton copier ou le QR code" },

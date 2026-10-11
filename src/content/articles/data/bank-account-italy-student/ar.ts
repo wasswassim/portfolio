@@ -91,11 +91,11 @@ export const ar: ArticleTranslation = {
     { type: "h2", id: "revolut", text: "3. Revolut: رقم IBAN إيطالي من التطبيق" },
     {
       type: "p",
-      text: "يعطي Revolut رقم **IBAN إيطاليًا** (يبدأ بـ IT) للحرفاء المقيمين في إيطاليا ([مساعدة Revolut](https://help.revolut.com/it-IT/help/migration-to-italian-iban/question-getting-an-italian-iban/)). في أكتوبر 2026، أسعار باقاته: Standard مجانية، وPlus بـ 3.99 يورو، وPremium بـ 9.99 يورو، وMetal بـ 15.99 يورو شهريًا.",
+      text: "يعطي Revolut رقم **IBAN إيطاليًا** (يبدأ بـ IT) للحرفاء المقيمين في إيطاليا (مساعدة Revolut). في أكتوبر 2026، أسعار باقاته: Standard مجانية، وPlus بـ 3.99 يورو، وPremium بـ 9.99 يورو، وMetal بـ 15.99 يورو شهريًا.",
     },
     {
       type: "p",
-      text: "لا يفتح Revolut حسابات شخصية للمقيمين في تونس ([الدول المقبولة](https://help.revolut.com/en-US/help/profile-and-plan/profile-plan/verifying-identity/what-countries-are-supported/))، لذلك افتحه **بعد وصولك** بعنوانك الإيطالي. استعد للتحقق من هويتك بصورة سيلفي، واجعل codice fiscale في متناولك إذا طلبه التطبيق.",
+      text: "لا يفتح Revolut حسابات شخصية للمقيمين في تونس (الدول المقبولة)، لذلك افتحه **بعد وصولك** بعنوانك الإيطالي. استعد للتحقق من هويتك بصورة سيلفي، واجعل codice fiscale في متناولك إذا طلبه التطبيق.",
     },
     { type: "h3", id: "revolut-tessera-sanitaria", text: "إذا طلب التطبيق Tessera Sanitaria" },
     {
@@ -130,7 +130,7 @@ export const ar: ArticleTranslation = {
     { type: "h2", id: "wise", text: "5. Wise: الخيار الأخير والأسهل" },
     {
       type: "p",
-      text: "Wise ليس بنكًا، لكن حسابه يعطيك **معطيات حساب باليورو** (تصدرها Wise Europe في بروكسل، أي رقم IBAN بلجيكي) وبطاقة دفع. يجب أن يكون لك عنوان مسجّل في بلد يوفّر فيه Wise معطيات باليورو ([مساعدة Wise](https://wise.com/help/articles/2978028/how-do-i-open-account-details-to-receive-money)).",
+      text: "Wise ليس بنكًا، لكن حسابه يعطيك **معطيات حساب باليورو** (تصدرها Wise Europe في بروكسل، أي رقم IBAN بلجيكي) وبطاقة دفع. يجب أن يكون لك عنوان مسجّل في بلد يوفّر فيه Wise معطيات باليورو (مساعدة Wise).",
     },
     {
       type: "fees",
@@ -140,14 +140,14 @@ export const ar: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "التسجيل والحساب مجانيان؛ البطاقة الفعلية بـ 7 يورو ([معاليم بطاقة Wise](https://wise.com/it/pricing/card-fees)).",
+        "التسجيل والحساب مجانيان؛ البطاقة الفعلية بـ 7 يورو (معاليم بطاقة Wise).",
         "السحب من الموزعات مجاني حتى 250 يورو شهريًا، ثم 2.69% مما يتجاوز ذلك.",
-        "تحويل العملة يبدأ من 0.2% حسب العملة ([أسعار Wise](https://wise.com/it/pricing/)).",
+        "تحويل العملة يبدأ من 0.2% حسب العملة (أسعار Wise).",
       ],
     },
     {
       type: "p",
-      text: "يبدو أن التسجيل ممكن من تونس، لكن بطاقة Wise غير متوفرة هناك ([دول البطاقة](https://wise.com/help/articles/2968915/can-i-get-the-wise-card-in-my-country)). لم أتمكن من التأكد من أن Wise يستقبل تحويلات بالدينار من بنك تونسي، فلا تبنِ تحويلاتك الشهرية عليه.",
+      text: "يبدو أن التسجيل ممكن من تونس، لكن بطاقة Wise غير متوفرة هناك (دول البطاقة). لم أتمكن من التأكد من أن Wise يستقبل تحويلات بالدينار من بنك تونسي، فلا تبنِ تحويلاتك الشهرية عليه.",
     },
     { type: "referral", provider: "wise" },
 

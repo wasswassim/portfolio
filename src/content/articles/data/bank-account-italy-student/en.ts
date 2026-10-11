@@ -90,11 +90,11 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "revolut", text: "3. Revolut: an Italian IBAN from the app" },
     {
       type: "p",
-      text: "Revolut gives an **Italian IBAN** (starting with IT) to customers who live in Italy ([Revolut help](https://help.revolut.com/it-IT/help/migration-to-italian-iban/question-getting-an-italian-iban/)). As of October 2026 its plans cost: Standard free, Plus EUR 3.99, Premium EUR 9.99 and Metal EUR 15.99 a month.",
+      text: "Revolut gives an **Italian IBAN** (starting with IT) to customers who live in Italy (Revolut help). As of October 2026 its plans cost: Standard free, Plus EUR 3.99, Premium EUR 9.99 and Metal EUR 15.99 a month.",
     },
     {
       type: "p",
-      text: "Revolut does not open personal accounts for residents of Tunisia ([supported countries](https://help.revolut.com/en-US/help/profile-and-plan/profile-plan/verifying-identity/what-countries-are-supported/)), so open it **after you arrive**, with your Italian address. Expect to verify your ID with a selfie, and have your codice fiscale ready in case the app asks for it.",
+      text: "Revolut does not open personal accounts for residents of Tunisia (supported countries), so open it **after you arrive**, with your Italian address. Expect to verify your ID with a selfie, and have your codice fiscale ready in case the app asks for it.",
     },
     { type: "h3", id: "revolut-tessera-sanitaria", text: "If the app asks for a Tessera Sanitaria" },
     {
@@ -129,7 +129,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "wise", text: "5. Wise: the easy last option" },
     {
       type: "p",
-      text: "Wise is not a bank, but its account gives you **EUR account details** (issued by Wise Europe in Brussels, so the IBAN is Belgian) and a debit card. You need a registered address in a country where Wise offers EUR details ([Wise help](https://wise.com/help/articles/2978028/how-do-i-open-account-details-to-receive-money)).",
+      text: "Wise is not a bank, but its account gives you **EUR account details** (issued by Wise Europe in Brussels, so the IBAN is Belgian) and a debit card. You need a registered address in a country where Wise offers EUR details (Wise help).",
     },
     {
       type: "fees",
@@ -139,14 +139,14 @@ export const en: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "Registration and the account are free; the physical card is EUR 7 ([Wise card fees](https://wise.com/it/pricing/card-fees)).",
+        "Registration and the account are free; the physical card is EUR 7 (Wise card fees).",
         "ATM withdrawals are free up to EUR 250 a month, then 2.69% of the extra.",
-        "Currency conversion starts from 0.2%, depending on the currency ([Wise pricing](https://wise.com/it/pricing/)).",
+        "Currency conversion starts from 0.2%, depending on the currency (Wise pricing).",
       ],
     },
     {
       type: "p",
-      text: "You can probably register from Tunisia, but the Wise card is not available there ([card countries](https://wise.com/help/articles/2968915/can-i-get-the-wise-card-in-my-country)). I could not confirm that Wise receives transfers in dinars from Tunisia, so do not plan your monthly transfers around it.",
+      text: "You can probably register from Tunisia, but the Wise card is not available there (card countries). I could not confirm that Wise receives transfers in dinars from Tunisia, so do not plan your monthly transfers around it.",
     },
     { type: "referral", provider: "wise" },
 

@@ -17,7 +17,11 @@ export default function ReferralCard({ provider, text, lang, dict }: { provider:
         {dict.referral.label} <span aria-hidden="true">·</span> <bdi dir="ltr">{r.name}</bdi>
       </p>
       {text && <p><Inline lang={lang} text={text} /></p>}
-      <p>{r.reward ? r.reward[lang] : dict.referral.generic}</p>
+      <p className="blog-referral-benefits-title">{dict.referral.benefits}</p>
+      <ul className="blog-referral-benefits">
+        {r.benefits[lang].map((b) => <li key={b}>{b}</li>)}
+      </ul>
+      {!r.reward && <p>{dict.referral.generic}</p>}
       {r.code && (
         <p className="blog-referral-code">
           {dict.referral.code} <code className="blog-ltr" dir="ltr">{r.code}</code>

@@ -33,7 +33,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "what-is-redotpay", text: "1. What is RedotPay and how does the card work?" },
     {
       type: "p",
-      text: "RedotPay describes itself as \"a fintech service provider and not a bank\" ([RedotPay](https://www.redotpay.com/)). You deposit crypto, mainly stablecoins such as USDT or USDC, and spend it with a **Visa** card (the network named in its [Terms](https://www.redotpay.com/terms)). The physical card also works at ATMs.",
+      text: "RedotPay describes itself as \"a fintech service provider and not a bank\" (RedotPay). You deposit crypto, mainly stablecoins such as USDT or USDC, and spend it with a **Visa** card (the network named in its Terms). The physical card also works at ATMs.",
     },
     {
       type: "fees",
@@ -44,8 +44,8 @@ export const en: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**Limits**: up to 100,000 USD per transaction; ATM withdrawals 3 a day and 30 a month, up to 3,750 USD a day on a USD card (lower in some countries) ([fee and limit table](https://helpcenter.redotpay.com/en/articles/10339271-redotpay-card-limitations-fees)).",
-        "**KYC**: a photo of your original ID, a face scan, your home address and 4-5 questions on your job and source of funds ([identity verification](https://helpcenter.redotpay.com/en/articles/10920717-identity-verification-requirements)).",
+        "**Limits**: up to 100,000 USD per transaction; ATM withdrawals 3 a day and 30 a month, up to 3,750 USD a day on a USD card (lower in some countries) (fee and limit table).",
+        "**KYC**: a photo of your original ID, a face scan, your home address and 4-5 questions on your job and source of funds (identity verification).",
         "**Who holds the money**: balances are held by Red Dot Trust Ltd, a Hong Kong trust company. The Terms say the account is not a bank account, and no deposit insurance is mentioned.",
         "**Binance Pay**: Binance ended Binance Pay support on RedotPay on 3 April 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)), so do not plan to top up that way.",
       ],
@@ -126,7 +126,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "p2p-fees", text: "Fees and the name rule" },
     {
       type: "p",
-      text: "On Binance's [P2P fee page](https://www.binance.com/en/fee/p2pFeeRate) (checked 10 October 2026), a taker in the P2P zone paid 0%, a maker 0.20%, and Express cost the taker 0.10%. The real cost is the gap between buy and sell prices, plus bank fees. The payer's name must match the counterparty's verified name. RedotPay says its P2P \"does not guarantee the settlement\" of trades ([P2P Marketplace](https://www.redotpay.com/p2p-marketplace)). Buying crypto with dinars from Tunisia is exposed under the exchange code (see section 2); this guide does not explain how to do it.",
+      text: "On Binance's [P2P fee page](https://www.binance.com/en/fee/p2pFeeRate) (checked 10 October 2026), a taker in the P2P zone paid 0%, a maker 0.20%, and Express cost the taker 0.10%. The real cost is the gap between buy and sell prices, plus bank fees. The payer's name must match the counterparty's verified name. RedotPay says its P2P \"does not guarantee the settlement\" of trades (P2P Marketplace). Buying crypto with dinars from Tunisia is exposed under the exchange code (see section 2); this guide does not explain how to do it.",
     },
     { type: "h3", id: "p2p-scams", text: "Typical P2P scams" },
     {
@@ -150,7 +150,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-coin-network", text: "Step 1: same coin and same network on both sides" },
     {
       type: "p",
-      text: "Choose the coin and network in the **receiving** app first, then exactly the same pair in the sending app ([RedotPay withdrawals](https://helpcenter.redotpay.com/en/articles/10339292-how-do-i-withdraw-crypto-from-redotpay-to-another-wallet-or-platform)).",
+      text: "Choose the coin and network in the **receiving** app first, then exactly the same pair in the sending app (RedotPay withdrawals).",
     },
     { type: "callout", tone: "warning", title: "Stop and check", text: "USDT on Tron (TRC20) is not USDT on BNB Smart Chain. A network the receiver does not list can mean lost funds. An unexpected memo field means: stop." },
     { type: "h3", id: "step-copy-address", text: "Step 2: copy the address with the copy button or QR code" },
