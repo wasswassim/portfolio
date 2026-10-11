@@ -534,8 +534,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     display: flex; flex-direction: column; gap: 1rem;
     max-block-size: calc(100dvh - 3rem);
     /* short screens: the column scrolls instead of cutting off the newsletter card */
-    overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin;
+    overflow-y: auto; overscroll-behavior: contain;
+    /* the column still scrolls (wheel, trackpad, keyboard) but shows no bar */
+    scrollbar-width: none;
   }
+  .blog-side::-webkit-scrollbar { display: none; }
   .blog-side .blog-guide { flex: 0 1 auto; max-block-size: none; min-block-size: 0; }
   .blog-side .blog-guide:has(.blog-guide-scroll:not([hidden])) { min-block-size: 12rem; }
   .blog-side .blog-newsletter { flex: none; }
