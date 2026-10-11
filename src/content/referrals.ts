@@ -17,6 +17,9 @@ export type Referral = {
   benefits: Record<Lang, string[]>;
   termsUrl: string;
   lastVerified: string;
+  /** Badge and button wording shown to readers (promo / gift / partner) */
+  badge: Record<Lang, string>;
+  cta: Record<Lang, string>;
   /** Brand colours for the card (background, text, button) */
   brand: { bg: string; fg: string; button: string; buttonText: string };
   /** Articles allowed to show this link (checked by scripts/check-articles.mjs) */
@@ -34,12 +37,14 @@ export const REFERRALS = {
       ar: "تعرض صفحة التسجيل في RedotPay مكافأة ترحيبية بقيمة 5 USD للمستخدمين الجدد. يجب استعمالها خلال 30 يومًا ولا يمكن دفع معلوم البطاقة بها. لا يمكن إدخال الرمز إلا عند التسجيل.",
     },
     benefits: {
-      en: ["A 5 USD welcome reward on your new account (to use within 30 days; it cannot pay the card fee).", "The referral code j2eb5 is filled in for you: it can only be added when you register, not later.", "Same fees, limits and plans as a normal sign-up.", "It supports these free guides, at no extra cost to you."],
-      fr: ["Une récompense de bienvenue de 5 USD sur votre nouveau compte (à utiliser sous 30 jours ; elle ne paie pas les frais de carte).", "Le code de parrainage j2eb5 est rempli pour vous : il ne peut être ajouté qu'à l'inscription, pas après.", "Mêmes frais, plafonds et formules qu'une inscription normale.", "Cela soutient ces guides gratuits, sans coût supplémentaire pour vous."],
-      ar: ["مكافأة ترحيبية بقيمة 5 USD في حسابك الجديد (تُستعمل خلال 30 يومًا ولا تغطي معلوم البطاقة).", "رمز الإحالة j2eb5 يُدرج تلقائيًا: لا يمكن إضافته إلا عند التسجيل، وليس بعده.", "نفس الرسوم والسقوف والباقات كالتسجيل العادي.", "يدعم ذلك هذه الأدلة المجانية دون أي تكلفة إضافية عليك."],
+      en: ["A 5 USD welcome reward on your new account (to use within 30 days; it cannot pay the card fee).", "The promo code j2eb5 is filled in for you: it can only be added when you register, not later.", "Same fees, limits and plans as a normal sign-up.", "It supports these free guides, at no extra cost to you."],
+      fr: ["Une récompense de bienvenue de 5 USD sur votre nouveau compte (à utiliser sous 30 jours ; elle ne paie pas les frais de carte).", "Le code promo j2eb5 est rempli pour vous : il ne peut être ajouté qu'à l'inscription, pas après.", "Mêmes frais, plafonds et formules qu'une inscription normale.", "Cela soutient ces guides gratuits, sans coût supplémentaire pour vous."],
+      ar: ["مكافأة ترحيبية بقيمة 5 USD في حسابك الجديد (تُستعمل خلال 30 يومًا ولا تغطي معلوم البطاقة).", "الرمز الترويجي j2eb5 يُدرج تلقائيًا: لا يمكن إضافته إلا عند التسجيل، وليس بعده.", "نفس الرسوم والسقوف والباقات كالتسجيل العادي.", "يدعم ذلك هذه الأدلة المجانية دون أي تكلفة إضافية عليك."],
     },
     termsUrl: "https://helpcenter.redotpay.com/en/articles/10339296-invite-friends-and-earn-rewards",
     lastVerified: "2026-10-10",
+    badge: { en: "Promo code", fr: "Code promo", ar: "رمز ترويجي" },
+    cta: { en: "Get the 5 USD welcome reward on RedotPay", fr: "Obtenir la récompense de bienvenue de 5 USD sur RedotPay", ar: "احصل على مكافأة الترحيب 5 USD على RedotPay" },
     brand: { bg: "#fdecee", fg: "#2b0a0d", button: "#e6323e", buttonText: "#ffffff" },
     articles: ["redotpay-tunisia"],
   },
@@ -54,6 +59,8 @@ export const REFERRALS = {
     },
     termsUrl: "https://www.revolut.com/it-IT/legal/referrals-terms/",
     lastVerified: "2026-10-10",
+    badge: { en: "Partner link", fr: "Lien partenaire", ar: "رابط شراكة" },
+    cta: { en: "Open Revolut with my link", fr: "Ouvrir Revolut avec mon lien", ar: "افتح Revolut عبر رابطي" },
     brand: { bg: "#eef1ff", fg: "#191c1f", button: "#191c1f", buttonText: "#ffffff" },
     articles: ["bank-account-italy-student"],
   },
@@ -61,9 +68,9 @@ export const REFERRALS = {
     name: "Wise",
     url: "https://wise.com/invite/ilpc/wassimg9",
     reward: {
-      en: "Under Wise's invite terms, you get one fee-free transfer up to the amount shown when you sign up, to use within 6 months.",
-      fr: "Selon les conditions de parrainage de Wise, vous recevez un transfert sans frais, jusqu'au montant affiché à l'inscription, à utiliser sous 6 mois.",
-      ar: "حسب شروط الدعوة في Wise، تحصل على تحويل واحد دون عمولة، في حدود المبلغ المعروض عند التسجيل، تستعمله خلال 6 أشهر.",
+      en: "Under Wise's offer terms, you get one fee-free transfer up to the amount shown when you sign up, to use within 6 months.",
+      fr: "Selon les conditions de l'offre Wise, vous recevez un transfert sans frais, jusqu'au montant affiché à l'inscription, à utiliser sous 6 mois.",
+      ar: "حسب شروط عرض Wise، تحصل على تحويل واحد دون عمولة، في حدود المبلغ المعروض عند التسجيل، تستعمله خلال 6 أشهر.",
     },
     benefits: {
       en: ["One fee-free transfer, up to the amount shown when you sign up, to use within 6 months.", "Same fees, limits and plans as a normal sign-up.", "It supports these free guides, at no extra cost to you."],
@@ -72,6 +79,8 @@ export const REFERRALS = {
     },
     termsUrl: "https://wise.com/help/articles/2487043/how-does-the-free-transfer-invite-program-work",
     lastVerified: "2026-10-10",
+    badge: { en: "Welcome gift", fr: "Cadeau de bienvenue", ar: "هدية ترحيبية" },
+    cta: { en: "Claim your fee-free Wise transfer", fr: "Obtenir votre transfert Wise sans frais", ar: "احصل على تحويل Wise دون عمولة" },
     brand: { bg: "#efffe3", fg: "#163300", button: "#9fe870", buttonText: "#163300" },
     articles: ["bank-account-italy-student"],
   },

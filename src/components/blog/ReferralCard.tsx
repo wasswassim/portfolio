@@ -15,11 +15,11 @@ export default function ReferralCard({ provider, text, lang, dict }: { provider:
   return (
     <aside
       className="blog-referral blog-referral--brand"
-      aria-label={dict.referral.label + ": " + r.name}
+      aria-label={r.badge[lang] + ": " + r.name}
       style={{ "--ref-bg": r.brand.bg, "--ref-fg": r.brand.fg, "--ref-btn": r.brand.button, "--ref-btn-fg": r.brand.buttonText } as React.CSSProperties}
     >
       <p className="blog-referral-title">
-        {dict.referral.label} <span aria-hidden="true">·</span> <bdi dir="ltr">{r.name}</bdi>
+        {r.badge[lang]} <span aria-hidden="true">·</span> <bdi dir="ltr">{r.name}</bdi>
       </p>
       {text && <p><Inline lang={lang} text={text} /></p>}
       <p className="blog-referral-benefits-title">{dict.referral.benefits}</p>
@@ -34,7 +34,7 @@ export default function ReferralCard({ provider, text, lang, dict }: { provider:
       )}
       <p>
         <a className="blog-referral-cta" href={r.url} rel="sponsored nofollow noopener" target="_blank">
-          {dict.referral.cta(r.name)}
+          {r.cta[lang]}
           <span className="blog-ext" aria-hidden="true">↗</span>
           <span className="blog-sr">{" " + dict.referral.newTab}</span>
         </a>
