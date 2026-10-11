@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Part 2 of the settling-in-Rome series. French and Arabic mirror this structure (same heading ids, two fee boxes, two tables).
 export const en: ArticleTranslation = {
   slug: "how-to-apply-for-residenza-in-rome",
-  title: "How to Apply for Residenza in Rome: Anagrafe Registration and Carta d'Identità for Foreign Students",
+  title: "How to Apply for Residenza in Rome",
+  subtitle: "Anagrafe Registration and Carta d'Identità for Foreign Students",
   seoTitle: "How to Apply for Residenza in Rome as a Foreign Student",
   metaDescription:
     "Register your residenza at the Rome anagrafe as a non-EU student: documents, online, PEC or post, the 45-day Polizia Locale check and the carta d'identità.",

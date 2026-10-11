@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts (same heading ids, one table, two fee boxes). Italian terms on the pagoPA screens stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "payer-pagopa-avec-paypal-tunisie",
-  title: "Payer un avis pagoPA avec PayPal ou une carte internationale tunisienne",
+  title: "Payer un avis pagoPA",
+  subtitle: "Avec PayPal ou une carte internationale tunisienne",
   seoTitle: "Payer pagoPA avec PayPal ou une carte tunisienne",
   metaDescription:
     "Payer un avis pagoPA italien avec PayPal ou une carte internationale tunisienne : sans SPID, étape par étape, les frais et que faire si la carte est refusée.",

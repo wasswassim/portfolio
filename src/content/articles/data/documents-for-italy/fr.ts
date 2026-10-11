@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Traduction de en.ts. Les termes administratifs italiens et tunisiens restent dans leur langue.
 export const fr: ArticleTranslation = {
   slug: "legalisation-traduction-documents-italie",
-  title: "Apostille du diplôme tunisien pour l'Italie : légalisation, traduction, DOV ou CIMEA",
+  title: "Apostille du diplôme tunisien pour l'Italie",
+  subtitle: "Légalisation, traduction, DOV ou CIMEA",
   seoTitle: "Apostille diplôme tunisien pour l'Italie : étapes",
   metaDescription:
     "Légalisation du diplôme pour l'Italie : authentifier, apostiller et traduire vos diplômes tunisiens, puis obtenir une Dichiarazione di Valore ou un CIMEA.",

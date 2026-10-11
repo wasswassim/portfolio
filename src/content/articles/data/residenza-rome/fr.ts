@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // French version of en.ts (same heading ids, two fee boxes, two tables). Italian administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "demander-la-residenza-a-rome",
-  title: "Comment demander la residenza à Rome : inscription à l'anagrafe et carta d'identità pour étudiants étrangers",
+  title: "Comment demander la residenza à Rome",
+  subtitle: "Inscription à l'anagrafe et carta d'identità pour étudiants étrangers",
   seoTitle: "Comment demander la residenza à Rome : guide étudiant",
   metaDescription:
     "S'inscrire à l'anagrafe de Rome, étudiant non européen : documents, envoi en ligne, PEC ou poste, contrôle de la Polizia Locale en 45 jours, carta d'identità.",

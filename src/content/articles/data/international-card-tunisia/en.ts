@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 // (same heading ids, one table, four fee boxes, no referral blocks).
 export const en: ArticleTranslation = {
   slug: "pay-italian-university-fees-from-tunisia",
-  title: "How to pay Italian university fees from Tunisia with an international card",
+  title: "How to pay Italian university fees from Tunisia",
+  subtitle: "Bank transfer, technology card, PayPal and the other options",
   seoTitle: "How to Pay Italian University Fees from Tunisia (2026)",
   metaDescription:
     "How to pay Italian university fees from Tunisia: bank transfer, technology card, PayPal on pagoPA, Italian cards, crypto cards, exchange rules and scams.",
@@ -220,7 +221,8 @@ export const en: ArticleTranslation = {
         { label: "PayPal Italy: pagoPA", url: "https://www.paypal.com/it/digital-wallet/pagopa" },
         { label: "PayPal Tunisia: consumer fees", url: "https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN" },
         { label: "Sapienza: regional tax and revenue stamp", url: "https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo" },
-        { label: "RedotPay: terms of service", url: "https://www.redotpay.com/terms" },
+        { label: "RedotPay: terms of service", url: "https://www.redotpay.com/terms" },
+
       ],
     },
     {

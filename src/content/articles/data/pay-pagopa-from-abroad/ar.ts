@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "pay-pagopa-with-paypal-from-tunisia",
-  title: "كيف تدفع إشعار pagoPA من تونس عبر PayPal أو بطاقة دولية",
+  title: "كيف تدفع إشعار pagoPA من تونس",
+  subtitle: "عبر PayPal أو بطاقة دولية",
   seoTitle: "كيف تدفع pagoPA من تونس عبر PayPal أو بطاقة دولية",
   metaDescription:
     "كيف تدفع إشعار pagoPA الإيطالي من تونس عبر PayPal أو بطاقة دولية: بدون SPID، خطوة بخطوة، مع الرسوم، وماذا تفعل إذا رُفضت بطاقتك أو فشل الدفع.",

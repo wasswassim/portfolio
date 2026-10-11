@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "arriving-in-rome-as-a-student",
-  title: "الوصول إلى روما كطالب: إقامة الدراسة في إيطاليا وأول 30 يومًا",
+  title: "الوصول إلى روما كطالب",
+  subtitle: "إقامة الدراسة في إيطاليا وأول 30 يومًا",
   seoTitle: "إقامة الدراسة في إيطاليا: أول 30 يومًا للطالب في روما",
   metaDescription:
     "الوصول إلى روما كطالب تونسي: طلب Permesso di soggiorno خلال 8 أيام عمل، وcodice fiscale، وفتح حساب بنكي، وإتمام التسجيل، وخطوات DiSCo، وميزانية الشهر الأول.",

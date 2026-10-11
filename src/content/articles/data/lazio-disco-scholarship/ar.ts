@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "lazio-disco-scholarship",
-  title: "منحة Lazio DiSCo في روما للطلاب التونسيين: التقديم وISEEUP والدفعات",
+  title: "منحة Lazio DiSCo في روما للطلاب التونسيين",
+  subtitle: "التقديم وISEEUP والدفعات",
   seoTitle: "منحة ديسكو لازيو DiSCo في روما للطلاب التونسيين",
   metaDescription:
     "كيف يحصل الطلاب التونسيون على منحة ديسكو لازيو DiSCo في روما وكامل جهة Lazio: مبالغ ابتداءً من 6,571.11 يورو، الشروط، رزنامة 2027/28، ISEEUP والدفعات.",

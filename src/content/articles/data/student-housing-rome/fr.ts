@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Traduction de en.ts. Les noms italiens (DiSCo, codice fiscale, Agenzia delle Entrate) restent en italien.
 export const fr: ArticleTranslation = {
   slug: "logement-etudiant-rome",
-  title: "Logement étudiant à Rome pour les Tunisiens : résidences DiSCo, chambres et arnaques",
+  title: "Logement étudiant à Rome pour les Tunisiens",
+  subtitle: "Résidences DiSCo, chambres et arnaques",
   seoTitle: "Logement étudiant à Rome : DiSCo, chambres, arnaques",
   metaDescription:
     "Logement étudiant à Rome pour les Tunisiens : résidences DiSCo, services logement des universités, sites de chambres, contrat à vérifier et arnaques à éviter.",

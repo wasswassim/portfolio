@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts. Italian administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "arrivee-a-rome-etudiant",
-  title: "Arriver à Rome étudiant : permis de séjour étudiant en Italie et 30 premiers jours, pour les Tunisiens",
+  title: "Arriver à Rome étudiant",
+  subtitle: "Permis de séjour étudiant en Italie et 30 premiers jours, pour les Tunisiens",
   seoTitle: "Permis de séjour étudiant Italie : 30 premiers jours à Rome",
   metaDescription:
     "Arriver à Rome étudiant pour les Tunisiens : kit du permis de séjour sous 8 jours ouvrables, codice fiscale, compte bancaire, inscription, DiSCo et budget.",

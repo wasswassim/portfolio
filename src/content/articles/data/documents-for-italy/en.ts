@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Part 3 of the study series. Italian and Tunisian administrative terms stay in their own language.
 export const en: ArticleTranslation = {
   slug: "apostille-translation-documents-italy",
-  title: "Apostille Tunisian Diploma for Italy: Legalisation, Translation, DOV or CIMEA",
+  title: "Apostille Tunisian Diploma for Italy",
+  subtitle: "Legalisation, Translation, DOV or CIMEA",
   seoTitle: "Apostille Tunisian Diploma for Italy: Step by Step",
   metaDescription:
     "How to authenticate, apostille and translate your Tunisian diploma for a university in Rome, then get a Dichiarazione di Valore or a CIMEA statement.",

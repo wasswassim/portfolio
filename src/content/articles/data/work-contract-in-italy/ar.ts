@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "work-contract-in-italy",
-  title: "عقد عمل في إيطاليا من تونس: Nulla Osta والتأشيرة والوصول",
+  title: "عقد عمل في إيطاليا من تونس",
+  subtitle: "Nulla Osta والتأشيرة والوصول",
   seoTitle: "عقد عمل في إيطاليا: Nulla Osta والتأشيرة والوصول",
   metaDescription:
     "بعد تكوين معتمد في تونس: كيف تحصل على عقد عمل في إيطاليا، ومن يقدم طلب Nulla Osta، وكيف تطلب تأشيرة D، وما الإجراءات بعد الوصول إلى إيطاليا.",

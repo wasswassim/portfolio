@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "student-housing-rome",
-  title: "سكن الطلاب في روما: إقامات DiSCo والغرف وتجنب الاحتيال",
+  title: "سكن الطلاب في روما",
+  subtitle: "إقامات DiSCo والغرف وتجنب الاحتيال",
   seoTitle: "سكن الطلاب في روما: إقامات DiSCo والغرف والاحتيال",
   metaDescription:
     "سكن الطلاب في روما للتونسيين: إقامات DiSCo، وخدمات السكن في الجامعات، ومواقع البحث عن غرفة، وما يجب التحقق منه قبل الإمضاء، وكيف تتجنب الاحتيال في الكراء.",

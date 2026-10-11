@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "redotpay-tunisia",
-  title: "RedotPay في تونس: رسوم البطاقة وشرح P2P والمخاطر القانونية والتحويل الآمن",
+  title: "RedotPay في تونس",
+  subtitle: "رسوم البطاقة وشرح P2P والمخاطر القانونية والتحويل الآمن",
   seoTitle: "RedotPay في تونس: الرسوم وP2P والمخاطر القانونية",
   metaDescription:
     "شرح RedotPay للتونسيين: رسوم البطاقة وسقوفها، وكيف يعمل P2P مع الضمان، ولماذا لا يناسب Rizon، والمخاطر القانونية في تونس، وكيف ترسل العملات الرقمية بأمان.",

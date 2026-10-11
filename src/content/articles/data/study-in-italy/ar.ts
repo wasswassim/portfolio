@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "study-in-italy-for-tunisian-students",
-  title: "الدراسة في إيطاليا للطلاب التونسيين: المسار الكامل إلى روما لسنة 2027/28",
+  title: "الدراسة في إيطاليا للطلاب التونسيين",
+  subtitle: "المسار الكامل إلى روما لسنة 2027/28",
   seoTitle: "الدراسة في إيطاليا للطلاب التونسيين: دليل روما 2027",
   metaDescription:
     "الدراسة في إيطاليا للطلاب التونسيين: 7 مراحل للوصول إلى الإجازة أو الماجستير أو الدكتوراه في روما، مع مواعيد 2027/28 وكل التكاليف من رسوم الترشح إلى التأشيرة.",

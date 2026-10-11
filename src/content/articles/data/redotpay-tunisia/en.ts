@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 // one fee box, one referral block after the comparison table).
 export const en: ArticleTranslation = {
   slug: "redotpay-tunisia",
-  title: "RedotPay in Tunisia: Card Fees, P2P Explained, Legal Risks and Safe Wallet Transfers",
+  title: "RedotPay in Tunisia",
+  subtitle: "Card Fees, P2P Explained, Legal Risks and Safe Wallet Transfers",
   seoTitle: "RedotPay in Tunisia: Crypto Card Fees, P2P and Legal Risks",
   metaDescription:
     "RedotPay explained for Tunisians: card fees and limits, how P2P escrow works, why Rizon is not an option, the legal risks in Tunisia and safe wallet transfers.",

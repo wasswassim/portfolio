@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "contrat-de-travail-en-italie",
-  title: "Contrat de travail en Italie pour les Tunisiens : Nulla Osta, visa et arrivée",
+  title: "Contrat de travail en Italie pour les Tunisiens",
+  subtitle: "Nulla Osta, visa et arrivée",
   seoTitle: "Contrat de travail en Italie : Nulla Osta et visa",
   metaDescription:
     "Après une formation agréée en Tunisie : obtenir un contrat de travail en Italie, le Nulla Osta déposé par l'employeur, le visa D et les démarches à l'arrivée.",

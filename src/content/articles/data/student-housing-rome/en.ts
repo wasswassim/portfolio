@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Source text for part 7. French and Arabic mirror this structure (same ids, same table).
 export const en: ArticleTranslation = {
   slug: "student-housing-rome",
-  title: "Student Housing in Rome: DiSCo Residences, Rooms and Scams",
+  title: "Student Housing in Rome",
+  subtitle: "DiSCo Residences, Rooms and Scams",
   seoTitle: "Student Housing in Rome: DiSCo, Rooms and Scams",
   metaDescription:
     "Student housing in Rome for Tunisians: DiSCo residences, university housing desks, room platforms, what to check before signing, and how to avoid rental scams.",

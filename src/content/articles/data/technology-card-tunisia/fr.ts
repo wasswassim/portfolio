@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts. Same heading ids, two tables, two fee boxes.
 export const fr: ArticleTranslation = {
   slug: "carte-technologique-internationale",
-  title: "Carte technologique internationale (CTI) en Tunisie : plafond, documents, usages et renouvellement",
+  title: "Carte technologique internationale (CTI) en Tunisie",
+  subtitle: "Plafond, documents, usages et renouvellement",
   seoTitle: "Carte technologique internationale en Tunisie : plafond",
   metaDescription:
     "La CTI donne aux résidents tunisiens bacheliers 1 000 TND par an (environ 297 EUR) pour payer en ligne. Documents, banque ou La Poste, usages et renouvellement.",

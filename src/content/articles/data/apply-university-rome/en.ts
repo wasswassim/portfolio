@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Source language for this post. French and Arabic follow the same structure and heading ids.
 export const en: ArticleTranslation = {
   slug: "apply-to-university-in-rome",
-  title: "Apply to University in Rome: A Guide for Tunisian Students",
+  title: "Apply to University in Rome",
+  subtitle: "A Guide for Tunisian Students",
   seoTitle: "Apply to University in Rome: Tunisian Students' Guide",
   metaDescription:
     "How to apply to university in Rome from Tunisia: find a course, apply to Sapienza, Tor Vergata, Roma Tre, LUISS or LUMSA, then do Universitaly pre-enrolment.",

@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts. Italian administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "visa-etudiant-italie-tunisiens",
-  title: "Visa étudiant Italie pour les Tunisiens : Almaviva, documents et attestation de blocage",
+  title: "Visa étudiant Italie pour les Tunisiens",
+  subtitle: "Almaviva, documents et attestation de blocage",
   seoTitle: "Visa étudiant Italie pour les Tunisiens (2027/28)",
   metaDescription:
     "Visa d'études en Italie pour les étudiants tunisiens en 2027/28 : rendez-vous Almaviva, les 15 documents, le blocage de 10 179,85 EUR et les frais.",

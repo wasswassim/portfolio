@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "apply-to-university-in-rome",
-  title: "التسجيل في الجامعات الإيطالية للطلاب التونسيين: كيف تترشح في روما",
+  title: "التسجيل في الجامعات الإيطالية للطلاب التونسيين",
+  subtitle: "كيف تترشح في روما",
   seoTitle: "التسجيل في الجامعات الإيطالية للطلاب التونسيين",
   metaDescription:
     "التسجيل في جامعات روما للطلاب التونسيين: كيف تجد اختصاصك، وتترشح في Sapienza وTor Vergata وRoma Tre وLUISS وLUMSA، ثم تكمل التسجيل المسبق على Universitaly.",

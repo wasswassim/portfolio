@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "pay-italian-university-fees-from-tunisia",
-  title: "كيف تدفع رسوم التسجيل في الجامعات الإيطالية ببطاقة دولية من تونس",
+  title: "كيف تدفع رسوم التسجيل في الجامعات الإيطالية من تونس",
+  subtitle: "التحويل البنكي والبطاقة التكنولوجية وPayPal وحلول أخرى",
   seoTitle: "رسوم التسجيل في جامعات إيطاليا: الدفع ببطاقة دولية من تونس",
   metaDescription:
     "كيف تدفع رسوم الجامعة الإيطالية من تونس: التحويل البنكي، البطاقة التكنولوجية، PayPal على pagoPA، البطاقة الإيطالية، العملات الرقمية، قواعد الصرف والاحتيال.",

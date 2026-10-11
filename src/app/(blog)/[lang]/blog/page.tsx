@@ -145,7 +145,7 @@ export default async function BlogLandingPage({ params }: Props) {
         )}
         </div>
       </main>
-      <BlogFooter dict={dict} />
+      <BlogFooter lang={lang} dict={dict} />
       <JsonLd
         data={[
           personLd(),

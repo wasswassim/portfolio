@@ -12,6 +12,7 @@ export const en = {
   guide: { collapse: "Hide the guide", expand: "Show the guide" },
   newsletter: { title: "Subscribe to my newsletter", text: "New guides and important rule changes for Tunisians moving to Italy. No spam.", email: "Email address", consent: "I agree to receive this newsletter by email and know I can unsubscribe at any time.", privacy: "You will get a confirmation email first. Emails are sent with Brevo, on servers in the EU.", privacyLink: "Privacy", submit: "Subscribe" },
   callout: { tip: "Tip", warning: "Warning", note: "Note" },
+  footerNav: { label: "Site menu", home: "Home", skills: "Skills", about: "About", work: "Work", contact: "Contact", blog: "Blog", privacy: "Privacy" },
   footer: { rights: "Wassim Gatri. All rights reserved.", builtBy: "Written by Wassim Gatri" },
   notFound: { title: "Page not found", body: "This page doesn't exist or has moved.", cta: "Back to the blog" },
   categories: {

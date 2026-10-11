@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts. Italian and portal names stay as they are.
 export const fr: ArticleTranslation = {
   slug: "inscription-universite-rome",
-  title: "Inscription à l'université en Italie pour les Tunisiens : candidater à Rome",
+  title: "Inscription à l'université en Italie pour les Tunisiens",
+  subtitle: "Candidater à Rome",
   seoTitle: "Inscription université en Italie pour les Tunisiens",
   metaDescription:
     "Inscription à l'université à Rome pour les Tunisiens : trouver un cours, candidater à Sapienza, Tor Vergata, Roma Tre, LUISS ou LUMSA, puis faire Universitaly.",

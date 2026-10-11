@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "student-jobs-rome",
-  title: "العمل أثناء الدراسة في روما للطلاب التونسيين: قاعدة 20 ساعة وSubito وIndeed ووكالات التشغيل",
+  title: "العمل أثناء الدراسة في روما للطلاب التونسيين",
+  subtitle: "قاعدة 20 ساعة وSubito وIndeed والوكالات",
   seoTitle: "العمل أثناء الدراسة في روما: Subito والقوانين والوكالات",
   metaDescription:
     "العمل أثناء الدراسة في روما للتونسيين: حد 20 ساعة أسبوعيًا، ونشر إعلان على Subito للعمل في مقهى، وIndeed، ووكالات التشغيل، ووظائف 150 ore، وتفادي الاحتيال.",

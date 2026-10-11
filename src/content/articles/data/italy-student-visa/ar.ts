@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev`
   slug: "italy-student-visa-tunisia",
-  title: "فيزا الدراسة في إيطاليا للطلاب التونسيين: موعد Almaviva والوثائق وشهادة تجميد المبلغ",
+  title: "فيزا الدراسة في إيطاليا للطلاب التونسيين",
+  subtitle: "موعد Almaviva والوثائق وشهادة تجميد المبلغ",
   seoTitle: "فيزا الدراسة في إيطاليا للطلاب التونسيين 2027/28",
   metaDescription:
     "كيف يحصل الطالب التونسي على فيزا الدراسة في إيطاليا لسنة 2027/28: موعد Almaviva، والوثائق الخمس عشرة، وتجميد مبلغ 10,179.85 يورو، والمعاليم.",

@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Traduction de en.ts : mêmes ids de titres, deux tableaux, un encadré de frais, un bloc de parrainage.
 export const fr: ArticleTranslation = {
   slug: "redotpay-tunisie",
-  title: "RedotPay en Tunisie : frais de la carte, P2P expliqué, risques juridiques et transferts sûrs",
+  title: "RedotPay en Tunisie",
+  subtitle: "Frais de la carte, P2P expliqué, risques juridiques et transferts sûrs",
   seoTitle: "RedotPay en Tunisie : frais, P2P et risques juridiques",
   metaDescription:
     "RedotPay expliqué aux Tunisiens : frais et plafonds de la carte, fonctionnement du P2P avec séquestre, pourquoi pas Rizon, risques juridiques et envois sûrs.",

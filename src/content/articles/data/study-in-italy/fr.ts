@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts. Italian administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "etudier-en-italie-pour-les-tunisiens",
-  title: "Étudier en Italie pour les Tunisiens : le parcours complet vers Rome pour 2027/28",
+  title: "Étudier en Italie pour les Tunisiens",
+  subtitle: "Le parcours complet vers Rome pour 2027/28",
   seoTitle: "Étudier en Italie pour les Tunisiens : guide Rome 2027",
   metaDescription:
     "Étudier en Italie pour les Tunisiens : les 7 étapes vers une Licence, un Master ou un doctorat à Rome, les dates 2027/28 et tous les coûts, jusqu'au visa.",

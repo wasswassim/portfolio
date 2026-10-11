@@ -92,6 +92,8 @@ export type Block =
 export type ArticleTranslation = {
   slug: string;
   title: string;
+  /** Second line under the H1 when the full title is long (e.g. what the guide covers) */
+  subtitle?: string;
   seoTitle: string;
   metaDescription: string;
   /** Answer-first summary; shown at the top of the guide card and quoted by answer engines. */

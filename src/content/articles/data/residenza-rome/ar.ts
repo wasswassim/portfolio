@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "how-to-apply-for-residenza-in-rome",
-  title: "كيف تطلب الريزيدنزا في روما: التسجيل في anagrafe وبطاقة الهوية (carta d'identità) للطالب الأجنبي",
+  title: "كيف تطلب الريزيدنزا في روما",
+  subtitle: "التسجيل في anagrafe وبطاقة الهوية (carta d'identità) للطالب الأجنبي",
   seoTitle: "كيف تطلب الريزيدنزا في روما: دليل الطالب الأجنبي",
   metaDescription:
     "كيف يسجّل الطالب غير الأوروبي الـ residenza في anagrafe روما: الوثائق، الإرسال عبر الإنترنت أو PEC أو البريد، مراقبة Polizia Locale خلال 45 يومًا، وبطاقة CIE.",

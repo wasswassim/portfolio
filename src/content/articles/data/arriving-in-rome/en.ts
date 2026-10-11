@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Part 6 of the study-in-Rome series. French and Arabic mirror this structure (same heading ids, one figure, one table).
 export const en: ArticleTranslation = {
   slug: "arriving-in-rome-as-a-student",
-  title: "Arriving in Rome as a Student: Residence Permit for Study in Italy and Your First 30 Days",
+  title: "Arriving in Rome as a Student",
+  subtitle: "Residence Permit for Study in Italy and Your First 30 Days",
   seoTitle: "Residence Permit for Study in Italy: First 30 Days in Rome",
   metaDescription:
     "Arriving in Rome as a Tunisian student: the residence permit kit within 8 working days, codice fiscale, bank account, enrolment, DiSCo steps and a first budget.",

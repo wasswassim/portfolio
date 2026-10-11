@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Part 5 of the "study in Rome" series. Facts checked against the Italian Embassy in Tunis and the BCT on 2026-10-09.
 export const en: ArticleTranslation = {
   slug: "italy-student-visa-tunisia",
-  title: "Italy Student Visa for Tunisian Students: Almaviva, Documents and Blocked Account",
+  title: "Italy Student Visa for Tunisian Students",
+  subtitle: "Almaviva, Documents and Blocked Account",
   seoTitle: "Italy Student Visa for Tunisian Students (2027/28)",
   metaDescription:
     "How Tunisian students get the Italian study visa for 2027/28: the Almaviva appointment, the 15 documents, the EUR 10,179.85 blocked account and the fees.",

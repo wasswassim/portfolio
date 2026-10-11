@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Hub of the study series. Italian administrative terms stay in Italian.
 export const en: ArticleTranslation = {
   slug: "study-in-italy-for-tunisian-students",
-  title: "Study in Italy for Tunisian Students: The Full Path to Rome for 2027/28",
+  title: "Study in Italy for Tunisian Students",
+  subtitle: "The Full Path to Rome for 2027/28",
   seoTitle: "Study in Italy for Tunisian Students: Rome Guide 2027",
   metaDescription:
     "Study in Italy for Tunisian students: the 7 steps to a Bachelor, Master or PhD in Rome, the 2027/28 deadlines and the real costs, from fees to the visa.",

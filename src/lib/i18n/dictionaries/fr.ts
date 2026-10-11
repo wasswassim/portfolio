@@ -12,6 +12,7 @@ export const fr: Dictionary = {
   guide: { collapse: "Masquer le guide", expand: "Afficher le guide" },
   newsletter: { title: "Abonnez-vous à ma newsletter", text: "Nouveaux guides et changements de règles importants pour les Tunisiens qui partent en Italie. Pas de spam.", email: "Adresse e-mail", consent: "J'accepte de recevoir cette newsletter par e-mail et je sais que je peux me désabonner à tout moment.", privacy: "Vous recevrez d'abord un e-mail de confirmation. Les e-mails sont envoyés avec Brevo, sur des serveurs situés dans l'UE.", privacyLink: "Confidentialité", submit: "S'abonner" },
   callout: { tip: "Astuce", warning: "Attention", note: "Note" },
+  footerNav: { label: "Menu du site", home: "Accueil", skills: "Compétences", about: "À propos", work: "Projets", contact: "Contact", blog: "Blog", privacy: "Confidentialité" },
   footer: { rights: "Wassim Gatri. Tous droits réservés.", builtBy: "Écrit par Wassim Gatri" },
   notFound: { title: "Page introuvable", body: "Cette page n'existe pas ou a été déplacée.", cta: "Retour au blog" },
   categories: {

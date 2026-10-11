@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Part 2 of the payment series. French and Arabic mirror this structure (same heading ids, two tables, two fee boxes).
 export const en: ArticleTranslation = {
   slug: "international-technology-card-tunisia",
-  title: "Tunisia's International Technology Card (CTI): Limit, Documents, Uses and Renewal",
+  title: "Tunisia's International Technology Card (CTI)",
+  subtitle: "Limit, Documents, Uses and Renewal",
   seoTitle: "Tunisia's International Technology Card (CTI): How to Get It",
   metaDescription:
     "The CTI gives Tunisian residents with the bac 1,000 TND a year (about EUR 297) for online payments. Documents, bank or La Poste, allowed uses and renewal.",

@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts (same heading ids, one table, four fee boxes). Italian terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "payer-frais-universite-italie-carte-internationale",
-  title: "Frais d’inscription en Italie : payer avec une carte internationale tunisienne",
+  title: "Frais d’inscription en Italie",
+  subtitle: "Payer avec une carte internationale tunisienne",
   seoTitle: "Payer ses frais d’inscription en Italie : guide tunisien",
   metaDescription:
     "Payer ses frais d’inscription en Italie pour les Tunisiens : virement, carte technologique, PayPal sur pagoPA, carte italienne, règles de change et arnaques.",
@@ -219,7 +220,8 @@ export const fr: ArticleTranslation = {
         { label: "PayPal Italie : pagoPA", url: "https://www.paypal.com/it/digital-wallet/pagopa" },
         { label: "PayPal Tunisie : frais pour les particuliers", url: "https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN" },
         { label: "Sapienza : taxe régionale et timbre fiscal", url: "https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo" },
-        { label: "RedotPay : conditions d’utilisation", url: "https://www.redotpay.com/terms" },
+        { label: "RedotPay : conditions d’utilisation", url: "https://www.redotpay.com/terms" },
+
       ],
     },
     {

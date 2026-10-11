@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "work-in-italy-from-tunisia",
-  title: "العمل في إيطاليا من تونس: مسار التكوين في الخارج",
+  title: "العمل في إيطاليا من تونس",
+  subtitle: "مسار التكوين في الخارج",
   seoTitle: "العمل في إيطاليا من تونس: دليل قانوني (2026)",
   metaDescription:
     "كيف يعمل التونسيون في إيطاليا بشكل قانوني خارج حصص Decreto Flussi: من يمكنه الاستفادة، البرامج المعتمدة، الوثائق، عروض العمل، وتجنب الاحتيال.",

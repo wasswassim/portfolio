@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Part 3 of the settling-in-Rome series. French and Arabic mirror this structure (same heading ids, two tables, no figure).
 export const en: ArticleTranslation = {
   slug: "student-jobs-rome",
-  title: "Student Jobs in Rome for Tunisians: the 20-Hour Rule, Subito, Indeed and Temp Agencies",
+  title: "Student Jobs in Rome for Tunisians",
+  subtitle: "The 20-Hour Rule, Subito, Indeed and Agencies",
   seoTitle: "Student Jobs in Rome for Tunisians: Subito, Rules, Agencies",
   metaDescription:
     "Student jobs in Rome for Tunisians: the 20-hour weekly limit, posting a Subito ad for café work, Indeed, temp agencies, 150-ore jobs and how to avoid scams.",

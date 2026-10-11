@@ -4,7 +4,8 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "international-technology-card-tunisia",
-  title: "البطاقة التكنولوجية الدولية (CTI) في تونس: السقف والوثائق والاستعمالات والتجديد",
+  title: "البطاقة التكنولوجية الدولية (CTI) في تونس",
+  subtitle: "السقف والوثائق والاستعمالات والتجديد",
   seoTitle: "البطاقة التكنولوجية الدولية في تونس: الحصول عليها والسقف",
   metaDescription:
     "البطاقة التكنولوجية الدولية تمنح المقيم التونسي الحاصل على الباكالوريا 1,000 دينار سنويًا (نحو 297 يورو) للدفع عبر الإنترنت: الوثائق، البنك أو البريد، والتجديد.",

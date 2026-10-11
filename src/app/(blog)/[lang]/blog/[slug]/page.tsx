@@ -95,6 +95,9 @@ export default async function ArticlePage(props: Props) {
               <h1 className="blog-h1">
                 <BidiText lang={lang}>{translation.title}</BidiText>
               </h1>
+              {translation.subtitle && (
+                <p className="blog-subtitle"><BidiText lang={lang}>{translation.subtitle}</BidiText></p>
+              )}
               <p className="blog-meta">
                 <span>{dict.article.by} <a href={SITE_URL} rel="author">{SITE_NAME}</a></span>
                 <span>{dict.article.published} <time dateTime={article.publishedAt}>{fmt(article.publishedAt)}</time></span>
@@ -119,7 +122,7 @@ export default async function ArticlePage(props: Props) {
             </div>
           </div>
         </main>
-        <BlogFooter dict={dict} />
+        <BlogFooter lang={lang} dict={dict} />
       </div>
       <JsonLd
         data={[
@@ -127,7 +130,7 @@ export default async function ArticlePage(props: Props) {
           blogPostingLd({
             lang,
             path,
-            headline: translation.title,
+            headline: translation.subtitle ? `${translation.title}: ${translation.subtitle}` : translation.title,
             description: translation.metaDescription,
             abstract: translation.summary,
             image: article.image,

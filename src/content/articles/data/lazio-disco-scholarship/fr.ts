@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Traduction de en.ts. Les termes administratifs italiens restent en italien.
 export const fr: ArticleTranslation = {
   slug: "bourse-disco-lazio",
-  title: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens : demande, ISEEUP et paiements",
+  title: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens",
+  subtitle: "Demande, ISEEUP et paiements",
   seoTitle: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens",
   metaDescription:
     "Bourse DiSCo Lazio pour les étudiants tunisiens à Rome et dans tout le Latium : à partir de 6 571,11 EUR, conditions, calendrier 2027/28, ISEEUP et paiements.",

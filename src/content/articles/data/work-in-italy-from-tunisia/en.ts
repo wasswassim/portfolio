@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const en: ArticleTranslation = {
   slug: "work-in-italy-from-tunisia",
-  title: "Working in Italy from Tunisia: The Training-Abroad Route",
+  title: "Working in Italy from Tunisia",
+  subtitle: "The Training-Abroad Route",
   seoTitle: "Work in Italy from Tunisia: Legal Guide (2026)",
   metaDescription:
     "How Tunisians can work in Italy legally outside the Decreto Flussi quotas: who qualifies, approved training programs, documents, job offers and scams.",

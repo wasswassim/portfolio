@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Facts: DiSCo Lazio call 2026/27 (bando + Allegato L + international FAQ). 2027/28 dates are projected.
 export const en: ArticleTranslation = {
   slug: "lazio-disco-scholarship",
-  title: "Lazio DiSCo Scholarship in Rome for Tunisian Students: Apply, ISEEUP and Payments",
+  title: "Lazio DiSCo Scholarship in Rome for Tunisian Students",
+  subtitle: "Apply, ISEEUP and Payments",
   seoTitle: "Lazio DiSCo Scholarship in Rome for Tunisian Students",
   metaDescription:
     "How Tunisian students get the DiSCo Lazio scholarship in Rome and across Lazio: amounts from EUR 6,571.11, eligibility, 2027/28 calendar, ISEEUP and payments.",

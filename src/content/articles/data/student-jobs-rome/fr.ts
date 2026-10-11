@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts. Italian administrative terms and platform labels stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "job-etudiant-rome",
-  title: "Job étudiant à Rome pour les Tunisiens : la règle des 20 heures, Subito, Indeed et agences d’intérim",
+  title: "Job étudiant à Rome pour les Tunisiens",
+  subtitle: "La règle des 20 heures, Subito, Indeed et agences",
   seoTitle: "Job étudiant à Rome pour les Tunisiens : Subito, règles",
   metaDescription:
     "Job étudiant à Rome pour les Tunisiens : limite de 20 heures par semaine, annonce Subito pour un café, Indeed, agences d’intérim, 150 ore et arnaques à éviter.",

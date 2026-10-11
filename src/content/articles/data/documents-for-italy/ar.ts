@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // ترجمة en.ts. تبقى المصطلحات الإدارية الإيطالية والأسماء اللاتينية بحروفها اللاتينية.
 export const ar: ArticleTranslation = {
   slug: "apostille-translation-documents-italy",
-  title: "أبوستيل الشهادة التونسية للدراسة في إيطاليا: التصديق والترجمة وDOV أو CIMEA",
+  title: "أبوستيل الشهادة التونسية للدراسة في إيطاليا",
+  subtitle: "التصديق والترجمة وDOV أو CIMEA",
   seoTitle: "أبوستيل الشهادة التونسية للدراسة في إيطاليا خطوة بخطوة",
   metaDescription:
     "كيف تصادق على شهاداتك التونسية وتضع عليها الأبوستيل وتترجمها إلى الإيطالية للتسجيل في جامعة بروما، ثم تحصل على Dichiarazione di Valore أو شهادة CIMEA.",

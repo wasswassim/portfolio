@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const en: ArticleTranslation = {
   slug: "work-contract-in-italy",
-  title: "Work Contract in Italy from Tunisia: Nulla Osta, Visa and Arrival",
+  title: "Work Contract in Italy from Tunisia",
+  subtitle: "Nulla Osta, Visa and Arrival",
   seoTitle: "Work Contract in Italy: Nulla Osta, Visa and Arrival",
   metaDescription:
     "After approved training in Tunisia: how an Italian employer offers the work contract and files the Nulla Osta, then the Visa D and your first steps in Italy.",
