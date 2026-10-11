@@ -107,15 +107,11 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/logos/revolut.webp",
-      width: 1600,
-      height: 400,
-      alt: "شعار Revolut",
-      caption: "Revolut علامة تجارية مسجلة لشركة Revolut Ltd، ونعرض الشعار للتعريف بالخدمة فقط.",
-      credit: {
-        text: "الشعار: Revolut Ltd، ملكية عامة، عبر Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Revolut_logo.svg",
-      },
+      src: "/blog/brand/revolut-app.webp",
+      width: 600,
+      height: 360,
+      alt: "شعار Revolut خلف هاتف يعرض أيقونة تطبيق Revolut",
+      caption: "يعمل Revolut بالكامل من التطبيق: التسجيل والتحقق من الهوية ورقم IBAN الإيطالي. الصورة: Revolut",
     },
     {
       type: "p",
@@ -126,6 +122,11 @@ export const ar: ArticleTranslation = {
       type: "p",
       text: "أثناء التسجيل، قد يطلب التطبيق **Tessera Sanitaria** (البطاقة الصحية الإيطالية)، وأغلب الطلبة الجدد لا يملكونها بعد. حسب تجربتي وتجربة طلبة آخرين، نجح رفع **الوثيقة الرسمية لـ codice fiscale** مكانها. قد تُرفض في المرة الأولى؛ وإعادة إرسالها عادة ما تحيل الحساب إلى مراجعة يدوية يقوم بها موظف. استغرقت مراجعتي 3 أيام عمل وتمت الموافقة.",
     },
+    {
+      type: "p",
+      text: "بعد الموافقة على الحساب، تحصل على رقم IBAN إيطالي مباشرة في التطبيق؛ وإن أردت واحدًا، يمكنك التسجيل برابط الدعوة الخاص بي أدناه.",
+    },
+    { type: "referral", provider: "revolut" },
     {
       type: "callout",
       tone: "warning",
@@ -145,11 +146,6 @@ export const ar: ArticleTranslation = {
         ["Conto di base (Intesa)", "30 يورو سنويًا؛ مجاني إذا كان ISEE أقل من 11.600 يورو", "IBAN إيطالي؛ هوية، codice fiscale، إقامة قانونية في الاتحاد الأوروبي", "عندما يرفض بنك فتح حساب عادي"],
       ],
     },
-    {
-      type: "p",
-      text: "إذا اخترت Revolut كحساب عبر التطبيق، يمكنك التسجيل برابط الدعوة الخاص بي أدناه.",
-    },
-    { type: "referral", provider: "revolut" },
 
     { type: "h2", id: "wise", text: "5. Wise: الخيار الأخير والأسهل" },
     {
@@ -158,15 +154,11 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/logos/wise.webp",
-      width: 1600,
-      height: 400,
-      alt: "شعار Wise",
-      caption: "Wise علامة تجارية مسجلة لشركة Wise PLC، ونعرض الشعار للتعريف بالخدمة فقط.",
-      credit: {
-        text: "الشعار: Wise PLC، ملكية عامة، عبر Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Wise_Logo_512x124.svg",
-      },
+      src: "/blog/brand/wise-card.webp",
+      width: 400,
+      height: 500,
+      alt: "يد تضع بطاقة Wise الخضراء في جيب قميص",
+      caption: "بطاقة الدفع من Wise: للمقيمين في إيطاليا، تكلف البطاقة الفعلية 7 يورو مرة واحدة. الصورة: Wise",
     },
     {
       type: "fees",
@@ -183,9 +175,13 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "يبدو أن التسجيل ممكن من تونس، لكن بطاقة Wise غير متوفرة هناك (دول البطاقة). لم أتمكن من التأكد من أن Wise يستقبل تحويلات بالدينار من بنك تونسي، فلا تبنِ تحويلاتك الشهرية عليه.",
+      text: "وعند التسجيل برابط الدعوة الخاص بي أدناه، تحصل أيضًا على تحويل واحد دون عمولة، في حدود المبلغ الذي يعرضه Wise عند التسجيل.",
     },
     { type: "referral", provider: "wise" },
+    {
+      type: "p",
+      text: "يبدو أن التسجيل ممكن من تونس، لكن بطاقة Wise غير متوفرة هناك (دول البطاقة). لم أتمكن من التأكد من أن Wise يستقبل تحويلات بالدينار من بنك تونسي، فلا تبنِ تحويلاتك الشهرية عليه.",
+    },
 
     { type: "h2", id: "basic-account", text: "6. conto di base: حقك القانوني في حساب بنكي" },
     {

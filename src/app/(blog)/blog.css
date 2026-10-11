@@ -723,3 +723,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 /* Logos (public/blog/logos/): shown small, to identify a service, not as full-width photos */
 .blog-figure:has(img[src*="/blog/logos/"]) img { max-inline-size: min(22rem, 100%); margin-inline: auto; border-radius: 0.6rem; }
 .blog-figure:has(img[src*="/blog/logos/"]) figcaption { text-align: center; }
+/* Referral card in the provider's brand colours (set inline from referrals.ts) */
+.blog-referral--brand { background: var(--ref-bg); color: var(--ref-fg); border-color: color-mix(in srgb, var(--ref-btn) 45%, transparent); border-inline-start: 4px solid var(--ref-btn); }
+.blog-referral--brand .blog-referral-title, .blog-referral--brand .blog-referral-note, .blog-referral--brand .blog-referral-note a { color: color-mix(in srgb, var(--ref-fg) 75%, transparent); }
+.blog-referral--brand .blog-referral-benefits li::marker { color: var(--ref-btn); }
+.blog-referral--brand .blog-referral-code code { border-color: color-mix(in srgb, var(--ref-fg) 25%, transparent); background: #fff; color: var(--ref-fg); }
+.blog-referral--brand .blog-referral-cta { background: var(--ref-btn); color: var(--ref-btn-fg); border-color: var(--ref-btn); }
+.blog-referral--brand .blog-referral-cta:hover { background: var(--ref-btn); filter: brightness(1.08); }
+.blog-referral--brand .blog-referral-cta:focus-visible { outline-color: var(--ref-fg); }

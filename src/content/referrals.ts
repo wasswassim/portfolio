@@ -4,7 +4,7 @@ import type { Lang } from "@/lib/i18n/config";
  * Referral (affiliate) links, in one place. Articles reference a provider id through a
  * `referral` block and never paste these URLs. Rewards are written only as the provider's
  * own terms state them (sourceUrl + lastVerified); otherwise `reward` stays null and a
- * generic line is shown. Rizon is deliberately absent: it does not accept Tunisian passports.
+ * generic line is shown.
  */
 export type Referral = {
   name: string;
@@ -17,6 +17,8 @@ export type Referral = {
   benefits: Record<Lang, string[]>;
   termsUrl: string;
   lastVerified: string;
+  /** Brand colours for the card (background, text, button) */
+  brand: { bg: string; fg: string; button: string; buttonText: string };
   /** Articles allowed to show this link (checked by scripts/check-articles.mjs) */
   articles: string[];
 };
@@ -38,6 +40,7 @@ export const REFERRALS = {
     },
     termsUrl: "https://helpcenter.redotpay.com/en/articles/10339296-invite-friends-and-earn-rewards",
     lastVerified: "2026-10-10",
+    brand: { bg: "#fdecee", fg: "#2b0a0d", button: "#e6323e", buttonText: "#ffffff" },
     articles: ["redotpay-tunisia"],
   },
   revolut: {
@@ -51,6 +54,7 @@ export const REFERRALS = {
     },
     termsUrl: "https://www.revolut.com/it-IT/legal/referrals-terms/",
     lastVerified: "2026-10-10",
+    brand: { bg: "#eef1ff", fg: "#191c1f", button: "#191c1f", buttonText: "#ffffff" },
     articles: ["bank-account-italy-student"],
   },
   wise: {
@@ -68,6 +72,7 @@ export const REFERRALS = {
     },
     termsUrl: "https://wise.com/help/articles/2487043/how-does-the-free-transfer-invite-program-work",
     lastVerified: "2026-10-10",
+    brand: { bg: "#efffe3", fg: "#163300", button: "#9fe870", buttonText: "#163300" },
     articles: ["bank-account-italy-student"],
   },
 } satisfies Record<string, Referral>;

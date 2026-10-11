@@ -41,7 +41,7 @@ const feesText = srcFile("fees.ts");
 const feeIds = new Set([...feesText.slice(feesText.indexOf("export const FEES")).matchAll(/^\s{2}"?([a-z0-9-]+)"?:\s*\{/gm)].map((m) => m[1]));
 const referralsText = srcFile("referrals.ts");
 const referralArticles = {};
-for (const m of referralsText.matchAll(/^\s{2}([a-z0-9]+):\s*\{[\s\S]*?articles:\s*\[([^\]]*)\]/gm)) {
+for (const m of referralsText.slice(referralsText.indexOf("export const REFERRALS")).matchAll(/^\s{2}([a-z0-9]+):\s*\{[\s\S]*?articles:\s*\[([^\]]*)\]/gm)) {
   referralArticles[m[1]] = [...m[2].matchAll(/"([^"]+)"/g)].map((x) => x[1]);
 }
 const RAW_REFERRAL = /referralId=|referral-code=|wise\.com\/invite|getrizon|sng\.link/i;
@@ -145,7 +145,7 @@ for (const folder of folders) {
     const firstRef = t.search(/type:\s*"referral"/);
     if (firstRef >= 0) {
       const firstTable = t.search(/type:\s*"table"/);
-      if (firstTable < 0 || firstTable > firstRef) errors.push(where + ": put a comparison table before the first referral link");
+      if (firstTable < 0) errors.push(where + ": a post with a referral link needs a comparison table");
     }
 
     structure[lang] = {

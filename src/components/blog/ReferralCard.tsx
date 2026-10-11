@@ -1,3 +1,4 @@
+import type React from "react";
 import type { Lang } from "@/lib/i18n/config";
 import { LOCALE } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n";
@@ -12,7 +13,11 @@ export default function ReferralCard({ provider, text, lang, dict }: { provider:
   const r: Referral = REFERRALS[provider];
   const date = new Intl.DateTimeFormat(LOCALE[lang], { dateStyle: "medium", timeZone: "UTC" }).format(new Date(r.lastVerified));
   return (
-    <aside className="blog-referral" aria-label={dict.referral.label + ": " + r.name}>
+    <aside
+      className="blog-referral blog-referral--brand"
+      aria-label={dict.referral.label + ": " + r.name}
+      style={{ "--ref-bg": r.brand.bg, "--ref-fg": r.brand.fg, "--ref-btn": r.brand.button, "--ref-btn-fg": r.brand.buttonText } as React.CSSProperties}
+    >
       <p className="blog-referral-title">
         {dict.referral.label} <span aria-hidden="true">·</span> <bdi dir="ltr">{r.name}</bdi>
       </p>

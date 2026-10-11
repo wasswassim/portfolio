@@ -36,6 +36,14 @@ export const ar: ArticleTranslation = {
       text: "البطاقة التكنولوجية الدولية بطاقة دولية اسمية مخصصة لبعض عمليات الدفع عبر الإنترنت. أساسها القانوني هو **الفصل 15 من منشور البنك المركزي التونسي 2016-09** ([Banque Centrale de Tunisie](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf)). تُستعمل المنحة دفعة واحدة أو على عدة دفعات، وهي صالحة لسنة ميلادية واحدة.",
     },
     {
+      type: "figure",
+      src: "/blog/brand/technology-card-banner.webp",
+      width: 860,
+      height: 188,
+      alt: "لافتة بنكية زرقاء مكتوب عليها Cartes internationales وCarte technologique وPayez et recevez en devises",
+      caption: "لافتة أحد البنوك للبطاقة التكنولوجية. كل بنك يحدد معاليمه وشروطه، فتحقق من شروط بنكك. الصورة: بنك تونسي مُصدِر",
+    },
+    {
       type: "p",
       text: "شبكة البطاقة (Visa أو Mastercard) تختلف حسب البنك: لا تذكرها أي صفحة من صفحات البنوك التي اطلعنا عليها، فاسأل عنها عند الطلب. يصف BTK Bank والبريد التونسي بطاقتيهما بأنها مسبقة الدفع: تشحنها بالدينار، وتدفع بالعملة الأجنبية في حدود سقفك السنوي.",
     },

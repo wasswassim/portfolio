@@ -106,15 +106,11 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/logos/revolut.webp",
-      width: 1600,
-      height: 400,
-      alt: "Logo de Revolut",
-      caption: "Revolut est une marque de Revolut Ltd ; le logo sert seulement à identifier le service.",
-      credit: {
-        text: "Logo : Revolut Ltd, domaine public, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Revolut_logo.svg",
-      },
+      src: "/blog/brand/revolut-app.webp",
+      width: 600,
+      height: 360,
+      alt: "Le logo Revolut derrière un téléphone affichant l'icône de l'application Revolut",
+      caption: "Revolut fonctionne entièrement depuis l'application : inscription, vérification d'identité et IBAN italien. Image : Revolut",
     },
     {
       type: "p",
@@ -125,6 +121,11 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Pendant l'inscription, l'application peut demander une **Tessera Sanitaria** (la carte de santé italienne), que la plupart des nouveaux étudiants n'ont pas encore. D'après mon expérience et celle d'autres étudiants, envoyer à la place le **document officiel du codice fiscale** a fonctionné. Il peut être refusé la première fois ; le renvoyer fait en général passer le dossier en vérification manuelle par une personne. Ma vérification a pris 3 jours ouvrés et a été acceptée.",
     },
+    {
+      type: "p",
+      text: "Une fois le compte validé, vous avez un IBAN italien directement dans l'application ; si vous en voulez un, vous pouvez vous inscrire avec mon lien d'invitation ci-dessous.",
+    },
+    { type: "referral", provider: "revolut" },
     {
       type: "callout",
       tone: "warning",
@@ -144,11 +145,6 @@ export const fr: ArticleTranslation = {
         ["Conto di base (Intesa)", "30 EUR par an ; gratuit avec un ISEE inférieur à 11 600 EUR", "IBAN italien ; pièce d'identité, codice fiscale, séjour régulier dans l'UE", "Quand une banque refuse un compte classique"],
       ],
     },
-    {
-      type: "p",
-      text: "Si vous voulez Revolut comme compte dans l'application, vous pouvez vous inscrire avec mon lien d'invitation ci-dessous.",
-    },
-    { type: "referral", provider: "revolut" },
 
     { type: "h2", id: "wise", text: "5. Wise : la dernière option, la plus simple" },
     {
@@ -157,15 +153,11 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/logos/wise.webp",
-      width: 1600,
-      height: 400,
-      alt: "Logo de Wise",
-      caption: "Wise est une marque de Wise PLC ; le logo sert seulement à identifier le service.",
-      credit: {
-        text: "Logo : Wise PLC, domaine public, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Wise_Logo_512x124.svg",
-      },
+      src: "/blog/brand/wise-card.webp",
+      width: 400,
+      height: 500,
+      alt: "Une main glisse une carte de débit Wise verte dans une poche de chemise",
+      caption: "La carte de débit Wise : pour les résidents en Italie, la carte physique coûte 7 EUR, une seule fois. Image : Wise",
     },
     {
       type: "fees",
@@ -182,9 +174,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "L'inscription semble possible en Tunisie, mais la carte Wise n'y est pas disponible (pays de la carte). Je n'ai pas pu confirmer que Wise reçoit des virements en dinars depuis une banque tunisienne : ne prévoyez pas vos virements mensuels sur Wise.",
+      text: "En vous inscrivant avec mon lien d'invitation ci-dessous, vous recevez aussi un transfert sans frais, jusqu'au montant affiché par Wise à l'inscription.",
     },
     { type: "referral", provider: "wise" },
+    {
+      type: "p",
+      text: "L'inscription semble possible en Tunisie, mais la carte Wise n'y est pas disponible (pays de la carte). Je n'ai pas pu confirmer que Wise reçoit des virements en dinars depuis une banque tunisienne : ne prévoyez pas vos virements mensuels sur Wise.",
+    },
 
     { type: "h2", id: "basic-account", text: "6. Le conto di base : votre droit légal à un compte" },
     {

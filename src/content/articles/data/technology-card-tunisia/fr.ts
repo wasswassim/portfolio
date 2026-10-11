@@ -35,6 +35,14 @@ export const fr: ArticleTranslation = {
       text: "La CTI est une carte internationale nominative réservée à certains paiements en ligne. Sa base légale est **l’article 15 de la circulaire BCT 2016-09** ([Banque Centrale de Tunisie](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf)). L’allocation s’utilise en une ou plusieurs fois et vaut pour une année civile.",
     },
     {
+      type: "figure",
+      src: "/blog/brand/technology-card-banner.webp",
+      width: 860,
+      height: 188,
+      alt: "Bannière bancaire bleue indiquant Cartes internationales, Carte technologique, Payez et recevez en devises",
+      caption: "La bannière d’une banque pour la carte technologique. Chaque émetteur fixe ses propres frais et conditions : vérifiez ceux de votre banque. Image : une banque tunisienne émettrice",
+    },
+    {
       type: "p",
       text: "Le réseau (Visa ou Mastercard) dépend de la banque : aucune page d’émetteur consultée ne le précise, demandez-le au guichet. BTK Bank et La Poste présentent leur carte comme prépayée : vous chargez des dinars et la carte paie en devises jusqu’à votre plafond annuel.",
     },

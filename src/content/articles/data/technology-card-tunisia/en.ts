@@ -35,6 +35,14 @@ export const en: ArticleTranslation = {
       text: "The CTI is a nominative international card reserved for certain online payments. Its legal basis is **article 15 of BCT circular 2016-09** ([Banque Centrale de Tunisie](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf)). The allowance can be used in one or several payments and is valid for one calendar year.",
     },
     {
+      type: "figure",
+      src: "/blog/brand/technology-card-banner.webp",
+      width: 860,
+      height: 188,
+      alt: "A blue bank banner reading Cartes internationales, Carte technologique, Payez et recevez en devises",
+      caption: "A bank's banner for the technology card. Each issuer sets its own fees and conditions, so check those of your own bank. Image: a Tunisian issuing bank",
+    },
+    {
       type: "p",
       text: "The card network (Visa or Mastercard) depends on the bank: none of the issuer pages we checked names it, so ask when you apply. BTK Bank and La Poste describe their cards as prepaid: you load dinars, and the card pays in foreign currency up to your yearly limit.",
     },

@@ -1,17 +1,18 @@
 import type { ArticleTranslation } from "../../types";
 
-// Traduction de en.ts : mêmes ids de titres, deux tableaux, un encadré de frais, un bloc de parrainage.
+// Traduction de en.ts : mêmes ids de titres, deux tableaux, un encadré de frais, un bloc de parrainage
+// dans la partie P2P, la partie juridique en dernier avant la FAQ.
 export const fr: ArticleTranslation = {
   slug: "redotpay-tunisie",
   title: "RedotPay en Tunisie",
-  subtitle: "Frais de la carte, P2P expliqué, risques juridiques et transferts sûrs",
-  seoTitle: "RedotPay en Tunisie : frais, P2P et risques juridiques",
+  subtitle: "Frais de la carte, recharge en P2P, transferts sûrs et cadre juridique",
+  seoTitle: "RedotPay en Tunisie : frais, recharge P2P et risques légaux",
   metaDescription:
-    "RedotPay expliqué aux Tunisiens : frais et plafonds de la carte, fonctionnement du P2P avec séquestre, pourquoi pas Rizon, risques juridiques et envois sûrs.",
+    "RedotPay expliqué aux Tunisiens : frais et plafonds de la carte, recharge par le P2P de RedotPay ou de Binance, envoi sûr d'USDT et cadre juridique en Tunisie.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["RedotPay Tunisie", "frais carte RedotPay", "Binance P2P expliqué", "Rizon Tunisie", "carte crypto Tunisie légal", "envoyer des USDT en sécurité"],
+  keywords: ["RedotPay Tunisie", "frais carte RedotPay", "recharger RedotPay en P2P", "Binance P2P expliqué", "carte crypto Tunisie légal", "envoyer des USDT en sécurité"],
   summary:
-    "RedotPay est un service de carte crypto (Visa) basé à Hong Kong dont les pages officielles n'excluent pas les citoyens tunisiens, mais aucun texte tunisien n'autorise les résidents à acheter ou détenir des cryptos : l'utiliser depuis la Tunisie comporte un vrai risque juridique et ce guide ne le recommande pas. Pour les lecteurs qui vivent déjà à l'étranger, il explique les frais, le P2P avec séquestre, pourquoi Rizon n'est pas une option et comment envoyer des stablecoins sans les perdre.",
+    "RedotPay est un service de carte crypto (Visa) basé à Hong Kong dont les pages officielles n'excluent pas les citoyens tunisiens. Ce guide explique les frais et plafonds de la carte, la recharge par le P2P Marketplace de RedotPay ou par Binance P2P, la comparaison avec la carte technologique et l'envoi de stablecoins sans les perdre. Il se termine par le cadre juridique : aucun texte tunisien n'autorise les résidents à acheter ou détenir des cryptos, les résidents de Tunisie sont donc juridiquement exposés.",
   body: [
     {
       type: "callout",
@@ -19,14 +20,14 @@ export const fr: ArticleTranslation = {
       title: "Avertissement important",
       text: "Ce guide est purement informatif et ne constitue pas un conseil juridique ou financier. Les règles de change, les règles sur les cryptos et les frais changent souvent. Vérifiez les sources officielles ci-dessous et, en cas de doute, demandez à un avocat ou à votre banque.",
     },
-    { type: "p", text: "**Peut-on utiliser RedotPay en Tunisie, et est-ce un moyen sûr de payer en euros ?**" },
+    { type: "p", text: "**Qu'est-ce que RedotPay, comment le recharger, et peut-on l'utiliser depuis la Tunisie ?**" },
     {
       type: "p",
-      text: "En bref : les pages officielles de RedotPay n'excluent ni les citoyens tunisiens ni les utilisateurs situés en Tunisie (vérifié le 10 octobre 2026). Mais le code des changes tunisien impose de passer par des intermédiaires agréés, et aucun texte tunisien n'autorise les résidents à acheter ou détenir des cryptos. Pour un résident de Tunisie, alimenter une carte crypto est juridiquement risqué, et nous ne le recommandons pas.",
+      text: "RedotPay est une fintech de Hong Kong qui permet de dépenser des stablecoins comme l'USDT et l'USDC avec une carte **Visa**, en ligne, en magasin et aux distributeurs. Ses pages officielles n'excluent ni les citoyens tunisiens ni les utilisateurs situés en Tunisie (vérifié le 10 octobre 2026). Vous trouverez ci-dessous le coût de la carte, la recharge en P2P, la comparaison avec la carte technologique tunisienne et la façon d'envoyer des stablecoins en sécurité. Le cadre juridique pour les résidents de Tunisie fait l'objet de la dernière partie.",
     },
     {
       type: "p",
-      text: "Les parties pratiques ci-dessous (P2P, sécurité du portefeuille) s'adressent aux lecteurs qui **vivent déjà à l'étranger**, par exemple les étudiants en Italie, où ils peuvent utiliser ces services légalement. Pour les moyens légaux de payer depuis la Tunisie, commencez par notre [guide pour payer les frais italiens avec une carte internationale](article:international-card-tunisia).",
+      text: "Pour comparer tous les moyens de payer les frais italiens depuis la Tunisie, voyez notre [guide pour payer les frais italiens avec une carte internationale](article:international-card-tunisia).",
     },
 
     { type: "h2", id: "what-is-redotpay", text: "1. Qu'est-ce que RedotPay et comment fonctionne la carte ?" },
@@ -36,15 +37,11 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/card-payment-terminal.webp",
-      width: 1600,
-      height: 1200,
-      alt: "Un terminal de paiement avec une carte Visa insérée dans son lecteur de puce",
-      caption: "Pour le commerçant, une carte crypto est une carte Visa ordinaire : la crypto est convertie dans la monnaie locale au moment du paiement.",
-      credit: {
-        text: "Photo : Basile Morin, CC BY-SA 4.0, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Credit_card_terminal_in_Laos.jpg",
-      },
+      src: "/blog/brand/redotpay-cards.webp",
+      width: 1000,
+      height: 563,
+      alt: "Des cartes Visa RedotPay roses à côté du logo RedotPay et du slogan Spend Crypto Like Fiat",
+      caption: "Pour le commerçant, une carte RedotPay est une carte Visa ordinaire : la crypto est convertie dans la monnaie locale au moment du paiement. Image : RedotPay",
     },
     {
       type: "fees",
@@ -57,91 +54,40 @@ export const fr: ArticleTranslation = {
       items: [
         "**Plafonds** : jusqu'à 100 000 USD par opération ; retraits 3 par jour et 30 par mois, jusqu'à 3 750 USD par jour sur une carte en USD (moins dans certains pays) (tableau des frais et plafonds).",
         "**KYC** : photo de votre pièce d'identité originale, scan du visage, adresse et 4 ou 5 questions sur votre métier et l'origine des fonds (vérification d'identité).",
-        "**Qui garde l'argent** : les soldes sont détenus par Red Dot Trust Ltd, une société fiduciaire de Hong Kong. Les conditions précisent que le compte n'est pas un compte bancaire, et aucune garantie des dépôts n'est mentionnée.",
-        "**Binance Pay** : Binance a mis fin à Binance Pay sur RedotPay le 3 avril 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)) ; ne comptez pas sur ce moyen de recharge.",
+        "**Qui garde l'argent** : les soldes sont détenus par Red Dot Trust Ltd, une société fiduciaire de Hong Kong. Les conditions précisent que le compte n'est pas un compte bancaire.",
+        "**Binance Pay** : Binance a mis fin à Binance Pay sur RedotPay le 3 avril 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)) ; une recharge depuis Binance passe donc désormais par un retrait crypto classique (voir la partie suivante).",
       ],
-    },
-    {
-      type: "callout",
-      tone: "warning",
-      title: "Risques à connaître avant de déposer",
-      text: "Les conditions permettent à RedotPay de geler ou fermer un compte « à tout moment, sans préavis ». Des utilisateurs sur [Trustpilot](https://www.trustpilot.com/review/www.redotpay.com) signalent des fonds bloqués pendant des semaines lors de contrôles sur l'origine des fonds. En août 2026, des filiales de Binance ont poursuivi les cofondateurs de RedotPay à Hong Kong pour environ 472,8 millions USD ; ce ne sont que des allégations, aucune décision n'a été signalée, et RedotPay dit se défendre.",
     },
 
-    { type: "h2", id: "legal-status", text: "2. Une carte crypto est-elle légale pour un résident de Tunisie ?" },
+    { type: "h2", id: "p2p-explained", text: "2. Recharger RedotPay en P2P" },
     {
       type: "p",
-      text: "Aucune loi ni circulaire de la Banque centrale (BCT) autorisant expressément l'achat de cryptos ou de stablecoins n'a pu être trouvée. Le code des changes ([loi 76-18](https://www.finances.gov.tn/sites/default/files/17.pdf)) fixe le cadre :",
-    },
-    {
-      type: "ul",
-      items: [
-        "**Art. 3** : les opérations de change passent uniquement par la BCT ou les intermédiaires agréés (banques, La Poste).",
-        "**Art. 16 et 17** : les résidents doivent déclarer leurs avoirs à l'étranger et ne peuvent pas en disposer sans autorisation. Un solde crypto sur une plateforme étrangère peut être considéré comme tel.",
-        "**Art. 21** : les règlements entre résidents se font en Tunisie et en dinars.",
-        "**Art. 35** : les infractions sont punies d'un mois à cinq ans de prison et d'une amende d'au moins cinq fois le montant en cause.",
-      ],
+      text: "Le P2P (pair à pair) consiste à acheter des cryptos directement à une autre personne sur une plateforme. Vous la payez en monnaie locale, et la plateforme bloque ses cryptos sous **séquestre** (escrow) jusqu'à ce qu'elle confirme votre paiement. Il existe deux façons courantes d'alimenter un solde RedotPay de cette manière.",
     },
     {
       type: "figure",
-      src: "/blog/central-bank-tunisia-sign.webp",
-      width: 1600,
-      height: 681,
-      alt: "Plaque de la Banque centrale de Tunisie avec les armoiries nationales et son nom en arabe et en français",
-      caption: "La Banque centrale de Tunisie (BCT). Aucune de ses circulaires n'autorise expressément les résidents à acheter de la crypto.",
-      credit: {
-        text: "Photo : Wael Ghabara, CC BY-SA 3.0, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Tunisia441.jpg",
-      },
+      src: "/blog/brand/binance-banner.webp",
+      width: 860,
+      height: 484,
+      alt: "Le logo jaune de Binance sur un fond sombre parsemé de points",
+      caption: "Binance P2P est la deuxième voie décrite ici : Binance garde les cryptos du vendeur sous séquestre jusqu'à la fin de la commande. Image : Binance",
     },
+    { type: "h3", id: "p2p-redotpay-marketplace", text: "Voie 1 : le P2P Marketplace de RedotPay" },
     {
       type: "p",
-      text: "Acheter des USDT en dinars, par P2P ou avec une carte étrangère, sort de ces circuits. Un nouveau code des changes (projet de loi 115/2025) est en discussion mais n'était pas adopté au dernier compte rendu trouvé. Pour en savoir plus, lisez [la partie sur la réglementation des changes de notre guide des paiements](article:international-card-tunisia#exchange-rules).",
+      text: "Dans l'application RedotPay, le [P2P Marketplace](https://www.redotpay.com/p2p-marketplace) permet d'acheter de l'USDT ou de l'USDC à un autre utilisateur ; les cryptos arrivent directement sur votre solde RedotPay, sans transfert entre applications. Les cryptos du vendeur restent sous séquestre pendant la commande. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges : les précautions habituelles du P2P s'appliquent donc.",
     },
-
-    { type: "h2", id: "compare", text: "3. RedotPay, Rizon et la carte technologique comparés" },
-    {
-      type: "table",
-      caption: "Trois cartes sur lesquelles les Tunisiens s'interrogent, en octobre 2026.",
-      head: ["", "RedotPay", "Rizon", "Carte technologique (CTI)"],
-      rows: [
-        ["Qui peut l'ouvrir", "Les citoyens tunisiens ne sont pas exclus ; validation non garantie", "Ne mentionne pas la Tunisie parmi les nationalités acceptées", "Résidents tunisiens ayant au moins le bac"],
-        ["Réseau", "Visa", "Visa", "Non indiqué sur les pages des émetteurs"],
-        ["Frais de carte", "10 USD virtuelle, 100 USD physique, pas de frais mensuels", "10 USD virtuelle (formule Standard)", "Selon l'émetteur (Banque Zitouna : 20 TND par an)"],
-        ["Coût de change / conversion", "1,2 % de change + 1 % de conversion", "1,7 % + 0,10 USD (Standard)", "Taux et frais de votre banque"],
-        ["Plafonds", "100 000 USD par opération", "Aucun plafond de carte indiqué", "1 000 TND par année civile"],
-        ["Alimentation", "Dépôt crypto, carte bancaire (3 %), P2P", "USDC ou USDT uniquement", "Dinars dans une banque tunisienne ou à La Poste"],
-        ["Statut juridique pour un résident de Tunisie", "Aucun texte d'autorisation ; exposé au code des changes", "Tunisie absente des nationalités acceptées", "Légal, pour les usages listés par la BCT"],
-        ["Principaux risques", "Gels, pas de garantie des dépôts, procès", "Refus KYC définitif", "Liste d'usages autorisés étroite"],
-      ],
-    },
+    { type: "h3", id: "p2p-binance-deposit", text: "Voie 2 : Binance P2P, puis un dépôt sur RedotPay" },
     {
       type: "p",
-      text: "Pour un résident de Tunisie, l'option légale est la [carte technologique internationale](article:technology-card-tunisia), dans la limite [des usages autorisés par la BCT](article:technology-card-tunisia#allowed-uses).",
+      text: "Achetez de l'USDT ou de l'USDC sur Binance P2P, puis retirez-les de Binance vers votre **adresse de dépôt RedotPay**. Dans RedotPay, ouvrez la page de dépôt et choisissez d'abord le jeton et le réseau ; dans Binance, choisissez exactement **le même jeton et le même réseau** (par exemple de l'USDT sur Tron (TRC20) vers une adresse USDT TRC20). Le réseau prélève des frais de retrait, et une erreur de réseau peut faire perdre les fonds : suivez les vérifications de la partie 4 et envoyez d'abord un petit test.",
     },
-    {
-      type: "p",
-      text: "Si vous vivez déjà là où l'usage de RedotPay est légal et décidez d'ouvrir un compte, vous pouvez vous inscrire avec la carte ci-dessous ; le code de parrainage doit être saisi à l'inscription, car il ne peut pas être ajouté ensuite.",
-    },
-    { type: "referral", provider: "redotpay" },
-
-    { type: "h2", id: "why-not-rizon", text: "4. Pourquoi ce guide ne recommande pas Rizon" },
-    {
-      type: "p",
-      text: "Rizon est une application de stablecoins avec une carte Visa, mais l'éligibilité dépend du **passeport**. Son centre d'aide (juillet 2026) ne mentionne pas la Tunisie parmi les nationalités acceptées, ses conditions visent les résidents des États-Unis et d'Amérique latine, et son centre d'aide précise qu'un refus KYC est définitif. Un titulaire de passeport tunisien serait très probablement refusé : nous ne mettons donc pas de lien.",
-    },
-
-    { type: "h2", id: "p2p-explained", text: "5. Le P2P expliqué : comment fonctionne une commande avec séquestre" },
-    {
-      type: "p",
-      text: "Le P2P (pair à pair) consiste à acheter des cryptos directement à une autre personne sur une plateforme. Vous la payez en monnaie locale, et la plateforme bloque ses cryptos sous **séquestre** (escrow) jusqu'à ce qu'elle confirme votre paiement. Binance P2P et le P2P Marketplace de RedotPay fonctionnent ainsi. Les [conditions de Binance](https://www.binance.com/en/terms) excluent les utilisateurs pour qui l'usage serait illégal localement, même si leur pays ne figure pas sur sa [liste des pays interdits](https://www.binance.com/en/legal/list-of-prohibited-countries).",
-    },
-    { type: "h3", id: "p2p-order-steps", text: "Ce que le séquestre protège (et ne protège pas) dans une commande P2P, pour les lecteurs vivant à l'étranger" },
+    { type: "h3", id: "p2p-order-steps", text: "Comment se déroule une commande avec séquestre" },
     {
       type: "steps",
       items: [
         { title: "Choisir une annonce", text: "Dans la zone P2P, vous choisissez le vendeur ; en Express, le système le choisit. Lisez ses conditions et regardez son taux de réussite." },
-        { title: "Les cryptos sont bloquées", text: "Dès la commande passée, les cryptos du vendeur sont réservées dans le séquestre de Binance." },
+        { title: "Les cryptos sont bloquées", text: "Dès la commande passée, les cryptos du vendeur sont réservées sous séquestre." },
         { title: "Payer hors de l'application", text: "Payez avec le moyen indiqué dans la commande, depuis un compte **à votre nom**, dans le délai prévu (souvent 15 à 45 minutes)." },
         { title: "Notifier, puis attendre", text: "Appuyez sur « Transféré, notifier le vendeur » seulement après avoir payé. Le vendeur vérifie et libère les cryptos. N'annulez jamais après avoir payé ; utilisez plutôt le bouton Appel ([guide Binance](https://www.binance.com/en/support/faq/detail/360039384951))." },
       ],
@@ -149,8 +95,13 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "p2p-fees", text: "Les frais et la règle du nom" },
     {
       type: "p",
-      text: "Sur la [page des frais P2P de Binance](https://www.binance.com/en/fee/p2pFeeRate) (vérifiée le 10 octobre 2026), le preneur (taker) en zone P2P payait 0 %, l'annonceur (maker) 0,20 %, et l'Express coûtait 0,10 % au preneur. Le vrai coût est l'écart entre prix d'achat et de vente, plus les frais bancaires. Le nom du payeur doit correspondre au nom vérifié de la contrepartie. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges (P2P Marketplace). Acheter de la crypto avec des dinars depuis la Tunisie vous expose au regard du code des changes (voir la section 2) ; ce guide n'explique pas comment le faire.",
+      text: "Sur la [page des frais P2P de Binance](https://www.binance.com/en/fee/p2pFeeRate) (vérifiée le 10 octobre 2026), le preneur (taker) en zone P2P payait 0 %, l'annonceur (maker) 0,20 %, et l'Express coûtait 0,10 % au preneur. Le vrai coût est l'écart entre prix d'achat et de vente, plus les frais bancaires et les frais de réseau du retrait. Sur les deux plateformes, le nom du payeur doit correspondre au nom vérifié de la contrepartie : un paiement depuis le compte d'un tiers peut être refusé ou gelé.",
     },
+    {
+      type: "p",
+      text: "En vous inscrivant sur RedotPay avec le lien ci-dessous, vous recevez sa récompense de bienvenue de 5 USD, et le code de parrainage est appliqué automatiquement.",
+    },
+    { type: "referral", provider: "redotpay" },
     { type: "h3", id: "p2p-scams", text: "Les arnaques P2P courantes" },
     {
       type: "table",
@@ -165,10 +116,31 @@ export const fr: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "wallet-safety", text: "6. Envoyer des stablecoins en sécurité, pas à pas" },
+    { type: "h2", id: "compare", text: "3. RedotPay et la carte technologique comparés" },
+    {
+      type: "table",
+      caption: "Les deux cartes sur lesquelles les Tunisiens s'interrogent le plus, en octobre 2026.",
+      head: ["", "RedotPay", "Carte technologique (CTI)"],
+      rows: [
+        ["Qui peut l'ouvrir", "Les citoyens tunisiens ne sont pas exclus ; validation non garantie", "Résidents tunisiens ayant au moins le bac"],
+        ["Réseau", "Visa", "Non indiqué sur les pages des émetteurs"],
+        ["Frais de carte", "10 USD virtuelle, 100 USD physique, pas de frais mensuels", "Selon l'émetteur (Banque Zitouna : 20 TND par an)"],
+        ["Coût de change / conversion", "1,2 % de change + 1 % de conversion", "Taux et frais de votre banque"],
+        ["Plafonds", "100 000 USD par opération", "1 000 TND par année civile"],
+        ["Alimentation", "Dépôt crypto, carte bancaire (3 %), P2P", "Dinars dans une banque tunisienne ou à La Poste"],
+        ["Statut juridique pour un résident de Tunisie", "Aucun texte d'autorisation ; exposé au code des changes (partie 6)", "Légal, pour les usages listés par la BCT"],
+        ["Principaux risques", "Gels, pas de garantie des dépôts, procès", "Liste d'usages autorisés étroite"],
+      ],
+    },
     {
       type: "p",
-      text: "Pour les lecteurs à l'étranger. Un envoi crypto ne peut pas être annulé. Dans l'UE, Binance signale des restrictions MiCA sur les stablecoins non autorisés : l'USDC peut être plus simple que l'USDT.",
+      text: "Pour un résident de Tunisie, la carte autorisée par la BCT est la [carte technologique internationale](article:technology-card-tunisia), dans la limite [des usages qu'elle permet](article:technology-card-tunisia#allowed-uses).",
+    },
+
+    { type: "h2", id: "wallet-safety", text: "4. Envoyer des stablecoins en sécurité, pas à pas" },
+    {
+      type: "p",
+      text: "Un envoi crypto ne peut pas être annulé. Dans l'UE, Binance signale des restrictions MiCA sur les stablecoins non autorisés : l'USDC peut être plus simple que l'USDT.",
     },
     { type: "h3", id: "step-coin-network", text: "Étape 1 : même jeton et même réseau des deux côtés" },
     {
@@ -198,7 +170,7 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "Un vrai support ne demande jamais votre phrase de récupération (seed phrase), vos mots de passe ou vos codes 2FA." },
     { type: "callout", tone: "warning", title: "Stop, vérifiez", text: "Quiconque vous les demande, par chat, e-mail ou téléphone, est un escroc." },
 
-    { type: "h2", id: "glossary", text: "7. Lexique des termes crypto" },
+    { type: "h2", id: "glossary", text: "5. Lexique des termes crypto" },
     {
       type: "keyFacts",
       items: [
@@ -218,6 +190,43 @@ export const fr: ArticleTranslation = {
       ],
     },
 
+    { type: "h2", id: "legal-status", text: "6. Une carte crypto est-elle légale pour un résident de Tunisie ?" },
+    {
+      type: "p",
+      text: "Aucune loi ni circulaire de la Banque centrale (BCT) autorisant expressément l'achat de cryptos ou de stablecoins n'a pu être trouvée. Le code des changes ([loi 76-18](https://www.finances.gov.tn/sites/default/files/17.pdf)) fixe le cadre :",
+    },
+    {
+      type: "ul",
+      items: [
+        "**Art. 3** : les opérations de change passent uniquement par la BCT ou les intermédiaires agréés (banques, La Poste).",
+        "**Art. 16 et 17** : les résidents doivent déclarer leurs avoirs à l'étranger et ne peuvent pas en disposer sans autorisation. Un solde crypto sur une plateforme étrangère peut être considéré comme tel.",
+        "**Art. 21** : les règlements entre résidents se font en Tunisie et en dinars.",
+        "**Art. 35** : les infractions sont punies d'un mois à cinq ans de prison et d'une amende d'au moins cinq fois le montant en cause.",
+      ],
+    },
+    {
+      type: "figure",
+      src: "/blog/central-bank-tunisia-sign.webp",
+      width: 1600,
+      height: 681,
+      alt: "Plaque de la Banque centrale de Tunisie avec les armoiries nationales et son nom en arabe et en français",
+      caption: "La Banque centrale de Tunisie (BCT). Aucune de ses circulaires n'autorise expressément les résidents à acheter de la crypto.",
+      credit: {
+        text: "Photo : Wael Ghabara, CC BY-SA 3.0, via Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Tunisia441.jpg",
+      },
+    },
+    {
+      type: "p",
+      text: "Acheter des USDT en dinars, par P2P ou avec une carte étrangère, sort de ces circuits : les résidents de Tunisie qui alimentent une carte crypto sont donc juridiquement exposés au regard du code des changes. Les [conditions de Binance](https://www.binance.com/en/terms) excluent aussi les utilisateurs pour qui l'usage serait illégal localement, même si leur pays ne figure pas sur sa [liste des pays interdits](https://www.binance.com/en/legal/list-of-prohibited-countries). Un nouveau code des changes (projet de loi 115/2025) est en discussion mais n'était pas adopté au dernier compte rendu trouvé. Pour en savoir plus, lisez [la partie sur la réglementation des changes de notre guide des paiements](article:international-card-tunisia#exchange-rules).",
+    },
+    {
+      type: "callout",
+      tone: "warning",
+      title: "Risques à connaître avant de déposer",
+      text: "Les conditions permettent à RedotPay de geler ou fermer un compte « à tout moment, sans préavis », et aucune garantie des dépôts n'est mentionnée. Des utilisateurs sur [Trustpilot](https://www.trustpilot.com/review/www.redotpay.com) signalent des fonds bloqués pendant des semaines lors de contrôles sur l'origine des fonds. En août 2026, des filiales de Binance ont poursuivi les cofondateurs de RedotPay à Hong Kong pour environ 472,8 millions USD ; ce ne sont que des allégations, aucune décision n'a été signalée, et RedotPay dit se défendre.",
+    },
+
     {
       type: "faq",
       id: "faq",
@@ -225,15 +234,15 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "RedotPay fonctionne-t-il en Tunisie ?",
-          a: "Techniquement oui : en octobre 2026, la Tunisie ne figure ni sur la liste des nationalités exclues ni sur celle des lieux bloqués par RedotPay. Juridiquement, aucun texte tunisien n'autorise un résident à alimenter une carte crypto : c'est risqué et nous ne le recommandons pas depuis la Tunisie.",
+          a: "Techniquement oui : en octobre 2026, la Tunisie ne figure ni sur la liste des nationalités exclues ni sur celle des lieux bloqués par RedotPay. Juridiquement, aucun texte tunisien n'autorise un résident à alimenter une carte crypto : les résidents de Tunisie sont exposés au regard du code des changes (voir la partie 6).",
         },
         {
           q: "Combien coûte la carte RedotPay ?",
           a: "10 USD pour la carte virtuelle et 100 USD pour la carte physique, sans frais mensuels. Un paiement dans une autre devise ajoute 1,2 %, et la conversion crypto 1 %.",
         },
         {
-          q: "Un Tunisien peut-il ouvrir un compte Rizon ?",
-          a: "Très probablement pas : la Tunisie ne figure pas sur la liste des nationalités acceptées par Rizon, qui précise qu'un refus KYC est définitif.",
+          q: "Comment recharger RedotPay avec des USDT achetés sur Binance ?",
+          a: "Achetez les USDT sur Binance P2P, puis retirez-les vers votre adresse de dépôt RedotPay avec exactement le même jeton et le même réseau, après un petit envoi test. Vous pouvez aussi acheter directement sur le P2P Marketplace de RedotPay.",
         },
         {
           q: "Qu'est-ce que Binance P2P et est-ce sûr ?",
@@ -283,8 +292,8 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Carte RedotPay", value: "Visa ; 10 USD virtuelle, 100 USD physique, sans frais mensuels" },
         { label: "Coût d'un paiement en euros", value: "1,2 % de change + 1 % de conversion crypto" },
-        { label: "Rizon", value: "Ne mentionne pas la Tunisie parmi les nationalités acceptées" },
-        { label: "Résidents de Tunisie", value: "Aucun texte n'autorise les cryptos ; risque juridique" },
+        { label: "Recharge", value: "Dépôt crypto, carte bancaire (3 %) ou P2P (RedotPay ou Binance)" },
+        { label: "Résidents de Tunisie", value: "Aucun texte n'autorise les cryptos ; exposition juridique" },
       ],
     },
     { type: "h2", id: "payment-path", text: "Le parcours des paiements en bref" },

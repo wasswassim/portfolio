@@ -161,7 +161,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "For residents of Tunisia, no BCT text authorises buying crypto, so the legal status is unclear (see the next section). Rizon, another crypto card, does not list Tunisia among the nationalities it accepts, so this guide does not cover it. Details in our [RedotPay explainer](article:redotpay-tunisia).",
+      text: "For residents of Tunisia, no BCT text authorises buying crypto, so the legal status is unclear (see the next section). How the card works, its fees and the P2P top-up are explained in our [RedotPay explainer](article:redotpay-tunisia).",
     },
     {
       type: "p",

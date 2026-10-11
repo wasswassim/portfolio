@@ -106,15 +106,11 @@ export const en: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/logos/revolut.webp",
-      width: 1600,
-      height: 400,
-      alt: "Revolut logo",
-      caption: "Revolut is a trademark of Revolut Ltd; the logo is shown only to identify the service.",
-      credit: {
-        text: "Logo: Revolut Ltd, Public domain, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Revolut_logo.svg",
-      },
+      src: "/blog/brand/revolut-app.webp",
+      width: 600,
+      height: 360,
+      alt: "The Revolut wordmark behind a phone showing the Revolut app icon",
+      caption: "Revolut works entirely from the app: sign-up, ID check and your Italian IBAN. Image: Revolut",
     },
     {
       type: "p",
@@ -125,6 +121,11 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "During onboarding, the app may ask for a **Tessera Sanitaria** (the Italian health card), which most new students do not have yet. In my experience and that of other students, uploading the official **codice fiscale document** instead worked. It may be rejected at first; resubmitting it usually sends the account to manual review by a person. My review took 3 business days and was approved.",
     },
+    {
+      type: "p",
+      text: "Once approved, the account gives you an Italian IBAN straight in the app; if you want one, you can sign up with my invite link below.",
+    },
+    { type: "referral", provider: "revolut" },
     {
       type: "callout",
       tone: "warning",
@@ -144,11 +145,6 @@ export const en: ArticleTranslation = {
         ["Conto di base (Intesa)", "EUR 30 a year; free with ISEE under EUR 11,600", "Italian IBAN; ID, codice fiscale, legal stay in the EU", "When a bank refuses a normal account"],
       ],
     },
-    {
-      type: "p",
-      text: "If you want Revolut as your app account, you can sign up with my invite link below.",
-    },
-    { type: "referral", provider: "revolut" },
 
     { type: "h2", id: "wise", text: "5. Wise: the easy last option" },
     {
@@ -157,15 +153,11 @@ export const en: ArticleTranslation = {
     },
     {
       type: "figure",
-      src: "/blog/logos/wise.webp",
-      width: 1600,
-      height: 400,
-      alt: "Wise logo",
-      caption: "Wise is a trademark of Wise PLC; the logo is shown only to identify the service.",
-      credit: {
-        text: "Logo: Wise PLC, Public domain, via Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Wise_Logo_512x124.svg",
-      },
+      src: "/blog/brand/wise-card.webp",
+      width: 400,
+      height: 500,
+      alt: "A hand slipping a green Wise debit card into a shirt pocket",
+      caption: "The Wise debit card: for Italy residents the physical card costs EUR 7, once. Image: Wise",
     },
     {
       type: "fees",
@@ -182,9 +174,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "You can probably register from Tunisia, but the Wise card is not available there (card countries). I could not confirm that Wise receives transfers in dinars from Tunisia, so do not plan your monthly transfers around it.",
+      text: "Signing up through my invite link below also gives you one fee-free transfer, up to the amount Wise shows when you register.",
     },
     { type: "referral", provider: "wise" },
+    {
+      type: "p",
+      text: "You can probably register from Tunisia, but the Wise card is not available there (card countries). I could not confirm that Wise receives transfers in dinars from Tunisia, so do not plan your monthly transfers around it.",
+    },
 
     { type: "h2", id: "basic-account", text: "6. The conto di base: your legal right to an account" },
     {

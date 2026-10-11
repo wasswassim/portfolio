@@ -3,7 +3,7 @@ import { ar } from "./ar";
 import { en } from "./en";
 import { fr } from "./fr";
 
-// Part 4 of the payment series (see ../../series.ts): RedotPay, P2P, Rizon, the legal position
+// Part 4 of the payment series (see ../../series.ts): RedotPay, P2P top-up, the legal position
 // for residents of Tunisia and wallet safety, with the facts as verified on 2026-10-10.
 export const redotpayTunisia: Article = {
   id: "redotpay-tunisia",
