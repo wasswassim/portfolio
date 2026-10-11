@@ -17,6 +17,7 @@ import { SeriesNav, SeriesStrip } from "@/components/blog/SeriesNav";
 import QuickGuide from "@/components/blog/QuickGuide";
 import NewsletterCard from "@/components/blog/NewsletterCard";
 import OfferButtons from "@/components/blog/OfferButtons";
+import SideColumn from "@/components/blog/SideColumn";
 
 export const dynamicParams = false;
 
@@ -117,11 +118,11 @@ export default async function ArticlePage(props: Props) {
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-end" className="blog-newsletter--end" />
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
             </article>
-            <div className="blog-side">
+            <SideColumn>
               <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
               <OfferButtons lang={lang} dict={dict} />
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-side" className="blog-newsletter--side" />
-            </div>
+            </SideColumn>
           </div>
         </main>
         <BlogFooter lang={lang} dict={dict} />

@@ -529,18 +529,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .blog-article-layout .blog-article { margin-inline: auto; }
   /* The side column is sticky; the guide shrinks to its header when collapsed, which leaves
      room for the newsletter card under it */
+  /* Sticky column that can be taller than the screen: SideColumn sets --side-top so it scrolls
+     with the page until its bottom is visible, then sticks (nothing is cut off) */
   .blog-side {
-    position: sticky; inset-block-start: 1.5rem;
+    position: sticky; inset-block-start: var(--side-top, 1.5rem);
     display: flex; flex-direction: column; gap: 1rem;
-    max-block-size: calc(100dvh - 3rem);
-    /* short screens: the column scrolls instead of cutting off the newsletter card */
-    overflow-y: auto; overscroll-behavior: contain;
-    /* the column still scrolls (wheel, trackpad, keyboard) but shows no bar */
-    scrollbar-width: none;
   }
-  .blog-side::-webkit-scrollbar { display: none; }
-  .blog-side .blog-guide { flex: 0 1 auto; max-block-size: none; min-block-size: 0; }
-  .blog-side .blog-guide:has(.blog-guide-scroll:not([hidden])) { min-block-size: 12rem; }
+  /* The guide keeps its own scroll at most one screen tall; cards below keep their full size */
+  .blog-side .blog-guide { flex: none; max-block-size: calc(100dvh - 3rem); }
   .blog-side .blog-newsletter { flex: none; }
   .blog-newsletter--end { display: none; }
   .blog-guide-jump { display: none; }
