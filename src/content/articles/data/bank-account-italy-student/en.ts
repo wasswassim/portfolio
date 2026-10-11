@@ -102,7 +102,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "revolut", text: "3. Revolut: an Italian IBAN from the app" },
     {
       type: "p",
-      text: "Revolut gives an **Italian IBAN** (starting with IT) to customers who live in Italy (Revolut help). As of October 2026 its plans cost: Standard free, Plus EUR 3.99, Premium EUR 9.99 and Metal EUR 15.99 a month.",
+      text: "[Revolut](ref:revolut) gives an **Italian IBAN** (starting with IT) to customers who live in Italy (Revolut help). As of October 2026 its plans cost: Standard free, Plus EUR 3.99, Premium EUR 9.99 and Metal EUR 15.99 a month.",
     },
     {
       type: "figure",
@@ -149,7 +149,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "wise", text: "5. Wise: the easy last option" },
     {
       type: "p",
-      text: "Wise is not a bank, but its account gives you **EUR account details** (issued by Wise Europe in Brussels, so the IBAN is Belgian) and a debit card. You need a registered address in a country where Wise offers EUR details (Wise help).",
+      text: "[Wise](ref:wise) is not a bank, but its account gives you **EUR account details** (issued by Wise Europe in Brussels, so the IBAN is Belgian) and a debit card. You need a registered address in a country where Wise offers EUR details (Wise help).",
     },
     {
       type: "figure",

@@ -90,5 +90,5 @@ export function faqPairsOf(body: Block[]): { q: string; a: string }[] {
 
 /** True when a post shows a referral link, so the page adds the affiliate disclosure at the top. */
 export function hasReferral(blocks: Block[]): boolean {
-  return blocks.some((b) => b.type === "referral");
+  return blocks.some((b) => b.type === "referral") || JSON.stringify(blocks).includes("](ref:");
 }

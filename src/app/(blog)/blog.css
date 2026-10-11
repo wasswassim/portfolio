@@ -731,3 +731,26 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-referral--brand .blog-referral-cta { background: var(--ref-btn); color: var(--ref-btn-fg); border-color: var(--ref-btn); }
 .blog-referral--brand .blog-referral-cta:hover { background: var(--ref-btn); filter: brightness(1.08); }
 .blog-referral--brand .blog-referral-cta:focus-visible { outline-color: var(--ref-fg); }
+
+/* ── Partner offer buttons (side column): soft float, pulse ring on hover/focus ── */
+.blog-side .blog-offers { flex: none; }
+.blog-offers { padding: 1rem 1.2rem 1.1rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); }
+.blog-offers-title { margin: 0 0 0.8rem; font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
+:lang(ar) .blog-offers-title { letter-spacing: 0; font-size: 0.85rem; }
+.blog-offers-list { list-style: none; display: flex; justify-content: space-around; gap: 0.6rem; }
+.blog-offer { position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.45rem; color: var(--fg); font-size: 0.75rem; font-weight: 600; }
+.blog-offer img { position: relative; z-index: 1; inline-size: 3.6rem; block-size: 3.6rem; border-radius: 50%; object-fit: cover;
+  box-shadow: 0 6px 16px -6px color-mix(in srgb, var(--ref-btn) 70%, transparent);
+  animation: blog-offer-float 4s ease-in-out infinite; animation-delay: calc(var(--i, 0) * -1.3s);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease; }
+.blog-offer-ring { position: absolute; inset-block-start: 0; inset-inline-start: 50%; inline-size: 3.6rem; block-size: 3.6rem; margin-inline-start: -1.8rem;
+  border-radius: 50%; border: 2px solid var(--ref-btn); opacity: 0; transform: scale(1); pointer-events: none; }
+.blog-offer:hover img, .blog-offer:focus-visible img { transform: translateY(-3px) scale(1.08); animation-play-state: paused;
+  box-shadow: 0 10px 22px -6px color-mix(in srgb, var(--ref-btn) 85%, transparent); }
+.blog-offer:hover .blog-offer-ring, .blog-offer:focus-visible .blog-offer-ring { animation: blog-offer-pulse 1.2s ease-out infinite; }
+.blog-offer:focus-visible { outline: none; }
+.blog-offer:focus-visible img { outline: 2px solid var(--accent); outline-offset: 3px; }
+.blog-offers-note { margin-block: 0.8rem 0; font-size: 0.72rem; color: var(--muted); text-align: center; }
+@keyframes blog-offer-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -4px; } }
+@keyframes blog-offer-pulse { 0% { opacity: 0.7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.45); } }
+@media (prefers-reduced-motion: reduce) { .blog-offer img, .blog-offer-ring { animation: none !important; } }

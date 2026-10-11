@@ -102,7 +102,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "revolut", text: "3. Revolut : un IBAN italien depuis l'application" },
     {
       type: "p",
-      text: "Revolut donne un **IBAN italien** (qui commence par IT) aux clients qui résident en Italie (aide Revolut). En octobre 2026, ses formules coûtent : Standard gratuite, Plus 3,99 EUR, Premium 9,99 EUR et Metal 15,99 EUR par mois.",
+      text: "[Revolut](ref:revolut) donne un **IBAN italien** (qui commence par IT) aux clients qui résident en Italie (aide Revolut). En octobre 2026, ses formules coûtent : Standard gratuite, Plus 3,99 EUR, Premium 9,99 EUR et Metal 15,99 EUR par mois.",
     },
     {
       type: "figure",
@@ -149,7 +149,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "wise", text: "5. Wise : la dernière option, la plus simple" },
     {
       type: "p",
-      text: "Wise n'est pas une banque, mais son compte vous donne des **coordonnées bancaires en EUR** (émises par Wise Europe à Bruxelles, donc un IBAN belge) et une carte de débit. Il faut une adresse enregistrée dans un pays où Wise propose des coordonnées en EUR (aide Wise).",
+      text: "[Wise](ref:wise) n'est pas une banque, mais son compte vous donne des **coordonnées bancaires en EUR** (émises par Wise Europe à Bruxelles, donc un IBAN belge) et une carte de débit. Il faut une adresse enregistrée dans un pays où Wise propose des coordonnées en EUR (aide Wise).",
     },
     {
       type: "figure",

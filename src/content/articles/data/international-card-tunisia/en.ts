@@ -157,7 +157,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "crypto-cards", text: "6. Option 5: why crypto cards come last" },
     {
       type: "p",
-      text: "RedotPay is a Hong Kong fintech that issues a Visa card funded with stablecoins such as USDT. Its [terms](https://www.redotpay.com/terms) say the account is not a banking service and let the company freeze accounts at its discretion. No deposit insurance is mentioned.",
+      text: "[RedotPay](ref:redotpay) is a Hong Kong fintech that issues a Visa card funded with stablecoins such as USDT. Its [terms](https://www.redotpay.com/terms) say the account is not a banking service and let the company freeze accounts at its discretion. No deposit insurance is mentioned.",
     },
     {
       type: "p",

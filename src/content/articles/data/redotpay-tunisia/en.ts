@@ -33,7 +33,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "what-is-redotpay", text: "1. What is RedotPay and how does the card work?" },
     {
       type: "p",
-      text: "RedotPay describes itself as \"a fintech service provider and not a bank\" (RedotPay). You deposit crypto, mainly stablecoins such as USDT or USDC, and spend it with a **Visa** card (the network named in its Terms). The physical card also works at ATMs.",
+      text: "[RedotPay](ref:redotpay) describes itself as \"a fintech service provider and not a bank\" (RedotPay). You deposit crypto, mainly stablecoins such as USDT or USDC, and spend it with a **Visa** card (the network named in its Terms). The physical card also works at ATMs.",
     },
     {
       type: "figure",
@@ -62,7 +62,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "p2p-explained", text: "2. How to top up RedotPay with P2P" },
     {
       type: "p",
-      text: "P2P (peer-to-peer) means buying crypto directly from another person on a platform. You pay them in local money, and the platform holds their crypto in **escrow** until they confirm your payment. There are two common ways to fill a RedotPay balance this way.",
+      text: "P2P (peer-to-peer) means buying crypto directly from another person on a platform. You pay them in local money, and the platform holds their crypto in **escrow** until they confirm your payment. There are two common ways to fill a [RedotPay](ref:redotpay) balance this way.",
     },
     {
       type: "figure",

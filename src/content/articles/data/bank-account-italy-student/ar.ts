@@ -103,7 +103,7 @@ export const ar: ArticleTranslation = {
     { type: "h2", id: "revolut", text: "3. Revolut: رقم IBAN إيطالي من التطبيق" },
     {
       type: "p",
-      text: "يعطي Revolut رقم **IBAN إيطاليًا** (يبدأ بـ IT) للحرفاء المقيمين في إيطاليا (مساعدة Revolut). في أكتوبر 2026، أسعار باقاته: Standard مجانية، وPlus بـ 3.99 يورو، وPremium بـ 9.99 يورو، وMetal بـ 15.99 يورو شهريًا.",
+      text: "يعطي [Revolut](ref:revolut) رقم **IBAN إيطاليًا** (يبدأ بـ IT) للحرفاء المقيمين في إيطاليا (مساعدة Revolut). في أكتوبر 2026، أسعار باقاته: Standard مجانية، وPlus بـ 3.99 يورو، وPremium بـ 9.99 يورو، وMetal بـ 15.99 يورو شهريًا.",
     },
     {
       type: "figure",
@@ -150,7 +150,7 @@ export const ar: ArticleTranslation = {
     { type: "h2", id: "wise", text: "5. Wise: الخيار الأخير والأسهل" },
     {
       type: "p",
-      text: "Wise ليس بنكًا، لكن حسابه يعطيك **معطيات حساب باليورو** (تصدرها Wise Europe في بروكسل، أي رقم IBAN بلجيكي) وبطاقة دفع. يجب أن يكون لك عنوان مسجّل في بلد يوفّر فيه Wise معطيات باليورو (مساعدة Wise).",
+      text: "[Wise](ref:wise) ليس بنكًا، لكن حسابه يعطيك **معطيات حساب باليورو** (تصدرها Wise Europe في بروكسل، أي رقم IBAN بلجيكي) وبطاقة دفع. يجب أن يكون لك عنوان مسجّل في بلد يوفّر فيه Wise معطيات باليورو (مساعدة Wise).",
     },
     {
       type: "figure",

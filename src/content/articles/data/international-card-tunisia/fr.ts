@@ -156,7 +156,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "crypto-cards", text: "6. Option 5 : pourquoi les cartes crypto passent en dernier" },
     {
       type: "p",
-      text: "RedotPay est une fintech de Hong Kong qui émet une carte Visa alimentée en stablecoins comme l’USDT. Ses [conditions](https://www.redotpay.com/terms) précisent que le compte n’est pas un service bancaire et autorisent la société à geler un compte à sa discrétion. Aucune garantie des dépôts n’est mentionnée.",
+      text: "[RedotPay](ref:redotpay) est une fintech de Hong Kong qui émet une carte Visa alimentée en stablecoins comme l’USDT. Ses [conditions](https://www.redotpay.com/terms) précisent que le compte n’est pas un service bancaire et autorisent la société à geler un compte à sa discrétion. Aucune garantie des dépôts n’est mentionnée.",
     },
     {
       type: "p",

@@ -1,6 +1,7 @@
 import type { Lang } from "@/lib/i18n/config";
 import { resolveArticleLink } from "@/content/articles";
 import BidiText from "./BidiText";
+import { REFERRALS, type ReferralId } from "@/content/referrals";
 
 // **bold**, *italic*, `code`, [label](url). Split with a capture group so tokens land on odd indexes.
 // A link to another post is written [label](article:<id>#<heading>) and resolves to that post in the
@@ -22,6 +23,8 @@ function safeHref(url: string, lang: Lang): string | null {
   const u = url.replace(/[\t\n\r]/g, "").trim();
   if (u.includes("\\")) return null;
   if (u.startsWith("article:")) return resolveArticleLink(lang, u);
+  // Partner link: [RedotPay](ref:redotpay) -> the URL in src/content/referrals.ts
+  if (u.startsWith("ref:")) return REFERRALS[u.slice(4) as ReferralId]?.url ?? null;
   if (/^https?:\/\//i.test(u) || /^mailto:/i.test(u)) return u;
   if (u.startsWith("/") && !u.startsWith("//")) return u;
   return null;
@@ -41,8 +44,9 @@ export default function Inline({ lang, text }: { lang: Lang; text: string }) {
         const href = m ? safeHref(m[2], lang) : null;
         if (!m || !href) return m ? <BidiText key={i} lang={lang}>{m[1]}</BidiText> : part;
         const external = /^https?:\/\//i.test(href);
+        const sponsored = m[2].trim().startsWith("ref:");
         return (
-          <a key={i} href={href} {...(external ? { rel: "noopener noreferrer", target: "_blank" } : {})}>
+          <a key={i} href={href} {...(external ? { rel: sponsored ? "sponsored nofollow noopener" : "noopener noreferrer", target: "_blank" } : {})}>
             <BidiText lang={lang}>{m[1]}</BidiText>
             {external && (
               <>

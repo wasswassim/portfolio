@@ -20,6 +20,8 @@ export type Referral = {
   /** Badge and button wording shown to readers (promo / gift / partner) */
   badge: Record<Lang, string>;
   cta: Record<Lang, string>;
+  /** Round logo for the offer buttons in the side column */
+  logo: string;
   /** Brand colours for the card (background, text, button) */
   brand: { bg: string; fg: string; button: string; buttonText: string };
   /** Articles allowed to show this link (checked by scripts/check-articles.mjs) */
@@ -45,8 +47,9 @@ export const REFERRALS = {
     lastVerified: "2026-10-10",
     badge: { en: "Promo code", fr: "Code promo", ar: "رمز ترويجي" },
     cta: { en: "Get the 5 USD welcome reward on RedotPay", fr: "Obtenir la récompense de bienvenue de 5 USD sur RedotPay", ar: "احصل على مكافأة الترحيب 5 USD على RedotPay" },
+    logo: "/blog/brand/logo-redotpay.webp",
     brand: { bg: "#fdecee", fg: "#2b0a0d", button: "#e6323e", buttonText: "#ffffff" },
-    articles: ["redotpay-tunisia"],
+    articles: ["redotpay-tunisia", "international-card-tunisia"],
   },
   revolut: {
     name: "Revolut",
@@ -60,7 +63,8 @@ export const REFERRALS = {
     termsUrl: "https://www.revolut.com/it-IT/legal/referrals-terms/",
     lastVerified: "2026-10-10",
     badge: { en: "Partner link", fr: "Lien partenaire", ar: "رابط شراكة" },
-    cta: { en: "Open Revolut with my link", fr: "Ouvrir Revolut avec mon lien", ar: "افتح Revolut عبر رابطي" },
+    cta: { en: "Open Revolut", fr: "Ouvrir Revolut", ar: "افتح Revolut" },
+    logo: "/blog/brand/logo-revolut.webp",
     brand: { bg: "#eef1ff", fg: "#191c1f", button: "#191c1f", buttonText: "#ffffff" },
     articles: ["bank-account-italy-student"],
   },
@@ -81,6 +85,7 @@ export const REFERRALS = {
     lastVerified: "2026-10-10",
     badge: { en: "Welcome gift", fr: "Cadeau de bienvenue", ar: "هدية ترحيبية" },
     cta: { en: "Claim your fee-free Wise transfer", fr: "Obtenir votre transfert Wise sans frais", ar: "احصل على تحويل Wise دون عمولة" },
+    logo: "/blog/brand/logo-wise.webp",
     brand: { bg: "#efffe3", fg: "#163300", button: "#9fe870", buttonText: "#163300" },
     articles: ["bank-account-italy-student"],
   },

@@ -33,7 +33,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "what-is-redotpay", text: "1. Qu'est-ce que RedotPay et comment fonctionne la carte ?" },
     {
       type: "p",
-      text: "RedotPay se présente comme « un prestataire de services fintech et non une banque » (RedotPay). Vous déposez des cryptos, surtout des stablecoins comme l'USDT ou l'USDC, et vous les dépensez avec une carte **Visa** (le réseau cité dans ses conditions). La carte physique fonctionne aussi aux distributeurs.",
+      text: "[RedotPay](ref:redotpay) se présente comme « un prestataire de services fintech et non une banque » (RedotPay). Vous déposez des cryptos, surtout des stablecoins comme l'USDT ou l'USDC, et vous les dépensez avec une carte **Visa** (le réseau cité dans ses conditions). La carte physique fonctionne aussi aux distributeurs.",
     },
     {
       type: "figure",
@@ -62,7 +62,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "p2p-explained", text: "2. Recharger RedotPay en P2P" },
     {
       type: "p",
-      text: "Le P2P (pair à pair) consiste à acheter des cryptos directement à une autre personne sur une plateforme. Vous la payez en monnaie locale, et la plateforme bloque ses cryptos sous **séquestre** (escrow) jusqu'à ce qu'elle confirme votre paiement. Il existe deux façons courantes d'alimenter un solde RedotPay de cette manière.",
+      text: "Le P2P (pair à pair) consiste à acheter des cryptos directement à une autre personne sur une plateforme. Vous la payez en monnaie locale, et la plateforme bloque ses cryptos sous **séquestre** (escrow) jusqu'à ce qu'elle confirme votre paiement. Il existe deux façons courantes d'alimenter un solde [RedotPay](ref:redotpay) de cette manière.",
     },
     {
       type: "figure",

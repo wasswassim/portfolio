@@ -133,6 +133,10 @@ for (const folder of folders) {
       }
     }
     if (RAW_REFERRAL.test(t)) errors.push(where + ": referral URL pasted in the text; use a referral block (src/content/referrals.ts)");
+    for (const m of t.matchAll(/\]\(ref:([a-z0-9]+)\)/g)) {
+      if (!referralArticles[m[1]]) errors.push(where + ': unknown partner link "ref:' + m[1] + '"');
+      else if (!referralArticles[m[1]].includes(id)) errors.push(where + ": partner link ref:" + m[1] + " is not allowed in this article (see referrals.ts)");
+    }
     const providers = [...t.matchAll(/\{\s*type:\s*"referral"[^}]*?provider:\s*"([^"]+)"/g)].map((m) => m[1]);
     if (count(t, /type:\s*"referral"/g) !== providers.length) errors.push(where + ": could not read the provider of a referral block");
     for (const m of t.matchAll(/feeIds:\s*\[\s*\]/g)) errors.push(where + ": empty fee box (" + m[0] + ")");
