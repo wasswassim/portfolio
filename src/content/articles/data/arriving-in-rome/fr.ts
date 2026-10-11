@@ -88,6 +88,12 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Le guichetier vous remet un **récépissé** avec un identifiant et un mot de passe. Gardez-le avec votre passeport : votre université, la banque et DiSCo vous le demanderont.",
     },
+    {
+      type: "callout",
+      tone: "tip",
+      title: "Gardez le récépissé sur vous",
+      text: "À partir de maintenant, présentez le **récépissé (ricevuta)** avec votre passeport pour toute démarche : ouverture d'un compte bancaire, abonnement téléphonique, codice fiscale, contrat de travail, DiSCo. Tant que la carte n'est pas arrivée, c'est le récépissé qui prouve votre demande. Gardez l'original en lieu sûr et ayez aussi une copie sur vous.",
+    },
     { type: "h3", id: "step-questura", text: "Étape 4 : aller à la Questura pour les empreintes" },
     {
       type: "p",
@@ -154,6 +160,12 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "L’inscription n’est complète qu’une fois vos originaux vérifiés par l’université :",
+    },
+    {
+      type: "callout",
+      tone: "note",
+      title: "Inscription et récépissé",
+      text: "Pour finaliser l'inscription, apportez le récépissé si vous l'avez déjà : c'est utile, mais d'après mon expérience l'université ne l'exige pas.",
     },
     {
       type: "ul",

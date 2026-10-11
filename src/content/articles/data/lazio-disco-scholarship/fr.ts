@@ -190,6 +190,12 @@ export const fr: ArticleTranslation = {
       ],
     },
     {
+      type: "callout",
+      tone: "note",
+      title: "Le permis et les deux versements (mon expérience)",
+      text: "D'après mon expérience et celle d'autres étudiants, le premier versement arrive une fois que vous avez déposé le **récépissé (ricevuta)** du permis de séjour dans votre profil DiSCo Lazio, tandis que le second exige la **carte de séjour** elle-même. Si votre carte n'est pas arrivée et que le second versement n'est pas payé, pas de panique : vous n'êtes pas exclu. Soyez patient ; une fois la carte reçue et déposée, le versement arrive lors de l'une des prochaines périodes de paiement annoncées par DiSCo Lazio. Vérifiez les conditions officielles dans l'appel en cours.",
+    },
+    {
       type: "p",
       text: "En pratique, les versements peuvent arriver avec quelques semaines de retard, mais rarement plus d'un mois. Si votre ISEEUP est signé correctement après votre arrivée, les premiers versements suivent. Pour les recevoir, il vous faut un **IBAN** (compte italien ou SEPA), ajouté dans les 6 mois suivant l'attribution, et une **PEC** (e-mail certifié) ou un domicile élu. Voir [comment ouvrir un compte bancaire à Rome](article:bank-account-italy-student).",
     },

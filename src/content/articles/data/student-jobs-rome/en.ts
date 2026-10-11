@@ -39,6 +39,12 @@ export const en: ArticleTranslation = {
         "**Your residenza** helps with many local procedures; see [how to register your residenza in Rome](article:residenza-rome).",
       ],
     },
+    {
+      type: "callout",
+      tone: "tip",
+      title: "Show the permit receipt to employers",
+      text: "Until your permit card arrives, give employers and agencies a copy of the **receipt (ricevuta)** with your passport: it shows you applied for a study permit and lets them register a regular contract.",
+    },
 
     { type: "h2", id: "hour-limits", text: "2. How many hours can you work on a student permit?" },
     {

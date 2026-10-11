@@ -60,6 +60,12 @@ export const ar: ArticleTranslation = {
       text: "المطبوعة هي *dichiarazione di residenza* الوزارية، مع القائمة الإضافية لغير الأوروبيين (*Allegato A*)، وتجدها في [صفحة Roma Capitale لتغيير الإقامة](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). املأ كل خانة عليها نجمة، وإلا يُرفض الملف.",
     },
     {
+      type: "callout",
+      tone: "warning",
+      title: "أحضر بطاقة الإقامة وليس الوصل فقط",
+      text: "عمليًا، خطّط لتسجيل الريزيدنزا بعد أن تتسلم **بطاقة الإقامة** نفسها. يكفي الوصل لأغلب الخدمات الأخرى، لكن وصل الإقامة الأولى قد يُرفض في الـ anagrafe، لذا تحقق من الـ Municipio قبل الحجز.",
+    },
+    {
       type: "table",
       caption: "ما يجب إرفاقه بـ dichiarazione di residenza (Roma Capitale، Allegato A).",
       head: ["الوثيقة", "ملاحظات"],

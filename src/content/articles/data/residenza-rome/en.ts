@@ -59,6 +59,12 @@ export const en: ArticleTranslation = {
       text: "The form is the ministerial *dichiarazione di residenza*, with the extra list for non-EU citizens (*Allegato A*), on the [Roma Capitale change of residence page](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). Fill in every field marked with an asterisk, or the file is rejected.",
     },
     {
+      type: "callout",
+      tone: "warning",
+      title: "Bring the permit card, not only the receipt",
+      text: "In practice, plan to register your residenza once you have the **permit card** itself. The receipt is enough for most other services, but a first-permit receipt may be refused at the anagrafe, so check with your Municipio before you book.",
+    },
+    {
       type: "table",
       caption: "What to attach to the dichiarazione di residenza (Roma Capitale, Allegato A).",
       head: ["Document", "Notes"],

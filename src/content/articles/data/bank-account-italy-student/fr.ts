@@ -34,6 +34,12 @@ export const fr: ArticleTranslation = {
       text: "Obtenez d'abord votre **codice fiscale** : toutes les banques italiennes le demandent. Il arrive normalement avec la demande de permis de séjour ; voir [comment obtenir le codice fiscale](article:arriving-in-rome#codice-fiscale).",
     },
     {
+      type: "callout",
+      tone: "tip",
+      title: "Apportez le récépissé du permis",
+      text: "Si vous avez déjà demandé votre permis de séjour, présentez toujours le **récépissé (ricevuta)** avec votre passeport. Les banques s'y attendent : c'est le document qui montre que votre séjour est régulier pendant la fabrication de la carte.",
+    },
+    {
       type: "ul",
       items: [
         "**Demandé dans mon cas :** codice fiscale, passeport (avec le visa d'études) et attestation d'inscription à l'université.",

@@ -35,6 +35,12 @@ export const ar: ArticleTranslation = {
       text: "احصل أولًا على **codice fiscale**، فكل البنوك الإيطالية تطلبه. يصلك عادة مع طلب الإقامة؛ راجع [كيف تحصل على codice fiscale](article:arriving-in-rome#codice-fiscale).",
     },
     {
+      type: "callout",
+      tone: "tip",
+      title: "أحضر وصل الإقامة",
+      text: "إذا كنت قد قدمت طلب الإقامة، قدّم دائمًا **الوصل (ricevuta)** مع جواز سفرك. البنوك تنتظره، فهو الوثيقة التي تثبت أن إقامتك قانونية في انتظار صدور البطاقة.",
+    },
+    {
       type: "ul",
       items: [
         "**ما طُلب مني:** codice fiscale، وجواز السفر (مع تأشيرة الدراسة)، وشهادة التسجيل في الجامعة.",

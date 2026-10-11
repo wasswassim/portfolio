@@ -59,6 +59,12 @@ export const fr: ArticleTranslation = {
       text: "Le formulaire est la *dichiarazione di residenza* ministérielle, avec la liste supplémentaire pour les non-Européens (*Allegato A*), sur la [page de Roma Capitale sur le changement de résidence](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). Remplissez tous les champs marqués d'un astérisque, sinon le dossier est rejeté.",
     },
     {
+      type: "callout",
+      tone: "warning",
+      title: "Apportez la carte de séjour, pas seulement le récépissé",
+      text: "En pratique, prévoyez de déclarer votre residenza une fois la **carte de séjour** reçue. Le récépissé suffit pour la plupart des autres démarches, mais un récépissé de premier permis peut être refusé à l'anagrafe : vérifiez auprès de votre Municipio avant de réserver.",
+    },
+    {
       type: "table",
       caption: "Ce qu'il faut joindre à la dichiarazione di residenza (Roma Capitale, Allegato A).",
       head: ["Document", "Remarques"],

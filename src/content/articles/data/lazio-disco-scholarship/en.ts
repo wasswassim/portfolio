@@ -190,6 +190,12 @@ export const en: ArticleTranslation = {
       ],
     },
     {
+      type: "callout",
+      tone: "note",
+      title: "The permit and the two instalments (my experience)",
+      text: "In my experience and that of other students, the first instalment is paid once you upload the residence permit **receipt (ricevuta)** to your DiSCo Lazio profile, while the second instalment needs the **permit card** itself. If your card has not arrived and the second instalment is not paid, do not panic: you are not excluded. Be patient; once you have the card and upload it, the instalment is paid in one of the next payment runs announced by DiSCo Lazio. Check the current call for the official conditions.",
+    },
+    {
       type: "p",
       text: "In practice, payments can arrive a few weeks late, but rarely more than a month late. If your ISEEUP is signed correctly after you arrive, the first payments follow. To receive them you need an **IBAN** (Italian or SEPA account), added within 6 months of the award, and a **PEC** (certified email) or an elected domicile. See [how to open a bank account in Rome](article:bank-account-italy-student).",
     },

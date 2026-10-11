@@ -88,6 +88,12 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "The clerk gives you a **receipt** with a username and password. Keep it with your passport: your university, the bank and DiSCo will ask for it.",
     },
+    {
+      type: "callout",
+      tone: "tip",
+      title: "Carry the receipt everywhere",
+      text: "From now on, show the **receipt (ricevuta)** together with your passport whenever you ask for a service: opening a bank account, a SIM contract, the codice fiscale, a job contract, DiSCo. Until the permit card arrives, the receipt is what proves you applied. Keep the original safe and carry a copy as well.",
+    },
     { type: "h3", id: "step-questura", text: "Step 4: go to the Questura for fingerprints" },
     {
       type: "p",
@@ -154,6 +160,12 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Enrolment is complete only once your university has checked your originals:",
+    },
+    {
+      type: "callout",
+      tone: "note",
+      title: "Enrolment and the receipt",
+      text: "To finalise enrolment, bring the receipt if you already have it: it helps, but in my experience the university does not require it.",
     },
     {
       type: "ul",

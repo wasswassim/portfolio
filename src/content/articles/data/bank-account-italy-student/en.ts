@@ -34,6 +34,12 @@ export const en: ArticleTranslation = {
       text: "Get your **codice fiscale** first: every Italian bank asks for it. It normally comes with your residence permit application; see [how to get your codice fiscale](article:arriving-in-rome#codice-fiscale).",
     },
     {
+      type: "callout",
+      tone: "tip",
+      title: "Bring the permit receipt",
+      text: "If you have already applied for your residence permit, always show the **receipt (ricevuta)** with your passport. Banks expect it, and it is the document that shows you are legally staying in Italy while the card is being made.",
+    },
+    {
       type: "ul",
       items: [
         "**Required in my case:** codice fiscale, passport (with your study visa) and proof of enrolment at your university.",

@@ -39,6 +39,12 @@ export const fr: ArticleTranslation = {
         "**Votre residenza** facilite beaucoup de démarches locales ; voir [comment faire sa residenza à Rome](article:residenza-rome).",
       ],
     },
+    {
+      type: "callout",
+      tone: "tip",
+      title: "Montrez le récépissé aux employeurs",
+      text: "En attendant la carte, remettez aux employeurs et aux agences une copie du **récépissé (ricevuta)** avec votre passeport : il montre que vous avez demandé un permis d'études et leur permet de déclarer un contrat en règle.",
+    },
 
     { type: "h2", id: "hour-limits", text: "2. Combien d’heures peut-on travailler avec un permis étudiant ?" },
     {
