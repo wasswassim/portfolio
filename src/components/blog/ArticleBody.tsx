@@ -167,7 +167,8 @@ function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dict
           ? "https://www.youtube-nocookie.com/embed/" + block.id + "?rel=0"
           : "https://player.vimeo.com/video/" + block.id + "?dnt=1";
       return (
-        <figure className="blog-figure blog-video">
+        // Square and portrait clips are capped in width so they do not fill the whole column
+        <figure className={"blog-figure blog-video" + ((block.height ?? 9) >= (block.width ?? 16) ? " blog-video-narrow" : "")}>
           <div className="blog-video-frame" style={{ aspectRatio: ratio }}>
             {block.provider === "file" ? (
               <video controls preload="metadata" playsInline poster={block.thumbnail} aria-label={block.title}>

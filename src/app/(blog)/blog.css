@@ -338,6 +338,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 /* Video embeds keep their space (no layout shift) via aspect-ratio set inline */
 .blog-video-frame { position: relative; overflow: hidden; border-radius: 0.8rem; border: 1px solid var(--border); background: #000; }
 .blog-video-frame iframe, .blog-video-frame video { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; border: 0; }
+.blog-video-narrow { inline-size: 100%; max-inline-size: 26rem; margin-inline: auto; }
 
 .blog-quote { margin-block: 2rem; padding-inline-start: 1.2rem; border-inline-start: 2px solid var(--border); font-size: 1.2rem; font-style: italic; }
 .blog-quote footer { font-size: 0.85rem; font-style: normal; color: var(--muted); }

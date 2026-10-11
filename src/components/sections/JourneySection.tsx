@@ -17,7 +17,7 @@ const EMAILJS = {
   publicKey:  process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY?.trim(),
 };
 
-export default function JourneySection() {
+export default function JourneySection({ onMenuOpen }: { onMenuOpen?: () => void }) {
   const sectionRef  = useRef<HTMLElement>(null);
   const formRef     = useRef<HTMLFormElement>(null);
   const leftColRef  = useRef<HTMLDivElement>(null);
@@ -342,11 +342,27 @@ export default function JourneySection() {
       {/* ── Footer strip ── */}
       <div className="cj-footer" style={{
         background: "#0a0a0a", padding: "1.4rem 4rem",
-        display: "flex", alignItems: "center", justifyContent: "center",
+        display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem",
       }}>
         <span style={{ fontFamily: "var(--font-inter)", fontSize: "0.6rem", letterSpacing: "0.08em", color: "rgba(255,255,255,0.35)" }}>
           &copy; 2025 Wassim Gatri &mdash; Designed &amp; built by me.
         </span>
+        {/* Same menu pill as the hero, so the menu is reachable at the end of the page */}
+        <button
+          type="button"
+          className="tap-target"
+          onClick={onMenuOpen}
+          style={{
+            display: "flex", alignItems: "center", gap: "0.5rem",
+            background: "#ffffff", color: "#0a0a0a", border: "none", borderRadius: "999px",
+            padding: "0.45rem 1rem 0.45rem 0.75rem",
+            fontFamily: "var(--font-inter)", fontSize: "0.7rem", fontWeight: 600, letterSpacing: "0.08em",
+            cursor: "pointer",
+          }}
+        >
+          <span aria-hidden="true" style={{ width: "0.45rem", height: "0.45rem", borderRadius: "50%", background: "#4ade80", flexShrink: 0 }} />
+          MENU
+        </button>
       </div>
     </section>
   );

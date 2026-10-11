@@ -3,7 +3,7 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const en: ArticleTranslation = {
   slug: "work-contract-in-italy",
-  title: "Work Contract in Italy from Tunisia",
+  title: "Work Contract in Italy for Tunisians",
   subtitle: "Nulla Osta, Visa and Arrival",
   seoTitle: "Work Contract in Italy: Nulla Osta, Visa and Arrival",
   metaDescription:
@@ -22,7 +22,7 @@ export const en: ArticleTranslation = {
     { type: "p", text: "**You have completed an approved training program in Tunisia. How do you get from there to a work contract in Italy?**" },
     {
       type: "p",
-      text: "This is part 2 of our guide to [working in Italy from Tunisia](article:work-in-italy-from-tunisia). Part 1 explains the training-abroad route, who qualifies, the documents and the training itself. This part covers what comes next: the Italian employer, the work contract, the Nulla Osta, the work visa and your first steps in Italy.",
+      text: "This is part 2 of our guide to [working in Italy for Tunisians](article:work-in-italy-from-tunisia). Part 1 explains the training-abroad route, who qualifies, the documents and the training itself. This part covers what comes next: the Italian employer, the work contract, the Nulla Osta, the work visa and your first steps in Italy.",
     },
     {
       type: "p",
@@ -40,7 +40,7 @@ export const en: ArticleTranslation = {
       text: "For workers who met the conditions of the training-abroad route, entry procedures follow the system specific to this route, outside the Decreto Flussi quotas.",
     },
 
-    { type: "h2", id: "work-contract", text: "2. How do you get a work contract in Italy from Tunisia?" },
+    { type: "h2", id: "work-contract", text: "2. How do Tunisians get a work contract in Italy?" },
     {
       type: "p",
       text: "A legitimate work contract is not something you buy or receive from an intermediary. On this route, it comes from an Italian employer who has been matched with you through an approved program, and who then files the Nulla Osta request.",

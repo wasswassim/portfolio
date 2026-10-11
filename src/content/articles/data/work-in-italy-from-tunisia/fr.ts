@@ -175,6 +175,19 @@ export const fr: ArticleTranslation = {
     },
 
     { type: "h2", id: "how-to-start", text: "4. Par où commencer quand on est Tunisien ?" },
+    {
+      type: "video",
+      provider: "file",
+      id: "/blog/video/avatar-calm-official-route.mp4",
+      title: "Commencer sereinement, par la voie officielle",
+      description: "Une courte animation d'un avatar qui médite sur un nuage, en introduction aux premières étapes de la voie légale pour travailler en Italie.",
+      caption: "Avancez sereinement, étape par étape : la voie légale commence par les canaux officiels ci-dessous.",
+      uploadDate: "2026-10-11",
+      thumbnail: "/blog/video/avatar-calm-official-route.webp",
+      duration: "PT7S",
+      width: 720,
+      height: 720,
+    },
     { type: "h3", id: "step-follow-official", text: "Étape 1 : suivez les canaux officiels" },
     {
       type: "p",

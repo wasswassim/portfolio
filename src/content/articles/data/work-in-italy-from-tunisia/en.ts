@@ -3,9 +3,9 @@ import type { ArticleTranslation } from "../../types";
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const en: ArticleTranslation = {
   slug: "work-in-italy-from-tunisia",
-  title: "Working in Italy from Tunisia",
+  title: "Working in Italy for Tunisians",
   subtitle: "The Training-Abroad Route",
-  seoTitle: "Work in Italy from Tunisia: Legal Guide (2026)",
+  seoTitle: "Work in Italy for Tunisians: Legal Guide (2026)",
   metaDescription:
     "How Tunisians can work in Italy legally outside the Decreto Flussi quotas: who qualifies, approved training programs, documents, job offers and scams.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
@@ -19,7 +19,7 @@ export const en: ArticleTranslation = {
       title: "Important notice",
       text: "This guide is for information only and is not legal advice. Immigration programs, requirements and procedures can change, so always check the official sources before applying or paying anything.",
     },
-    { type: "p", text: "**Looking for a legal way to work in Italy from Tunisia?**" },
+    { type: "p", text: "**Are you Tunisian and looking for a legal way to work in Italy?**" },
     {
       type: "p",
       text: "There is a special mechanism under Italian immigration law that allows, in specific cases, foreign workers who have completed approved vocational, language and civic training programs in their home country to enter Italy to work outside the Decreto Flussi quotas.",
@@ -172,6 +172,19 @@ export const en: ArticleTranslation = {
     },
 
     { type: "h2", id: "how-to-start", text: "4. How do you start from Tunisia?" },
+    {
+      type: "video",
+      provider: "file",
+      id: "/blog/video/avatar-calm-official-route.mp4",
+      title: "Start calmly, the official way",
+      description: "A short animation of an avatar meditating on a cloud, introducing the first steps of the legal route to work in Italy.",
+      caption: "Take it calmly and step by step: the legal route starts with the official channels below.",
+      uploadDate: "2026-10-11",
+      thumbnail: "/blog/video/avatar-calm-official-route.webp",
+      duration: "PT7S",
+      width: 720,
+      height: 720,
+    },
     { type: "h3", id: "step-follow-official", text: "Step 1: Follow the official channels" },
     {
       type: "p",
@@ -310,7 +323,7 @@ export const en: ArticleTranslation = {
           a: "There is no single fixed duration for all programs. It varies by program, sector and occupation.",
         },
         {
-          q: "Where can I find a job offer in Italy from Tunisia?",
+          q: "Where can Tunisians find job offers in Italy?",
           a: "Start with ANETI and the official announcement of each program. Do not rely on social media posts or on intermediaries who ask for money.",
         },
       ],
