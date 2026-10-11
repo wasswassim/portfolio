@@ -40,6 +40,7 @@ export default function ReferralCard({ provider, text, lang, dict }: { provider:
         </a>
       </p>
       <p className="blog-referral-note">
+        {dict.referral.inline}{" "}
         <a href={r.termsUrl} rel="noopener noreferrer" target="_blank">{dict.referral.terms}</a>
         {", " + dict.fees.checked(date)}
       </p>
