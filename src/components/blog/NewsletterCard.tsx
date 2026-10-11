@@ -23,7 +23,7 @@ export default function NewsletterCard({ lang, dict, idPrefix, className = "" }:
           <input type="text" name="email_address_check" tabIndex={-1} autoComplete="one-time-code" aria-hidden="true" defaultValue="" />
         </div>
         <input type="hidden" name="locale" value={lang} />
-        <input type="hidden" name="html_type" value="simple" />
+        
         <label className="blog-newsletter-consent">
           <input type="checkbox" name="OPT_IN" value="1" required />
           <span>{t.consent}</span>
