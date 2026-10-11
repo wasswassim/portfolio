@@ -734,7 +734,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 /* ── Partner offer buttons (side column): soft float, pulse ring on hover/focus ── */
 .blog-side .blog-offers { flex: none; }
-.blog-offers { padding: 1rem 1.2rem 1.1rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); }
+.blog-offers { padding-block: 0.4rem; }
 .blog-offers-title { margin: 0 0 0.8rem; font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
 :lang(ar) .blog-offers-title { letter-spacing: 0; font-size: 0.85rem; }
 .blog-offers-list { list-style: none; display: flex; justify-content: space-around; gap: 0.6rem; }
