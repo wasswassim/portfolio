@@ -536,8 +536,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
     /* short screens: the column scrolls instead of cutting off the newsletter card */
     overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin;
   }
-  .blog-side .blog-guide { flex: 0 1 auto; max-block-size: none; min-block-size: 0; }
-  .blog-side .blog-guide:has(.blog-guide-scroll:not([hidden])) { min-block-size: 12rem; }
+  /* Cards keep their own size; the column scrolls if they do not all fit */
+  .blog-side .blog-guide { flex: none; max-block-size: calc(100dvh - 3rem); }
   .blog-side .blog-newsletter { flex: none; }
   .blog-newsletter--end { display: none; }
   .blog-guide-jump { display: none; }
@@ -733,11 +733,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-referral--brand .blog-referral-cta:focus-visible { outline-color: var(--ref-fg); }
 
 /* ── Partner offer buttons (side column): soft float, pulse ring on hover/focus ── */
-.blog-side .blog-offers { flex: none; }
-.blog-offers { padding: 1rem 1.2rem 1.1rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); }
 .blog-offers-title { margin: 0 0 0.8rem; font-size: 0.65rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
 :lang(ar) .blog-offers-title { letter-spacing: 0; font-size: 0.85rem; }
-.blog-offers-list { list-style: none; display: flex; justify-content: space-around; gap: 0.6rem; }
+.blog-offers-list { flex: none; list-style: none; display: flex; justify-content: space-around; gap: 0.6rem; padding-block: 0.4rem; }
 .blog-offer { position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.45rem; color: var(--fg); font-size: 0.75rem; font-weight: 600; }
 .blog-offer img { position: relative; z-index: 1; inline-size: 3.6rem; block-size: 3.6rem; border-radius: 50%; object-fit: cover;
   box-shadow: 0 6px 16px -6px color-mix(in srgb, var(--ref-btn) 70%, transparent);
