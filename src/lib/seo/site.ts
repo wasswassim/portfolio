@@ -8,6 +8,16 @@ export function absoluteUrl(path: string): string {
   return `${SITE_URL}${encodeURI(path)}`;
 }
 
+// Author entity (Person JSON-LD). Facts match the home page description; keep them in sync.
+export const AUTHOR = {
+  image: "/img/wassimage.webp",
+  jobTitle: "Web Designer & Digital Marketer",
+  description:
+    "Web designer and digital marketer based in Tunisia and Italy. Writes practical guides, based on official sources, for Tunisians who study, work and settle in Italy.",
+  knowsAbout: ["Web design", "Digital marketing", "SEO", "Studying in Italy", "Working in Italy", "Moving from Tunisia to Italy"],
+  knowsLanguage: ["ar", "fr", "en"],
+};
+
 // Public profiles used for the author entity (sameAs) in JSON-LD
 export const SOCIAL_PROFILES = [
   "https://github.com/wasswassim",

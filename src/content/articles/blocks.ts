@@ -81,6 +81,13 @@ export function videosOf(blocks: Block[]): VideoBlock[] {
   return blocks.filter((b): b is VideoBlock => b.type === "video");
 }
 
+/** Official sources listed on the page (sources blocks), published as the article's citations in JSON-LD. */
+export function sourcesOf(blocks: Block[]): { name: string; url: string }[] {
+  return blocks.flatMap((b) =>
+    b.type === "sources" ? b.items.map((i) => ({ name: stripMarkup(i.label), url: i.url })) : [],
+  );
+}
+
 /** Plain-text FAQ pairs for FAQPage JSON-LD (markup stripped). */
 export function faqPairsOf(body: Block[]): { q: string; a: string }[] {
   return body.flatMap((b) =>

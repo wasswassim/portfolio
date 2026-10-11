@@ -6,7 +6,7 @@ import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/
 import { allArticleParams, articleBySlug, seriesPosition } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd, personLd, blogPostingLd, breadcrumbLd, faqLd, videoLd } from "@/lib/seo/jsonld";
-import { faqPairsOf, hasReferral, headingsOf, readingMinutes, videosOf, wordCountOf } from "@/content/articles/blocks";
+import { faqPairsOf, hasReferral, headingsOf, readingMinutes, sourcesOf, videosOf, wordCountOf } from "@/content/articles/blocks";
 import { SITE_NAME, SITE_URL } from "@/lib/seo/site";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogFooter from "@/components/blog/BlogFooter";
@@ -148,6 +148,7 @@ export default async function ArticlePage(props: Props) {
               hubPath: articlePath(lang, series.hub.translation.slug),
               position: series.part,
             },
+            citations: sourcesOf([...translation.body, ...guide]),
           }),
           breadcrumbLd([
             { name: SITE_NAME, path: "/" },

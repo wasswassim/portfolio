@@ -1,4 +1,4 @@
-import { AUTHOR_ID, SITE_NAME, SITE_URL, SOCIAL_PROFILES, absoluteUrl } from "./site";
+import { AUTHOR, AUTHOR_ID, SITE_NAME, SITE_URL, SOCIAL_PROFILES, absoluteUrl } from "./site";
 
 type JsonLdValue = Record<string, unknown>;
 
@@ -21,6 +21,11 @@ export const personLd = (): JsonLdValue => ({
   "@id": AUTHOR_ID,
   name: SITE_NAME,
   url: SITE_URL,
+  image: absoluteUrl(AUTHOR.image),
+  jobTitle: AUTHOR.jobTitle,
+  description: AUTHOR.description,
+  knowsAbout: AUTHOR.knowsAbout,
+  knowsLanguage: AUTHOR.knowsLanguage,
   sameAs: SOCIAL_PROFILES,
 });
 
@@ -61,6 +66,8 @@ export const blogPostingLd = (a: {
   updatedAt: string;
   /** Series membership: the hub's path identifies the series (CreativeWorkSeries), position is the part number */
   series?: { name: string; hubPath: string; position: number };
+  /** Official sources listed on the page */
+  citations?: { name: string; url: string }[];
 }): JsonLdValue =>
   clean({
     "@context": "https://schema.org",
@@ -91,6 +98,9 @@ export const blogPostingLd = (a: {
         }
       : undefined,
     position: a.series?.position,
+    citation: a.citations?.length
+      ? a.citations.map((c) => ({ "@type": "CreativeWork", name: c.name, url: c.url }))
+      : undefined,
     author: { "@id": AUTHOR_ID },
     publisher: { "@id": AUTHOR_ID },
   });

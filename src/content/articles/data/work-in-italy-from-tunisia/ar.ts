@@ -30,6 +30,20 @@ export const ar: ArticleTranslation = {
       text: "لكن يجب توضيح نقطة أساسية: هذه ليست فيزا عمل مفتوحة لكل تونسي، ولا تعني أن الحكومة الإيطالية تمنح كل مترشح عقد عمل تلقائيًا. يجب أن تستوفي شروط برنامج معتمد، ثم تتم إجراءات التوظيف وطلب Nulla Osta وفق المسار القانوني.",
     },
 
+    {
+      type: "video",
+      provider: "file",
+      id: "/blog/video/italy-work-quotas-asharq.mp4",
+      title: "حصص العمل في إيطاليا للعمال العرب (الشرق Bloomberg)",
+      description: "تقرير من الشرق Bloomberg عن حصص Decreto Flussi في إيطاليا: عدد العمال الذين تعتزم إيطاليا استقبالهم، وطلب صاحب العمل، وNulla Osta، وعقد الإقامة، وكيف تكتشف عروض العمل الوهمية.",
+      caption: "تقرير من الشرق Bloomberg عن حصص Decreto Flussi. هذا هو مسار الحصص، أما هذا الدليل فيشرح المسار خارج الحصص، وقد تخص التواريخ المذكورة في الفيديو مرسومًا سابقًا.",
+      uploadDate: "2026-10-11",
+      thumbnail: "/blog/video/italy-work-quotas-asharq.webp",
+      duration: "PT1M43S",
+      width: 540,
+      height: 960,
+    },
+
     { type: "h2", id: "what-is-this-route", text: "1. ما هو هذا المسار؟" },
     {
       type: "p",
@@ -173,19 +187,6 @@ export const ar: ArticleTranslation = {
     },
 
     { type: "h2", id: "how-to-start", text: "4. كيف تبدأ من تونس؟" },
-    {
-      type: "video",
-      provider: "file",
-      id: "/blog/video/italy-work-quotas-asharq.mp4",
-      title: "حصص العمل في إيطاليا للعمال العرب (الشرق Bloomberg)",
-      description: "تقرير من الشرق Bloomberg عن حصص Decreto Flussi في إيطاليا: عدد العمال الذين تعتزم إيطاليا استقبالهم، وطلب صاحب العمل، وNulla Osta، وعقد الإقامة، وكيف تكتشف عروض العمل الوهمية.",
-      caption: "تقرير من الشرق Bloomberg عن حصص Decreto Flussi. هذا هو مسار الحصص، أما هذا الدليل فيشرح المسار خارج الحصص، وقد تخص التواريخ المذكورة في الفيديو مرسومًا سابقًا.",
-      uploadDate: "2026-10-11",
-      thumbnail: "/blog/video/italy-work-quotas-asharq.webp",
-      duration: "PT1M43S",
-      width: 540,
-      height: 960,
-    },
     { type: "h3", id: "step-follow-official", text: "الخطوة 1: تابع القنوات الرسمية" },
     {
       type: "p",

@@ -29,6 +29,20 @@ export const en: ArticleTranslation = {
       text: "But one essential point needs to be clear: this is not an open work visa for every Tunisian, and it does not mean the Italian government gives every applicant a job contract automatically. You must meet the requirements of an approved program, and then the hiring procedure and the Nulla Osta request follow the legal route.",
     },
 
+    {
+      type: "video",
+      provider: "file",
+      id: "/blog/video/italy-work-quotas-asharq.mp4",
+      title: "Italy's work quotas for Arab workers, explained (Asharq Bloomberg, in Arabic)",
+      description: "Asharq Bloomberg report in Arabic on Italy's Decreto Flussi work quotas: how many workers Italy plans to admit, the employer's request, the Nulla Osta and the residence contract, and how to spot fake job offers.",
+      caption: "An Asharq Bloomberg report (in Arabic) on the Decreto Flussi quotas. That is the quota route: this guide covers the route outside the quotas, and the dates in the video may refer to an earlier decree.",
+      uploadDate: "2026-10-11",
+      thumbnail: "/blog/video/italy-work-quotas-asharq.webp",
+      duration: "PT1M43S",
+      width: 540,
+      height: 960,
+    },
+
     { type: "h2", id: "what-is-this-route", text: "1. What is this route?" },
     {
       type: "p",
@@ -172,19 +186,6 @@ export const en: ArticleTranslation = {
     },
 
     { type: "h2", id: "how-to-start", text: "4. How do you start from Tunisia?" },
-    {
-      type: "video",
-      provider: "file",
-      id: "/blog/video/italy-work-quotas-asharq.mp4",
-      title: "Italy's work quotas for Arab workers, explained (Asharq Bloomberg, in Arabic)",
-      description: "Asharq Bloomberg report in Arabic on Italy's Decreto Flussi work quotas: how many workers Italy plans to admit, the employer's request, the Nulla Osta and the residence contract, and how to spot fake job offers.",
-      caption: "An Asharq Bloomberg report (in Arabic) on the Decreto Flussi quotas. That is the quota route: this guide covers the route outside the quotas, and the dates in the video may refer to an earlier decree.",
-      uploadDate: "2026-10-11",
-      thumbnail: "/blog/video/italy-work-quotas-asharq.webp",
-      duration: "PT1M43S",
-      width: 540,
-      height: 960,
-    },
     { type: "h3", id: "step-follow-official", text: "Step 1: Follow the official channels" },
     {
       type: "p",

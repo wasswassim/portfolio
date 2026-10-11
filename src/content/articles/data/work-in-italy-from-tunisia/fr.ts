@@ -29,6 +29,20 @@ export const fr: ArticleTranslation = {
       text: "Mais un point essentiel doit être clair : il ne s'agit pas d'un visa de travail ouvert à tous les Tunisiens, et cela ne veut pas dire que le gouvernement italien accorde automatiquement un contrat de travail à chaque candidat. Il faut remplir les conditions d'un programme agréé, puis la procédure d'embauche et la demande de Nulla Osta suivent la voie légale.",
     },
 
+    {
+      type: "video",
+      provider: "file",
+      id: "/blog/video/italy-work-quotas-asharq.mp4",
+      title: "Les quotas de travail en Italie pour les travailleurs arabes (Asharq Bloomberg, en arabe)",
+      description: "Reportage d'Asharq Bloomberg en arabe sur les quotas du Decreto Flussi : combien de travailleurs l'Italie prévoit d'accueillir, la demande de l'employeur, le Nulla Osta, le contrat de séjour et comment repérer les fausses offres d'emploi.",
+      caption: "Un reportage d'Asharq Bloomberg (en arabe) sur les quotas du Decreto Flussi. C'est la voie des quotas : ce guide présente la voie hors quotas, et les dates de la vidéo peuvent concerner un décret précédent.",
+      uploadDate: "2026-10-11",
+      thumbnail: "/blog/video/italy-work-quotas-asharq.webp",
+      duration: "PT1M43S",
+      width: 540,
+      height: 960,
+    },
+
     { type: "h2", id: "what-is-this-route", text: "1. Qu'est-ce que cette voie ?" },
     {
       type: "p",
@@ -175,19 +189,6 @@ export const fr: ArticleTranslation = {
     },
 
     { type: "h2", id: "how-to-start", text: "4. Par où commencer quand on est Tunisien ?" },
-    {
-      type: "video",
-      provider: "file",
-      id: "/blog/video/italy-work-quotas-asharq.mp4",
-      title: "Les quotas de travail en Italie pour les travailleurs arabes (Asharq Bloomberg, en arabe)",
-      description: "Reportage d'Asharq Bloomberg en arabe sur les quotas du Decreto Flussi : combien de travailleurs l'Italie prévoit d'accueillir, la demande de l'employeur, le Nulla Osta, le contrat de séjour et comment repérer les fausses offres d'emploi.",
-      caption: "Un reportage d'Asharq Bloomberg (en arabe) sur les quotas du Decreto Flussi. C'est la voie des quotas : ce guide présente la voie hors quotas, et les dates de la vidéo peuvent concerner un décret précédent.",
-      uploadDate: "2026-10-11",
-      thumbnail: "/blog/video/italy-work-quotas-asharq.webp",
-      duration: "PT1M43S",
-      width: 540,
-      height: 960,
-    },
     { type: "h3", id: "step-follow-official", text: "Étape 1 : suivez les canaux officiels" },
     {
       type: "p",
