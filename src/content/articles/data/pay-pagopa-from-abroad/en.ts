@@ -3,15 +3,15 @@ import type { ArticleTranslation } from "../../types";
 // Part 3 of the payment series. French and Arabic mirror this structure (same heading ids, one table, two fee boxes).
 export const en: ArticleTranslation = {
   slug: "pay-pagopa-with-paypal-from-tunisia",
-  title: "How to Pay a pagoPA Notice from Tunisia",
-  subtitle: "With PayPal or an international card",
-  seoTitle: "How to Pay pagoPA from Tunisia with PayPal or a Card",
+  title: "How to Pay a pagoPA Notice from Abroad or from Tunisia",
+  subtitle: "With PayPal or an international card, without SPID: the steps, the fees and what to do if the payment fails",
+  seoTitle: "Pay pagoPA from Abroad with PayPal or a Card (2026)",
   metaDescription:
-    "Pay an Italian pagoPA notice from Tunisia with PayPal or an international card: no SPID needed, step by step, fees, and what to do when your card is declined.",
+    "Pay a pagoPA notice from abroad or from Tunisia with PayPal or an international card: no SPID, 6 steps on checkout.pagopa.it, fees and fixes if it fails.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["pay pagoPA from abroad", "pagoPA PayPal", "pay pagoPA from Tunisia", "pagoPA foreign card", "checkout.pagopa.it", "avviso di pagamento"],
+  keywords: ["pay pagoPA from abroad", "pay pagoPA with PayPal", "pay pagoPA from Tunisia", "pagoPA foreign card", "checkout.pagopa.it", "avviso di pagamento"],
   summary:
-    "You can pay an Italian pagoPA notice from Tunisia on checkout.pagopa.it, without SPID, by typing the Codice Avviso and the creditor's tax code and choosing PayPal or a Visa, Mastercard or other international card. PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 4% if PayPal converts the currency; pay in full, test with a small notice first and keep a card as a backup.",
+    "You can pay a pagoPA notice from abroad, including from Tunisia, on checkout.pagopa.it without SPID: type the Codice Avviso and the creditor's tax code, then choose PayPal or a Visa, Mastercard or other international card. As of October 2026, paying pagoPA with PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 4% if PayPal converts the currency, so pay in full, test with a small notice first and keep a card as a backup.",
   body: [
     {
       type: "callout",
@@ -30,13 +30,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "This is part 3 of our [guide to paying Italian fees from Tunisia](article:international-card-tunisia), which compares every way to pay. For the full list of study costs, see [what studying in Italy costs](article:study-in-italy#costs).",
+      text: "This is part 3 of our guide on [how to pay Italian university fees from Tunisia](article:international-card-tunisia), which compares every way to pay. For the full list of study costs, see [what studying in Italy costs](article:study-in-italy#costs).",
     },
 
     { type: "h2", id: "what-is-pagopa", text: "1. What is pagoPA, and which student fees use it?" },
     {
       type: "p",
-      text: "pagoPA is the Italian public payment system. A public body (a university, the Lazio region, a ministry) issues a payment notice, the **avviso di pagamento**, and you pay it through a payment provider (PSP) of your choice. The provider, not pagoPA, sets and collects the fee.",
+      text: "pagoPA is the Italian public payment system that universities and the Lazio region use for student fees such as application fees, enrolment fees and the regional tax. A public body (a university, the Lazio region, a ministry) issues a payment notice, the **avviso di pagamento**, and you pay it through a payment provider (PSP) of your choice. The provider, not pagoPA, sets and collects the fee.",
     },
     {
       type: "figure",
@@ -71,7 +71,11 @@ export const en: ArticleTranslation = {
       text: "Not everything is pagoPA: the residence permit kit is paid at the post office, and voluntary health cover with an F24 form, as explained in [your first 30 days in Rome](article:arriving-in-rome#residence-permit).",
     },
 
-    { type: "h2", id: "what-you-need", text: "2. What you need before you pay" },
+    { type: "h2", id: "what-you-need", text: "2. What do you need before you pay a pagoPA notice?" },
+    {
+      type: "p",
+      text: "To pay a pagoPA notice from abroad, you need the notice with its codes, an email address and either a PayPal account or an international card enabled for online payments.",
+    },
     {
       type: "ul",
       items: [
@@ -87,19 +91,19 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "A Tunisian PayPal account is a contract with PayPal Pte. Ltd., a Singapore company. It lets you pay and send; receiving money is offered only “where available”, and PayPal's Tunisian site promotes only paying and sending ([PayPal user agreement, Tunisia](https://www.paypal.com/tn/legalhub/paypal/useragreement-full?locale.x=en_TN)). That is not a problem here, because your goal is to pay.",
+      text: "A Tunisian PayPal account is a contract with PayPal Pte. Ltd., a Singapore company. It lets you pay and send; receiving money is offered only “where available”, and PayPal's Tunisian site promotes only paying and sending ([PayPal user agreement, Tunisia](https://www.paypal.com/tn/legalhub/paypal/useragreement-full?locale.x=en_TN)). That limit does not block a pagoPA payment, because paying a notice is a payment, not a receipt of money.",
     },
     {
       type: "callout",
       tone: "tip",
       title: "Watch the 1,000 TND cap",
-      text: "The example notice above (about 525 TND) uses about half of a year's CTI allowance, and the CTI's list of allowed uses does not name university fees. Read [what the technology card may pay for](article:technology-card-tunisia#allowed-uses) before you rely on it for tuition.",
+      text: "A first notice for the Lazio regional tax and stamp (about 525 TND) uses about half of a year's CTI allowance, and the CTI's list of allowed uses does not name university fees. Read [what the technology card may pay for](article:technology-card-tunisia#allowed-uses) before you rely on it for tuition.",
     },
 
-    { type: "h2", id: "pay-with-paypal", text: "3. How to pay a pagoPA notice with PayPal, step by step" },
+    { type: "h2", id: "pay-with-paypal", text: "3. How do you pay a pagoPA notice with PayPal, step by step?" },
     {
       type: "p",
-      text: "These steps follow the official pagoPA article [Pagare con PayPal](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal).",
+      text: "To pay a pagoPA notice with PayPal, open checkout.pagopa.it, enter the notice codes and your email, choose PayPal, then log in to PayPal and pay in full. These six steps follow the official pagoPA article [Pagare con PayPal](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal).",
     },
     {
       type: "figure",
@@ -146,7 +150,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The fee of about 4% applies when PayPal converts the currency for you. Whether PayPal or your Tunisian bank converts a dinar card could not be confirmed, so compare the final amount on your bank statement after your test payment.",
+      text: "PayPal's conversion fee of about 4% applies when PayPal converts the currency for you. Whether PayPal or your Tunisian bank converts a dinar card could not be confirmed, so compare the final amount on your bank statement after your test payment.",
     },
     {
       type: "callout",
@@ -155,10 +159,10 @@ export const en: ArticleTranslation = {
       text: "A Tunisian PayPal account on pagoPA is not officially confirmed, and pagoPA says methods can vary by notice and provider. Try a small amount first (for example a EUR 16 stamp, if your university issues it as a separate notice) well before the deadline, and keep a card as a backup.",
     },
 
-    { type: "h2", id: "pay-with-card", text: "4. Paying with an international card instead" },
+    { type: "h2", id: "pay-with-card", text: "4. How do you pay pagoPA with an international card instead?" },
     {
       type: "p",
-      text: "pagoPA accepts credit, debit and prepaid cards on the American Express, Maestro, Mastercard, Visa and Visa Electron circuits, whatever the issuing country ([payment methods](https://assistenza.pagopa.gov.it/hc/it/articles/39527536398609)).",
+      text: "You pay pagoPA by card on the same checkout.pagopa.it page: pagoPA accepts credit, debit and prepaid cards on the American Express, Maestro, Mastercard, Visa and Visa Electron circuits, whatever the issuing country ([payment methods](https://assistenza.pagopa.gov.it/hc/it/articles/39527536398609)). A Tunisian international card therefore works if your bank has enabled it for online and international payments.",
     },
     {
       type: "ol",
@@ -186,10 +190,10 @@ export const en: ArticleTranslation = {
       text: "Compare providers on the official [cost transparency page](https://www.pagopa.gov.it/it/cittadini/trasparenza-costi/). If your card has no CVV, pagoPA says it is probably not enabled for online payments ([paying by card](https://assistenza.pagopa.gov.it/hc/it/articles/39529857745041)).",
     },
 
-    { type: "h2", id: "card-declined", text: "5. Card declined or payment failed: what to do" },
+    { type: "h2", id: "card-declined", text: "5. What should you do if pagoPA declines your card?" },
     {
       type: "p",
-      text: "pagoPA's own help page for [foreign cards](https://assistenza.pagopa.gov.it/hc/it/articles/31958814436113) gives three fixes, in this order:",
+      text: "When a pagoPA payment fails, check the card's restrictions, then change the provider, then change the payment method: pagoPA's own help page for [foreign cards](https://assistenza.pagopa.gov.it/hc/it/articles/31958814436113) gives these three fixes, in this order:",
     },
     {
       type: "ol",
@@ -213,21 +217,21 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Also check that your CTI still has allowance left this year, and that you can receive your bank's confirmation code while you pay.",
+      text: "Also check that your international technology card (CTI) still has allowance left this year, and that you can receive your bank's confirmation code while you pay.",
     },
     {
       type: "p",
-      text: "If money left your account but the outcome is negative, the provider may be holding it and will refund it, possibly after a few days ([debit without payment](https://assistenza.pagopa.gov.it/hc/it/articles/46234924012561)). Check the due date and pay again through another method so you do not miss it. If nothing works, see the [bank transfer option](article:international-card-tunisia#bank-transfer) in our payment guide.",
+      text: "If money left your account but the pagoPA outcome is negative, the payment provider may be holding the money and will refund it, possibly after a few days ([debit without payment](https://assistenza.pagopa.gov.it/hc/it/articles/46234924012561)). Check the due date and pay again through another method so you do not miss it. If no online method works, read about [paying by bank transfer from your Tunisian bank](article:international-card-tunisia#bank-transfer).",
     },
 
-    { type: "h2", id: "keep-the-receipt", text: "6. Keep the receipt and check the validation" },
+    { type: "h2", id: "keep-the-receipt", text: "6. How do you prove the payment and check that it was validated?" },
     {
       type: "p",
-      text: "Download the receipt (**ricevuta**) as soon as the payment succeeds and keep the PDF with the email. Some offices ask for it as proof of payment.",
+      text: "You prove a pagoPA payment with the receipt (**ricevuta**): download it as soon as the payment succeeds and keep the PDF with the email, because some offices ask for it as proof of payment.",
     },
     {
       type: "p",
-      text: "The university then validates the payment on its portal, often after a few days. Check Infostud or Delphi; if nothing appears after about a week, send the receipt to the student office. Tor Vergata warns that if the regional tax payment is not validated, you are not enrolled and you lose your DiSCo benefits ([Tor Vergata student guide 2026/27](https://www-2023.studenti.uniroma2.it/wp-content/uploads/2026/07/Guida-dello-Studente-2026_2027v5.pdf)).",
+      text: "Your university then validates the payment on its portal, often after a few days. Check Infostud or Delphi; if nothing appears after about a week, send the receipt to the student office. Tor Vergata warns that if the regional tax payment is not validated, you are not enrolled and you lose your DiSCo benefits ([Tor Vergata student guide 2026/27](https://www-2023.studenti.uniroma2.it/wp-content/uploads/2026/07/Guida-dello-Studente-2026_2027v5.pdf)).",
     },
 
     {
@@ -236,28 +240,28 @@ export const en: ArticleTranslation = {
       title: "Frequently asked questions",
       items: [
         {
-          q: "Does pagoPA accept foreign cards?",
-          a: "Yes. Credit, debit and prepaid Visa, Mastercard, Maestro, Visa Electron and American Express cards are accepted, as long as the card is enabled for online and international payments and passes the 3-D Secure check.",
+          q: "Can I pay pagoPA from abroad with a foreign card?",
+          a: "Yes. pagoPA accepts credit, debit and prepaid Visa, Mastercard, Maestro, Visa Electron and American Express cards, whatever the issuing country. The card must be enabled for online and international payments and pass the 3-D Secure check with your bank. If one provider refuses the card, pick another provider on the summary screen before you switch to PayPal.",
         },
         {
           q: "Can I pay pagoPA in instalments from Tunisia?",
-          a: "No, not with PayPal: its instalments on pagoPA require you to live in Italy. Choose to pay in full when PayPal asks.",
+          a: "No, not with PayPal: PayPal's instalments on pagoPA require you to live in Italy. Choose to pay in full when PayPal asks how you want to pay. Before the due date, check that your card or PayPal account can cover the whole amount at once, including the provider fee.",
         },
         {
           q: "Do I need SPID to pay a pagoPA notice?",
-          a: "No. On checkout.pagopa.it you only need the Codice Avviso and the Codice Fiscale Ente Creditore (or the QR code), an email address and a payment method.",
+          a: "No. checkout.pagopa.it has no login, so SPID is not needed to pay a notice. You only need the Codice Avviso and the Codice Fiscale Ente Creditore (or the QR code), an email address and a payment method. An Italian bank account or a codice fiscale of your own is not needed either.",
         },
         {
           q: "How much does it cost to pay pagoPA with PayPal?",
-          a: "EUR 1.50 up to EUR 248.50 and EUR 2.50 above (as of October 2026), plus about 4% if PayPal converts the currency for a Tunisian account.",
+          a: "EUR 1.50 for a notice up to EUR 248.50 and EUR 2.50 above, as of October 2026. PayPal adds about 4% if it converts the currency for a Tunisian account. The pagoPA fee is set by the payment provider and can change, so check the total with the fee included before you press Paga.",
         },
         {
-          q: "How long until the university sees my payment?",
-          a: "Often a few days. Keep the receipt, check Infostud or Delphi, and contact the student office if the payment still does not appear after about a week.",
+          q: "How long until the university sees my pagoPA payment?",
+          a: "Often a few days. Your university validates the payment on its own portal, so check Infostud or Delphi after paying and keep the pagoPA receipt. If the payment still does not appear after about a week, send the receipt to the student office: Tor Vergata warns that an unvalidated regional tax payment means you are not enrolled.",
         },
         {
           q: "I lost my Codice Avviso. Can pagoPA send it to me?",
-          a: "No. Only the body that issued the notice can give it to you, so download it again from your university portal or ask the student office.",
+          a: "No. Only the body that issued the notice, usually your university, can give you the Codice Avviso again, and pagoPA cannot generate it. Download the notice again from your university portal, such as Infostud or Delphi, or ask the student office to send it to you.",
         },
       ],
     },

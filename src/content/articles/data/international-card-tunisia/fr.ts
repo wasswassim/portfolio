@@ -3,15 +3,15 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts (same heading ids, one table, four fee boxes). Italian terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "payer-frais-universite-italie-carte-internationale",
-  title: "Frais d’inscription en Italie",
-  subtitle: "Payer avec une carte internationale tunisienne",
-  seoTitle: "Payer ses frais d’inscription en Italie : guide tunisien",
+  title: "Payer ses frais d’inscription en Italie : guide pour les Tunisiens",
+  subtitle: "Cinq moyens de paiement comparés : virement, carte technologique, PayPal sur pagoPA, compte italien et cartes crypto",
+  seoTitle: "Payer ses frais d’inscription en Italie pour les Tunisiens",
   metaDescription:
-    "Payer ses frais d’inscription en Italie pour les Tunisiens : virement, carte technologique, PayPal sur pagoPA, carte italienne, règles de change et arnaques.",
+    "Payer ses frais d’inscription en Italie depuis la Tunisie : 5 moyens classés par sécurité juridique, du virement (circulaire BCT 2016-09) à PayPal sur pagoPA.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["frais d’inscription Italie", "carte internationale Tunisie", "payer université italienne", "pagoPA Tunisie", "carte technologique internationale", "payer en euros Tunisie"],
+  keywords: ["payer les frais d’inscription en Italie depuis la Tunisie", "frais d’inscription Italie", "payer une université italienne depuis la Tunisie", "carte internationale Tunisie", "payer en euros depuis la Tunisie", "virement des frais de scolarité à l’étranger"],
   summary:
-    "La voie légale la plus sûre pour payer vos frais d’université en Italie est le virement bancaire : frais de dossier et d’examen sur facture, frais de scolarité via votre dossier études dans une seule banque. Pour les petits paiements en ligne, la carte technologique (1 000 TND par an) et un compte PayPal tunisien sur pagoPA peuvent fonctionner, mais testez d’abord et demandez à votre banque.",
+    "En 2026, la voie légale la plus sûre pour payer vos frais d’inscription en Italie depuis la Tunisie est le virement bancaire : frais de dossier et d’examen sur facture, frais de scolarité via votre dossier études dans une seule banque. Pour les petits paiements en ligne, la carte technologique (1 000 TND par an) et un compte PayPal tunisien sur pagoPA peuvent fonctionner, mais testez d’abord avec un petit avis et demandez à votre banque.",
   body: [
     {
       type: "callout",
@@ -26,10 +26,14 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Ce guide classe cinq méthodes selon la sécurité juridique, puis le coût, puis l’effort. Les guides détaillés sur la carte, pagoPA et les cartes crypto sont liés dans chaque section.",
+      text: "Ce guide classe cinq méthodes selon la sécurité juridique, puis le coût, puis l’effort. Chaque section renvoie au guide détaillé du moyen concerné : la carte technologique, pagoPA avec PayPal et la carte crypto RedotPay.",
     },
 
     { type: "h2", id: "which-method", text: "1. Quelle méthode pour quels frais italiens ?" },
+    {
+      type: "p",
+      text: "Le virement convient aux frais de candidature, d’examen et de scolarité ; la carte technologique et PayPal ne conviennent qu’aux petits montants en ligne, comme la taxe régionale et le timbre fiscal d’un avis pagoPA.",
+    },
     {
       type: "table",
       caption: "Les frais italiens et les méthodes possibles en Tunisie (vérifié en octobre 2026).",
@@ -38,7 +42,7 @@ export const fr: ArticleTranslation = {
         ["Frais de candidature, CIMEA et tests d’entrée", "En ligne, sur le portail de l’université ou du CIMEA", "Virement sur facture ; carte technologique ou PayPal pour les petits montants (demandez à votre banque)"],
         ["Tranches des frais de scolarité", "Avis pagoPA ou facture de l’université", "Virement dans le cadre de votre dossier études"],
         ["Taxe régionale et timbre fiscal", "Avis pagoPA avec la première tranche", "Carte technologique ou PayPal sur pagoPA (testez d’abord) ; une carte italienne une fois sur place"],
-        ["Kit du permis de séjour", "Dans un bureau de poste italien, après l’arrivée", "Payé en Italie, voir [le coût du permis](article:arriving-in-rome#residence-permit)"],
+        ["Kit du permis de séjour", "Dans un bureau de poste italien, après l’arrivée", "Payé en Italie, voir [le coût du permis de séjour à Rome](article:arriving-in-rome#residence-permit)"],
       ],
     },
     {
@@ -53,10 +57,10 @@ export const fr: ArticleTranslation = {
       text: "Sapienza indique que ses frais se paient uniquement par pagoPA, après avoir généré l’avis sur Infostud ([taxe régionale et timbre](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
     },
 
-    { type: "h2", id: "bank-transfer", text: "2. Option 1 : le virement depuis votre banque tunisienne" },
+    { type: "h2", id: "bank-transfer", text: "2. Option 1 : comment payer par virement depuis une banque tunisienne ?" },
     {
       type: "p",
-      text: "C’est la voie légale la plus simple. La [circulaire BCT 2016-09](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf), annexe 1, point 13, permet aux résidents de transférer sur facture les frais de concours, d’examen et d’« examen de dossiers pour des études à l’étranger ». Le texte ne fixe **aucun plafond**.",
+      text: "Le virement depuis votre banque tunisienne est la voie légale la plus simple pour payer des frais italiens. La [circulaire BCT 2016-09](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf), annexe 1, point 13, permet aux résidents de transférer sur facture les frais de concours, d’examen et d’« examen de dossiers pour des études à l’étranger ». Le texte ne fixe **aucun plafond**.",
     },
     {
       type: "figure",
@@ -72,7 +76,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les frais de scolarité passent par votre **dossier études**, domicilié dans une seule banque pour l’année universitaire. Selon la [circulaire BCT 2025-10](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf), ils sont payés sur présentation de la facture de l’université, et deux allocations s’y ajoutent. La [section sur le compte bloqué](article:italy-student-visa#blocked-account) explique comment ouvrir ce dossier.",
+      text: "Les frais de scolarité passent par votre **dossier études**, domicilié dans une seule banque pour l’année universitaire. Selon la [circulaire BCT 2025-10](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf), ils sont payés sur présentation de la facture de l’université, et deux allocations s’y ajoutent. L’ouverture de ce dossier est expliquée dans [l’étape du compte bloqué du guide du visa étudiant pour l’Italie](article:italy-student-visa#blocked-account).",
     },
     {
       type: "fees",
@@ -101,10 +105,10 @@ export const fr: ArticleTranslation = {
       text: "Beaucoup d’universités italiennes émettent des avis pagoPA plutôt qu’un simple numéro de compte. Nous n’avons pas pu confirmer qu’une banque tunisienne accepte de payer un avis pagoPA par virement : posez la question à votre banque.",
     },
 
-    { type: "h2", id: "technology-card", text: "3. Option 2 : la carte technologique internationale (CTI)" },
+    { type: "h2", id: "technology-card", text: "3. Option 2 : la carte technologique (CTI) peut-elle payer des frais italiens ?" },
     {
       type: "p",
-      text: "Un résident tunisien titulaire au moins du bac peut obtenir une carte technologique avec une allocation de **1 000 TND par année civile** (circulaire 2016-09, art. 15). Cela fait environ **297 EUR** au cours BCT de 3,3671 (7 octobre 2026), un peu moins après les frais bancaires.",
+      text: "La carte technologique internationale (CTI) peut payer de petits frais italiens en ligne, dans la limite d’une allocation de **1 000 TND par année civile** (circulaire 2016-09, art. 15), mais rien ne garantit qu’elle passe pour les frais de scolarité. Tout résident tunisien titulaire au moins du bac peut l’obtenir. L’allocation représente environ **297 EUR** au cours BCT de 3,3671 (7 octobre 2026), un peu moins après les frais bancaires.",
     },
     {
       type: "fees",
@@ -113,13 +117,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Sa liste officielle d’usages cite la formation en ligne, les sites éducatifs, les abonnements et les licences de logiciels. Elle ne cite **ni** les frais de scolarité **ni** pagoPA. Payer l’université avec elle reste une zone grise qui dépend de la banque : la Banque Zitouna, par exemple, [filtre l’usage en ligne par code marchand](https://www.banquezitouna.com/fr/particuliers/gerer-mon-quotidien/mes-cartes/carte-technologique). Renseignez-vous auprès de votre banque. Le [guide de la carte technologique](article:technology-card-tunisia) explique comment la demander.",
+      text: "La liste officielle d’usages de la carte technologique cite la formation en ligne, les sites éducatifs, les abonnements et les licences de logiciels. Elle ne cite **ni** les frais de scolarité **ni** pagoPA. Payer l’université avec la CTI reste une zone grise qui dépend de la banque : la Banque Zitouna, par exemple, [filtre l’usage en ligne par code marchand](https://www.banquezitouna.com/fr/particuliers/gerer-mon-quotidien/mes-cartes/carte-technologique). Renseignez-vous auprès de votre banque. Les conditions, les documents et les banques émettrices sont détaillés dans [comment obtenir la carte technologique internationale en Tunisie](article:technology-card-tunisia).",
     },
 
-    { type: "h2", id: "paypal-pagopa", text: "4. Option 3 : PayPal sur la page de paiement pagoPA" },
+    { type: "h2", id: "paypal-pagopa", text: "4. Option 3 : peut-on payer avec PayPal sur la page de paiement pagoPA ?" },
     {
       type: "p",
-      text: "Un compte PayPal tunisien peut **payer et envoyer**, mais pas recevoir d’argent. Ce n’est pas un problème ici, puisque vous voulez seulement payer. Reliez-y votre carte technologique comme source de financement.",
+      text: "PayPal sur la page de paiement pagoPA peut fonctionner depuis la Tunisie, car un compte PayPal tunisien peut **payer et envoyer** de l’argent, même s’il ne peut pas en recevoir. Pour régler des frais, la première fonction suffit. Reliez votre carte technologique au compte PayPal comme source de financement.",
     },
     {
       type: "figure",
@@ -144,33 +148,37 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Aucune source officielle ne confirme qu’un compte tunisien est accepté sur pagoPA. Testez d’abord avec un petit avis, comme le timbre de 16 EUR. Pas à pas dans [comment payer pagoPA depuis l’étranger](article:pay-pagopa-from-abroad).",
+      text: "Aucune source officielle ne confirme que pagoPA accepte un compte PayPal tunisien. Testez d’abord avec un petit avis, comme le timbre de 16 EUR. Toutes les étapes sont dans [comment payer un avis pagoPA depuis l’étranger avec PayPal ou une carte](article:pay-pagopa-from-abroad).",
     },
 
-    { type: "h2", id: "once-in-italy", text: "5. Option 4 : un compte ou une carte italienne après l’arrivée" },
+    { type: "h2", id: "once-in-italy", text: "5. Option 4 : quand un compte ou une carte italienne devient-il la meilleure option ?" },
     {
       type: "p",
-      text: "Une fois à Rome, un compte italien, une carte Postepay ou une carte Wise paie pagoPA directement, en général moins cher. La carte Wise n’est pas disponible en Tunisie, mais elle l’est en Italie. Lisez [ouvrir un compte après l’arrivée](article:arriving-in-rome#bank-account) et le [guide du compte bancaire étudiant](article:bank-account-italy-student).",
+      text: "Un compte ou une carte italienne devient la meilleure option une fois à Rome : un compte italien, une carte Postepay ou une carte Wise paie pagoPA directement, en général moins cher. La carte Wise n’est pas disponible en Tunisie, mais elle l’est en Italie. Pour la suite, lisez [comment ouvrir un compte bancaire en Italie quand on est étudiant](article:bank-account-italy-student) et [la place de l’IBAN dans vos premières semaines à Rome](article:arriving-in-rome#bank-account).",
     },
 
-    { type: "h2", id: "crypto-cards", text: "6. Option 5 : pourquoi les cartes crypto passent en dernier" },
+    { type: "h2", id: "crypto-cards", text: "6. Option 5 : pourquoi les cartes crypto passent-elles en dernier ?" },
     {
       type: "p",
-      text: "[RedotPay](ref:redotpay) est une fintech de Hong Kong qui émet une carte Visa alimentée en stablecoins comme l’USDT. Ses [conditions](https://www.redotpay.com/terms) précisent que le compte n’est pas un service bancaire et autorisent la société à geler un compte à sa discrétion. Aucune garantie des dépôts n’est mentionnée.",
+      text: "Les cartes crypto passent en dernier, car aucun texte de la BCT n’autorise les résidents en Tunisie à acheter de la crypto : le risque juridique de ce mode de paiement pèse sur vous.",
     },
     {
       type: "p",
-      text: "Pour les résidents en Tunisie, aucun texte de la BCT n’autorise l’achat de crypto : le statut juridique reste flou (voir la section suivante). Le fonctionnement de la carte, ses frais et la recharge en P2P sont détaillés dans notre [explication sur RedotPay](article:redotpay-tunisia).",
+      text: "[RedotPay](ref:redotpay) est une fintech de Hong Kong qui émet une carte Visa alimentée en stablecoins comme l’USDT. Les conditions d’utilisation de RedotPay précisent que le compte n’est pas un service bancaire et autorisent la société à geler un compte à sa discrétion. Aucune garantie des dépôts n’est mentionnée.",
     },
     {
       type: "p",
-      text: "**Pourquoi cet ordre ?** La sécurité juridique d’abord : le virement repose sur un texte clair et laisse une trace écrite. Ensuite le coût : la carte et PayPal ajoutent des frais et un plafond de 1 000 TND. Enfin l’effort : un compte italien coûte le moins cher, mais seulement après l’arrivée. Les cartes crypto viennent en dernier, car le risque juridique pèse sur vous.",
+      text: "Le fonctionnement de la carte RedotPay, ses frais et la recharge en P2P sont détaillés dans [RedotPay en Tunisie : frais de la carte, recharge P2P et risques juridiques](article:redotpay-tunisia).",
+    },
+    {
+      type: "p",
+      text: "**Pourquoi cet ordre ?** La sécurité juridique d’abord : le virement repose sur un texte clair et laisse une trace écrite. Ensuite le coût : la carte technologique et PayPal ajoutent des frais et un plafond de 1 000 TND. Enfin l’effort : un compte italien coûte le moins cher, mais seulement après l’arrivée. Les cartes crypto viennent en dernier, car le risque juridique pèse sur vous.",
     },
 
-    { type: "h2", id: "exchange-rules", text: "7. Ce que disent les règles de change tunisiennes" },
+    { type: "h2", id: "exchange-rules", text: "7. Qu’imposent les règles de change tunisiennes ?" },
     {
       type: "p",
-      text: "Le [Code des changes de 1976](https://www.finances.gov.tn/sites/default/files/17.pdf) impose aux résidents de passer par la BCT ou un intermédiaire agréé, comme une banque ou La Poste, pour les opérations de change (art. 3). Les transferts de capitaux hors du cadre réglementaire exigent une autorisation (art. 1).",
+      text: "Les règles de change tunisiennes imposent aux résidents de passer par la BCT ou un intermédiaire agréé, comme une banque ou La Poste, pour les opérations de change : c’est l’article 3 du [Code des changes de 1976](https://www.finances.gov.tn/sites/default/files/17.pdf). Les transferts de capitaux hors du cadre réglementaire exigent une autorisation (art. 1).",
     },
     {
       type: "figure",
@@ -195,13 +203,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Un nouveau code des changes était encore à l’examen en juin 2026 ([La Presse](https://www.lapresse.tn/2026/06/04/reglementation-de-change-un-nouveau-code-a-lexamen/)). La presse a aussi rapporté que la loi de finances 2026 permet aux résidents d’ouvrir des comptes en devises ([Business News](https://businessnews.com.tn/2025/12/03/comptes-en-devises-pour-les-residents-tunisiens-tout-ce-quil-faut-savoir/1376299/)). Son application par les banques n’est pas confirmée : renseignez-vous auprès de la vôtre.",
+      text: "Un nouveau code des changes était encore à l’examen en juin 2026 ([La Presse](https://www.lapresse.tn/2026/06/04/reglementation-de-change-un-nouveau-code-a-lexamen/)). La presse a aussi rapporté que la loi de finances 2026 permet aux résidents d’ouvrir des comptes en devises ([Business News](https://businessnews.com.tn/2025/12/03/comptes-en-devises-pour-les-residents-tunisiens-tout-ce-quil-faut-savoir/1376299/)). L’application de cette mesure par les banques tunisiennes n’est pas confirmée : renseignez-vous auprès de la vôtre.",
     },
 
-    { type: "h2", id: "payment-scams", text: "8. Arnaques : cartes et comptes vendus sur les réseaux sociaux" },
+    { type: "h2", id: "payment-scams", text: "8. Peut-on acheter une carte internationale sur les réseaux sociaux ?" },
     {
       type: "p",
-      text: "Le 30 mai 2024, la BCT a averti que les cartes internationales et les comptes en devises proposés sur les réseaux sociaux sont illégaux et potentiellement dangereux, et qu’y participer peut entraîner des poursuites ([Managers](https://managers.tn/2024/05/30/alerte-de-la-bct-mefiez-vous-des-cartes-bancaires-internationales-vendues-sur-les-reseaux-sociaux)).",
+      text: "Non. Le 30 mai 2024, la BCT a averti que les cartes internationales et les comptes en devises proposés sur les réseaux sociaux sont illégaux et potentiellement dangereux, et qu’y participer peut entraîner des poursuites ([Managers](https://managers.tn/2024/05/30/alerte-de-la-bct-mefiez-vous-des-cartes-bancaires-internationales-vendues-sur-les-reseaux-sociaux)).",
     },
     {
       type: "ul",
@@ -220,23 +228,23 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "Peut-on payer les frais d’une université italienne avec une carte tunisienne ?",
-          a: "Parfois, mais ce n’est pas garanti. pagoPA accepte les cartes Visa et Mastercard internationales, mais les usages officiels de la carte technologique ne citent pas les frais de scolarité : demandez à votre banque, le virement reste plus sûr.",
+          a: "Parfois, mais ce n’est pas garanti. pagoPA accepte les cartes Visa et Mastercard internationales, donc une carte technologique tunisienne peut passer pour de petits montants. Les usages officiels de la carte technologique ne citent pourtant pas les frais de scolarité, et certaines banques filtrent l’usage en ligne par code marchand. Demandez à votre banque avant de payer, et réglez la scolarité par virement, qui repose sur une base légale claire.",
         },
         {
-          q: "Combien peut-on dépenser avec la carte technologique ?",
-          a: "1 000 TND par année civile pour un particulier, soit environ 297 EUR au cours BCT du 7 octobre 2026. Le chiffre de 10 000 TND concerne uniquement les entreprises.",
+          q: "Quel est le moyen le plus sûr de payer ses frais d’inscription en Italie depuis la Tunisie ?",
+          a: "Le virement depuis votre banque tunisienne est le moyen le plus sûr. La circulaire BCT 2016-09 permet aux résidents de transférer sur facture les frais de candidature, d’examen et d’étude de dossier, et la circulaire BCT 2025-10 couvre la scolarité via un dossier études domicilié dans une seule banque. Gardez la copie SWIFT comme preuve si l’université italienne ne retrouve pas le paiement.",
         },
         {
-          q: "PayPal est-il disponible en Tunisie ?",
-          a: "Oui, pour payer et envoyer. Un compte PayPal tunisien ne peut en général pas recevoir d’argent, ce qui ne gêne pas pour payer un avis pagoPA.",
+          q: "Un compte PayPal tunisien peut-il payer des frais d’université en Italie ?",
+          a: "Oui, en principe : un compte PayPal tunisien peut payer et envoyer de l’argent, et PayPal est un moyen de paiement officiel sur la page pagoPA. Un compte tunisien ne peut en général pas recevoir d’argent, ce qui ne gêne pas pour payer des frais. Aucune source officielle ne confirme que pagoPA accepte les comptes tunisiens : testez avec un petit avis, comme le timbre de 16 EUR, et payez en une fois.",
         },
         {
-          q: "Acheter de la crypto est-il légal en Tunisie ?",
-          a: "Aucun texte tunisien ne l’autorise. Le Code des changes impose de passer par des intermédiaires agréés et de déclarer ses avoirs à l’étranger : acheter de la crypto avec des dinars comporte un vrai risque juridique.",
+          q: "Peut-on payer ses frais d’université en Italie avec une carte crypto depuis la Tunisie ?",
+          a: "Pas en sécurité. Aucun texte tunisien n’autorise les résidents à acheter de la crypto, et le Code des changes de 1976 impose de passer par la BCT ou un intermédiaire agréé et de déclarer ses avoirs à l’étranger. Une carte crypto comme RedotPay n’est pas non plus un compte bancaire et peut être gelée à la discrétion de la société : c’est pourquoi elle arrive en dernier.",
         },
         {
-          q: "Ma banque peut-elle payer un avis pagoPA ?",
-          a: "Peut-être, mais nous n’avons pas pu le confirmer. La base légale pour transférer les frais de scolarité et d’examen existe : demandez à votre banque si elle peut régler l’avis par virement.",
+          q: "Une banque tunisienne peut-elle payer un avis pagoPA par virement ?",
+          a: "Peut-être, mais nous n’avons pas pu le confirmer. Les circulaires BCT 2016-09 et 2025-10 donnent une base légale pour transférer les frais d’examen et de scolarité, mais beaucoup d’universités italiennes émettent des avis pagoPA plutôt qu’un simple numéro de compte. Demandez à la banque qui détient votre dossier études si elle peut régler l’avis par virement, et gardez la copie SWIFT.",
         },
       ],
     },
