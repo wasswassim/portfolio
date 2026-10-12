@@ -3,15 +3,15 @@ import type { ArticleTranslation } from "../../types";
 // Facts: DiSCo Lazio call 2026/27 (bando + Allegato L + international FAQ). 2027/28 dates are projected.
 export const en: ArticleTranslation = {
   slug: "lazio-disco-scholarship",
-  title: "Lazio DiSCo Scholarship in Rome for Tunisian Students",
-  subtitle: "Apply, ISEEUP and Payments",
-  seoTitle: "Lazio DiSCo Scholarship in Rome for Tunisian Students",
+  title: "Lazio DiSCo Scholarship for Tunisian Students in Rome",
+  subtitle: "Eligibility, applying without SPID, the ISEEUP and payment dates for 2027/28",
+  seoTitle: "Lazio DiSCo Scholarship for Tunisian Students 2027/28",
   metaDescription:
-    "How Tunisian students get the DiSCo Lazio scholarship in Rome and across Lazio: amounts from EUR 6,571.11, eligibility, 2027/28 calendar, ISEEUP and payments.",
+    "Apply for the Lazio DiSCo scholarship as a Tunisian student: EUR 6,571.11 a year plus free meals, eligibility, ISEEUP, 2027/28 dates and payments.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["Lazio DiSCo scholarship for Tunisian students", "scholarships in Italy", "DiSCo Lazio", "ISEEUP", "ISEE parificato", "scholarship in Rome", "DiSCo scholarship Rome"],
+  keywords: ["Lazio DiSCo scholarship for Tunisian students", "DiSCo Lazio scholarship 2027/28", "scholarships in Italy", "DiSCo scholarship Rome", "ISEEUP", "ISEE parificato"],
   summary:
-    "The Lazio DiSCo scholarship gives an off-site student enrolled at a university in Rome or elsewhere in Lazio EUR 6,571.11 a year in cash, or EUR 7,556.78 for the lowest family incomes, plus two free meals a day (2026/27 values; supplements and housing deductions change the final amount), ranked for first-years on family economic data only. For 2027/28 you apply online around June-July 2027 without SPID, prepare your family documents from Tunisia in advance, then sign the ISEEUP at a DiSCo partner CAF after you arrive.",
+    "The Lazio DiSCo scholarship for Tunisian students gives an off-site student enrolled at a university in Rome or elsewhere in Lazio EUR 6,571.11 a year in cash, or EUR 7,556.78 for the lowest family incomes, plus two free meals a day (2026/27 values; supplements and housing deductions change the final amount), ranked for first-years on family economic data only. For 2027/28 you apply online around June-July 2027 without SPID, prepare your family documents from Tunisia in advance, then sign the ISEEUP at a DiSCo partner CAF after you arrive.",
   body: [
     {
       type: "callout",
@@ -32,7 +32,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "what-you-get", text: "1. What does the DiSCo scholarship in Rome give you?" },
     {
       type: "p",
-      text: "If you live abroad and at least half of your family lives abroad, DiSCo treats you as **fuori sede** (off-site) automatically, without a rental contract (except for online courses). In the 2026/27 call, a fuori sede student gets:",
+      text: "The DiSCo Lazio scholarship gives an off-site (fuori sede) student EUR 6,571.11 a year in cash, up to EUR 7,556.78 for the lowest family incomes, plus two free meals a day (2026/27 call). If you live abroad and at least half of your family lives abroad, DiSCo Lazio treats you as **fuori sede** automatically, without a rental contract (except for online courses). In the 2026/27 call, a fuori sede student gets:",
     },
     {
       type: "figure",
@@ -81,7 +81,7 @@ export const en: ArticleTranslation = {
     },
 
     { type: "h2", id: "eligibility", text: "2. Who is eligible for the DiSCo scholarship in Rome and Lazio?" },
-    { type: "p", text: "In the 2026/27 call you had to meet all of these conditions:" },
+    { type: "p", text: "A Tunisian student is eligible for the DiSCo Lazio scholarship when enrolled at a university in Lazio, without a degree of the same level, and within the family income and asset limits. In the 2026/27 call you had to meet all of these conditions:" },
     {
       type: "ul",
       items: [
@@ -92,10 +92,14 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "First-year students are ranked on economic data only: no grades, no merit test. Non-EU students have their own ranking, ordered from the lowest ISEEUP. Tunisia is not on the list of “particularly poor countries”, so your family's real figures are what count.",
+      text: "DiSCo Lazio ranks first-year students on economic data only: no grades, no merit test. Non-EU students have their own ranking, ordered from the lowest ISEEUP. Tunisia is not on the list of “particularly poor countries”, so your family's real figures are what count.",
     },
 
-    { type: "h2", id: "disco-calendar", text: "3. The DiSCo calendar for 2027/28" },
+    { type: "h2", id: "disco-calendar", text: "3. When do you apply for the DiSCo scholarship for 2027/28?" },
+    {
+      type: "p",
+      text: "The DiSCo Lazio application for 2027/28 is expected to open around 10 June 2027 and close on 22 July 2027 at noon, Italian time, based on the 2026/27 calendar. The other DiSCo steps follow this expected order:",
+    },
     {
       type: "table",
       caption: "Expected DiSCo dates for 2027/28, based on the 2026/27 calendar (check the 2027/28 call).",
@@ -113,11 +117,11 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The deadline is at noon, Italian time. The 2025/26 and 2026/27 dates were identical, but only the 2027/28 call is binding.",
+      text: "The DiSCo Lazio dates for 2025/26 and 2026/27 were identical, but only the 2027/28 call is binding.",
     },
 
     { type: "h2", id: "register", text: "4. How do you register and apply without SPID?" },
-    { type: "p", text: "You do not need SPID (the Italian digital identity). International students create DiSCo credentials instead:" },
+    { type: "p", text: "You apply for the DiSCo Lazio scholarship without SPID (the Italian digital identity) by creating DiSCo credentials with your passport, then submitting the online application on the DiSCo scholarship portal:" },
     { type: "h3", id: "register-step-1", text: "Step 1: create your account" },
     {
       type: "p",
@@ -131,13 +135,13 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "register-step-3", text: "Step 3: identity check later" },
     {
       type: "p",
-      text: "Your identity is checked in person at the partner CAF when you sign the ISEEUP in Rome (section 6). You apply before enrolling, then must be enrolled by about 10 February. To choose a course, see [how to apply to a university in Rome](article:apply-university-rome).",
+      text: "DiSCo Lazio checks your identity in person at the partner CAF when you sign the ISEEUP in Rome. You apply for the scholarship before enrolling, then must be enrolled by about 10 February. To choose a course, see [how to apply to a university in Rome](article:apply-university-rome).",
     },
 
     { type: "h2", id: "family-documents", text: "5. Which family documents do you need from Tunisia?" },
     {
       type: "p",
-      text: "This is the slow part, so start **while you wait for your acceptance letter (January to May)**. DiSCo uses these documents to calculate your ISEEUP. The call asks for:",
+      text: "DiSCo Lazio needs official Tunisian documents on your family's composition, income, real estate, financial assets and rent, translated into Italian and apostilled. Collecting them is the slow part, so start **while you wait for your acceptance letter (January to May)**. DiSCo uses these family documents to calculate your ISEEUP. The call asks for:",
     },
     {
       type: "ol",
@@ -151,7 +155,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Tunisian documents issued by the competent offices are enough. Have each one translated into Italian by a translator on the [Italian Embassy's list](https://ambtunisi.esteri.it/wp-content/uploads/2024/10/Lista-traduttori-25-10-2024.pdf) or the [Ministry of Justice list](https://www.justice.gov.tn/index.php?id=369), with the apostille on both the original and the translation. The full chain is explained in [how to translate and apostille your documents](article:documents-for-italy#translation).",
+      text: "Tunisian documents issued by the competent offices are enough. Have each one translated into Italian by a translator on the [Italian Embassy's list](https://ambtunisi.esteri.it/wp-content/uploads/2024/10/Lista-traduttori-25-10-2024.pdf) or the [Ministry of Justice list](https://www.justice.gov.tn/index.php?id=369), with the apostille on both the original and the translation. The full chain is explained in [how to translate and apostille your Tunisian documents for Italy](article:documents-for-italy#translation).",
     },
     {
       type: "callout",
@@ -163,7 +167,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "iseeup", text: "6. How do you get your ISEEUP at a partner CAF?" },
     {
       type: "p",
-      text: "The ISEEUP (also called ISEE parificato) is the economic indicator for students with income and assets abroad. You sign it after you arrive in Rome:",
+      text: "You get your ISEEUP by signing it at a DiSCo Lazio partner CAF after you arrive in Rome; the service is free and you bring your passport and your translated, apostilled family documents. The ISEEUP (also called ISEE parificato) is the economic indicator for students with income and assets abroad:",
     },
     {
       type: "ul",
@@ -175,10 +179,14 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "An ISEEUP made at a CAF that is not a DiSCo partner means exclusion. Corrections made later are paid by you, so check your documents before the appointment. For the other first steps in Rome, see [your residence permit on arrival](article:arriving-in-rome#residence-permit).",
+      text: "An ISEEUP made at a CAF that is not a DiSCo partner means exclusion. Corrections made later are paid by you, so check your documents before the appointment. For the other first steps in Rome, see [how to request your residence permit for study in Rome](article:arriving-in-rome#residence-permit).",
     },
 
     { type: "h2", id: "payments", text: "7. When is the DiSCo scholarship paid?" },
+    {
+      type: "p",
+      text: "DiSCo Lazio pays a first-year Bachelor's student 20% of the scholarship by 10 November and 30% by 27 December, then the remaining 50% from October of the next year once 20 credits are earned (2026/27 call). Other students follow these instalments:",
+    },
     {
       type: "table",
       caption: "Official payment instalments in the 2026/27 call (check the 2027/28 call).",
@@ -197,17 +205,17 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "In practice, payments can arrive a few weeks late, but rarely more than a month late. If your ISEEUP is signed correctly after you arrive, the first payments follow. To receive them you need an **IBAN** (Italian or SEPA account), added within 6 months of the award, and a **PEC** (certified email) or an elected domicile. See [how to open a bank account in Rome](article:bank-account-italy-student).",
+      text: "In my experience, DiSCo Lazio payments can arrive a few weeks late, but rarely more than a month late. If your ISEEUP is signed correctly after you arrive, the first payments follow. To receive the DiSCo payments you need an **IBAN** (Italian or SEPA account), added within 6 months of the award, and a **PEC** (certified email) or an elected domicile. See [how to open a bank account in Italy as a student](article:bank-account-italy-student).",
     },
     {
       type: "p",
-      text: "For the visa, a DiSCo grant counts as proof of financial means only once it is awarded, so plan your [blocked account](article:italy-student-visa#blocked-account) without counting on it.",
+      text: "For the Italy student visa, a DiSCo grant counts as proof of financial means only once it is awarded, so plan your [blocked account for the student visa](article:italy-student-visa#blocked-account) without counting on the DiSCo scholarship.",
     },
 
-    { type: "h2", id: "keep-the-grant", text: "8. How do you keep the scholarship?" },
+    { type: "h2", id: "keep-the-grant", text: "8. How many credits do you need to keep the DiSCo scholarship?" },
     {
       type: "p",
-      text: "First-year Bachelor's, single-cycle and Master's students must earn **20 credits by 10 August** (2026/27 call; PhD students are confirmed when admitted to the second year). If you reach them only by 30 November, the scholarship is cut by 50%. If you miss that too, it is revoked and you must pay back what you received. Later years have their own credit requirements in the call.",
+      text: "First-year Bachelor's, single-cycle and Master's students must earn **20 credits by 10 August** to keep the DiSCo Lazio scholarship (2026/27 call; PhD students are confirmed when admitted to the second year). If you reach the 20 credits only by 30 November, DiSCo Lazio cuts the scholarship by 50%. If you miss that too, the scholarship is revoked and you must pay back what you received. Later years have their own credit requirements in the call.",
     },
 
     {
@@ -216,28 +224,32 @@ export const en: ArticleTranslation = {
       title: "Frequently asked questions",
       items: [
         {
-          q: "Can a Tunisian student get the DiSCo scholarship?",
-          a: "Yes. Non-EU students enrolled at a university in Lazio can apply, and they have their own ranking based on the ISEEUP. You must stay within the economic limits and not already hold a degree of the same level.",
+          q: "Can a Tunisian student get the DiSCo scholarship in Rome?",
+          a: "Yes. A Tunisian student enrolled at a university in Rome or elsewhere in Lazio can apply for the DiSCo Lazio scholarship, and non-EU students have their own ranking based on the ISEEUP. You must stay within the 2026/27 limits (ISEEUP up to EUR 28,339.88, ISPEUP up to EUR 61,608.48) and must not already hold a degree of the same level, including one obtained abroad.",
+        },
+        {
+          q: "How much is the Lazio DiSCo scholarship per year?",
+          a: "EUR 6,571.11 a year in cash for an off-site student in the 2026/27 call, up to EUR 7,556.78 for the lowest family incomes. DiSCo Lazio adds two free meals a day in its canteens, valued at EUR 600, and +20% for women enrolled in STEM courses. A DiSCo residence place, if you get one, is deducted from the scholarship.",
         },
         {
           q: "Do I need SPID to apply to DiSCo?",
-          a: "No. International students register on the DiSCo website with their passport and get DiSCo credentials. Your identity is checked later at the partner CAF in Rome.",
+          a: "No. International students register on the DiSCo Lazio website with their passport and receive DiSCo credentials, then submit the scholarship application on the DiSCo portal with those credentials. DiSCo Lazio checks your identity later, in person, at the partner CAF in Rome where you sign the ISEEUP.",
         },
         {
           q: "Which documents from Tunisia does DiSCo ask for?",
-          a: "Family composition, each member's gross income for year N-2 (or a statement of no income), real estate with surface area, financial assets at 31 December (or their absence) and rent paid, translated into Italian and apostilled.",
+          a: "DiSCo Lazio asks for your family composition, each member's gross income for year N-2 (or a document stating no income), real estate with its surface area, financial assets at 31 December (or a document stating there are none) and rent paid. Every document must be official, translated into Italian and apostilled, because self-certification is not accepted.",
         },
         {
           q: "When is the DiSCo scholarship paid?",
-          a: "For a first-year Bachelor student, 20% by 10 November and 30% by 27 December, with the balance from October of the next year after 20 credits (2026/27 call). Payments can be a few weeks late, rarely more than a month.",
+          a: "A first-year Bachelor's student receives 20% by 10 November and 30% by 27 December, then the balance from October of the next year after earning 20 credits (2026/27 call). Master's and PhD first-years receive 50% by 27 December. In my experience, DiSCo Lazio payments can be a few weeks late, but rarely more than a month.",
         },
         {
           q: "Can I still apply for the 2026/27 DiSCo scholarship?",
-          a: "No. The 2026/27 application closed on 22 July 2026 at noon. The 2027/28 call is expected to open around 10 June 2027.",
+          a: "No. The DiSCo Lazio application for 2026/27 closed on 22 July 2026 at noon, Italian time, and the correction window that follows is not a late application window. The 2027/28 call is expected to open around 10 June 2027, so prepare your family documents from Tunisia between January and May 2027.",
         },
         {
           q: "What happens if my ISEEUP is done at a CAF that is not a DiSCo partner?",
-          a: "You are excluded. Use only a CAF on the DiSCo partner list, where the service is free.",
+          a: "You are excluded from the DiSCo Lazio scholarship. Book your ISEEUP appointment only at a CAF on the DiSCo partner list, where the service is free, and check your translated documents before the appointment, because corrections made later are paid by you.",
         },
       ],
     },

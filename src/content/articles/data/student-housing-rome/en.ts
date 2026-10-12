@@ -3,15 +3,15 @@ import type { ArticleTranslation } from "../../types";
 // Source text for part 7. French and Arabic mirror this structure (same ids, same table).
 export const en: ArticleTranslation = {
   slug: "student-housing-rome",
-  title: "Student Housing in Rome",
-  subtitle: "DiSCo Residences, Rooms and Scams",
-  seoTitle: "Student Housing in Rome: DiSCo, Rooms and Scams",
+  title: "Student Housing in Rome for Tunisian Students",
+  subtitle: "DiSCo residences, university housing services, rooms in shared flats and how to avoid rental scams",
+  seoTitle: "Student Housing in Rome 2026/27: DiSCo, Rooms, Scams",
   metaDescription:
-    "Student housing in Rome for Tunisians: DiSCo residences, university housing desks, room platforms, what to check before signing, and how to avoid rental scams.",
+    "Find student housing in Rome as a Tunisian student: DiSCo residences at about EUR 200-298 a month, university housing desks, room platforms and scam checks.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["student housing in Rome", "DiSCo residences", "room in Rome for students", "shared flat Rome", "student accommodation Rome for Tunisians", "rental scams Rome"],
+  keywords: ["student housing in Rome", "student accommodation in Rome for Tunisians", "DiSCo residences Rome", "room in Rome for students", "shared flat in Rome", "rental scams in Rome"],
   summary:
-    "There are three routes to student housing in Rome, from cheapest to most expensive: a DiSCo residence (requested only in the yearly DiSCo scholarship application, about EUR 200-298 a month deducted from the grant in 2026/27), the housing services of Sapienza, Tor Vergata and Roma Tre, and a private room found on platforms such as HousingAnywhere, Uniplaces, Spotahome, Immobiliare.it, Idealista or Subito. Never pay before seeing the room, and make sure the lease is registered within 30 days.",
+    "Student housing in Rome comes through three routes, from cheapest to most expensive: a DiSCo residence (requested only in the yearly DiSCo scholarship application, about EUR 200-298 a month deducted from the grant in 2026/27), the housing services of Sapienza, Tor Vergata and Roma Tre, and a private room found on platforms such as HousingAnywhere, Uniplaces, Spotahome, Immobiliare.it, Idealista or Subito. Never pay before seeing the room, and make sure the lease is registered with the Agenzia delle Entrate within 30 days.",
   body: [
     {
       type: "callout",
@@ -22,22 +22,22 @@ export const en: ArticleTranslation = {
     { type: "p", text: "**Where will you live when you arrive in Rome, and how do you find a room without being scammed?**" },
     {
       type: "p",
-      text: "In short: the cheapest option is a DiSCo residence, which you can only request in the yearly DiSCo scholarship application. If you do not get one, use your university's housing service, then the rental platforms. Whatever you choose, see the room before paying, get a written contract and a receipt for every payment.",
+      text: "In short: the cheapest student housing in Rome is a DiSCo residence, which you can only request in the yearly DiSCo scholarship application. If you do not get one, use your university's housing service, then the rental platforms. Whatever you choose, see the room before paying, get a written contract and a receipt for every payment.",
     },
     {
       type: "p",
       text: "This is the last part of our [guide to studying in Italy for Tunisian students](article:study-in-italy). The earlier parts cover the application, the documents, the scholarship, the visa and your first steps in Rome. This part is about finding a place to live.",
     },
 
-    { type: "h2", id: "disco-residences", text: "1. DiSCo residences: the cheapest option" },
+    { type: "h2", id: "disco-residences", text: "1. What are DiSCo residences and how much do they cost?" },
     {
       type: "p",
-      text: "DiSCo, the Lazio regional agency for the right to study, runs student residences in Rome. There is no separate application: you ask for a place in the same online application as the [DiSCo scholarship](article:lazio-disco-scholarship#eligibility), and the same income rules apply.",
+      text: "DiSCo residences are the cheapest student housing in Rome: in 2026/27 a place cost about EUR 200-298 a month, deducted from the DiSCo scholarship. DiSCo, the Lazio regional agency for the right to study, runs these residences. There is no separate application: you ask for a place in the same online application as the scholarship, and the same [DiSCo scholarship eligibility and income rules](article:lazio-disco-scholarship#eligibility) apply.",
     },
     {
       type: "ul",
       items: [
-        "**Cost:** in 2026/27, about EUR 200-298 a month, deducted from your scholarship (EUR 700 is taken from the first instalment). See [how the scholarship is paid](article:lazio-disco-scholarship#payments).",
+        "**Cost:** in 2026/27, about EUR 200-298 a month, deducted from your DiSCo scholarship (EUR 700 is taken from the first scholarship instalment).",
         "**When:** places usually start from around mid-October, for up to 10 months (check the bando for your year).",
         "**Where:** residences across Rome, for example Antonio Ruberti, Ezio Tarantelli, Falcone e Borsellino, Giulio Regeni, Valco San Paolo, Valleranello and Tor Vergata. The full list is on the [DiSCo residences page](https://laziodisco.it/servizi-attivi/residenze-universitarie/).",
         "**Timing:** the 2026/27 housing results are already out. Plan for 2027/28: the application is expected around June-July 2027, with housing rankings around mid-September (check the 2027/28 call).",
@@ -45,7 +45,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "If you win a place, DiSCo sends a message to your personal area with the residence. Answer in time: refusing or not replying means you lose the place for that year. If you are eligible but not placed, the ranking moves automatically, usually about every two weeks, so keep checking your messages.",
+      text: "If you win a place, DiSCo sends a message to your personal area with the residence. Answer in time: refusing or not replying means you lose the DiSCo residence place for that year. If you are eligible but not placed, the DiSCo housing ranking moves automatically, usually about every two weeks, so keep checking your messages.",
     },
     {
       type: "callout",
@@ -54,10 +54,10 @@ export const en: ArticleTranslation = {
       text: "Applying for a DiSCo residence is not valid proof of accommodation for the visa. You need a hotel booking or a hospitality declaration for your first period in Italy (see the [visa documents](article:italy-student-visa#visa-documents)).",
     },
 
-    { type: "h2", id: "university-housing", text: "2. University housing services" },
+    { type: "h2", id: "university-housing", text: "2. How can Sapienza, Tor Vergata and Roma Tre help you find housing?" },
     {
       type: "p",
-      text: "The three big public universities in Rome do not guarantee you a room, but each one helps you look. Contact them as soon as you are admitted.",
+      text: "Sapienza, Tor Vergata and Roma Tre, the three big public universities in Rome, do not guarantee you a room, but each one runs a housing service that helps you look. Contact your university's housing service as soon as you are admitted.",
     },
     { type: "h3", id: "step-sapienza-housing", text: "Sapienza" },
     {
@@ -67,7 +67,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-tor-vergata-housing", text: "Tor Vergata" },
     {
       type: "p",
-      text: "Open the [Tor Vergata housing page](https://web.uniroma2.it/en/contenuto/housing), then write to **housing@uniroma2.it** with your name, course and arrival date. Check the page for student discount codes on rental platforms.",
+      text: "Open the [Tor Vergata housing page](https://web.uniroma2.it/en/contenuto/housing), then write to **housing@uniroma2.it** with your name, course and arrival date. Check the Tor Vergata page for student discount codes on rental platforms.",
     },
     { type: "h3", id: "step-roma-tre-housing", text: "Roma Tre" },
     {
@@ -75,10 +75,10 @@ export const en: ArticleTranslation = {
       text: "Roma Tre has a free [accommodation service](https://www.uniroma3.it/en/services/services-for-students/daily-life/accommodation-service/). Write to **accommodation@uniroma3.it** to ask for help, and look on the page for platform discount codes.",
     },
 
-    { type: "h2", id: "find-a-room", text: "3. How to find a room or a shared flat in Rome" },
+    { type: "h2", id: "find-a-room", text: "3. How do you find a room or a shared flat in Rome?" },
     {
       type: "p",
-      text: "Most students end up in a room in a shared flat. These platforms are the usual places to look:",
+      text: "Most students in Rome rent a room in a shared flat, found through a rental platform or a university housing desk. These are the usual places to look for a room in Rome:",
     },
     {
       type: "figure",
@@ -106,16 +106,16 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Rents vary a lot by area and by month. Do not trust a figure you read online: check current listings for the neighbourhood near your faculty.",
+      text: "Rents in Rome vary a lot by area and by month. Do not trust a figure you read online: check current listings for the neighbourhood near your faculty.",
     },
-    { type: "h3", id: "before-signing", text: "What to ask before you sign" },
+    { type: "h3", id: "before-signing", text: "What should you ask before signing a lease in Rome?" },
     {
       type: "ul",
       items: [
         "**Contract type:** is it a written lease, and for how long? Ask for a contract that matches your study period.",
         "**Deposit:** how much, and when exactly will it be returned?",
         "**Bills:** are electricity, gas, water, internet and building fees included, or split between flatmates?",
-        "**Registration:** who registers the lease, and when? Either party can do it, and both are liable for the tax. You need a registered lease for many procedures.",
+        "**Registration:** who registers the lease, and when? Either party can do it, and both are liable for the tax. You need a registered lease for many procedures, such as [registering your residenza in Rome](article:residenza-rome).",
       ],
     },
     {
@@ -127,16 +127,16 @@ export const en: ArticleTranslation = {
       title: "Lease registration tax",
       feeIds: ["lease-registration-min"],
     },
-    { type: "h3", id: "first-weeks", text: "Your first weeks: a temporary place" },
+    { type: "h3", id: "first-weeks", text: "Where can you stay during your first weeks in Rome?" },
     {
       type: "p",
-      text: "Many students book a hotel, a hostel or a short stay for the first weeks, then look for a room on the spot. This also solves the visa: you need proof of accommodation for the first period, either a hotel booking or a hospitality declaration from someone who hosts you. Visiting rooms in person is the safest way to choose.",
+      text: "Many students book a hotel, a hostel or a short stay for their first weeks in Rome, then look for a room on the spot. A hotel booking also covers the visa: the student visa needs proof of accommodation for the first period, either a hotel booking or a hospitality declaration from someone who hosts you. Visiting rooms in person is the safest way to choose.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "4. How to avoid rental scams" },
+    { type: "h2", id: "avoid-scams", text: "4. How do you avoid rental scams in Rome?" },
     {
       type: "p",
-      text: "Students who look from abroad are the easiest targets. The Polizia Postale's [advice on rental scams](https://poliziadistato.it/articolo/pdf/201563bd3ae8aee9a742259146) comes down to one rule: see the room, or go through an authorised agency, and never pay in advance without guarantees.",
+      text: "To avoid rental scams in Rome, see the room, or go through an authorised agency, and never pay in advance without guarantees: that is the one rule in the Polizia Postale's [advice on rental scams](https://poliziadistato.it/articolo/pdf/201563bd3ae8aee9a742259146). Students who look from abroad are the easiest targets.",
     },
     {
       type: "ul",
@@ -162,28 +162,28 @@ export const en: ArticleTranslation = {
       title: "Frequently asked questions",
       items: [
         {
-          q: "How do I find a room in Rome as a student?",
-          a: "Start with the DiSCo residences (in the scholarship application), then your university's housing service, then platforms such as HousingAnywhere, Uniplaces, Spotahome, Immobiliare.it, Idealista and Subito. Many students book a short stay for the first weeks and visit rooms in person.",
+          q: "How do I find student housing in Rome?",
+          a: "Start with a DiSCo residence, the cheapest option, which you request in the yearly DiSCo scholarship application. If you do not get a place, ask the housing service of Sapienza, Tor Vergata or Roma Tre, then search platforms such as HousingAnywhere, Uniplaces, Spotahome, Immobiliare.it, Idealista and Subito. Many students book a hotel or a short stay for the first weeks and visit rooms in person.",
         },
         {
-          q: "Do DiSCo residences cost money?",
-          a: "Yes, but little. In 2026/27 a place in Rome costs about EUR 200-298 a month, deducted from your DiSCo scholarship (EUR 700 comes from the first instalment).",
+          q: "How much does a DiSCo residence cost in Rome?",
+          a: "About EUR 200-298 a month in 2026/27. DiSCo Lazio deducts the residence cost from your DiSCo scholarship, and EUR 700 is taken from the first scholarship instalment. DiSCo residence places usually start from around mid-October, for up to 10 months, so check the bando for your year.",
         },
         {
           q: "Can I apply for a DiSCo residence without the scholarship?",
-          a: "No. You request the place in the same DiSCo application as the scholarship, with the same income rules and deadlines.",
+          a: "No. DiSCo Lazio has no separate housing application: you request a residence place in the same online DiSCo application as the scholarship, with the same income rules and deadlines. For 2027/28, the DiSCo application is expected around June-July 2027, with housing rankings around mid-September; confirm the dates in the 2027/28 call.",
         },
         {
-          q: "Do I need a codice fiscale to rent a room?",
-          a: "Usually yes: owners need it for the lease and its registration. You can get one at any Agenzia delle Entrate office with your passport and visa.",
+          q: "Do I need a codice fiscale to rent a room in Rome?",
+          a: "Usually yes. Owners in Rome need your codice fiscale for the lease and for registering it with the Agenzia delle Entrate. You can get a codice fiscale at any Agenzia delle Entrate office with your passport and visa, so get it before you sign a lease.",
         },
         {
-          q: "Does a DiSCo residence application count as accommodation proof for the visa?",
-          a: "No. For the visa you need a hotel booking or a hospitality declaration for your first period in Italy.",
+          q: "Who registers a rental contract in Rome, and by when?",
+          a: "Either the owner or the tenant can register a new lease with the Agenzia delle Entrate, and it must be registered within 30 days. Both parties are jointly liable for the registration tax. Usually the owner registers the lease, so ask for proof of registration and keep a copy: you need a registered lease for many procedures.",
         },
         {
           q: "How do I avoid rental scams in Rome?",
-          a: "See the room or do a live video call, never pay before seeing it, refuse Western Union and gift cards, and get a contract and a receipt for every payment.",
+          a: "Never pay before you have seen the room, in person or in a live video call where the owner shows the room and an ID document. Refuse payment by Western Union, money transfer services, gift cards or crypto. Check that the owner's name matches the contract and the payment account, and get a written contract and a receipt for every payment.",
         },
       ],
     },

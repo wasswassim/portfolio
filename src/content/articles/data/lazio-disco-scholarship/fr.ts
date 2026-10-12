@@ -3,15 +3,15 @@ import type { ArticleTranslation } from "../../types";
 // Traduction de en.ts. Les termes administratifs italiens restent en italien.
 export const fr: ArticleTranslation = {
   slug: "bourse-disco-lazio",
-  title: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens",
-  subtitle: "Demande, ISEEUP et paiements",
-  seoTitle: "Bourse DiSCo Lazio à Rome pour les étudiants tunisiens",
+  title: "Bourse DiSCo Lazio pour les étudiants tunisiens à Rome",
+  subtitle: "Conditions, demande sans SPID, ISEEUP et dates de paiement pour 2027/28",
+  seoTitle: "Bourse DiSCo Lazio pour les étudiants tunisiens 2027/28",
   metaDescription:
-    "Bourse DiSCo Lazio pour les étudiants tunisiens à Rome et dans tout le Latium : à partir de 6 571,11 EUR, conditions, calendrier 2027/28, ISEEUP et paiements.",
+    "Demandez la bourse DiSCo Lazio en étudiant tunisien : 6 571,11 EUR par an et repas gratuits, conditions, ISEEUP, dates 2027/28 et paiements.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["bourse DiSCo Lazio pour les étudiants tunisiens", "bourse d'études en Italie", "DiSCo Lazio", "ISEEUP", "ISEE parificato", "bourse d'études à Rome", "bourse DiSCo Rome"],
+  keywords: ["bourse DiSCo Lazio pour les étudiants tunisiens", "bourse DiSCo Lazio 2027/28", "bourse d'études en Italie", "bourse DiSCo Rome", "ISEEUP", "ISEE parificato"],
   summary:
-    "La bourse DiSCo Lazio verse à un étudiant hors site inscrit dans une université de Rome ou ailleurs dans le Latium 6 571,11 EUR par an en argent, ou 7 556,78 EUR pour les revenus familiaux les plus bas, plus deux repas gratuits par jour (valeurs 2026/27 ; les suppléments et la retenue logement modifient le montant final) ; en première année, le classement se fait uniquement sur les données économiques de la famille. Pour 2027/28, vous postulez en ligne vers juin-juillet 2027 sans SPID, vous préparez à l'avance vos documents familiaux en Tunisie, puis vous signez l'ISEEUP dans un CAF partenaire de DiSCo après votre arrivée.",
+    "La bourse DiSCo Lazio pour les étudiants tunisiens verse à un étudiant hors site inscrit dans une université de Rome ou ailleurs dans le Latium 6 571,11 EUR par an en argent, ou 7 556,78 EUR pour les revenus familiaux les plus bas, plus deux repas gratuits par jour (valeurs 2026/27 ; les suppléments et la retenue logement modifient le montant final) ; en première année, le classement se fait uniquement sur les données économiques de la famille. Pour 2027/28, vous postulez en ligne vers juin-juillet 2027 sans SPID, vous préparez à l'avance vos documents familiaux en Tunisie, puis vous signez l'ISEEUP dans un CAF partenaire de DiSCo après votre arrivée.",
   body: [
     {
       type: "callout",
@@ -32,7 +32,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "what-you-get", text: "1. Que vous apporte la bourse DiSCo à Rome ?" },
     {
       type: "p",
-      text: "Si vous résidez à l'étranger et qu'au moins la moitié de votre famille vit à l'étranger, DiSCo vous considère automatiquement comme **fuori sede** (hors site), sans contrat de location (sauf pour les cours en ligne). Dans l'appel 2026/27, un étudiant fuori sede reçoit :",
+      text: "La bourse DiSCo Lazio verse à un étudiant hors site (fuori sede) 6 571,11 EUR par an en argent, jusqu'à 7 556,78 EUR pour les revenus familiaux les plus bas, plus deux repas gratuits par jour (appel 2026/27). Si vous résidez à l'étranger et qu'au moins la moitié de votre famille vit à l'étranger, DiSCo Lazio vous considère automatiquement comme **fuori sede**, sans contrat de location (sauf pour les cours en ligne). Dans l'appel 2026/27, un étudiant fuori sede reçoit :",
     },
     {
       type: "figure",
@@ -81,7 +81,7 @@ export const fr: ArticleTranslation = {
     },
 
     { type: "h2", id: "eligibility", text: "2. Qui peut obtenir la bourse DiSCo à Rome et dans le Latium ?" },
-    { type: "p", text: "Dans l'appel 2026/27, il fallait remplir toutes ces conditions :" },
+    { type: "p", text: "Un étudiant tunisien peut obtenir la bourse DiSCo Lazio s'il est inscrit dans une université du Latium, sans diplôme du même niveau, et dans les plafonds de revenus et de patrimoine de sa famille. Dans l'appel 2026/27, il fallait remplir toutes ces conditions :" },
     {
       type: "ul",
       items: [
@@ -92,10 +92,14 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "En première année, le classement se fait uniquement sur les données économiques : ni notes, ni concours de mérite. Les étudiants non européens ont leur propre classement, du plus faible ISEEUP au plus élevé. La Tunisie ne figure pas sur la liste des « pays particulièrement pauvres » : ce sont donc les chiffres réels de votre famille qui comptent.",
+      text: "En première année, DiSCo Lazio classe les étudiants uniquement sur les données économiques : ni notes, ni concours de mérite. Les étudiants non européens ont leur propre classement, du plus faible ISEEUP au plus élevé. La Tunisie ne figure pas sur la liste des « pays particulièrement pauvres » : ce sont donc les chiffres réels de votre famille qui comptent.",
     },
 
-    { type: "h2", id: "disco-calendar", text: "3. Le calendrier DiSCo 2027/28" },
+    { type: "h2", id: "disco-calendar", text: "3. Quand postuler à la bourse DiSCo pour 2027/28 ?" },
+    {
+      type: "p",
+      text: "La demande DiSCo Lazio pour 2027/28 devrait ouvrir vers le 10 juin 2027 et fermer le 22 juillet 2027 à midi, heure italienne, d'après le calendrier 2026/27. Les autres étapes DiSCo suivent cet ordre prévu :",
+    },
     {
       type: "table",
       caption: "Dates DiSCo prévues pour 2027/28, d'après le calendrier 2026/27 (à vérifier dans l'appel 2027/28).",
@@ -113,11 +117,11 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "La date limite tombe à midi, heure italienne. Les dates 2025/26 et 2026/27 étaient identiques, mais seul l'appel 2027/28 fait foi.",
+      text: "Les dates DiSCo Lazio de 2025/26 et de 2026/27 étaient identiques, mais seul l'appel 2027/28 fait foi.",
     },
 
     { type: "h2", id: "register", text: "4. Comment s'inscrire et postuler sans SPID ?" },
-    { type: "p", text: "Vous n'avez pas besoin de SPID (l'identité numérique italienne). Les étudiants internationaux créent des identifiants DiSCo :" },
+    { type: "p", text: "Vous postulez à la bourse DiSCo Lazio sans SPID (l'identité numérique italienne) : vous créez des identifiants DiSCo avec votre passeport, puis vous envoyez la demande en ligne sur le portail des bourses DiSCo :" },
     { type: "h3", id: "register-step-1", text: "Étape 1 : créer votre compte" },
     {
       type: "p",
@@ -131,13 +135,13 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "register-step-3", text: "Étape 3 : la vérification d'identité, plus tard" },
     {
       type: "p",
-      text: "Votre identité est vérifiée en personne au CAF partenaire, quand vous signez l'ISEEUP à Rome (section 6). Vous postulez avant l'inscription, puis vous devez être inscrit vers le 10 février au plus tard. Pour choisir un cursus, voir [comment postuler dans une université à Rome](article:apply-university-rome).",
+      text: "DiSCo Lazio vérifie votre identité en personne au CAF partenaire, quand vous signez l'ISEEUP à Rome. Vous postulez à la bourse avant l'inscription, puis vous devez être inscrit vers le 10 février au plus tard. Pour choisir un cursus, voir [comment postuler dans une université à Rome](article:apply-university-rome).",
     },
 
     { type: "h2", id: "family-documents", text: "5. Quels documents familiaux tunisiens fournir ?" },
     {
       type: "p",
-      text: "C'est l'étape la plus lente : commencez **pendant que vous attendez votre lettre d'admission (de janvier à mai)**. DiSCo s'en sert pour calculer votre ISEEUP. L'appel demande :",
+      text: "DiSCo Lazio demande des documents tunisiens officiels sur la composition, les revenus, les biens immobiliers, les avoirs financiers et le loyer de votre famille, traduits en italien et apostillés. Les rassembler est l'étape la plus lente : commencez **pendant que vous attendez votre lettre d'admission (de janvier à mai)**. DiSCo se sert de ces documents familiaux pour calculer votre ISEEUP. L'appel demande :",
     },
     {
       type: "ol",
@@ -151,7 +155,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les documents tunisiens délivrés par les services compétents suffisent. Faites traduire chacun en italien par un traducteur de la [liste de l'ambassade d'Italie](https://ambtunisi.esteri.it/wp-content/uploads/2024/10/Lista-traduttori-25-10-2024.pdf) ou de la [liste du ministère de la Justice](https://www.justice.gov.tn/index.php?id=369), avec l'apostille sur l'original et sur la traduction. Toute la chaîne est expliquée dans [comment traduire et apostiller vos documents](article:documents-for-italy#translation).",
+      text: "Les documents tunisiens délivrés par les services compétents suffisent. Faites traduire chacun en italien par un traducteur de la [liste de l'ambassade d'Italie](https://ambtunisi.esteri.it/wp-content/uploads/2024/10/Lista-traduttori-25-10-2024.pdf) ou de la [liste du ministère de la Justice](https://www.justice.gov.tn/index.php?id=369), avec l'apostille sur l'original et sur la traduction. Toute la chaîne est expliquée dans [comment traduire et apostiller vos documents tunisiens pour l'Italie](article:documents-for-italy#translation).",
     },
     {
       type: "callout",
@@ -163,7 +167,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "iseeup", text: "6. Comment obtenir votre ISEEUP dans un CAF partenaire ?" },
     {
       type: "p",
-      text: "L'ISEEUP (aussi appelé ISEE parificato) est l'indicateur économique des étudiants dont les revenus et le patrimoine sont à l'étranger. Vous le signez après votre arrivée à Rome :",
+      text: "Vous obtenez votre ISEEUP en le signant dans un CAF partenaire de DiSCo Lazio après votre arrivée à Rome ; le service est gratuit et vous apportez votre passeport et vos documents familiaux traduits et apostillés. L'ISEEUP (aussi appelé ISEE parificato) est l'indicateur économique des étudiants dont les revenus et le patrimoine sont à l'étranger :",
     },
     {
       type: "ul",
@@ -175,10 +179,14 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Un ISEEUP fait dans un CAF qui n'est pas partenaire de DiSCo entraîne l'exclusion. Les corrections faites plus tard sont à vos frais : vérifiez donc vos documents avant le rendez-vous. Pour les autres premières démarches à Rome, voir [le permis de séjour à l'arrivée](article:arriving-in-rome#residence-permit).",
+      text: "Un ISEEUP fait dans un CAF qui n'est pas partenaire de DiSCo entraîne l'exclusion. Les corrections faites plus tard sont à vos frais : vérifiez donc vos documents avant le rendez-vous. Pour les autres premières démarches à Rome, voir [comment demander le permis de séjour étudiant à Rome](article:arriving-in-rome#residence-permit).",
     },
 
     { type: "h2", id: "payments", text: "7. Quand la bourse DiSCo est-elle versée ?" },
+    {
+      type: "p",
+      text: "DiSCo Lazio verse à un étudiant de 1re année de licence 20 % de la bourse avant le 10 novembre et 30 % avant le 27 décembre, puis les 50 % restants à partir d'octobre de l'année suivante, une fois 20 crédits obtenus (appel 2026/27). Les autres étudiants suivent ces tranches :",
+    },
     {
       type: "table",
       caption: "Tranches de paiement officielles de l'appel 2026/27 (à vérifier dans l'appel 2027/28).",
@@ -197,17 +205,17 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "En pratique, les versements peuvent arriver avec quelques semaines de retard, mais rarement plus d'un mois. Si votre ISEEUP est signé correctement après votre arrivée, les premiers versements suivent. Pour les recevoir, il vous faut un **IBAN** (compte italien ou SEPA), ajouté dans les 6 mois suivant l'attribution, et une **PEC** (e-mail certifié) ou un domicile élu. Voir [comment ouvrir un compte bancaire à Rome](article:bank-account-italy-student).",
+      text: "D'après mon expérience, les versements de DiSCo Lazio peuvent arriver avec quelques semaines de retard, mais rarement plus d'un mois. Si votre ISEEUP est signé correctement après votre arrivée, les premiers versements suivent. Pour recevoir les versements DiSCo, il vous faut un **IBAN** (compte italien ou SEPA), ajouté dans les 6 mois suivant l'attribution, et une **PEC** (e-mail certifié) ou un domicile élu. Voir [comment ouvrir un compte bancaire en Italie quand on est étudiant](article:bank-account-italy-student).",
     },
     {
       type: "p",
-      text: "Pour le visa, une bourse DiSCo ne compte comme preuve de ressources qu'une fois attribuée : préparez donc votre [compte bloqué](article:italy-student-visa#blocked-account) sans compter dessus.",
+      text: "Pour le visa étudiant italien, une bourse DiSCo ne compte comme preuve de ressources qu'une fois attribuée : préparez donc votre [compte bloqué pour le visa étudiant](article:italy-student-visa#blocked-account) sans compter sur la bourse DiSCo.",
     },
 
-    { type: "h2", id: "keep-the-grant", text: "8. Comment garder la bourse ?" },
+    { type: "h2", id: "keep-the-grant", text: "8. Combien de crédits faut-il pour garder la bourse DiSCo ?" },
     {
       type: "p",
-      text: "En première année de licence, de cycle unique ou de master, vous devez obtenir **20 crédits avant le 10 août** (appel 2026/27 ; en doctorat, la bourse est confirmée à l'admission en deuxième année). Si vous ne les atteignez qu'au 30 novembre, la bourse est réduite de 50 %. Si vous les manquez encore, elle est révoquée et vous devez rembourser ce que vous avez reçu. Les années suivantes ont leurs propres exigences de crédits dans l'appel.",
+      text: "En première année de licence, de cycle unique ou de master, vous devez obtenir **20 crédits avant le 10 août** pour garder la bourse DiSCo Lazio (appel 2026/27 ; en doctorat, la bourse est confirmée à l'admission en deuxième année). Si vous n'atteignez les 20 crédits qu'au 30 novembre, DiSCo Lazio réduit la bourse de 50 %. Si vous les manquez encore, la bourse est révoquée et vous devez rembourser ce que vous avez reçu. Les années suivantes ont leurs propres exigences de crédits dans l'appel.",
     },
 
     {
@@ -216,28 +224,32 @@ export const fr: ArticleTranslation = {
       title: "Questions fréquentes",
       items: [
         {
-          q: "Un étudiant tunisien peut-il obtenir la bourse DiSCo ?",
-          a: "Oui. Les étudiants non européens inscrits dans une université du Latium peuvent postuler, avec leur propre classement basé sur l'ISEEUP. Il faut respecter les plafonds économiques et ne pas avoir déjà un diplôme du même niveau.",
+          q: "Un étudiant tunisien peut-il obtenir la bourse DiSCo à Rome ?",
+          a: "Oui. Un étudiant tunisien inscrit dans une université de Rome ou ailleurs dans le Latium peut demander la bourse DiSCo Lazio, et les étudiants non européens ont leur propre classement basé sur l'ISEEUP. Il faut respecter les plafonds 2026/27 (ISEEUP jusqu'à 28 339,88 EUR, ISPEUP jusqu'à 61 608,48 EUR) et ne pas avoir déjà un diplôme du même niveau, y compris obtenu à l'étranger.",
+        },
+        {
+          q: "Combien rapporte la bourse DiSCo Lazio par an ?",
+          a: "6 571,11 EUR par an en argent pour un étudiant hors site dans l'appel 2026/27, jusqu'à 7 556,78 EUR pour les revenus familiaux les plus bas. DiSCo Lazio ajoute deux repas gratuits par jour dans ses restaurants, d'une valeur de 600 EUR, et +20 % pour les étudiantes inscrites en filière STEM. Une place en résidence DiSCo, si vous en obtenez une, est déduite de la bourse.",
         },
         {
           q: "Faut-il un SPID pour postuler à DiSCo ?",
-          a: "Non. Les étudiants internationaux s'inscrivent sur le site de DiSCo avec leur passeport et reçoivent des identifiants DiSCo. L'identité est vérifiée plus tard au CAF partenaire, à Rome.",
+          a: "Non. Les étudiants internationaux s'inscrivent sur le site de DiSCo Lazio avec leur passeport et reçoivent des identifiants DiSCo, puis envoient la demande de bourse sur le portail DiSCo avec ces identifiants. DiSCo Lazio vérifie votre identité plus tard, en personne, au CAF partenaire de Rome où vous signez l'ISEEUP.",
         },
         {
           q: "Quels documents de Tunisie DiSCo demande-t-il ?",
-          a: "La composition de la famille, le revenu brut de chaque membre pour l'année N-2 (ou une attestation d'absence de revenu), les biens immobiliers avec leur surface, les avoirs financiers au 31 décembre (ou leur absence) et le loyer payé, traduits en italien et apostillés.",
+          a: "DiSCo Lazio demande la composition de la famille, le revenu brut de chaque membre pour l'année N-2 (ou un document attestant l'absence de revenu), les biens immobiliers avec leur surface, les avoirs financiers au 31 décembre (ou un document attestant qu'il n'y en a pas) et le loyer payé. Chaque document doit être officiel, traduit en italien et apostillé, car l'autocertification n'est pas acceptée.",
         },
         {
           q: "Quand la bourse DiSCo est-elle payée ?",
-          a: "En 1re année de licence : 20 % avant le 10 novembre et 30 % avant le 27 décembre, le solde à partir d'octobre de l'année suivante après 20 crédits (appel 2026/27). Les versements peuvent avoir quelques semaines de retard, rarement plus d'un mois.",
+          a: "Un étudiant de 1re année de licence reçoit 20 % avant le 10 novembre et 30 % avant le 27 décembre, puis le solde à partir d'octobre de l'année suivante après 20 crédits (appel 2026/27). En 1re année de master ou de doctorat, c'est 50 % avant le 27 décembre. D'après mon expérience, les versements de DiSCo Lazio peuvent avoir quelques semaines de retard, rarement plus d'un mois.",
         },
         {
           q: "Peut-on encore postuler à la bourse DiSCo 2026/27 ?",
-          a: "Non. Les demandes 2026/27 ont fermé le 22 juillet 2026 à midi. L'appel 2027/28 devrait ouvrir vers le 10 juin 2027.",
+          a: "Non. Les demandes DiSCo Lazio 2026/27 ont fermé le 22 juillet 2026 à midi, heure italienne, et la période de corrections qui suit n'est pas une session de rattrapage. L'appel 2027/28 devrait ouvrir vers le 10 juin 2027 : préparez donc vos documents familiaux en Tunisie entre janvier et mai 2027.",
         },
         {
           q: "Que se passe-t-il si mon ISEEUP est fait dans un CAF non partenaire de DiSCo ?",
-          a: "Vous êtes exclu. Utilisez uniquement un CAF de la liste des partenaires de DiSCo, où le service est gratuit.",
+          a: "Vous êtes exclu de la bourse DiSCo Lazio. Prenez rendez-vous pour l'ISEEUP uniquement dans un CAF de la liste des partenaires de DiSCo, où le service est gratuit, et vérifiez vos documents traduits avant le rendez-vous, car les corrections faites plus tard sont à vos frais.",
         },
       ],
     },

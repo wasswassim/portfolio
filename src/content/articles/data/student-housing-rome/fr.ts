@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "logement-etudiant-rome",
   title: "Logement étudiant à Rome pour les Tunisiens",
-  subtitle: "Résidences DiSCo, chambres et arnaques",
-  seoTitle: "Logement étudiant à Rome : DiSCo, chambres, arnaques",
+  subtitle: "Résidences DiSCo, services logement des universités, chambres en colocation et arnaques à éviter",
+  seoTitle: "Logement étudiant à Rome 2026/27 : DiSCo, chambres, arnaques",
   metaDescription:
-    "Logement étudiant à Rome pour les Tunisiens : résidences DiSCo, services logement des universités, sites de chambres, contrat à vérifier et arnaques à éviter.",
+    "Trouvez un logement étudiant à Rome : résidences DiSCo à environ 200-298 EUR/mois, services logement des universités, sites de chambres et arnaques à éviter.",
   imageAlt: "Le Colisée à Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["logement étudiant à Rome", "résidences DiSCo", "chambre étudiant Rome", "colocation Rome", "logement étudiant Rome pour les Tunisiens", "arnaque location Rome"],
+  keywords: ["logement étudiant à Rome", "logement étudiant à Rome pour les Tunisiens", "résidences DiSCo Rome", "chambre étudiant Rome", "colocation à Rome", "arnaque location Rome"],
   summary:
-    "Il existe trois voies pour se loger à Rome, de la moins chère à la plus chère : une résidence DiSCo (demandée uniquement dans la candidature annuelle à la bourse DiSCo, environ 200 à 298 EUR par mois retenus sur la bourse en 2026/27), les services logement de Sapienza, Tor Vergata et Roma Tre, et une chambre privée trouvée sur des sites comme HousingAnywhere, Uniplaces, Spotahome, Immobiliare.it, Idealista ou Subito. Ne payez jamais avant d'avoir vu la chambre, et vérifiez que le bail est enregistré dans les 30 jours.",
+    "Le logement étudiant à Rome passe par trois voies, de la moins chère à la plus chère : une résidence DiSCo (demandée uniquement dans la candidature annuelle à la bourse DiSCo, environ 200 à 298 EUR par mois retenus sur la bourse en 2026/27), les services logement de Sapienza, Tor Vergata et Roma Tre, et une chambre privée trouvée sur des sites comme HousingAnywhere, Uniplaces, Spotahome, Immobiliare.it, Idealista ou Subito. Ne payez jamais avant d'avoir vu la chambre, et vérifiez que le bail est enregistré auprès de l'Agenzia delle Entrate dans les 30 jours.",
   body: [
     {
       type: "callout",
@@ -22,22 +22,22 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "**Où allez-vous vivre en arrivant à Rome, et comment trouver une chambre sans vous faire arnaquer ?**" },
     {
       type: "p",
-      text: "En bref : l'option la moins chère est une résidence DiSCo, que l'on ne peut demander que dans la candidature annuelle à la bourse DiSCo. Si vous n'en obtenez pas, passez par le service logement de votre université, puis par les sites de location. Dans tous les cas, voyez la chambre avant de payer, exigez un contrat écrit et un reçu pour chaque paiement.",
+      text: "En bref : le logement étudiant le moins cher à Rome est une résidence DiSCo, que l'on ne peut demander que dans la candidature annuelle à la bourse DiSCo. Si vous n'en obtenez pas, passez par le service logement de votre université, puis par les sites de location. Dans tous les cas, voyez la chambre avant de payer, exigez un contrat écrit et un reçu pour chaque paiement.",
     },
     {
       type: "p",
       text: "Voici la dernière partie de notre [guide des études en Italie pour les étudiants tunisiens](article:study-in-italy). Les parties précédentes couvrent la candidature, les documents, la bourse, le visa et vos premiers pas à Rome. Celle-ci porte sur le logement.",
     },
 
-    { type: "h2", id: "disco-residences", text: "1. Les résidences DiSCo : l'option la moins chère" },
+    { type: "h2", id: "disco-residences", text: "1. Que sont les résidences DiSCo et combien coûtent-elles ?" },
     {
       type: "p",
-      text: "DiSCo, l'agence régionale du Latium pour le droit aux études, gère des résidences étudiantes à Rome. Il n'y a pas de demande séparée : vous demandez une place dans la même candidature en ligne que la [bourse DiSCo](article:lazio-disco-scholarship#eligibility), avec les mêmes conditions de revenus.",
+      text: "Les résidences DiSCo sont le logement étudiant le moins cher à Rome : en 2026/27, une place coûtait environ 200 à 298 EUR par mois, retenus sur la bourse DiSCo. DiSCo, l'agence régionale du Latium pour le droit aux études, gère ces résidences. Il n'y a pas de demande séparée : vous demandez une place dans la même candidature en ligne que la bourse, et les mêmes [conditions d'éligibilité et de revenus de la bourse DiSCo](article:lazio-disco-scholarship#eligibility) s'appliquent.",
     },
     {
       type: "ul",
       items: [
-        "**Coût :** en 2026/27, environ 200 à 298 EUR par mois, retenus sur votre bourse (700 EUR sont prélevés sur la première tranche). Voir [comment la bourse est versée](article:lazio-disco-scholarship#payments).",
+        "**Coût :** en 2026/27, environ 200 à 298 EUR par mois, retenus sur votre bourse DiSCo (700 EUR sont prélevés sur la première tranche de la bourse).",
         "**Quand :** les places commencent en général vers la mi-octobre, pour 10 mois au maximum (vérifiez le bando de votre année).",
         "**Où :** des résidences dans toute la ville, par exemple Antonio Ruberti, Ezio Tarantelli, Falcone e Borsellino, Giulio Regeni, Valco San Paolo, Valleranello et Tor Vergata. La liste complète est sur la [page des résidences DiSCo](https://laziodisco.it/servizi-attivi/residenze-universitarie/).",
         "**Calendrier :** les résultats logement 2026/27 sont déjà publiés. Visez 2027/28 : la candidature est attendue vers juin-juillet 2027, avec un classement logement vers la mi-septembre (à vérifier dans l'appel 2027/28).",
@@ -45,7 +45,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Si vous obtenez une place, DiSCo vous envoie un message dans votre espace personnel avec le nom de la résidence. Répondez à temps : refuser ou ne pas répondre vous fait perdre la place pour l'année. Si vous êtes éligible sans place, le classement avance automatiquement, en général toutes les deux semaines environ : surveillez vos messages.",
+      text: "Si vous obtenez une place, DiSCo vous envoie un message dans votre espace personnel avec le nom de la résidence. Répondez à temps : refuser ou ne pas répondre vous fait perdre la place en résidence DiSCo pour l'année. Si vous êtes éligible sans place, le classement logement de DiSCo avance automatiquement, en général toutes les deux semaines environ : surveillez vos messages.",
     },
     {
       type: "callout",
@@ -54,10 +54,10 @@ export const fr: ArticleTranslation = {
       text: "Une demande de résidence DiSCo n'est pas une preuve d'hébergement valable pour le visa. Il vous faut une réservation d'hôtel ou une déclaration d'hébergement pour votre première période en Italie (voir les [documents du visa](article:italy-student-visa#visa-documents)).",
     },
 
-    { type: "h2", id: "university-housing", text: "2. Les services logement des universités" },
+    { type: "h2", id: "university-housing", text: "2. Comment Sapienza, Tor Vergata et Roma Tre vous aident-elles à vous loger ?" },
     {
       type: "p",
-      text: "Les trois grandes universités publiques de Rome ne vous garantissent pas de chambre, mais chacune vous aide à chercher. Contactez-les dès votre admission.",
+      text: "Sapienza, Tor Vergata et Roma Tre, les trois grandes universités publiques de Rome, ne vous garantissent pas de chambre, mais chacune a un service logement qui vous aide à chercher. Contactez le service logement de votre université dès votre admission.",
     },
     { type: "h3", id: "step-sapienza-housing", text: "Sapienza" },
     {
@@ -67,7 +67,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "step-tor-vergata-housing", text: "Tor Vergata" },
     {
       type: "p",
-      text: "Ouvrez la [page logement de Tor Vergata](https://web.uniroma2.it/en/contenuto/housing), puis écrivez à **housing@uniroma2.it** avec votre nom, votre formation et votre date d'arrivée. Regardez sur la page s'il existe des codes de réduction étudiants pour les sites de location.",
+      text: "Ouvrez la [page logement de Tor Vergata](https://web.uniroma2.it/en/contenuto/housing), puis écrivez à **housing@uniroma2.it** avec votre nom, votre formation et votre date d'arrivée. Regardez sur la page de Tor Vergata s'il existe des codes de réduction étudiants pour les sites de location.",
     },
     { type: "h3", id: "step-roma-tre-housing", text: "Roma Tre" },
     {
@@ -75,10 +75,10 @@ export const fr: ArticleTranslation = {
       text: "Roma Tre propose un [service d'hébergement](https://www.uniroma3.it/en/services/services-for-students/daily-life/accommodation-service/) gratuit. Écrivez à **accommodation@uniroma3.it** pour demander de l'aide, et cherchez sur la page les codes de réduction pour les plateformes.",
     },
 
-    { type: "h2", id: "find-a-room", text: "3. Trouver une chambre ou une colocation à Rome" },
+    { type: "h2", id: "find-a-room", text: "3. Comment trouver une chambre ou une colocation à Rome ?" },
     {
       type: "p",
-      text: "La plupart des étudiants finissent dans une chambre en colocation. Voici où chercher en général :",
+      text: "La plupart des étudiants à Rome louent une chambre en colocation, trouvée sur un site de location ou via le service logement d'une université. Voici où chercher une chambre à Rome en général :",
     },
     {
       type: "figure",
@@ -106,16 +106,16 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les loyers varient beaucoup selon le quartier et la période. Ne vous fiez pas à un chiffre lu en ligne : consultez les annonces actuelles dans le quartier proche de votre faculté.",
+      text: "Les loyers à Rome varient beaucoup selon le quartier et la période. Ne vous fiez pas à un chiffre lu en ligne : consultez les annonces actuelles dans le quartier proche de votre faculté.",
     },
-    { type: "h3", id: "before-signing", text: "Les questions à poser avant de signer" },
+    { type: "h3", id: "before-signing", text: "Quelles questions poser avant de signer un bail à Rome ?" },
     {
       type: "ul",
       items: [
         "**Type de contrat :** s'agit-il d'un bail écrit, et pour quelle durée ? Demandez un contrat adapté à votre période d'études.",
         "**Caution :** quel montant, et quand exactement sera-t-elle rendue ?",
         "**Charges :** électricité, gaz, eau, internet et charges d'immeuble sont-ils inclus, ou partagés entre colocataires ?",
-        "**Enregistrement :** qui enregistre le bail, et quand ? Chacune des deux parties peut le faire, et les deux sont responsables de la taxe. Un bail enregistré est demandé pour de nombreuses démarches.",
+        "**Enregistrement :** qui enregistre le bail, et quand ? Chacune des deux parties peut le faire, et les deux sont responsables de la taxe. Un bail enregistré est demandé pour de nombreuses démarches, comme [l'inscription de votre residenza à Rome](article:residenza-rome).",
       ],
     },
     {
@@ -127,16 +127,16 @@ export const fr: ArticleTranslation = {
       title: "Taxe d'enregistrement du bail",
       feeIds: ["lease-registration-min"],
     },
-    { type: "h3", id: "first-weeks", text: "Les premières semaines : un logement temporaire" },
+    { type: "h3", id: "first-weeks", text: "Où loger pendant vos premières semaines à Rome ?" },
     {
       type: "p",
-      text: "Beaucoup d'étudiants réservent un hôtel, une auberge ou un court séjour pour les premières semaines, puis cherchent une chambre sur place. Cela règle aussi la question du visa : il faut une preuve d'hébergement pour la première période, soit une réservation d'hôtel, soit une déclaration d'hébergement de la personne qui vous accueille. Visiter les chambres en personne reste la façon la plus sûre de choisir.",
+      text: "Beaucoup d'étudiants réservent un hôtel, une auberge ou un court séjour pour leurs premières semaines à Rome, puis cherchent une chambre sur place. Une réservation d'hôtel sert aussi pour le visa : le visa étudiant demande une preuve d'hébergement pour la première période, soit une réservation d'hôtel, soit une déclaration d'hébergement de la personne qui vous accueille. Visiter les chambres en personne reste la façon la plus sûre de choisir.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "4. Éviter les arnaques à la location" },
+    { type: "h2", id: "avoid-scams", text: "4. Comment éviter les arnaques à la location à Rome ?" },
     {
       type: "p",
-      text: "Les étudiants qui cherchent depuis l'étranger sont les cibles les plus faciles. Les [conseils de la Polizia Postale contre les arnaques à la location](https://poliziadistato.it/articolo/pdf/201563bd3ae8aee9a742259146) se résument à une règle : voyez la chambre, ou passez par une agence agréée, et ne payez jamais d'avance sans garanties.",
+      text: "Pour éviter les arnaques à la location à Rome, voyez la chambre, ou passez par une agence agréée, et ne payez jamais d'avance sans garanties : c'est la règle des [conseils de la Polizia Postale contre les arnaques à la location](https://poliziadistato.it/articolo/pdf/201563bd3ae8aee9a742259146). Les étudiants qui cherchent depuis l'étranger sont les cibles les plus faciles.",
     },
     {
       type: "ul",
@@ -162,28 +162,28 @@ export const fr: ArticleTranslation = {
       title: "Questions fréquentes",
       items: [
         {
-          q: "Comment trouver une chambre à Rome quand on est étudiant ?",
-          a: "Commencez par les résidences DiSCo (dans la candidature à la bourse), puis le service logement de votre université, puis des sites comme HousingAnywhere, Uniplaces, Spotahome, Immobiliare.it, Idealista et Subito. Beaucoup d'étudiants réservent un court séjour pour les premières semaines et visitent les chambres sur place.",
+          q: "Comment trouver un logement étudiant à Rome ?",
+          a: "Commencez par une résidence DiSCo, l'option la moins chère, que l'on demande dans la candidature annuelle à la bourse DiSCo. Si vous n'obtenez pas de place, contactez le service logement de Sapienza, Tor Vergata ou Roma Tre, puis cherchez sur des sites comme HousingAnywhere, Uniplaces, Spotahome, Immobiliare.it, Idealista et Subito. Beaucoup d'étudiants réservent un hôtel ou un court séjour pour les premières semaines et visitent les chambres sur place.",
         },
         {
-          q: "Les résidences DiSCo sont-elles payantes ?",
-          a: "Oui, mais peu. En 2026/27, une place à Rome coûte environ 200 à 298 EUR par mois, retenus sur votre bourse DiSCo (700 EUR sont pris sur la première tranche).",
+          q: "Combien coûte une résidence DiSCo à Rome ?",
+          a: "Environ 200 à 298 EUR par mois en 2026/27. DiSCo Lazio retient le coût de la résidence sur votre bourse DiSCo, et 700 EUR sont prélevés sur la première tranche de la bourse. Les places en résidence DiSCo commencent en général vers la mi-octobre, pour 10 mois au maximum : vérifiez le bando de votre année.",
         },
         {
           q: "Peut-on demander une résidence DiSCo sans la bourse ?",
-          a: "Non. La place se demande dans la même candidature DiSCo que la bourse, avec les mêmes conditions de revenus et les mêmes délais.",
+          a: "Non. DiSCo Lazio n'a pas de demande de logement séparée : la place en résidence se demande dans la même candidature DiSCo en ligne que la bourse, avec les mêmes conditions de revenus et les mêmes délais. Pour 2027/28, la candidature DiSCo est attendue vers juin-juillet 2027, avec un classement logement vers la mi-septembre ; vérifiez les dates dans l'appel 2027/28.",
         },
         {
-          q: "Faut-il un codice fiscale pour louer une chambre ?",
-          a: "En général oui : le propriétaire en a besoin pour le bail et son enregistrement. Vous pouvez l'obtenir dans n'importe quel bureau de l'Agenzia delle Entrate avec votre passeport et votre visa.",
+          q: "Faut-il un codice fiscale pour louer une chambre à Rome ?",
+          a: "En général oui. À Rome, le propriétaire a besoin de votre codice fiscale pour le bail et pour son enregistrement auprès de l'Agenzia delle Entrate. Vous pouvez obtenir un codice fiscale dans n'importe quel bureau de l'Agenzia delle Entrate avec votre passeport et votre visa : faites-le avant de signer un bail.",
         },
         {
-          q: "Une demande de résidence DiSCo compte-t-elle comme preuve d'hébergement pour le visa ?",
-          a: "Non. Pour le visa, il faut une réservation d'hôtel ou une déclaration d'hébergement pour votre première période en Italie.",
+          q: "Qui enregistre le contrat de location à Rome, et dans quel délai ?",
+          a: "Le propriétaire comme le locataire peuvent enregistrer un nouveau bail auprès de l'Agenzia delle Entrate, et l'enregistrement doit se faire dans les 30 jours. Les deux parties sont solidairement responsables de la taxe d'enregistrement. En général, c'est le propriétaire qui enregistre le bail : demandez une preuve d'enregistrement et gardez-en une copie, car un bail enregistré est demandé pour de nombreuses démarches.",
         },
         {
-          q: "Comment éviter les arnaques à la location à Rome ?",
-          a: "Voyez la chambre ou faites un appel vidéo en direct, ne payez jamais avant de l'avoir vue, refusez Western Union et les cartes cadeaux, et exigez un contrat et un reçu pour chaque paiement.",
+          q: "Comment se protéger des arnaques au logement à Rome ?",
+          a: "Ne payez jamais avant d'avoir vu la chambre, sur place ou en appel vidéo en direct où le propriétaire montre la chambre et une pièce d'identité. Refusez les paiements par Western Union, services de transfert d'argent, cartes cadeaux ou cryptomonnaies. Vérifiez que le nom du propriétaire correspond au contrat et au compte de paiement, et exigez un contrat écrit et un reçu pour chaque paiement.",
         },
       ],
     },
