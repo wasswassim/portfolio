@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "italy-student-visa-tunisia",
   title: "Italy Student Visa for Tunisian Students",
-  subtitle: "Almaviva, Documents and Blocked Account",
+  subtitle: "The Almaviva Appointment, 15 Documents, Blocked Account and Fees, Step by Step",
   seoTitle: "Italy Student Visa for Tunisian Students (2027/28)",
   metaDescription:
-    "How Tunisian students get the Italian study visa for 2027/28: the Almaviva appointment, the 15 documents, the EUR 10,179.85 blocked account and the fees.",
+    "Get the Italy student visa as a Tunisian student for 2027/28: the Almaviva appointment, 15 documents, the EUR 10,179.85 blocked account and 238.900 TND fees.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["Italy student visa for Tunisian students", "Italian student visa Tunisia", "attestation de blocage", "Almaviva appointment", "student visa documents Italy", "blocked account Italy student visa"],
   summary:
-    "You do not book the Italian student visa appointment yourself: once your university validates your Universitaly pre-enrolment, Almaviva emails you a fixed date at its Tunis centre. Bring the Embassy's 15 documents, including a bank “dichiarazione di blocage” for EUR 10,179.85 (2026/27 amount), pay EUR 50 plus the service fee in cash, and apply before 31 October 2027 for 2027/28.",
+    "For the Italy student visa, Tunisian students do not book the appointment: once the university validates the Universitaly pre-enrolment, Almaviva emails a fixed date at its Tunis centre. Bring the Embassy's 15 documents, including a bank “dichiarazione di blocage” for EUR 10,179.85 (2026/27 amount), pay EUR 50 plus the service fee in cash, and apply before 31 October 2027 for 2027/28.",
   body: [
     {
       type: "callout",
@@ -22,7 +22,7 @@ export const en: ArticleTranslation = {
     { type: "p", text: "**You have been admitted to an Italian university. How do you get the student visa from Tunisia?**" },
     {
       type: "p",
-      text: "Here is the short answer. After your university validates your Universitaly pre-enrolment, Almaviva (the Embassy's visa centre) emails you an appointment. You bring 15 documents, including proof that EUR 10,179.85 is blocked for you at a bank, pay the fees in cash, and wait up to 90 days. For 2027/28, Bachelor's and Master's students must apply by **31 October 2027**.",
+      text: "After your university validates your Universitaly pre-enrolment, Almaviva (the Embassy's visa centre) emails you an appointment. You bring 15 documents, including proof that EUR 10,179.85 is blocked for you at a bank, pay the fees in cash, and wait up to 90 days. For 2027/28, Bachelor's and Master's students must apply by **31 October 2027**.",
     },
     {
       type: "p",
@@ -32,17 +32,17 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "visa-type", text: "1. Which visa do Tunisian students need for Italy?" },
     {
       type: "p",
-      text: "You need a long-stay **Visa D “Immatricolazione Università”** (study, university enrolment). It is valid for 365 days. If your university validated your pre-enrolment “con riserva” (with reservations, for example while a document is still being checked), the visa is valid for 100 days instead.",
+      text: "Tunisian students admitted to an Italian university need a long-stay **Visa D “Immatricolazione Università”** (study, university enrolment). The Visa D is valid for 365 days. If your university validated your pre-enrolment “con riserva” (with reservations, for example while a document is still being checked), the Visa D is valid for 100 days instead.",
     },
     {
       type: "p",
-      text: "The visa is tied to the course on your Universitaly pre-enrolment. If you change course, you need a new visa application from Tunisia.",
+      text: "The Visa D is tied to the course on your Universitaly pre-enrolment. If you change course, you need a new visa application from Tunisia.",
     },
 
     { type: "h2", id: "almaviva-appointment", text: "2. How do you get the Almaviva appointment?" },
     {
       type: "p",
-      text: "You do not book it. The Embassy's [notice of 1 June 2026](https://ambtunisi.esteri.it/it/news/dall_ambasciata/2026/06/iscriversi-alle-universita-italiane-a-a-2026-2027-condizioni-per-la-concessione-del-visto-per-studio-immatricolazione-universitaria/) explains the order:",
+      text: "You do not book the Almaviva appointment: Almaviva emails it to you once your university validates your Universitaly pre-enrolment. The Italian Embassy's [notice of 1 June 2026](https://ambtunisi.esteri.it/it/news/dall_ambasciata/2026/06/iscriversi-alle-universita-italiane-a-a-2026-2027-condizioni-per-la-concessione-del-visto-per-studio-immatricolazione-universitaria/) explains the order:",
     },
     {
       type: "ol",
@@ -67,7 +67,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "visa-documents", text: "3. Which documents does the student visa require?" },
     {
       type: "p",
-      text: "The Embassy's info sheet (July 2026) lists 15 items. Read it yourself in [Italian](https://ambtunisi.esteri.it/wp-content/uploads/2026/07/scheda_informativa_visto_studio_immatricolazione.pdf) or in [English and French](https://ambtunisi.esteri.it/wp-content/uploads/2026/07/scheda_informativa_visto_studio_immatricolazione-ENG-FRA.pdf), because it is the reference Almaviva uses.",
+      text: "The Italian student visa requires 15 documents, listed on the Italian Embassy in Tunis info sheet of July 2026. Read the info sheet yourself in [Italian](https://ambtunisi.esteri.it/wp-content/uploads/2026/07/scheda_informativa_visto_studio_immatricolazione.pdf) or in [English and French](https://ambtunisi.esteri.it/wp-content/uploads/2026/07/scheda_informativa_visto_studio_immatricolazione-ENG-FRA.pdf), because the info sheet is the reference Almaviva uses.",
     },
     {
       type: "ol",
@@ -91,13 +91,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Documents in French or Arabic must be translated into Italian and apostilled: part 3 explains [how to legalise and apostille them](article:documents-for-italy#legalise-documents), [who can translate them](article:documents-for-italy#translation) and [whether you need the DOV or CIMEA](article:documents-for-italy#dov-or-cimea). Check your passport date first: if it expires within 15 months, renew it before anything else.",
+      text: "Visa documents in French or Arabic must be translated into Italian and apostilled: the documents guide explains [how to legalise and apostille them](article:documents-for-italy#legalise-documents), [who can translate them](article:documents-for-italy#translation) and [whether you need the DOV or CIMEA](article:documents-for-italy#dov-or-cimea). Check your passport date first: if it expires within 15 months, renew it before anything else.",
     },
 
     { type: "h2", id: "blocked-account", text: "4. How does the blocked account work with a Tunisian bank?" },
     {
       type: "p",
-      text: "For 2026/27, the Embassy asks for **EUR 10,179.85** per year, that is EUR 783.06 for 13 months. The amount must be blocked irrevocably for a year and released at EUR 783.06 per month. The 2027/28 figure may be updated, so check the new notice. In Tunisia, the transfers abroad are governed by [BCT circular 2025-10](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf) of 5 September 2025.",
+      text: "The blocked account works in three steps: you open a student file at one Tunisian bank, block the full amount there and put the bank's attestation in your visa file. For 2026/27, the Italian Embassy asks for **EUR 10,179.85** per year, that is EUR 783.06 for 13 months. The amount must be blocked irrevocably for a year and released at EUR 783.06 per month. The 2027/28 figure may be updated, so check the new notice. In Tunisia, the transfers abroad are governed by [BCT circular 2025-10](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf) of 5 September 2025.",
     },
     { type: "h3", id: "step-open-file", text: "Step 1: Open your student file at one bank" },
     {
@@ -107,12 +107,12 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-block-amount", text: "Step 2: Block the full amount and get the attestation" },
     {
       type: "p",
-      text: "Block the full amount at the bank in Tunisia. The bank then gives you the original **dichiarazione di blocage** (attestation de blocage), signed and stamped by the branch manager, with your RIB. This original goes in your visa file.",
+      text: "Block the full amount at your bank in Tunisia. The Tunisian bank then gives you the original **dichiarazione di blocage** (attestation de blocage), signed and stamped by the branch manager, with your RIB. This original goes in your visa file.",
     },
     { type: "h3", id: "step-after-enrolment", text: "Step 3: After you enrol in Italy, send the papers back" },
     {
       type: "p",
-      text: "Once you have [finalised your enrolment in Rome](article:arriving-in-rome#finalise-enrolment), send your enrolment papers to the bank in Tunisia. The bank can then let your parents transfer money to you each month, within the BCT ceilings below.",
+      text: "Once you have [finalised your enrolment in Rome](article:arriving-in-rome#finalise-enrolment), send your enrolment papers to the bank in Tunisia. The Tunisian bank can then let your parents transfer money to you each month, within the BCT ceilings in the table below.",
     },
     {
       type: "table",
@@ -126,23 +126,23 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The installation allowance is what most students use for their first weeks: see the [first-month budget in Rome](article:arriving-in-rome#first-month-budget).",
+      text: "The BCT installation allowance is what most students use for their first weeks: see the [first-month budget in Rome](article:arriving-in-rome#first-month-budget).",
     },
     {
       type: "callout",
       tone: "note",
       title: "If the visa is refused",
-      text: "Under article 26 of the BCT circular, funds transferred for a student who does not get the visa must be recovered. Ask your bank how this works before you sign.",
+      text: "Under article 26 of BCT circular 2025-10, funds transferred for a student who does not get the visa must be recovered. Ask your bank how the recovery works before you sign.",
     },
     {
       type: "p",
       text: "A scholarship can reduce the amount you must block: an Italian-government scholarship of at least the same amount replaces it, and a regional grant such as DiSCo counts only once it is awarded (see [when DiSCo pays](article:lazio-disco-scholarship#payments)).",
     },
 
-    { type: "h2", id: "insurance-housing-proof", text: "5. Health insurance and proof of accommodation" },
+    { type: "h2", id: "insurance-housing-proof", text: "5. Which health insurance and accommodation proof does the visa need?" },
     {
       type: "p",
-      text: "Your insurance must cover medical and hospital care, with no limit on urgent hospitalisation. The Embassy sets no fixed minimum in euros and accepts three forms:",
+      text: "The Italian student visa needs health insurance that covers medical and hospital care with no limit on urgent hospitalisation, plus proof of where you will stay in your first period in Italy. The Italian Embassy sets no fixed minimum in euros for the insurance and accepts three forms:",
     },
     {
       type: "ul",
@@ -154,10 +154,14 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "For accommodation, a hotel booking or a hospitality declaration from someone in Italy works. Applying for a university residence is **not** valid proof, even if you applied to DiSCo.",
+      text: "For accommodation, a hotel booking or a hospitality declaration from someone in Italy works. Applying for a university residence is **not** valid proof, even if you applied to DiSCo. To plan where you will actually live, see [temporary housing for your first weeks in Rome](article:student-housing-rome#first-weeks).",
     },
 
     { type: "h2", id: "fees", text: "6. How much does the Italian student visa cost?" },
+    {
+      type: "p",
+      text: "The Italian student visa costs **238.900 TND** at the Almaviva centre in Tunis: 170.600 TND for the study visa (EUR 50) plus 68.300 TND for the Almaviva service fee, paid in cash.",
+    },
     {
       type: "table",
       caption: "Fees at the Almaviva centre in Tunis, paid in cash in Tunisian dinars (amounts listed by the Embassy, which can change)",
@@ -179,10 +183,10 @@ export const en: ArticleTranslation = {
       text: "Check the Embassy's [fees page](https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/quanto-costa-un-visto-e-come-pagare/) a few days before your appointment, as the dinar amounts follow the exchange rate.",
     },
 
-    { type: "h2", id: "visa-timing", text: "7. Processing time, interview and deadline" },
+    { type: "h2", id: "visa-timing", text: "7. How long does the student visa take, and what is the 2027/28 deadline?" },
     {
       type: "p",
-      text: "The Embassy can take **up to 90 days** to decide, and it may call you for an interview. For 2027/28, the [MUR circular](https://universitaly-private.cineca.it/uploads/universitaly-pubblico/Circolare_2026-2027_studenti_internazionali.pdf) sets the visa deadline for Bachelor's and Master's courses at **31 October 2027**. PhD students have no fixed date but must apply before teaching starts. Since each university can only validate a limited number of foreign students, apply early.",
+      text: "The Italian Embassy in Tunis can take **up to 90 days** to decide on a student visa, and the Embassy may call you for an interview. For 2027/28, the [MUR circular](https://universitaly-private.cineca.it/uploads/universitaly-pubblico/Circolare_2026-2027_studenti_internazionali.pdf) sets the visa deadline for Bachelor's and Master's courses at **31 October 2027**. PhD students have no fixed date but must apply before teaching starts. Since each Italian university can only validate a limited number of foreign students, apply early. Once the visa is issued, the next step happens in Italy: [how to request the residence permit for study after you arrive](article:arriving-in-rome#residence-permit).",
     },
 
     {
@@ -192,27 +196,31 @@ export const en: ArticleTranslation = {
       items: [
         {
           q: "How do I get an appointment for an Italian student visa in Tunisia?",
-          a: "You do not book it. After your university validates your Universitaly pre-enrolment, Almaviva emails you a date at its Tunis centre, at the address you used on Universitaly. The date cannot be changed.",
+          a: "You do not book it yourself: Almaviva emails you the appointment. Once your university validates your Universitaly pre-enrolment, the file reaches the Italian Embassy in Tunis and Almaviva writes to the email address you used on Universitaly, with a date at its centre at 8 Rue Alphonse Laveran, Tunis. The date cannot be changed, so check that inbox and your spam folder every day and prepare your documents as soon as you are admitted.",
         },
         {
           q: "How much is the blocked amount for an Italian student visa?",
-          a: "EUR 10,179.85 for 2026/27 (EUR 783.06 x 13 months), blocked irrevocably for a year. Check the 2027/28 notice for any update.",
+          a: "EUR 10,179.85 for 2026/27, that is EUR 783.06 x 13 months. One Tunisian bank blocks the amount irrevocably for a year and gives you the original “dichiarazione di blocage” for your visa file. An Italian-government scholarship of at least the same amount replaces the blocked amount. The 2027/28 figure may be updated, so check the Italian Embassy's new notice before you block funds.",
         },
         {
           q: "How long does the Italian student visa take?",
-          a: "Up to 90 days after your appointment, according to the Embassy. You may be called for an interview.",
+          a: "Up to 90 days after your Almaviva appointment, according to the Italian Embassy in Tunis, and the Embassy may call you for an interview. Each Italian university can only validate a limited number of foreign students, and the 2027/28 deadline for Bachelor's and Master's courses is 31 October 2027, so prepare your file as soon as you are admitted.",
         },
         {
           q: "Can I change university after getting the visa?",
-          a: "Not on the same visa. The visa is linked to the course on your pre-enrolment; changing course means a new visa application from Tunisia.",
+          a: "No, not on the same visa. The Visa D “Immatricolazione Università” is linked to the course on your Universitaly pre-enrolment, so changing course means a new visa application from Tunisia. Choose your course carefully before your university validates the pre-enrolment, because that validation is what starts the Almaviva appointment.",
         },
         {
           q: "How much does the Italian student visa cost in dinars?",
-          a: "170.600 TND for the visa (EUR 50) plus 68.300 TND for the Almaviva service, paid in cash at the centre. The amounts can change.",
+          a: "238.900 TND in total: 170.600 TND for the study visa (EUR 50) plus 68.300 TND for the Almaviva service fee, paid in cash at the Almaviva centre in Tunis. The dinar amounts follow the exchange rate, so check the Italian Embassy's fees page a few days before your appointment.",
         },
         {
           q: "Can I send my visa application to the Embassy by email?",
-          a: "No. The Embassy accepts no applications by email; you submit the file in person at Almaviva on your appointment date.",
+          a: "No. The Italian Embassy in Tunis accepts no visa applications by email and gives no appointments itself. You submit the complete file in person at the Almaviva centre in Tunis on the date Almaviva emailed you, and your fingerprints are taken there during the same visit.",
+        },
+        {
+          q: "Is a DiSCo residence application valid proof of accommodation for the visa?",
+          a: "No. Applying for a university residence, even through DiSCo, is not valid proof of accommodation for the Italian student visa. The Italian Embassy in Tunis accepts a hotel booking or a hospitality declaration from someone living in Italy, covering your first period in Italy.",
         },
       ],
     },
