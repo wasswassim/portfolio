@@ -3,15 +3,15 @@ import type { ArticleTranslation } from "../../types";
 // Part 6 of the study-in-Rome series. French and Arabic mirror this structure (same heading ids, one figure, one table).
 export const en: ArticleTranslation = {
   slug: "arriving-in-rome-as-a-student",
-  title: "Residence Permit for Study in Italy: Arriving in Rome",
-  subtitle: "The permesso di soggiorno kit, codice fiscale, enrolment and DiSCo steps in your first 30 days, for Tunisian students",
+  title: "Arriving in Rome as a Student",
+  subtitle: "Residence Permit for Study in Italy and Your First 30 Days",
   seoTitle: "Residence Permit for Study in Italy: First 30 Days in Rome",
   metaDescription:
-    "Request your residence permit for study in Italy within 8 working days: the EUR 116.46 post office kit, Questura fingerprints, codice fiscale and first steps in Rome.",
+    "Arriving in Rome as a Tunisian student: the residence permit kit within 8 working days, codice fiscale, bank account, enrolment, DiSCo steps and a first budget.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["residence permit for study in Italy", "permesso di soggiorno per studio", "student residence permit Italy post office kit", "arriving in Rome as a student", "first 30 days in Rome as a student", "codice fiscale for students in Italy"],
+  keywords: ["residence permit for study in Italy", "arriving in Rome as a student", "permesso di soggiorno per studio", "codice fiscale", "student bank account in Italy", "student work in Italy"],
   summary:
-    "Within 8 working days of arriving in Italy, you request your residence permit for study by sending the yellow-band kit from a post office with a Sportello Amico desk (about EUR 116.46 in total in 2026), then give your fingerprints at the Questura. The codice fiscale is assigned with that application, and the post office receipt lets you open an account, finalise enrolment, unlock transfers from your bank in Tunisia and complete your DiSCo steps.",
+    "Within 8 working days of arriving in Italy, you request your residence permit for study by sending the yellow-band kit from a post office with a Sportello Amico (about EUR 116.46 in total); the codice fiscale is assigned with that application. Then open an account, finalise enrolment at your university, send the enrolment papers to your bank in Tunisia and complete your DiSCo steps.",
   body: [
     {
       type: "callout",
