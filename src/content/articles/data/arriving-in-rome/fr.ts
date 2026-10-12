@@ -3,15 +3,15 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts. Italian administrative terms stay in Italian.
 export const fr: ArticleTranslation = {
   slug: "arrivee-a-rome-etudiant",
-  title: "Arriver à Rome étudiant",
-  subtitle: "Permis de séjour étudiant en Italie et 30 premiers jours, pour les Tunisiens",
+  title: "Permis de séjour étudiant en Italie : arriver à Rome",
+  subtitle: "Vos 30 premiers jours à Rome pour les étudiants tunisiens : kit du permis, codice fiscale, inscription, DiSCo et premier budget",
   seoTitle: "Permis de séjour étudiant Italie : 30 premiers jours à Rome",
   metaDescription:
-    "Arriver à Rome étudiant pour les Tunisiens : kit du permis de séjour sous 8 jours ouvrables, codice fiscale, compte bancaire, inscription, DiSCo et budget.",
+    "Demandez votre permis de séjour étudiant en Italie sous 8 jours ouvrables : kit postal à 116,46 EUR, empreintes à la Questura, codice fiscale et DiSCo.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["permis de séjour étudiant Italie", "arriver à Rome étudiant", "permesso di soggiorno per studio", "codice fiscale", "compte bancaire étudiant Italie", "travailler en Italie étudiant"],
+  keywords: ["permis de séjour étudiant en Italie", "permesso di soggiorno per studio", "titre de séjour étudiant Italie", "kit du permis de séjour à la poste", "codice fiscale étudiant Italie", "arriver à Rome étudiant"],
   summary:
-    "Dans les 8 jours ouvrables qui suivent votre arrivée en Italie, vous demandez votre permis de séjour pour études en envoyant le kit à bande jaune depuis un bureau de poste doté d’un Sportello Amico (environ 116,46 EUR au total) ; le codice fiscale est attribué avec cette demande. Ouvrez ensuite un compte, finalisez votre inscription, envoyez vos papiers d’inscription à votre banque en Tunisie et terminez vos démarches DiSCo.",
+    "Vous demandez le permis de séjour étudiant en Italie dans les 8 jours ouvrables suivant votre arrivée, en envoyant le kit à bande jaune depuis un bureau de poste doté d’un guichet Sportello Amico (environ 116,46 EUR en 2026), et le codice fiscale est attribué avec cette demande. Avec le récépissé de la poste, vous ouvrez ensuite un compte, finalisez votre inscription, envoyez vos papiers d’inscription à votre banque en Tunisie et terminez vos démarches DiSCo.",
   body: [
     {
       type: "callout",
@@ -26,10 +26,14 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "C’est la partie 6 de notre [guide pour étudier en Italie pour les Tunisiens](article:study-in-italy), après le visa : vos 30 premiers jours à Rome, étape par étape.",
+      text: "C’est la partie 6 de notre [guide pour étudier en Italie pour les Tunisiens](article:study-in-italy). Elle commence là où s’arrête [le guide du visa étudiant pour l’Italie pour les Tunisiens](article:italy-student-visa) : vos 30 premiers jours à Rome, étape par étape.",
     },
 
-    { type: "h2", id: "first-30-days", text: "1. Vos 30 premiers jours à Rome, dans l’ordre" },
+    { type: "h2", id: "first-30-days", text: "1. Que faire pendant vos 30 premiers jours à Rome ?" },
+    {
+      type: "p",
+      text: "Pendant vos 30 premiers jours à Rome, le permis de séjour pour études passe en premier : envoyez le kit postal dans les 8 jours ouvrables, puis ouvrez un compte, finalisez votre inscription et terminez vos démarches DiSCo, dans cet ordre :",
+    },
     {
       type: "ol",
       items: [
@@ -46,7 +50,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "residence-permit", text: "2. Comment demander le permis de séjour étudiant en Italie ?" },
     {
       type: "p",
-      text: "Vous devez faire la demande dans les **8 jours ouvrables** suivant votre entrée en Italie ([Polizia di Stato](https://www.poliziadistato.it/articolo/225)).",
+      text: "Vous demandez le permis de séjour pour études (permesso di soggiorno per studio) dans un bureau de poste doté d’un guichet Sportello Amico, dans les **8 jours ouvrables** suivant votre entrée en Italie ([Polizia di Stato](https://www.poliziadistato.it/articolo/225)). La demande se fait en quatre étapes : le kit, les documents, le paiement et le rendez-vous à la Questura.",
     },
     {
       type: "figure",
@@ -86,7 +90,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Le guichetier vous remet un **récépissé** avec un identifiant et un mot de passe. Gardez-le avec votre passeport : votre université, la banque et DiSCo vous le demanderont.",
+      text: "Le guichetier de la poste vous remet un **récépissé** avec un identifiant et un mot de passe. Gardez le récépissé avec votre passeport : votre université, la banque et DiSCo vous le demanderont.",
     },
     {
       type: "callout",
@@ -97,7 +101,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "step-questura", text: "Étape 4 : aller à la Questura pour les empreintes" },
     {
       type: "p",
-      text: "Vous recevez aussi une convocation avec votre rendez-vous à la Questura, où l’on relève vos empreintes digitales. Suivez l’état de votre permis sur le [portail de la Polizia di Stato](https://questure.poliziadistato.it/stranieri/) avec les données de votre récépissé. La Polizia indique environ 60 jours de traitement ; la Sapienza prévient que cela peut prendre environ 90 jours.",
+      text: "À la poste, vous recevez aussi une convocation avec votre rendez-vous à la Questura, où l’on relève vos empreintes digitales. Suivez l’état de votre permis sur le [portail de la Polizia di Stato](https://questure.poliziadistato.it/stranieri/) avec les données de votre récépissé. La Polizia di Stato indique environ 60 jours de traitement ; la Sapienza prévient que cela peut prendre environ 90 jours.",
     },
     {
       type: "figure",
@@ -124,23 +128,23 @@ export const fr: ArticleTranslation = {
 
     {
       type: "p",
-      text: "Une fois que vous avez un bail et le récépissé de votre permis, vous pouvez aussi déclarer votre résidence à l'anagrafe : voir [comment demander la residenza à Rome](article:residenza-rome).",
+      text: "Une fois que vous avez un bail et le récépissé de votre permis, vous pouvez aussi déclarer votre résidence à l'anagrafe de Rome, une démarche à part expliquée dans [comment demander la residenza à Rome](article:residenza-rome).",
     },
 
-    { type: "h2", id: "codice-fiscale", text: "3. Comment obtenir votre codice fiscale ?" },
+    { type: "h2", id: "codice-fiscale", text: "3. Comment obtenir un codice fiscale quand on est étudiant en Italie ?" },
     {
       type: "p",
-      text: "Le codice fiscale est votre code fiscal italien, nécessaire pour un bail, une banque ou un abonnement téléphonique. En général, vous n’avez pas à le demander : la Questura l’attribue avec votre demande de permis.",
+      text: "En général, vous n’avez pas à demander le codice fiscale : la Questura l’attribue avec votre demande de permis de séjour. Le codice fiscale est votre code fiscal italien, nécessaire pour un bail, une banque ou un abonnement téléphonique.",
     },
     {
       type: "p",
       text: "Si vous en avez besoin plus tôt, allez dans n’importe quel bureau de l’**Agenzia delle Entrate** avec le formulaire AA4/8 et votre passeport avec le visa. Le [dépliant de l’Agenzia delle Entrate pour les citoyens étrangers](https://www.agenziaentrate.gov.it/portale/documents/20143/233505/Folder_CodiceFiscaleStranieri_08+03+23.pdf/218dc638-ced1-3b2d-f5f2-912686b1f7fe?t=1682082253716) explique la procédure. À la Sapienza, le guichet HELLO peut vous aider à remplir les formulaires.",
     },
 
-    { type: "h2", id: "bank-account", text: "4. Obtenir un IBAN dès les premières semaines" },
+    { type: "h2", id: "bank-account", text: "4. Pourquoi faut-il un IBAN dès les premières semaines ?" },
     {
       type: "p",
-      text: "Il vous faut un IBAN pour DiSCo, le loyer et un salaire.",
+      text: "Il vous faut un IBAN italien dès les premières semaines, car DiSCo, votre loyer et un éventuel salaire passent tous par lui.",
     },
     {
       type: "p",
@@ -156,10 +160,10 @@ export const fr: ArticleTranslation = {
       text: "Selon la [Banca d’Italia](https://economiapertutti.bancaditalia.it/aree-tematiche/conto-corrente/il-conto-di-base/index.html), toute personne en séjour régulier dans l’UE a droit à un compte de base (conto di base), et ses orientations d’août 2026 demandent aux banques d’accepter le récépissé du permis de séjour pour ce compte.",
     },
 
-    { type: "h2", id: "finalise-enrolment", text: "5. Finaliser l’inscription et votre dossier de bourse" },
+    { type: "h2", id: "finalise-enrolment", text: "5. Comment finaliser l’inscription et votre dossier DiSCo après l’arrivée ?" },
     {
       type: "p",
-      text: "L’inscription n’est complète qu’une fois vos originaux vérifiés par l’université :",
+      text: "L’inscription dans une université de Rome n’est complète qu’une fois vos documents originaux vérifiés par l’université, et la Sapienza, Tor Vergata et Roma Tre organisent cette vérification chacune à leur manière :",
     },
     {
       type: "callout",
@@ -204,10 +208,10 @@ export const fr: ArticleTranslation = {
       feeIds: ["ssn-voluntary"],
     },
 
-    { type: "h2", id: "first-month-budget", text: "6. Budget du premier mois à Rome" },
+    { type: "h2", id: "first-month-budget", text: "6. Combien d’argent prévoir pour le premier mois à Rome ?" },
     {
       type: "p",
-      text: "Votre banque en Tunisie peut envoyer une allocation d’installation allant jusqu’à **6 000 TND** par année universitaire (environ 1 782 EUR au taux BCT du 7 octobre 2026). Les virements mensuels ne commencent qu’après l’arrivée de vos papiers d’inscription à la banque : cet argent doit tenir jusque-là.",
+      text: "Votre premier mois à Rome repose sur l’allocation d’installation : votre banque en Tunisie peut envoyer jusqu’à **6 000 TND** par année universitaire (environ 1 782 EUR au taux BCT du 7 octobre 2026). Les virements mensuels ne commencent qu’après l’arrivée de vos papiers d’inscription à la banque : l’allocation d’installation doit tenir jusque-là.",
     },
     {
       type: "figure",
@@ -231,7 +235,7 @@ export const fr: ArticleTranslation = {
         ["Abonnement de transport", "35 EUR par mois ou 250 EUR par an (confirmé)", "Vérifiez les offres étudiantes sur le site de l’ATAC."],
         ["Carte SIM et premier mois", "Vérifiez les prix actuels", "Comparez les offres avant d’acheter."],
         ["Nourriture du mois", "Vérifiez les prix actuels", "Cuisinez chez vous ; les repas DiSCo ne commencent qu’une fois la bourse attribuée."],
-        ["Chambre : premier loyer et caution", "Vérifiez les prix actuels", "Voir notre [guide du logement étudiant à Rome](article:student-housing-rome)."],
+        ["Chambre : premier loyer et caution", "Vérifiez les prix actuels", "Prévoyez ensemble le premier loyer et la caution."],
         ["Réserve d’urgence", "10 à 15 % de l’allocation", "N’y touchez qu’en cas de besoin."],
       ],
     },
@@ -242,17 +246,17 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Achetez d’occasion sur [Subito](https://www.subito.it) : meubles, vélo, livres. Et ne payez jamais de caution avant d’avoir vu la chambre ; lisez [comment éviter les arnaques au logement](article:student-housing-rome#avoid-scams).",
+      text: "Achetez d’occasion sur [Subito](https://www.subito.it) : meubles, vélo, livres. Et ne payez jamais la caution d’une chambre avant de l’avoir vue ; lisez [comment éviter les arnaques au logement étudiant à Rome](article:student-housing-rome#avoid-scams).",
     },
 
-    { type: "h2", id: "student-work", text: "7. Peut-on travailler pendant ses études en Italie ?" },
+    { type: "h2", id: "student-work", text: "7. Peut-on travailler avec un permis de séjour étudiant en Italie ?" },
     {
       type: "p",
-      text: "Oui, dans certaines limites : le permis étudiant autorise jusqu’à **20 heures par semaine**, dans la limite de **1 040 heures par an** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). Si vous n’avez que le récépissé du premier permis, vérifiez auprès de la Questura ou de votre université avant de commencer un emploi.",
+      text: "Oui, dans certaines limites : le permis de séjour pour études autorise jusqu’à **20 heures par semaine**, dans la limite de **1 040 heures par an** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). Si vous n’avez que le récépissé du premier permis, vérifiez auprès de la Questura ou de votre université avant de commencer un emploi.",
     },
     {
       type: "p",
-      text: "Où chercher (Subito, Indeed, agences d'intérim, services emploi des universités), comment publier votre profil et comment repérer les fausses offres : voir [job étudiant à Rome](article:student-jobs-rome).",
+      text: "Où chercher (Subito, Indeed, agences d'intérim, services emploi des universités), comment publier votre profil et comment repérer les fausses offres : voir [comment trouver un job étudiant à Rome](article:student-jobs-rome).",
     },
     {
       type: "callout",
@@ -268,27 +272,27 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "Combien de jours ai-je pour demander le permesso di soggiorno ?",
-          a: "8 jours ouvrables à partir de votre arrivée en Italie. Vous faites la demande en envoyant le kit à bande jaune depuis un bureau de poste doté d’un guichet Sportello Amico.",
+          a: "8 jours ouvrables à partir de votre arrivée en Italie, selon la Polizia di Stato. Vous faites la demande en envoyant le kit du permis de séjour à bande jaune depuis un bureau de poste doté d’un guichet Sportello Amico, avec une copie du passeport et du visa, votre assurance santé, la preuve de vos moyens et un timbre fiscal de 16 EUR. Le récépissé de la poste prouve ensuite votre demande jusqu’à l’arrivée de la carte.",
         },
         {
           q: "Combien coûte le permis de séjour pour études ?",
-          a: "Environ 116,46 EUR à la poste : un timbre fiscal de 16 EUR, des frais postaux de 30 EUR et un bollettino de 70,46 EUR (montants vérifiés en octobre 2026).",
+          a: "Environ 116,46 EUR à la poste pour un permis de 3 à 12 mois : un timbre fiscal de 16 EUR, des frais postaux de 30 EUR et un bollettino de 70,46 EUR (montants vérifiés en octobre 2026). Pour un permis de plus d'un an et jusqu'à 2 ans, la contribution est de 50 EUR, soit 126,46 EUR au total. Demandez au guichet quels moyens de paiement sont acceptés.",
         },
         {
           q: "Comment obtenir un codice fiscale à Rome ?",
-          a: "Il est normalement attribué avec votre demande de permis de séjour. Si vous en avez besoin plus tôt, allez dans un bureau de l’Agenzia delle Entrate avec le formulaire AA4/8 et votre passeport avec le visa.",
+          a: "En général, vous n’avez pas à le demander : la Questura attribue le codice fiscale avec votre demande de permis de séjour. Si un propriétaire ou une banque a besoin du codice fiscale plus tôt, allez dans un bureau de l’Agenzia delle Entrate avec le formulaire AA4/8 et votre passeport avec le visa. À la Sapienza, le guichet HELLO peut vous aider à remplir les formulaires.",
         },
         {
-          q: "Peut-on ouvrir un compte bancaire avec le récépissé du permis ?",
-          a: "Oui. Selon la Banca d’Italia, une banque ne peut pas refuser le récépissé du permis de séjour comme pièce d’identité, et toute personne en séjour régulier dans l’UE a droit à un compte de base.",
+          q: "À quoi sert le récépissé du permis de séjour ?",
+          a: "Le récépissé du permis de séjour (ricevuta) prouve que vous avez demandé le permis, jusqu’à l’arrivée de la carte. Présentez le récépissé avec votre passeport pour ouvrir un compte bancaire, souscrire un abonnement téléphonique, obtenir le codice fiscale, signer un contrat de travail et terminer vos démarches DiSCo. Gardez l’original en lieu sûr et ayez une copie sur vous.",
         },
         {
           q: "Puis-je rentrer en Tunisie en attendant mon permis ?",
-          a: "L’Ambassade d’Italie à Tunis déconseille de quitter l’Italie avant la délivrance du permis de séjour. Prévoyez vos voyages après l’avoir retiré.",
+          a: "C’est déconseillé : l’Ambassade d’Italie à Tunis conseille aux étudiants de ne pas quitter l’Italie tant que le permis de séjour n’a pas été délivré. La Polizia di Stato indique environ 60 jours de traitement et la Sapienza prévient que cela peut prendre environ 90 jours : prévoyez vos voyages après avoir retiré votre permis.",
         },
         {
-          q: "Les étudiants étrangers peuvent-ils travailler en Italie ?",
-          a: "Oui, jusqu’à 20 heures par semaine et 1 040 heures par an. Si vous n’avez que le récépissé du premier permis, vérifiez auprès de la Questura ou de votre université avant de commencer.",
+          q: "Combien de temps faut-il pour obtenir le permis de séjour étudiant ?",
+          a: "Environ 60 jours selon la Polizia di Stato, même si la Sapienza prévient que cela peut prendre environ 90 jours. Après l’envoi du kit, vous vous rendez au rendez-vous de la Questura indiqué dans votre convocation pour les empreintes digitales, et vous suivez l’état du dossier sur le portail de la Polizia di Stato avec les données de votre récépissé.",
         },
       ],
     },

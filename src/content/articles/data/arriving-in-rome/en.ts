@@ -3,15 +3,15 @@ import type { ArticleTranslation } from "../../types";
 // Part 6 of the study-in-Rome series. French and Arabic mirror this structure (same heading ids, one figure, one table).
 export const en: ArticleTranslation = {
   slug: "arriving-in-rome-as-a-student",
-  title: "Arriving in Rome as a Student",
-  subtitle: "Residence Permit for Study in Italy and Your First 30 Days",
+  title: "Residence Permit for Study in Italy: Arriving in Rome",
+  subtitle: "Your first 30 days as a Tunisian student: the permit kit, codice fiscale, enrolment, DiSCo and a first budget",
   seoTitle: "Residence Permit for Study in Italy: First 30 Days in Rome",
   metaDescription:
-    "Arriving in Rome as a Tunisian student: the residence permit kit within 8 working days, codice fiscale, bank account, enrolment, DiSCo steps and a first budget.",
+    "Apply for a residence permit for study in Italy within 8 working days: the EUR 116.46 post office kit, Questura fingerprints, codice fiscale and DiSCo steps.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["residence permit for study in Italy", "arriving in Rome as a student", "permesso di soggiorno per studio", "codice fiscale", "student bank account in Italy", "student work in Italy"],
+  keywords: ["residence permit for study in Italy", "permesso di soggiorno per studio", "Italy student residence permit", "residence permit kit at the post office", "codice fiscale for students in Italy", "arriving in Rome as a student"],
   summary:
-    "Within 8 working days of arriving in Italy, you request your residence permit for study by sending the yellow-band kit from a post office with a Sportello Amico (about EUR 116.46 in total); the codice fiscale is assigned with that application. Then open an account, finalise enrolment at your university, send the enrolment papers to your bank in Tunisia and complete your DiSCo steps.",
+    "You apply for a residence permit for study in Italy within 8 working days of arrival, by sending the yellow-band kit from a post office with a Sportello Amico desk (about EUR 116.46 in 2026), and the codice fiscale is assigned with that application. With the post office receipt you then open an account, finalise enrolment at your university, send the enrolment papers to your bank in Tunisia and complete your DiSCo steps.",
   body: [
     {
       type: "callout",
@@ -26,10 +26,14 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "This is part 6 of our [guide to studying in Italy for Tunisian students](article:study-in-italy), after the visa: your first 30 days in Rome, step by step.",
+      text: "This is part 6 of our [guide to studying in Italy for Tunisian students](article:study-in-italy). It starts where [the Italy student visa guide for Tunisian students](article:italy-student-visa) ends: your first 30 days in Rome, step by step.",
     },
 
-    { type: "h2", id: "first-30-days", text: "1. Your first 30 days in Rome, in order" },
+    { type: "h2", id: "first-30-days", text: "1. What should you do in your first 30 days in Rome?" },
+    {
+      type: "p",
+      text: "In your first 30 days in Rome, the residence permit for study comes first: send the post office kit within 8 working days, then open an account, finalise enrolment and complete your DiSCo steps, in this order:",
+    },
     {
       type: "ol",
       items: [
@@ -43,10 +47,10 @@ export const en: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "residence-permit", text: "2. How do you request the residence permit for study?" },
+    { type: "h2", id: "residence-permit", text: "2. How do you apply for a residence permit for study in Italy?" },
     {
       type: "p",
-      text: "You must apply within **8 working days** of entering Italy ([Polizia di Stato](https://www.poliziadistato.it/articolo/225)).",
+      text: "You apply for the residence permit for study (permesso di soggiorno per studio) at a post office with a Sportello Amico desk, within **8 working days** of entering Italy ([Polizia di Stato](https://www.poliziadistato.it/articolo/225)). The application takes four steps: the kit, the documents, the payment and the Questura appointment.",
     },
     {
       type: "figure",
@@ -86,7 +90,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The clerk gives you a **receipt** with a username and password. Keep it with your passport: your university, the bank and DiSCo will ask for it.",
+      text: "The post office clerk gives you a **receipt** with a username and password. Keep the receipt with your passport: your university, the bank and DiSCo will ask for it.",
     },
     {
       type: "callout",
@@ -97,7 +101,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-questura", text: "Step 4: go to the Questura for fingerprints" },
     {
       type: "p",
-      text: "You also receive a convocation letter with your appointment at the Questura, where your fingerprints are taken. Check the status of your permit on the [Polizia di Stato permit portal](https://questure.poliziadistato.it/stranieri/) with your receipt details. The Polizia gives about 60 days for processing; Sapienza warns it can take about 90.",
+      text: "At the post office you also receive a convocation letter with your appointment at the Questura, where your fingerprints are taken. Check the status of your permit on the [Polizia di Stato permit portal](https://questure.poliziadistato.it/stranieri/) with your receipt details. The Polizia di Stato gives about 60 days for processing; Sapienza warns it can take about 90.",
     },
     {
       type: "figure",
@@ -124,23 +128,23 @@ export const en: ArticleTranslation = {
 
     {
       type: "p",
-      text: "Once you have a lease and your permit receipt, you can also register your residence at the anagrafe: see [how to apply for residenza in Rome](article:residenza-rome).",
+      text: "Once you have a lease and your permit receipt, you can also register your residence at the Rome anagrafe, a separate step explained in [how to apply for residenza in Rome](article:residenza-rome).",
     },
 
-    { type: "h2", id: "codice-fiscale", text: "3. How do you get your codice fiscale?" },
+    { type: "h2", id: "codice-fiscale", text: "3. How do you get a codice fiscale as a student in Italy?" },
     {
       type: "p",
-      text: "The codice fiscale is your Italian tax code, needed for a lease, a bank or a phone contract. Usually you do not request it: the Questura assigns it with your permit application.",
+      text: "Usually you do not request the codice fiscale: the Questura assigns it with your residence permit application. The codice fiscale is your Italian tax code, needed for a lease, a bank or a phone contract.",
     },
     {
       type: "p",
       text: "If you need it earlier, go to any **Agenzia delle Entrate** office with form AA4/8 and your passport with the visa. The [Agenzia delle Entrate leaflet for foreign citizens](https://www.agenziaentrate.gov.it/portale/documents/20143/233505/Folder_CodiceFiscaleStranieri_08+03+23.pdf/218dc638-ced1-3b2d-f5f2-912686b1f7fe?t=1682082253716) explains the procedure. At Sapienza, the HELLO desk can help you with the forms.",
     },
 
-    { type: "h2", id: "bank-account", text: "4. Get an IBAN in your first weeks" },
+    { type: "h2", id: "bank-account", text: "4. Why do you need an IBAN in your first weeks?" },
     {
       type: "p",
-      text: "You need an IBAN for DiSCo, rent and a salary.",
+      text: "You need an Italian IBAN in your first weeks because DiSCo, your rent and any salary all go through it.",
     },
     {
       type: "p",
@@ -156,10 +160,10 @@ export const en: ArticleTranslation = {
       text: "According to the [Banca d'Italia](https://economiapertutti.bancaditalia.it/aree-tematiche/conto-corrente/il-conto-di-base/index.html), anyone legally staying in the EU has the right to a basic account (conto di base), and its August 2026 guidance tells banks to accept the residence permit receipt for this account.",
     },
 
-    { type: "h2", id: "finalise-enrolment", text: "5. Finalise enrolment and your scholarship file" },
+    { type: "h2", id: "finalise-enrolment", text: "5. How do you finalise enrolment and your DiSCo file after arrival?" },
     {
       type: "p",
-      text: "Enrolment is complete only once your university has checked your originals:",
+      text: "Enrolment at a Rome university is complete only once the university has checked your original documents, and Sapienza, Tor Vergata and Roma Tre each organise that check differently:",
     },
     {
       type: "callout",
@@ -204,10 +208,10 @@ export const en: ArticleTranslation = {
       feeIds: ["ssn-voluntary"],
     },
 
-    { type: "h2", id: "first-month-budget", text: "6. Budget for your first month in Rome" },
+    { type: "h2", id: "first-month-budget", text: "6. How much money do you need for your first month in Rome?" },
     {
       type: "p",
-      text: "Your bank in Tunisia can send an installation allowance of up to **6,000 TND** per academic year (about EUR 1,782 at the BCT rate of 7 October 2026). The monthly transfers only start after your enrolment papers reach the bank, so this money must last until then.",
+      text: "Your first month in Rome runs on the installation allowance: your bank in Tunisia can send up to **6,000 TND** per academic year (about EUR 1,782 at the BCT rate of 7 October 2026). The monthly transfers only start after your enrolment papers reach the bank, so the installation allowance must last until then.",
     },
     {
       type: "figure",
@@ -231,7 +235,7 @@ export const en: ArticleTranslation = {
         ["Public transport pass", "EUR 35 a month or EUR 250 a year (confirmed)", "Check student offers on the ATAC website."],
         ["SIM card and first month", "Check current prices", "Compare offers before you buy."],
         ["Food for the month", "Check current prices", "Cook at home; DiSCo meals start only once the grant is assigned."],
-        ["Room: first rent and deposit", "Check current prices", "See our [student housing guide for Rome](article:student-housing-rome)."],
+        ["Room: first rent and deposit", "Check current prices", "Budget the first rent and the deposit together."],
         ["Emergency reserve", "10 to 15% of the allowance", "Do not touch it unless you have to."],
       ],
     },
@@ -242,17 +246,17 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Buy second-hand on [Subito](https://www.subito.it): furniture, a bike, books. And never pay a deposit before you have seen the room; read [how to avoid housing scams](article:student-housing-rome#avoid-scams).",
+      text: "Buy second-hand on [Subito](https://www.subito.it): furniture, a bike, books. And never pay a room deposit before you have seen the room; read [how to avoid student housing scams in Rome](article:student-housing-rome#avoid-scams).",
     },
 
-    { type: "h2", id: "student-work", text: "7. Can you work while you study in Italy?" },
+    { type: "h2", id: "student-work", text: "7. Can you work with a student residence permit in Italy?" },
     {
       type: "p",
-      text: "Yes, within limits: a student permit allows up to **20 hours a week**, for a maximum of **1,040 hours a year** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). If you only have the first-permit receipt, check with the Questura or your university before you start a job.",
+      text: "Yes, within limits: a residence permit for study allows up to **20 hours a week**, for a maximum of **1,040 hours a year** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). If you only have the first-permit receipt, check with the Questura or your university before you start a job.",
     },
     {
       type: "p",
-      text: "Where to look (Subito, Indeed, temp agencies, university job offices), how to post your profile and how to spot fake offers: see [student jobs in Rome](article:student-jobs-rome).",
+      text: "Where to look (Subito, Indeed, temp agencies, university job offices), how to post your profile and how to spot fake offers: see [how to find student jobs in Rome](article:student-jobs-rome).",
     },
     {
       type: "callout",
@@ -268,27 +272,27 @@ export const en: ArticleTranslation = {
       items: [
         {
           q: "How many days do I have to apply for the permesso di soggiorno?",
-          a: "8 working days from your arrival in Italy. You apply by sending the yellow-band kit from a post office with a Sportello Amico desk.",
+          a: "8 working days from your arrival in Italy, according to the Polizia di Stato. You apply by sending the yellow-band residence permit kit from a post office with a Sportello Amico desk, with a copy of your passport and visa, your health insurance, proof of your means and a EUR 16 revenue stamp. The post office receipt then proves you applied until the permit card arrives.",
         },
         {
           q: "How much does the residence permit for study cost?",
-          a: "About EUR 116.46 at the post office: a EUR 16 revenue stamp, a EUR 30 postal fee and a EUR 70.46 bollettino (amounts checked October 2026).",
+          a: "About EUR 116.46 at the post office for a permit of 3 to 12 months: a EUR 16 revenue stamp, a EUR 30 postal fee and a EUR 70.46 bollettino (amounts checked October 2026). For a permit of more than 1 year and up to 2 years, the contribution is EUR 50, so the total becomes EUR 126.46. Ask at the counter which payment methods are accepted.",
         },
         {
           q: "How do I get a codice fiscale in Rome?",
-          a: "It is normally assigned with your residence permit application. If you need it earlier, go to any Agenzia delle Entrate office with form AA4/8 and your passport with the visa.",
+          a: "Usually you do not request it: the Questura assigns the codice fiscale with your residence permit application. If a landlord or a bank needs the codice fiscale earlier, go to any Agenzia delle Entrate office with form AA4/8 and your passport with the visa. At Sapienza, the HELLO desk can help you fill in the forms.",
         },
         {
-          q: "Can I open a bank account with the permit receipt?",
-          a: "Yes. According to the Banca d'Italia, a bank may not refuse the residence permit receipt as an identity document, and anyone legally staying in the EU has the right to a basic account.",
+          q: "What can I do with the residence permit receipt?",
+          a: "The residence permit receipt (ricevuta) proves you applied for the permit until the card arrives. Show the receipt together with your passport to open a bank account, sign a SIM contract, get the codice fiscale, sign a job contract and complete your DiSCo steps. Keep the original receipt safe and carry a copy with you.",
         },
         {
           q: "Can I travel back to Tunisia while I wait for my permit?",
-          a: "The Italian Embassy in Tunis advises against leaving Italy before your residence permit is issued. Plan trips after you collect it.",
+          a: "It is not advised: the Italian Embassy in Tunis advises students not to leave Italy until the residence permit is issued. The Polizia di Stato gives about 60 days for processing and Sapienza warns it can take about 90, so plan trips home for after you collect your permit.",
         },
         {
-          q: "Can international students work in Italy?",
-          a: "Yes, up to 20 hours a week and 1,040 hours a year. If you only have the first-permit receipt, check with the Questura or your university before you start.",
+          q: "How long does it take to get the student residence permit?",
+          a: "About 60 days according to the Polizia di Stato, although Sapienza warns it can take about 90 days. After you send the kit, you go to the Questura appointment in your convocation letter to give your fingerprints, and you can follow the status on the Polizia di Stato permit portal with your receipt details.",
         },
       ],
     },
