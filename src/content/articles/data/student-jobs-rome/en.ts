@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "student-jobs-rome",
   title: "Student Jobs in Rome for Tunisians",
-  subtitle: "The 20-hour rule, then where to find work: Subito, Indeed, temp agencies and campus jobs",
-  seoTitle: "Student Jobs in Rome for Tunisians: 20-Hour Rule, Subito",
+  subtitle: "Subito first, then Indeed, temp agencies and campus jobs, within the 20-hour rule",
+  seoTitle: "Student Jobs in Rome for Tunisians: Subito, 20-Hour Rule",
   metaDescription:
-    "Find student jobs in Rome as a Tunisian: the 20-hour weekly limit, a free Subito job-seeker ad, Indeed, temp agencies, 150-ore campus work and scam signs.",
+    "Find a student job in Rome on Subito, the easiest way for Tunisians: a free job-seeker ad, the 20-hour weekly limit, Indeed, temp agencies and scam signs.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["student jobs in Rome", "part-time job Rome student", "student permit work hours Italy", "Subito lavoro Roma", "temp agencies Rome", "150 ore Sapienza"],
   summary:
-    "Student jobs in Rome are legal on an Italian study permit for up to 20 hours a week and 1,040 hours a year as an employee with a declared contract, and the 20 hours are a weekly ceiling, not an average (verified October 2026). Most student jobs in Rome are in cafés and restaurants, and a free job-seeker ad on Subito is often the quickest way in, alongside Indeed, temp agencies (which cannot charge workers) and university 150-ore collaborations paying EUR 1,295 for 150 hours at Sapienza.",
+    "The easiest way to find a student job in Rome is a free job-seeker ad on Subito, because most student jobs in Rome are in cafés and restaurants; Indeed, temp agencies (which cannot charge workers) and university 150-ore collaborations paying EUR 1,295 for 150 hours at Sapienza come next. On an Italian study permit you can work as an employee for up to 20 hours a week and 1,040 hours a year with a declared contract, and the 20 hours are a weekly ceiling, not an average (verified October 2026).",
   body: [
     {
       type: "callout",
@@ -22,61 +22,26 @@ export const en: ArticleTranslation = {
     { type: "p", text: "**You have your residence permit for study and want a part-time job in Rome. How many hours are you allowed, and where do you actually find work?**" },
     {
       type: "p",
-      text: "The short answer: you can work as an employee for up to **20 hours a week** and **1,040 hours a year**, with a regular, declared contract. In Rome, most student jobs are in cafés, bars and restaurants, and a free ad on Subito saying you are looking for work is often the quickest way in.",
+      text: "The short answer: the easiest way is a free ad on **Subito** saying you are looking for work, since most student jobs in Rome are in cafés, bars and restaurants. You can work as an employee for up to **20 hours a week** and **1,040 hours a year**, with a regular, declared contract.",
     },
     {
       type: "p",
       text: "This is part 3 of our settling-in series, after the bank account and the residenza. For the short legal answer in your first month, read [whether you can work with a student residence permit in Italy](article:arriving-in-rome#student-work).",
     },
 
-    { type: "h2", id: "before-you-start", text: "1. What do you need before looking for a student job in Rome?" },
+    { type: "h2", id: "subito", text: "1. How do you find a student job in Rome on Subito?" },
     {
       type: "p",
-      text: "Before looking for a student job in Rome, you need an Italian SIM card, an IBAN for your salary and your codice fiscale; your residenza also helps with many local procedures.",
+      text: "Subito is the easiest way to find a student job in Rome: posting a free job-seeker ad takes a few minutes, and in my experience café and restaurant owners reply quickly.",
     },
     {
-      type: "ul",
-      items: [
-        "**An Italian SIM card.** Subito asks you to verify your account by SMS and only accepts phone numbers from EU countries and Switzerland, so a +216 number will not work.",
-        "**An IBAN.** Employers pay salaries by bank transfer. See [how to open a bank account in Italy as a student](article:bank-account-italy-student).",
-        "**Your codice fiscale.** It normally comes with your permesso application through the Questura; if you need it earlier, request it at any Agenzia delle Entrate office with form AA4/8.",
-        "**Your residenza** helps with many local procedures; see [how to register your residenza in Rome at the anagrafe](article:residenza-rome).",
-      ],
+      type: "figure",
+      src: "/blog/logos/subito.webp",
+      width: 735,
+      height: 174,
+      alt: "Subito logo",
+      caption: "Subito, Italy's classifieds app, is the easiest place to post a free job-seeker ad in Rome. The logo is shown only to identify the service.",
     },
-    {
-      type: "callout",
-      tone: "tip",
-      title: "Show the permit receipt to employers",
-      text: "Until your permit card arrives, give employers and temp agencies in Rome a copy of the permit **receipt (ricevuta)** with your passport: it shows you applied for a study permit and lets them register a regular contract.",
-    },
-
-    { type: "h2", id: "hour-limits", text: "2. How many hours can you work on a student permit in Italy?" },
-    {
-      type: "p",
-      text: "An Italian study permit allows employee work (lavoro subordinato) for up to **20 hours a week**, which can be spread over 52 weeks, within an annual limit of **1,040 hours** ([DPR 394/1999, art. 14, c. 4](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-08-31;394~art14)).",
-    },
-    {
-      type: "p",
-      text: "In its note of **24 May 2022**, the Ispettorato Nazionale del Lavoro made it clear that 20 hours is a **weekly ceiling, not an average**: a contract above 20 hours a week is not compliant even if your yearly total stays under 1,040. You cannot work 35 hours in August and make up for it later. To work more than 20 hours a week, you must convert your study permit to a work permit, before the study permit expires.",
-    },
-    {
-      type: "table",
-      caption: "Contract types students in Italy come across (October 2026).",
-      head: ["Type", "What it is", "Watch out"],
-      rows: [
-        ["Part-time employment contract", "The standard route: a declared contract with fixed weekly hours", "No more than 20 hours a week in the contract"],
-        ["Occasional work (PrestO)", "Short INPS-managed jobs, capped at EUR 5,000 a year per worker", "No official source says whether these hours count toward the 20; ask the employer or a patronato"],
-        ["On-call contract (contratto a chiamata)", "Called in when needed; for people under 24 (work ending by age 25) or over 55, or for jobs listed in collective agreements", "Your weekly 20-hour cap still applies"],
-        ["University 150-ore collaboration", "Paid campus work, not an employment contract", "One per academic year; see section 6"],
-      ],
-    },
-    { type: "h3", id: "exams-and-renewal", text: "Keep your exams on track" },
-    {
-      type: "p",
-      text: "A student job does not block the renewal of an Italian study permit, but your exam record can. Study permits are renewed if you passed **one exam in your first year** and **at least two in each later year**, and they cannot be issued for more than **3 years beyond the length of your course** ([DPR 394/1999, art. 46](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-08-31;394~art46)). A job that wrecks your exam record puts your study permit at risk.",
-    },
-
-    { type: "h2", id: "subito", text: "3. How do you find a café or restaurant job in Rome on Subito?" },
     {
       type: "p",
       text: "To find a café or restaurant job in Rome on Subito, post your own free ad in **Lavoro e servizi > Candidati in cerca di lavoro**, the section for job seekers, instead of only answering employer ads. [Subito](https://www.subito.it) is Italy's big classifieds site, and Rome has plenty of café, bar and restaurant jobs on it. Subito gives private users **20 free ads** in the job-seeker section, and Subito refuses job offers that ask candidates for money ([Subito rules](https://assistenza.subito.it/hc/it/articles/360001165229-Quali-sono-le-regole-per-la-categoria-Lavoro-e-servizi-)).",
@@ -120,8 +85,44 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "In my experience and that of my friends, calls and offers usually arrived within a week of posting a Subito ad. That is experience, not a guarantee. When an employer calls, ask for a written contract with your weekly hours before your first shift.",
     },
+    {
+      type: "p",
+      text: "Of course, a few things come first. You need an **Italian SIM card**, because Subito verifies your account by SMS and does not accept +216 numbers; an **IBAN** for your salary ([how to open a bank account in Italy as a student](article:bank-account-italy-student)); and your **codice fiscale** ([how to get your codice fiscale in Italy](article:arriving-in-rome#codice-fiscale)). Your **residenza** is a nice-to-have, not a must, since not every student plans to stay in Italy for good, but it makes some local procedures easier ([how to register your residenza in Rome](article:residenza-rome)).",
+    },
+    {
+      type: "callout",
+      tone: "tip",
+      title: "Show the permit receipt to employers",
+      text: "Until your permit card arrives, give employers and temp agencies in Rome a copy of the permit **receipt (ricevuta)** with your passport: it shows you applied for a study permit and lets them register a regular contract.",
+    },
 
-    { type: "h2", id: "indeed", text: "4. How do you apply for student jobs in Rome on Indeed?" },
+    { type: "h2", id: "hour-limits", text: "2. How many hours can you work on a student permit in Italy?" },
+    {
+      type: "p",
+      text: "An Italian study permit allows employee work (lavoro subordinato) for up to **20 hours a week**, which can be spread over 52 weeks, within an annual limit of **1,040 hours** ([DPR 394/1999, art. 14, c. 4](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-08-31;394~art14)).",
+    },
+    {
+      type: "p",
+      text: "In its note of **24 May 2022**, the Ispettorato Nazionale del Lavoro made it clear that 20 hours is a **weekly ceiling, not an average**: a contract above 20 hours a week is not compliant even if your yearly total stays under 1,040. You cannot work 35 hours in August and make up for it later. To work more than 20 hours a week, you must convert your study permit to a work permit, before the study permit expires.",
+    },
+    {
+      type: "table",
+      caption: "Contract types students in Italy come across (October 2026).",
+      head: ["Type", "What it is", "Watch out"],
+      rows: [
+        ["Part-time employment contract", "The standard route: a declared contract with fixed weekly hours", "No more than 20 hours a week in the contract"],
+        ["Occasional work (PrestO)", "Short INPS-managed jobs, capped at EUR 5,000 a year per worker", "No official source says whether these hours count toward the 20; ask the employer or a patronato"],
+        ["On-call contract (contratto a chiamata)", "Called in when needed; for people under 24 (work ending by age 25) or over 55, or for jobs listed in collective agreements", "Your weekly 20-hour cap still applies"],
+        ["University 150-ore collaboration", "Paid campus work, not an employment contract", "One per academic year; see section 5"],
+      ],
+    },
+    { type: "h3", id: "exams-and-renewal", text: "Keep your exams on track" },
+    {
+      type: "p",
+      text: "A student job does not block the renewal of an Italian study permit, but your exam record can. Study permits are renewed if you passed **one exam in your first year** and **at least two in each later year**, and they cannot be issued for more than **3 years beyond the length of your course** ([DPR 394/1999, art. 46](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-08-31;394~art46)). A job that wrecks your exam record puts your study permit at risk.",
+    },
+
+    { type: "h2", id: "indeed", text: "3. How do you apply for student jobs in Rome on Indeed?" },
     {
       type: "p",
       text: "To apply for student jobs in Rome on Indeed, search [it.indeed.com](https://it.indeed.com) for “part time studenti” with Roma as the location, then apply with your CV. Upload your CV or build one on Indeed ([upload a CV](https://support.indeed.com/hc/en-us/articles/4408783727629-Uploading-a-Resume-File-to-Your-Profile)); some jobs let you apply directly with **Indeed Apply**, others send you to the employer's site. Set a **job alert** so new offers reach your inbox ([job alerts](https://support.indeed.com/hc/en-us/articles/204488890-Starting-Stopping-and-Managing-Job-Alerts)).",
@@ -133,7 +134,7 @@ export const en: ArticleTranslation = {
       text: "Many “student” ads on Indeed for Rome ask for 25 to 30 hours a week, above the 20-hour cap of a study permit. Read the hours in each ad before you apply.",
     },
 
-    { type: "h2", id: "agencies", text: "5. Which temp agencies have a branch in Rome?" },
+    { type: "h2", id: "agencies", text: "4. Which temp agencies have a branch in Rome?" },
     {
       type: "p",
       text: "Gi Group, Adecco, Randstad, Manpower, Umana, Synergie, Etjca and Orienta are temp agencies with a Rome branch confirmed on their own websites (October 2026). Temp agencies (agenzie per il lavoro) place people in shops, warehouses, hotels and events. By law, authorised agencies **cannot charge workers any fee** ([D.Lgs. 276/2003, art. 11](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-09-10;276~art11)). You can check any agency on the [Ministry of Labour register](https://www.lavoro.gov.it/strumenti-e-servizi/pagine/albo-nazionale-delle-agenzie-il-lavoro).",
@@ -158,7 +159,7 @@ export const en: ArticleTranslation = {
       text: "When you visit a temp agency in Rome, bring your CV, permit (or receipt) and codice fiscale, and tell the agency upfront that you can work at most 20 hours a week.",
     },
 
-    { type: "h2", id: "university-jobs", text: "6. What are 150-ore collaborations and other university jobs in Rome?" },
+    { type: "h2", id: "university-jobs", text: "5. What are 150-ore collaborations and other university jobs in Rome?" },
     {
       type: "p",
       text: "Universities in Rome pay students for part-time campus work through **150-ore collaborations** (borse di collaborazione), and their job placement offices list other offers. Sapienza's 2025/26 call offered **250 places**, paying **EUR 1,295 for 150 hours**, tax-free. It is not an employment contract, and it required **Italian B2 and English B2** ([Sapienza call 2025/26](https://web.uniroma1.it/trasparenza/sites/default/files/Bando_2025_2026.pdf)). The 2025/26 deadline has passed, so watch for Sapienza's new 150-ore call in autumn.",
@@ -189,7 +190,7 @@ export const en: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "job-scams", text: "7. How do you spot a job scam in Rome?" },
+    { type: "h2", id: "job-scams", text: "6. How do you spot a job scam in Rome?" },
     {
       type: "p",
       text: "A job offer in Rome is a likely scam if it asks you for money, wants your documents or bank codes before an interview, or pushes you off Subito or Indeed. The Polizia Postale warned about fake job offers on [19 January 2024](https://www.commissariatodips.it/notizie/articolo/job-scams-come-riconoscere-le-false-proposte-di-lavoro/index.html) and about the WhatsApp “task scam” on [30 January 2025](https://www.commissariatodips.it/notizie/articolo/task-scam-hai-ricevuto-unofferta-di-lavoro-su-whatsapp-non-cadere-nella-truffa/index.html). ANPAL also flagged [fake offers using the EURES logo](https://www.anpal.gov.it/en/-/avviso-importante-attenzione-alle-offerte-di-lavoro-truffa-aggiornamenti-). Walk away from a job offer that:",

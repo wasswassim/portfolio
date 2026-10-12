@@ -253,7 +253,7 @@ export const ar: ArticleTranslation = {
     { type: "h2", id: "student-work", text: "7. هل يمكنك العمل ببطاقة الإقامة للدراسة في إيطاليا؟" },
     {
       type: "p",
-      text: "نعم، في حدود معينة: تسمح بطاقة الإقامة للدراسة بالعمل حتى **20 ساعة في الأسبوع**، وبحد أقصى **1,040 ساعة في السنة** ([DPR 394/1999، المادة 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). إذا لم يكن لديك سوى وصل الإقامة الأولى، فتحقق مع Questura أو جامعتك قبل أن تبدأ أي عمل.",
+      text: "نعم، في حدود معينة: تسمح بطاقة الإقامة للدراسة بالعمل حتى **20 ساعة في الأسبوع**، وبحد أقصى **1,040 ساعة في السنة** ([DPR 394/1999، المادة 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). ويمكنك أن تبدأ العمل بوصل الإقامة (ricevuta) في انتظار البطاقة.",
     },
     {
       type: "p",

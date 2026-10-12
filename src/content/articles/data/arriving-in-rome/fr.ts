@@ -252,7 +252,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "student-work", text: "7. Peut-on travailler avec un permis de séjour étudiant en Italie ?" },
     {
       type: "p",
-      text: "Oui, dans certaines limites : le permis de séjour pour études autorise jusqu’à **20 heures par semaine**, dans la limite de **1 040 heures par an** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). Si vous n’avez que le récépissé du premier permis, vérifiez auprès de la Questura ou de votre université avant de commencer un emploi.",
+      text: "Oui, dans certaines limites : le permis de séjour pour études autorise jusqu’à **20 heures par semaine**, dans la limite de **1 040 heures par an** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). Vous pouvez commencer à travailler avec le récépissé (ricevuta) en attendant la carte.",
     },
     {
       type: "p",

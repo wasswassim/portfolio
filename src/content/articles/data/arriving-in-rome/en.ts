@@ -252,7 +252,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "student-work", text: "7. Can you work with a student residence permit in Italy?" },
     {
       type: "p",
-      text: "Yes, within limits: a residence permit for study allows up to **20 hours a week**, for a maximum of **1,040 hours a year** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). If you only have the first-permit receipt, check with the Questura or your university before you start a job.",
+      text: "Yes, within limits: a residence permit for study allows up to **20 hours a week**, for a maximum of **1,040 hours a year** ([DPR 394/1999, art. 14](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1999-08-31;394~art14)). You can start working with the permit receipt (ricevuta) while you wait for the card.",
     },
     {
       type: "p",

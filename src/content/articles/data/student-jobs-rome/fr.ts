@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "job-etudiant-rome",
   title: "Job étudiant à Rome pour les Tunisiens",
-  subtitle: "La règle des 20 heures, puis où trouver du travail : Subito, Indeed, agences d’intérim et jobs sur le campus",
-  seoTitle: "Job étudiant à Rome pour les Tunisiens : règle des 20 h",
+  subtitle: "Subito d’abord, puis Indeed, les agences d’intérim et les jobs sur le campus, dans la limite des 20 heures",
+  seoTitle: "Job étudiant à Rome pour les Tunisiens : Subito, 20 h",
   metaDescription:
-    "Trouvez un job étudiant à Rome : limite de 20 heures par semaine, annonce gratuite sur Subito, Indeed, agences d’intérim, 150 ore et signes d’arnaque.",
+    "Trouvez un job étudiant à Rome sur Subito, le plus simple : annonce gratuite de candidat, limite de 20 heures par semaine, Indeed, intérim et arnaques.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["job étudiant Rome", "petit boulot étudiant Rome", "heures de travail permis de séjour étudiant Italie", "Subito lavoro Roma", "agence d’intérim Rome", "150 ore Sapienza"],
   summary:
-    "Un job étudiant à Rome est légal avec un permis de séjour italien pour études jusqu’à 20 heures par semaine et 1 040 heures par an comme salarié, avec un contrat déclaré, et les 20 heures sont un plafond hebdomadaire, pas une moyenne (vérifié en octobre 2026). La plupart des jobs étudiants à Rome sont dans les cafés et les restaurants, et une annonce gratuite de candidat sur Subito est souvent la porte d’entrée la plus rapide, en plus d’Indeed, des agences d’intérim (qui ne peuvent pas faire payer les travailleurs) et des collaborations 150 ore, payées 1 295 EUR pour 150 heures à la Sapienza.",
+    "Le plus simple pour trouver un job étudiant à Rome est une annonce gratuite de candidat sur Subito, car la plupart des jobs étudiants à Rome sont dans les cafés et les restaurants ; viennent ensuite Indeed, les agences d’intérim (qui ne peuvent rien facturer aux travailleurs) et les collaborations universitaires 150 ore, payées 1 295 EUR pour 150 heures à Sapienza. Avec un permis de séjour italien pour études, vous pouvez travailler comme salarié jusqu’à 20 heures par semaine et 1 040 heures par an avec un contrat déclaré, et les 20 heures sont un plafond hebdomadaire, pas une moyenne (vérifié en octobre 2026).",
   body: [
     {
       type: "callout",
@@ -22,61 +22,26 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "**Vous avez votre permis de séjour pour études et vous cherchez un job à temps partiel à Rome. Combien d’heures avez-vous le droit de travailler, et où trouver du travail ?**" },
     {
       type: "p",
-      text: "La réponse courte : vous pouvez travailler comme salarié jusqu’à **20 heures par semaine** et **1 040 heures par an**, avec un contrat régulier et déclaré. À Rome, la plupart des jobs étudiants sont dans les cafés, les bars et les restaurants, et une annonce gratuite sur Subito pour dire que vous cherchez du travail est souvent la porte d’entrée la plus rapide.",
+      text: "La réponse courte : le plus simple est une annonce gratuite sur **Subito** pour dire que vous cherchez du travail, car la plupart des jobs étudiants à Rome sont dans les cafés, les bars et les restaurants. Vous pouvez travailler comme salarié jusqu’à **20 heures par semaine** et **1 040 heures par an**, avec un contrat régulier et déclaré.",
     },
     {
       type: "p",
       text: "C’est la partie 3 de notre série sur l’installation, après le compte bancaire et la residenza. Pour la réponse juridique courte dès le premier mois, lisez [si l’on peut travailler avec un permis de séjour étudiant en Italie](article:arriving-in-rome#student-work).",
     },
 
-    { type: "h2", id: "before-you-start", text: "1. De quoi a-t-on besoin avant de chercher un job étudiant à Rome ?" },
+    { type: "h2", id: "subito", text: "1. Comment trouver un job étudiant à Rome sur Subito ?" },
     {
       type: "p",
-      text: "Avant de chercher un job étudiant à Rome, il vous faut une carte SIM italienne, un IBAN pour le salaire et votre codice fiscale ; la residenza facilite aussi beaucoup de démarches locales.",
+      text: "Subito est le moyen le plus simple de trouver un job étudiant à Rome : publier une annonce gratuite de candidat prend quelques minutes et, d’après mon expérience, les cafés et les restaurants répondent vite.",
     },
     {
-      type: "ul",
-      items: [
-        "**Une carte SIM italienne.** Subito vérifie votre compte par SMS et n’accepte que les numéros des pays de l’UE et de la Suisse : un numéro en +216 ne fonctionnera pas.",
-        "**Un IBAN.** Les employeurs versent le salaire par virement. Voir [comment ouvrir un compte bancaire en Italie quand on est étudiant](article:bank-account-italy-student).",
-        "**Votre codice fiscale.** Il est normalement attribué avec votre demande de permesso, via la Questura ; si vous en avez besoin plus tôt, demandez-le dans n’importe quel bureau de l’Agenzia delle Entrate avec le formulaire AA4/8.",
-        "**Votre residenza** facilite beaucoup de démarches locales ; voir [comment faire sa residenza à Rome auprès de l’anagrafe](article:residenza-rome).",
-      ],
+      type: "figure",
+      src: "/blog/logos/subito.webp",
+      width: 735,
+      height: 174,
+      alt: "Logo de Subito",
+      caption: "Subito, l’application italienne de petites annonces, est le plus simple pour publier une annonce gratuite de candidat à Rome. Le logo est montré uniquement pour identifier le service.",
     },
-    {
-      type: "callout",
-      tone: "tip",
-      title: "Montrez le récépissé aux employeurs",
-      text: "En attendant la carte de séjour, remettez aux employeurs et aux agences d’intérim de Rome une copie du **récépissé (ricevuta)** du permis avec votre passeport : il montre que vous avez demandé un permis d'études et leur permet de déclarer un contrat en règle.",
-    },
-
-    { type: "h2", id: "hour-limits", text: "2. Combien d’heures peut-on travailler avec un permis étudiant en Italie ?" },
-    {
-      type: "p",
-      text: "Le permis de séjour italien pour études autorise le travail salarié (lavoro subordinato) jusqu’à **20 heures par semaine**, sur 52 semaines, dans une limite annuelle de **1 040 heures** ([DPR 394/1999, art. 14, al. 4](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-08-31;394~art14)).",
-    },
-    {
-      type: "p",
-      text: "Dans sa note du **24 mai 2022**, l’Ispettorato Nazionale del Lavoro a précisé que les 20 heures sont un **plafond hebdomadaire, pas une moyenne** : un contrat de plus de 20 heures par semaine n’est pas conforme, même si le total annuel reste sous 1 040 heures. Impossible de faire 35 heures en août pour compenser ensuite. Pour travailler plus de 20 heures par semaine, il faut convertir votre permis pour études en permis de travail, avant l’expiration du permis pour études.",
-    },
-    {
-      type: "table",
-      caption: "Les types de contrat que croisent les étudiants en Italie (octobre 2026).",
-      head: ["Type", "De quoi il s’agit", "Attention"],
-      rows: [
-        ["Contrat salarié à temps partiel", "La voie normale : un contrat déclaré avec un horaire hebdomadaire fixe", "Pas plus de 20 heures par semaine dans le contrat"],
-        ["Travail occasionnel (PrestO)", "Missions courtes gérées par l’INPS, plafonnées à 5 000 EUR par an et par travailleur", "Aucune source officielle ne dit si ces heures comptent dans les 20 ; demandez à l’employeur ou à un patronato"],
-        ["Contrat à l’appel (contratto a chiamata)", "On vous appelle selon les besoins ; ouvert aux moins de 24 ans (travail terminé avant 25 ans) ou aux plus de 55 ans, ou pour les emplois prévus par les conventions collectives", "Votre plafond de 20 heures par semaine s’applique toujours"],
-        ["Collaboration universitaire 150 ore", "Travail rémunéré sur le campus, pas un contrat de travail", "Une par année universitaire ; voir la partie 6"],
-      ],
-    },
-    { type: "h3", id: "exams-and-renewal", text: "Gardez le rythme des examens" },
-    {
-      type: "p",
-      text: "Un job étudiant n’empêche pas le renouvellement du permis de séjour pour études, mais vos résultats aux examens comptent. Le permis pour études est renouvelé si vous avez réussi **un examen en première année** et **au moins deux les années suivantes**, et il ne peut pas être délivré pour plus de **3 ans au-delà de la durée de votre cursus** ([DPR 394/1999, art. 46](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-08-31;394~art46)). Un job qui ruine vos examens met votre permis pour études en danger.",
-    },
-
-    { type: "h2", id: "subito", text: "3. Comment trouver un job dans un café ou un restaurant à Rome sur Subito ?" },
     {
       type: "p",
       text: "Pour trouver un job dans un café ou un restaurant à Rome sur Subito, publiez votre propre annonce gratuite dans **Lavoro e servizi > Candidati in cerca di lavoro**, la rubrique des candidats, au lieu de seulement répondre aux annonces des employeurs. [Subito](https://www.subito.it) est le grand site de petites annonces en Italie, et Rome y compte beaucoup d’offres dans les cafés, les bars et les restaurants. Subito donne aux particuliers **20 annonces gratuites** dans la rubrique des candidats, et Subito refuse les offres qui demandent de l’argent aux candidats ([règles Subito](https://assistenza.subito.it/hc/it/articles/360001165229-Quali-sono-le-regole-per-la-categoria-Lavoro-e-servizi-)).",
@@ -120,8 +85,44 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "D’après mon expérience et celle de mes amis, les appels et les offres arrivaient en général dans la semaine qui suivait la publication d’une annonce Subito. C’est un retour d’expérience, pas une garantie. Quand un employeur vous appelle, demandez un contrat écrit avec vos heures hebdomadaires avant votre premier service.",
     },
+    {
+      type: "p",
+      text: "Bien sûr, quelques étapes viennent avant. Il vous faut une **carte SIM italienne**, car Subito vérifie votre compte par SMS et n’accepte pas les numéros en +216 ; un **IBAN** pour le salaire ([comment ouvrir un compte bancaire en Italie quand on est étudiant](article:bank-account-italy-student)) ; et votre **codice fiscale** ([comment obtenir son codice fiscale en Italie](article:arriving-in-rome#codice-fiscale)). La **residenza** est un plus, pas une obligation, car tous les étudiants ne comptent pas rester en Italie toute leur vie, mais elle facilite certaines démarches locales ([comment faire sa residenza à Rome](article:residenza-rome)).",
+    },
+    {
+      type: "callout",
+      tone: "tip",
+      title: "Montrez le récépissé aux employeurs",
+      text: "En attendant la carte de séjour, remettez aux employeurs et aux agences d’intérim de Rome une copie du **récépissé (ricevuta)** du permis avec votre passeport : il montre que vous avez demandé un permis d'études et leur permet de déclarer un contrat en règle.",
+    },
 
-    { type: "h2", id: "indeed", text: "4. Comment postuler à un job étudiant à Rome sur Indeed ?" },
+    { type: "h2", id: "hour-limits", text: "2. Combien d’heures peut-on travailler avec un permis étudiant en Italie ?" },
+    {
+      type: "p",
+      text: "Le permis de séjour italien pour études autorise le travail salarié (lavoro subordinato) jusqu’à **20 heures par semaine**, sur 52 semaines, dans une limite annuelle de **1 040 heures** ([DPR 394/1999, art. 14, al. 4](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-08-31;394~art14)).",
+    },
+    {
+      type: "p",
+      text: "Dans sa note du **24 mai 2022**, l’Ispettorato Nazionale del Lavoro a précisé que les 20 heures sont un **plafond hebdomadaire, pas une moyenne** : un contrat de plus de 20 heures par semaine n’est pas conforme, même si le total annuel reste sous 1 040 heures. Impossible de faire 35 heures en août pour compenser ensuite. Pour travailler plus de 20 heures par semaine, il faut convertir votre permis pour études en permis de travail, avant l’expiration du permis pour études.",
+    },
+    {
+      type: "table",
+      caption: "Les types de contrat que croisent les étudiants en Italie (octobre 2026).",
+      head: ["Type", "De quoi il s’agit", "Attention"],
+      rows: [
+        ["Contrat salarié à temps partiel", "La voie normale : un contrat déclaré avec un horaire hebdomadaire fixe", "Pas plus de 20 heures par semaine dans le contrat"],
+        ["Travail occasionnel (PrestO)", "Missions courtes gérées par l’INPS, plafonnées à 5 000 EUR par an et par travailleur", "Aucune source officielle ne dit si ces heures comptent dans les 20 ; demandez à l’employeur ou à un patronato"],
+        ["Contrat à l’appel (contratto a chiamata)", "On vous appelle selon les besoins ; ouvert aux moins de 24 ans (travail terminé avant 25 ans) ou aux plus de 55 ans, ou pour les emplois prévus par les conventions collectives", "Votre plafond de 20 heures par semaine s’applique toujours"],
+        ["Collaboration universitaire 150 ore", "Travail rémunéré sur le campus, pas un contrat de travail", "Une par année universitaire ; voir la partie 5"],
+      ],
+    },
+    { type: "h3", id: "exams-and-renewal", text: "Gardez le rythme des examens" },
+    {
+      type: "p",
+      text: "Un job étudiant n’empêche pas le renouvellement du permis de séjour pour études, mais vos résultats aux examens comptent. Le permis pour études est renouvelé si vous avez réussi **un examen en première année** et **au moins deux les années suivantes**, et il ne peut pas être délivré pour plus de **3 ans au-delà de la durée de votre cursus** ([DPR 394/1999, art. 46](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1999-08-31;394~art46)). Un job qui ruine vos examens met votre permis pour études en danger.",
+    },
+
+    { type: "h2", id: "indeed", text: "3. Comment postuler à un job étudiant à Rome sur Indeed ?" },
     {
       type: "p",
       text: "Pour postuler à un job étudiant à Rome sur Indeed, cherchez « part time studenti » sur [it.indeed.com](https://it.indeed.com) avec Roma comme lieu, puis postulez avec votre CV. Téléversez votre CV ou créez-en un sur Indeed ([importer un CV](https://support.indeed.com/hc/en-us/articles/4408783727629-Uploading-a-Resume-File-to-Your-Profile)) ; certaines offres permettent de postuler directement avec **Indeed Apply**, d’autres renvoient vers le site de l’employeur. Activez une **alerte emploi** pour recevoir les nouvelles offres par e-mail ([alertes emploi](https://support.indeed.com/hc/en-us/articles/204488890-Starting-Stopping-and-Managing-Job-Alerts)).",
@@ -133,7 +134,7 @@ export const fr: ArticleTranslation = {
       text: "Beaucoup d’annonces « étudiant » sur Indeed pour Rome demandent 25 à 30 heures par semaine, au-dessus du plafond de 20 heures du permis pour études. Lisez les horaires de chaque annonce avant de postuler.",
     },
 
-    { type: "h2", id: "agencies", text: "5. Quelles agences d’intérim ont une agence à Rome ?" },
+    { type: "h2", id: "agencies", text: "4. Quelles agences d’intérim ont une agence à Rome ?" },
     {
       type: "p",
       text: "Gi Group, Adecco, Randstad, Manpower, Umana, Synergie, Etjca et Orienta sont des agences d’intérim dont une agence à Rome est confirmée sur leur propre site (octobre 2026). Les agences d’intérim (agenzie per il lavoro) placent des candidats dans les magasins, entrepôts, hôtels et événements. Selon la loi, les agences autorisées **ne peuvent faire payer aucun frais aux travailleurs** ([D.Lgs. 276/2003, art. 11](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2003-09-10;276~art11)). Vous pouvez vérifier une agence dans le [registre du ministère du Travail](https://www.lavoro.gov.it/strumenti-e-servizi/pagine/albo-nazionale-delle-agenzie-il-lavoro).",
@@ -158,7 +159,7 @@ export const fr: ArticleTranslation = {
       text: "Quand vous allez dans une agence d’intérim à Rome, apportez votre CV, votre permis (ou le récépissé) et votre codice fiscale, et dites à l’agence dès le départ que vous pouvez travailler au maximum 20 heures par semaine.",
     },
 
-    { type: "h2", id: "university-jobs", text: "6. Que sont les collaborations 150 ore et les autres jobs à l’université à Rome ?" },
+    { type: "h2", id: "university-jobs", text: "5. Que sont les collaborations 150 ore et les autres jobs à l’université à Rome ?" },
     {
       type: "p",
       text: "Les universités de Rome rémunèrent des étudiants pour un travail à temps partiel sur le campus grâce aux **collaborations 150 ore** (borse di collaborazione), et leurs bureaux de job placement publient d’autres offres. L’appel 2025/26 de la Sapienza proposait **250 places**, payées **1 295 EUR pour 150 heures**, sans impôt. Ce n’est pas un contrat de travail, et il fallait **un niveau B2 en italien et B2 en anglais** ([appel Sapienza 2025/26](https://web.uniroma1.it/trasparenza/sites/default/files/Bando_2025_2026.pdf)). La date limite 2025/26 est passée : surveillez le nouvel appel 150 ore de la Sapienza à l’automne.",
@@ -189,7 +190,7 @@ export const fr: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "job-scams", text: "7. Comment repérer une arnaque à l’emploi à Rome ?" },
+    { type: "h2", id: "job-scams", text: "6. Comment repérer une arnaque à l’emploi à Rome ?" },
     {
       type: "p",
       text: "Une offre d’emploi à Rome est probablement une arnaque si elle vous demande de l’argent, réclame vos documents ou vos codes bancaires avant un entretien, ou vous pousse à quitter Subito ou Indeed. La Polizia Postale a alerté sur les fausses offres d’emploi le [19 janvier 2024](https://www.commissariatodips.it/notizie/articolo/job-scams-come-riconoscere-le-false-proposte-di-lavoro/index.html) et sur la « task scam » par WhatsApp le [30 janvier 2025](https://www.commissariatodips.it/notizie/articolo/task-scam-hai-ricevuto-unofferta-di-lavoro-su-whatsapp-non-cadere-nella-truffa/index.html). L’ANPAL a aussi signalé [de fausses offres utilisant le logo EURES](https://www.anpal.gov.it/en/-/avviso-importante-attenzione-alle-offerte-di-lavoro-truffa-aggiornamenti-). Fuyez une offre d’emploi qui :",
