@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "inscription-universite-rome",
   title: "Inscription à l'université en Italie pour les Tunisiens",
-  subtitle: "Candidater à Rome",
-  seoTitle: "Inscription université en Italie pour les Tunisiens",
+  subtitle: "Candidater à Sapienza, Tor Vergata, Roma Tre, LUISS ou LUMSA, puis faire la préinscription Universitaly",
+  seoTitle: "Inscription université en Italie pour les Tunisiens 2027/28",
   metaDescription:
     "Inscription à l'université à Rome pour les Tunisiens : trouver un cours, candidater à Sapienza, Tor Vergata, Roma Tre, LUISS ou LUMSA, puis faire Universitaly.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["inscription université en Italie pour les Tunisiens", "préinscription Universitaly", "étudier à Rome pour les étudiants tunisiens", "candidature Sapienza étudiants internationaux", "universités italiennes pour étudiants étrangers", "Luiss Test"],
+  keywords: ["inscription université en Italie pour les Tunisiens", "préinscription Universitaly", "candidature université à Rome pour les étudiants tunisiens", "candidature Sapienza étudiants internationaux", "universités italiennes pour étudiants étrangers", "Luiss Test"],
   summary:
-    "Pour étudier à Rome en tant qu'étudiant tunisien, vous candidatez d'abord auprès de l'université, sur son propre portail (MoveIn pour Sapienza, Delphi pour Tor Vergata, GOMP pour Roma Tre, ou les tests d'admission de LUISS et LUMSA). Une fois admis, vous faites la préinscription sur Universitaly, l'université la valide et votre dossier part à l'ambassade d'Italie à Tunis pour le visa. Pour 2027/28, la date limite du visa pour la Licence et le Master est le 31 octobre 2027.",
+    "Pour l'inscription à l'université à Rome en tant qu'étudiant tunisien, vous candidatez d'abord sur le portail de l'université (MoveIn pour Sapienza à 30 EUR par candidature, Delphi pour Tor Vergata, GOMP pour Roma Tre, ou les tests d'admission de LUISS et LUMSA), puis vous faites la préinscription Universitaly que l'université valide pour votre visa. Les validations sont plafonnées par université depuis 2026/27, candidatez donc tôt : pour 2027/28, la date limite du visa pour la Licence et le Master est le 31 octobre 2027.",
   body: [
     {
       type: "callout",
@@ -26,13 +26,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Voici la partie 2 de notre [guide pour étudier en Italie pour les Tunisiens](article:study-in-italy), qui présente tout le parcours et le [calendrier 2027/28](article:study-in-italy#calendar). Ici : choisir un cours, candidater aux cinq grandes universités de Rome, Universitaly et le doctorat.",
+      text: "Voici la partie 2 du [guide complet pour étudier en Italie pour les Tunisiens](article:study-in-italy), qui présente tout le parcours, les coûts et le calendrier. Cette partie couvre le choix du cours, la candidature aux cinq grandes universités de Rome, la préinscription Universitaly et le doctorat.",
     },
 
-    { type: "h2", id: "how-admission-works", text: "1. Comment fonctionne l'admission pour un étudiant non européen résidant en Tunisie" },
+    { type: "h2", id: "how-admission-works", text: "1. Comment fonctionne l'admission à l'université pour un étudiant non européen résidant en Tunisie ?" },
     {
       type: "p",
-      text: "Vous êtes considéré comme un étudiant non européen résidant à l'étranger, qui a besoin d'un visa. La circulaire du ministère de l'Université (MUR), valable pour 2026/27 et 2027/28, prévoit deux étapes distinctes :",
+      text: "L'admission à l'université en Italie se fait en deux étapes distinctes pour un étudiant tunisien, considéré comme un étudiant non européen résidant à l'étranger qui a besoin d'un visa. La circulaire du ministère de l'Université (MUR), valable pour 2026/27 et 2027/28, prévoit ces deux étapes :",
     },
     {
       type: "ol",
@@ -43,27 +43,27 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Chaque université fixe ses propres dates : il n'y a pas de date limite nationale unique. La médecine a de nouvelles règles d'accès (loi 26/2025) dont les modalités pour les étudiants internationaux ne sont pas encore publiées ; elle n'est donc pas traitée ici.",
+      text: "Chaque université de Rome fixe ses propres dates de candidature : il n'y a pas de date limite nationale unique, et le [calendrier 2027/28 des échéances d'études pour les Tunisiens](article:study-in-italy#calendar) les remet dans l'ordre. La médecine a de nouvelles règles d'accès (loi 26/2025) dont les modalités pour les étudiants internationaux ne sont pas encore publiées ; la médecine n'est donc pas traitée dans ce guide.",
     },
 
-    { type: "h2", id: "find-a-course", text: "2. Trouver un cours et vérifier les conditions d'accès" },
+    { type: "h2", id: "find-a-course", text: "2. Comment trouver un cours et vérifier ses conditions d'accès ?" },
     {
       type: "p",
-      text: "Ouvrez la [recherche de cours d'Universitaly](https://www.universitaly.it/cerca-corsi) et filtrez par ville (Roma), type de diplôme (Laurea pour une Licence, Laurea Magistrale pour un Master) et langue d'enseignement. Ouvrez ensuite le cours sur le site de l'université : c'est là que se trouvent l'appel, les frais et les dates. Pour chaque cours, vérifiez :",
+      text: "Vous trouvez un cours sur la recherche de cours d'Universitaly, puis vous vérifiez ses conditions d'accès dans l'appel publié sur le site de l'université. Ouvrez la [recherche de cours d'Universitaly](https://www.universitaly.it/cerca-corsi) et filtrez par ville (Roma), type de diplôme (Laurea pour une Licence, Laurea Magistrale pour un Master) et langue d'enseignement. Ouvrez ensuite le cours sur le site de l'université : c'est là que se trouvent l'appel, les frais et les dates. Pour chaque cours, vérifiez :",
     },
     {
       type: "ul",
       items: [
         "**Votre diplôme** : une Licence demande un diplôme de fin d'études secondaires après au moins 12 ans de scolarité, ce que remplit le bac tunisien. Un Master demande une Licence et les relevés de notes. Certains cours ajoutent un test d'aptitude.",
         "**La langue** : les cours en italien passent par un test d'italien de niveau B2 ou plus organisé par l'université (un certificat d'italien B2 vous en dispense). Les cours en anglais demandent un certificat d'anglais B2.",
-        "**Vos documents** : les diplômes doivent être légalisés et traduits, et l'université peut demander une DOV ou une attestation CIMEA. Voir [comment légaliser vos documents](article:documents-for-italy#legalise-documents) et [DOV ou CIMEA](article:documents-for-italy#dov-or-cimea).",
+        "**Vos documents** : les diplômes tunisiens doivent être légalisés et traduits, et l'université peut demander une DOV ou une attestation CIMEA. Voir [comment légaliser un diplôme tunisien pour l'Italie et choisir entre DOV et CIMEA](article:documents-for-italy#legalise-documents).",
       ],
     },
 
-    { type: "h2", id: "public-universities", text: "3. Candidater à Sapienza, Tor Vergata ou Roma Tre" },
+    { type: "h2", id: "public-universities", text: "3. Comment candidater à Sapienza, Tor Vergata ou Roma Tre ?" },
     {
       type: "p",
-      text: "Chaque université publique utilise son propre portail. Les dates ci-dessous viennent des appels 2026/27 ; 2027/28 devrait suivre un calendrier proche, vérifiez donc l'appel 2027/28.",
+      text: "Vous candidatez à Sapienza sur MoveIn, à Tor Vergata sur Delphi et à Roma Tre sur GOMP, car chaque université publique de Rome utilise son propre portail. Les dates ci-dessous viennent des appels 2026/27 ; 2027/28 devrait suivre un calendrier proche, vérifiez donc l'appel 2027/28.",
     },
     { type: "h3", id: "sapienza", text: "Sapienza : MoveIn, puis Infostud" },
     {
@@ -95,7 +95,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les frais de scolarité publics dépendent des revenus et du pays (le forfait de Sapienza pour la Tunisie, bande A, est de 300 EUR par an, plus 140 EUR de taxe régionale et un timbre de 16 EUR : 456 EUR la première année). Voir [les coûts dans la partie 1](article:study-in-italy#costs) et la [bourse DiSCo](article:lazio-disco-scholarship).",
+      text: "Les frais de scolarité des universités publiques de Rome dépendent des revenus et du pays (le forfait de Sapienza pour la Tunisie, bande A, est de 300 EUR par an, plus 140 EUR de taxe régionale et un timbre de 16 EUR : 456 EUR la première année). Voir [le coût total des études à Rome](article:study-in-italy#costs) et [la bourse DiSCo Lazio pour les étudiants tunisiens](article:lazio-disco-scholarship).",
     },
     {
       type: "fees",
@@ -105,19 +105,27 @@ export const fr: ArticleTranslation = {
       hub: true,
     },
 
-    { type: "h2", id: "private-universities", text: "4. Universités privées : LUISS et LUMSA" },
+    { type: "h2", id: "private-universities", text: "4. Comment candidater aux universités privées LUISS et LUMSA ?" },
+    {
+      type: "p",
+      text: "Vous candidatez à la LUISS par le Luiss Test ou par des certifications internationales, et à la LUMSA par un test d'admission en ligne ; dans les deux universités privées, la préinscription Universitaly reste obligatoire après l'admission.",
+    },
     { type: "h3", id: "luiss", text: "LUISS : le Luiss Test" },
     {
       type: "p",
-      text: "Les étudiants non européens entrent par le Luiss Test ou par des certifications internationales ([page LUISS pour les étudiants non européens](https://www.luiss.it/en/orientation-and-admissions/admission-procedures/admission-bachelors-and-masters-degree-programs-law/non-eu-students)). Pour 2027/28 : candidatures d'octobre 2026 au 10 février 2027, test du 22 au 26 février 2027, inscription avant le 4 mai 2027, frais de 150 EUR. Les frais de scolarité de première année de Licence sont de 15 000 EUR par an, forfaitaires, plus la taxe régionale. Il existe des bourses pour les étudiants non européens (20 exonérations totales en 2025/26), mais l'appel 2027/28 n'est pas encore publié.",
+      text: "La LUISS admet les étudiants non européens par le Luiss Test ou par des certifications internationales ([page LUISS pour les étudiants non européens](https://www.luiss.it/en/orientation-and-admissions/admission-procedures/admission-bachelors-and-masters-degree-programs-law/non-eu-students)). Pour 2027/28 : candidatures d'octobre 2026 au 10 février 2027, test du 22 au 26 février 2027, inscription avant le 4 mai 2027, frais de 150 EUR. Les frais de scolarité de première année de Licence à la LUISS sont de 15 000 EUR par an, forfaitaires, plus la taxe régionale. La LUISS propose des bourses pour les étudiants non européens (20 exonérations totales en 2025/26), mais l'appel à bourses 2027/28 n'est pas encore publié.",
     },
     { type: "h3", id: "lumsa", text: "LUMSA : des Licences en italien" },
     {
       type: "p",
-      text: "Les Licences de LUMSA sont enseignées en italien (B2 nécessaire) et commencent par un test d'admission en ligne (100 EUR). Pour un Master, passez par la [page de candidature de LUMSA](https://www.lumsa.it/en/apply-to-enroll) (100 EUR aussi). Les étudiants résidant à l'étranger paient un forfait de 4 390 EUR par an ([guide de l'étudiant 2026/27, PDF](https://backoffice.lumsa.it/sites/default/files/file/3564/2026-07/guida-pratica-per-lo-studente-aa2627.pdf)). Dans les deux universités privées, la préinscription Universitaly reste obligatoire après l'admission.",
+      text: "Les Licences de LUMSA sont enseignées en italien (B2 nécessaire) et commencent par un test d'admission en ligne (100 EUR). Pour un Master, passez par la [page de candidature de LUMSA](https://www.lumsa.it/en/apply-to-enroll) (100 EUR aussi). Les étudiants résidant à l'étranger paient un forfait de 4 390 EUR par an ([guide de l'étudiant 2026/27, PDF](https://backoffice.lumsa.it/sites/default/files/file/3564/2026-07/guida-pratica-per-lo-studente-aa2627.pdf)). Après l'admission à la LUMSA, la préinscription Universitaly reste obligatoire.",
     },
 
-    { type: "h2", id: "compare-universities", text: "5. Les cinq universités côte à côte" },
+    { type: "h2", id: "compare-universities", text: "5. Les cinq universités de Rome comparées : portails, périodes et frais" },
+    {
+      type: "p",
+      text: "Sapienza et Tor Vergata demandent 30 à 50 EUR par candidature, la LUMSA 100 EUR et la LUISS 150 EUR, et les cinq universités de Rome se terminent toutes par la préinscription Universitaly.",
+    },
     {
       type: "table",
       caption: "Comment candidater dans chaque université de Rome (appels 2026/27 sauf mention contraire ; vérifiez l'appel 2027/28)",
@@ -177,25 +185,25 @@ export const fr: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "universitaly-pre-enrolment", text: "6. La préinscription Universitaly, étape par étape" },
-    { type: "p", text: "La préinscription n'est pas une deuxième candidature : c'est le formulaire qui relie votre admission à votre visa." },
+    { type: "h2", id: "universitaly-pre-enrolment", text: "6. Comment faire la préinscription Universitaly ?" },
+    { type: "p", text: "Vous faites la préinscription Universitaly en ligne après l'admission, en trois étapes : ce formulaire relie votre admission à l'université à votre visa d'études et n'est pas une deuxième candidature." },
     {
       type: "steps",
       items: [
         { title: "Créer votre compte", text: "Inscrivez-vous sur [Universitaly](https://universitaly-private.cineca.it/index.php/login) avec votre nom exactement comme sur votre passeport, en lettres latines, sans accents. Utilisez une adresse e-mail que vous consultez : la convocation pour le visa y arrivera." },
         { title: "Remplir le formulaire", text: "Choisissez l'université et le cours où vous êtes admis (un cours par préinscription), l'ambassade d'Italie à Tunis, et les études comme motif du séjour." },
-        { title: "Téléverser et envoyer", text: "Téléversez votre passeport, votre diplôme, vos relevés de notes et votre certificat de langue, préparés comme dans [notre guide des documents](article:documents-for-italy). Envoyez et gardez le récapitulatif pour le visa." },
+        { title: "Téléverser et envoyer", text: "Téléversez votre passeport, votre diplôme, vos relevés de notes et votre certificat de langue, préparés comme dans [comment préparer et traduire vos documents tunisiens pour l'Italie](article:documents-for-italy). Envoyez et gardez le récapitulatif pour le visa." },
       ],
     },
     {
       type: "p",
-      text: "L'université valide ensuite votre dossier. Nouveau depuis 2026/27 : chaque université ne peut valider que ses places réservées aux étudiants étrangers plus 20 %, puis Universitaly bloque les validations suivantes. Candidatez donc tôt. Après la validation, ALMAVIVA vous envoie une date par e-mail : voir [le rendez-vous pour le visa](article:italy-student-visa#almaviva-appointment). La date limite du visa 2027/28 est le 31 octobre 2027. D'autres réponses dans la [FAQ d'Universitaly (PDF)](https://universitaly-private.cineca.it/uploads/universitaly-pubblico/FAQ.pdf).",
+      text: "L'université de Rome valide ensuite votre dossier Universitaly. Nouveau depuis 2026/27 : chaque université ne peut valider que ses places réservées aux étudiants étrangers plus 20 %, puis Universitaly bloque les validations suivantes. Candidatez donc tôt. Après la validation, ALMAVIVA vous envoie une date par e-mail : voir [comment obtenir le rendez-vous Almaviva pour le visa étudiant à Tunis](article:italy-student-visa#almaviva-appointment). La date limite du visa 2027/28 est le 31 octobre 2027. D'autres réponses dans la [FAQ d'Universitaly (PDF)](https://universitaly-private.cineca.it/uploads/universitaly-pubblico/FAQ.pdf).",
     },
 
-    { type: "h2", id: "phd", text: "7. Candidater à un doctorat à Rome" },
+    { type: "h2", id: "phd", text: "7. Comment candidater à un doctorat à Rome ?" },
     {
       type: "p",
-      text: "Chaque université publie un appel de doctorat par an, en général au printemps. Les appels 2026 (42e cycle) ont fermé le 9 juin (Tor Vergata), le 17 juin (Sapienza) et le 14 juillet (Roma Tre). Le 43e cycle (2027/28) est attendu au printemps 2027 (vérifiez chaque appel) :",
+      text: "Vous candidatez à un doctorat à Rome par l'appel annuel de chaque université, que Sapienza, Tor Vergata et Roma Tre publient en général au printemps. Les appels 2026 (42e cycle) ont fermé le 9 juin (Tor Vergata), le 17 juin (Sapienza) et le 14 juillet (Roma Tre). Le 43e cycle (2027/28) est attendu au printemps 2027 (vérifiez chaque appel) :",
     },
     {
       type: "ul",
@@ -207,7 +215,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Vous candidatez avec votre Master et vos relevés de notes. Une fois sélectionné, vous faites quand même la préinscription Universitaly ; il n'y a pas de date fixe pour le visa, mais faites la demande avant le début des cours.",
+      text: "Les candidats au doctorat présentent leur Master et leurs relevés de notes. Un doctorant sélectionné fait quand même la préinscription Universitaly ; il n'y a pas de date fixe pour le visa du doctorat, mais faites la demande de visa avant le début des cours.",
     },
 
     {
@@ -217,19 +225,23 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "Puis-je candidater à plusieurs universités italiennes ?",
-          a: "Oui, chaque université a sa propre candidature et ses frais (Sapienza autorise 2 candidatures). Mais une préinscription Universitaly couvre un seul cours : vous en choisissez un une fois admis.",
+          a: "Oui. Chaque université de Rome a sa propre candidature et ses propres frais, vous pouvez donc candidater à plusieurs en même temps, et Sapienza accepte jusqu'à 2 candidatures à 30 EUR chacune. En revanche, une préinscription Universitaly couvre un seul cours : une fois admis, vous choisissez un seul cours et faites la préinscription pour ce cours.",
         },
         {
           q: "Universitaly, est-ce la même chose que candidater à l'université ?",
-          a: "Non. Vous candidatez d'abord sur le portail de l'université ; Universitaly est la préinscription que l'université valide pour votre visa.",
+          a: "Non. Vous candidatez d'abord sur le portail de l'université (MoveIn, Delphi, GOMP ou les tests de LUISS et LUMSA), et c'est l'université qui décide de vous admettre. Universitaly est la préinscription faite après l'admission : l'université la valide, puis le dossier arrive à l'ambassade d'Italie à Tunis pour votre visa d'études.",
         },
         {
           q: "Faut-il le SAT pour étudier à Rome ?",
-          a: "Seulement pour certains cours : à Sapienza, certaines Licences en anglais demandent un score SAT d'au moins 960, ou un TOLC.",
+          a: "Seulement pour certains cours. À Sapienza, certaines Licences en anglais demandent un score SAT d'au moins 960, ou un TOLC à la place. Les autres cours s'appuient sur votre bac tunisien, un certificat de langue B2 et, pour certains programmes, un test d'aptitude organisé par l'université : lisez l'appel du cours exact avant de candidater.",
         },
         {
           q: "Peut-on étudier en anglais à Rome ?",
-          a: "Oui, certains cours sont enseignés en anglais. Il faut un certificat d'anglais B2 ; utilisez le filtre de langue de la recherche de cours d'Universitaly.",
+          a: "Oui. Certains cours à Rome sont enseignés en anglais, et ils demandent un certificat d'anglais B2. Pour les trouver, choisissez la ville Roma et le filtre de langue d'enseignement dans la recherche de cours d'Universitaly, puis lisez l'appel du cours sur le site de l'université pour la date limite et les frais de candidature.",
+        },
+        {
+          q: "Quand ouvre la candidature à Sapienza pour 2027/28 ?",
+          a: "La période MoveIn de Sapienza pour 2027/28 devrait ouvrir vers décembre 2026. En 2026/27, elle allait du 22 décembre 2025 au 15 mai 2026 pour les étudiants non européens qui ont besoin d'un visa, et chaque candidature coûtait 30 EUR. Confirmez les dates exactes dans l'appel 2027/28 de Sapienza avant de candidater.",
         },
       ],
     },

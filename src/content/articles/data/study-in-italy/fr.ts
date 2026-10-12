@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "etudier-en-italie-pour-les-tunisiens",
   title: "Étudier en Italie pour les Tunisiens",
-  subtitle: "Le parcours complet vers Rome pour 2027/28",
-  seoTitle: "Étudier en Italie pour les Tunisiens : guide Rome 2027",
+  subtitle: "Le parcours complet vers Rome pour 2027/28 : étapes, calendrier et coûts",
+  seoTitle: "Étudier en Italie pour les Tunisiens : guide Rome 2027/28",
   metaDescription:
-    "Étudier en Italie pour les Tunisiens : les 7 étapes vers une Licence, un Master ou un doctorat à Rome, les dates 2027/28 et tous les coûts, jusqu'au visa.",
+    "Étudier en Italie pour les Tunisiens : 7 étapes vers une Licence, un Master ou un doctorat à Rome, dates 2027/28 et coûts, dès 456 EUR en 1re année à Sapienza.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["étudier en Italie pour les Tunisiens", "étudier en Italie", "étudier à Rome", "études en Italie étudiants tunisiens", "Universitaly", "visa étudiant Italie Tunisie", "coût des études en Italie"],
+  keywords: ["étudier en Italie pour les Tunisiens", "étudier en Italie", "étudier à Rome pour les Tunisiens", "études en Italie étudiants tunisiens", "coût des études en Italie", "étudier en Italie dates 2027/28"],
   summary:
-    "Pour étudier à Rome en 2027/28, vous candidatez d'abord auprès de l'université, puis vous faites la préinscription sur Universitaly, et le rendez-vous visa suit ; la date limite pour demander le visa d'études est le 31 octobre 2027. Commencez maintenant : les documents prennent des mois, les candidatures LUISS ferment le 10 février 2027 et celles de Sapienza devraient ouvrir vers décembre 2026.",
+    "Pour étudier en Italie en tant qu'étudiant tunisien en 2027/28, vous candidatez d'abord auprès d'une université à Rome, puis vous faites la préinscription, puis vous demandez le visa d'études avant le 31 octobre 2027 en justifiant 10 179,85 EUR bloqués dans votre banque. Commencez dès l'automne 2026 : les documents prennent des mois, les candidatures LUISS ferment le 10 février 2027 et la première année à Sapienza coûte à partir de 456 EUR de frais.",
   body: [
     {
       type: "callout",
@@ -29,10 +29,10 @@ export const fr: ArticleTranslation = {
       text: "Cela paraît loin, mais les documents prennent des mois et certaines candidatures ouvrent dès cet automne. Cette page vous donne tout le parcours, le calendrier et les coûts, avec un guide détaillé pour chaque étape.",
     },
 
-    { type: "h2", id: "who-is-this-for", text: "1. À qui s'adresse ce guide d'études" },
+    { type: "h2", id: "who-is-this-for", text: "1. À qui s'adresse ce guide d'études ?" },
     {
       type: "p",
-      text: "Cette série s'adresse aux étudiants tunisiens titulaires du bac ou d'un diplôme universitaire qui veulent étudier en présentiel à Rome ou dans le Latium, en Licence (Laurea), en Master (Laurea Magistrale) ou en doctorat (Dottorato).",
+      text: "Cette série sur les études à Rome s'adresse aux étudiants tunisiens titulaires du bac ou d'un diplôme universitaire qui veulent étudier en présentiel à Rome ou dans le Latium, en Licence (Laurea), en Master (Laurea Magistrale) ou en doctorat (Dottorato).",
     },
     {
       type: "figure",
@@ -55,37 +55,44 @@ export const fr: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "the-path", text: "2. Le parcours pour étudier à Rome en 7 étapes" },
-    { type: "p", text: "Tous les étudiants suivent le même ordre. Chaque étape a son propre guide :" },
+    { type: "h2", id: "the-path", text: "2. Quelles sont les 7 étapes pour étudier à Rome ?" },
+    {
+      type: "p",
+      text: "Étudier à Rome passe par 7 étapes dans un ordre fixe : planifier, candidater auprès d'une université, préparer les documents, demander la bourse DiSCo, obtenir le visa, arriver et se loger. Chaque étape a son propre guide détaillé :",
+    },
     {
       type: "ol",
       items: [
         "**Planifier et calendrier.** Cette page : choisissez votre année cible (2027/28), vos formations et vos dates limites.",
         "**Choisir une université et candidater.** Vous candidatez sur le portail de l'université, puis, après l'admission, vous faites la préinscription Universitaly. Voir [comment choisir une université à Rome et candidater](article:apply-university-rome).",
         "**Préparer et traduire vos documents.** Les diplômes sont authentifiés par le ministère tunisien, copiés, apostillés et traduits en italien. Voir [comment légaliser et traduire vos documents pour l'Italie](article:documents-for-italy).",
-        "**Demander la bourse DiSCo.** La bourse régionale du Latium dépend des revenus de votre famille et propose aussi des places en résidence. Voir [le guide de la bourse DiSCo Lazio](article:lazio-disco-scholarship).",
-        "**Obtenir le visa et bloquer l'argent.** Le centre de visas vous envoie une date par e-mail, et vous devez justifier une somme bloquée. Voir [le visa étudiant pour l'Italie et le compte bloqué](article:italy-student-visa).",
-        "**Arriver à Rome.** Dans les 8 jours ouvrables, vous demandez votre permis de séjour, puis vous finalisez l'inscription à l'université. Voir [vos premières semaines à Rome](article:arriving-in-rome).",
+        "**Demander la bourse DiSCo.** La bourse régionale du Latium dépend des revenus de votre famille et propose aussi des places en résidence. Voir [comment demander la bourse DiSCo Lazio](article:lazio-disco-scholarship).",
+        "**Obtenir le visa et bloquer l'argent.** Le centre de visas vous envoie une date par e-mail, et vous devez justifier une somme bloquée. Voir [comment obtenir le visa étudiant pour l'Italie depuis la Tunisie](article:italy-student-visa).",
+        "**Arriver à Rome.** Dans les 8 jours ouvrables, vous demandez votre permis de séjour, puis vous finalisez l'inscription à l'université. Voir [comment demander votre permis de séjour dès vos premières semaines à Rome](article:arriving-in-rome).",
         "**Trouver un logement.** Résidences DiSCo, services logement des universités et chambres privées. Voir [le logement étudiant à Rome](article:student-housing-rome).",
       ],
     },
 
-    { type: "h2", id: "why-start-now", text: "3. Pourquoi la rentrée 2027/28 se prépare dès maintenant" },
+    { type: "h2", id: "why-start-now", text: "3. Pourquoi commencer dès maintenant pour la rentrée 2027/28 ?" },
     {
       type: "p",
-      text: "Toutes les dates de 2026/27 sont passées : l'année à viser est donc **2027/28**. Le ministère italien de l'Université (MUR) a déjà publié les règles pour cette année : une seule circulaire couvre 2026/27 et 2027/28.",
+      text: "Il faut commencer maintenant, car toutes les dates de 2026/27 sont passées et la préparation de **2027/28** prend des mois. Le ministère italien de l'Université (MUR) a déjà publié les règles pour 2027/28 : une seule circulaire du MUR couvre 2026/27 et 2027/28.",
     },
     {
       type: "ul",
       items: [
-        "**Les documents sont longs.** Toute la chaîne, jusqu'à la Dichiarazione di Valore ou l'attestation CIMEA, peut prendre plusieurs mois.",
+        "**Les documents sont longs.** Toute la chaîne des documents pour un diplôme tunisien, jusqu'à la Dichiarazione di Valore ou l'attestation CIMEA, peut prendre plusieurs mois.",
         "**Certaines candidatures sont déjà ouvertes.** Les candidatures LUISS pour 2027/28 vont d'octobre 2026 au **10 février 2027**.",
-        "**Sapienza ouvre tôt.** Sa fenêtre 2026/27 allait du 22 décembre 2025 au 15 mai 2026 : celle de 2027/28 devrait ouvrir vers décembre 2026 (vérifiez l'appel 2027/28).",
-        "**Les places sont plafonnées.** Depuis 2026/27, chaque université ne peut valider qu'un nombre limité de préinscriptions étrangères ; Universitaly bloque les suivantes.",
+        "**Sapienza ouvre tôt.** La fenêtre 2026/27 de Sapienza allait du 22 décembre 2025 au 15 mai 2026 : celle de 2027/28 devrait ouvrir vers décembre 2026 (vérifiez l'appel 2027/28).",
+        "**Les places sont plafonnées.** Depuis 2026/27, chaque université italienne ne peut valider qu'un nombre limité de préinscriptions étrangères, et le portail Universitaly bloque les suivantes.",
       ],
     },
 
     { type: "h2", id: "calendar", text: "4. Calendrier des dates limites 2027/28" },
+    {
+      type: "p",
+      text: "Le calendrier 2027/28 des étudiants tunisiens va d'octobre 2026, quand les candidatures LUISS ouvrent, au **31 octobre 2027**, date limite pour demander le visa d'études ; le permis de séjour et l'ISEEUP de DiSCo suivent après l'arrivée.",
+    },
     {
       type: "table",
       caption: "Les principales dates de l'année universitaire 2027/28. Les dates « prévues » suivent le calendrier 2026/27 ; vérifiez l'appel 2027/28.",
@@ -103,7 +110,11 @@ export const fr: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "costs", text: "5. Combien coûtent des études à Rome" },
+    { type: "h2", id: "costs", text: "5. Combien coûtent des études à Rome ?" },
+    {
+      type: "p",
+      text: "Les frais d'inscription à Rome vont de 456 EUR en première année à Sapienza (tranche la plus basse) à 15 000 EUR par an à la LUISS, plus les coûts ponctuels de candidature, de documents, du visa d'études et du permis de séjour, et la somme bloquée de 10 179,85 EUR, qui reste votre argent.",
+    },
     {
       type: "table",
       caption: "Les principaux coûts, avec l'année de chaque montant. Les montants peuvent changer ; vérifiez chaque page officielle avant de payer.",
@@ -129,13 +140,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les montants de Sapienza et de Tor Vergata sont des forfaits pour les étudiants tunisiens (Tor Vergata : sauf si vous avez un ISEE parificato). Vérifiez auprès de votre université.",
+      text: "Les montants de Sapienza et de Tor Vergata sont des forfaits pour les étudiants tunisiens (Tor Vergata : sauf si vous avez un ISEE parificato). Vérifiez auprès de votre université, et comparez frais et conditions d'accès dans [les cinq universités de Rome côte à côte](article:apply-university-rome#compare-universities).",
     },
 
-    { type: "h2", id: "money-plan", text: "6. Comment votre argent arrive en Italie" },
+    { type: "h2", id: "money-plan", text: "6. Comment votre argent arrive-t-il en Italie ?" },
     {
       type: "p",
-      text: "L'argent passe en trois temps, selon la circulaire 2025-10 de la Banque centrale de Tunisie, via une seule banque tunisienne par année universitaire.",
+      text: "L'argent envoyé de Tunisie arrive à l'étudiant en Italie en trois temps, selon la circulaire 2025-10 de la Banque centrale de Tunisie, via une seule banque tunisienne par année universitaire.",
     },
     {
       type: "ul",
@@ -147,16 +158,20 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Si vous y avez droit, la bourse DiSCo ajoute une allocation annuelle et des repas gratuits. Voir [qui peut obtenir la bourse DiSCo](article:lazio-disco-scholarship#eligibility).",
+      text: "La bourse DiSCo Lazio ajoute une allocation annuelle et des repas gratuits pour les étudiants qui y ont droit. Voir [qui a droit à la bourse DiSCo](article:lazio-disco-scholarship#eligibility).",
     },
 
-    { type: "h2", id: "this-month", text: "7. Que faire ce mois-ci (octobre à décembre 2026)" },
+    { type: "h2", id: "this-month", text: "7. Que faire d'octobre à décembre 2026 ?" },
+    {
+      type: "p",
+      text: "D'octobre à décembre 2026, un étudiant tunisien qui vise 2027/28 doit choisir ses formations, obtenir un certificat de langue, commencer à légaliser ses documents et décider pour la LUISS avant sa date limite du 10 février 2027.",
+    },
     {
       type: "ol",
       items: [
         "**Choisissez deux ou trois formations.** Cherchez sur [Universitaly](https://www.universitaly.it/cerca-corsi) et notez la fenêtre et les frais de chaque université.",
         "**Obtenez votre certificat de langue.** Formations en italien : l'université vous teste au niveau B2, sauf si vous avez déjà un certificat d'italien B2. Formations en anglais : un certificat d'anglais B2.",
-        "**Commencez à légaliser vos documents.** Débutez par l'authentification de votre bac et de vos relevés de notes au ministère, première étape de la chaîne.",
+        "**Commencez à légaliser vos documents.** Débutez par l'authentification de votre bac et de vos relevés de notes au ministère, première étape de [la légalisation de votre diplôme tunisien pour l'Italie](article:documents-for-italy#legalise-documents).",
         "**Décidez pour la LUISS.** Si elle est sur votre liste, candidatez sur la [page d'admission LUISS](https://www.luiss.it/en/orientation-and-admissions/admission-procedures/admission-bachelors-and-masters-degree-programs-law/non-eu-students) avant le 10 février 2027.",
       ],
     },
@@ -168,23 +183,23 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "Un étudiant tunisien peut-il étudier gratuitement en Italie ?",
-          a: "Pas complètement. Les frais d'inscription publics peuvent être bas (Sapienza demande un forfait de 300 EUR par an pour la tranche de la Tunisie, plus 140 EUR de taxe régionale et un timbre de 16 EUR) et la bourse DiSCo peut couvrir le coût de la vie si vous y avez droit, mais vous payez quand même les frais de candidature, de documents et de visa, et vous devez justifier la somme bloquée pour le visa.",
+          a: "Non, pas complètement. Les frais d'inscription publics à Rome peuvent être bas : Sapienza demande un forfait de 300 EUR par an pour la tranche de la Tunisie, plus 140 EUR de taxe régionale et un timbre de 16 EUR. La bourse DiSCo Lazio peut couvrir le coût de la vie pour les étudiants qui y ont droit, mais chaque étudiant tunisien paie quand même les frais de candidature, de documents et de visa, et doit justifier la somme bloquée pour le visa.",
         },
         {
           q: "Combien d'argent faut-il pour étudier à Rome ?",
-          a: "Pour le visa, vous devez justifier 10 179,85 EUR (montant 2026/27), bloqués dans votre banque. En plus, prévoyez les frais de candidature, les documents, le visa (50 EUR + 68,300 TND), le permis de séjour (environ 116 EUR) et les frais d'inscription, de 300 à 15 000 EUR par an selon l'université.",
+          a: "Il faut 10 179,85 EUR bloqués dans votre banque pour le visa d'études (montant 2026/27), plus vos frais. En plus de la somme bloquée, prévoyez les frais de candidature, les documents, le visa (50 EUR + 68,300 TND), le permis de séjour (environ 116 EUR) et les frais d'inscription, de 300 à 15 000 EUR par an selon l'université à Rome.",
         },
         {
           q: "Quand commencer à préparer ses études en Italie pour 2027/28 ?",
-          a: "Maintenant, à l'automne 2026. Les documents prennent des mois, les candidatures LUISS ferment le 10 février 2027 et la fenêtre de Sapienza devrait ouvrir vers décembre 2026.",
+          a: "Commencez maintenant, à l'automne 2026. La chaîne des documents pour un diplôme tunisien, jusqu'à la Dichiarazione di Valore ou l'attestation CIMEA, peut prendre plusieurs mois. Les candidatures LUISS pour 2027/28 ferment le 10 février 2027 et la fenêtre de candidature de Sapienza devrait ouvrir vers décembre 2026 : attendre le printemps 2027, c'est risquer de manquer les premières dates.",
         },
         {
           q: "Faut-il parler italien pour étudier à Rome ?",
-          a: "Seulement pour les formations en italien, où il faut le niveau B2. Beaucoup de Masters et quelques Licences sont enseignés en anglais ; pour celles-ci, il faut un certificat d'anglais B2.",
+          a: "Non, seulement pour les formations en italien. Les formations en italien exigent le niveau B2, et l'université vous teste sauf si vous avez déjà un certificat d'italien B2. Beaucoup de Masters et quelques Licences à Rome sont enseignés en anglais, et ceux-ci demandent plutôt un certificat d'anglais B2. Vérifiez la langue exigée par chaque formation avant de candidater.",
         },
         {
           q: "Ce guide couvre-t-il les études de médecine en Italie ?",
-          a: "Pas encore. L'Italie a réformé l'accès à la médecine en 2025 et les règles pour les étudiants internationaux ne sont pas publiées. Nous les ajouterons dès qu'elles seront officielles.",
+          a: "Non, pas encore. L'Italie a réformé l'accès à la médecine en 2025 et les règles pour les étudiants internationaux ne sont pas publiées. Ce guide d'études ajoutera la médecine dès que ces règles seront officielles ; pour l'instant, il couvre la Licence, le Master et le doctorat à Sapienza, Tor Vergata, Roma Tre, LUISS et LUMSA.",
         },
       ],
     },
