@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "carte-technologique-internationale",
   title: "Carte technologique internationale (CTI) en Tunisie",
-  subtitle: "Plafond, documents, usages et renouvellement",
-  seoTitle: "Carte technologique internationale en Tunisie : plafond",
+  subtitle: "Plafond, documents, demande, usages autorisés et renouvellement",
+  seoTitle: "Carte technologique internationale en Tunisie : guide 2026",
   metaDescription:
-    "La CTI donne aux résidents tunisiens bacheliers 1 000 TND par an (environ 297 EUR) pour payer en ligne. Documents, banque ou La Poste, usages et renouvellement.",
+    "Obtenir la carte technologique internationale (CTI) : 1 000 TND par an (environ 297 EUR) en ligne. Documents, banque ou La Poste, usages et renouvellement.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["carte technologique internationale", "carte technologique Tunisie", "plafond carte technologique", "CTI La Poste", "carte technologique 1000 dinars", "payer en ligne en devises Tunisie"],
+  keywords: ["carte technologique internationale", "carte technologique internationale Tunisie (CTI)", "plafond carte technologique 1000 dinars", "obtenir la carte technologique", "CTI La Poste", "renouveler la carte technologique"],
   summary:
-    "La carte technologique internationale (CTI) permet à un résident tunisien titulaire au moins du baccalauréat de dépenser en ligne jusqu’à 1 000 TND par année civile (environ 297 EUR), selon la circulaire BCT 2016-09. Vous la demandez à votre banque ou à La Poste avec votre CIN, une copie certifiée de votre diplôme et une déclaration sur l’honneur, et vous la renouvelez chaque année avec votre déclaration d’impôts visée.",
+    "La carte technologique internationale (CTI) permet à un résident tunisien titulaire au moins du baccalauréat de dépenser en ligne jusqu’à 1 000 TND par année civile (environ 297 EUR), selon la circulaire BCT 2016-09, un plafond toujours en vigueur en octobre 2026. Vous la demandez à votre banque ou à La Poste avec votre CIN, une copie certifiée de votre diplôme et une déclaration sur l’honneur, et vous la renouvelez chaque année avec votre déclaration d’impôts visée.",
   body: [
     {
       type: "callout",
@@ -26,13 +26,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Elle a été pensée pour des services en ligne (formations, logiciels, abonnements), pas pour les frais de scolarité. C’est la partie 2 de notre [guide pour payer ses frais universitaires italiens en Tunisie](article:international-card-tunisia), qui compare toutes les solutions.",
+      text: "La CTI a été pensée pour des services en ligne (formations, logiciels, abonnements), pas pour les frais de scolarité. Cet article est la partie 2 de notre [guide pour payer ses frais d’inscription en Italie depuis la Tunisie](article:international-card-tunisia), qui compare toutes les solutions.",
     },
 
-    { type: "h2", id: "what-it-is", text: "1. Qu’est-ce que la carte technologique internationale ?" },
+    { type: "h2", id: "what-it-is", text: "1. Qu’est-ce que la carte technologique internationale (CTI) ?" },
     {
       type: "p",
-      text: "La CTI est une carte internationale nominative réservée à certains paiements en ligne. Sa base légale est **l’article 15 de la circulaire BCT 2016-09** ([Banque Centrale de Tunisie](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf)). L’allocation s’utilise en une ou plusieurs fois et vaut pour une année civile.",
+      text: "La carte technologique internationale (CTI) est une carte internationale nominative réservée à certains paiements en ligne, et sa base légale est **l’article 15 de la circulaire BCT 2016-09** ([Banque Centrale de Tunisie](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf)). L’allocation de la CTI s’utilise en une ou plusieurs fois et vaut pour une année civile.",
     },
     {
       type: "figure",
@@ -44,18 +44,18 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Le réseau (Visa ou Mastercard) dépend de la banque : aucune page d’émetteur consultée ne le précise, demandez-le au guichet. BTK Bank et La Poste présentent leur carte comme prépayée : vous chargez des dinars et la carte paie en devises jusqu’à votre plafond annuel.",
+      text: "Le réseau de la CTI (Visa ou Mastercard) dépend de la banque émettrice : aucune page d’émetteur consultée ne le précise, demandez-le au guichet. BTK Bank et La Poste présentent leur carte comme prépayée : vous chargez des dinars et la carte paie en devises jusqu’à votre plafond annuel.",
     },
 
-    { type: "h2", id: "limit-in-euros", text: "2. Le plafond de 1 000 TND, converti en euros" },
+    { type: "h2", id: "limit-in-euros", text: "2. Combien valent les 1 000 TND de la CTI en euros ?" },
+    {
+      type: "p",
+      text: "Le plafond annuel de 1 000 TND de la CTI vaut environ **297 EUR** au cours de référence de la BCT du 7 octobre 2026 (1 EUR = 3,3671 TND). Votre banque applique son propre cours et ses frais : comptez un peu moins.",
+    },
     {
       type: "fees",
       title: "L’allocation annuelle de la carte",
       feeIds: ["cti-allowance"],
-    },
-    {
-      type: "p",
-      text: "Au cours de référence de la BCT du 7 octobre 2026 (1 EUR = 3,3671 TND), 1 000 TND font environ **297 EUR**. Votre banque applique son propre cours et ses frais : comptez un peu moins.",
     },
     {
       type: "callout",
@@ -65,10 +65,14 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Si vous avez besoin de plus, ou si vous ne remplissez pas les conditions, l’article 17 permet de déposer une demande auprès de la BCT sur formulaire F2, avec l’avis favorable du ministère des Technologies de la communication.",
+      text: "Si vous avez besoin de plus de 1 000 TND, ou si vous ne remplissez pas les conditions, l’article 17 de la circulaire 2016-09 permet de déposer une demande auprès de la BCT sur formulaire F2, avec l’avis favorable du ministère des Technologies de la communication.",
     },
 
-    { type: "h2", id: "issuers", text: "3. Les banques et La Poste qui délivrent la carte" },
+    { type: "h2", id: "issuers", text: "3. Quelles banques et quels bureaux de La Poste délivrent la CTI ?" },
+    {
+      type: "p",
+      text: "Banque Zitouna, BTK Bank, Banque de Tunisie et La Poste Tunisienne publient des pages officielles sur la CTI ; d’autres banques délivrent aussi la carte, souvent sans page produit en ligne, et chaque émetteur fixe ses propres frais et filtres marchands.",
+    },
     {
       type: "table",
       caption: "Ce que les émetteurs publient sur la CTI (pages consultées le 10 octobre 2026). Les frais absents n’ont pas pu être vérifiés : demandez à votre banque.",
@@ -95,14 +99,18 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Le point essentiel : **chaque émetteur applique ses propres filtres**. Avant de choisir, demandez à l’agence quels types de marchands la carte accepte.",
+      text: "Le point essentiel du tableau des émetteurs : **chaque émetteur de la CTI applique ses propres filtres**. Avant de choisir, demandez à l’agence quels types de marchands la carte accepte.",
     },
 
-    { type: "h2", id: "how-to-apply", text: "4. Demander la CTI, étape par étape" },
+    { type: "h2", id: "how-to-apply", text: "4. Comment demander la CTI, étape par étape ?" },
+    {
+      type: "p",
+      text: "Vous demandez la CTI à votre banque ou à La Poste avec votre CIN, une copie certifiée de votre diplôme et une déclaration sur l’honneur signée au guichet, puis vous activez les paiements en ligne avant votre première échéance.",
+    },
     { type: "h3", id: "step-eligibility", text: "Étape 1 : vérifiez que vous y avez droit" },
     {
       type: "p",
-      text: "Il faut être **de nationalité tunisienne et résident en Tunisie**, avec un diplôme au moins équivalent au **baccalauréat** (article 15). Une seule allocation CTI par personne : impossible d’en avoir une dans deux banques.",
+      text: "Pour obtenir la CTI, il faut être **de nationalité tunisienne et résident en Tunisie**, avec un diplôme au moins équivalent au **baccalauréat** (article 15). Une seule allocation CTI par personne : impossible d’en avoir une dans deux banques.",
     },
     { type: "h3", id: "step-documents", text: "Étape 2 : préparez les documents" },
     {
@@ -122,7 +130,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "step-post-office", text: "Étape 3b : ou à La Poste" },
     {
       type: "p",
-      text: "Il vous faut un compte courant postal (CCP) actif, votre CIN et une copie certifiée de votre diplôme. La procédure est décrite sur [idaraty.tn](https://idaraty.tn/fr/procedures/obtenir-la-carte-technologique-internationale-la-poste-personne-physique). Vous chargez la carte en dinars et la gérez sur e-dinar.",
+      text: "La Poste Tunisienne demande un compte courant postal (CCP) actif, votre CIN et une copie certifiée de votre diplôme. La procédure est décrite sur [idaraty.tn](https://idaraty.tn/fr/procedures/obtenir-la-carte-technologique-internationale-la-poste-personne-physique). Vous chargez la carte de La Poste en dinars et la gérez sur e-dinar.",
     },
     {
       type: "figure",
@@ -139,13 +147,13 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "step-activate", text: "Étape 4 : activez les paiements en ligne" },
     {
       type: "p",
-      text: "Vérifiez que la carte est activée pour les paiements en ligne et internationaux, et que vous recevez bien le code de confirmation (OTP) sur votre téléphone. Faites-le avant une échéance, pas le jour même.",
+      text: "Vérifiez que la CTI est activée pour les paiements en ligne et internationaux, et que vous recevez bien le code de confirmation (OTP) sur votre téléphone. Faites-le avant une échéance, pas le jour même.",
     },
 
-    { type: "h2", id: "allowed-uses", text: "5. Ce que la carte peut légalement payer" },
+    { type: "h2", id: "allowed-uses", text: "5. Que peut payer légalement la carte technologique ?" },
     {
       type: "p",
-      text: "L’annexe 1 de la circulaire 2016-09 liste les paiements en ligne autorisés :",
+      text: "La CTI ne peut légalement payer que les services en ligne listés à l’annexe 1 de la circulaire BCT 2016-09 :",
     },
     {
       type: "ul",
@@ -159,7 +167,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "La déclaration sur l’honneur exclut **les paris, les frais de séjour, les achats de biens** et les sites prohibés.",
+      text: "La déclaration sur l’honneur de la CTI exclut **les paris, les frais de séjour, les achats de biens** et les sites prohibés.",
     },
     {
       type: "callout",
@@ -168,7 +176,11 @@ export const fr: ArticleTranslation = {
       text: "Les frais de scolarité, les avis pagoPA et les frais de visa ne figurent pas dans la liste. « Formations en ligne » et « sites éducatifs » sont les catégories les plus proches, mais rien ne dit qu’elles couvrent ces frais, et les banques peuvent bloquer certains marchands. Interrogez votre banque avant de payer et conservez chaque reçu et facture.",
     },
 
-    { type: "h2", id: "paying-italian-fees", text: "6. Les frais d’études italiens face au plafond de 1 000 TND" },
+    { type: "h2", id: "paying-italian-fees", text: "6. Jusqu’où va la CTI face aux frais de première année à Rome ?" },
+    {
+      type: "p",
+      text: "L’allocation de 1 000 TND de la CTI ne couvre pas les quatre frais courants de première année à Rome : ils font 486 EUR, plus que toute l’allocation annuelle, et l’attestation CIMEA seule (300 EUR) dépasse déjà 1 000 TND.",
+    },
     {
       type: "fees",
       title: "Frais courants de première année à Rome, en dinars",
@@ -176,10 +188,6 @@ export const fr: ArticleTranslation = {
       total: true,
       tnd: true,
       hub: true,
-    },
-    {
-      type: "p",
-      text: "Ces quatre frais font 486 EUR, plus que toute l’allocation annuelle. L’attestation CIMEA seule (300 EUR) dépasse déjà 1 000 TND.",
     },
     {
       type: "table",
@@ -193,13 +201,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Pour les frais de candidature, de concours et d’examen de dossier, votre banque peut faire un virement sur présentation de la facture : voir [la solution du virement bancaire](article:international-card-tunisia#bank-transfer).",
+      text: "Pour les frais de candidature, de concours et d’examen de dossier, une banque tunisienne peut faire un virement sur présentation de la facture : voir [comment payer ses frais italiens par virement depuis une banque tunisienne](article:international-card-tunisia#bank-transfer).",
     },
 
-    { type: "h2", id: "paypal-link", text: "7. Associer la CTI à un compte PayPal tunisien" },
+    { type: "h2", id: "paypal-link", text: "7. Peut-on associer la CTI à un compte PayPal tunisien ?" },
     {
       type: "p",
-      text: "Un compte PayPal ouvert en Tunisie peut **envoyer des paiements**, alimentés par une carte internationale associée comme la CTI. La réception d’argent n’est en général pas disponible. PayPal ajoute environ 4 % quand il convertit la devise, et pagoPA facture 1,50 à 2,50 EUR pour un paiement PayPal.",
+      text: "Oui : un compte PayPal ouvert en Tunisie peut **envoyer des paiements** alimentés par une carte internationale associée comme la CTI. La réception d’argent n’est en général pas disponible. PayPal ajoute environ 4 % quand il convertit la devise, et pagoPA facture 1,50 à 2,50 EUR pour un paiement PayPal.",
     },
     {
       type: "figure",
@@ -215,13 +223,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Si votre banque filtre les marchands (comme Zitouna), PayPal peut être refusé : demandez d’abord. La méthode complète est dans [comment payer un avis pagoPA avec PayPal](article:pay-pagopa-from-abroad#pay-with-paypal).",
+      text: "Si la banque émettrice filtre les marchands, comme Banque Zitouna, un paiement PayPal avec la CTI peut être refusé : demandez d’abord à la banque. La méthode complète est dans [comment payer un avis pagoPA avec PayPal](article:pay-pagopa-from-abroad#pay-with-paypal).",
     },
 
-    { type: "h2", id: "renewal", text: "8. Renouveler la carte à chaque année civile" },
+    { type: "h2", id: "renewal", text: "8. Comment renouveler la CTI à chaque année civile ?" },
     {
       type: "p",
-      text: "L’allocation s’arrête au 31 décembre. Pour la renouveler, adressez une demande écrite à **la même banque**, avec **la déclaration d’impôts de l’année écoulée visée par l’administration fiscale** (article 18).",
+      text: "Pour renouveler la CTI, adressez une demande écrite à **la même banque**, avec **la déclaration d’impôts de l’année écoulée visée par l’administration fiscale** (article 18 de la circulaire 2016-09). L’allocation annuelle s’arrête au 31 décembre.",
     },
     {
       type: "ul",
@@ -233,13 +241,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les dinars non utilisés ne sont pas reportés : prévoyez les gros paiements tôt dans l’année.",
+      text: "Les dinars non utilisés sur la CTI ne sont pas reportés sur l’année suivante : prévoyez les gros paiements tôt dans l’année.",
     },
 
-    { type: "h2", id: "card-safety", text: "9. Gardez votre carte pour vous" },
+    { type: "h2", id: "card-safety", text: "9. Peut-on prêter ou vendre sa carte technologique ?" },
     {
       type: "p",
-      text: "Ne prêtez ni ne louez jamais votre CTI, et ne communiquez jamais son CVC2 ni le code OTP : partager la carte viole aussi la déclaration sur l’honneur que vous avez signée. Le 30 mai 2024, la BCT a averti que les cartes internationales vendues sur les réseaux sociaux sont illégales et dangereuses. Pour en savoir plus : [comment éviter les arnaques au paiement](article:international-card-tunisia#payment-scams).",
+      text: "Non : ne prêtez ni ne louez jamais votre CTI, et ne communiquez jamais son CVC2 ni le code OTP : partager la carte viole aussi la déclaration sur l’honneur que vous avez signée. Le 30 mai 2024, la BCT a averti que les cartes internationales vendues sur les réseaux sociaux sont illégales et dangereuses. Pour en savoir plus : [les risques des cartes internationales achetées sur les réseaux sociaux](article:international-card-tunisia#payment-scams).",
     },
 
     {
@@ -249,27 +257,27 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "Quel est le plafond annuel de la CTI en 2026 ?",
-          a: "1 000 TND par année civile pour un particulier, soit environ 297 EUR au cours BCT du 7 octobre 2026. Aucune circulaire BCT le relevant n’a été trouvée en octobre 2026.",
+          a: "1 000 TND par année civile pour un particulier, soit environ 297 EUR au cours de référence BCT du 7 octobre 2026. L’article 15 de la circulaire BCT 2016-09 fixe ce plafond, et aucune circulaire BCT le relevant n’a été trouvée en octobre 2026. Votre banque applique son propre cours et ses frais : le montant réellement dépensable en euros est un peu plus bas.",
         },
         {
           q: "Le plafond de la carte technologique est-il passé à 10 000 TND ?",
-          a: "Non. 10 000 TND, c’est l’allocation des entreprises résidentes, et 100 000 TND celle des entreprises labellisées Startup ; les particuliers restent à 1 000 TND.",
+          a: "Non. 10 000 TND par an, c’est l’allocation des entreprises résidentes (article 14 de la circulaire BCT 2016-09), et les entreprises labellisées Startup ont droit à 100 000 TND (circulaire 2019-02). Les particuliers et les étudiants restent à 1 000 TND : des hausses ont été annoncées en 2022 et en mai 2025, mais aucune circulaire modifiant l’article 15 n’a été trouvée en octobre 2026.",
         },
         {
           q: "Quels documents faut-il pour la carte technologique ?",
-          a: "Une copie de votre CIN, une copie certifiée de votre baccalauréat ou d’un diplôme supérieur, et la déclaration sur l’honneur signée à la banque. La Poste exige aussi un CCP actif.",
+          a: "Il faut une copie de votre CIN, une copie certifiée de votre baccalauréat ou d’un diplôme supérieur, et la déclaration sur l’honneur (annexe 3 de la circulaire BCT 2016-09) signée à la banque. La Poste Tunisienne exige aussi un compte courant postal (CCP) actif. Une fois la carte délivrée, gardez la facture de chaque paiement.",
         },
         {
           q: "Vaut-il mieux prendre la CTI à La Poste ou dans une banque ?",
-          a: "Les deux donnent la même allocation de 1 000 TND. La Poste demande un CCP et va vite (24 heures environ, renouvellement à 3 TND) ; les banques filtrent les marchands différemment, demandez quels paiements elles acceptent.",
+          a: "Aucune ne donne plus : La Poste et les banques accordent la même allocation de 1 000 TND. La Poste Tunisienne demande un CCP actif, délivre la carte en 24 heures environ et facture 3 TND le renouvellement. Les banques filtrent les marchands différemment (Banque Zitouna limite les paiements en ligne par code marchand) : demandez à chaque émetteur quels paiements sa carte accepte.",
         },
         {
           q: "Puis-je payer mes frais de scolarité à Sapienza avec la CTI ?",
-          a: "Ce n’est pas clair : les frais de scolarité ne figurent pas dans la liste officielle des usages autorisés, et les banques peuvent les bloquer. La voie plus claire est le virement bancaire dans le cadre de votre dossier études ; demandez d’abord à votre banque.",
+          a: "Pas clairement. Les frais de scolarité ne figurent pas dans la liste officielle des usages autorisés de la CTI (annexe 1 de la circulaire BCT 2016-09), et les banques tunisiennes peuvent bloquer les marchands universitaires. La voie plus claire pour Sapienza est le virement bancaire dans le cadre de votre dossier études. Demandez d’abord à votre banque et gardez chaque reçu et facture.",
         },
         {
           q: "Que se passe-t-il quand mes 1 000 TND sont épuisés ?",
-          a: "La carte ne paie plus jusqu’à la nouvelle année civile. Vous pouvez demander plus à la BCT sur formulaire F2, ou passer par une autre solution du [guide des paiements](article:international-card-tunisia#which-method).",
+          a: "La CTI ne paie plus jusqu’à la nouvelle année civile, et les dinars non utilisés ne sont jamais reportés. Vous pouvez demander un montant plus élevé à la BCT sur formulaire F2 (article 17), avec l’avis favorable du ministère des Technologies de la communication, ou passer par une autre solution de la [comparaison des moyens de paiement pour chaque frais italien](article:international-card-tunisia#which-method).",
         },
       ],
     },

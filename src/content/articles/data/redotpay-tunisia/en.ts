@@ -6,13 +6,13 @@ export const en: ArticleTranslation = {
   slug: "redotpay-tunisia",
   title: "RedotPay in Tunisia",
   subtitle: "Card Fees, P2P Top-Up, Safe Wallet Transfers and the Legal Position",
-  seoTitle: "RedotPay in Tunisia: Card Fees, P2P Top-Up and Legal Risks",
+  seoTitle: "RedotPay in Tunisia 2026: Fees, P2P Top-Up and Legal Risks",
   metaDescription:
-    "RedotPay explained for Tunisians: card fees and limits, topping up with RedotPay or Binance P2P, sending USDT safely and the legal position in Tunisia.",
+    "RedotPay in Tunisia explained: Visa card fees and limits, P2P top-up via RedotPay or Binance, sending USDT safely and what the Tunisian exchange code says.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["RedotPay Tunisia", "RedotPay card fees", "top up RedotPay with P2P", "Binance P2P explained", "crypto card Tunisia legal", "send USDT safely"],
+  keywords: ["RedotPay Tunisia", "RedotPay card fees", "top up RedotPay with P2P", "is RedotPay legal in Tunisia", "top up RedotPay from Binance P2P", "send USDT to RedotPay safely"],
   summary:
-    "RedotPay is a Hong Kong crypto card service (Visa) whose official pages do not exclude Tunisian citizens. This guide explains the card fees and limits, how to top it up through RedotPay's own P2P marketplace or Binance P2P, how it compares with the technology card and how to send stablecoins without losing them. It ends with the legal position: no Tunisian text authorises residents to buy or hold crypto, so residents of Tunisia are legally exposed.",
+    "RedotPay works technically in Tunisia as of October 2026: the Hong Kong crypto Visa card does not exclude Tunisian citizens and can be topped up through RedotPay's own P2P Marketplace or Binance P2P. No Tunisian text authorises residents to buy or hold crypto, so residents of Tunisia who fund a RedotPay card are legally exposed under the exchange code (law 76-18).",
   body: [
     {
       type: "callout",
@@ -27,13 +27,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "To compare every way of paying Italian fees from Tunisia, see our [guide to paying Italian fees with an international card](article:international-card-tunisia).",
+      text: "RedotPay is only one of the five routes compared in [how to pay Italian university fees from Tunisia](article:international-card-tunisia), next to bank transfer, the technology card and PayPal on pagoPA.",
     },
 
     { type: "h2", id: "what-is-redotpay", text: "1. What is RedotPay and how does the card work?" },
     {
       type: "p",
-      text: "[RedotPay](ref:redotpay) describes itself as \"a fintech service provider and not a bank\" (RedotPay). You deposit crypto, mainly stablecoins such as USDT or USDC, and spend it with a **Visa** card (the network named in its Terms). The physical card also works at ATMs.",
+      text: "[RedotPay](ref:redotpay) is a crypto card service that describes itself as \"a fintech service provider and not a bank\" (RedotPay): you deposit crypto, mainly stablecoins such as USDT or USDC, and spend it with a **Visa** card (the network named in its Terms). The physical card also works at ATMs.",
     },
     {
       type: "figure",
@@ -55,14 +55,14 @@ export const en: ArticleTranslation = {
         "**Limits**: up to 100,000 USD per transaction; ATM withdrawals 3 a day and 30 a month, up to 3,750 USD a day on a USD card (lower in some countries) (fee and limit table).",
         "**KYC**: a photo of your original ID, a face scan, your home address and 4-5 questions on your job and source of funds (identity verification).",
         "**Who holds the money**: balances are held by Red Dot Trust Ltd, a Hong Kong trust company. The Terms say the account is not a bank account.",
-        "**Binance Pay**: Binance ended Binance Pay support on RedotPay on 3 April 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)), so a Binance top-up now goes through a normal crypto withdrawal (see the next section).",
+        "**Binance Pay**: Binance ended Binance Pay support on RedotPay on 3 April 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)), so a Binance top-up now goes through a normal crypto withdrawal to a RedotPay deposit address (see the P2P top-up section below).",
       ],
     },
 
-    { type: "h2", id: "p2p-explained", text: "2. How to top up RedotPay with P2P" },
+    { type: "h2", id: "p2p-explained", text: "2. How do you top up RedotPay with P2P?" },
     {
       type: "p",
-      text: "P2P (peer-to-peer) means buying crypto directly from another person on a platform. You pay them in local money, and the platform holds their crypto in **escrow** until they confirm your payment. There are two common ways to fill a [RedotPay](ref:redotpay) balance this way.",
+      text: "You can top up a [RedotPay](ref:redotpay) balance with P2P in two ways: buy USDT or USDC from another user in RedotPay's own P2P Marketplace, or buy on Binance P2P and withdraw the coins to your RedotPay deposit address. P2P (peer-to-peer) means buying crypto directly from another person on a platform: you pay them in local money, and the platform holds their crypto in **escrow** until they confirm your payment.",
     },
     {
       type: "figure",
@@ -75,12 +75,12 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "p2p-redotpay-marketplace", text: "Route 1: RedotPay's own P2P Marketplace" },
     {
       type: "p",
-      text: "Inside the RedotPay app, the [P2P Marketplace](https://www.redotpay.com/p2p-marketplace) lets you buy USDT or USDC from another user, and the crypto lands directly in your RedotPay balance, with no transfer between apps. The seller's crypto is held in escrow during the order. RedotPay states that its P2P \"does not guarantee the settlement\" of trades, so the same precautions as on any P2P platform apply.",
+      text: "Inside the RedotPay app, the P2P Marketplace lets you buy USDT or USDC from another user, and the crypto lands directly in your RedotPay balance, with no transfer between apps. The seller's crypto is held in escrow during the order. RedotPay states that its P2P \"does not guarantee the settlement\" of trades, so the same precautions as on any P2P platform apply.",
     },
     { type: "h3", id: "p2p-binance-deposit", text: "Route 2: Binance P2P, then a deposit to RedotPay" },
     {
       type: "p",
-      text: "Buy USDT or USDC on Binance P2P, then withdraw it from Binance to your **RedotPay deposit address**. In RedotPay, open the deposit page and pick the coin and network first; in Binance, choose exactly the **same coin and the same network** (for example USDT on Tron (TRC20) to a USDT TRC20 address). The network charges a withdrawal fee, and a mismatch can mean lost funds: follow the checks in section 4 and send a small test first.",
+      text: "Buy USDT or USDC on Binance P2P, then withdraw it from Binance to your **RedotPay deposit address**. In RedotPay, open the deposit page and pick the coin and network first; in Binance, choose exactly the **same coin and the same network** (for example USDT on Tron (TRC20) to a USDT TRC20 address). The network charges a withdrawal fee, and a mismatch can mean lost funds: follow the stablecoin safety steps below and send a small test first.",
     },
     { type: "h3", id: "p2p-order-steps", text: "How an escrow order works, step by step" },
     {
@@ -99,7 +99,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Signing up for RedotPay with the link below gives you its 5 USD welcome reward, and the referral code is applied automatically.",
+      text: "Signing up for RedotPay through the partner link below gives you its 5 USD welcome reward, and the promo code is applied automatically.",
     },
     { type: "referral", provider: "redotpay" },
     { type: "h3", id: "p2p-scams", text: "Typical P2P scams" },
@@ -116,7 +116,11 @@ export const en: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "compare", text: "3. RedotPay and the technology card compared" },
+    { type: "h2", id: "compare", text: "3. How does RedotPay compare with the technology card?" },
+    {
+      type: "p",
+      text: "RedotPay offers higher limits and is funded with crypto, while the Tunisian technology card (CTI) is the card the BCT authorises for residents of Tunisia, within a yearly allowance in dinars.",
+    },
     {
       type: "table",
       caption: "The two cards Tunisians ask about most, as of October 2026.",
@@ -137,10 +141,10 @@ export const en: ArticleTranslation = {
       text: "For residents of Tunisia, the card the BCT allows is the [international technology card](article:technology-card-tunisia), within [the uses it permits](article:technology-card-tunisia#allowed-uses).",
     },
 
-    { type: "h2", id: "wallet-safety", text: "4. Sending stablecoins safely, step by step" },
+    { type: "h2", id: "wallet-safety", text: "4. How do you send USDT or USDC without losing them?" },
     {
       type: "p",
-      text: "Crypto sends cannot be reversed. In the EU, Binance notes MiCA restrictions on unauthorised stablecoins, so USDC may be easier than USDT.",
+      text: "To send USDT or USDC safely, use the same coin and network on both sides, copy the address with the app's button, check it and send a small test first, because crypto transfers cannot be reversed. In the EU, Binance notes MiCA restrictions on unauthorised stablecoins, so USDC may be easier than USDT.",
     },
     { type: "h3", id: "step-coin-network", text: "Step 1: same coin and same network on both sides" },
     {
@@ -193,7 +197,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "legal-status", text: "6. Is a crypto card legal for residents of Tunisia?" },
     {
       type: "p",
-      text: "No Tunisian law or Central Bank (BCT) circular that expressly authorises buying crypto or stablecoins could be found. The exchange code ([law 76-18](https://www.finances.gov.tn/sites/default/files/17.pdf)) sets the frame:",
+      text: "No Tunisian text makes funding a crypto card legal for residents of Tunisia: no Tunisian law or Central Bank (BCT) circular that expressly authorises buying crypto or stablecoins could be found. The exchange code ([law 76-18](https://www.finances.gov.tn/sites/default/files/17.pdf)) sets the frame:",
     },
     {
       type: "ul",
@@ -234,27 +238,27 @@ export const en: ArticleTranslation = {
       items: [
         {
           q: "Does RedotPay work in Tunisia?",
-          a: "Technically yes: as of October 2026, Tunisia is not on RedotPay's unsupported-nationality or blocked-location lists. Legally, no Tunisian text authorises residents to fund a crypto card, so residents of Tunisia are exposed under the exchange code (see section 6).",
+          a: "Yes, technically: as of October 2026, Tunisia is not on RedotPay's unsupported-nationality or blocked-location lists, so Tunisian citizens can apply, although approval is not guaranteed. Legally, no Tunisian law or BCT circular authorises residents to fund a crypto card, so residents of Tunisia who use RedotPay are exposed under the Tunisian exchange code (law 76-18).",
         },
         {
           q: "How much does the RedotPay card cost?",
-          a: "10 USD for the virtual card and 100 USD for the physical card, with no monthly fee. Payments in another currency add 1.2%, and the crypto conversion adds 1%.",
+          a: "The RedotPay virtual card costs 10 USD and the physical card 100 USD, with no monthly or annual fee. Payments in another currency add 1.2%, and converting crypto to spend it adds 1%. RedotPay publishes the current fees and limits in the fee and limit table of its help centre, and they change over time, so check it before you order a card.",
         },
         {
           q: "How do I top up RedotPay with USDT from Binance?",
-          a: "Buy USDT on Binance P2P, then withdraw it to your RedotPay deposit address with exactly the same coin and network, after a small test transfer. You can also buy directly in RedotPay's own P2P Marketplace.",
+          a: "Buy USDT on Binance P2P, then withdraw it from Binance to your RedotPay deposit address using exactly the same coin and network on both sides, for example USDT on Tron (TRC20). Send a small test transfer first and wait for it to arrive. Binance no longer supports Binance Pay on RedotPay, and RedotPay's own P2P Marketplace lets you buy USDT directly inside the app instead.",
         },
         {
           q: "What is Binance P2P and is it safe?",
-          a: "It is a marketplace where you buy crypto from another user while Binance holds the seller's crypto in escrow. Escrow reduces the risk but does not stop fake payment proofs, third-party payments or off-platform scams.",
+          a: "Binance P2P is a marketplace where you buy crypto from another user while Binance holds the seller's crypto in escrow until the order is complete. Escrow reduces the risk, but it does not stop fake payment proofs, forged SMS, third-party payments or deals moved to Telegram or WhatsApp. Pay only from an account in your own name, and never cancel an order after paying: use the Appeal button instead.",
         },
         {
           q: "What happens if I send USDT on the wrong network?",
-          a: "The funds are usually lost. Binance's Terms say crypto sent to an incompatible address is lost, and any recovery attempt is paid and not guaranteed.",
+          a: "The funds are usually lost. Binance's Terms say crypto sent to an incompatible address is lost, and any recovery attempt is paid and not guaranteed. To avoid it, choose the coin and network in the receiving app first, pick exactly the same pair in the sending app, and send a small test transfer before the main amount.",
         },
         {
           q: "Can RedotPay freeze my account?",
-          a: "Yes. Its Terms allow it to freeze or close an account at any time without notice, and users report blocks during source-of-funds checks.",
+          a: "Yes. RedotPay's Terms allow it to freeze or close an account at any time, without notice, and no deposit insurance is mentioned. Users on Trustpilot report funds blocked for weeks during source-of-funds checks, so do not rely on a RedotPay balance alone for a payment with a deadline.",
         },
       ],
     },

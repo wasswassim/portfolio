@@ -6,13 +6,13 @@ export const fr: ArticleTranslation = {
   slug: "redotpay-tunisie",
   title: "RedotPay en Tunisie",
   subtitle: "Frais de la carte, recharge en P2P, transferts sûrs et cadre juridique",
-  seoTitle: "RedotPay en Tunisie : frais, recharge P2P et risques légaux",
+  seoTitle: "RedotPay Tunisie 2026 : frais, recharge P2P, risques légaux",
   metaDescription:
-    "RedotPay expliqué aux Tunisiens : frais et plafonds de la carte, recharge par le P2P de RedotPay ou de Binance, envoi sûr d'USDT et cadre juridique en Tunisie.",
+    "RedotPay en Tunisie expliqué : frais et plafonds de la carte Visa, recharge P2P via RedotPay ou Binance, envoi sûr d'USDT et ce que dit le code des changes.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["RedotPay Tunisie", "frais carte RedotPay", "recharger RedotPay en P2P", "Binance P2P expliqué", "carte crypto Tunisie légal", "envoyer des USDT en sécurité"],
+  keywords: ["RedotPay Tunisie", "frais carte RedotPay", "recharger RedotPay en P2P", "RedotPay légal en Tunisie", "recharger RedotPay avec Binance P2P", "envoyer des USDT vers RedotPay"],
   summary:
-    "RedotPay est un service de carte crypto (Visa) basé à Hong Kong dont les pages officielles n'excluent pas les citoyens tunisiens. Ce guide explique les frais et plafonds de la carte, la recharge par le P2P Marketplace de RedotPay ou par Binance P2P, la comparaison avec la carte technologique et l'envoi de stablecoins sans les perdre. Il se termine par le cadre juridique : aucun texte tunisien n'autorise les résidents à acheter ou détenir des cryptos, les résidents de Tunisie sont donc juridiquement exposés.",
+    "RedotPay fonctionne techniquement en Tunisie en octobre 2026 : cette carte crypto Visa de Hong Kong n'exclut pas les citoyens tunisiens et se recharge par le P2P Marketplace de RedotPay ou par Binance P2P. Aucun texte tunisien n'autorise les résidents à acheter ou détenir des cryptos : les résidents de Tunisie qui alimentent une carte RedotPay sont donc juridiquement exposés au regard du code des changes (loi 76-18).",
   body: [
     {
       type: "callout",
@@ -27,13 +27,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Pour comparer tous les moyens de payer les frais italiens depuis la Tunisie, voyez notre [guide pour payer les frais italiens avec une carte internationale](article:international-card-tunisia).",
+      text: "RedotPay n'est qu'une des cinq solutions comparées dans notre guide [pour payer ses frais d'université en Italie depuis la Tunisie](article:international-card-tunisia), à côté du virement bancaire, de la carte technologique et de PayPal sur pagoPA.",
     },
 
     { type: "h2", id: "what-is-redotpay", text: "1. Qu'est-ce que RedotPay et comment fonctionne la carte ?" },
     {
       type: "p",
-      text: "[RedotPay](ref:redotpay) se présente comme « un prestataire de services fintech et non une banque » (RedotPay). Vous déposez des cryptos, surtout des stablecoins comme l'USDT ou l'USDC, et vous les dépensez avec une carte **Visa** (le réseau cité dans ses conditions). La carte physique fonctionne aussi aux distributeurs.",
+      text: "[RedotPay](ref:redotpay) est un service de carte crypto qui se présente comme « un prestataire de services fintech et non une banque » (RedotPay) : vous déposez des cryptos, surtout des stablecoins comme l'USDT ou l'USDC, et vous les dépensez avec une carte **Visa** (le réseau cité dans ses conditions). La carte physique fonctionne aussi aux distributeurs.",
     },
     {
       type: "figure",
@@ -55,14 +55,14 @@ export const fr: ArticleTranslation = {
         "**Plafonds** : jusqu'à 100 000 USD par opération ; retraits 3 par jour et 30 par mois, jusqu'à 3 750 USD par jour sur une carte en USD (moins dans certains pays) (tableau des frais et plafonds).",
         "**KYC** : photo de votre pièce d'identité originale, scan du visage, adresse et 4 ou 5 questions sur votre métier et l'origine des fonds (vérification d'identité).",
         "**Qui garde l'argent** : les soldes sont détenus par Red Dot Trust Ltd, une société fiduciaire de Hong Kong. Les conditions précisent que le compte n'est pas un compte bancaire.",
-        "**Binance Pay** : Binance a mis fin à Binance Pay sur RedotPay le 3 avril 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)) ; une recharge depuis Binance passe donc désormais par un retrait crypto classique (voir la partie suivante).",
+        "**Binance Pay** : Binance a mis fin à Binance Pay sur RedotPay le 3 avril 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)) ; une recharge depuis Binance passe donc désormais par un retrait crypto classique vers une adresse de dépôt RedotPay (voir la partie sur la recharge en P2P ci-dessous).",
       ],
     },
 
-    { type: "h2", id: "p2p-explained", text: "2. Recharger RedotPay en P2P" },
+    { type: "h2", id: "p2p-explained", text: "2. Comment recharger RedotPay en P2P ?" },
     {
       type: "p",
-      text: "Le P2P (pair à pair) consiste à acheter des cryptos directement à une autre personne sur une plateforme. Vous la payez en monnaie locale, et la plateforme bloque ses cryptos sous **séquestre** (escrow) jusqu'à ce qu'elle confirme votre paiement. Il existe deux façons courantes d'alimenter un solde [RedotPay](ref:redotpay) de cette manière.",
+      text: "Un solde [RedotPay](ref:redotpay) se recharge en P2P de deux façons : acheter de l'USDT ou de l'USDC à un autre utilisateur sur le P2P Marketplace de RedotPay, ou acheter sur Binance P2P puis retirer les jetons vers votre adresse de dépôt RedotPay. Le P2P (pair à pair) consiste à acheter des cryptos directement à une autre personne sur une plateforme : vous la payez en monnaie locale, et la plateforme bloque ses cryptos sous **séquestre** (escrow) jusqu'à ce qu'elle confirme votre paiement.",
     },
     {
       type: "figure",
@@ -75,12 +75,12 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "p2p-redotpay-marketplace", text: "Voie 1 : le P2P Marketplace de RedotPay" },
     {
       type: "p",
-      text: "Dans l'application RedotPay, le [P2P Marketplace](https://www.redotpay.com/p2p-marketplace) permet d'acheter de l'USDT ou de l'USDC à un autre utilisateur ; les cryptos arrivent directement sur votre solde RedotPay, sans transfert entre applications. Les cryptos du vendeur restent sous séquestre pendant la commande. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges : les précautions habituelles du P2P s'appliquent donc.",
+      text: "Dans l'application RedotPay, le P2P Marketplace permet d'acheter de l'USDT ou de l'USDC à un autre utilisateur ; les cryptos arrivent directement sur votre solde RedotPay, sans transfert entre applications. Les cryptos du vendeur restent sous séquestre pendant la commande. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges : les précautions habituelles du P2P s'appliquent donc.",
     },
     { type: "h3", id: "p2p-binance-deposit", text: "Voie 2 : Binance P2P, puis un dépôt sur RedotPay" },
     {
       type: "p",
-      text: "Achetez de l'USDT ou de l'USDC sur Binance P2P, puis retirez-les de Binance vers votre **adresse de dépôt RedotPay**. Dans RedotPay, ouvrez la page de dépôt et choisissez d'abord le jeton et le réseau ; dans Binance, choisissez exactement **le même jeton et le même réseau** (par exemple de l'USDT sur Tron (TRC20) vers une adresse USDT TRC20). Le réseau prélève des frais de retrait, et une erreur de réseau peut faire perdre les fonds : suivez les vérifications de la partie 4 et envoyez d'abord un petit test.",
+      text: "Achetez de l'USDT ou de l'USDC sur Binance P2P, puis retirez-les de Binance vers votre **adresse de dépôt RedotPay**. Dans RedotPay, ouvrez la page de dépôt et choisissez d'abord le jeton et le réseau ; dans Binance, choisissez exactement **le même jeton et le même réseau** (par exemple de l'USDT sur Tron (TRC20) vers une adresse USDT TRC20). Le réseau prélève des frais de retrait, et une erreur de réseau peut faire perdre les fonds : suivez les étapes de sécurité pour les stablecoins ci-dessous et envoyez d'abord un petit test.",
     },
     { type: "h3", id: "p2p-order-steps", text: "Comment se déroule une commande avec séquestre" },
     {
@@ -99,7 +99,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "En vous inscrivant sur RedotPay avec le lien ci-dessous, vous recevez sa récompense de bienvenue de 5 USD, et le code de parrainage est appliqué automatiquement.",
+      text: "En vous inscrivant sur RedotPay avec le lien partenaire ci-dessous, vous recevez sa récompense de bienvenue de 5 USD, et le code promo est appliqué automatiquement.",
     },
     { type: "referral", provider: "redotpay" },
     { type: "h3", id: "p2p-scams", text: "Les arnaques P2P courantes" },
@@ -116,7 +116,11 @@ export const fr: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "compare", text: "3. RedotPay et la carte technologique comparés" },
+    { type: "h2", id: "compare", text: "3. Comment RedotPay se compare-t-il à la carte technologique ?" },
+    {
+      type: "p",
+      text: "RedotPay offre des plafonds plus élevés et se recharge en cryptos, alors que la carte technologique tunisienne (CTI) est la carte autorisée par la BCT pour les résidents de Tunisie, dans la limite d'une allocation annuelle en dinars.",
+    },
     {
       type: "table",
       caption: "Les deux cartes sur lesquelles les Tunisiens s'interrogent le plus, en octobre 2026.",
@@ -137,10 +141,10 @@ export const fr: ArticleTranslation = {
       text: "Pour un résident de Tunisie, la carte autorisée par la BCT est la [carte technologique internationale](article:technology-card-tunisia), dans la limite [des usages qu'elle permet](article:technology-card-tunisia#allowed-uses).",
     },
 
-    { type: "h2", id: "wallet-safety", text: "4. Envoyer des stablecoins en sécurité, pas à pas" },
+    { type: "h2", id: "wallet-safety", text: "4. Comment envoyer des USDT ou des USDC sans les perdre ?" },
     {
       type: "p",
-      text: "Un envoi crypto ne peut pas être annulé. Dans l'UE, Binance signale des restrictions MiCA sur les stablecoins non autorisés : l'USDC peut être plus simple que l'USDT.",
+      text: "Pour envoyer des USDT ou des USDC en sécurité, utilisez le même jeton et le même réseau des deux côtés, copiez l'adresse avec le bouton de l'application, vérifiez-la et envoyez d'abord un petit test, car un envoi crypto ne peut pas être annulé. Dans l'UE, Binance signale des restrictions MiCA sur les stablecoins non autorisés : l'USDC peut être plus simple que l'USDT.",
     },
     { type: "h3", id: "step-coin-network", text: "Étape 1 : même jeton et même réseau des deux côtés" },
     {
@@ -193,7 +197,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "legal-status", text: "6. Une carte crypto est-elle légale pour un résident de Tunisie ?" },
     {
       type: "p",
-      text: "Aucune loi ni circulaire de la Banque centrale (BCT) autorisant expressément l'achat de cryptos ou de stablecoins n'a pu être trouvée. Le code des changes ([loi 76-18](https://www.finances.gov.tn/sites/default/files/17.pdf)) fixe le cadre :",
+      text: "Aucun texte tunisien ne rend légale l'alimentation d'une carte crypto par un résident de Tunisie : aucune loi ni circulaire de la Banque centrale (BCT) autorisant expressément l'achat de cryptos ou de stablecoins n'a pu être trouvée. Le code des changes ([loi 76-18](https://www.finances.gov.tn/sites/default/files/17.pdf)) fixe le cadre :",
     },
     {
       type: "ul",
@@ -234,27 +238,27 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "RedotPay fonctionne-t-il en Tunisie ?",
-          a: "Techniquement oui : en octobre 2026, la Tunisie ne figure ni sur la liste des nationalités exclues ni sur celle des lieux bloqués par RedotPay. Juridiquement, aucun texte tunisien n'autorise un résident à alimenter une carte crypto : les résidents de Tunisie sont exposés au regard du code des changes (voir la partie 6).",
+          a: "Oui, techniquement : en octobre 2026, la Tunisie ne figure ni sur la liste des nationalités exclues ni sur celle des lieux bloqués par RedotPay, donc un citoyen tunisien peut s'inscrire, sans garantie de validation. Juridiquement, aucune loi ni circulaire de la BCT n'autorise un résident à alimenter une carte crypto : les résidents de Tunisie qui utilisent RedotPay sont exposés au regard du code des changes tunisien (loi 76-18).",
         },
         {
           q: "Combien coûte la carte RedotPay ?",
-          a: "10 USD pour la carte virtuelle et 100 USD pour la carte physique, sans frais mensuels. Un paiement dans une autre devise ajoute 1,2 %, et la conversion crypto 1 %.",
+          a: "La carte virtuelle RedotPay coûte 10 USD et la carte physique 100 USD, sans frais mensuels ni annuels. Un paiement dans une autre devise ajoute 1,2 %, et la conversion des cryptos pour payer ajoute 1 %. RedotPay publie les frais et plafonds à jour dans le tableau des frais et plafonds de son centre d'aide ; ils changent avec le temps, vérifiez-les avant de commander une carte.",
         },
         {
           q: "Comment recharger RedotPay avec des USDT achetés sur Binance ?",
-          a: "Achetez les USDT sur Binance P2P, puis retirez-les vers votre adresse de dépôt RedotPay avec exactement le même jeton et le même réseau, après un petit envoi test. Vous pouvez aussi acheter directement sur le P2P Marketplace de RedotPay.",
+          a: "Achetez les USDT sur Binance P2P, puis retirez-les de Binance vers votre adresse de dépôt RedotPay avec exactement le même jeton et le même réseau des deux côtés, par exemple de l'USDT sur Tron (TRC20). Envoyez d'abord un petit test et attendez qu'il arrive. Binance ne prend plus en charge Binance Pay sur RedotPay, et le P2P Marketplace de RedotPay permet aussi d'acheter des USDT directement dans l'application.",
         },
         {
           q: "Qu'est-ce que Binance P2P et est-ce sûr ?",
-          a: "C'est une place de marché où vous achetez des cryptos à un autre utilisateur pendant que Binance garde celles du vendeur sous séquestre. Le séquestre réduit le risque mais n'empêche pas les fausses preuves de paiement, les paiements par un tiers ni les arnaques hors plateforme.",
+          a: "Binance P2P est une place de marché où vous achetez des cryptos à un autre utilisateur pendant que Binance garde celles du vendeur sous séquestre jusqu'à la fin de la commande. Le séquestre réduit le risque mais n'empêche pas les fausses preuves de paiement, les faux SMS, les paiements par un tiers ni les échanges déplacés sur Telegram ou WhatsApp. Payez uniquement depuis un compte à votre nom et n'annulez jamais après avoir payé : utilisez le bouton Appel.",
         },
         {
           q: "Que se passe-t-il si j'envoie des USDT sur le mauvais réseau ?",
-          a: "Les fonds sont en général perdus. Les conditions de Binance indiquent que des cryptos envoyées à une adresse incompatible sont perdues, et toute tentative de récupération est payante et sans garantie.",
+          a: "Les fonds sont en général perdus. Les conditions de Binance indiquent que des cryptos envoyées à une adresse incompatible sont perdues, et toute tentative de récupération est payante et sans garantie. Pour l'éviter, choisissez d'abord le jeton et le réseau dans l'application qui reçoit, puis exactement la même paire dans celle qui envoie, et faites un petit envoi test avant le montant principal.",
         },
         {
           q: "RedotPay peut-il geler mon compte ?",
-          a: "Oui. Ses conditions l'autorisent à geler ou fermer un compte à tout moment sans préavis, et des utilisateurs signalent des blocages lors de contrôles sur l'origine des fonds.",
+          a: "Oui. Les conditions de RedotPay l'autorisent à geler ou fermer un compte à tout moment, sans préavis, et aucune garantie des dépôts n'est mentionnée. Des utilisateurs sur Trustpilot signalent des fonds bloqués pendant des semaines lors de contrôles sur l'origine des fonds : ne comptez donc pas sur un seul solde RedotPay pour un paiement avec une échéance.",
         },
       ],
     },

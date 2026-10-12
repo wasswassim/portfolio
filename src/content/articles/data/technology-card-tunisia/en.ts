@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "international-technology-card-tunisia",
   title: "Tunisia's International Technology Card (CTI)",
-  subtitle: "Limit, Documents, Uses and Renewal",
-  seoTitle: "Tunisia's International Technology Card (CTI): How to Get It",
+  subtitle: "Limit, Documents, How to Apply, Allowed Uses and Renewal",
+  seoTitle: "International Technology Card Tunisia (CTI): 2026 Guide",
   metaDescription:
-    "The CTI gives Tunisian residents with the bac 1,000 TND a year (about EUR 297) for online payments. Documents, bank or La Poste, allowed uses and renewal.",
+    "How to get Tunisia's international technology card (CTI): 1,000 TND a year (about EUR 297) online, documents, bank or La Poste, allowed uses and renewal.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["international technology card Tunisia", "carte technologique internationale", "CTI Tunisia limit", "technology card 1000 TND", "CTI La Poste", "pay online from Tunisia"],
+  keywords: ["international technology card Tunisia (CTI)", "carte technologique internationale", "CTI Tunisia limit 1000 TND", "how to get the technology card in Tunisia", "CTI La Poste", "renew the technology card Tunisia"],
   summary:
-    "The international technology card (CTI) lets a Tunisian resident with at least the baccalaureate spend up to 1,000 TND per calendar year (about EUR 297) online, under BCT circular 2016-09. You request it at your bank or at La Poste with your CIN, a certified copy of your diploma and a sworn statement, and renew it each year with your stamped tax return.",
+    "The international technology card (CTI) lets a Tunisian resident with at least the baccalaureate spend up to 1,000 TND per calendar year (about EUR 297) online, under BCT circular 2016-09, a limit still in force as of October 2026. You request it at your bank or at La Poste with your CIN, a certified copy of your diploma and a sworn statement, and renew it each year with your stamped tax return.",
   body: [
     {
       type: "callout",
@@ -26,13 +26,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "It was designed for online services such as courses, software and subscriptions, not for tuition. This is part 2 of our [guide to paying Italian university fees from Tunisia](article:international-card-tunisia), which compares all the routes.",
+      text: "The CTI was designed for online services such as courses, software and subscriptions, not for tuition. This post is part 2 of our [guide to paying Italian university fees from Tunisia](article:international-card-tunisia), which compares all the routes.",
     },
 
-    { type: "h2", id: "what-it-is", text: "1. What is the international technology card?" },
+    { type: "h2", id: "what-it-is", text: "1. What is the international technology card (CTI)?" },
     {
       type: "p",
-      text: "The CTI is a nominative international card reserved for certain online payments. Its legal basis is **article 15 of BCT circular 2016-09** ([Banque Centrale de Tunisie](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf)). The allowance can be used in one or several payments and is valid for one calendar year.",
+      text: "The international technology card (CTI) is a nominative international card reserved for certain online payments, and its legal basis is **article 15 of BCT circular 2016-09** ([Banque Centrale de Tunisie](https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf)). The CTI allowance can be used in one or several payments and is valid for one calendar year.",
     },
     {
       type: "figure",
@@ -44,18 +44,18 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The card network (Visa or Mastercard) depends on the bank: none of the issuer pages we checked names it, so ask when you apply. BTK Bank and La Poste describe their cards as prepaid: you load dinars, and the card pays in foreign currency up to your yearly limit.",
+      text: "The CTI's card network (Visa or Mastercard) depends on the issuing bank: none of the issuer pages we checked names it, so ask when you apply. BTK Bank and La Poste describe their cards as prepaid: you load dinars, and the card pays in foreign currency up to your yearly limit.",
     },
 
-    { type: "h2", id: "limit-in-euros", text: "2. The 1,000 TND limit, converted to euros" },
+    { type: "h2", id: "limit-in-euros", text: "2. How much is the 1,000 TND CTI limit in euros?" },
+    {
+      type: "p",
+      text: "The CTI's 1,000 TND yearly limit is about **EUR 297** at the BCT reference rate of 7 October 2026 (1 EUR = 3.3671 TND). Your bank applies its own card rate and fees, so plan for a little less.",
+    },
     {
       type: "fees",
       title: "The yearly allowance on the card",
       feeIds: ["cti-allowance"],
-    },
-    {
-      type: "p",
-      text: "At the BCT reference rate of 7 October 2026 (1 EUR = 3.3671 TND), 1,000 TND is about **EUR 297**. Your bank applies its own card rate and fees, so plan for a little less.",
     },
     {
       type: "callout",
@@ -65,10 +65,14 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "If you need more, or do not meet the conditions, article 17 lets you apply to the BCT on form F2, with a favourable opinion from the Ministry of Communication Technologies.",
+      text: "If you need more than 1,000 TND, or do not meet the conditions, article 17 of circular 2016-09 lets you apply to the BCT on form F2, with a favourable opinion from the Ministry of Communication Technologies.",
     },
 
-    { type: "h2", id: "issuers", text: "3. Banks and La Poste that issue the card" },
+    { type: "h2", id: "issuers", text: "3. Which banks and La Poste offices issue the CTI?" },
+    {
+      type: "p",
+      text: "Banque Zitouna, BTK Bank, Banque de Tunisie and La Poste Tunisienne publish official pages for the CTI; other banks also issue the card, often without a product page online, and each issuer sets its own fees and merchant filters.",
+    },
     {
       type: "table",
       caption: "What issuers publish about the CTI (pages checked 10 October 2026). Fees not shown here could not be verified: ask your bank.",
@@ -95,14 +99,18 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The table shows the main point: **each issuer applies its own filters**. Before you choose, ask the branch which kinds of merchants the card accepts.",
+      text: "The issuer table shows the main point: **each CTI issuer applies its own filters**. Before you choose, ask the branch which kinds of merchants the card accepts.",
     },
 
-    { type: "h2", id: "how-to-apply", text: "4. How to apply for the CTI, step by step" },
+    { type: "h2", id: "how-to-apply", text: "4. How do you apply for the CTI, step by step?" },
+    {
+      type: "p",
+      text: "You apply for the CTI at your bank or at La Poste with your CIN, a certified copy of your diploma and a sworn statement signed at the counter, then you activate online payments before your first deadline.",
+    },
     { type: "h3", id: "step-eligibility", text: "Step 1: check that you qualify" },
     {
       type: "p",
-      text: "You must be a **Tunisian national, resident in Tunisia**, with a diploma at least equal to the **baccalaureate** (article 15). Only one CTI allowance per person: you cannot hold one at two banks.",
+      text: "To get the CTI, you must be a **Tunisian national, resident in Tunisia**, with a diploma at least equal to the **baccalaureate** (article 15). Only one CTI allowance per person: you cannot hold one at two banks.",
     },
     { type: "h3", id: "step-documents", text: "Step 2: prepare the documents" },
     {
@@ -122,7 +130,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-post-office", text: "Step 3b: or apply at La Poste" },
     {
       type: "p",
-      text: "You need an active postal current account (CCP), your CIN and a certified copy of your diploma. The procedure is on [idaraty.tn](https://idaraty.tn/fr/procedures/obtenir-la-carte-technologique-internationale-la-poste-personne-physique). You load the card in dinars and manage it on e-dinar.",
+      text: "La Poste Tunisienne asks for an active postal current account (CCP), your CIN and a certified copy of your diploma. The procedure is on [idaraty.tn](https://idaraty.tn/fr/procedures/obtenir-la-carte-technologique-internationale-la-poste-personne-physique). You load the La Poste card in dinars and manage it on e-dinar.",
     },
     {
       type: "figure",
@@ -139,13 +147,13 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-activate", text: "Step 4: activate online payments" },
     {
       type: "p",
-      text: "Make sure the card is enabled for online and international payments and that you receive the confirmation code (OTP) on your phone. Check this before a deadline, not on the day.",
+      text: "Make sure the CTI is enabled for online and international payments and that you receive the confirmation code (OTP) on your phone. Check this before a deadline, not on the day.",
     },
 
-    { type: "h2", id: "allowed-uses", text: "5. What the card may legally pay for" },
+    { type: "h2", id: "allowed-uses", text: "5. What can the technology card legally pay for?" },
     {
       type: "p",
-      text: "Annex 1 of circular 2016-09 lists the permitted online payments:",
+      text: "The CTI may legally pay only for the online services listed in annex 1 of BCT circular 2016-09:",
     },
     {
       type: "ul",
@@ -159,7 +167,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The sworn statement excludes **betting, living costs (frais de séjour), purchases of goods** and prohibited sites.",
+      text: "The CTI sworn statement excludes **betting, living costs (frais de séjour), purchases of goods** and prohibited sites.",
     },
     {
       type: "callout",
@@ -168,7 +176,11 @@ export const en: ArticleTranslation = {
       text: "University tuition, pagoPA notices and visa fees are not named in the list. “Online training” and “educational websites” are the closest categories, but whether they cover these fees is not settled, and banks may block some merchants. Ask your bank before you pay, and keep every receipt and invoice.",
     },
 
-    { type: "h2", id: "paying-italian-fees", text: "6. Italian student fees against the 1,000 TND limit" },
+    { type: "h2", id: "paying-italian-fees", text: "6. How far does the CTI go against first-year fees in Rome?" },
+    {
+      type: "p",
+      text: "The CTI's 1,000 TND allowance cannot cover the four common first-year fees in Rome: they add up to EUR 486, more than the whole yearly allowance, and the CIMEA statement alone (EUR 300) is above 1,000 TND.",
+    },
     {
       type: "fees",
       title: "Common first-year fees in Rome, in dinars",
@@ -176,10 +188,6 @@ export const en: ArticleTranslation = {
       total: true,
       tnd: true,
       hub: true,
-    },
-    {
-      type: "p",
-      text: "These four fees add up to EUR 486, more than the whole yearly allowance. The CIMEA statement alone (EUR 300) is above 1,000 TND.",
     },
     {
       type: "table",
@@ -193,13 +201,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "For application, exam and file-assessment fees, your bank can make a transfer on presentation of the invoice: see [the bank transfer option](article:international-card-tunisia#bank-transfer).",
+      text: "For application, exam and file-assessment fees, a Tunisian bank can make a transfer on presentation of the invoice: see [how to pay Italian fees by bank transfer from a Tunisian bank](article:international-card-tunisia#bank-transfer).",
     },
 
-    { type: "h2", id: "paypal-link", text: "7. Linking the CTI to a Tunisian PayPal account" },
+    { type: "h2", id: "paypal-link", text: "7. Can you link the CTI to a Tunisian PayPal account?" },
     {
       type: "p",
-      text: "A PayPal account registered in Tunisia can **send payments**, funded by a linked international card such as the CTI. Receiving money is not generally available. PayPal adds about 4% when it converts the currency, and pagoPA charges EUR 1.50 to EUR 2.50 for a PayPal payment.",
+      text: "Yes: a PayPal account registered in Tunisia can **send payments** funded by a linked international card such as the CTI. Receiving money is not generally available. PayPal adds about 4% when it converts the currency, and pagoPA charges EUR 1.50 to EUR 2.50 for a PayPal payment.",
     },
     {
       type: "figure",
@@ -215,13 +223,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "If your bank filters merchants (as Zitouna does), PayPal may be refused: ask first. The full method is in [how to pay a pagoPA notice with PayPal](article:pay-pagopa-from-abroad#pay-with-paypal).",
+      text: "If the issuing bank filters merchants, as Banque Zitouna does, a CTI payment to PayPal may be refused: ask the bank first. The full method is in [how to pay a pagoPA notice with PayPal](article:pay-pagopa-from-abroad#pay-with-paypal).",
     },
 
-    { type: "h2", id: "renewal", text: "8. Renewing the card every calendar year" },
+    { type: "h2", id: "renewal", text: "8. How do you renew the CTI each calendar year?" },
     {
       type: "p",
-      text: "The allowance ends on 31 December. To renew, send a written request to **the same bank**, with **last year's tax return stamped by the tax administration** (article 18).",
+      text: "To renew the CTI, send a written request to **the same bank**, with **last year's tax return stamped by the tax administration** (article 18 of circular 2016-09). The yearly allowance ends on 31 December.",
     },
     {
       type: "ul",
@@ -233,13 +241,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Unused dinars do not carry over: plan big payments early in the year.",
+      text: "Unused CTI dinars do not carry over to the next year: plan big payments early in the year.",
     },
 
-    { type: "h2", id: "card-safety", text: "9. Keep your card for yourself" },
+    { type: "h2", id: "card-safety", text: "9. Can you lend or sell your technology card?" },
     {
       type: "p",
-      text: "Never lend or rent your CTI, and never share its CVC2 or the OTP code: sharing the card also breaks the sworn statement you signed. On 30 May 2024 the BCT warned that international cards sold on social media are illegal and dangerous. Read more in [how to avoid payment scams](article:international-card-tunisia#payment-scams).",
+      text: "No: never lend or rent your CTI, and never share its CVC2 or the OTP code: sharing the card also breaks the sworn statement you signed. On 30 May 2024 the BCT warned that international cards sold on social media are illegal and dangerous. Read more in [the risks of buying an international card on social media](article:international-card-tunisia#payment-scams).",
     },
 
     {
@@ -249,27 +257,27 @@ export const en: ArticleTranslation = {
       items: [
         {
           q: "What is the yearly limit of the CTI in 2026?",
-          a: "1,000 TND per calendar year for an individual, about EUR 297 at the BCT rate of 7 October 2026. No BCT circular raising it was found as of October 2026.",
+          a: "1,000 TND per calendar year for an individual, about EUR 297 at the BCT reference rate of 7 October 2026. Article 15 of BCT circular 2016-09 sets that limit, and no BCT circular raising it was found as of October 2026. Your bank applies its own card rate and fees, so the amount you can actually spend in euros is slightly lower.",
         },
         {
           q: "Is the technology card limit 10,000 TND now?",
-          a: "No. 10,000 TND is the allowance for resident companies, and 100,000 TND for companies with the Startup label; individuals stay at 1,000 TND.",
+          a: "No. 10,000 TND a year is the allowance for resident companies under article 14 of BCT circular 2016-09, and companies with the Startup label get 100,000 TND under circular 2019-02. Individuals and students stay at 1,000 TND: raises were announced in 2022 and May 2025, but no BCT circular changing article 15 was found as of October 2026.",
         },
         {
           q: "What documents do I need for the carte technologique?",
-          a: "A copy of your CIN, a certified copy of your baccalaureate or higher diploma, and the sworn statement signed at the bank. La Poste also requires an active postal account (CCP).",
+          a: "You need a copy of your CIN, a certified copy of your baccalaureate or higher diploma, and the sworn statement (annex 3 of BCT circular 2016-09) signed at the bank. La Poste Tunisienne also requires an active postal current account (CCP). Once the card is issued, keep the invoice for every payment you make with it.",
         },
         {
           q: "Is it better to get the CTI at La Poste or at a bank?",
-          a: "Both give the same 1,000 TND allowance. La Poste needs a CCP and is fast (about 24 hours, renewal 3 TND); banks may filter merchants differently, so ask which payments they accept.",
+          a: "Neither gives more money: La Poste and the banks grant the same 1,000 TND allowance. La Poste Tunisienne needs an active CCP, issues the card in about 24 hours and charges 3 TND for renewal. Banks may filter merchants differently (Banque Zitouna limits online payments by merchant code), so ask each issuer which payments its card accepts.",
         },
         {
           q: "Can I pay my Sapienza tuition with the CTI?",
-          a: "It is not clear: tuition is not in the official list of permitted uses, and banks may block it. The clearer route is a bank transfer under your study file; ask your bank first.",
+          a: "Not clearly. University tuition is not in the official list of permitted CTI uses (annex 1 of BCT circular 2016-09), and Tunisian banks may block university merchants. The clearer route for Sapienza fees is a bank transfer under your study file. Ask your bank before you pay, and keep every receipt and invoice.",
         },
         {
           q: "What happens when my 1,000 TND is used up?",
-          a: "The card stops paying until the new calendar year. You can apply to the BCT for more on form F2, or use another route from the [payment guide](article:international-card-tunisia#which-method).",
+          a: "The CTI stops paying until the new calendar year, and unused dinars never carry over. You can apply to the BCT for a higher amount on form F2 (article 17), with a favourable opinion from the Ministry of Communication Technologies, or use another route from the [comparison of payment methods for each Italian fee](article:international-card-tunisia#which-method).",
         },
       ],
     },
