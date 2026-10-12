@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "contrat-de-travail-en-italie",
   title: "Contrat de travail en Italie pour les Tunisiens",
-  subtitle: "Nulla Osta, visa et arrivée",
-  seoTitle: "Contrat de travail en Italie : Nulla Osta et visa",
+  subtitle: "Le Nulla Osta, le visa D et vos premières démarches après l'arrivée en Italie",
+  seoTitle: "Contrat de travail en Italie : Nulla Osta et visa D",
   metaDescription:
-    "Après une formation agréée en Tunisie : obtenir un contrat de travail en Italie, le Nulla Osta déposé par l'employeur, le visa D et les démarches à l'arrivée.",
+    "Contrat de travail en Italie pour les Tunisiens : l'employeur dépose le Nulla Osta, vous demandez le visa D, puis vous signez le Contratto di soggiorno.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["contrat de travail en Italie", "contrat travail Italie", "contrat de travail en Italie pour les Tunisiens", "Nulla Osta", "visa de travail Italie Tunisiens", "Contratto di soggiorno", "Permesso di soggiorno"],
+  keywords: ["contrat de travail en Italie", "contrat de travail en Italie pour les Tunisiens", "Nulla Osta al lavoro", "visa de travail Italie pour les Tunisiens", "visa national D pour travailler en Italie", "Contratto di soggiorno"],
   summary:
-    "Sur la voie de la formation à l'étranger, le contrat de travail vient d'un employeur italien, qui dépose aussi la demande de Nulla Osta : le travailleur ne peut pas la déposer seul. Une fois le Nulla Osta délivré, vous demandez un National Visa D depuis la Tunisie, puis, dans les 8 jours ouvrables suivant l'entrée en Italie, vous demandez au Sportello Unico un rendez-vous pour signer le Contratto di soggiorno.",
+    "Pour les Tunisiens sur la voie de la formation à l'étranger, le contrat de travail en Italie vient d'un employeur italien, qui dépose aussi la demande de Nulla Osta : le travailleur ne peut pas la déposer seul. Une fois le Nulla Osta délivré, vous demandez un National Visa D depuis la Tunisie, puis, dans les 8 jours ouvrables suivant l'entrée en Italie (guide officiel, vérifié en octobre 2026), vous demandez au Sportello Unico un rendez-vous pour signer le Contratto di soggiorno.",
   body: [
     {
       type: "callout",
@@ -22,17 +22,17 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "**Vous avez terminé une formation agréée en Tunisie. Comment passer de là à un contrat de travail en Italie ?**" },
     {
       type: "p",
-      text: "Voici la partie 2 de notre guide pour [travailler en Italie pour les Tunisiens](article:work-in-italy-from-tunisia). La partie 1 explique la voie de la formation à l'étranger, qui peut en bénéficier, les documents et la formation elle-même. Cette partie couvre la suite : l'employeur italien, le contrat de travail, le Nulla Osta, le visa de travail et vos premières démarches en Italie.",
+      text: "Voici la partie 2 de notre guide pour [travailler en Italie pour les Tunisiens grâce à la voie de la formation à l'étranger](article:work-in-italy-from-tunisia). La partie 1 explique la voie de la formation à l'étranger, qui peut en bénéficier, les documents et la formation elle-même. Cette partie couvre la suite : l'employeur italien, le contrat de travail, le Nulla Osta, le visa de travail et vos premières démarches en Italie.",
     },
     {
       type: "p",
       text: "En bref : un employeur italien mis en relation avec vous par un programme agréé propose le contrat de travail et dépose la demande de Nulla Osta. Une fois le Nulla Osta délivré, vous demandez un National Visa D depuis la Tunisie. Après votre arrivée, vous demandez au Sportello Unico, dans les 8 jours ouvrables, un rendez-vous pour signer le Contratto di soggiorno, puis vient la démarche du Permesso di soggiorno.",
     },
 
-    { type: "h2", id: "after-training", text: "1. Que se passe-t-il après la formation ?" },
+    { type: "h2", id: "after-training", text: "1. Que se passe-t-il une fois la formation terminée en Tunisie ?" },
     {
       type: "p",
-      text: "Une fois le programme qualifiant terminé, commencent l'étape de l'embauche et les démarches d'entrée en Italie.",
+      text: "Une fois que le travailleur tunisien a terminé le programme de formation qualifiant, commencent l'étape de l'embauche et les démarches d'entrée en Italie.",
     },
     {
       type: "p",
@@ -40,13 +40,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Pour les travailleurs qui remplissent les conditions de la voie de formation à l'étranger, les démarches d'entrée suivent le système propre à cette voie, en dehors des quotas du Decreto Flussi.",
+      text: "Pour les travailleurs qui remplissent les conditions de la voie de formation à l'étranger, les démarches d'entrée suivent le système propre à la voie de la formation à l'étranger, en dehors des quotas du Decreto Flussi.",
     },
 
     { type: "h2", id: "work-contract", text: "2. Contrat de travail en Italie pour les Tunisiens : comment l'obtenir ?" },
     {
       type: "p",
-      text: "Un contrat de travail légitime ne s'achète pas et ne se reçoit pas d'un intermédiaire. Sur cette voie, il vient d'un employeur italien mis en relation avec vous dans le cadre d'un programme agréé, et qui dépose ensuite la demande de Nulla Osta.",
+      text: "Sur la voie de la formation à l'étranger, les Tunisiens obtiennent un contrat de travail en Italie auprès d'un employeur italien mis en relation avec eux par un programme agréé, et cet employeur dépose ensuite la demande de Nulla Osta. Un contrat de travail légitime ne s'achète jamais et ne se reçoit pas d'un intermédiaire.",
     },
     {
       type: "figure",
@@ -62,7 +62,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Ne confondez pas deux documents différents. Le contrat de travail (contratto di lavoro) est l'accord entre vous et l'employeur. Le Contratto di soggiorno est le contrat de séjour que vous accomplissez après l'arrivée en Italie, comme expliqué à la section 7.",
+      text: "Ne confondez pas deux documents différents. Le contrat de travail (contratto di lavoro) est l'accord entre vous et l'employeur. Le Contratto di soggiorno est le contrat de séjour que vous signez au Sportello Unico per l'Immigrazione après l'arrivée en Italie.",
     },
     { type: "p", text: "Avant d'accepter une offre, vérifiez que :" },
     {
@@ -75,10 +75,10 @@ export const fr: ArticleTranslation = {
       ],
     },
 
-    { type: "h2", id: "nulla-osta", text: "3. Qu'est-ce que le Nulla Osta ?" },
+    { type: "h2", id: "nulla-osta", text: "3. Qu'est-ce que le Nulla Osta et qui le demande ?" },
     {
       type: "p",
-      text: "Le Nulla Osta al lavoro est l'autorisation nécessaire pour mener à bien la procédure d'entrée d'un travailleur étranger en Italie pour y travailler.",
+      text: "Le Nulla Osta al lavoro est l'autorisation nécessaire pour qu'un travailleur étranger entre en Italie pour y travailler, et c'est l'employeur italien, pas le travailleur, qui en dépose la demande.",
     },
     {
       type: "fees",
@@ -97,27 +97,27 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "warning",
       title: "Attention",
-      text: "Ne payez personne qui vous vend un « Nulla Osta prêt à l'emploi ». Vous devez savoir qui est l'employeur et par quel canal officiel la demande est déposée.",
+      text: "Ne payez personne qui vous vend un « Nulla Osta prêt à l'emploi ». Vous devez savoir qui est l'employeur et par quel canal officiel la demande de Nulla Osta est déposée.",
     },
 
-    { type: "h2", id: "siisl", text: "4. Qu'est-ce que le SIISL ?" },
+    { type: "h2", id: "siisl", text: "4. Qu'est-ce que le SIISL et faut-il s'y inscrire ?" },
     {
       type: "p",
-      text: "Il y a en 2026 une mise à jour importante que les candidats ne doivent pas manquer. Le SIISL est le Sistema Informativo per l'Inclusione Sociale e Lavorativa, un système italien qui vise à faciliter l'accès à des opportunités d'inclusion et d'emploi.",
+      text: "Le SIISL, Sistema Informativo per l'Inclusione Sociale e Lavorativa, est un système italien qui facilite l'accès à des opportunités d'inclusion et d'emploi, et les travailleurs qui ont terminé un programme de formation agréé y sont inscrits automatiquement : vous n'avez pas à vous inscrire vous-même.",
     },
     {
       type: "p",
-      text: "Des procédures ont été fixées pour l'inscription dans ce système des citoyens étrangers qui ont terminé des programmes de formation dans leur pays d'origine dans le cadre de cette voie. C'est un ajout récent : vous pouvez donc trouver en ligne d'anciens guides qui ne mentionnent pas le SIISL.",
+      text: "Les procédures d'inscription au SIISL des citoyens étrangers qui ont terminé des programmes de formation dans leur pays d'origine, dans le cadre de la voie de la formation à l'étranger, sont une mise à jour importante de 2026. Comme le SIISL est un ajout récent, vous pouvez trouver en ligne d'anciens guides qui ne le mentionnent pas.",
     },
     {
       type: "p",
-      text: "Selon les nouvelles règles, les travailleurs qui ont terminé un programme agréé sont inscrits automatiquement : vous n'avez pas à vous inscrire vous-même. La plateforme se trouve sur [siisl.lavoro.gov.it](https://siisl.lavoro.gov.it/).",
+      text: "La plateforme SIISL se trouve sur [siisl.lavoro.gov.it](https://siisl.lavoro.gov.it/).",
     },
 
-    { type: "h2", id: "work-visa", text: "5. Comment demander le visa de travail quand on est Tunisien ?" },
+    { type: "h2", id: "work-visa", text: "5. Comment demander le visa de travail pour l'Italie depuis la Tunisie ?" },
     {
       type: "p",
-      text: "Une fois le Nulla Osta délivré, l'étape de la demande de visa commence. Pour les personnes résidant en Tunisie, il faut se fier aux informations publiées par l'ambassade d'Italie en Tunisie et par l'organisme agréé qui traite les demandes de visa.",
+      text: "Une fois le Nulla Osta délivré, vous demandez depuis la Tunisie un National Visa D pour travail, en suivant les informations publiées par l'ambassade d'Italie en Tunisie et par son organisme agréé qui traite les demandes de visa.",
     },
     {
       type: "fees",
@@ -127,7 +127,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Pour un séjour de longue durée pour travail, le visa est un National Visa D, selon la nature du dossier.",
+      text: "Pour un séjour de longue durée pour travailler en Italie, le visa est un National Visa D, selon la nature du dossier.",
     },
     {
       type: "figure",
@@ -147,19 +147,19 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les demandes de visa depuis la Tunisie passent par le prestataire de l'ambassade, ALMAVIVA ([avs.com.tn](https://avs.com.tn/)), qui gère les rendez-vous. L'ambassade elle-même ne donne pas de rendez-vous et n'accepte pas de demandes de visa par e-mail.",
+      text: "Les demandes de visa depuis la Tunisie passent par le prestataire de l'ambassade, ALMAVIVA ([avs.com.tn](https://avs.com.tn/)), qui gère les rendez-vous. L'ambassade d'Italie en Tunisie elle-même ne donne pas de rendez-vous et n'accepte pas de demandes de visa par e-mail. Notre guide du visa étudiant explique [comment fonctionne la prise de rendez-vous ALMAVIVA en Tunisie](article:italy-student-visa#almaviva-appointment), du point de vue d'un étudiant.",
     },
 
-    { type: "h2", id: "visa-timing", text: "6. Quand faut-il déposer la demande de visa ?" },
+    { type: "h2", id: "visa-timing", text: "6. Quel est le délai pour demander le visa de travail après la formation ?" },
     {
       type: "p",
-      text: "Pour les travailleurs qui ont terminé des programmes de formation à l'étranger, un délai compté à partir de la fin de la formation s'applique à la demande de visa. Les sources officielles donnent des chiffres différents selon la date et l'étape (les indications antérieures du ministère mentionnaient 6 mois pour le visa, tandis que les règles du SIISL évoquent 12 mois pour demander le Nulla Osta) : consultez la FAQ actuelle du ministère pour connaître le délai exact dans votre cas avant de planifier quoi que ce soit.",
+      text: "Le délai du visa de travail est compté à partir de la fin de votre formation, mais les sources officielles donnent des chiffres différents : vérifiez-le auprès du ministère italien du Travail avant de planifier quoi que ce soit. Les chiffres varient selon la date et l'étape : les indications antérieures du ministère mentionnaient 6 mois pour le visa, tandis que les règles du SIISL évoquent 12 mois pour demander le Nulla Osta. Consultez la FAQ actuelle du ministère du Travail pour connaître le délai exact dans votre cas.",
     },
 
-    { type: "h2", id: "after-arrival", text: "7. Que se passe-t-il après l'arrivée en Italie ?" },
+    { type: "h2", id: "after-arrival", text: "7. Que se passe-t-il après l'arrivée en Italie avec un visa de travail ?" },
     {
       type: "p",
-      text: "Arriver en Italie ne veut pas dire que les démarches sont terminées. Il faut accomplir les démarches relatives au Contratto di soggiorno, puis au Permesso di soggiorno, selon les procédures applicables à votre situation.",
+      text: "Après l'arrivée en Italie, vous signez le Contratto di soggiorno au Sportello Unico per l'Immigrazione, puis vous accomplissez la démarche du Permesso di soggiorno, selon les procédures applicables à votre situation. Arriver en Italie ne veut pas dire que les démarches sont terminées.",
     },
     {
       type: "fees",
@@ -228,28 +228,28 @@ export const fr: ArticleTranslation = {
       title: "Questions fréquentes",
       items: [
         {
-          q: "Ai-je besoin d'un employeur pour travailler en Italie par cette voie ?",
-          a: "Oui. À l'étape du Nulla Osta, un employeur italien doit déposer la demande nominative.",
+          q: "Qui dépose la demande de Nulla Osta pour un travailleur tunisien ?",
+          a: "C'est l'employeur italien qui dépose la demande de Nulla Osta, pas le travailleur. Sur la voie de la formation à l'étranger, l'employeur dépose la demande nominative en ligne sur le Portale Servizi ALI du ministère italien de l'Intérieur, qui vérifie que le travailleur figure sur la liste des personnes ayant terminé un programme agréé. Un travailleur tunisien ne peut pas déposer seul la demande : un « Nulla Osta prêt à l'emploi » proposé à la vente n'est pas un document officiel.",
         },
         {
           q: "Quelle est la différence entre un contrat de travail et le Contratto di soggiorno ?",
-          a: "Le contrat de travail est l'accord entre vous et l'employeur. Le Contratto di soggiorno est le contrat de séjour que vous accomplissez après l'arrivée en Italie.",
+          a: "Le contrat de travail (contratto di lavoro) est l'accord d'emploi entre vous et l'employeur italien, tandis que le Contratto di soggiorno est le contrat de séjour que vous signez après l'arrivée en Italie. Vous signez le Contratto di soggiorno au Sportello Unico per l'Immigrazione, qui, au même rendez-vous, vous remet l'attestation de votre code fiscal et vous fait signer la demande de Permesso di soggiorno.",
         },
         {
-          q: "Peut-on travailler en Italie sans contrat ?",
-          a: "Pas légalement sur cette voie. Un employeur italien doit d'abord déposer la demande de Nulla Osta. Méfiez-vous de toute offre de travail en Italie qui saute ces étapes.",
+          q: "Peut-on obtenir un visa de travail pour l'Italie sans Nulla Osta ?",
+          a: "Non, pas sur la voie de la formation à l'étranger. L'étape du visa ne commence qu'une fois la demande de Nulla Osta de l'employeur italien acceptée et le Nulla Osta délivré. Méfiez-vous de toute offre de travail en Italie qui promet un visa sans employeur identifié ni demande officielle de Nulla Osta, et ne payez jamais personne pour un contrat ou un visa garanti.",
         },
         {
-          q: "Quel visa faut-il pour travailler en Italie ?",
-          a: "Pour un séjour de longue durée pour travail, un National Visa D, demandé depuis la Tunisie auprès de l'ambassade d'Italie et de son organisme agréé, une fois le Nulla Osta délivré.",
+          q: "Quel visa faut-il aux Tunisiens pour travailler en Italie ?",
+          a: "Les Tunisiens ont besoin d'un National Visa D pour un séjour de longue durée pour travail en Italie. Vous demandez le National Visa D depuis la Tunisie une fois le Nulla Osta délivré, via ALMAVIVA, le prestataire de l'ambassade d'Italie qui gère les rendez-vous de visa. L'ambassade d'Italie en Tunisie ne donne pas de rendez-vous et n'accepte pas de demandes de visa par e-mail.",
         },
         {
-          q: "Quand faut-il demander le visa de travail ?",
-          a: "Dans un délai compté à partir de la fin de votre formation. Les sources officielles donnent des chiffres différents : consultez la FAQ actuelle du ministère italien du Travail pour votre situation.",
+          q: "Combien de temps après la formation peut-on demander le visa de travail ?",
+          a: "Le délai est compté à partir de la fin de votre formation, et les sources officielles donnent des chiffres différents. Les indications antérieures du ministère italien du Travail mentionnaient 6 mois pour le visa, tandis que les règles du SIISL évoquent 12 mois pour demander le Nulla Osta. Consultez la FAQ actuelle du ministère du Travail pour connaître votre délai exact avant de planifier quoi que ce soit.",
         },
         {
-          q: "Que faire après l'arrivée en Italie ?",
-          a: "Dans les 8 jours ouvrables suivant l'entrée en Italie, vous demandez au Sportello Unico per l'Immigrazione un rendez-vous pour signer le Contratto di soggiorno, puis vous accomplissez la démarche du Permesso di soggiorno. Vérifiez le délai en vigueur auprès du Sportello Unico, car les règles peuvent changer.",
+          q: "Que faire dans les jours qui suivent l'arrivée en Italie avec un visa de travail ?",
+          a: "Dans les 8 jours ouvrables suivant l'entrée en Italie, demandez au Sportello Unico per l'Immigrazione un rendez-vous pour signer le Contratto di soggiorno, selon le guide officiel du Portale Integrazione Migranti. La démarche du Permesso di soggiorno suit. Certaines sources récentes indiquent que ce délai est passé à 15 jours après une modification de la loi en 2025 : vérifiez-le auprès du Sportello Unico de votre province ou de votre employeur.",
         },
       ],
     },

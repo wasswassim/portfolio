@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "work-in-italy-from-tunisia",
   title: "Working in Italy for Tunisians",
-  subtitle: "The Training-Abroad Route",
-  seoTitle: "Work in Italy for Tunisians: Legal Guide (2026)",
+  subtitle: "The training-abroad route outside the quotas: who qualifies, programs, documents and offers",
+  seoTitle: "Work in Italy for Tunisians: The Legal Route (2026)",
   metaDescription:
-    "How Tunisians can work in Italy legally outside the Decreto Flussi quotas: who qualifies, approved training programs, documents, job offers and scams.",
+    "Work in Italy for Tunisians outside the Decreto Flussi quotas: who qualifies, approved training programs, ANETI offers, documents and how to avoid scams.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["work in Italy from Tunisia", "work in Italy outside quotas", "work in Italy with a BTP or BTS", "jobs in Italy for Tunisians", "job offers in Italy", "Decreto Flussi", "THAMM Plus"],
+  keywords: ["work in Italy for Tunisians", "jobs in Italy for Tunisians", "work in Italy outside the Decreto Flussi quotas", "approved training programs for Italy", "ANETI job offers for Italy", "work in Italy with a BTP or BTS", "THAMM Plus"],
   summary:
-    "There is a legal route that lets foreign workers who completed approved vocational, language and civic training in their home country enter Italy to work outside the Decreto Flussi quotas. It is not an open visa for every Tunisian: you need an approved program and, after the training, an Italian employer who files the Nulla Osta request.",
+    "Tunisians can work in Italy legally outside the Decreto Flussi quotas through the training-abroad route: complete an approved vocational, language and civic training program, then an Italian employer files the Nulla Osta request. As of October 2026 the route is not an open visa for every Tunisian: you need an approved program that is open, found through ANETI and the official Portale Integrazione Migranti list.",
   body: [
     {
       type: "callout",
@@ -43,14 +43,18 @@ export const en: ArticleTranslation = {
       height: 960,
     },
 
-    { type: "h2", id: "what-is-this-route", text: "1. What is this route?" },
+    { type: "h2", id: "what-is-this-route", text: "1. What is the training-abroad route to work in Italy?" },
+    {
+      type: "p",
+      text: "The training-abroad route is a legal way for foreign workers who completed approved vocational, language and civic training in their home country to enter Italy to work outside the Decreto Flussi quotas.",
+    },
     {
       type: "p",
       text: "The Italian immigration law, the Testo Unico Immigrazione, regulates a special route for certain foreign workers who completed vocational, language and civic training in their home country, provided the programs are approved under Italian rules.",
     },
     {
       type: "p",
-      text: "The key advantage of this route is that workers who meet its conditions can enter Italy to work outside the Decreto Flussi quotas.",
+      text: "The key advantage of the training-abroad route is that workers who meet its conditions do not need a place in the Decreto Flussi quotas.",
     },
     {
       type: "figure",
@@ -66,22 +70,21 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The route can be simplified as follows: approved training in Tunisia → hiring, or matching the worker with an employer → Nulla Osta request from the Italian employer → work visa → travel to Italy → residence and work procedures.",
+      text: "The training-abroad route can be simplified as follows: approved training in Tunisia → hiring, or matching the worker with an employer → Nulla Osta request from the Italian employer → work visa → travel to Italy → residence and work procedures.",
     },
     {
       type: "p",
-      text: "This first part covers the start of that path, up to the end of the training. The next steps, from the employer to your arrival in Italy, are in [part 2: work contract, Nulla Osta and visa](article:work-contract-in-italy).",
+      text: "This guide covers the training-abroad route from Tunisia up to the end of the training. The next steps, from the Italian employer to your arrival in Italy, are in [part 2: the work contract in Italy, the Nulla Osta and the work visa](article:work-contract-in-italy).",
     },
 
-    { type: "h2", id: "who-can-apply", text: "2. Who can use this route?" },
-    { type: "p", text: "This route does not automatically apply to every Tunisian who wants to work in Italy." },
+    { type: "h2", id: "who-can-apply", text: "2. Who can use the training-abroad route?" },
     {
       type: "p",
-      text: "A person must be part of an approved training program and meet the conditions set by that program.",
+      text: "Only a Tunisian who is part of an approved training program and meets the conditions set by that program can use the training-abroad route; it does not apply automatically to every Tunisian who wants to work in Italy.",
     },
     {
       type: "p",
-      text: "There is no single fixed list saying this route is always limited to six occupations. Occupations and sectors depend on the programs that are approved and currently open.",
+      text: "There is no single fixed list saying the training-abroad route is always limited to six occupations. Occupations and sectors depend on the programs that are approved and currently open.",
     },
     {
       type: "p",
@@ -89,7 +92,10 @@ export const en: ArticleTranslation = {
     },
 
     { type: "h2", id: "programs-and-jobs", text: "3. Which programs and occupations are available to Tunisians?" },
-    { type: "p", text: "Programs change over time. New programs may be added and existing ones may end." },
+    {
+      type: "p",
+      text: "Approved programs for Tunisians cover trades in sectors such as construction, hospitality, mechanics and restaurants, and the list changes over time as new programs are added and existing ones end.",
+    },
     {
       type: "p",
       text: "There are Tunisia-linked programs in several sectors, including construction and public works, tourism and hospitality, mechanics and maintenance, restaurants, as well as other industrial and service sectors.",
@@ -185,7 +191,11 @@ export const en: ArticleTranslation = {
       text: "A program appearing on the official list does not mean applications are open right now. It may be at the launch stage, under way, or its application period may have ended. So always check the current announcement and the program's status with the official source.",
     },
 
-    { type: "h2", id: "how-to-start", text: "4. How do you start from Tunisia?" },
+    { type: "h2", id: "how-to-start", text: "4. How do you apply for a training program from Tunisia?" },
+    {
+      type: "p",
+      text: "Tunisians apply through ANETI and ANETI International: register as a candidate, find a current offer for Italy, apply through the form named in the offer, then pass the tests and interviews.",
+    },
     { type: "h3", id: "step-follow-official", text: "Step 1: Follow the official channels" },
     {
       type: "p",
@@ -222,8 +232,11 @@ export const en: ArticleTranslation = {
       text: "**Get help to prepare.** ANETI International offers help with your CV, job interviews, technical tests and your application file: see [Your project abroad](https://www.aneti-international.tn/node/44919).",
     },
 
-    { type: "h2", id: "documents", text: "5. Which documents should you prepare?" },
-    { type: "p", text: "It is best to prepare your file in advance, because the application window for some job offers is short." },
+    { type: "h2", id: "documents", text: "5. Which documents do Tunisians need to apply?" },
+    {
+      type: "p",
+      text: "Most offers for Italy ask for a valid national ID card and passport, a vocational diploma or competence certificate, and proof of work experience; the exact list depends on each offer. Prepare the file in advance, because the application window for some job offers is short.",
+    },
     {
       type: "ul",
       items: [
@@ -243,11 +256,14 @@ export const en: ArticleTranslation = {
       text: "This is not a single list for all programs. The final documents depend on the announcement and the program you apply to.",
     },
 
-    { type: "h2", id: "training", text: "6. How does the training work?" },
-    { type: "p", text: "Training is the core of this route." },
+    { type: "h2", id: "training", text: "6. How does the training for Italy work?" },
     {
       type: "p",
-      text: "A program can include vocational training, Italian language, civic training, and occupational safety basics. If you already hold a BTP or a BTS in your trade, keep it ready: some offers ask for a vocational diploma on top of the program's training.",
+      text: "The training for Italy is the core of the training-abroad route: an approved program can combine vocational training in the trade, Italian language, civic training and occupational safety basics.",
+    },
+    {
+      type: "p",
+      text: "If you already hold a BTP or a BTS in your trade, keep it ready: some offers ask for a vocational diploma on top of the program's training.",
     },
     {
       type: "figure",
@@ -263,29 +279,36 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The length of training varies from one program to another, so no single duration should be presented as a general rule for all programs.",
+      text: "The length of the training varies from one approved program to another, so no single duration should be presented as a general rule for all programs.",
     },
     {
       type: "p",
-      text: "Once the training is complete, the hiring stage begins. Read [how to get a work contract in Italy](article:work-contract-in-italy#work-contract) for what happens next.",
+      text: "Once the training is complete, the hiring stage begins with an Italian employer. Read [how Tunisians get a work contract in Italy after the training](article:work-contract-in-italy#work-contract) for what happens next.",
     },
 
-    { type: "h2", id: "find-job-offers", text: "7. Where can you find job offers?" },
-    { type: "p", text: "Start with the official channels, not social media groups." },
+    { type: "h2", id: "find-job-offers", text: "7. Where are official job offers for Italy published?" },
+    {
+      type: "p",
+      text: "Official job offers for Italy are published by ANETI and ANETI International, in each program's official announcement, and on the Italian Ministry of Labour and Portale Integrazione Migranti sites, not in social media groups.",
+    },
     {
       type: "ul",
       items: [
-        "**ANETI and ANETI International:** publish the job and training programs for Tunisians, as described in section 4. [See the current offers for Italy](https://www.aneti-international.tn/offres?field_pays_target_id=1277).",
+        "**ANETI and ANETI International:** publish the job and training programs for Tunisians and host the candidate account you apply with. [See the current offers for Italy](https://www.aneti-international.tn/offres?field_pays_target_id=1277).",
         "**The official announcement of each program:** read the requirements, the sector and the application period yourself.",
         "**Official Italian portals:** the Ministry of Labour and Portale Integrazione Migranti list the approved training programs abroad.",
       ],
     },
     {
       type: "p",
-      text: "Posts promising a guaranteed job in Italy are a classic warning sign. If an offer cannot be found on an official channel, treat it as unverified.",
+      text: "Posts promising a guaranteed job in Italy are a classic warning sign. If a job offer for Italy cannot be found on an official channel, treat it as unverified.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "8. Beware of scams" },
+    { type: "h2", id: "avoid-scams", text: "8. How do you spot a fake job offer for Italy?" },
+    {
+      type: "p",
+      text: "A job offer for Italy is a scam when someone asks for money in exchange for a guaranteed contract, job or visa; genuine offers go through official channels such as ANETI, and the Nulla Osta is requested by the Italian employer.",
+    },
     {
       type: "callout",
       tone: "warning",
@@ -293,11 +316,15 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Always check with ANETI, the Tunisian Ministry of Employment, the Italian Ministry of Labour, the Italian Ministry of the Interior, and the Italian Embassy in Tunisia.",
+      text: "Before paying or signing anything, check the offer with ANETI, the Tunisian Ministry of Employment, the Italian Ministry of Labour, the Italian Ministry of the Interior, and the Italian Embassy in Tunisia.",
     },
     {
       type: "p",
       text: "The Tunisian Ministry of Employment and Vocational Training warns about fake job offers and unlawful bodies that ask job seekers for money for work abroad.",
+    },
+    {
+      type: "p",
+      text: "To know what a real hiring file looks like, read [what the Nulla Osta is and who requests it](article:work-contract-in-italy#nulla-osta).",
     },
 
     {
@@ -306,26 +333,36 @@ export const en: ArticleTranslation = {
       title: "Frequently asked questions",
       items: [
         {
-          q: "Can a Tunisian work in Italy outside the Decreto Flussi?",
-          a: "Yes, in specific cases, through the route for workers who completed qualifying training programs abroad.",
-        },
-        { q: "Is this route open to every Tunisian?", a: "No. You must meet the requirements of a qualifying program." },
-        {
-          q: "Can I buy a work contract?",
-          a: "No. Deal only with official channels, and treat anyone who asks for money in exchange for a guaranteed contract or visa as a warning sign.",
-        },
-        { q: "Are all occupations eligible?", a: "No. It depends on the approved programs and the sectors and occupations they cover." },
-        {
-          q: "Do I need to know Italian?",
-          a: "This type of program includes language training, and the detailed requirements vary by program.",
+          q: "Can a Tunisian work in Italy outside the Decreto Flussi quotas?",
+          a: "Yes, in specific cases. The Testo Unico Immigrazione lets foreign workers who completed an approved vocational, language and civic training program in their home country enter Italy to work outside the Decreto Flussi quotas. After the training, an Italian employer still has to hire the worker and file the Nulla Osta request before the work visa.",
         },
         {
-          q: "How long does the training course take?",
-          a: "There is no single fixed duration for all programs. It varies by program, sector and occupation.",
+          q: "Is the training-abroad route open to every Tunisian?",
+          a: "No. The training-abroad route only applies to Tunisians who are part of an approved training program and meet that program's conditions. A program appearing on the official Portale Integrazione Migranti list does not mean applications are open, so check the current announcement and the program's status before preparing a file.",
+        },
+        {
+          q: "Can I pay an agent to get a work contract in Italy?",
+          a: "No. A work contract for Italy is not for sale, and the Tunisian Ministry of Employment and Vocational Training warns about fake job offers and unlawful bodies that ask job seekers for money for work abroad. Deal only with official channels such as ANETI, and treat anyone who asks for money for a guaranteed contract or visa as a warning sign.",
+        },
+        {
+          q: "Which jobs in Italy can Tunisians get through approved training programs?",
+          a: "It depends on the approved programs that are open. Tunisia-linked programs cover sectors such as construction and public works, tourism and hospitality, mechanics and maintenance, and restaurants, and THAMM Plus focuses especially on construction. There is no fixed list of occupations, so check each program's official announcement for the trades it covers.",
+        },
+        {
+          q: "Do I need to speak Italian before applying?",
+          a: "It depends on the program. Approved training programs for Italy include Italian language training alongside the trade, civic training and occupational safety basics. The detailed language requirements vary from one program to another, so read the official offer on ANETI International to see what is expected when you apply.",
+        },
+        {
+          q: "How long does the training for Italy last?",
+          a: "There is no single duration. The length of the training for Italy varies by program, sector and occupation, so no one duration applies to every approved program. The official announcement of each program, published through ANETI or listed on the Portale Integrazione Migranti, gives the details for that program.",
         },
         {
           q: "Where can Tunisians find job offers in Italy?",
-          a: "Start with ANETI and the official announcement of each program. Do not rely on social media posts or on intermediaries who ask for money.",
+          a: "On ANETI International, which lists the current job offers for Italy and lets you filter them by country. Each recent offer gives the exact link to its form on ANETI's applications platform. Do not rely on social media posts or on intermediaries who ask for money: if an offer cannot be found on an official channel, treat it as unverified.",
+        },
+        {
+          q: "Is registering on ANETI International free?",
+          a: "Yes. Creating a candidate account on ANETI International is free. Some offers for Italy ask you to be registered both at your local employment office and on ANETI International, with the same national ID card (CIN) number, so register in both places before you apply to an offer.",
         },
       ],
     },

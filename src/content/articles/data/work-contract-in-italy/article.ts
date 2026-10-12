@@ -9,7 +9,7 @@ export const workContractInItaly: Article = {
   id: "work-contract-in-italy",
   category: "work",
   publishedAt: "2026-10-08",
-  updatedAt: "2026-10-11",
+  updatedAt: "2026-10-12",
   lastVerified: "2026-10-08",
   image: { src: "/blog/og-colosseum.jpg", width: 1200, height: 630 },
   translations: { en, fr, ar },

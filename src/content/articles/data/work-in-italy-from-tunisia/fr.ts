@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "travailler-en-italie-depuis-la-tunisie",
   title: "Travailler en Italie pour les Tunisiens",
-  subtitle: "La voie par la formation",
-  seoTitle: "Travailler en Italie pour les Tunisiens : guide 2026",
+  subtitle: "La voie par la formation, hors quotas : qui peut postuler, programmes, documents et offres",
+  seoTitle: "Travailler en Italie pour les Tunisiens : voie légale 2026",
   metaDescription:
-    "Travailler en Italie pour les Tunisiens, hors quotas du Decreto Flussi : qui peut en bénéficier, programmes agréés, documents, offres d'emploi, arnaques.",
+    "Travailler en Italie pour les Tunisiens hors quotas du Decreto Flussi : qui peut postuler, programmes agréés, offres de l'ANETI, documents et arnaques.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["travailler en Italie pour les Tunisiens", "travailler en Italie", "emploi Italie Tunisie", "offre d'emploi en Italie", "trouver un job en Italie", "travailler en Italie hors quotas", "travailler en Italie avec un BTP ou un BTS", "Decreto Flussi", "THAMM Plus"],
+  keywords: ["travailler en Italie pour les Tunisiens", "travailler en Italie", "emploi en Italie pour les Tunisiens", "travailler en Italie hors quotas du Decreto Flussi", "offres d'emploi ANETI pour l'Italie", "travailler en Italie avec un BTP ou un BTS", "THAMM Plus"],
   summary:
-    "Il existe une voie légale qui permet à des travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Ce n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et, après la formation, un employeur italien qui dépose la demande de Nulla Osta.",
+    "Les Tunisiens peuvent travailler en Italie légalement en dehors des quotas du Decreto Flussi par la voie de la formation à l'étranger : suivre un programme agréé de formation professionnelle, linguistique et civique, puis un employeur italien dépose la demande de Nulla Osta. En octobre 2026, cette voie n'est pas un visa ouvert à tous les Tunisiens : il faut un programme agréé et ouvert, à trouver via l'ANETI et la liste officielle du Portale Integrazione Migranti.",
   body: [
     {
       type: "callout",
@@ -43,14 +43,18 @@ export const fr: ArticleTranslation = {
       height: 960,
     },
 
-    { type: "h2", id: "what-is-this-route", text: "1. Qu'est-ce que cette voie ?" },
+    { type: "h2", id: "what-is-this-route", text: "1. Qu'est-ce que la voie de la formation pour travailler en Italie ?" },
+    {
+      type: "p",
+      text: "La voie de la formation à l'étranger est un moyen légal, pour les travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique agréée dans leur pays d'origine, d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi.",
+    },
     {
       type: "p",
       text: "La loi italienne sur l'immigration, le Testo Unico Immigrazione, encadre une voie particulière pour certains travailleurs étrangers ayant suivi une formation professionnelle, linguistique et civique dans leur pays d'origine, à condition que ces programmes soient agréés selon les règles italiennes.",
     },
     {
       type: "p",
-      text: "L'avantage majeur de cette voie est que les travailleurs qui en remplissent les conditions peuvent entrer en Italie pour travailler en dehors des quotas du Decreto Flussi.",
+      text: "L'avantage majeur de la voie de la formation est que les travailleurs qui en remplissent les conditions n'ont pas besoin d'une place dans les quotas du Decreto Flussi.",
     },
     {
       type: "figure",
@@ -66,22 +70,21 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "On peut résumer le parcours ainsi : formation agréée en Tunisie → embauche, ou mise en relation du travailleur avec un employeur → demande de Nulla Osta par l'employeur italien → visa de travail → voyage en Italie → démarches de séjour et de travail.",
+      text: "On peut résumer la voie de la formation ainsi : formation agréée en Tunisie → embauche, ou mise en relation du travailleur avec un employeur → demande de Nulla Osta par l'employeur italien → visa de travail → voyage en Italie → démarches de séjour et de travail.",
     },
     {
       type: "p",
-      text: "Cette première partie couvre le début de ce parcours, jusqu'à la fin de la formation. La suite, de l'employeur à votre arrivée en Italie, se trouve dans [la partie 2 : contrat de travail en Italie, Nulla Osta et visa](article:work-contract-in-italy).",
+      text: "Ce guide couvre la voie de la formation depuis la Tunisie jusqu'à la fin de la formation. La suite, de l'employeur italien à votre arrivée en Italie, se trouve dans [la partie 2 : le contrat de travail en Italie, le Nulla Osta et le visa de travail](article:work-contract-in-italy).",
     },
 
-    { type: "h2", id: "who-can-apply", text: "2. Qui peut utiliser cette voie ?" },
-    { type: "p", text: "Cette voie ne s'applique pas automatiquement à tout Tunisien qui souhaite travailler en Italie." },
+    { type: "h2", id: "who-can-apply", text: "2. Qui peut utiliser la voie de la formation ?" },
     {
       type: "p",
-      text: "Il faut faire partie d'un programme de formation agréé et remplir les conditions fixées par ce programme.",
+      text: "Seul un Tunisien qui fait partie d'un programme de formation agréé et remplit les conditions fixées par ce programme peut utiliser la voie de la formation ; elle ne s'applique pas automatiquement à tout Tunisien qui souhaite travailler en Italie.",
     },
     {
       type: "p",
-      text: "Il n'existe pas de liste unique et fixe disant que cette voie est toujours réservée à six métiers seulement. Les métiers et les secteurs dépendent des programmes agréés et actuellement ouverts.",
+      text: "Il n'existe pas de liste unique et fixe disant que la voie de la formation est toujours réservée à six métiers seulement. Les métiers et les secteurs dépendent des programmes agréés et actuellement ouverts.",
     },
     {
       type: "p",
@@ -91,7 +94,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "programs-and-jobs", text: "3. Quels programmes et quels métiers pour les Tunisiens ?" },
     {
       type: "p",
-      text: "Les programmes évoluent avec le temps : de nouveaux programmes peuvent être ajoutés et d'autres se terminer.",
+      text: "Les programmes agréés pour les Tunisiens couvrent des métiers du bâtiment, de l'hôtellerie, de la mécanique ou de la restauration, et leur liste évolue avec le temps : de nouveaux programmes sont ajoutés et d'autres se terminent.",
     },
     {
       type: "p",
@@ -188,7 +191,11 @@ export const fr: ArticleTranslation = {
       text: "Le fait qu'un programme figure dans la liste officielle ne signifie pas que les candidatures sont ouvertes actuellement. Il peut être en phase de lancement, en cours, ou sa période de candidature peut être terminée. Vérifiez donc toujours l'annonce en vigueur et l'état du programme auprès de la source officielle.",
     },
 
-    { type: "h2", id: "how-to-start", text: "4. Par où commencer quand on est Tunisien ?" },
+    { type: "h2", id: "how-to-start", text: "4. Comment postuler à un programme de formation depuis la Tunisie ?" },
+    {
+      type: "p",
+      text: "Les Tunisiens postulent via l'ANETI et ANETI International : créer un compte candidat, trouver une offre en cours pour l'Italie, postuler par le formulaire indiqué dans l'offre, puis réussir les tests et les entretiens.",
+    },
     { type: "h3", id: "step-follow-official", text: "Étape 1 : suivez les canaux officiels" },
     {
       type: "p",
@@ -225,8 +232,11 @@ export const fr: ArticleTranslation = {
       text: "**Faites-vous aider pour vous préparer.** ANETI International propose une aide pour le CV, les entretiens d'embauche, les tests techniques et le dossier de candidature : voir [Votre projet à l'international](https://www.aneti-international.tn/node/44919).",
     },
 
-    { type: "h2", id: "documents", text: "5. Quels documents faut-il préparer ?" },
-    { type: "p", text: "Il vaut mieux préparer votre dossier à l'avance, car le délai de candidature de certaines offres est court." },
+    { type: "h2", id: "documents", text: "5. Quels documents faut-il pour postuler ?" },
+    {
+      type: "p",
+      text: "La plupart des offres pour l'Italie demandent une carte d'identité et un passeport valides, un diplôme professionnel ou un certificat d'aptitude, et une preuve de l'expérience professionnelle ; la liste exacte dépend de chaque offre. Préparez le dossier à l'avance, car le délai de candidature de certaines offres est court.",
+    },
     {
       type: "ul",
       items: [
@@ -246,11 +256,14 @@ export const fr: ArticleTranslation = {
       text: "Ce n'est pas une liste unique pour tous les programmes. Les documents définitifs dépendent de l'annonce et du programme auquel vous candidatez.",
     },
 
-    { type: "h2", id: "training", text: "6. Comment se déroule la formation ?" },
-    { type: "p", text: "La formation est la partie essentielle de cette voie." },
+    { type: "h2", id: "training", text: "6. Comment se déroule la formation pour l'Italie ?" },
     {
       type: "p",
-      text: "Un programme peut comprendre une formation professionnelle, des cours d'italien, une formation civique et des notions de sécurité au travail. Si vous avez déjà un BTP ou un BTS dans votre métier, gardez-le à portée de main : certaines offres demandent un diplôme professionnel en plus de la formation du programme.",
+      text: "La formation pour l'Italie est le cœur de la voie de la formation à l'étranger : un programme agréé peut combiner la formation professionnelle au métier, des cours d'italien, une formation civique et des notions de sécurité au travail.",
+    },
+    {
+      type: "p",
+      text: "Si vous avez déjà un BTP ou un BTS dans votre métier, gardez-le à portée de main : certaines offres demandent un diplôme professionnel en plus de la formation du programme.",
     },
     {
       type: "figure",
@@ -266,29 +279,36 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "La durée de la formation varie d'un programme à l'autre : il ne faut donc pas présenter une durée unique comme une règle générale pour tous les programmes.",
+      text: "La durée de la formation varie d'un programme agréé à l'autre : il ne faut donc pas présenter une durée unique comme une règle générale pour tous les programmes.",
     },
     {
       type: "p",
-      text: "Une fois la formation terminée, l'étape de l'embauche commence. Lisez [comment obtenir un contrat de travail en Italie](article:work-contract-in-italy#work-contract) pour la suite.",
+      text: "Une fois la formation terminée, l'étape de l'embauche commence avec un employeur italien. Lisez [comment les Tunisiens obtiennent un contrat de travail en Italie après la formation](article:work-contract-in-italy#work-contract) pour la suite.",
     },
 
-    { type: "h2", id: "find-job-offers", text: "7. Où trouver des offres d'emploi ?" },
-    { type: "p", text: "Commencez par les canaux officiels, pas par les groupes sur les réseaux sociaux." },
+    { type: "h2", id: "find-job-offers", text: "7. Où sont publiées les offres d'emploi officielles pour l'Italie ?" },
+    {
+      type: "p",
+      text: "Les offres d'emploi officielles pour l'Italie sont publiées par l'ANETI et ANETI International, dans l'annonce officielle de chaque programme, et sur les sites du ministère italien du Travail et du Portale Integrazione Migranti, pas dans les groupes des réseaux sociaux.",
+    },
     {
       type: "ul",
       items: [
-        "**ANETI et ANETI International :** publient les programmes d'emploi et de formation destinés aux Tunisiens, comme décrit à la section 4. [Voir les offres actuelles pour l'Italie](https://www.aneti-international.tn/offres?field_pays_target_id=1277).",
+        "**ANETI et ANETI International :** publient les programmes d'emploi et de formation destinés aux Tunisiens et hébergent le compte candidat qui sert à postuler. [Voir les offres actuelles pour l'Italie](https://www.aneti-international.tn/offres?field_pays_target_id=1277).",
         "**L'annonce officielle de chaque programme :** lisez vous-même les conditions, le secteur et la période de candidature.",
         "**Les portails officiels italiens :** le ministère du Travail et le Portale Integrazione Migranti présentent les programmes de formation agréés à l'étranger.",
       ],
     },
     {
       type: "p",
-      text: "Les publications qui promettent un emploi garanti en Italie sont un signal d'alerte classique. Si une offre est introuvable sur un canal officiel, considérez-la comme non vérifiée.",
+      text: "Les publications qui promettent un emploi garanti en Italie sont un signal d'alerte classique. Si une offre d'emploi pour l'Italie est introuvable sur un canal officiel, considérez-la comme non vérifiée.",
     },
 
-    { type: "h2", id: "avoid-scams", text: "8. Méfiez-vous des arnaques" },
+    { type: "h2", id: "avoid-scams", text: "8. Comment repérer une fausse offre d'emploi en Italie ?" },
+    {
+      type: "p",
+      text: "Une offre d'emploi en Italie est une arnaque quand quelqu'un demande de l'argent en échange d'un contrat, d'un emploi ou d'un visa garanti ; les vraies offres passent par des canaux officiels comme l'ANETI, et le Nulla Osta est demandé par l'employeur italien.",
+    },
     {
       type: "callout",
       tone: "warning",
@@ -296,11 +316,15 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Vérifiez toujours auprès de l'ANETI, du ministère tunisien de l'Emploi, du ministère italien du Travail, du ministère italien de l'Intérieur et de l'ambassade d'Italie en Tunisie.",
+      text: "Avant de payer ou de signer quoi que ce soit, vérifiez l'offre auprès de l'ANETI, du ministère tunisien de l'Emploi, du ministère italien du Travail, du ministère italien de l'Intérieur et de l'ambassade d'Italie en Tunisie.",
     },
     {
       type: "p",
       text: "Le ministère tunisien de l'Emploi et de la Formation professionnelle met en garde contre les fausses offres d'emploi et les organismes illégaux qui demandent de l'argent aux demandeurs d'emploi pour un travail à l'étranger.",
+    },
+    {
+      type: "p",
+      text: "Pour savoir à quoi ressemble un vrai dossier d'embauche, lisez [ce qu'est le Nulla Osta et qui le demande](article:work-contract-in-italy#nulla-osta).",
     },
 
     {
@@ -309,26 +333,36 @@ export const fr: ArticleTranslation = {
       title: "Questions fréquentes",
       items: [
         {
-          q: "Un Tunisien peut-il travailler en Italie en dehors du Decreto Flussi ?",
-          a: "Oui, dans des cas précis, par la voie réservée aux travailleurs qui ont terminé à l'étranger des programmes de formation qualifiants.",
-        },
-        { q: "Cette voie est-elle ouverte à tous les Tunisiens ?", a: "Non. Il faut remplir les conditions d'un programme qualifiant." },
-        {
-          q: "Puis-je acheter un contrat de travail ?",
-          a: "Non. Passez uniquement par les canaux officiels, et considérez toute personne qui demande de l'argent en échange d'un contrat ou d'un visa garanti comme un signal d'alerte.",
-        },
-        { q: "Tous les métiers sont-ils concernés ?", a: "Non. Cela dépend des programmes agréés, ainsi que des secteurs et des métiers qu'ils couvrent." },
-        {
-          q: "Ai-je besoin de connaître l'italien ?",
-          a: "Ce type de programme comprend une formation linguistique, et les exigences détaillées varient selon le programme.",
+          q: "Un Tunisien peut-il travailler en Italie en dehors des quotas du Decreto Flussi ?",
+          a: "Oui, dans des cas précis. Le Testo Unico Immigrazione permet aux travailleurs étrangers qui ont terminé un programme agréé de formation professionnelle, linguistique et civique dans leur pays d'origine d'entrer en Italie pour travailler en dehors des quotas du Decreto Flussi. Après la formation, un employeur italien doit encore embaucher le travailleur et déposer la demande de Nulla Osta avant le visa de travail.",
         },
         {
-          q: "Combien de temps dure la formation ?",
-          a: "Il n'y a pas de durée unique pour tous les programmes. Elle varie selon le programme, le secteur et le métier.",
+          q: "La voie de la formation est-elle ouverte à tous les Tunisiens ?",
+          a: "Non. La voie de la formation ne concerne que les Tunisiens qui font partie d'un programme de formation agréé et en remplissent les conditions. Un programme présent dans la liste officielle du Portale Integrazione Migranti n'est pas forcément ouvert aux candidatures : vérifiez l'annonce en vigueur et l'état du programme avant de préparer un dossier.",
+        },
+        {
+          q: "Puis-je payer un intermédiaire pour obtenir un contrat de travail en Italie ?",
+          a: "Non. Un contrat de travail en Italie ne s'achète pas, et le ministère tunisien de l'Emploi et de la Formation professionnelle met en garde contre les fausses offres d'emploi et les organismes illégaux qui demandent de l'argent pour un travail à l'étranger. Passez uniquement par les canaux officiels comme l'ANETI, et considérez toute demande d'argent contre un contrat ou un visa garanti comme un signal d'alerte.",
+        },
+        {
+          q: "Quels métiers en Italie sont ouverts aux Tunisiens par les programmes de formation agréés ?",
+          a: "Cela dépend des programmes agréés ouverts. Les programmes liés à la Tunisie couvrent des secteurs comme le bâtiment et les travaux publics, le tourisme et l'hôtellerie, la mécanique et la maintenance, et la restauration, et THAMM Plus vise surtout le bâtiment. Il n'existe pas de liste fixe de métiers : vérifiez dans l'annonce officielle de chaque programme les métiers concernés.",
+        },
+        {
+          q: "Faut-il parler italien avant de postuler ?",
+          a: "Cela dépend du programme. Les programmes de formation agréés pour l'Italie comprennent des cours d'italien, en plus du métier, de la formation civique et des notions de sécurité au travail. Les exigences linguistiques détaillées varient d'un programme à l'autre : lisez l'offre officielle sur ANETI International pour savoir ce qui est attendu au moment de postuler.",
+        },
+        {
+          q: "Combien de temps dure la formation pour l'Italie ?",
+          a: "Il n'y a pas de durée unique. La durée de la formation pour l'Italie varie selon le programme, le secteur et le métier, et aucune durée ne s'applique à tous les programmes agréés. L'annonce officielle de chaque programme, publiée via l'ANETI ou présente sur le Portale Integrazione Migranti, donne les détails propres à ce programme.",
         },
         {
           q: "Où trouver une offre d'emploi en Italie pour les Tunisiens ?",
-          a: "Commencez par l'ANETI et l'annonce officielle de chaque programme. Ne vous fiez pas aux publications sur les réseaux sociaux ni aux intermédiaires qui demandent de l'argent.",
+          a: "Sur ANETI International, qui publie les offres d'emploi en cours pour l'Italie et permet de les filtrer par pays. Chaque offre récente donne le lien exact vers son formulaire sur la plateforme de candidatures de l'ANETI. Ne vous fiez pas aux publications sur les réseaux sociaux ni aux intermédiaires qui demandent de l'argent : une offre introuvable sur un canal officiel est non vérifiée.",
+        },
+        {
+          q: "L'inscription sur ANETI International est-elle gratuite ?",
+          a: "Oui. La création d'un compte candidat sur ANETI International est gratuite. Certaines offres pour l'Italie demandent d'être inscrit à la fois au bureau d'emploi local et sur ANETI International, avec le même numéro de carte d'identité nationale (CIN) : inscrivez-vous aux deux endroits avant de postuler à une offre.",
         },
       ],
     },
