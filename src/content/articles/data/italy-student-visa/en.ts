@@ -154,6 +154,10 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
+      text: "In my experience, a health insurance policy from your Tunisian bank works for the visa when it comes with the consular declaration that it is valid in Italy, and the same policy can cover you after you arrive instead of the EUR 700 SSN registration.",
+    },
+    {
+      type: "p",
       text: "For accommodation, a hotel booking or a hospitality declaration from someone in Italy works. Applying for a university residence is **not** valid proof, even if you applied to DiSCo. To plan where you will actually live, see [temporary housing for your first weeks in Rome](article:student-housing-rome#first-weeks).",
     },
 

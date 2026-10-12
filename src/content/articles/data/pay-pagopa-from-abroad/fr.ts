@@ -11,7 +11,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["payer pagoPA depuis l’étranger", "payer pagoPA avec PayPal", "paiement pagoPA Tunisie", "carte internationale pagoPA", "checkout.pagopa.it", "avviso di pagamento"],
   summary:
-    "Vous pouvez payer un avis pagoPA depuis l’étranger, y compris depuis la Tunisie, sur checkout.pagopa.it sans SPID : saisissez le Codice Avviso et le code fiscal du créancier, puis choisissez PayPal ou une carte Visa, Mastercard ou autre carte internationale. En octobre 2026, payer pagoPA avec PayPal coûte 1,50 EUR (2,50 EUR au-delà de 248,50 EUR), plus environ 4 % si PayPal convertit la devise : payez en une fois, testez d’abord un petit avis et gardez une carte en secours.",
+    "Payer un avis pagoPA depuis l’étranger ou depuis la Tunisie est un paiement normal et simple : en ligne sur checkout.pagopa.it par carte ou PayPal, sans SPID, ou en espèces dans un bureau de tabac (tabaccheria) ou un bureau de poste une fois en Italie. En octobre 2026, PayPal coûte 1,50 EUR (2,50 EUR au-delà de 248,50 EUR), plus environ 4 % si PayPal convertit la devise ; d’après mon expérience, beaucoup d’étudiants tunisiens font aussi payer l’avis par une agence d’études en Tunisie.",
   body: [
     {
       type: "callout",
@@ -26,7 +26,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Une réserve honnête : PayPal est un moyen de paiement officiel de pagoPA, mais aucune source officielle ne confirme qu’un compte PayPal **enregistré en Tunisie** passe. Testez d’abord avec un petit avis et gardez une carte en secours.",
+      text: "Payer pagoPA est une démarche normale et courante. D’après mon expérience, beaucoup d’étudiants tunisiens font payer leurs avis par une agence d’études en Tunisie. Si vous payez vous-même, il y a trois façons simples : par carte en ligne, avec PayPal en ligne, ou en espèces dans un bureau de tabac (tabaccheria) ou un bureau de poste une fois en Italie.",
     },
     {
       type: "p",
@@ -36,7 +36,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "what-is-pagopa", text: "1. Qu’est-ce que pagoPA, et quels frais étudiants passent par lui ?" },
     {
       type: "p",
-      text: "pagoPA est le système de paiement public italien que les universités et la région du Latium utilisent pour des frais étudiants comme les frais de candidature, les frais d’inscription et la taxe régionale. Un organisme public (une université, la région du Latium, un ministère) émet un avis de paiement, l’**avviso di pagamento**, et vous le réglez via le prestataire de paiement (PSP) de votre choix. C’est le prestataire, et non pagoPA, qui fixe et perçoit la commission.",
+      text: "pagoPA est le système de paiement public italien que les universités et la région du Latium utilisent pour des frais étudiants comme les frais de candidature, les frais d’inscription et la taxe régionale. Un organisme public (une université, la région du Latium, un ministère) émet un avis de paiement, l’**avviso di pagamento**, et vous le réglez via le prestataire de paiement (PSP) de votre choix. C’est le prestataire, et non pagoPA, qui fixe et perçoit la commission. Vous pouvez payer en ligne, ou sur place dans un bureau de poste, une banque ou tout commerce affichant le logo pagoPA, comme un bureau de tabac (tabaccheria), un marchand de journaux ou un supermarché ([pagoPA : où payer](https://www.pagopa.gov.it/it/cittadini/dove-pagare/)).",
     },
     {
       type: "figure",
@@ -150,13 +150,13 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les frais de conversion PayPal d’environ 4 % s’appliquent quand PayPal convertit la devise pour vous. Nous n’avons pas pu confirmer si c’est PayPal ou votre banque tunisienne qui convertit pour une carte en dinars : comparez le montant final sur votre relevé après votre paiement test.",
+      text: "Les frais de conversion PayPal d’environ 4 % s’appliquent quand PayPal convertit la devise pour vous ; vérifiez le montant final sur votre relevé après le paiement.",
     },
     {
       type: "callout",
-      tone: "warning",
-      title: "Testez d’abord avec un petit avis",
-      text: "Un compte PayPal tunisien sur pagoPA n’est pas confirmé officiellement, et pagoPA indique que les moyens de paiement peuvent varier selon l’avis et le prestataire. Essayez d’abord un petit montant (par exemple un timbre de 16 EUR, si votre université l’émet comme avis séparé) bien avant l’échéance, et gardez une carte en secours.",
+      tone: "tip",
+      title: "Gardez une deuxième option",
+      text: "Si un moyen de paiement ne passe pas, utilisez-en simplement un autre : la carte, PayPal, ou les espèces dans un bureau de tabac ou un bureau de poste une fois en Italie. Payez quelques jours avant l’échéance pour avoir le temps de changer.",
     },
 
     { type: "h2", id: "pay-with-card", text: "4. Comment payer pagoPA plutôt avec une carte internationale ?" },
@@ -270,6 +270,7 @@ export const fr: ArticleTranslation = {
       id: "official-sources",
       title: "Sources officielles",
       items: [
+        { label: "pagoPA : où payer (en ligne et sur place)", url: "https://www.pagopa.gov.it/it/cittadini/dove-pagare/" },
         { label: "pagoPA : payer avec pagoPA", url: "https://assistenza.pagopa.gov.it/hc/it/articles/31958790454417-Pagare-con-pagoPA" },
         { label: "pagoPA : payer un avis de l’étranger si vous n’êtes pas italien", url: "https://assistenza.pagopa.gov.it/hc/it/articles/37287486009617" },
         { label: "pagoPA : moyens de paiement acceptés", url: "https://assistenza.pagopa.gov.it/hc/it/articles/39527536398609" },
@@ -293,7 +294,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026. Les commissions des prestataires sont un relevé du 10 octobre 2026 et changent souvent ; le fonctionnement d’un compte PayPal tunisien sur pagoPA n’est pas confirmé officiellement. Vérifiez les pages officielles avant de payer.",
+      text: "Dernière vérification : octobre 2026. Les commissions des prestataires sont un relevé du 10 octobre 2026 et changent souvent. Vérifiez les pages officielles avant de payer.",
     },
   ],
   guide: [

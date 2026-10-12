@@ -12,7 +12,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["pay Italian university fees from Tunisia", "pay Italian tuition from Tunisia", "pay enrolment fees in Italy from Tunisia", "international card Tunisia", "pay in euros from Tunisia", "transfer university fees abroad from Tunisia"],
   summary:
-    "In 2026, the safest legal way to pay Italian university fees from Tunisia is a bank transfer: exam and application fees against an invoice, tuition through your study file at one bank. For smaller online payments, the technology card (1,000 TND a year) and a Tunisian PayPal account on pagoPA can work, but test with a small notice first and ask your bank.",
+    "In 2026, the safest legal way to pay Italian university fees from Tunisia is a bank transfer: exam and application fees against an invoice, tuition through your study file at one bank. For smaller online payments, the technology card (1,000 TND a year) and a Tunisian PayPal account on pagoPA can work, and paying a pagoPA notice is a normal process; ask your bank about transfers.",
   body: [
     {
       type: "callout",
@@ -42,7 +42,7 @@ export const en: ArticleTranslation = {
       rows: [
         ["Application, CIMEA and entrance-test fees", "Online, on the university or CIMEA portal", "Bank transfer against the invoice; technology card or PayPal for small amounts (ask your bank)"],
         ["Tuition instalments", "pagoPA notice or university invoice", "Bank transfer under your study file"],
-        ["Regional tax and revenue stamp", "pagoPA notice with the first instalment", "Technology card or PayPal on pagoPA (test first); an Italian card once you arrive"],
+        ["Regional tax and revenue stamp", "pagoPA notice with the first instalment", "Card or PayPal on pagoPA; cash at a tabaccheria or an Italian card once you arrive"],
         ["Residence permit kit", "At an Italian post office, after arrival", "Paid in Italy, see [residence permit costs in Rome](article:arriving-in-rome#residence-permit)"],
       ],
     },
@@ -103,7 +103,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "tip",
       title: "Ask before you rely on it",
-      text: "Many Italian universities issue pagoPA notices rather than a plain bank account number. Whether a Tunisian bank will pay a pagoPA notice by transfer could not be confirmed, so ask your bank first.",
+      text: "Many Italian universities issue pagoPA notices rather than a plain bank account number. In my experience, study agencies in Tunisia pay these notices for students as a normal service, and you can also pay one yourself by card, with PayPal or in cash at a tabaccheria once you are in Italy; ask your bank whether it can pay a notice by transfer.",
     },
 
     { type: "h2", id: "technology-card", text: "3. Option 2: can the technology card (CTI) pay Italian fees?" },
@@ -149,7 +149,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "No official source confirms that pagoPA accepts a Tunisian PayPal account. Test with a small notice first, such as the EUR 16 stamp. Every checkout step is in [how to pay a pagoPA notice from abroad with PayPal or a card](article:pay-pagopa-from-abroad).",
+      text: "Paying a pagoPA notice is a normal process: by card or PayPal online, or in cash at a tabaccheria or post office once you are in Italy. Every checkout step is in [how to pay a pagoPA notice from abroad with PayPal or a card](article:pay-pagopa-from-abroad).",
     },
 
     { type: "h2", id: "once-in-italy", text: "5. Option 4: when does an Italian account or card become the best option?" },
@@ -237,7 +237,7 @@ export const en: ArticleTranslation = {
         },
         {
           q: "Can a Tunisian PayPal account pay Italian university fees?",
-          a: "Yes, in principle: a Tunisian PayPal account can pay and send money, and PayPal is an official payment method on the pagoPA checkout. A Tunisian account generally cannot receive money, which does not matter for paying a fee. No official source confirms that pagoPA accepts Tunisian accounts, so test with a small notice, such as the EUR 16 stamp, and pay in full.",
+          a: "Yes, in principle: a Tunisian PayPal account can pay and send money, and PayPal is an official payment method on the pagoPA checkout. A Tunisian account generally cannot receive money, which does not matter for paying a fee. Choose to pay in full, and keep a card as a second option.",
         },
         {
           q: "Can I pay Italian university fees with a crypto card from Tunisia?",
@@ -282,7 +282,7 @@ export const en: ArticleTranslation = {
       items: [
         { label: "Safest route", value: "Bank transfer: fees against an invoice, tuition through your study file" },
         { label: "Technology card", value: "1,000 TND per calendar year (about EUR 297)" },
-        { label: "PayPal on pagoPA", value: "EUR 1.50 to EUR 2.50 fee; test with a small notice" },
+        { label: "PayPal on pagoPA", value: "EUR 1.50 to EUR 2.50 fee; pay in full" },
         { label: "Crypto", value: "No Tunisian text authorises it" },
       ],
     },

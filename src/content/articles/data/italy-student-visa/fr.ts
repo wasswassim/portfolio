@@ -154,6 +154,10 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
+      text: "D'après mon expérience, une assurance santé prise auprès de votre banque tunisienne convient pour le visa si elle est accompagnée de la déclaration consulaire de validité en Italie, et la même assurance peut vous couvrir après votre arrivée à la place de l'inscription au SSN à 700 EUR.",
+    },
+    {
+      type: "p",
       text: "Pour l'hébergement, une réservation d'hôtel ou une déclaration d'hospitalité d'une personne en Italie convient. Une demande de résidence universitaire n'est **pas** une preuve valable, même si vous avez postulé auprès de DiSCo. Pour prévoir où vous vivrez vraiment, voyez [le logement temporaire de vos premières semaines à Rome](article:student-housing-rome#first-weeks).",
     },
 

@@ -200,11 +200,11 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "health-cover", text: "Choisir votre couverture santé" },
     {
       type: "p",
-      text: "Inscrivez-vous volontairement au service national de santé (SSN) pour environ 700 EUR par an ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)), ou gardez une assurance privée. Vérifiez le montant actuel auprès de votre ASL ou de votre université.",
+      text: "Vous n’êtes pas obligé de vous inscrire au service national de santé (SSN), qui coûte environ 700 EUR par an ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)) : une assurance santé privée valable en Italie pendant toute la durée de votre permis est acceptée à la place. D’après mon expérience, une assurance santé souscrite en Tunisie, par exemple auprès de votre banque tunisienne lors de l’ouverture du dossier études, remplace l’inscription au SSN à 700 EUR ; vérifiez qu’elle couvre l’Italie pendant toute la durée du permis. Vérifiez le montant actuel du SSN auprès de votre ASL ou de votre université.",
     },
     {
       type: "fees",
-      title: "Coût de l'inscription au service de santé",
+      title: "Inscription au SSN (seulement si vous la choisissez)",
       feeIds: ["ssn-voluntary"],
     },
 

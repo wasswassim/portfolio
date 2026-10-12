@@ -200,11 +200,11 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "health-cover", text: "Choose your health cover" },
     {
       type: "p",
-      text: "Register voluntarily with the national health service (SSN) for about EUR 700 a year ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)), or keep private insurance. Check the current amount with your ASL or university.",
+      text: "You do not have to register with the national health service (SSN), which costs about EUR 700 a year ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)): private health insurance valid in Italy for the whole length of your permit is accepted instead. In my experience, a health insurance policy taken in Tunisia, for example through your Tunisian bank when you open your study file, replaces the EUR 700 SSN registration; check that it covers Italy for the whole permit period. Check the current SSN amount with your ASL or university.",
     },
     {
       type: "fees",
-      title: "Health service registration fee",
+      title: "SSN registration fee (only if you choose it)",
       feeIds: ["ssn-voluntary"],
     },
 

@@ -11,7 +11,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["pay pagoPA from abroad", "pay pagoPA with PayPal", "pay pagoPA from Tunisia", "pagoPA foreign card", "checkout.pagopa.it", "avviso di pagamento"],
   summary:
-    "You can pay a pagoPA notice from abroad, including from Tunisia, on checkout.pagopa.it without SPID: type the Codice Avviso and the creditor's tax code, then choose PayPal or a Visa, Mastercard or other international card. As of October 2026, paying pagoPA with PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 4% if PayPal converts the currency, so pay in full, test with a small notice first and keep a card as a backup.",
+    "Paying a pagoPA notice from abroad or from Tunisia is a normal, simple payment: pay online on checkout.pagopa.it by card or PayPal, without SPID, or in cash at a tabaccheria or post office once you are in Italy. As of October 2026, PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 4% if PayPal converts the currency; in my experience, many Tunisian students also have a study agency in Tunisia pay the notice for them.",
   body: [
     {
       type: "callout",
@@ -26,7 +26,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "One honest caveat: PayPal is an official pagoPA method, but no official source confirms that a **Tunisia-registered** PayPal account goes through. Test with a small notice first and keep a card ready as a backup.",
+      text: "Paying pagoPA is a normal, everyday process. In my experience, many Tunisian students have a study agency in Tunisia pay their notices for them. If you pay yourself, there are three simple ways: by card online, with PayPal online, or in cash at a tabaccheria (tobacconist) or post office once you are in Italy.",
     },
     {
       type: "p",
@@ -36,7 +36,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "what-is-pagopa", text: "1. What is pagoPA, and which student fees use it?" },
     {
       type: "p",
-      text: "pagoPA is the Italian public payment system that universities and the Lazio region use for student fees such as application fees, enrolment fees and the regional tax. A public body (a university, the Lazio region, a ministry) issues a payment notice, the **avviso di pagamento**, and you pay it through a payment provider (PSP) of your choice. The provider, not pagoPA, sets and collects the fee.",
+      text: "pagoPA is the Italian public payment system that universities and the Lazio region use for student fees such as application fees, enrolment fees and the regional tax. A public body (a university, the Lazio region, a ministry) issues a payment notice, the **avviso di pagamento**, and you pay it through a payment provider (PSP) of your choice. The provider, not pagoPA, sets and collects the fee. You can pay online, or in person at a post office, a bank or any shop with the pagoPA logo, such as a tabaccheria, a newsagent or a supermarket ([pagoPA: where to pay](https://www.pagopa.gov.it/it/cittadini/dove-pagare/)).",
     },
     {
       type: "figure",
@@ -150,13 +150,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "PayPal's conversion fee of about 4% applies when PayPal converts the currency for you. Whether PayPal or your Tunisian bank converts a dinar card could not be confirmed, so compare the final amount on your bank statement after your test payment.",
+      text: "PayPal's conversion fee of about 4% applies when PayPal converts the currency for you; check the final amount on your bank statement after you pay.",
     },
     {
       type: "callout",
-      tone: "warning",
-      title: "Test with a small notice first",
-      text: "A Tunisian PayPal account on pagoPA is not officially confirmed, and pagoPA says methods can vary by notice and provider. Try a small amount first (for example a EUR 16 stamp, if your university issues it as a separate notice) well before the deadline, and keep a card as a backup.",
+      tone: "tip",
+      title: "Keep a second option",
+      text: "If one method does not go through, simply use another: card, PayPal, or cash at a tabaccheria or post office once you are in Italy. Pay a few days before the due date so you have time to switch.",
     },
 
     { type: "h2", id: "pay-with-card", text: "4. How do you pay pagoPA with an international card instead?" },
@@ -270,6 +270,7 @@ export const en: ArticleTranslation = {
       id: "official-sources",
       title: "Official sources",
       items: [
+        { label: "pagoPA: where to pay (online and in person)", url: "https://www.pagopa.gov.it/it/cittadini/dove-pagare/" },
         { label: "pagoPA: paying with pagoPA", url: "https://assistenza.pagopa.gov.it/hc/it/articles/31958790454417-Pagare-con-pagoPA" },
         { label: "pagoPA: paying a notice from abroad if you are not Italian", url: "https://assistenza.pagopa.gov.it/hc/it/articles/37287486009617" },
         { label: "pagoPA: accepted payment methods", url: "https://assistenza.pagopa.gov.it/hc/it/articles/39527536398609" },
@@ -293,7 +294,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026. Provider fees are a snapshot of 10 October 2026 and change often; whether a Tunisian PayPal account works on pagoPA is not officially confirmed. Check the official pages before you pay.",
+      text: "Last verified: October 2026. Provider fees are a snapshot of 10 October 2026 and change often. Check the official pages before you pay.",
     },
   ],
   guide: [

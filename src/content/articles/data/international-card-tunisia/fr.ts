@@ -11,7 +11,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["payer les frais d’inscription en Italie depuis la Tunisie", "frais d’inscription Italie", "payer une université italienne depuis la Tunisie", "carte internationale Tunisie", "payer en euros depuis la Tunisie", "virement des frais de scolarité à l’étranger"],
   summary:
-    "En 2026, la voie légale la plus sûre pour payer vos frais d’inscription en Italie depuis la Tunisie est le virement bancaire : frais de dossier et d’examen sur facture, frais de scolarité via votre dossier études dans une seule banque. Pour les petits paiements en ligne, la carte technologique (1 000 TND par an) et un compte PayPal tunisien sur pagoPA peuvent fonctionner, mais testez d’abord avec un petit avis et demandez à votre banque.",
+    "En 2026, la voie légale la plus sûre pour payer vos frais d’inscription en Italie depuis la Tunisie est le virement bancaire : frais de dossier et d’examen sur facture, frais de scolarité via votre dossier études dans une seule banque. Pour les petits paiements en ligne, la carte technologique (1 000 TND par an) et un compte PayPal tunisien sur pagoPA peuvent fonctionner, et payer un avis pagoPA est une démarche normale ; demandez à votre banque pour les virements.",
   body: [
     {
       type: "callout",
@@ -41,7 +41,7 @@ export const fr: ArticleTranslation = {
       rows: [
         ["Frais de candidature, CIMEA et tests d’entrée", "En ligne, sur le portail de l’université ou du CIMEA", "Virement sur facture ; carte technologique ou PayPal pour les petits montants (demandez à votre banque)"],
         ["Tranches des frais de scolarité", "Avis pagoPA ou facture de l’université", "Virement dans le cadre de votre dossier études"],
-        ["Taxe régionale et timbre fiscal", "Avis pagoPA avec la première tranche", "Carte technologique ou PayPal sur pagoPA (testez d’abord) ; une carte italienne une fois sur place"],
+        ["Taxe régionale et timbre fiscal", "Avis pagoPA avec la première tranche", "Carte ou PayPal sur pagoPA ; espèces dans un bureau de tabac ou carte italienne une fois sur place"],
         ["Kit du permis de séjour", "Dans un bureau de poste italien, après l’arrivée", "Payé en Italie, voir [le coût du permis de séjour à Rome](article:arriving-in-rome#residence-permit)"],
       ],
     },
@@ -102,7 +102,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "tip",
       title: "Demandez avant de compter dessus",
-      text: "Beaucoup d’universités italiennes émettent des avis pagoPA plutôt qu’un simple numéro de compte. Nous n’avons pas pu confirmer qu’une banque tunisienne accepte de payer un avis pagoPA par virement : posez la question à votre banque.",
+      text: "Beaucoup d’universités italiennes émettent des avis pagoPA plutôt qu’un simple numéro de compte. D’après mon expérience, les agences d’études en Tunisie paient ces avis pour les étudiants de façon courante, et vous pouvez aussi le payer vous-même par carte, avec PayPal ou en espèces dans un bureau de tabac une fois en Italie ; demandez à votre banque si elle peut payer un avis par virement.",
     },
 
     { type: "h2", id: "technology-card", text: "3. Option 2 : la carte technologique (CTI) peut-elle payer des frais italiens ?" },
@@ -148,7 +148,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Aucune source officielle ne confirme que pagoPA accepte un compte PayPal tunisien. Testez d’abord avec un petit avis, comme le timbre de 16 EUR. Toutes les étapes sont dans [comment payer un avis pagoPA depuis l’étranger avec PayPal ou une carte](article:pay-pagopa-from-abroad).",
+      text: "Payer un avis pagoPA est une démarche normale : par carte ou PayPal en ligne, ou en espèces dans un bureau de tabac (tabaccheria) ou un bureau de poste une fois en Italie. Toutes les étapes sont dans [comment payer un avis pagoPA depuis l’étranger avec PayPal ou une carte](article:pay-pagopa-from-abroad).",
     },
 
     { type: "h2", id: "once-in-italy", text: "5. Option 4 : quand un compte ou une carte italienne devient-il la meilleure option ?" },
@@ -236,7 +236,7 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Un compte PayPal tunisien peut-il payer des frais d’université en Italie ?",
-          a: "Oui, en principe : un compte PayPal tunisien peut payer et envoyer de l’argent, et PayPal est un moyen de paiement officiel sur la page pagoPA. Un compte tunisien ne peut en général pas recevoir d’argent, ce qui ne gêne pas pour payer des frais. Aucune source officielle ne confirme que pagoPA accepte les comptes tunisiens : testez avec un petit avis, comme le timbre de 16 EUR, et payez en une fois.",
+          a: "Oui, en principe : un compte PayPal tunisien peut payer et envoyer de l’argent, et PayPal est un moyen de paiement officiel sur la page pagoPA. Un compte tunisien ne peut en général pas recevoir d’argent, ce qui ne gêne pas pour payer des frais. Choisissez de payer en une fois et gardez une carte comme deuxième option.",
         },
         {
           q: "Peut-on payer ses frais d’université en Italie avec une carte crypto depuis la Tunisie ?",
@@ -281,7 +281,7 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Voie la plus sûre", value: "Virement : frais sur facture, scolarité via le dossier études" },
         { label: "Carte technologique", value: "1 000 TND par année civile (environ 297 EUR)" },
-        { label: "PayPal sur pagoPA", value: "Commission de 1,50 à 2,50 EUR ; testez avec un petit avis" },
+        { label: "PayPal sur pagoPA", value: "Commission de 1,50 à 2,50 EUR ; payez en une fois" },
         { label: "Crypto", value: "Aucun texte tunisien ne l’autorise" },
       ],
     },
