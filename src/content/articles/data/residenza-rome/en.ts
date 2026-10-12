@@ -5,13 +5,13 @@ export const en: ArticleTranslation = {
   slug: "how-to-apply-for-residenza-in-rome",
   title: "How to Apply for Residenza in Rome",
   subtitle: "Anagrafe Registration and Carta d'Identità for Foreign Students",
-  seoTitle: "How to Apply for Residenza in Rome as a Foreign Student",
+  seoTitle: "Residenza in Rome: Anagrafe Registration Step by Step",
   metaDescription:
-    "Register your residenza at the Rome anagrafe as a non-EU student: documents, online, PEC or post, the 45-day Polizia Locale check and the carta d'identità.",
+    "Register your residenza in Rome at the anagrafe as a non-EU student: documents, online, PEC or counter, the 45-day Polizia Locale check and the EUR 22.21 CIE.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["how to apply for residenza in Rome", "residenza anagrafe Roma", "iscrizione anagrafica stranieri Roma", "carta d'identità stranieri Roma", "residenza for foreign students in Italy", "TuPassi Roma anagrafe"],
+  keywords: ["residenza in Rome", "how to apply for residenza in Rome", "residenza anagrafe Roma", "iscrizione anagrafica stranieri Roma", "residenza for non-EU students in Rome", "carta d'identità stranieri Roma", "TuPassi Roma anagrafe"],
   summary:
-    "To get residenza in Rome, you send a dichiarazione di residenza to Roma Capitale (online with SPID/CIE/CNS, by PEC, by registered post or at the counter) with your passport, your permesso di soggiorno or its receipt (a first-permit receipt may not be enough in every Municipio: check first) and your lease or the owner's declaration; it is free. The Comune registers you within 2 working days, the Polizia Locale checks the address within 45 days, and once you are resident you can request the electronic identity card (CIE) for EUR 22.21.",
+    "To register your residenza in Rome, send the free dichiarazione di residenza to Roma Capitale through one channel (online with SPID/CIE/CNS, PEC, registered post or the counter) with your passport, your permesso di soggiorno (a first-permit receipt may not be enough in every Municipio: check first) and your lease or the owner's declaration. The Comune registers you within 2 working days, the Polizia Locale checks the address within 45 days, and once you are resident the electronic identity card (CIE) costs EUR 22.21 in Rome (as of October 2026).",
   body: [
     {
       type: "callout",
@@ -26,25 +26,25 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Once you are resident, you can ask for the Italian electronic identity card (*carta d'identità elettronica*, CIE). This is part 2 of our settling-in series, after [opening a bank account in Italy as a student](article:bank-account-italy-student).",
+      text: "Once you are resident, you can ask for the Italian electronic identity card (*carta d'identità elettronica*, CIE). This is part 2 of our settling-in series, after [opening a bank account in Italy as a student](article:bank-account-italy-student) and before [finding a student job in Rome](article:student-jobs-rome).",
     },
 
     { type: "h2", id: "why-residenza", text: "1. Do you need residenza as a student in Rome?" },
     {
       type: "p",
-      text: "Residenza (*iscrizione anagrafica*) means the Comune records your usual home (*dimora abituale*). It is different from the permesso di soggiorno, which you request first; see [how to request the residence permit for study](article:arriving-in-rome#residence-permit). If you plan to stay in Rome for your whole degree, registering is useful:",
+      text: "Residenza is not strictly required for a student in Rome, but it is useful if you stay for your whole degree. Residenza (*iscrizione anagrafica*) means the Comune di Roma records your usual home (*dimora abituale*) at the anagrafe. Residenza is different from the permesso di soggiorno, which you request first; see [how to apply for the residence permit for study in Italy](article:arriving-in-rome#residence-permit). Registering residenza at the Rome anagrafe matters for three reasons:",
     },
     {
       type: "ul",
       items: [
-        "You can request anagrafe certificates and the CIE as a resident.",
-        "It makes your ASL district clear for the national health service.",
+        "As a resident, you can request anagrafe certificates and the electronic identity card (CIE).",
+        "Residenza makes your ASL district clear for the national health service.",
         "The law asks you to declare a move within **20 days** (DPR 223/1989, art. 13), and the declaration is free.",
       ],
     },
     {
       type: "p",
-      text: "Residence helps but is not strictly required for health cover: [ASL Roma 1](https://www.aslroma1.it/assistenza-sanitaria-ai-cittadini-extracomunitari) accepts a self-declaration of residence **or** of effective dimora for the voluntary registration.",
+      text: "Residenza helps but is not strictly required for health cover in Rome: [ASL Roma 1](https://www.aslroma1.it/assistenza-sanitaria-ai-cittadini-extracomunitari) accepts a self-declaration of residence **or** of effective dimora for the voluntary registration.",
     },
     {
       type: "fees",
@@ -53,10 +53,10 @@ export const en: ArticleTranslation = {
       tnd: true,
     },
 
-    { type: "h2", id: "documents", text: "2. Documents for residenza in Rome (non-EU citizens)" },
+    { type: "h2", id: "documents", text: "2. Which documents do non-EU citizens need for residenza in Rome?" },
     {
       type: "p",
-      text: "The form is the ministerial *dichiarazione di residenza*, with the extra list for non-EU citizens (*Allegato A*), on the [Roma Capitale change of residence page](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). Fill in every field marked with an asterisk, or the file is rejected.",
+      text: "For residenza in Rome, a non-EU citizen sends the signed *dichiarazione di residenza* with a copy of the passport, the permesso di soggiorno and a housing title (a registered lease or the owner's declaration). The form is the ministerial *dichiarazione di residenza*, with the extra list for non-EU citizens (*Allegato A*), on the [Roma Capitale change of residence page](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). Fill in every field of the form marked with an asterisk, or the anagrafe rejects the file.",
     },
     {
       type: "callout",
@@ -84,13 +84,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The codice fiscale is not in the official list of attachments, but bring it anyway: it is practical advice, not a rule.",
+      text: "The codice fiscale is not in the official list of attachments for residenza, but bring it anyway: it is practical advice, not a rule. If you do not have one yet, see [how to get a codice fiscale as a student in Italy](article:arriving-in-rome#codice-fiscale).",
     },
 
-    { type: "h2", id: "book-and-submit", text: "3. How to send the request and book the anagrafe counter" },
+    { type: "h2", id: "book-and-submit", text: "3. How do you send the residenza request in Rome?" },
     {
       type: "p",
-      text: "Use **one channel only**. Sending the same request twice slows everything down.",
+      text: "Roma Capitale accepts the residenza request through **one channel only**: online with SPID, CIE or CNS, by PEC or registered post, or at an anagrafe counter booked through TuPassi. Sending the same request twice slows everything down.",
     },
     {
       type: "figure",
@@ -117,7 +117,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-counter", text: "Step 3: or at the counter with TuPassi" },
     {
       type: "p",
-      text: "[TuPassi](https://www.tupassi.com/MiroPrenSPID/cliente/cComuneRoma) is Roma Capitale's official booking and queue system for anagrafe counters: book online with SPID, CIE or CNS, or take a ticket at the totem in the office. Each Municipio uses it differently, so check your Municipio page first.",
+      text: "[TuPassi](https://www.tupassi.com/MiroPrenSPID/cliente/cComuneRoma) is Roma Capitale's official booking and queue system for anagrafe counters: book online with SPID, CIE or CNS, or take a ticket at the totem in the office. Each Municipio uses TuPassi differently, so check your Municipio page first.",
     },
     {
       type: "callout",
@@ -126,7 +126,11 @@ export const en: ArticleTranslation = {
       text: "The [ANPR online change of residence](https://www.anagrafenazionale.interno.it/area-cittadino/cambio-di-residenza/) is only for people already registered in ANPR. A first arrival from Tunisia is not, so use Roma Capitale online, PEC, post or the counter.",
     },
 
-    { type: "h2", id: "police-check", text: "4. The Polizia Locale check: what happens after you apply" },
+    { type: "h2", id: "police-check", text: "4. When does the Polizia Locale check your address?" },
+    {
+      type: "p",
+      text: "After you send the residenza declaration, the Comune di Roma registers you within 2 working days, and the Polizia Locale checks within 45 days that you really live at the address.",
+    },
     {
       type: "table",
       caption: "Timeline after you send the declaration (DL 5/2012, art. 5; DPR 223/1989, art. 19).",
@@ -152,16 +156,20 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "What happens if nobody is home during the check is not described in official Rome sources. Practical advice, not a rule: put your name on the doorbell and the mailbox, and stay reachable by phone and email.",
+      text: "What happens if nobody is home during the Polizia Locale check is not described in official Rome sources. Practical advice, not a rule: put your name on the doorbell and the mailbox, and stay reachable by phone and email.",
     },
     {
       type: "callout",
       tone: "warning",
       title: "Be honest about the address",
-      text: "False declarations are reported to the authorities and can lead to criminal penalties (DPR 445/2000, arts. 75-76). You cannot register in a property you occupy without a right to it.",
+      text: "False residence declarations are reported to the authorities and can lead to criminal penalties (DPR 445/2000, arts. 75-76). You cannot register in a property you occupy without a right to it.",
     },
 
-    { type: "h2", id: "identity-card", text: "5. The carta d'identità for foreign residents in Rome" },
+    { type: "h2", id: "identity-card", text: "5. How do foreign residents get the carta d'identità in Rome?" },
+    {
+      type: "p",
+      text: "Once you are resident in Rome, you book the electronic identity card (CIE) on the Ministry of the Interior portal, bring your passport and permesso di soggiorno to the appointment, pay at the Municipio and receive the card within 6 working days.",
+    },
     { type: "h3", id: "step-book-cie", text: "Step 1: book on the Ministry portal" },
     {
       type: "p",
@@ -181,7 +189,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-cie-delivery", text: "Step 3: receive the card" },
     {
       type: "p",
-      text: "The card is delivered within 6 working days, to your home or for pick-up at the Comune ([Ministry of the Interior](https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/)).",
+      text: "The CIE is delivered within 6 working days, to your home or for pick-up at the Comune ([Ministry of the Interior](https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/)).",
     },
     {
       type: "callout",
@@ -194,14 +202,14 @@ export const en: ArticleTranslation = {
       text: "What the CIE is really good for: an Italian ID to show in Italy, and **Entra con CIE**, the login to public online services with an 8-digit PIN and an NFC phone ([Ministry of the Interior](https://www.cartaidentita.interno.gov.it/identificazione-digitale/entra-con-cie/)).",
     },
 
-    { type: "h2", id: "after-registration", text: "6. Keeping your residenza after each permit renewal" },
+    { type: "h2", id: "after-registration", text: "6. How do you keep your residenza after each permit renewal?" },
     {
       type: "p",
       text: "After **each renewal** of your permesso di soggiorno, renew your *dichiarazione di dimora abituale* at the anagrafe within **60 days**, with the new permit (DPR 223/1989, art. 7). You keep your registration while the permit is being renewed.",
     },
     {
       type: "p",
-      text: "If you forget, the Comune can cancel your residence one year after your permit expires, after a notice giving you 30 days to act. If a request is refused, you can appeal to the Prefetto within 30 days.",
+      text: "If you forget to renew the dichiarazione di dimora abituale, the Comune can cancel your residenza one year after your permit expires, after a notice giving you 30 days to act. If the anagrafe refuses a residenza request, you can appeal to the Prefetto within 30 days.",
     },
 
     {
@@ -210,28 +218,28 @@ export const en: ArticleTranslation = {
       title: "Frequently asked questions",
       items: [
         {
-          q: "Do I need residenza in Rome as a student?",
-          a: "It is not strictly required, but it is useful if you stay for your degree. It lets you get the CIE and anagrafe certificates, and ASL Roma 1 accepts residence or effective dimora for the health service.",
+          q: "Is residenza mandatory for international students in Rome?",
+          a: "No, residenza is not strictly mandatory for a student in Rome, but it is useful if you stay for your whole degree. As a resident you can request anagrafe certificates and the electronic identity card (CIE). For the national health service, ASL Roma 1 accepts a self-declaration of residence or of effective dimora, so the voluntary registration does not depend on residenza alone.",
         },
         {
-          q: "How long does the residenza check take?",
-          a: "Up to 45 days. The Comune registers you within 2 working days, the Polizia Locale checks the address within 45 days, and with no notice of rejection the residence is confirmed.",
+          q: "How long does residenza take in Rome?",
+          a: "Residenza in Rome takes up to 45 days to be confirmed. The Comune di Roma registers you within 2 working days, and your residence counts from the day you declared it. The Polizia Locale then checks the address within 45 days; if you receive no preavviso di rigetto (notice of rejection) in that time, the residenza is confirmed by silenzio-assenso.",
         },
         {
           q: "Can I travel in Europe with an Italian identity card?",
-          a: "No, not as a foreign citizen. For you the CIE is not valid for travel abroad; travel with your passport and valid permesso di soggiorno, for at most 90 days in any 180.",
+          a: "No, not as a foreign citizen. For a non-EU resident, the Italian electronic identity card (CIE) is only an identity document and is not valid for travel abroad. To travel in the Schengen area, carry your valid passport and your valid permesso di soggiorno, and stay at most 90 days in any 180-day period.",
         },
         {
-          q: "Is TuPassi used to book the identity card?",
-          a: "No. TuPassi books anagrafe counters in many Municipi, but the CIE is booked only at prenotazionicie.interno.gov.it.",
+          q: "Is TuPassi used to book the identity card in Rome?",
+          a: "No. In Rome, TuPassi books anagrafe counters, for example to hand in the residence declaration, and each Municipio uses TuPassi differently. The electronic identity card (CIE) is booked only on the Ministry of the Interior portal, prenotazionicie.interno.gov.it, in any Municipio. Confirm the booking when the reminder email arrives, or the appointment is cancelled.",
         },
         {
           q: "Can I send my residenza request by email?",
-          a: "No, plain email has not been accepted since 1 March 2022. Use the online service, PEC, registered post or the counter.",
+          a: "No, Roma Capitale has not accepted residenza requests by plain email since 1 March 2022. Send the signed form and all attachments in one PDF by PEC or by registered post, apply online with SPID, CIE or CNS, or go to the anagrafe counter. Use only one channel, because sending the same request twice slows everything down.",
         },
         {
           q: "How much does residenza cost in Rome?",
-          a: "Nothing: the declaration of residence is free. The CIE costs EUR 22.21 in Rome (EUR 27.37 if lost).",
+          a: "Nothing: the residenza declaration in Rome is free. The only cost that usually follows is the electronic identity card (CIE), which costs EUR 22.21 in Rome, or EUR 27.37 if you lost your previous card. Payment for the CIE is by card or pagoPA, so check which one your Municipio accepts before the appointment.",
         },
       ],
     },

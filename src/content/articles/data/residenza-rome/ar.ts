@@ -6,13 +6,13 @@ export const ar: ArticleTranslation = {
   slug: "how-to-apply-for-residenza-in-rome",
   title: "كيف تطلب الريزيدنزا في روما",
   subtitle: "التسجيل في anagrafe وبطاقة الهوية (carta d'identità) للطالب الأجنبي",
-  seoTitle: "كيف تطلب الريزيدنزا في روما: دليل الطالب الأجنبي",
+  seoTitle: "الإقامة (residenza) في روما: التسجيل في anagrafe خطوة بخطوة",
   metaDescription:
-    "كيف يسجّل الطالب غير الأوروبي الـ residenza في anagrafe روما: الوثائق، الإرسال عبر الإنترنت أو PEC أو البريد، مراقبة Polizia Locale خلال 45 يومًا، وبطاقة CIE.",
+    "سجّل الإقامة (residenza) في روما لدى anagrafe كطالب غير أوروبي: الوثائق، الإرسال عبر الإنترنت أو PEC، مراقبة Polizia Locale خلال 45 يومًا، وCIE بـ 22.21 يورو.",
   imageAlt: "الكولوسيوم في روما وعلى جانبه علم إيطالي ضخم والحشود أمامه",
-  keywords: ["كيف تطلب الريزيدنزا في روما", "residenza anagrafe Roma", "التسجيل في البلدية في روما للأجانب", "carta d'identità stranieri Roma", "بطاقة الهوية الإيطالية للأجانب", "TuPassi Roma anagrafe"],
+  keywords: ["الإقامة (residenza) في روما", "كيف تطلب الريزيدنزا في روما", "residenza anagrafe Roma", "التسجيل في البلدية في روما للأجانب", "carta d'identità stranieri Roma", "بطاقة الهوية الإيطالية للأجانب", "TuPassi Roma anagrafe"],
   summary:
-    "للحصول على الـ residenza في روما، ترسل dichiarazione di residenza إلى Roma Capitale (عبر الإنترنت بـ SPID/CIE/CNS، أو بـ PEC، أو برسالة مضمونة، أو في الشباك) مع جواز سفرك وPermesso di soggiorno أو وصله (قد لا يكفي وصل الإذن الأول في كل Municipio، فتأكّد مسبقًا) وعقد الكراء أو تصريح المالك، والإجراء مجاني. تسجّلك البلدية خلال يومي عمل، وتتحقق Polizia Locale من العنوان خلال 45 يومًا، وبعدها يمكنك طلب بطاقة الهوية الإلكترونية (CIE) بـ 22.21 يورو.",
+    "لتسجيل الإقامة (residenza) في روما، أرسل dichiarazione di residenza المجانية إلى Roma Capitale عبر قناة واحدة (الإنترنت بـ SPID/CIE/CNS، أو PEC، أو رسالة مضمونة، أو الشباك) مع جواز سفرك وPermesso di soggiorno (قد لا يكفي وصل الإقامة الأولى في كل Municipio، فتأكّد مسبقًا) وعقد الكراء أو تصريح المالك. تسجّلك البلدية خلال يومي عمل، وتتحقق Polizia Locale من العنوان خلال 45 يومًا، وبعد أن تصبح مقيمًا تكلّف بطاقة الهوية الإلكترونية (CIE) في روما 22.21 يورو (أكتوبر 2026).",
   body: [
     {
       type: "callout",
@@ -27,25 +27,25 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "بعد أن تصبح مقيمًا، يمكنك طلب بطاقة الهوية الإلكترونية الإيطالية (*carta d'identità elettronica*، أي CIE). هذا هو الجزء الثاني من سلسلة الاستقرار في روما، بعد [فتح حساب بنكي في إيطاليا للطالب](article:bank-account-italy-student).",
+      text: "بعد أن تصبح مقيمًا، يمكنك طلب بطاقة الهوية الإلكترونية الإيطالية (*carta d'identità elettronica*، أي CIE). هذا هو الجزء الثاني من سلسلة الاستقرار في روما، بعد [فتح حساب بنكي في إيطاليا للطالب](article:bank-account-italy-student) وقبل [إيجاد عمل طلابي في روما](article:student-jobs-rome).",
     },
 
     { type: "h2", id: "why-residenza", text: "1. هل يحتاج الطالب إلى الـ residenza في روما؟" },
     {
       type: "p",
-      text: "الـ residenza (*iscrizione anagrafica*) تعني أن البلدية تسجّل مسكنك المعتاد (*dimora abituale*). وهي تختلف عن Permesso di soggiorno الذي تطلبه أولًا: راجع [كيف تطلب إقامة الدراسة](article:arriving-in-rome#residence-permit). إذا كنت ستبقى في روما طوال دراستك، فالتسجيل مفيد:",
+      text: "الـ residenza ليست شرطًا صارمًا للطالب في روما، لكنها مفيدة إذا كنت ستبقى طوال دراستك. الـ residenza (*iscrizione anagrafica*) تعني أن بلدية روما تسجّل مسكنك المعتاد (*dimora abituale*) في anagrafe. والـ residenza تختلف عن Permesso di soggiorno الذي تطلبه أولًا: راجع [كيف تطلب بطاقة الإقامة للدراسة في إيطاليا](article:arriving-in-rome#residence-permit). تسجيل الـ residenza في anagrafe روما مهم لثلاثة أسباب:",
     },
     {
       type: "ul",
       items: [
-        "يمكنك الحصول على شهادات من anagrafe وعلى بطاقة CIE بصفتك مقيمًا.",
-        "يصبح واضحًا إلى أي دائرة ASL تنتمي في الخدمة الصحية الوطنية.",
+        "بصفتك مقيمًا، يمكنك الحصول على شهادات من anagrafe وعلى بطاقة الهوية الإلكترونية (CIE).",
+        "مع الـ residenza يصبح واضحًا إلى أي دائرة ASL تنتمي في الخدمة الصحية الوطنية.",
         "القانون يطلب التصريح بالانتقال خلال **20 يومًا** (DPR 223/1989، الفصل 13)، والتصريح مجاني.",
       ],
     },
     {
       type: "p",
-      text: "الـ residenza تساعد لكنها ليست شرطًا صارمًا للتغطية الصحية: [ASL Roma 1](https://www.aslroma1.it/assistenza-sanitaria-ai-cittadini-extracomunitari) تقبل تصريحًا ذاتيًا بالإقامة **أو** بالسكن الفعلي (*effettiva dimora*) للتسجيل الاختياري.",
+      text: "الـ residenza تساعد لكنها ليست شرطًا صارمًا للتغطية الصحية في روما: [ASL Roma 1](https://www.aslroma1.it/assistenza-sanitaria-ai-cittadini-extracomunitari) تقبل تصريحًا ذاتيًا بالإقامة **أو** بالسكن الفعلي (*effettiva dimora*) للتسجيل الاختياري.",
     },
     {
       type: "fees",
@@ -54,10 +54,10 @@ export const ar: ArticleTranslation = {
       tnd: true,
     },
 
-    { type: "h2", id: "documents", text: "2. وثائق الـ residenza في روما (لغير الأوروبيين)" },
+    { type: "h2", id: "documents", text: "2. ما هي الوثائق التي يحتاجها غير الأوروبي للـ residenza في روما؟" },
     {
       type: "p",
-      text: "المطبوعة هي *dichiarazione di residenza* الوزارية، مع القائمة الإضافية لغير الأوروبيين (*Allegato A*)، وتجدها في [صفحة Roma Capitale لتغيير الإقامة](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). املأ كل خانة عليها نجمة، وإلا يُرفض الملف.",
+      text: "للـ residenza في روما، يرسل المواطن غير الأوروبي *dichiarazione di residenza* ممضاة مع نسخة من جواز السفر وPermesso di soggiorno وسند السكن (عقد كراء مسجَّل أو تصريح المالك). المطبوعة هي *dichiarazione di residenza* الوزارية، مع القائمة الإضافية لغير الأوروبيين (*Allegato A*)، وتجدها في [صفحة Roma Capitale لتغيير الإقامة](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). املأ كل خانة في المطبوعة عليها نجمة، وإلا يرفض الـ anagrafe الملف.",
     },
     {
       type: "callout",
@@ -85,13 +85,13 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "الـ codice fiscale ليس ضمن القائمة الرسمية للوثائق المرفقة، لكن خذه معك على كل حال: هذه نصيحة عملية وليست قاعدة.",
+      text: "الـ codice fiscale ليس ضمن القائمة الرسمية للوثائق المرفقة بطلب الـ residenza، لكن خذه معك على كل حال: هذه نصيحة عملية وليست قاعدة. إذا لم يكن لديك بعد، راجع [كيف تحصل على الـ codice fiscale كطالب في إيطاليا](article:arriving-in-rome#codice-fiscale).",
     },
 
-    { type: "h2", id: "book-and-submit", text: "3. كيف ترسل الطلب وتحجز موعدًا في شباك anagrafe" },
+    { type: "h2", id: "book-and-submit", text: "3. كيف ترسل طلب الـ residenza في روما؟" },
     {
       type: "p",
-      text: "استعمل **قناة واحدة فقط**. إرسال الطلب نفسه مرتين يبطئ كل شيء.",
+      text: "تقبل Roma Capitale طلب الـ residenza عبر **قناة واحدة فقط**: الإنترنت بـ SPID أو CIE أو CNS، أو PEC أو رسالة مضمونة، أو شباك anagrafe بموعد عبر TuPassi. إرسال الطلب نفسه مرتين يبطئ كل شيء.",
     },
     {
       type: "figure",
@@ -118,7 +118,7 @@ export const ar: ArticleTranslation = {
     { type: "h3", id: "step-counter", text: "الخطوة 3: أو في الشباك عبر TuPassi" },
     {
       type: "p",
-      text: "[TuPassi](https://www.tupassi.com/MiroPrenSPID/cliente/cComuneRoma) هو نظام الحجز والطوابير الرسمي لـ Roma Capitale لشبابيك anagrafe: احجز عبر الإنترنت بـ SPID أو CIE أو CNS، أو خذ تذكرة من الجهاز (totem) في المكتب. كل Municipio يستعمله بطريقته، لذلك راجع صفحة الـ Municipio الخاص بك أولًا.",
+      text: "[TuPassi](https://www.tupassi.com/MiroPrenSPID/cliente/cComuneRoma) هو نظام الحجز والطوابير الرسمي لـ Roma Capitale لشبابيك anagrafe: احجز عبر الإنترنت بـ SPID أو CIE أو CNS، أو خذ تذكرة من الجهاز (totem) في المكتب. كل Municipio يستعمل TuPassi بطريقته، لذلك راجع صفحة الـ Municipio الخاص بك أولًا.",
     },
     {
       type: "callout",
@@ -127,7 +127,11 @@ export const ar: ArticleTranslation = {
       text: "[تغيير الإقامة عبر ANPR](https://www.anagrafenazionale.interno.it/area-cittadino/cambio-di-residenza/) مخصص فقط لمن هو مسجّل مسبقًا في ANPR. القادم لأول مرة من تونس ليس مسجّلًا فيه، لذلك استعمل خدمة Roma Capitale أو PEC أو البريد أو الشباك.",
     },
 
-    { type: "h2", id: "police-check", text: "4. زيارة Polizia Locale: ماذا يحدث بعد تقديم الطلب" },
+    { type: "h2", id: "police-check", text: "4. متى تتحقق Polizia Locale من عنوانك؟" },
+    {
+      type: "p",
+      text: "بعد إرسال التصريح بالـ residenza، تسجّلك بلدية روما خلال يومي عمل، وتتحقق Polizia Locale خلال 45 يومًا من أنك تسكن فعلًا في العنوان.",
+    },
     {
       type: "table",
       caption: "المراحل بعد إرسال التصريح (DL 5/2012، الفصل 5؛ DPR 223/1989، الفصل 19).",
@@ -153,16 +157,20 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "ما يحدث إذا لم يكن أحد في البيت عند الزيارة غير مذكور في المصادر الرسمية لروما. نصيحة عملية وليست قاعدة: ضع اسمك على الجرس وصندوق البريد، وابقَ متاحًا بالهاتف والبريد الإلكتروني.",
+      text: "ما يحدث إذا لم يكن أحد في البيت عند زيارة Polizia Locale غير مذكور في المصادر الرسمية لروما. نصيحة عملية وليست قاعدة: ضع اسمك على الجرس وصندوق البريد، وابقَ متاحًا بالهاتف والبريد الإلكتروني.",
     },
     {
       type: "callout",
       tone: "warning",
       title: "كن صادقًا في العنوان",
-      text: "التصريحات الكاذبة تُبلَّغ إلى السلطات وقد تؤدي إلى عقوبات جزائية (DPR 445/2000، الفصلان 75 و76). ولا يمكنك التسجيل في مسكن تشغله دون حق.",
+      text: "التصريحات الكاذبة بالإقامة تُبلَّغ إلى السلطات وقد تؤدي إلى عقوبات جزائية (DPR 445/2000، الفصلان 75 و76). ولا يمكنك التسجيل في مسكن تشغله دون حق.",
     },
 
-    { type: "h2", id: "identity-card", text: "5. بطاقة الهوية (carta d'identità) للمقيمين الأجانب في روما" },
+    { type: "h2", id: "identity-card", text: "5. كيف يحصل المقيم الأجنبي على بطاقة الهوية (carta d'identità) في روما؟" },
+    {
+      type: "p",
+      text: "بعد أن تصبح مقيمًا في روما، تحجز بطاقة الهوية الإلكترونية (CIE) على بوابة وزارة الداخلية، وتحضر جواز سفرك وPermesso di soggiorno إلى الموعد، وتدفع في الـ Municipio، وتستلم البطاقة خلال 6 أيام عمل.",
+    },
     { type: "h3", id: "step-book-cie", text: "الخطوة 1: احجز على بوابة الوزارة" },
     {
       type: "p",
@@ -182,7 +190,7 @@ export const ar: ArticleTranslation = {
     { type: "h3", id: "step-cie-delivery", text: "الخطوة 3: استلم البطاقة" },
     {
       type: "p",
-      text: "تُسلَّم البطاقة خلال 6 أيام عمل، إلى بيتك أو تستلمها من البلدية ([وزارة الداخلية](https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/)).",
+      text: "تُسلَّم بطاقة CIE خلال 6 أيام عمل، إلى بيتك أو تستلمها من البلدية ([وزارة الداخلية](https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/)).",
     },
     {
       type: "callout",
@@ -195,14 +203,14 @@ export const ar: ArticleTranslation = {
       text: "فيمَ تفيدك CIE فعلًا: وثيقة هوية إيطالية تستظهر بها داخل إيطاليا، و**Entra con CIE**، أي الدخول إلى الخدمات العمومية على الإنترنت برمز PIN من 8 أرقام وهاتف فيه NFC ([وزارة الداخلية](https://www.cartaidentita.interno.gov.it/identificazione-digitale/entra-con-cie/)).",
     },
 
-    { type: "h2", id: "after-registration", text: "6. الحفاظ على الـ residenza بعد كل تجديد للإقامة" },
+    { type: "h2", id: "after-registration", text: "6. كيف تحافظ على الـ residenza بعد كل تجديد للإقامة؟" },
     {
       type: "p",
       text: "بعد **كل تجديد** لـ Permesso di soggiorno، جدّد *dichiarazione di dimora abituale* في anagrafe خلال **60 يومًا** مع الإقامة الجديدة (DPR 223/1989، الفصل 7). تبقى مسجّلًا طوال فترة تجديد الإقامة.",
     },
     {
       type: "p",
-      text: "إذا نسيت، يمكن للبلدية شطب إقامتك بعد سنة من انتهاء صلاحية Permesso di soggiorno، بعد إشعار يمنحك 30 يومًا لتسوية الوضع. وإذا رُفض طلبك، يمكنك التظلم لدى Prefetto خلال 30 يومًا.",
+      text: "إذا نسيت تجديد dichiarazione di dimora abituale، يمكن للبلدية شطب الـ residenza بعد سنة من انتهاء صلاحية Permesso di soggiorno، بعد إشعار يمنحك 30 يومًا لتسوية الوضع. وإذا رفض الـ anagrafe طلب الـ residenza، يمكنك التظلم لدى Prefetto خلال 30 يومًا.",
     },
 
     {
@@ -211,28 +219,28 @@ export const ar: ArticleTranslation = {
       title: "أسئلة متكررة",
       items: [
         {
-          q: "هل أحتاج إلى الـ residenza في روما كطالب؟",
-          a: "ليست شرطًا صارمًا، لكنها مفيدة إذا بقيت طوال دراستك. تسمح لك بالحصول على CIE وشهادات anagrafe، وASL Roma 1 تقبل الإقامة أو السكن الفعلي للخدمة الصحية.",
+          q: "هل الـ residenza إجبارية للطالب الأجنبي في روما؟",
+          a: "لا، الـ residenza ليست شرطًا صارمًا للطالب في روما، لكنها مفيدة إذا بقيت طوال دراستك. بصفتك مقيمًا يمكنك الحصول على شهادات anagrafe وعلى بطاقة الهوية الإلكترونية (CIE). وبالنسبة للخدمة الصحية الوطنية، تقبل ASL Roma 1 تصريحًا ذاتيًا بالإقامة أو بالسكن الفعلي، لذلك لا يتوقف التسجيل الاختياري على الـ residenza وحدها.",
         },
         {
-          q: "كم تستغرق مراقبة الـ residenza؟",
-          a: "حتى 45 يومًا. تسجّلك البلدية خلال يومي عمل، وتتحقق Polizia Locale من العنوان خلال 45 يومًا، وإذا لم يصلك إشعار بالرفض تُثبَّت الإقامة.",
+          q: "كم من الوقت تستغرق الـ residenza في روما؟",
+          a: "تُثبَّت الـ residenza في روما خلال 45 يومًا على الأكثر. تسجّلك بلدية روما خلال يومي عمل، وتُحتسب إقامتك من يوم التصريح. ثم تتحقق Polizia Locale من العنوان خلال 45 يومًا؛ وإذا لم يصلك preavviso di rigetto (إشعار بالرفض) في هذه المدة، تُثبَّت الـ residenza بمبدأ silenzio-assenso.",
         },
         {
           q: "هل يمكنني السفر في أوروبا ببطاقة الهوية الإيطالية؟",
-          a: "لا، ليس بصفتك أجنبيًا. بالنسبة لك بطاقة CIE لا تصلح للسفر إلى الخارج؛ سافر بجواز سفرك وPermesso di soggiorno صالح، لمدة أقصاها 90 يومًا في كل 180.",
+          a: "لا، ليس بصفتك أجنبيًا. بالنسبة للمقيم من خارج الاتحاد الأوروبي، بطاقة الهوية الإلكترونية الإيطالية (CIE) وثيقة هوية فقط ولا تصلح للسفر إلى الخارج. للتنقل في فضاء Schengen، خذ معك جواز سفر صالحًا وPermesso di soggiorno صالحًا، ولا تتجاوز 90 يومًا في كل فترة من 180 يومًا.",
         },
         {
-          q: "هل يُستعمل TuPassi لحجز بطاقة الهوية؟",
-          a: "لا. TuPassi يُستعمل لشبابيك anagrafe في عدة Municipi، أما CIE فتُحجز فقط على prenotazionicie.interno.gov.it.",
+          q: "هل يُستعمل TuPassi لحجز بطاقة الهوية في روما؟",
+          a: "لا. في روما يُستعمل TuPassi لحجز شبابيك anagrafe، مثلًا لتقديم التصريح بالإقامة، وكل Municipio يستعمل TuPassi بطريقته. أما بطاقة الهوية الإلكترونية (CIE) فتُحجز فقط على بوابة وزارة الداخلية prenotazionicie.interno.gov.it، في أي Municipio. أكّد الحجز عندما يصلك بريد التذكير، وإلا يُلغى الموعد.",
         },
         {
           q: "هل يمكنني إرسال طلب الـ residenza بالبريد الإلكتروني؟",
-          a: "لا، البريد الإلكتروني العادي لم يعد مقبولًا منذ 1 مارس 2022. استعمل الخدمة على الإنترنت أو PEC أو الرسالة المضمونة أو الشباك.",
+          a: "لا، Roma Capitale لم تعد تقبل طلبات الـ residenza بالبريد الإلكتروني العادي منذ 1 مارس 2022. أرسل المطبوعة الممضاة وكل المرفقات في ملف PDF واحد عبر PEC أو برسالة مضمونة، أو قدّم الطلب عبر الإنترنت بـ SPID أو CIE أو CNS، أو اذهب إلى شباك anagrafe. استعمل قناة واحدة فقط، لأن إرسال الطلب نفسه مرتين يبطئ كل شيء.",
         },
         {
           q: "كم تكلف الـ residenza في روما؟",
-          a: "لا شيء: التصريح بالإقامة مجاني. أما CIE فتكلف 22.21 يورو في روما (27.37 يورو في حال الضياع).",
+          a: "لا شيء: التصريح بالـ residenza في روما مجاني. التكلفة الوحيدة التي تأتي عادة بعده هي بطاقة الهوية الإلكترونية (CIE)، وثمنها 22.21 يورو في روما، أو 27.37 يورو إذا ضاعت بطاقتك السابقة. الدفع مقابل CIE بالبطاقة أو عبر pagoPA، فتأكد مما يقبله الـ Municipio الخاص بك قبل الموعد.",
         },
       ],
     },
