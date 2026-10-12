@@ -6,11 +6,11 @@ export const en: ArticleTranslation = {
   slug: "redotpay-tunisia",
   title: "RedotPay in Tunisia",
   subtitle: "Card Fees, P2P Top-Up, Safe Wallet Transfers and the Legal Position",
-  seoTitle: "RedotPay in Tunisia 2026: Fees, P2P Top-Up and Legal Risks",
+  seoTitle: "RedotPay Tunisia 2026: Promo Code, Fees and P2P Top-Up",
   metaDescription:
     "RedotPay in Tunisia explained: Visa card fees and limits, P2P top-up via RedotPay or Binance, sending USDT safely and what the Tunisian exchange code says.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["RedotPay Tunisia", "RedotPay card fees", "top up RedotPay with P2P", "is RedotPay legal in Tunisia", "top up RedotPay from Binance P2P", "send USDT to RedotPay safely"],
+  keywords: ["RedotPay Tunisia", "RedotPay promo code", "RedotPay card", "RedotPay card fees", "top up RedotPay with P2P", "is RedotPay legal in Tunisia", "top up RedotPay from Binance P2P", "send USDT to RedotPay safely"],
   summary:
     "RedotPay works technically in Tunisia as of October 2026: the Hong Kong crypto Visa card does not exclude Tunisian citizens and can be topped up through RedotPay's own P2P Marketplace or Binance P2P. No Tunisian text authorises residents to buy or hold crypto, so residents of Tunisia who fund a RedotPay card are legally exposed under the exchange code (law 76-18).",
   body: [
@@ -239,6 +239,10 @@ export const en: ArticleTranslation = {
         {
           q: "Does RedotPay work in Tunisia?",
           a: "Yes, technically: as of October 2026, Tunisia is not on RedotPay's unsupported-nationality or blocked-location lists, so Tunisian citizens can apply, although approval is not guaranteed. Legally, no Tunisian law or BCT circular authorises residents to fund a crypto card, so residents of Tunisia who use RedotPay are exposed under the Tunisian exchange code (law 76-18).",
+        },
+        {
+          q: "Is there a RedotPay promo code?",
+          a: "Yes: the promo code j2eb5 gives a 5 USD welcome reward on a new RedotPay account, as RedotPay's sign-up page shows in October 2026. Enter the code when you register, because it cannot be added later. The reward must be used within 30 days and cannot pay the card fee, and fees, limits and plans are the same as a normal sign-up.",
         },
         {
           q: "How much does the RedotPay card cost?",

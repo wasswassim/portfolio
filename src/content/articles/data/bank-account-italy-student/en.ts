@@ -9,7 +9,7 @@ export const en: ArticleTranslation = {
   metaDescription:
     "Open a bank account in Italy as a student in Rome: the documents, Intesa Sanpaolo at EUR 5.90 a month, Revolut's Italian IBAN, Wise, and the conto di base.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["open a bank account in Italy as a student", "bank account Italy student", "student bank account in Rome", "best bank in Italy for international students", "documents to open a bank account in Italy", "Revolut Italian IBAN", "conto di base"],
+  keywords: ["open a bank account in Italy as a student", "bank account Italy student", "student bank account in Rome", "best bank in Italy for international students", "documents to open a bank account in Italy", "Revolut Italian IBAN", "conto di base", "Wise card Tunisia", "open a Revolut account in Italy"],
   summary:
     "To open a bank account in Italy as a student, get your Italian codice fiscale first; in my experience, Intesa Sanpaolo then opened a normal current account with my passport and proof of enrolment, and its XME Conto Silver costs EUR 5.90 a month as of October 2026. Revolut gives Italy residents an Italian IBAN in the app, Wise is an easy backup with a EUR 7 card, and anyone legally staying in the EU has a legal right to a basic account (conto di base).",
   body: [
@@ -241,6 +241,10 @@ export const en: ArticleTranslation = {
         {
           q: "Does Revolut give an Italian IBAN?",
           a: "Yes, Revolut gives an Italian IBAN, starting with IT, to customers resident in Italy. Revolut does not open personal accounts for residents of Tunisia, so a Tunisian student should sign up after arriving, with an Italian address. In my experience, if the Revolut app asks for a Tessera Sanitaria, the official codice fiscale document can work instead after a manual review.",
+        },
+        {
+          q: "Can I get a Wise card in Tunisia?",
+          a: "No, not as of October 2026: you can probably register with Wise from Tunisia, but the Wise card is not available to residents of Tunisia, which is not one of Wise's card countries. Once you live in Italy, you can order the Wise card as an Italy resident for EUR 7. Do not plan your monthly transfers in dinars around Wise, because receiving dinar transfers from a Tunisian bank could not be confirmed.",
         },
         {
           q: "What if a bank branch refuses to open my account?",

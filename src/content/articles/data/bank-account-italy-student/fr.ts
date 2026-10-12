@@ -9,7 +9,7 @@ export const fr: ArticleTranslation = {
   metaDescription:
     "Ouvrir un compte bancaire en Italie quand on est étudiant à Rome : documents, Intesa Sanpaolo à 5,90 EUR par mois, IBAN italien Revolut, Wise et conto di base.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["ouvrir un compte bancaire en Italie étudiant", "ouvrir un compte bancaire en Italie", "compte bancaire Italie étudiant", "compte bancaire étudiant à Rome", "meilleure banque en Italie pour étudiant étranger", "IBAN italien Revolut", "conto di base"],
+  keywords: ["ouvrir un compte bancaire en Italie étudiant", "ouvrir un compte bancaire en Italie", "compte bancaire Italie étudiant", "compte bancaire étudiant à Rome", "meilleure banque en Italie pour étudiant étranger", "IBAN italien Revolut", "conto di base", "carte Wise Tunisie", "ouvrir un compte Revolut en Italie"],
   summary:
     "Pour ouvrir un compte bancaire en Italie quand on est étudiant, obtenez d'abord votre codice fiscale italien ; d'après mon expérience, Intesa Sanpaolo m'a ensuite ouvert un compte courant classique avec mon passeport et mon attestation d'inscription, et son XME Conto Silver coûte 5,90 EUR par mois en octobre 2026. Revolut donne un IBAN italien aux résidents en Italie dans l'application, Wise sert de solution de secours avec une carte à 7 EUR, et toute personne en séjour régulier dans l'UE a droit à un compte de base (conto di base).",
   body: [
@@ -241,6 +241,10 @@ export const fr: ArticleTranslation = {
         {
           q: "Revolut donne-t-il un IBAN italien ?",
           a: "Oui, Revolut donne un IBAN italien, qui commence par IT, aux clients résidant en Italie. Revolut n'ouvre pas de compte personnel aux résidents de Tunisie : un étudiant tunisien doit donc s'inscrire après son arrivée, avec une adresse italienne. D'après mon expérience, si l'application Revolut demande une Tessera Sanitaria, le document officiel du codice fiscale peut fonctionner à la place après une vérification manuelle.",
+        },
+        {
+          q: "Peut-on avoir une carte Wise en Tunisie ?",
+          a: "Non, pas en octobre 2026 : l'inscription à Wise semble possible depuis la Tunisie, mais la carte Wise n'est pas disponible pour les résidents de Tunisie, qui ne fait pas partie des pays de la carte Wise. Une fois installé en Italie, vous pouvez commander la carte Wise comme résident italien pour 7 EUR. Ne prévoyez pas vos virements mensuels en dinars sur Wise, car la réception de virements depuis une banque tunisienne n'a pas pu être confirmée.",
         },
         {
           q: "Que faire si une agence refuse d'ouvrir mon compte ?",

@@ -6,11 +6,11 @@ export const fr: ArticleTranslation = {
   slug: "redotpay-tunisie",
   title: "RedotPay en Tunisie",
   subtitle: "Frais de la carte, recharge en P2P, transferts sûrs et cadre juridique",
-  seoTitle: "RedotPay Tunisie 2026 : frais, recharge P2P, risques légaux",
+  seoTitle: "RedotPay Tunisie 2026 : code promo, frais et recharge P2P",
   metaDescription:
     "RedotPay en Tunisie expliqué : frais et plafonds de la carte Visa, recharge P2P via RedotPay ou Binance, envoi sûr d'USDT et ce que dit le code des changes.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["RedotPay Tunisie", "frais carte RedotPay", "recharger RedotPay en P2P", "RedotPay légal en Tunisie", "recharger RedotPay avec Binance P2P", "envoyer des USDT vers RedotPay"],
+  keywords: ["RedotPay Tunisie", "code promo RedotPay", "carte RedotPay", "frais carte RedotPay", "recharger RedotPay en P2P", "RedotPay légal en Tunisie", "recharger RedotPay avec Binance P2P", "envoyer des USDT vers RedotPay"],
   summary:
     "RedotPay fonctionne techniquement en Tunisie en octobre 2026 : cette carte crypto Visa de Hong Kong n'exclut pas les citoyens tunisiens et se recharge par le P2P Marketplace de RedotPay ou par Binance P2P. Aucun texte tunisien n'autorise les résidents à acheter ou détenir des cryptos : les résidents de Tunisie qui alimentent une carte RedotPay sont donc juridiquement exposés au regard du code des changes (loi 76-18).",
   body: [
@@ -239,6 +239,10 @@ export const fr: ArticleTranslation = {
         {
           q: "RedotPay fonctionne-t-il en Tunisie ?",
           a: "Oui, techniquement : en octobre 2026, la Tunisie ne figure ni sur la liste des nationalités exclues ni sur celle des lieux bloqués par RedotPay, donc un citoyen tunisien peut s'inscrire, sans garantie de validation. Juridiquement, aucune loi ni circulaire de la BCT n'autorise un résident à alimenter une carte crypto : les résidents de Tunisie qui utilisent RedotPay sont exposés au regard du code des changes tunisien (loi 76-18).",
+        },
+        {
+          q: "Existe-t-il un code promo RedotPay ?",
+          a: "Oui : le code promo j2eb5 donne une récompense de bienvenue de 5 USD sur un nouveau compte RedotPay, comme l'affiche la page d'inscription de RedotPay en octobre 2026. Saisissez le code à l'inscription, car il ne peut pas être ajouté après. La récompense doit être utilisée sous 30 jours et ne paie pas les frais de carte ; les frais, plafonds et formules sont les mêmes qu'une inscription normale.",
         },
         {
           q: "Combien coûte la carte RedotPay ?",

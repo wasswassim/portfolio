@@ -9,7 +9,7 @@ export const en: ArticleTranslation = {
   metaDescription:
     "How to get Tunisia's international technology card (CTI): 1,000 TND a year (about EUR 297) online, documents, bank or La Poste, allowed uses and renewal.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["international technology card Tunisia (CTI)", "carte technologique internationale", "CTI Tunisia limit 1000 TND", "how to get the technology card in Tunisia", "CTI La Poste", "renew the technology card Tunisia"],
+  keywords: ["international technology card Tunisia (CTI)", "technology card Tunisia", "carte technologique tunisie", "carte technologique poste", "carte internationale tunisie", "CTI Tunisia limit 1000 TND", "how to get the technology card in Tunisia", "renew the technology card Tunisia"],
   summary:
     "The international technology card (CTI) lets a Tunisian resident with at least the baccalaureate spend up to 1,000 TND per calendar year (about EUR 297) online, under BCT circular 2016-09, a limit still in force as of October 2026. You request it at your bank or at La Poste with your CIN, a certified copy of your diploma and a sworn statement, and renew it each year with your stamped tax return.",
   body: [

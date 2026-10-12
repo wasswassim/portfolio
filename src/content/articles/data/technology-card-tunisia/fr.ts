@@ -5,11 +5,11 @@ export const fr: ArticleTranslation = {
   slug: "carte-technologique-internationale",
   title: "Carte technologique internationale (CTI) en Tunisie",
   subtitle: "Plafond, documents, demande, usages autorisés et renouvellement",
-  seoTitle: "Carte technologique internationale en Tunisie : guide 2026",
+  seoTitle: "Carte technologique Tunisie : plafond, Poste, banques 2026",
   metaDescription:
     "Obtenir la carte technologique internationale (CTI) : 1 000 TND par an (environ 297 EUR) en ligne. Documents, banque ou La Poste, usages et renouvellement.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
-  keywords: ["carte technologique internationale", "carte technologique internationale Tunisie (CTI)", "plafond carte technologique 1000 dinars", "obtenir la carte technologique", "CTI La Poste", "renouveler la carte technologique"],
+  keywords: ["carte technologique tunisie", "carte technologique internationale", "carte technologique poste", "carte technologique zitouna", "carte internationale tunisie", "plafond carte technologique 1000 dinars", "obtenir la carte technologique", "renouveler la carte technologique"],
   summary:
     "La carte technologique internationale (CTI) permet à un résident tunisien titulaire au moins du baccalauréat de dépenser en ligne jusqu’à 1 000 TND par année civile (environ 297 EUR), selon la circulaire BCT 2016-09, un plafond toujours en vigueur en octobre 2026. Vous la demandez à votre banque ou à La Poste avec votre CIN, une copie certifiée de votre diplôme et une déclaration sur l’honneur, et vous la renouvelez chaque année avec votre déclaration d’impôts visée.",
   body: [
