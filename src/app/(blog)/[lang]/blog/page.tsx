@@ -3,30 +3,16 @@ import { LANGS, DEFAULT_LANG, DIR, LANG_LABEL, LOCALE, type Lang } from "@/lib/i
 import { langStaticParams, toLang, type LangPageProps as Props } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n";
 import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
-import { articlesForLang, langsWithArticles, seriesPosition, type SeriesPosition } from "@/content/articles";
-import type { Article, ArticleTranslation } from "@/content/articles/types";
+import { articlesForLang, langsWithArticles, seriesPosition } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { SITE_NAME } from "@/lib/seo/site";
 import { JsonLd, personLd, blogLd, breadcrumbLd } from "@/lib/seo/jsonld";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogFooter from "@/components/blog/BlogFooter";
 import BidiText from "@/components/blog/BidiText";
+import BlogCardList, { type BlogCardItem } from "@/components/blog/BlogCardList";
 
 export const dynamicParams = false;
-
-type ListItem = { article: Article; translation: ArticleTranslation; series: SeriesPosition | undefined };
-
-/** Consecutive posts of the same series become one group; other posts are grouped together. */
-function groupBySeries(items: ListItem[]): { key: string; series: SeriesPosition | undefined; items: ListItem[] }[] {
-  const groups: { key: string; series: SeriesPosition | undefined; items: ListItem[] }[] = [];
-  for (const item of items) {
-    const key = item.series?.series.id ?? "other";
-    const last = groups.at(-1);
-    if (last && last.key === key) last.items.push(item);
-    else groups.push({ key, series: item.series, items: [item] });
-  }
-  return groups;
-}
 
 export function generateStaticParams() {
   return langStaticParams();
@@ -105,61 +91,25 @@ export default async function BlogLandingPage({ params }: Props) {
             )}
           </>
         ) : (
-          // Posts of a series are listed together (articlesForLang keeps them adjacent, hub first)
-          // under the series name; posts outside a series form their own group without a heading.
-          groupBySeries(items.map((x) => ({ ...x, series: seriesPosition(x.article, lang) }))).map((group) =>
-            group.series ? (
-              // One collapsible card per topic; the post titles inside link to the posts (native
-              // <details>: no JS, links stay in the HTML for crawlers)
-              <section key={group.key} className="blog-topic" aria-labelledby={"group-" + group.key}>
-                <details className="blog-topic-card">
-                  <summary>
-                    <span className="blog-topic-head">
-                      <span className="blog-topic-cat">{dict.categories[group.items[0].article.category]}</span>
-                      <h2 id={"group-" + group.key} className="blog-topic-title">
-                        <BidiText lang={lang}>{(group.series.series.topic ?? group.series.series.title)[lang]}</BidiText>
-                      </h2>
-                      <span className="blog-topic-count">{dict.series.parts(group.series.total)}</span>
-                    </span>
-                    <span className="blog-acc-icon" aria-hidden="true" />
-                  </summary>
-                  <ol className="blog-topic-list">
-                    {group.items.map(({ article, translation, series }) => (
-                      <li key={article.id}>
-                        <a href={articlePath(lang, translation.slug)}>
-                          <span className="blog-topic-part">{series && dict.series.part(series.part, series.total)}</span>
-                          <span className="blog-topic-post"><BidiText lang={lang}>{translation.title}</BidiText></span>
-                          {translation.subtitle && (
-                            <span className="blog-topic-sub"><BidiText lang={lang}>{translation.subtitle}</BidiText></span>
-                          )}
-                        </a>
-                      </li>
-                    ))}
-                  </ol>
-                </details>
-              </section>
-            ) : (
-              <section key={group.key} className="blog-group">
-                <ul className="blog-list">
-                  {group.items.map(({ article, translation }) => (
-                    <li key={article.id} className="blog-card">
-                      <a href={articlePath(lang, translation.slug)}>
-                        <span className="blog-meta">
-                          <span className="blog-cat">{dict.categories[article.category]}</span>
-                          <time dateTime={article.publishedAt}>{dateFmt.format(new Date(article.publishedAt))}</time>
-                        </span>
-                        <h2><BidiText lang={lang}>{translation.title}</BidiText></h2>
-                        <p><BidiText lang={lang}>{translation.metaDescription}</BidiText></p>
-                        <span className="blog-meta">
-                          {dict.landing.read} <span className="blog-arrow" aria-hidden="true">→</span>
-                        </span>
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ),
-          )
+          // One card per post (newest first, series parts kept together in reading order), with a
+          // small search field above the cards; every card is in the static HTML for crawlers.
+          <BlogCardList
+            lang={lang}
+            items={items.map(({ article, translation }): BlogCardItem => {
+              const series = seriesPosition(article, lang);
+              return {
+                id: article.id,
+                href: articlePath(lang, translation.slug),
+                title: translation.title,
+                description: translation.metaDescription,
+                category: dict.categories[article.category],
+                date: article.publishedAt,
+                dateText: dateFmt.format(new Date(article.publishedAt)),
+                part: series && dict.series.part(series.part, series.total),
+              };
+            })}
+            labels={{ ...dict.landing.search, read: dict.landing.read }}
+          />
         )}
         </div>
       </main>
