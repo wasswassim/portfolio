@@ -180,7 +180,7 @@ export const ar: ArticleTranslation = {
         "**Roma Tre**: احجز موعدًا في مكتب الشهادات الأجنبية، Via Ostiense 129، واحمل وثائقك الأصلية ([تسجيل غير الأوروبيين](https://portalestudente.uniroma3.it/en/enrollment/enrollment-with-a-foreign-qualification/non-eu-citizens/)).",
       ],
     },
-    { type: "h3", id: "unlock-transfers", text: "فتح التحويلات الشهرية من تونس" },
+    { type: "h3", id: "unlock-transfers", text: "فتح التحويلات الشهرية من عائلتك في تونس" },
     {
       type: "p",
       text: "بعد التسجيل، أرسل وثائق التسجيل إلى بنكك في تونس. عندها يمكن للبنك أن يسمح لوالديك بتحويل ما يصل إلى **4,000 دينار شهريًا** (حوالي 1,188 يورو حسب سعر البنك المركزي التونسي في 7 أكتوبر 2026)، كما هو مشروح في [قسم الحساب المجمّد](article:italy-student-visa#blocked-account).",

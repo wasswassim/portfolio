@@ -124,7 +124,7 @@ export const ar: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "لماذا ليس ANPR؟",
-      text: "[تغيير الإقامة عبر ANPR](https://www.anagrafenazionale.interno.it/area-cittadino/cambio-di-residenza/) مخصص فقط لمن هو مسجّل مسبقًا في ANPR. القادم لأول مرة من تونس ليس مسجّلًا فيه، لذلك استعمل خدمة Roma Capitale أو PEC أو البريد أو الشباك.",
+      text: "[تغيير الإقامة عبر ANPR](https://www.anagrafenazionale.interno.it/area-cittadino/cambio-di-residenza/) مخصص فقط لمن هو مسجّل مسبقًا في ANPR. التونسي القادم لأول مرة ليس مسجّلًا فيه، لذلك استعمل خدمة Roma Capitale أو PEC أو البريد أو الشباك.",
     },
 
     { type: "h2", id: "police-check", text: "4. متى تتحقق Polizia Locale من عنوانك؟" },

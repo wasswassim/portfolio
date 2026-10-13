@@ -100,7 +100,7 @@ export const ar: ArticleTranslation = {
       rows: [
         ["إقامة DiSCo", "أقل تكلفة، إن حصلت على المنحة", "فقط عبر الإعلان السنوي؛ ليست إثباتًا للتأشيرة"],
         ["مكتب السكن في الجامعة", "نصائح وجهات اتصال موثوقة", "مساعدة في البحث، لا غرفة مضمونة"],
-        ["[HousingAnywhere](https://housinganywhere.com) و[Uniplaces](https://www.uniplaces.com) و[Spotahome](https://www.spotahome.com)", "الحجز من تونس قبل الوصول", "اقرأ شروط الإلغاء ومعاليم المنصة"],
+        ["[HousingAnywhere](https://housinganywhere.com) و[Uniplaces](https://www.uniplaces.com) و[Spotahome](https://www.spotahome.com)", "الحجز وأنت في تونس قبل الوصول", "اقرأ شروط الإلغاء ومعاليم المنصة"],
         ["[Immobiliare.it](https://www.immobiliare.it) و[Idealista](https://www.idealista.it)", "إعلانات كثيرة لغرف وشقق كاملة", "غالبًا بالإيطالية؛ تحقق من صاحب الإعلان"],
         ["[Subito](https://www.subito.it)", "غرف من مالكين خواص", "أغلب الاحتيال يقع في الإعلانات المفتوحة: لا تدفع أبدًا قبل المعاينة"],
       ],

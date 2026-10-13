@@ -36,9 +36,16 @@ jobs:
           # Google reviews (scripts/fetch-google-reviews.mjs): Places API (New) key, used only during the build
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACE_API_KEY }}
 
+      # IndexNow (scripts/indexnow.mjs): remember the live sitemap, to submit only new or updated URLs
+      - name: Snapshot the live sitemap for IndexNow
+        run: node scripts/indexnow.mjs snapshot
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           cname: wassimgatri.com
+
+      - name: Submit new and updated URLs to IndexNow
+        run: node scripts/indexnow.mjs submit

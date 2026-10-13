@@ -4,15 +4,15 @@ import type { ArticleTranslation } from "../../types";
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "pay-pagopa-with-paypal-from-tunisia",
-  title: "كيف تدفع إشعار pagoPA من الخارج أو من تونس",
+  title: "كيف يدفع التونسيون إشعار pagoPA من الخارج",
   subtitle: "عبر PayPal أو بطاقة دولية وبدون SPID: الخطوات والرسوم وماذا تفعل إذا فشل الدفع",
   seoTitle: "دفع pagoPA من الخارج عبر PayPal أو بطاقة دولية",
   metaDescription:
-    "ادفع إشعار pagoPA من الخارج أو من تونس عبر PayPal أو بطاقة دولية على checkout.pagopa.it: بدون SPID، 6 خطوات، مع الرسوم، وماذا تفعل إذا رُفضت بطاقتك.",
+    "ادفع إشعار pagoPA وأنت في تونس أو في الخارج عبر PayPal أو بطاقة دولية على checkout.pagopa.it: بدون SPID، 6 خطوات، مع الرسوم، وماذا تفعل إذا رُفضت بطاقتك.",
   imageAlt: "الكولوسيوم في روما وعلى جانبه علم إيطالي ضخم والحشود أمامه",
-  keywords: ["دفع pagoPA من الخارج", "دفع pagoPA من تونس", "دفع pagoPA عبر PayPal", "بطاقة دولية pagoPA", "checkout.pagopa.it", "avviso di pagamento"],
+  keywords: ["دفع pagoPA من الخارج", "دفع pagoPA للتونسيين", "دفع pagoPA عبر PayPal", "بطاقة دولية pagoPA", "checkout.pagopa.it", "avviso di pagamento"],
   summary:
-    "دفع إشعار pagoPA من الخارج أو من تونس عملية عادية وبسيطة: تدفع عبر الإنترنت على checkout.pagopa.it بالبطاقة أو عبر PayPal بدون SPID، أو نقدًا في محل tabaccheria أو في مكتب البريد بعد وصولك إلى إيطاليا. في أكتوبر 2026 يكلّف PayPal مبلغ 1.50 يورو (2.50 يورو فوق 248.50 يورو) إضافة إلى حوالي 4% إذا حوّل PayPal العملة، وحسب تجربتي، كثير من الطلبة التونسيين يكلّفون وكالة دراسة في تونس بدفع الإشعار عنهم.",
+    "دفع إشعار pagoPA وأنت في تونس أو في الخارج عملية عادية وبسيطة: تدفع عبر الإنترنت على checkout.pagopa.it بالبطاقة أو عبر PayPal بدون SPID، أو نقدًا في محل tabaccheria أو في مكتب البريد بعد وصولك إلى إيطاليا. في أكتوبر 2026 يكلّف PayPal مبلغ 1.50 يورو (2.50 يورو فوق 248.50 يورو) إضافة إلى حوالي 4% إذا حوّل PayPal العملة، وحسب تجربتي، كثير من الطلبة التونسيين يكلّفون وكالة دراسة في تونس بدفع الإشعار عنهم.",
   body: [
     {
       type: "callout",
@@ -31,7 +31,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "هذا هو الجزء الثالث من دليلنا حول [دفع رسوم الجامعة الإيطالية من تونس](article:international-card-tunisia)، الذي يقارن بين كل طرق الدفع. ولقائمة كاملة بتكاليف الدراسة، اطّلع على [كم تكلّف الدراسة في إيطاليا](article:study-in-italy#costs).",
+      text: "هذا هو الجزء الثالث من دليلنا حول [دفع رسوم الجامعة الإيطالية للتونسيين](article:international-card-tunisia)، الذي يقارن بين كل طرق الدفع. ولقائمة كاملة بتكاليف الدراسة، اطّلع على [كم تكلّف الدراسة في إيطاليا](article:study-in-italy#costs).",
     },
 
     { type: "h2", id: "what-is-pagopa", text: "1. ما هو pagoPA، وأي رسوم طلابية تمرّ عبره؟" },
@@ -305,10 +305,10 @@ export const ar: ArticleTranslation = {
         { label: "أين تدفع", value: "checkout.pagopa.it، بدون SPID" },
         { label: "ما تحتاجه", value: "Codice Avviso + Codice Fiscale Ente Creditore، أو رمز QR" },
         { label: "عمولة PayPal", value: "1.50 يورو (2.50 يورو فوق 248.50 يورو) + حوالي 4% للتحويل" },
-        { label: "التقسيط", value: "للمقيمين في إيطاليا فقط: ادفع المبلغ كاملًا من تونس" },
+        { label: "التقسيط", value: "للمقيمين في إيطاليا فقط: ادفع المبلغ كاملًا وأنت في تونس" },
       ],
     },
-    { type: "h2", id: "payment-path", text: "دفع الرسوم الإيطالية من تونس" },
+    { type: "h2", id: "payment-path", text: "دفع الرسوم الإيطالية للتونسيين" },
     {
       type: "ol",
       items: [

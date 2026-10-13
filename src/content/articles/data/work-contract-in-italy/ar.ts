@@ -8,11 +8,11 @@ export const ar: ArticleTranslation = {
   subtitle: "Nulla Osta وتأشيرة D وأولى خطواتك بعد الوصول إلى إيطاليا",
   seoTitle: "عقد عمل في إيطاليا للتونسيين: Nulla Osta وتأشيرة D",
   metaDescription:
-    "كيف يحصل التونسي على عقد عمل في إيطاليا: صاحب العمل يقدم طلب Nulla Osta، ثم تطلب تأشيرة D من تونس، وتمضي Contratto di soggiorno خلال 8 أيام عمل من الوصول.",
+    "كيف يحصل التونسي على عقد عمل في إيطاليا: صاحب العمل يقدم طلب Nulla Osta، ثم تطلب تأشيرة D وأنت في تونس، وتمضي Contratto di soggiorno خلال 8 أيام عمل من الوصول.",
   imageAlt: "الكولوسيوم في روما وعلى جانبه علم إيطالي ضخم والحشود أمامه",
   keywords: ["عقد عمل في إيطاليا", "عقد عمل في إيطاليا للتونسيين", "Nulla Osta al lavoro", "تأشيرة عمل إيطاليا للتونسيين", "تأشيرة D للعمل في إيطاليا", "Contratto di soggiorno"],
   summary:
-    "بالنسبة للتونسيين في مسار التكوين في الخارج، يأتي عقد العمل في إيطاليا من صاحب عمل إيطالي، وهو نفسه من يقدم طلب Nulla Osta؛ ولا يمكن للعامل تقديمه وحده. بعد صدور Nulla Osta تطلب تأشيرة National Visa D من تونس، ثم تطلب من Sportello Unico، خلال 8 أيام عمل من الدخول إلى إيطاليا (حسب الدليل الرسمي، آخر تحقق أكتوبر 2026)، موعدًا لإمضاء Contratto di soggiorno.",
+    "بالنسبة للتونسيين في مسار التكوين في الخارج، يأتي عقد العمل في إيطاليا من صاحب عمل إيطالي، وهو نفسه من يقدم طلب Nulla Osta؛ ولا يمكن للعامل تقديمه وحده. بعد صدور Nulla Osta تطلب تأشيرة National Visa D وأنت في تونس، ثم تطلب من Sportello Unico، خلال 8 أيام عمل من الدخول إلى إيطاليا (حسب الدليل الرسمي، آخر تحقق أكتوبر 2026)، موعدًا لإمضاء Contratto di soggiorno.",
   body: [
     {
       type: "callout",
@@ -27,7 +27,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "باختصار: صاحب عمل إيطالي جرى ربطه بك عبر برنامج معتمد يقدم لك عقد العمل ويقدم طلب Nulla Osta. بعد صدور Nulla Osta تطلب تأشيرة National Visa D من تونس. وبعد وصولك تطلب من Sportello Unico خلال 8 أيام عمل موعدًا لإمضاء Contratto di soggiorno، ثم تأتي إجراءات Permesso di soggiorno.",
+      text: "باختصار: صاحب عمل إيطالي جرى ربطه بك عبر برنامج معتمد يقدم لك عقد العمل ويقدم طلب Nulla Osta. بعد صدور Nulla Osta تطلب تأشيرة National Visa D وأنت في تونس. وبعد وصولك تطلب من Sportello Unico خلال 8 أيام عمل موعدًا لإمضاء Contratto di soggiorno، ثم تأتي إجراءات Permesso di soggiorno.",
     },
 
     { type: "h2", id: "after-training", text: "1. ماذا يحدث بعد إتمام التكوين في تونس؟" },
@@ -112,10 +112,10 @@ export const ar: ArticleTranslation = {
       text: "منصة SIISL متاحة على [siisl.lavoro.gov.it](https://siisl.lavoro.gov.it/).",
     },
 
-    { type: "h2", id: "work-visa", text: "5. كيف تطلب تأشيرة العمل في إيطاليا من تونس؟" },
+    { type: "h2", id: "work-visa", text: "5. كيف يطلب التونسي تأشيرة العمل في إيطاليا؟" },
     {
       type: "p",
-      text: "بعد صدور Nulla Osta، تطلب من تونس تأشيرة National Visa D للعمل، بالاعتماد على المعلومات المنشورة من سفارة إيطاليا في تونس والجهة المعتمدة لديها لمعالجة طلبات التأشيرة.",
+      text: "بعد صدور Nulla Osta، تطلب وأنت في تونس تأشيرة National Visa D للعمل، بالاعتماد على المعلومات المنشورة من سفارة إيطاليا في تونس والجهة المعتمدة لديها لمعالجة طلبات التأشيرة.",
     },
     {
       type: "fees",
@@ -133,7 +133,7 @@ export const ar: ArticleTranslation = {
       width: 1200,
       height: 520,
       alt: "علما إيطاليا وتونس جنبًا إلى جنب",
-      caption: "إيطاليا وتونس. تُنجَز مرحلة التأشيرة من تونس عبر سفارة إيطاليا والجهة المعتمدة. (رسم توضيحي)",
+      caption: "إيطاليا وتونس. تُنجَز مرحلة التأشيرة في تونس عبر سفارة إيطاليا والجهة المعتمدة. (رسم توضيحي)",
     },
     {
       type: "p",
@@ -145,7 +145,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "تمر طلبات التأشيرة من تونس عبر مزود الخدمة المعتمد لدى السفارة، ALMAVIVA (موقع [avs.com.tn](https://avs.com.tn/))، وهو الذي يتولى المواعيد. أما سفارة إيطاليا في تونس نفسها فلا تمنح مواعيد ولا تقبل طلبات التأشيرة عبر البريد الإلكتروني. ويشرح دليل تأشيرة الدراسة [كيف يعمل نظام مواعيد ALMAVIVA في تونس](article:italy-student-visa#almaviva-appointment)، من زاوية الطالب.",
+      text: "تمر طلبات التأشيرة في تونس عبر مزود الخدمة المعتمد لدى السفارة، ALMAVIVA (موقع [avs.com.tn](https://avs.com.tn/))، وهو الذي يتولى المواعيد. أما سفارة إيطاليا في تونس نفسها فلا تمنح مواعيد ولا تقبل طلبات التأشيرة عبر البريد الإلكتروني. ويشرح دليل تأشيرة الدراسة [كيف يعمل نظام مواعيد ALMAVIVA في تونس](article:italy-student-visa#almaviva-appointment)، من زاوية الطالب.",
     },
 
     { type: "h2", id: "visa-timing", text: "6. ما هي المهلة لطلب تأشيرة العمل بعد التكوين؟" },
@@ -197,7 +197,7 @@ export const ar: ArticleTranslation = {
       items: [
         "تعرف من هو صاحب عملك، والوظيفة تتوافق مع تكوينك المعتمد.",
         "قدم صاحب العمل طلب Nulla Osta عبر القناة الرسمية، وصدر Nulla Osta.",
-        "طلبت تأشيرة National Visa D من تونس ضمن المهلة المطبقة على حالتك.",
+        "طلبت تأشيرة National Visa D وأنت في تونس ضمن المهلة المطبقة على حالتك.",
         "تعرف أنه يجب عليك طلب موعد من Sportello Unico خلال 8 أيام عمل من الدخول إلى إيطاليا لإمضاء Contratto di soggiorno، وقد تحققت من المهلة المعمول بها.",
         "تستكمل بعد ذلك إجراءات Permesso di soggiorno.",
         "تحتفظ بنسخة من كل طلب وإيصال وموعد ووثيقة رسمية.",
@@ -239,7 +239,7 @@ export const ar: ArticleTranslation = {
         },
         {
           q: "ما هي التأشيرة التي يحتاجها التونسي للعمل في إيطاليا؟",
-          a: "يحتاج التونسي إلى تأشيرة National Visa D للإقامة الطويلة من أجل العمل في إيطاليا. تطلب National Visa D من تونس بعد صدور Nulla Osta، عبر ALMAVIVA، مزود الخدمة المعتمد لدى سفارة إيطاليا الذي يتولى مواعيد التأشيرة. سفارة إيطاليا في تونس لا تمنح مواعيد ولا تقبل طلبات التأشيرة عبر البريد الإلكتروني.",
+          a: "يحتاج التونسي إلى تأشيرة National Visa D للإقامة الطويلة من أجل العمل في إيطاليا. تطلب National Visa D وأنت في تونس بعد صدور Nulla Osta، عبر ALMAVIVA، مزود الخدمة المعتمد لدى سفارة إيطاليا الذي يتولى مواعيد التأشيرة. سفارة إيطاليا في تونس لا تمنح مواعيد ولا تقبل طلبات التأشيرة عبر البريد الإلكتروني.",
         },
         {
           q: "كم لدي من وقت بعد التكوين لطلب تأشيرة العمل؟",
@@ -299,7 +299,7 @@ export const ar: ArticleTranslation = {
       type: "keyFacts",
       items: [
         { label: "من يقدم Nulla Osta", value: "صاحب العمل الإيطالي، وليس العامل" },
-        { label: "التأشيرة", value: "National Visa D، تُطلب من تونس" },
+        { label: "التأشيرة", value: "National Visa D، تُطلب في تونس" },
         { label: "المهلة بعد انتهاء التكوين", value: "تُحسب من نهاية التكوين؛ تأكد من الرقم الحالي لدى الوزارة" },
         { label: "Contratto di soggiorno", value: "طلب الموعد خلال 8 أيام عمل من الدخول إلى إيطاليا (الدليل الرسمي)؛ تأكد لدى Sportello Unico" },
       ],
@@ -310,7 +310,7 @@ export const ar: ArticleTranslation = {
       items: [
         "[العثور على برنامج معتمد](article:work-in-italy-from-tunisia#programs-and-jobs)",
         "[التحقق من الشروط](article:work-in-italy-from-tunisia#who-can-apply)",
-        "[الترشح من تونس](article:work-in-italy-from-tunisia#how-to-start)",
+        "[الترشح لبرنامج التكوين](article:work-in-italy-from-tunisia#how-to-start)",
         "[الاختبارات والمقابلات](article:work-in-italy-from-tunisia#step-tests-interviews)",
         "[إتمام التكوين](article:work-in-italy-from-tunisia#training)",
         "التوظيف / ربط العامل بصاحب العمل",

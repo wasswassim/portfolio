@@ -125,6 +125,8 @@ for (const folder of folders) {
     if (lang === "fr" && /^\s{2}(title|seoTitle):\s*"[^"]*depuis la Tunisie/im.test(t)) {
       errors.push(where + ': French titles say "pour les Tunisiens", not "depuis la Tunisie"');
     }
+    // "من تونس" reads as working or studying remotely from Tunisia: say "للتونسيين", or "وأنت في تونس" for a step done there
+    if (lang === "ar" && /من تونس/.test(t)) errors.push(where + ': Arabic text says "للتونسيين" or "وأنت في تونس", not "من تونس"');
 
     // fee boxes and referral links
     for (const m of t.matchAll(/feeIds:\s*\[([^\]]*)\]/g)) {

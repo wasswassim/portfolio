@@ -57,12 +57,12 @@ export const SERIES: readonly Series[] = [
     title: {
       en: "Paying Italian fees from Tunisia",
       fr: "Payer ses frais en Italie pour les Tunisiens",
-      ar: "دفع المصاريف الإيطالية من تونس",
+      ar: "دفع المصاريف الإيطالية للتونسيين",
     },
     topic: {
       en: "How to pay university fees from Tunisia with an international card",
       fr: "Payer ses frais d'inscription en Italie avec une carte internationale",
-      ar: "كيف تدفع رسوم التسجيل في إيطاليا ببطاقة دولية من تونس",
+      ar: "كيف يدفع التونسيون رسوم التسجيل في إيطاليا ببطاقة دولية",
     },
     articleIds: ["international-card-tunisia", "technology-card-tunisia", "pay-pagopa-from-abroad", "redotpay-tunisia"],
   },
