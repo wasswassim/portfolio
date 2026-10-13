@@ -128,6 +128,22 @@ export function seriesPosition(article: Article, lang: Lang): SeriesPosition | u
   };
 }
 
+/** Current slug of the article a former (renamed) slug belonged to, in that language. */
+export function slugForFormerSlug(lang: Lang, slug: string): string | undefined {
+  for (const article of ARTICLES) {
+    const translation = article.translations[lang];
+    if (translation?.formerSlugs?.includes(slug)) return translation.slug;
+  }
+  return undefined;
+}
+
+/** (lang, slug) pairs of former slugs, so each old URL still gets a page (a redirect). */
+export function formerArticleParams(): { lang: Lang; slug: string }[] {
+  return ARTICLES.flatMap((article) =>
+    LANGS.flatMap((lang) => (article.translations[lang]?.formerSlugs ?? []).map((slug) => ({ lang, slug }))),
+  );
+}
+
 /** (lang, slug) pairs for generateStaticParams; only languages that exist for the article. */
 export function allArticleParams(): { lang: Lang; slug: string }[] {
   const out: { lang: Lang; slug: string }[] = [];

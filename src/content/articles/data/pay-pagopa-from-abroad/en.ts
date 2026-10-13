@@ -2,7 +2,8 @@ import type { ArticleTranslation } from "../../types";
 
 // Part 3 of the payment series. French and Arabic mirror this structure (same heading ids, one table, two fee boxes).
 export const en: ArticleTranslation = {
-  slug: "pay-pagopa-with-paypal-from-tunisia",
+  slug: "pay-pagopa-with-paypal-for-tunisians",
+  formerSlugs: ["pay-pagopa-with-paypal-from-tunisia"],
   title: "How to Pay a pagoPA Notice from Abroad or from Tunisia",
   subtitle: "With PayPal or an international card, without SPID: the steps, the fees and what to do if the payment fails",
   seoTitle: "Pay pagoPA from Abroad with PayPal or a Card (2026)",

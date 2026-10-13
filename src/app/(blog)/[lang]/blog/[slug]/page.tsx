@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { LANGS, DEFAULT_LANG, LOCALE, isLang, type Lang } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
 import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
-import { allArticleParams, articleBySlug, seriesPosition } from "@/content/articles";
+import { allArticleParams, articleBySlug, formerArticleParams, seriesPosition, slugForFormerSlug } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd, personLd, blogPostingLd, breadcrumbLd, faqLd, videoLd } from "@/lib/seo/jsonld";
 import { faqPairsOf, hasReferral, headingsOf, readingMinutes, sourcesOf, videosOf, wordCountOf } from "@/content/articles/blocks";
@@ -23,11 +23,20 @@ import SideColumn from "@/components/blog/SideColumn";
 export const dynamicParams = false;
 
 // Slugs are per-language, so params are validated (lang, slug) pairs from the registry.
+// Former (renamed) slugs get a page too: it only forwards to the current URL
 export function generateStaticParams() {
-  return allArticleParams();
+  return [...allArticleParams(), ...formerArticleParams()];
 }
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
+
+/** Current path when the URL uses a former slug of a post, else null. */
+async function movedTo({ params }: Props): Promise<string | null> {
+  const { lang, slug } = await params;
+  if (!isLang(lang)) return null;
+  const current = slugForFormerSlug(lang, decodeURIComponent(slug));
+  return current ? articlePath(lang, current) : null;
+}
 
 async function load({ params }: Props) {
   const { lang: raw, slug } = await params;
@@ -38,6 +47,9 @@ async function load({ params }: Props) {
 }
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
+  const to = await movedTo(props);
+  // Static export can't send a 301: the old URL points crawlers at the new one (canonical + meta refresh)
+  if (to) return { robots: { index: false, follow: true }, alternates: { canonical: to } };
   const { lang, article, translation } = await load(props);
   const pathFor = (l: Lang) => {
     const t = article.translations[l];
@@ -60,6 +72,18 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export default async function ArticlePage(props: Props) {
+  const to = await movedTo(props);
+  if (to) {
+    // React hoists this meta into <head>; an instant refresh is read as a permanent redirect
+    return (
+      <main className="blog-main">
+        <meta httpEquiv="refresh" content={`0; url=${to}`} />
+        {/* Script fallback, also followed by Google; `to` is a registry path, not user input */}
+        <script dangerouslySetInnerHTML={{ __html: `location.replace(${JSON.stringify(to)}+location.hash)` }} />
+        <p><a href={to} className="blog-back">{SITE_URL + to}</a></p>
+      </main>
+    );
+  }
   const { lang, article, translation } = await load(props);
   const dict = getDictionary(lang);
   const path = articlePath(lang, translation.slug);

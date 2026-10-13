@@ -16,7 +16,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     robots: { index: false, follow: true },
     alternates: { canonical: blogPath(lang) },
-    other: { refresh: `0; url=${blogPath(lang)}` },
   };
 }
 
@@ -25,6 +24,9 @@ export default async function LangHomePage({ params }: Props) {
   const dict = getDictionary(lang);
   return (
     <main className="blog-main">
+      {/* http-equiv, not name: metadata.other would render name="refresh", which browsers ignore */}
+      <meta httpEquiv="refresh" content={`0; url=${blogPath(lang)}`} />
+      <script dangerouslySetInnerHTML={{ __html: `location.replace(${JSON.stringify(blogPath(lang))})` }} />
       <p>
         <a href={blogPath(lang)} className="blog-back">{dict.notFound.cta}</a>
       </p>

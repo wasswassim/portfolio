@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts (same heading ids, one table, four fee boxes). Latin names stay in Latin script.
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
-  slug: "pay-italian-university-fees-from-tunisia",
+  slug: "pay-italian-university-fees-for-tunisians",
+  formerSlugs: ["pay-italian-university-fees-from-tunisia"],
   title: "كيف يدفع التونسيون رسوم الجامعة الإيطالية",
   subtitle: "أربع طرق دفع مقارنة: التحويل البنكي، البطاقة التكنولوجية، PayPal مع بطاقة RedotPay، والحساب الإيطالي",
   seoTitle: "دفع رسوم الجامعة الإيطالية للتونسيين: 4 طرق مقارنة (2026)",

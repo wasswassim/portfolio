@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Translation of en.ts (same heading ids, one table, two fee boxes). Latin names and Italian screen labels stay in Latin script.
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
-  slug: "pay-pagopa-with-paypal-from-tunisia",
+  slug: "pay-pagopa-with-paypal-for-tunisians",
+  formerSlugs: ["pay-pagopa-with-paypal-from-tunisia"],
   title: "كيف يدفع التونسيون إشعار pagoPA من الخارج",
   subtitle: "عبر PayPal أو بطاقة دولية وبدون SPID: الخطوات والرسوم وماذا تفعل إذا فشل الدفع",
   seoTitle: "دفع pagoPA من الخارج عبر PayPal أو بطاقة دولية",

@@ -2,7 +2,8 @@ import type { ArticleTranslation } from "../../types";
 
 // Translation of ar.ts. Italian legal and administrative terms stay in Italian.
 export const en: ArticleTranslation = {
-  slug: "work-in-italy-from-tunisia",
+  slug: "work-in-italy-for-tunisians",
+  formerSlugs: ["work-in-italy-from-tunisia"],
   title: "Working in Italy for Tunisians",
   subtitle: "The training-abroad route outside the quotas: who qualifies, programs, documents and offers",
   seoTitle: "Work in Italy for Tunisians: The Legal Route (2026)",

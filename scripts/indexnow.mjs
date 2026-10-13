@@ -2,7 +2,8 @@
 // so they recrawl them right away instead of waiting. Runs in the deploy workflow, in two steps:
 //   node scripts/indexnow.mjs snapshot   before the deploy: saves the live sitemap
 //   node scripts/indexnow.mjs submit     after the deploy: waits until the new build is live, then submits
-//                                        the URLs that are new or whose <lastmod> changed
+//                                        the URLs that are new, whose <lastmod> changed, or that left
+//                                        the sitemap (a renamed post's old URL)
 // The first time (key file not live yet), or with INDEXNOW_ALL=1, every URL in the sitemap is submitted.
 // The key is public by design: it is served at https://wassimgatri.com/<key>.txt (public/<key>.txt).
 // Never fails the deploy: problems are logged and the script exits 0.
@@ -60,7 +61,9 @@ const next = parseSitemap(newXml);
 const before = existsSync(SNAPSHOT) ? JSON.parse(readFileSync(SNAPSHOT, "utf8")) : { keyLive: false, urls: null };
 
 const all = process.env.INDEXNOW_ALL === "1" || !before.keyLive || !before.urls;
+// New or updated URLs, plus URLs that left the sitemap (renamed posts now redirect, removed ones 404)
 const urlList = Object.keys(next).filter((u) => all || before.urls[u] !== next[u]);
+if (!all) urlList.push(...Object.keys(before.urls).filter((u) => !(u in next)));
 if (urlList.length === 0) stop("no new or updated URL in the sitemap; nothing submitted");
 
 // Wait for GitHub Pages to publish the new build: the key file and the new sitemap must both be live

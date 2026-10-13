@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Source language (author's document). English and French are translations of this text.
 export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
-  slug: "work-in-italy-from-tunisia",
+  slug: "work-in-italy-for-tunisians",
+  formerSlugs: ["work-in-italy-from-tunisia"],
   title: "العمل في إيطاليا للتونسيين",
   subtitle: "مسار التكوين في الخارج خارج الحصص: من يمكنه الترشح، البرامج، الوثائق والعروض",
   seoTitle: "العمل في إيطاليا للتونسيين: المسار القانوني (2026)",

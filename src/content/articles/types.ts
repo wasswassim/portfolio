@@ -91,6 +91,8 @@ export type Block =
 /** Per-language fields. Slugs are translated, so they differ between languages. */
 export type ArticleTranslation = {
   slug: string;
+  /** Old slugs of this page: each one gets a static page that forwards to the current URL */
+  formerSlugs?: string[];
   title: string;
   /** Second line under the H1 when the full title is long (e.g. what the guide covers) */
   subtitle?: string;

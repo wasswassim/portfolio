@@ -3,7 +3,8 @@ import type { ArticleTranslation } from "../../types";
 // Part 1 (hub) of the "paying in euros from Tunisia" series. French and Arabic mirror this structure
 // (same heading ids, one table, four fee boxes, no referral blocks).
 export const en: ArticleTranslation = {
-  slug: "pay-italian-university-fees-from-tunisia",
+  slug: "pay-italian-university-fees-for-tunisians",
+  formerSlugs: ["pay-italian-university-fees-from-tunisia"],
   title: "How to pay Italian university fees from Tunisia",
   subtitle: "Four payment routes compared: bank transfer, technology card, PayPal with a RedotPay card, and an Italian account",
   seoTitle: "Pay Italian University Fees from Tunisia: 4 Ways (2026)",
