@@ -9,7 +9,7 @@
     "lint": "eslint",
     "check:articles": "node scripts/check-articles.mjs",
     "new-article": "node scripts/new-article.mjs",
-    "prebuild": "node scripts/check-articles.mjs",
+    "prebuild": "node scripts/fetch-google-reviews.mjs && node scripts/check-articles.mjs",
     "clean": "rimraf .next",
     "dev:clean": "rimraf .next && next dev"
   },
