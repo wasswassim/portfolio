@@ -17,7 +17,7 @@ import { SeriesNav, SeriesStrip } from "@/components/blog/SeriesNav";
 import QuickGuide from "@/components/blog/QuickGuide";
 import NewsletterCard from "@/components/blog/NewsletterCard";
 import OfferButtons from "@/components/blog/OfferButtons";
-import { GoogleRatingBadge, GoogleReviewsSection } from "@/components/blog/GoogleReviews";
+import { GoogleRatingBadge, GoogleReviewsCarousel, GoogleReviewsSection } from "@/components/blog/GoogleReviews";
 import SideColumn from "@/components/blog/SideColumn";
 
 export const dynamicParams = false;
@@ -113,6 +113,7 @@ export default async function ArticlePage(props: Props) {
               </p>
               {series && <SeriesStrip position={series} lang={lang} dict={dict} />}
               {referral && <p className="blog-disclosure" role="note">{dict.referral.disclosure}</p>}
+              <GoogleReviewsCarousel lang={lang} dict={dict} />
               <QuickGuide summary={translation.summary} headings={headings} lang={lang} dict={dict} />
               <ArticleBody body={translation.body} lang={lang} dict={dict} />
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
