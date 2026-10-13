@@ -27,7 +27,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "RedotPay ليس إلا واحدًا من خمسة طرق نقارن بينها في دليل [دفع رسوم الجامعة الإيطالية من تونس](article:international-card-tunisia)، إلى جانب التحويل البنكي والبطاقة التكنولوجية وPayPal على pagoPA.",
+      text: "RedotPay ليس إلا واحدًا من أربع طرق نقارن بينها في دليل [دفع رسوم الجامعة الإيطالية من تونس](article:international-card-tunisia)، إلى جانب التحويل البنكي والبطاقة التكنولوجية وPayPal على pagoPA.",
     },
 
     { type: "h2", id: "what-is-redotpay", text: "1. ما هو RedotPay وكيف تعمل بطاقته؟" },

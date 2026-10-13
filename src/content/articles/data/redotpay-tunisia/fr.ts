@@ -27,7 +27,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "RedotPay n'est qu'une des cinq solutions comparées dans notre guide [pour payer ses frais d'université en Italie depuis la Tunisie](article:international-card-tunisia), à côté du virement bancaire, de la carte technologique et de PayPal sur pagoPA.",
+      text: "RedotPay n'est qu'une des quatre solutions comparées dans notre guide [pour payer ses frais d'université en Italie depuis la Tunisie](article:international-card-tunisia), à côté du virement bancaire, de la carte technologique et de PayPal sur pagoPA.",
     },
 
     { type: "h2", id: "what-is-redotpay", text: "1. Qu'est-ce que RedotPay et comment fonctionne la carte ?" },

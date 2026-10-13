@@ -4,14 +4,14 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "payer-frais-universite-italie-carte-internationale",
   title: "Payer ses frais d’inscription en Italie : guide pour les Tunisiens",
-  subtitle: "Cinq moyens de paiement comparés : virement, carte technologique, PayPal sur pagoPA, compte italien et cartes crypto",
+  subtitle: "Quatre moyens de paiement comparés : virement, carte technologique, PayPal avec une carte RedotPay et compte italien",
   seoTitle: "Payer ses frais d’inscription en Italie pour les Tunisiens",
   metaDescription:
-    "Payer ses frais d’inscription en Italie depuis la Tunisie : 5 moyens classés par sécurité juridique, du virement (circulaire BCT 2016-09) à PayPal sur pagoPA.",
+    "Payer ses frais d’inscription en Italie depuis la Tunisie : 4 moyens classés par sécurité juridique, du virement (circulaire BCT 2016-09) à PayPal sur pagoPA.",
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["payer les frais d’inscription en Italie depuis la Tunisie", "frais d’inscription Italie", "payer une université italienne depuis la Tunisie", "carte internationale Tunisie", "payer en euros depuis la Tunisie", "virement des frais de scolarité à l’étranger"],
   summary:
-    "En 2026, la voie légale la plus sûre pour payer vos frais d’inscription en Italie depuis la Tunisie est le virement bancaire : frais de dossier et d’examen sur facture, frais de scolarité via votre dossier études dans une seule banque. Pour les petits paiements en ligne, la carte technologique (1 000 TND par an) et un compte PayPal tunisien sur pagoPA peuvent fonctionner, et payer un avis pagoPA est une démarche normale ; demandez à votre banque pour les virements.",
+    "En 2026, la voie légale la plus sûre pour payer vos frais d’inscription en Italie depuis la Tunisie est le virement bancaire : frais de dossier et d’examen sur facture, frais de scolarité via votre dossier études dans une seule banque. Pour les petits paiements en ligne, la carte technologique (1 000 TND par an) peut fonctionner, et PayPal sur pagoPA avec une carte RedotPay reliée est la solution finale quand une carte tunisienne est refusée ; lisez d’abord les avertissements sur les cartes crypto.",
   body: [
     {
       type: "callout",
@@ -26,7 +26,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Ce guide classe cinq méthodes selon la sécurité juridique, puis le coût, puis l’effort. Chaque section renvoie au guide détaillé du moyen concerné : la carte technologique, pagoPA avec PayPal et la carte crypto RedotPay.",
+      text: "Ce guide classe quatre méthodes selon la sécurité juridique, puis le coût, puis l’effort. Chaque section renvoie au guide détaillé du moyen concerné : la carte technologique, pagoPA avec PayPal et la carte RedotPay.",
     },
 
     { type: "h2", id: "which-method", text: "1. Quelle méthode pour quels frais italiens ?" },
@@ -120,10 +120,10 @@ export const fr: ArticleTranslation = {
       text: "La liste officielle d’usages de la carte technologique cite la formation en ligne, les sites éducatifs, les abonnements et les licences de logiciels. Elle ne cite **ni** les frais de scolarité **ni** pagoPA. Payer l’université avec la CTI reste une zone grise qui dépend de la banque : la Banque Zitouna, par exemple, [filtre l’usage en ligne par code marchand](https://www.banquezitouna.com/fr/particuliers/gerer-mon-quotidien/mes-cartes/carte-technologique). Renseignez-vous auprès de votre banque. Les conditions, les documents et les banques émettrices sont détaillés dans [comment obtenir la carte technologique internationale en Tunisie](article:technology-card-tunisia).",
     },
 
-    { type: "h2", id: "paypal-pagopa", text: "4. Option 3 : peut-on payer avec PayPal sur la page de paiement pagoPA ?" },
+    { type: "h2", id: "paypal-pagopa", text: "4. Option 3 : comment payer avec PayPal et une carte RedotPay ?" },
     {
       type: "p",
-      text: "PayPal sur la page de paiement pagoPA peut fonctionner depuis la Tunisie, car un compte PayPal tunisien peut **payer et envoyer** de l’argent, même s’il ne peut pas en recevoir. Pour régler des frais, la première fonction suffit. Reliez votre carte technologique au compte PayPal comme source de financement.",
+      text: "PayPal sur la page de paiement pagoPA fonctionne depuis la Tunisie, et une carte Visa [RedotPay](ref:redotpay) reliée à PayPal est la solution finale quand votre carte tunisienne est refusée. Un compte PayPal tunisien peut **payer et envoyer** de l’argent, même s’il ne peut pas en recevoir, et régler des frais ne demande que la première fonction. Si vous avez une carte technologique (CTI), vous payez en général directement avec la CTI : la carte RedotPay est donc la deuxième carte à relier à PayPal.",
     },
     {
       type: "figure",
@@ -139,12 +139,30 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
+      text: "RedotPay est une fintech de Hong Kong qui émet une carte Visa alimentée en stablecoins comme l’USDT. Le centre d’aide de RedotPay indique que la carte peut être reliée à PayPal, Apple Pay ou Google Pay, et qu’une nouvelle carte peut mettre jusqu’à 5 jours avant d’être acceptée par PayPal (voir les sources officielles en fin d’article).",
+    },
+    {
+      type: "ol",
+      items: [
+        "**Obtenez la carte RedotPay** avec le code promo j2eb5 et activez-la.",
+        "**Ajoutez la carte à PayPal** comme moyen de paiement, avec les mêmes nom et adresse de facturation que sur votre compte RedotPay. Si PayPal la refuse, attendez quelques jours au lieu de réessayer : RedotPay prévient que trop de tentatives d’affilée peuvent geler la carte.",
+        "**Payez sur checkout.pagopa.it** : saisissez les codes de l’avis, choisissez PayPal, puis payez en une fois.",
+      ],
+    },
+    {
+      type: "p",
       text: "PayPal est un moyen de paiement officiel sur [checkout.pagopa.it](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal), et [PayPal indique](https://www.paypal.com/it/digital-wallet/pagopa) que tout titulaire d’un compte avec une carte reliée peut l’utiliser. Le paiement en plusieurs fois exige de résider en Italie : payez en une fois.",
     },
     {
       type: "fees",
       title: "Coût d’un avis pagoPA payé avec PayPal",
       feeIds: ["pagopa-paypal", "paypal-fx"],
+    },
+    {
+      type: "callout",
+      tone: "warning",
+      title: "Lisez d’abord les avertissements",
+      text: "Une carte crypto comporte un risque juridique pour les résidents en Tunisie : aucun texte de la BCT n’autorise les résidents à acheter de la crypto, et les conditions de RedotPay précisent que le compte n’est pas un service bancaire et peut être gelé à la discrétion de la société, sans garantie des dépôts mentionnée. Lisez [l’avertissement juridique de notre guide RedotPay](article:redotpay-tunisia#legal-status) avant de l’utiliser.",
     },
     {
       type: "p",
@@ -156,26 +174,12 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Un compte ou une carte italienne devient la meilleure option une fois à Rome : un compte italien, une carte Postepay ou une carte Wise paie pagoPA directement, en général moins cher. La carte Wise n’est pas disponible en Tunisie, mais elle l’est en Italie. Pour la suite, lisez [comment ouvrir un compte bancaire en Italie quand on est étudiant](article:bank-account-italy-student) et [la place de l’IBAN dans vos premières semaines à Rome](article:arriving-in-rome#bank-account).",
     },
-
-    { type: "h2", id: "crypto-cards", text: "6. Option 5 : pourquoi les cartes crypto passent-elles en dernier ?" },
     {
       type: "p",
-      text: "Les cartes crypto passent en dernier, car aucun texte de la BCT n’autorise les résidents en Tunisie à acheter de la crypto : le risque juridique de ce mode de paiement pèse sur vous.",
-    },
-    {
-      type: "p",
-      text: "[RedotPay](ref:redotpay) est une fintech de Hong Kong qui émet une carte Visa alimentée en stablecoins comme l’USDT. Les conditions d’utilisation de RedotPay précisent que le compte n’est pas un service bancaire et autorisent la société à geler un compte à sa discrétion. Aucune garantie des dépôts n’est mentionnée.",
-    },
-    {
-      type: "p",
-      text: "Le fonctionnement de la carte RedotPay, ses frais et la recharge en P2P sont détaillés dans [RedotPay en Tunisie : frais de la carte, recharge P2P et risques juridiques](article:redotpay-tunisia).",
-    },
-    {
-      type: "p",
-      text: "**Pourquoi cet ordre ?** La sécurité juridique d’abord : le virement repose sur un texte clair et laisse une trace écrite. Ensuite le coût : la carte technologique et PayPal ajoutent des frais et un plafond de 1 000 TND. Enfin l’effort : un compte italien coûte le moins cher, mais seulement après l’arrivée. Les cartes crypto viennent en dernier, car le risque juridique pèse sur vous.",
+      text: "**Pourquoi cet ordre ?** La sécurité juridique d’abord : le virement repose sur un texte clair et laisse une trace écrite. Ensuite le coût : la carte technologique ajoute des frais et un plafond de 1 000 TND. PayPal avec une carte RedotPay est la solution finale en ligne quand les cartes tunisiennes sont refusées, une fois ses avertissements juridiques lus. Un compte italien coûte le moins cher, mais seulement après l’arrivée.",
     },
 
-    { type: "h2", id: "exchange-rules", text: "7. Qu’imposent les règles de change tunisiennes ?" },
+    { type: "h2", id: "exchange-rules", text: "6. Qu’imposent les règles de change tunisiennes ?" },
     {
       type: "p",
       text: "Les règles de change tunisiennes imposent aux résidents de passer par la BCT ou un intermédiaire agréé, comme une banque ou La Poste, pour les opérations de change : c’est l’article 3 du [Code des changes de 1976](https://www.finances.gov.tn/sites/default/files/17.pdf). Les transferts de capitaux hors du cadre réglementaire exigent une autorisation (art. 1).",
@@ -206,7 +210,7 @@ export const fr: ArticleTranslation = {
       text: "Un nouveau code des changes était encore à l’examen en juin 2026 ([La Presse](https://www.lapresse.tn/2026/06/04/reglementation-de-change-un-nouveau-code-a-lexamen/)). La presse a aussi rapporté que la loi de finances 2026 permet aux résidents d’ouvrir des comptes en devises ([Business News](https://businessnews.com.tn/2025/12/03/comptes-en-devises-pour-les-residents-tunisiens-tout-ce-quil-faut-savoir/1376299/)). L’application de cette mesure par les banques tunisiennes n’est pas confirmée : renseignez-vous auprès de la vôtre.",
     },
 
-    { type: "h2", id: "payment-scams", text: "8. Peut-on acheter une carte internationale sur les réseaux sociaux ?" },
+    { type: "h2", id: "payment-scams", text: "7. Peut-on acheter une carte internationale sur les réseaux sociaux ?" },
     {
       type: "p",
       text: "Non. Le 30 mai 2024, la BCT a averti que les cartes internationales et les comptes en devises proposés sur les réseaux sociaux sont illégaux et potentiellement dangereux, et qu’y participer peut entraîner des poursuites ([Managers](https://managers.tn/2024/05/30/alerte-de-la-bct-mefiez-vous-des-cartes-bancaires-internationales-vendues-sur-les-reseaux-sociaux)).",
@@ -240,7 +244,7 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Peut-on payer ses frais d’université en Italie avec une carte crypto depuis la Tunisie ?",
-          a: "Pas en sécurité. Aucun texte tunisien n’autorise les résidents à acheter de la crypto, et le Code des changes de 1976 impose de passer par la BCT ou un intermédiaire agréé et de déclarer ses avoirs à l’étranger. Une carte crypto comme RedotPay n’est pas non plus un compte bancaire et peut être gelée à la discrétion de la société : c’est pourquoi elle arrive en dernier.",
+          a: "Techniquement oui : reliez une carte RedotPay à PayPal et payez l’avis pagoPA avec PayPal, la solution finale quand les cartes tunisiennes sont refusées. Le risque juridique reste pour vous : aucun texte tunisien n’autorise les résidents à acheter de la crypto, le Code des changes de 1976 impose de passer par la BCT ou un intermédiaire agréé et de déclarer ses avoirs à l’étranger, et une carte RedotPay n’est pas un compte bancaire et peut être gelée à la discrétion de la société.",
         },
         {
           q: "Une banque tunisienne peut-elle payer un avis pagoPA par virement ?",
@@ -253,6 +257,8 @@ export const fr: ArticleTranslation = {
       id: "official-sources",
       title: "Sources officielles",
       items: [
+        { label: "Centre d’aide RedotPay : utiliser la carte avec PayPal, Apple Pay et Google Pay", url: "https://helpcenter.redotpay.com/en/articles/11027588-how-do-i-use-my-redotpay-card-for-payments" },
+        { label: "Centre d’aide RedotPay : quand la carte ne se relie pas à PayPal", url: "https://helpcenter.redotpay.com/en/articles/10621389-why-won-t-my-redotpay-card-link-to-paypal-google-pay-or-other-apps" },
         { label: "Banque Centrale de Tunisie : circulaire 2016-09 (opérations courantes, carte technologique)", url: "https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf" },
         { label: "Banque Centrale de Tunisie : circulaire 2025-10 (études à l’étranger)", url: "https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf" },
         { label: "Banque Centrale de Tunisie : cours des devises", url: "https://www.bct.gov.tn/bct/siteprod/cours.jsp" },

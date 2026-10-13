@@ -27,7 +27,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "RedotPay is only one of the five routes compared in [how to pay Italian university fees from Tunisia](article:international-card-tunisia), next to bank transfer, the technology card and PayPal on pagoPA.",
+      text: "RedotPay is only one of the four routes compared in [how to pay Italian university fees from Tunisia](article:international-card-tunisia), next to bank transfer, the technology card and PayPal on pagoPA.",
     },
 
     { type: "h2", id: "what-is-redotpay", text: "1. What is RedotPay and how does the card work?" },

@@ -5,9 +5,10 @@ import { useEffect, useState, type ReactNode } from "react";
 const KEY = "blog-guide-collapsed";
 
 /**
- * Collapse toggle for the guide card. The content is rendered on the server and passed in as
- * children, so it stays in the static HTML; without JS the card simply stays open. The choice
- * is remembered for the browser session only.
+ * Collapse toggle for the guide card. The card starts collapsed on every post; when the reader
+ * opens or closes it, that choice is remembered in this browser (localStorage) and applies on
+ * every page. The content is rendered on the server and passed in as children, so it stays in
+ * the static HTML; without JS a <noscript> rule keeps it visible.
  */
 export default function GuidePanel({
   title,
@@ -20,13 +21,14 @@ export default function GuidePanel({
   collapseLabel: string;
   children: ReactNode;
 }) {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
 
   useEffect(() => {
     try {
-      if (sessionStorage.getItem(KEY) === "1") setCollapsed(true);
+      // "0" = the reader chose to keep it open on some page; anything else = collapsed
+      if (localStorage.getItem(KEY) === "0") setCollapsed(false);
     } catch {
-      // storage blocked (private mode): keep the card open
+      // storage blocked (private mode): keep the default (collapsed)
     }
   }, []);
 
@@ -34,7 +36,7 @@ export default function GuidePanel({
     const next = !collapsed;
     setCollapsed(next);
     try {
-      sessionStorage.setItem(KEY, next ? "1" : "0");
+      localStorage.setItem(KEY, next ? "1" : "0");
     } catch {
       // ignore
     }
@@ -55,6 +57,9 @@ export default function GuidePanel({
           <span className="blog-acc-icon" aria-hidden="true" />
         </button>
       </h2>
+      <noscript>
+        <style>{"#guide-panel[hidden]{display:block}"}</style>
+      </noscript>
       <div id="guide-panel" className="blog-guide-scroll" tabIndex={0} role="region" aria-labelledby="guide-title" hidden={collapsed}>
         {children}
       </div>

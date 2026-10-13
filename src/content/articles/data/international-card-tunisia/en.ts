@@ -5,14 +5,14 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "pay-italian-university-fees-from-tunisia",
   title: "How to pay Italian university fees from Tunisia",
-  subtitle: "Five payment routes compared: bank transfer, technology card, PayPal on pagoPA, an Italian account and crypto cards",
-  seoTitle: "Pay Italian University Fees from Tunisia: 5 Ways (2026)",
+  subtitle: "Four payment routes compared: bank transfer, technology card, PayPal with a RedotPay card, and an Italian account",
+  seoTitle: "Pay Italian University Fees from Tunisia: 4 Ways (2026)",
   metaDescription:
-    "Pay Italian university fees from Tunisia: 5 routes ranked by legal safety, from a bank transfer (BCT circular 2016-09) to the technology card and PayPal.",
+    "Pay Italian university fees from Tunisia: 4 routes ranked by legal safety, from a bank transfer (BCT circular 2016-09) to the technology card and PayPal.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["pay Italian university fees from Tunisia", "pay Italian tuition from Tunisia", "pay enrolment fees in Italy from Tunisia", "international card Tunisia", "pay in euros from Tunisia", "transfer university fees abroad from Tunisia"],
   summary:
-    "In 2026, the safest legal way to pay Italian university fees from Tunisia is a bank transfer: exam and application fees against an invoice, tuition through your study file at one bank. For smaller online payments, the technology card (1,000 TND a year) and a Tunisian PayPal account on pagoPA can work, and paying a pagoPA notice is a normal process; ask your bank about transfers.",
+    "In 2026, the safest legal way to pay Italian university fees from Tunisia is a bank transfer: exam and application fees against an invoice, tuition through your study file at one bank. For smaller online payments, the technology card (1,000 TND a year) can work, and PayPal on pagoPA with a linked RedotPay card is the final solution when a Tunisian card is refused; read the crypto-card warnings first.",
   body: [
     {
       type: "callout",
@@ -27,7 +27,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "This guide ranks five methods by legal certainty, then cost, then effort. Each section links to the detailed guide for that route: the technology card, pagoPA with PayPal and the RedotPay crypto card.",
+      text: "This guide ranks four methods by legal certainty, then cost, then effort. Each section links to the detailed guide for that route: the technology card, pagoPA with PayPal and the RedotPay card.",
     },
 
     { type: "h2", id: "which-method", text: "1. Which payment method fits which Italian fee?" },
@@ -121,10 +121,10 @@ export const en: ArticleTranslation = {
       text: "The technology card's official list of uses names online training, educational sites, subscriptions and software licences. It does **not** name tuition or pagoPA. Paying university fees with the CTI is a grey zone that depends on the bank: Banque Zitouna, for example, [limits online use by merchant code](https://www.banquezitouna.com/fr/particuliers/gerer-mon-quotidien/mes-cartes/carte-technologique). Ask your bank. Eligibility, documents and the issuing banks are covered in [how to get the international technology card in Tunisia](article:technology-card-tunisia).",
     },
 
-    { type: "h2", id: "paypal-pagopa", text: "4. Option 3: can you pay with PayPal on the pagoPA checkout?" },
+    { type: "h2", id: "paypal-pagopa", text: "4. Option 3: how do you pay with PayPal and a RedotPay card?" },
     {
       type: "p",
-      text: "PayPal on the pagoPA checkout can work from Tunisia, because a Tunisian PayPal account can **pay and send** money, even though it cannot receive any. Paying a fee only needs the first part. Link your technology card to the PayPal account as the funding source.",
+      text: "PayPal on the pagoPA checkout works from Tunisia, and a [RedotPay](ref:redotpay) Visa card linked to PayPal is the final solution when your Tunisian card is refused. A Tunisian PayPal account can **pay and send** money, even though it cannot receive any, and paying a fee only needs the first part. If you hold a technology card (CTI), you will usually pay with the CTI itself, so the RedotPay card is the second card to link to PayPal.",
     },
     {
       type: "figure",
@@ -140,12 +140,30 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
+      text: "RedotPay is a Hong Kong fintech that issues a Visa card funded with stablecoins such as USDT. RedotPay's help centre says the card can be linked to PayPal, Apple Pay or Google Pay, and a new card can take up to 5 days before PayPal accepts it (see the official sources at the end).",
+    },
+    {
+      type: "ol",
+      items: [
+        "**Get the RedotPay card** with the promo code j2eb5 and activate it.",
+        "**Add the card to PayPal** as a payment method, with the same name and billing address as on your RedotPay account. If PayPal refuses it, wait a few days instead of retrying: RedotPay warns that too many attempts in a row can freeze the card.",
+        "**Pay on checkout.pagopa.it**: enter the notice codes, choose PayPal, then pay in full.",
+      ],
+    },
+    {
+      type: "p",
       text: "PayPal is an official method on [checkout.pagopa.it](https://assistenza.pagopa.gov.it/hc/it/articles/39530555323409-Pagare-con-PayPal), and [PayPal says](https://www.paypal.com/it/digital-wallet/pagopa) any account holder with a linked card can use it. Instalments need Italian residency, so pay in full.",
     },
     {
       type: "fees",
       title: "Costs of paying a pagoPA notice with PayPal",
       feeIds: ["pagopa-paypal", "paypal-fx"],
+    },
+    {
+      type: "callout",
+      tone: "warning",
+      title: "Read the warnings first",
+      text: "A crypto card carries legal risk for residents of Tunisia: no BCT text authorises residents to buy crypto, and RedotPay's terms say the account is not a banking service and can be frozen at the company's discretion, with no deposit insurance mentioned. Read [the legal notice and warnings in our RedotPay guide](article:redotpay-tunisia#legal-status) before you use it.",
     },
     {
       type: "p",
@@ -157,26 +175,12 @@ export const en: ArticleTranslation = {
       type: "p",
       text: "An Italian account or card becomes the best option once you are in Rome: an Italian account, a Postepay card or a Wise card pays pagoPA directly, usually at a lower cost. The Wise card is not available in Tunisia, but it is in Italy. For the next steps, read [how to open a bank account in Italy as a student](article:bank-account-italy-student) and [where the IBAN fits in your first weeks in Rome](article:arriving-in-rome#bank-account).",
     },
-
-    { type: "h2", id: "crypto-cards", text: "6. Option 5: why do crypto cards come last?" },
     {
       type: "p",
-      text: "Crypto cards come last because no BCT text authorises residents of Tunisia to buy crypto, so the legal risk of paying this way falls on you.",
-    },
-    {
-      type: "p",
-      text: "[RedotPay](ref:redotpay) is a Hong Kong fintech that issues a Visa card funded with stablecoins such as USDT. RedotPay's terms of service say the account is not a banking service and let the company freeze accounts at its discretion. No deposit insurance is mentioned.",
-    },
-    {
-      type: "p",
-      text: "How the RedotPay card works, what it costs and how the P2P top-up works are explained in [RedotPay in Tunisia: card fees, P2P top-up and legal risks](article:redotpay-tunisia).",
-    },
-    {
-      type: "p",
-      text: "**Why this order?** Legal certainty comes first: a bank transfer has a clear legal basis and leaves a paper trail. Then cost: the technology card and PayPal add fees and a 1,000 TND cap. Then effort: an Italian account is cheapest but only works after you arrive. Crypto cards come last because the legal risk falls on you.",
+      text: "**Why this order?** Legal certainty comes first: a bank transfer has a clear legal basis and leaves a paper trail. Then cost: the technology card adds fees and a 1,000 TND cap. PayPal with a RedotPay card is the final online solution when Tunisian cards are refused, once you have read its legal warnings. An Italian account is cheapest but only works after you arrive.",
     },
 
-    { type: "h2", id: "exchange-rules", text: "7. What do Tunisian exchange rules require?" },
+    { type: "h2", id: "exchange-rules", text: "6. What do Tunisian exchange rules require?" },
     {
       type: "p",
       text: "Tunisian exchange rules require residents to go through the BCT or an authorised intermediary, such as a bank or La Poste, for foreign exchange: that is article 3 of the [Code des changes of 1976](https://www.finances.gov.tn/sites/default/files/17.pdf). Capital transfers outside the rules need an authorisation (art. 1).",
@@ -207,7 +211,7 @@ export const en: ArticleTranslation = {
       text: "A new exchange code was still under review in June 2026 ([La Presse](https://www.lapresse.tn/2026/06/04/reglementation-de-change-un-nouveau-code-a-lexamen/)). The press also reported that the 2026 finance law lets residents open foreign-currency accounts ([Business News](https://businessnews.com.tn/2025/12/03/comptes-en-devises-pour-les-residents-tunisiens-tout-ce-quil-faut-savoir/1376299/)). How Tunisian banks apply the foreign-currency account rule is not confirmed, so check with your bank.",
     },
 
-    { type: "h2", id: "payment-scams", text: "8. Can you buy an international card on social media?" },
+    { type: "h2", id: "payment-scams", text: "7. Can you buy an international card on social media?" },
     {
       type: "p",
       text: "No. On 30 May 2024 the BCT warned that international cards and foreign-currency accounts offered on social media are illegal and potentially dangerous, and that taking part could lead to prosecution ([Managers](https://managers.tn/2024/05/30/alerte-de-la-bct-mefiez-vous-des-cartes-bancaires-internationales-vendues-sur-les-reseaux-sociaux)).",
@@ -241,7 +245,7 @@ export const en: ArticleTranslation = {
         },
         {
           q: "Can I pay Italian university fees with a crypto card from Tunisia?",
-          a: "Not safely. No Tunisian text authorises residents to buy crypto, and the 1976 Code des changes requires residents to use the BCT or an authorised intermediary and to declare assets abroad. A crypto card such as RedotPay is also not a bank account and can be frozen at the company's discretion, which is why it comes last among the payment routes.",
+          a: "Technically yes: link a RedotPay card to PayPal and pay the pagoPA notice with PayPal, the final solution when Tunisian cards are refused. The legal risk is yours, though: no Tunisian text authorises residents to buy crypto, the 1976 Code des changes requires residents to use the BCT or an authorised intermediary and to declare assets abroad, and a RedotPay card is not a bank account and can be frozen at the company's discretion.",
         },
         {
           q: "Can a Tunisian bank pay a pagoPA notice by transfer?",
@@ -254,6 +258,8 @@ export const en: ArticleTranslation = {
       id: "official-sources",
       title: "Official sources",
       items: [
+        { label: "RedotPay help centre: using the card with PayPal, Apple Pay and Google Pay", url: "https://helpcenter.redotpay.com/en/articles/11027588-how-do-i-use-my-redotpay-card-for-payments" },
+        { label: "RedotPay help centre: when the card will not link to PayPal", url: "https://helpcenter.redotpay.com/en/articles/10621389-why-won-t-my-redotpay-card-link-to-paypal-google-pay-or-other-apps" },
         { label: "Banque Centrale de Tunisie: circular 2016-09 (current transfers, technology card)", url: "https://www.bct.gov.tn/bct/siteprod/documents/Cir_2016_09_fr.pdf" },
         { label: "Banque Centrale de Tunisie: circular 2025-10 (studies abroad)", url: "https://www.bct.gov.tn/bct/siteprod/documents/Cir_2025_10_fr.pdf" },
         { label: "Banque Centrale de Tunisie: exchange rates", url: "https://www.bct.gov.tn/bct/siteprod/cours.jsp" },
