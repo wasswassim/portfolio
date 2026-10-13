@@ -3,11 +3,16 @@
 // Profile from the Places API (New) and writes src/content/google-reviews.json, which the blog
 // renders at build time (no Google script or cookie for readers).
 //   - GOOGLE_PLACES_API_KEY: secret, set in GitHub (Settings > Secrets and variables > Actions)
-//   - GOOGLE_PLACE_ID: the profile's Place ID (env var, or PLACE_ID below)
+//   - GOOGLE_PLACE_ID: the profile's Place ID (optional). Without it, the profile is found by a text
+//     search for its name, keeping only the result whose Maps link carries the profile's CID (from
+//     the owner's Google Maps link), so another business can never be picked by mistake.
 // Without a key, or if Google fails, the existing JSON is kept and the build carries on.
 import { readFileSync, writeFileSync } from "node:fs";
 
-const PLACE_ID = process.env.GOOGLE_PLACE_ID || "";
+let PLACE_ID = process.env.GOOGLE_PLACE_ID || "";
+// "Wassim Gatri" on Google Maps: feature id 0x4f737c2aa4d64c2b:0xbc2ecb2db6a66eac -> CID below
+const PROFILE_NAME = "Wassim Gatri";
+const PROFILE_CID = "13559998925257469612";
 const KEY = process.env.GOOGLE_PLACES_API_KEY || "";
 const OUT = new URL("../src/content/google-reviews.json", import.meta.url);
 
@@ -16,7 +21,25 @@ const keep = (why) => {
   process.exit(0);
 };
 
-if (!KEY || !PLACE_ID) keep(!KEY ? "no GOOGLE_PLACES_API_KEY" : "no GOOGLE_PLACE_ID");
+if (!KEY) keep("no GOOGLE_PLACES_API_KEY");
+
+if (!PLACE_ID) {
+  try {
+    const res = await fetch("https://places.googleapis.com/v1/places:searchText", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "X-Goog-Api-Key": KEY, "X-Goog-FieldMask": "places.id,places.googleMapsUri" },
+      body: JSON.stringify({ textQuery: PROFILE_NAME, pageSize: 20 }),
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!res.ok) keep(`text search answered HTTP ${res.status}`);
+    const { places = [] } = await res.json();
+    PLACE_ID = places.find((pl) => (pl.googleMapsUri ?? "").includes("cid=" + PROFILE_CID))?.id ?? "";
+  } catch (err) {
+    keep(`text search failed (${err instanceof Error ? err.message : String(err)})`);
+  }
+  if (!PLACE_ID) keep(`no search result matches CID ${PROFILE_CID}; set GOOGLE_PLACE_ID instead`);
+  console.log(`google reviews: found the profile, Place ID ${PLACE_ID}`);
+}
 
 const fields = ["displayName", "rating", "userRatingCount", "googleMapsUri", "googleMapsLinks", "reviews"].join(",");
 try {
