@@ -8,33 +8,25 @@ export const fr: ArticleTranslation = {
   seoTitle: "WSC Tunisie avis : prix et étapes pour étudier en Italie",
   metaDescription:
     "Mon avis sur WSC Tunisie : les 5 étapes pour étudier en Italie, les 5 500 TND payés en trois fois, vos documents et comment tout faire gratuitement.",
-  imageAlt: "La fiche d’étapes que WSC Tunisie remet aux étudiants pour la préinscription en Italie, avec les frais de chaque étape écrits à la main",
+  imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur sa façade et la foule devant",
   keywords: ["WSC Tunisie", "World Study Center Tunis", "agence pour étudier en Italie pour les Tunisiens", "agence études Italie Tunisie", "WSC Tunisie avis", "WSC Tunisie prix"],
   summary:
-    "WSC Tunisie (World Study Center) est l’agence d’études à l’étranger de Tunis qui a géré mon départ pour étudier à Rome, et elle figure sur la liste officielle des bureaux agréés du ministère de l’Enseignement supérieur. Sur la fiche qu’elle m’a remise, ses 5 étapes (préinscription, test de langue, bourse DiSCo, visa, départ) coûtent 5 500 TND, payés en trois fois à la fin de chaque étape (1 600, 2 500 et 1 400 TND). Vous réunissez vous-même tous les documents ; l’agence les vérifie, les envoie à un traducteur assermenté et monte les dossiers, et chaque étape est aussi expliquée gratuitement dans notre guide des études si vous ne pouvez pas payer une agence.",
+    "WSC Tunisie (World Study Center) est l’agence d’études à l’étranger de Tunis qui a géré mon départ pour étudier à Rome, et elle figure sur la liste officielle des bureaux agréés du ministère de l’Enseignement supérieur. En 2026, ses 5 étapes (préinscription, test de langue, bourse DiSCo, visa, départ) coûtent 5 500 TND, payés en trois fois à la fin de chaque étape (1 600, 2 500 et 1 400 TND). Vous réunissez vous-même tous les documents ; l’agence les vérifie, les envoie à un traducteur assermenté et monte les dossiers, et chaque étape est aussi expliquée gratuitement dans notre guide des études si vous ne pouvez pas payer une agence.",
   body: [
     {
       type: "callout",
       tone: "warning",
       title: "Avertissement important",
-      text: "Cet article décrit ma propre expérience de client de WSC et ne constitue pas un conseil juridique. Les frais et les étapes de l’agence peuvent changer, et les règles des universités, des bourses et des visas changent chaque année : demandez à WSC sa fiche d’étapes à jour et vérifiez les sources officielles avant de payer quoi que ce soit.",
+      text: "Cet article décrit ma propre expérience de client de WSC et ne constitue pas un conseil juridique. Les frais et les étapes de l’agence peuvent changer, et les règles des universités, des bourses et des visas changent chaque année : demandez à WSC sa fiche d’étapes à jour et vérifiez les sources officielles avant de payer quoi que ce soit. WSC ne m’a ni payé ni demandé d’écrire cet article, et je ne touche rien si vous la contactez.",
     },
     { type: "p", text: "**Faut-il passer par une agence comme WSC Tunisie pour étudier en Italie, et que fait-elle exactement pour vous ?**" },
     {
       type: "p",
-      text: "En bref : WSC (World Study Center) est l’agence de Tunis par laquelle je suis passé pour quitter la Tunisie et continuer mes études à Rome. Elle travaille en 5 étapes numérotées et vous payez ses 5 500 TND en trois fois, seulement une fois chaque étape terminée : **1 600 TND** pour le dossier de préinscription, **2 500 TND** pour le dossier de bourse et **1 400 TND** pour le dossier de visa (les tarifs de la fiche qu’on m’a remise).",
+      text: "En bref : WSC (World Study Center) est l’agence de Tunis par laquelle je suis passé pour quitter la Tunisie et continuer mes études à Rome. Elle travaille en 5 étapes numérotées et vous payez ses 5 500 TND en trois fois, seulement une fois chaque étape terminée : **1 600 TND** pour le dossier de préinscription, **2 500 TND** pour le dossier de bourse et **1 400 TND** pour le dossier de visa (tarifs 2026).",
     },
     {
       type: "p",
       text: "L’agence ne va pas chercher vos papiers à votre place. C’est vous qui allez chercher chaque document et qui le lui apportez ; WSC vérifie chaque pièce, l’envoie à un traducteur assermenté et monte les dossiers. Si vous ne pouvez pas payer une agence, vous pouvez suivre les mêmes étapes gratuitement avec notre [guide pour étudier en Italie pour les étudiants tunisiens](article:study-in-italy) : je donne le lien vers la partie correspondante à chaque étape ci-dessous.",
-    },
-    {
-      type: "figure",
-      src: "/blog/wsc-tunisia-steps.webp",
-      width: 1100,
-      height: 1467,
-      alt: "La fiche imprimée de WSC intitulée « Pré inscription en Italie : Démarches » : les documents de préinscription, les documents en plus pour un master, le test IELTS, le dossier de bourse, le dossier de visa et le départ, avec 1 600, 2 500 et 1 400 écrits à la main à côté des étapes",
-      caption: "La fiche d’étapes que WSC m’a remise. Les chiffres dans la marge sont les frais de chaque étape, en dinars ; le montant bloqué a été corrigé à la main de 24 000 à 35 000 TND.",
     },
 
     { type: "h2", id: "who-is-wsc", text: "1. Qui est WSC Tunisie, et pourquoi lui ai-je fait confiance ?" },
@@ -50,7 +42,7 @@ export const fr: ArticleTranslation = {
       type: "ul",
       items: [
         "**Un agrément que vous pouvez vérifier** sur la [liste des bureaux agréés du ministère](https://www.mes.tn/image.php?id=19999), et un vrai bureau où vous pouvez aller (le bureau de WSC à Tunis est au 6 rue de Mahdia, 3e étage ; téléphone 71 285 510).",
-        "**Une liste écrite des étapes et des frais**, comme la fiche ci-dessus, et un reçu pour chaque paiement.",
+        "**Une liste écrite des étapes et des frais** (WSC en remet une sur papier), et un reçu pour chaque paiement.",
         "**Aucune promesse d’admission, de bourse ou de visa garantis.** Pour la Dichiarazione di Valore, l’ambassade d’Italie avertit que personne ne peut vous vendre un rendez-vous plus rapide : voir [l’avertissement de l’ambassade sur les rendez-vous DOV payants](article:documents-for-italy#which-university-accepts).",
       ],
     },
@@ -58,11 +50,11 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "five-steps", text: "2. Comment fonctionnent les 5 étapes de WSC, et combien coûte chacune ?" },
     {
       type: "p",
-      text: "Le processus suit l’ordre de la procédure italienne elle-même : d’abord l’admission, puis la bourse et le visa, puis le départ. Voici comment les frais étaient répartis sur ma fiche :",
+      text: "Le processus suit l’ordre de la procédure italienne elle-même : d’abord l’admission, puis la bourse et le visa, puis le départ. Voici comment les frais sont répartis en 2026 :",
     },
     {
       type: "table",
-      caption: "Les étapes et les frais de WSC tels qu’écrits sur ma fiche (demandez à l’agence ses tarifs actuels).",
+      caption: "Les étapes et les frais de WSC en 2026, tels qu’écrits sur sa fiche (demandez à l’agence ses tarifs actuels).",
       head: ["Étape", "Ce qui se passe", "Frais WSC"],
       rows: [
         ["1. Dossier de préinscription", "Vous apportez vos documents ; WSC les vérifie, les fait traduire et candidate auprès des universités", "1 600 TND"],
@@ -124,7 +116,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "language-test", text: "4. Quel test de langue l’agence demande-t-elle ?" },
     {
       type: "p",
-      text: "Pour un cursus en anglais, WSC demande l’**IELTS Academic avec un score de niveau B2** (la note fixée par l’appel de votre cursus), à passer au [British Council en Tunisie](https://www.britishcouncil.tn/en/exam/ielts). Pour un cursus en italien, il faut plutôt le **B2 en italien** (ajouté à la main sur ma fiche). Vous payez directement le centre d’examen ; ce n’est pas compris dans les frais de l’agence. Certaines universités acceptent d’autres certificats ou organisent leur propre test, vérifiez donc votre cursus : [les conditions d’admission de chaque cursus](article:apply-university-rome#find-a-course).",
+      text: "Pour un cursus en anglais, WSC demande l’**IELTS Academic avec un score de niveau B2** (la note fixée par l’appel de votre cursus), à passer au [British Council en Tunisie](https://www.britishcouncil.tn/en/exam/ielts). Pour un cursus en italien, il faut plutôt le **B2 en italien**. Vous payez directement le centre d’examen ; ce n’est pas compris dans les frais de l’agence. Certaines universités acceptent d’autres certificats ou organisent leur propre test, vérifiez donc votre cursus : [les conditions d’admission de chaque cursus](article:apply-university-rome#find-a-course).",
     },
 
     { type: "h2", id: "university-fees", text: "5. Quels frais l’agence vous demande-t-elle en plus des siens ?" },
@@ -180,7 +172,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "visa-file", text: "7. Comment se passe le dossier de visa avec l’agence ?" },
     {
       type: "p",
-      text: "L’étape du visa repose sur l’argent : un **montant bloqué dans une banque tunisienne**, les revenus de vos parents et **6 mois de leurs relevés bancaires**. Ma fiche indique 35 000 TND, corrigé à la main à partir de 24 000 ; l’ambassade d’Italie demandait 10 179,85 EUR pour 2026/27, soit environ 34 300 TND au taux BCT du 7 octobre 2026 (la banque convertit le jour du blocage, demandez-lui donc le montant exact en dinars). L’agence vérifie que les montants concordent dans tous vos papiers et monte le dossier ; c’est vous qui ouvrez le dossier étudiant et bloquez l’argent dans votre banque. Voir [comment fonctionne le compte bloqué](article:italy-student-visa#blocked-account) et [les 15 documents du visa étudiant](article:italy-student-visa#visa-documents).",
+      text: "L’étape du visa repose sur l’argent : un **montant bloqué dans une banque tunisienne**, les revenus de vos parents et **6 mois de leurs relevés bancaires**. La fiche de WSC indique 35 000 TND ; l’ambassade d’Italie demandait 10 179,85 EUR pour 2026/27, soit environ 34 300 TND au taux BCT du 7 octobre 2026 (la banque convertit le jour du blocage, demandez-lui donc le montant exact en dinars). L’agence vérifie que les montants concordent dans tous vos papiers et monte le dossier ; c’est vous qui ouvrez le dossier étudiant et bloquez l’argent dans votre banque. Voir [comment fonctionne le compte bloqué](article:italy-student-visa#blocked-account) et [les 15 documents du visa étudiant](article:italy-student-visa#visa-documents).",
     },
     { type: "h3", id: "visa-appointment", text: "Comment se passe le rendez-vous" },
     {
@@ -228,7 +220,7 @@ export const fr: ArticleTranslation = {
       items: [
         {
           q: "Combien coûte WSC Tunisie pour étudier en Italie ?",
-          a: "Sur la fiche qu’elle m’a remise, WSC demandait 5 500 TND, payés en trois fois après chaque étape : 1 600 TND pour le dossier de préinscription, 2 500 TND pour le dossier de bourse et 1 400 TND pour le dossier de visa. Les frais universitaires, le test de langue, les traductions, les frais de visa et le montant bloqué se paient à part. Demandez à l’agence sa fiche d’étapes à jour.",
+          a: "En 2026, WSC demande 5 500 TND, payés en trois fois après chaque étape : 1 600 TND pour le dossier de préinscription, 2 500 TND pour le dossier de bourse et 1 400 TND pour le dossier de visa. Les frais universitaires, le test de langue, les traductions, les frais de visa et le montant bloqué se paient à part. Les tarifs peuvent changer d’une année à l’autre, demandez donc à l’agence sa fiche d’étapes à jour.",
         },
         {
           q: "WSC Tunisie est-elle une agence agréée ?",
@@ -276,7 +268,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026. Les frais et les étapes de WSC viennent de la fiche qu’elle m’a remise et de son site ; l’agence peut les modifier. Les montants de la bourse et du visa sont ceux des appels 2026/27 ; vérifiez les chiffres 2027/28 avant de faire vos plans.",
+      text: "Dernière vérification : octobre 2026. Les frais et les étapes de WSC sont ses tarifs 2026, tirés de sa fiche et de son site ; l’agence peut les modifier. Les montants de la bourse et du visa sont ceux des appels 2026/27 ; vérifiez les chiffres 2027/28 avant de faire vos plans.",
     },
   ],
   guide: [

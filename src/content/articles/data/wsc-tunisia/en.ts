@@ -10,33 +10,25 @@ export const en: ArticleTranslation = {
   seoTitle: "WSC Tunisia Review: Fees and Steps to Study in Italy",
   metaDescription:
     "My experience with WSC Tunisia: its 5 steps to study in Italy, the 5,500 TND fee paid in three parts, the documents you bring, and the free DIY route.",
-  imageAlt: "The step sheet WSC Tunisia gives students for pre-enrolment in Italy, with the fee for each step written by hand",
+  imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["WSC Tunisia", "World Study Center Tunis", "agency to study in Italy from Tunisia", "study in Italy agency Tunisia", "WSC Tunisia fees", "World Study Center Sousse"],
   summary:
-    "WSC Tunisia (World Study Center) is the Tunis study-abroad agency that handled my move to study in Rome, and it is on the Ministry of Higher Education's official list of approved study-abroad offices. On the step sheet it gave me, its 5 steps (pre-enrolment, language test, DiSCo scholarship, visa, departure) cost 5,500 TND, paid in three parts as each step is done (1,600, 2,500 and 1,400 TND). You collect every document yourself; the agency checks them, sends them to a sworn translator and builds the files, and every step is also explained for free in our study guide if you cannot pay an agency.",
+    "WSC Tunisia (World Study Center) is the Tunis study-abroad agency that handled my move to study in Rome, and it is on the Ministry of Higher Education's official list of approved study-abroad offices. In 2026, its 5 steps (pre-enrolment, language test, DiSCo scholarship, visa, departure) cost 5,500 TND, paid in three parts as each step is done (1,600, 2,500 and 1,400 TND). You collect every document yourself; the agency checks them, sends them to a sworn translator and builds the files, and every step is also explained for free in our study guide if you cannot pay an agency.",
   body: [
     {
       type: "callout",
       tone: "warning",
       title: "Important notice",
-      text: "This post describes my own experience as a WSC client and is not legal advice. The agency's fees and steps can change, and university, scholarship and visa rules change every year: ask WSC for its current step sheet and check the official sources before you pay anything.",
+      text: "This post describes my own experience as a WSC client and is not legal advice. The agency's fees and steps can change, and university, scholarship and visa rules change every year: ask WSC for its current step sheet and check the official sources before you pay anything. WSC did not pay me or ask me to write this, and I get nothing if you contact it.",
     },
     { type: "p", text: "**Should you use an agency like WSC Tunisia to study in Italy, and what exactly does it do for you?**" },
     {
       type: "p",
-      text: "Short answer: WSC (World Study Center) is the Tunis agency I used to leave Tunisia and continue my studies in Rome. It works in 5 numbered steps and you pay its 5,500 TND fee in three parts, only after each step is done: **1,600 TND** for the pre-enrolment file, **2,500 TND** for the scholarship file and **1,400 TND** for the visa file (the prices on the sheet I was given).",
+      text: "Short answer: WSC (World Study Center) is the Tunis agency I used to leave Tunisia and continue my studies in Rome. It works in 5 numbered steps and you pay its 5,500 TND fee in three parts, only after each step is done: **1,600 TND** for the pre-enrolment file, **2,500 TND** for the scholarship file and **1,400 TND** for the visa file (2026 prices).",
     },
     {
       type: "p",
       text: "The agency does not collect your papers for you. You go out, get every document and bring it to them; WSC checks each one, sends it to a sworn translator and builds the files. If you cannot afford an agency, you can follow the same steps for free with our [guide to studying in Italy for Tunisian students](article:study-in-italy): I link the matching part at each step below.",
-    },
-    {
-      type: "figure",
-      src: "/blog/wsc-tunisia-steps.webp",
-      width: 1100,
-      height: 1467,
-      alt: "WSC's printed sheet titled “Pré inscription en Italie: Démarches”: the pre-enrolment documents, the extra documents for a Master's, the IELTS test, the scholarship file, the visa file and departure, with 1,600, 2,500 and 1,400 written by hand next to the steps",
-      caption: "The step sheet WSC gave me. The numbers in the margin are the fee for each step, in dinars; the blocked amount was corrected by hand from 24,000 to 35,000 TND.",
     },
 
     { type: "h2", id: "who-is-wsc", text: "1. Who is WSC Tunisia, and why did I trust it?" },
@@ -52,7 +44,7 @@ export const en: ArticleTranslation = {
       type: "ul",
       items: [
         "**An approval you can check** on the [Ministry's list of approved offices](https://www.mes.tn/image.php?id=19999), and a real office you can visit (WSC's Tunis office is at 6 rue de Mahdia, 3rd floor; phone 71 285 510).",
-        "**A written list of steps and fees**, like the sheet above, and a receipt for every payment.",
+        "**A written list of steps and fees** (WSC gives one on paper), and a receipt for every payment.",
         "**No promise of a guaranteed admission, scholarship or visa.** For the Dichiarazione di Valore, the Italian Embassy warns that nobody can sell you a faster appointment: see [the Embassy's warning about paid DOV appointments](article:documents-for-italy#which-university-accepts).",
       ],
     },
@@ -60,11 +52,11 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "five-steps", text: "2. How does WSC's 5-step process work, and what does each step cost?" },
     {
       type: "p",
-      text: "The process follows the order of the Italian procedure itself: admission first, then the scholarship and the visa, then departure. This is how the fee was split on my step sheet:",
+      text: "The process follows the order of the Italian procedure itself: admission first, then the scholarship and the visa, then departure. This is how the fee is split in 2026:",
     },
     {
       type: "table",
-      caption: "WSC's steps and fees as written on my step sheet (ask the agency for its current prices).",
+      caption: "WSC's steps and fees in 2026, as written on its step sheet (ask the agency for its current prices).",
       head: ["Step", "What happens", "WSC fee"],
       rows: [
         ["1. Pre-enrolment file", "You bring your documents; WSC checks them, has them translated and applies to the universities", "1,600 TND"],
@@ -126,7 +118,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "language-test", text: "4. Which language test does the agency ask for?" },
     {
       type: "p",
-      text: "For an English-taught course, WSC asks for **IELTS Academic with a B2-level score** (the band your course's call sets), taken at the [British Council in Tunisia](https://www.britishcouncil.tn/en/exam/ielts). For an Italian-taught course, you need **B2 in Italian** instead (written by hand on my sheet). You pay the test centre directly; it is not part of the agency fee. Some universities accept other certificates or run their own test, so check your course: [entry requirements for each course](article:apply-university-rome#find-a-course).",
+      text: "For an English-taught course, WSC asks for **IELTS Academic with a B2-level score** (the band your course's call sets), taken at the [British Council in Tunisia](https://www.britishcouncil.tn/en/exam/ielts). For an Italian-taught course, you need **B2 in Italian** instead. You pay the test centre directly; it is not part of the agency fee. Some universities accept other certificates or run their own test, so check your course: [entry requirements for each course](article:apply-university-rome#find-a-course).",
     },
 
     { type: "h2", id: "university-fees", text: "5. Which fees does the agency ask you to pay besides its own?" },
@@ -182,7 +174,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "visa-file", text: "7. How does the visa file work with the agency?" },
     {
       type: "p",
-      text: "The visa step rests on money: a **blocked amount at a Tunisian bank**, your parents' income and **6 months of their bank statements**. My sheet says 35,000 TND, corrected by hand from 24,000; the Italian Embassy asked for EUR 10,179.85 for 2026/27, about 34,300 TND at the BCT rate of 7 October 2026 (the bank converts on the day you block, so ask it for the exact dinar amount). The agency checks that the amounts match across your papers and builds the file; you open the student file and block the money at your bank. See [how the blocked account works](article:italy-student-visa#blocked-account) and [the 15 documents of the student visa](article:italy-student-visa#visa-documents).",
+      text: "The visa step rests on money: a **blocked amount at a Tunisian bank**, your parents' income and **6 months of their bank statements**. WSC's sheet says 35,000 TND; the Italian Embassy asked for EUR 10,179.85 for 2026/27, about 34,300 TND at the BCT rate of 7 October 2026 (the bank converts on the day you block, so ask it for the exact dinar amount). The agency checks that the amounts match across your papers and builds the file; you open the student file and block the money at your bank. See [how the blocked account works](article:italy-student-visa#blocked-account) and [the 15 documents of the student visa](article:italy-student-visa#visa-documents).",
     },
     { type: "h3", id: "visa-appointment", text: "How the appointment works" },
     {
@@ -230,7 +222,7 @@ export const en: ArticleTranslation = {
       items: [
         {
           q: "How much does WSC Tunisia charge to study in Italy?",
-          a: "On the step sheet it gave me, WSC charged 5,500 TND, paid in three parts after each step: 1,600 TND for the pre-enrolment file, 2,500 TND for the scholarship file and 1,400 TND for the visa file. University fees, the language test, translations, the visa fee and the blocked amount are paid separately. Ask the agency for its current step sheet.",
+          a: "In 2026, WSC charges 5,500 TND, paid in three parts after each step: 1,600 TND for the pre-enrolment file, 2,500 TND for the scholarship file and 1,400 TND for the visa file. University fees, the language test, translations, the visa fee and the blocked amount are paid separately. Prices can change from one year to the next, so ask the agency for its current step sheet.",
         },
         {
           q: "Is WSC Tunisia an approved agency?",
@@ -278,7 +270,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last checked: October 2026. WSC's fees and steps come from the step sheet it gave me and its website; the agency can change them. Scholarship and visa amounts are from the 2026/27 calls; check the 2027/28 figures before you plan.",
+      text: "Last checked: October 2026. WSC's fees and steps are its 2026 prices, from its step sheet and its website; the agency can change them. Scholarship and visa amounts are from the 2026/27 calls; check the 2027/28 figures before you plan.",
     },
   ],
   guide: [
