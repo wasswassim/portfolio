@@ -25,8 +25,8 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
         "You first receive a confirmation email; you are only subscribed after you confirm (double opt-in). The legal basis is your consent. You can unsubscribe at any time with the link in every email, and your address is then no longer used for the newsletter.",
       ] },
       { h: "Reviews", id: "reviews", p: [
-        "If you send a review with the form at the bottom of a post, your name, rating, review, your email address if you give one, and the page you were on are sent to me by email through EmailJS (emailjs.com), the service that also runs the contact form.",
-        "I read every review before publishing it. Only your name as you wrote it, your rating, your review and the date go online; your email address is optional, never published, and used only if I need to reply to you. The legal basis is your consent. Write to me to have your review changed or removed at any time.",
+        "If you send a review with the form at the bottom of a post, your name, rating, review, the page you were on and your email address if you give one are stored in a database run by Supabase on servers in the European Union (Frankfurt). Your name, rating, review and the date are published on the blog at once. Your email address is never published and is used only if I need to reply to you. To limit spam, a scrambled (hashed) form of your IP address is stored with the review.",
+        "A copy of each review is sent to me by email through EmailJS (emailjs.com), the service that also runs the contact form. The legal basis is your consent, given by sending the review. Write to me to have your review changed or removed at any time; I may also remove reviews that are spam, abusive or off-topic.",
       ] },
       { h: "Website statistics", p: [
         "The blog uses Ahrefs Analytics to count visits and see which pages are read. It does not use advertising cookies and is not used to identify you.",
@@ -50,8 +50,8 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
         "Vous recevez d'abord un e-mail de confirmation ; vous n'êtes abonné qu'après avoir confirmé (double opt-in). La base légale est votre consentement. Vous pouvez vous désabonner à tout moment avec le lien présent dans chaque e-mail ; votre adresse n'est alors plus utilisée pour la newsletter.",
       ] },
       { h: "Avis", id: "reviews", p: [
-        "Si vous envoyez un avis avec le formulaire en bas d’un article, votre nom, votre note, votre avis, votre adresse e-mail si vous la donnez et la page où vous étiez me sont envoyés par e-mail via EmailJS (emailjs.com), le service qui gère aussi le formulaire de contact.",
-        "Je lis chaque avis avant de le publier. Seuls votre nom tel que vous l’avez écrit, votre note, votre avis et la date sont mis en ligne ; votre adresse e-mail est facultative, jamais publiée, et ne sert que si je dois vous répondre. La base légale est votre consentement. Écrivez-moi pour faire modifier ou supprimer votre avis à tout moment.",
+        "Si vous envoyez un avis avec le formulaire en bas d’un article, votre nom, votre note, votre avis, la page où vous étiez et votre adresse e-mail si vous la donnez sont enregistrés dans une base de données gérée par Supabase, sur des serveurs situés dans l’Union européenne (Francfort). Votre nom, votre note, votre avis et la date sont publiés sur le blog immédiatement. Votre adresse e-mail n’est jamais publiée et ne sert que si je dois vous répondre. Pour limiter le spam, une forme brouillée (hachée) de votre adresse IP est enregistrée avec l’avis.",
+        "Une copie de chaque avis m’est envoyée par e-mail via EmailJS (emailjs.com), le service qui gère aussi le formulaire de contact. La base légale est votre consentement, donné en envoyant l’avis. Écrivez-moi pour faire modifier ou supprimer votre avis à tout moment ; je peux aussi supprimer les avis qui sont du spam, injurieux ou hors sujet.",
       ] },
       { h: "Statistiques du site", p: [
         "Le blog utilise Ahrefs Analytics pour compter les visites et voir quelles pages sont lues. Aucun cookie publicitaire n'est utilisé et ces données ne servent pas à vous identifier.",
@@ -75,8 +75,8 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
         "تصلك أولًا رسالة تأكيد، ولا يتم اشتراكك إلا بعد التأكيد (double opt-in). الأساس القانوني هو موافقتك. يمكنك إلغاء الاشتراك في أي وقت عبر الرابط الموجود في كل رسالة، وعندها لا يُستعمل عنوانك للنشرة.",
       ] },
       { h: "التقييمات", id: "reviews", p: [
-        "إذا أرسلت تقييمًا عبر الاستمارة في أسفل المقال، يُرسل إليّ اسمك وتقييمك ورأيك وبريدك الإلكتروني إن أعطيته والصفحة التي كنت فيها بالبريد الإلكتروني عبر EmailJS (emailjs.com)، وهي الخدمة التي تشغّل أيضًا استمارة الاتصال.",
-        "أقرأ كل تقييم قبل نشره. لا يُنشر إلا اسمك كما كتبته وتقييمك ورأيك والتاريخ؛ وبريدك الإلكتروني اختياري ولا يُنشر أبدًا، ويُستعمل فقط إذا احتجت إلى الرد عليك. الأساس القانوني هو موافقتك. راسلني لتعديل تقييمك أو حذفه في أي وقت.",
+        "إذا أرسلت تقييمًا عبر الاستمارة في أسفل المقال، يُحفظ اسمك وتقييمك ورأيك والصفحة التي كنت فيها وبريدك الإلكتروني إن أعطيته في قاعدة بيانات تديرها Supabase على خوادم داخل الاتحاد الأوروبي (فرانكفورت). يُنشر اسمك وتقييمك ورأيك والتاريخ في المدونة فورًا. ولا يُنشر بريدك الإلكتروني أبدًا، ويُستعمل فقط إذا احتجت إلى الرد عليك. وللحد من الرسائل المزعجة، تُحفظ مع التقييم صيغة مشفّرة (hash) من عنوان IP الخاص بك.",
+        "تصلني نسخة من كل تقييم بالبريد الإلكتروني عبر EmailJS (emailjs.com)، وهي الخدمة التي تشغّل أيضًا استمارة الاتصال. الأساس القانوني هو موافقتك، التي تعطيها بإرسال التقييم. راسلني لتعديل تقييمك أو حذفه في أي وقت؛ ويمكنني أيضًا حذف التقييمات المزعجة أو المسيئة أو الخارجة عن الموضوع.",
       ] },
       { h: "إحصائيات الموقع", p: [
         "تستعمل المدونة Ahrefs Analytics لعدّ الزيارات ومعرفة الصفحات المقروءة. لا تُستعمل ملفات تعريف ارتباط إعلانية ولا تُستعمل هذه البيانات للتعرف على هويتك.",

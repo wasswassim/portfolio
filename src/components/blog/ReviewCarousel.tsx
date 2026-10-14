@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Lang } from "@/lib/i18n/config";
 import { Stars } from "./Stars";
 
-export type CarouselSlide = { author: string; rating: number; ratingLabel: string; text: string; lang: Lang; date: string; dateText: string };
+export type CarouselSlide = { id: string; author: string; rating: number; ratingLabel: string; text: string; lang: Lang; date: string; dateText: string };
 export type CarouselLabels = {
   region: string;
   /** Name of the scrollable list itself, different from the region */
@@ -45,7 +45,8 @@ export default function ReviewCarousel({ slides, labels, sectionHref, rating }: 
     );
     Array.from(el.children).forEach((c) => io.observe(c));
     return () => io.disconnect();
-  }, []);
+    // Re-observe when a review is added (slides arrive live)
+  }, [slides.length]);
 
   const go = (i: number) => {
     const el = track.current;
@@ -80,7 +81,7 @@ export default function ReviewCarousel({ slides, labels, sectionHref, rating }: 
       </div>
       <ul ref={track} className="blog-rcar-track" tabIndex={0} aria-label={labels.track}>
         {slides.map((s, i) => (
-          <li key={i} data-i={i} className="blog-rcar-slide" role="group" aria-roledescription="slide" aria-label={labels.slides[i]}>
+          <li key={s.id} data-i={i} className="blog-rcar-slide" role="group" aria-roledescription="slide" aria-label={labels.slides[i]}>
             <span className="blog-rcar-stars" role="img" aria-label={s.ratingLabel}><Stars value={s.rating} /></span>
             <p className="blog-rcar-text" lang={s.lang} dir="auto">“{s.text}”</p>
             <p className="blog-rcar-by">

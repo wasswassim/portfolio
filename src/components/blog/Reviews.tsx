@@ -1,42 +1,56 @@
+"use client";
+
+import { useState } from "react";
 import type { Lang } from "@/lib/i18n/config";
 import { LOCALE } from "@/lib/i18n/config";
-import type { Dictionary } from "@/lib/i18n";
-import { reviewAverage, reviewCount, reviews } from "@/content/reviews";
+import { getDictionary } from "@/lib/i18n";
+import { SITE_URL } from "@/lib/seo/site";
+import { averageOf, useReviews } from "@/lib/reviews-store";
 import { Stars } from "./Stars";
 import ReviewCarousel from "./ReviewCarousel";
 import ReviewForm from "./ReviewForm";
-import { SITE_URL } from "@/lib/seo/site";
+
+// Reader reviews come from Supabase (see lib/reviews-store.ts): pages are built with the reviews of build
+// time and refreshed live in the browser, and a sent review is published at once. The badge and the carousel stay hidden until
+// there is at least one review; the section at the bottom is always there, with the review box.
 
 /** id of the reviews section at the bottom of each post; the badge and the carousel link to it */
 const SECTION_ID = "reader-reviews";
+/** Reviews listed before "Show all", and slides in the carousel */
+const LIST_STEP = 6;
+const MAX_SLIDES = 8;
 
 const fmtRating = (lang: Lang, r: number) => new Intl.NumberFormat(LOCALE[lang], { minimumFractionDigits: 1, maximumFractionDigits: 1 }).format(r);
 const dateFormat = (lang: Lang) => new Intl.DateTimeFormat(LOCALE[lang], { year: "numeric", month: "long", timeZone: "UTC" });
 
 /** Small rating badge (score + stars + count) above the guide card, linked to the reviews section. */
-export function RatingBadge({ lang, dict }: { lang: Lang; dict: Dictionary }) {
-  if (reviewAverage === null) return null;
-  const score = fmtRating(lang, reviewAverage);
+export function RatingBadge({ lang }: { lang: Lang }) {
+  const { reviews } = useReviews();
+  const avg = averageOf(reviews);
+  if (avg === null) return null;
+  const r = getDictionary(lang).reviews;
+  const score = fmtRating(lang, avg);
   return (
     <a className="blog-rbadge" href={"#" + SECTION_ID}>
-      <span className="blog-sr">{dict.reviews.badgeLabel(score, reviewCount) + " " + dict.reviews.goTo}</span>
+      <span className="blog-sr">{r.badgeLabel(score, reviews.length) + " " + r.goTo}</span>
       <span className="blog-rbadge-score" aria-hidden="true">{score}</span>
       <span className="blog-rbadge-body">
-        <Stars value={reviewAverage} />
-        <span className="blog-rbadge-count" aria-hidden="true">{dict.reviews.count(reviewCount)}</span>
+        <Stars value={avg} />
+        <span className="blog-rbadge-count" aria-hidden="true">{r.count(reviews.length)}</span>
       </span>
     </a>
   );
 }
 
-/**
- * Reader reviews at the bottom of every post, always shown: the reviews (once there are any) and a
- * form to send one. Sent reviews reach the owner by email and go online only after he adds them.
- */
-export function ReviewsSection({ lang, dict, path }: { lang: Lang; dict: Dictionary; path: string }) {
+/** Reviews at the bottom of every post: the request for a review, the review box, then the reviews. */
+export function ReviewsSection({ lang, path }: { lang: Lang; path: string }) {
+  const { reviews } = useReviews();
+  const [showAll, setShowAll] = useState(false);
+  const dict = getDictionary(lang);
   const r = dict.reviews;
+  const avg = averageOf(reviews);
   const dateFmt = dateFormat(lang);
-  const initials = (name: string) => name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
+  const initials = (name: string) => name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => Array.from(w)[0]).join("").toUpperCase();
   return (
     <section id={SECTION_ID} className="blog-reviews" aria-labelledby="reader-reviews-title">
       <div className="blog-reviews-head">
@@ -45,12 +59,12 @@ export function ReviewsSection({ lang, dict, path }: { lang: Lang; dict: Diction
           <h2 id="reader-reviews-title" className="blog-reviews-title">{r.title}</h2>
           <p className="blog-reviews-ask">{r.ask}</p>
         </div>
-        {reviewAverage !== null && (
+        {avg !== null && (
           <p className="blog-reviews-summary">
-            <span className="blog-sr">{r.badgeLabel(fmtRating(lang, reviewAverage), reviewCount)}</span>
-            <span className="blog-reviews-score" aria-hidden="true">{fmtRating(lang, reviewAverage)}</span>
-            <Stars value={reviewAverage} />
-            <span className="blog-reviews-count" aria-hidden="true">{r.count(reviewCount)}</span>
+            <span className="blog-sr">{r.badgeLabel(fmtRating(lang, avg), reviews.length)}</span>
+            <span className="blog-reviews-score" aria-hidden="true">{fmtRating(lang, avg)}</span>
+            <Stars value={avg} />
+            <span className="blog-reviews-count" aria-hidden="true">{r.count(reviews.length)}</span>
           </p>
         )}
       </div>
@@ -72,62 +86,72 @@ export function ReviewsSection({ lang, dict, path }: { lang: Lang; dict: Diction
           sending: r.form.sending,
           success: r.form.success,
           error: r.form.error,
+          tooMany: r.form.tooMany,
+          noLinks: r.form.noLinks,
           privacyLink: dict.newsletter.privacyLink,
         }}
       />
-      {reviewCount === 0 ? (
-        <p className="blog-reviews-empty">{r.empty}</p>
-      ) : (
+      {reviews.length === 0 && <p className="blog-reviews-empty">{r.empty}</p>}
+      {reviews.length > 0 && (
         <ul className="blog-reviews-list">
-          {reviews.map((rev, i) => (
-            <li key={i} className="blog-review">
+          {(showAll ? reviews : reviews.slice(0, LIST_STEP)).map((rev) => (
+            <li key={rev.id} className="blog-review">
               <div className="blog-review-head">
                 <span className="blog-review-avatar" aria-hidden="true">{initials(rev.author)}</span>
                 <span className="blog-review-who">
                   <bdi className="blog-review-name">{rev.author}</bdi>
                   <span className="blog-review-meta">
-                    {rev.context && <span lang={rev.lang} dir="auto">{rev.context}</span>}
-                    <time dateTime={rev.date}>{dateFmt.format(new Date(rev.date))}</time>
+                    <time dateTime={rev.created_at.slice(0, 10)}>{dateFmt.format(new Date(rev.created_at))}</time>
                   </span>
                 </span>
               </div>
               <span className="blog-review-stars" role="img" aria-label={r.stars(rev.rating)}><Stars value={rev.rating} /></span>
-              <p className="blog-review-text" lang={rev.lang} dir="auto">{rev.text}</p>
+              <p className="blog-review-text" lang={rev.lang} dir="auto">{rev.body}</p>
             </li>
           ))}
         </ul>
+      )}
+      {!showAll && reviews.length > LIST_STEP && (
+        <button type="button" className="blog-reviews-more" onClick={() => setShowAll(true)}>{r.showAll(reviews.length)}</button>
       )}
     </section>
   );
 }
 
 /** Compact carousel of the same reviews under the post header (between the disclosure and the first notice). */
-export function ReviewsCarousel({ lang, dict }: { lang: Lang; dict: Dictionary }) {
-  if (reviewAverage === null) return null;
-  const score = fmtRating(lang, reviewAverage);
+export function ReviewsCarousel({ lang }: { lang: Lang }) {
+  const { reviews } = useReviews();
+  const avg = averageOf(reviews);
+  if (avg === null) return null;
+  const r = getDictionary(lang).reviews;
+  const score = fmtRating(lang, avg);
   const dateFmt = dateFormat(lang);
+  // The newest few; the summary link leads to all of them at the bottom
+  const shown = reviews.slice(0, MAX_SLIDES);
+  const n = shown.length;
   return (
     <ReviewCarousel
-      rating={reviewAverage}
+      rating={avg}
       sectionHref={"#" + SECTION_ID}
-      slides={reviews.map((r) => ({
-        author: r.author,
-        rating: r.rating,
-        ratingLabel: dict.reviews.stars(r.rating),
-        text: r.text,
-        lang: r.lang,
-        date: r.date,
-        dateText: dateFmt.format(new Date(r.date)),
+      slides={shown.map((rev) => ({
+        id: rev.id,
+        author: rev.author,
+        rating: rev.rating,
+        ratingLabel: r.stars(rev.rating),
+        text: rev.body,
+        lang: rev.lang as Lang,
+        date: rev.created_at.slice(0, 10),
+        dateText: dateFmt.format(new Date(rev.created_at)),
       }))}
       labels={{
-        region: dict.reviews.from,
-        track: dict.reviews.count(reviewCount),
-        summary: dict.reviews.badgeLabel(score, reviewCount) + " " + dict.reviews.goTo,
+        region: r.from,
+        track: r.from,
+        summary: r.badgeLabel(score, reviews.length) + " " + r.goTo,
         score,
-        count: dict.reviews.count(reviewCount),
-        prev: dict.reviews.prev,
-        next: dict.reviews.next,
-        slides: reviews.map((_, i) => dict.reviews.slide(i + 1, reviewCount)),
+        count: r.count(reviews.length),
+        prev: r.prev,
+        next: r.next,
+        slides: shown.map((_, i) => r.slide(i + 1, n)),
       }}
     />
   );

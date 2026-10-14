@@ -137,7 +137,7 @@ export default async function ArticlePage(props: Props) {
               </p>
               {series && <SeriesStrip position={series} lang={lang} dict={dict} />}
               {referral && <p className="blog-disclosure" role="note">{dict.referral.disclosure}</p>}
-              <ReviewsCarousel lang={lang} dict={dict} />
+              <ReviewsCarousel lang={lang} />
               <QuickGuide summary={translation.summary} headings={headings} lang={lang} dict={dict} />
               <ArticleBody body={translation.body} lang={lang} dict={dict} />
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
@@ -145,13 +145,13 @@ export default async function ArticlePage(props: Props) {
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
             </article>
             <SideColumn>
-              <RatingBadge lang={lang} dict={dict} />
+              <RatingBadge lang={lang} />
               <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
               <OfferButtons lang={lang} dict={dict} />
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-side" className="blog-newsletter--side" />
             </SideColumn>
           </div>
-          <ReviewsSection lang={lang} dict={dict} path={path} />
+          <ReviewsSection lang={lang} path={path} />
         </main>
         <BlogFooter lang={lang} dict={dict} />
       </div>

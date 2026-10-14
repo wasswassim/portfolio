@@ -1,4 +1,4 @@
-// Shared by the server review blocks and the client review carousel (no data imports here).
+// Shared by the review badge, carousel and section (no data imports here).
 
 /** Five star tiles filled to `value` (0-5), coloured by the rounded rating; the parent carries the accessible label. */
 export function Stars({ value }: { value: number }) {
