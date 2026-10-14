@@ -8,7 +8,7 @@ export const ADSENSE_CLIENT = "ca-pub-1706908723349838";
  * - side: one vertical display unit in the side column, under the newsletter card (desktop only)
  * - inArticle: the in-article unit, placed up to 3 times between sections
  */
-export const AD_SLOTS = { side: "", inArticle: "" };
+export const AD_SLOTS = { side: "5068499934", inArticle: "" };
 
 /** Posts that never show ads (owner decision 2026-10-14: crypto top-ups for residents of Tunisia). */
 const NO_ADS_ARTICLES = new Set(["redotpay-tunisia"]);
