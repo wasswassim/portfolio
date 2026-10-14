@@ -768,11 +768,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 /* ── Reader reviews: rating badge above the guide card, reviews at the bottom of a post ── */
 .blog-stars { position: relative; display: inline-flex; vertical-align: middle; }
-.blog-stars svg { inline-size: 0.95rem; block-size: 0.95rem; }
-.blog-stars-base svg { fill: color-mix(in srgb, var(--fg) 14%, transparent); }
+/* Rating colours, 1 (red) to 5 (green), as on review sites */
+:root { --tile-off: color-mix(in srgb, var(--fg) 16%, transparent); }
+[data-tone="1"] { --tone: #ff3722; } [data-tone="2"] { --tone: #ff8622; } [data-tone="3"] { --tone: #ffce00; }
+[data-tone="4"] { --tone: #73cf11; } [data-tone="5"] { --tone: #00b67a; }
+.blog-stars svg { inline-size: 0.95rem; block-size: 0.95rem; padding: 0.12rem; border-radius: 0.15rem; }
+.blog-stars-base svg { fill: #fff; background: var(--tile-off); }
 .blog-stars-base, .blog-stars-row { display: inline-flex; gap: 0.1rem; }
 .blog-stars-fill { position: absolute; inset-block: 0; inset-inline-start: 0; overflow: hidden; white-space: nowrap; }
-.blog-stars-row svg { flex: none; fill: var(--star, #f2b01e); }
+.blog-stars-row svg { flex: none; fill: #fff; background: var(--tone, #00b67a); }
 
 .blog-side .blog-rbadge { flex: none; }
 .blog-rbadge { display: flex; align-items: center; gap: 0.8rem; padding: 0.8rem 1rem; border: 1px solid var(--border); border-radius: 1rem;
@@ -812,35 +816,38 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-reviews-btn:disabled { opacity: 0.6; cursor: progress; }
 .blog-reviews-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .blog-reviews-empty { margin: 0 0 0.4rem; color: var(--muted); }
-/* Review form under the reviews */
-.blog-rform { display: flex; flex-direction: column; gap: 0.9rem; max-inline-size: 42rem; margin-block-start: 1.6rem; padding: 1.2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); }
-.blog-rform-title { margin: 0; font-size: 1.05rem; font-weight: 600; }
+/* Review box: "rate first", square star tiles coloured by the rating (as on review sites) */
+.blog-reviews-ask { margin: 0.45rem 0 0; max-inline-size: 38rem; color: var(--muted); }
+.blog-rform { max-inline-size: 44rem; margin-block: 0.4rem 1.6rem; padding: 1.2rem 1.25rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); box-shadow: 0 1px 2px color-mix(in srgb, var(--fg) 6%, transparent); }
+.blog-rform-rate { margin: 0; padding: 0; border: 0; min-inline-size: 0; }
+.blog-rform-legend { padding: 0; margin-block-end: 0.6rem; font-weight: 600; }
+.blog-rform-rateline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+.blog-rform-tiles { display: flex; gap: 0.3rem; }
+.blog-rform-tiles label { position: relative; display: grid; place-items: center; inline-size: 2.75rem; block-size: 2.75rem; border-radius: 0.3rem; background: var(--tile-off); cursor: pointer; transition: background-color 0.15s ease; }
+.blog-rform-tiles input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+.blog-rform-tiles svg { inline-size: 1.7rem; block-size: 1.7rem; fill: #fff; }
+.blog-rform-tiles label.is-on { background: var(--tone); }
+.blog-rform-tiles label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.blog-rform-level { min-inline-size: 5rem; font-weight: 600; }
+.blog-rform-more { display: flex; flex-direction: column; gap: 0.9rem; margin-block-start: 1.1rem; padding-block-start: 1.1rem; border-block-start: 1px solid var(--border); }
 .blog-rform-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.9rem; }
 @media (min-width: 40rem) { .blog-rform-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .blog-rform-field { display: flex; flex-direction: column; gap: 0.3rem; min-inline-size: 0; }
-.blog-rform label, .blog-rform legend { font-size: 0.85rem; color: var(--muted); }
-.blog-rform input:not([type="checkbox"]):not([type="radio"]), .blog-rform textarea { min-block-size: 2.75rem; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 0.6rem; background: var(--bg); color: var(--fg); font: inherit; }
+.blog-rform-field label { font-size: 0.85rem; font-weight: 600; }
+.blog-rform input:not([type="radio"]), .blog-rform textarea { min-block-size: 2.75rem; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 0.6rem; background: var(--bg); color: var(--fg); font: inherit; }
 .blog-rform textarea { resize: vertical; line-height: 1.5; }
 .blog-rform input:focus-visible, .blog-rform textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .blog-rform-hint { margin: 0; font-size: 0.75rem; color: var(--muted); }
-.blog-rform-stars { margin: 0; padding: 0; border: 0; }
-.blog-rform-starrow { display: flex; gap: 0.25rem; margin-block-start: 0.3rem; }
-.blog-rform-starrow label { position: relative; display: grid; place-items: center; inline-size: 2.75rem; block-size: 2.75rem; border-radius: 0.6rem; cursor: pointer; }
-.blog-rform-starrow input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
-.blog-rform-starrow svg { inline-size: 1.8rem; block-size: 1.8rem; fill: color-mix(in srgb, var(--fg) 14%, transparent); transition: fill 0.15s ease; }
-.blog-rform-starrow label.is-on svg { fill: var(--star, #f2b01e); }
-.blog-rform-starrow label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 1px; }
-.blog-rform-consent { display: flex; gap: 0.55rem; align-items: flex-start; line-height: 1.4; }
-.blog-rform-consent input { flex: none; inline-size: 1.5rem; block-size: 1.5rem; margin-block-start: 0.1rem; accent-color: var(--accent); }
-.blog-rform .blog-reviews-btn { align-self: flex-start; min-block-size: 2.75rem; }
+.blog-rform-send { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; }
+.blog-rform .blog-reviews-btn { min-block-size: 2.75rem; }
+.blog-rform-notice { flex: 1 1 16rem; margin: 0; font-size: 0.78rem; color: var(--muted); }
+.blog-rform-notice a { color: var(--muted); text-decoration: underline; }
 .blog-rform-status:empty { display: none; }
 .blog-rform-status { margin: 0; font-size: 0.85rem; color: var(--danger, #b42318); }
-.blog-rform-privacy { margin: 0; font-size: 0.78rem; color: var(--muted); }
-.blog-rform-privacy a { color: var(--muted); text-decoration: underline; }
-.blog-rform-done { max-inline-size: 42rem; margin-block-start: 1.6rem; padding: 1.2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); font-weight: 600; }
+.blog-rform-done { max-inline-size: 44rem; margin-block: 0.4rem 1.6rem; padding: 1.2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); font-weight: 600; }
 @media (pointer: coarse) { .blog-rform input, .blog-rform textarea { font-size: 16px; } }
-@media (forced-colors: active) { .blog-rform-starrow label.is-on svg { fill: Highlight; } }
-@media (prefers-reduced-motion: reduce) { .blog-rform-starrow svg { transition: none; } }
+@media (forced-colors: active) { .blog-rform-tiles label { border: 1px solid CanvasText; } .blog-rform-tiles label.is-on { background: Highlight; } }
+@media (prefers-reduced-motion: reduce) { .blog-rform-tiles label { transition: none; } }
 @media (prefers-reduced-motion: reduce) { .blog-rbadge { transition: none; } .blog-rbadge:hover { transform: none; } }
 
 /* ── Review carousel under the post header (one review per slide, scroll-snap track) ── */

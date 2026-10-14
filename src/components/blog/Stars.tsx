@@ -1,6 +1,6 @@
 // Shared by the server review blocks and the client review carousel (no data imports here).
 
-/** Five stars filled to `value` (0-5); the parent element carries the accessible label. */
+/** Five star tiles filled to `value` (0-5), coloured by the rounded rating; the parent carries the accessible label. */
 export function Stars({ value }: { value: number }) {
   const pct = Math.max(0, Math.min(100, (value / 5) * 100));
   const row = (cls: string) => (
@@ -13,7 +13,7 @@ export function Stars({ value }: { value: number }) {
     </span>
   );
   return (
-    <span className="blog-stars" aria-hidden="true">
+    <span className="blog-stars" data-tone={Math.max(1, Math.min(5, Math.round(value)))} aria-hidden="true">
       {row("blog-stars-base")}
       <span className="blog-stars-fill" style={{ inlineSize: pct + "%" }}>{row("blog-stars-row")}</span>
     </span>

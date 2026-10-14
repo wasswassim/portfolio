@@ -43,6 +43,7 @@ export function ReviewsSection({ lang, dict, path }: { lang: Lang; dict: Diction
         <div>
           <p className="blog-reviews-source">{r.from}</p>
           <h2 id="reader-reviews-title" className="blog-reviews-title">{r.title}</h2>
+          <p className="blog-reviews-ask">{r.ask}</p>
         </div>
         {reviewAverage !== null && (
           <p className="blog-reviews-summary">
@@ -53,6 +54,27 @@ export function ReviewsSection({ lang, dict, path }: { lang: Lang; dict: Diction
           </p>
         )}
       </div>
+      <ReviewForm
+        lang={lang}
+        page={SITE_URL + path}
+        labels={{
+          rate: r.form.rate,
+          levels: r.form.levels,
+          stars: [1, 2, 3, 4, 5].map((n) => r.stars(n)),
+          text: r.form.text,
+          textPlaceholder: r.form.textPlaceholder,
+          name: r.form.name,
+          nameHint: r.form.nameHint,
+          email: r.form.email,
+          emailHint: r.form.emailHint,
+          notice: r.form.notice,
+          submit: r.form.submit,
+          sending: r.form.sending,
+          success: r.form.success,
+          error: r.form.error,
+          privacyLink: dict.newsletter.privacyLink,
+        }}
+      />
       {reviewCount === 0 ? (
         <p className="blog-reviews-empty">{r.empty}</p>
       ) : (
@@ -75,29 +97,6 @@ export function ReviewsSection({ lang, dict, path }: { lang: Lang; dict: Diction
           ))}
         </ul>
       )}
-      <ReviewForm
-        lang={lang}
-        page={SITE_URL + path}
-        labels={{
-          title: r.write,
-          name: r.form.name,
-          nameHint: r.form.nameHint,
-          email: r.form.email,
-          emailHint: r.form.emailHint,
-          rating: r.form.rating,
-          stars: [1, 2, 3, 4, 5].map((n) => r.stars(n)),
-          text: r.form.text,
-          context: r.form.context,
-          contextHint: r.form.contextHint,
-          consent: r.form.consent,
-          submit: r.form.submit,
-          sending: r.form.sending,
-          success: r.form.success,
-          error: r.form.error,
-          privacy: r.form.privacy,
-          privacyLink: dict.newsletter.privacyLink,
-        }}
-      />
     </section>
   );
 }
@@ -121,8 +120,8 @@ export function ReviewsCarousel({ lang, dict }: { lang: Lang; dict: Dictionary }
         dateText: dateFmt.format(new Date(r.date)),
       }))}
       labels={{
-        region: dict.reviews.title,
-        track: dict.reviews.from,
+        region: dict.reviews.from,
+        track: dict.reviews.count(reviewCount),
         summary: dict.reviews.badgeLabel(score, reviewCount) + " " + dict.reviews.goTo,
         score,
         count: dict.reviews.count(reviewCount),
