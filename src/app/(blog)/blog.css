@@ -896,7 +896,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-side .blog-ad { flex: none; }
 .blog-side .blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 0; }
 @media (width < 64rem) { .blog-ad--side { display: none; } }
-.blog-ad--bottom:has(ins[data-ad-status="filled"]) { margin-block: 2.5rem 0; }
 /* In-feed ad on the blog list: a full row between rows of cards, gone when Google has no ad */
 .blog-cards > .blog-cards-ad { grid-column: 1 / -1; list-style: none; }
 .blog-cards > .blog-cards-ad:has(ins[data-ad-status="unfilled"]) { display: none; }

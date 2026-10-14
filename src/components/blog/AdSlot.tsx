@@ -38,9 +38,7 @@ export default function AdSlot({ kind, label }: { kind: keyof typeof AD_SLOTS; l
       ? { "data-ad-layout": "in-article", "data-ad-format": "fluid" }
       : kind === "feed"
         ? { "data-ad-layout-key": FEED_LAYOUT_KEY, "data-ad-format": "fluid" }
-        : kind === "side"
-          ? { "data-ad-format": "vertical", "data-full-width-responsive": "false" }
-          : { "data-ad-format": "horizontal", "data-full-width-responsive": "true" };
+        : { "data-ad-format": "vertical", "data-full-width-responsive": "false" };
   return (
     <aside className={`blog-ad blog-ad--${kind}`} aria-label={label}>
       <p className="blog-ad-label">{label}</p>
