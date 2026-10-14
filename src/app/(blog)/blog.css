@@ -884,7 +884,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 @media (prefers-reduced-motion: reduce) { .blog-rcar-dot::before { transition: none; } }
 
 /* ── AdSense units: invisible until Google fills them, removed when it has no ad ── */
-.blog-ad { margin: 0; }
+/* Collapsed to 1px until filled: Google lazy-loads ads lower on the page and needs the slot to come
+   into view, but its 100px placeholder must not show as a blank band */
+.blog-ad { margin: 0; max-block-size: 1px; overflow: hidden; }
+.blog-ad:has(ins[data-ad-status="filled"]) { max-block-size: none; overflow: visible; }
 .blog-ad-label { display: none; margin: 0 0 0.4rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-align: center; }
 :lang(ar) .blog-ad-label { letter-spacing: 0; font-size: 0.78rem; }
 .blog-ad:has(ins[data-ad-status="unfilled"]) { display: none; }
@@ -893,3 +896,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-side .blog-ad { flex: none; }
 .blog-side .blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 0; }
 @media (width < 64rem) { .blog-ad--side { display: none; } }
+.blog-ad--bottom:has(ins[data-ad-status="filled"]) { margin-block: 2.5rem 0; }
+/* In-feed ad on the blog list: a full row between rows of cards, gone when Google has no ad */
+.blog-cards > .blog-cards-ad { grid-column: 1 / -1; list-style: none; }
+.blog-cards > .blog-cards-ad:has(ins[data-ad-status="unfilled"]) { display: none; }
+.blog-cards-ad .blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 0; }

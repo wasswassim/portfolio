@@ -108,7 +108,8 @@ export default async function BlogLandingPage({ params }: Props) {
                 part: series && dict.series.part(series.part, series.total),
               };
             })}
-            labels={{ ...dict.landing.search, read: dict.landing.read }}
+            labels={{
+            ad: dict.ads.label, ...dict.landing.search, read: dict.landing.read }}
           />
         )}
         </div>

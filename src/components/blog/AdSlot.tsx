@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { ADSENSE_CLIENT, AD_SLOTS } from "@/lib/ads";
+import { ADSENSE_CLIENT, AD_SLOTS, FEED_LAYOUT_KEY } from "@/lib/ads";
 
 declare global {
   interface Window {
@@ -22,6 +22,8 @@ export default function AdSlot({ kind, label }: { kind: keyof typeof AD_SLOTS; l
     const ins = ref.current;
     // Ask for one ad per unit (the attribute is set once AdSense has processed it)
     if (!ins || ins.getAttribute("data-adsbygoogle-status")) return;
+    // Hidden placement (the side column on phones): no width, so no request
+    if (ins.offsetWidth === 0) return;
     try {
       (window.adsbygoogle = window.adsbygoogle || []).push({});
     } catch (err) {
@@ -30,30 +32,26 @@ export default function AdSlot({ kind, label }: { kind: keyof typeof AD_SLOTS; l
   }, []);
 
   if (!slot) return null;
+  // Format per placement: same <ins> contract, different shape attributes
+  const shape: Record<string, string> =
+    kind === "inArticle"
+      ? { "data-ad-layout": "in-article", "data-ad-format": "fluid" }
+      : kind === "feed"
+        ? { "data-ad-layout-key": FEED_LAYOUT_KEY, "data-ad-format": "fluid" }
+        : kind === "side"
+          ? { "data-ad-format": "vertical", "data-full-width-responsive": "false" }
+          : { "data-ad-format": "horizontal", "data-full-width-responsive": "true" };
   return (
     <aside className={`blog-ad blog-ad--${kind}`} aria-label={label}>
       <p className="blog-ad-label">{label}</p>
-      {kind === "inArticle" ? (
-        <ins
-          ref={ref}
-          className="adsbygoogle"
-          style={{ display: "block", textAlign: "center" }}
-          data-ad-client={ADSENSE_CLIENT}
-          data-ad-slot={slot}
-          data-ad-layout="in-article"
-          data-ad-format="fluid"
-        />
-      ) : (
-        <ins
-          ref={ref}
-          className="adsbygoogle"
-          style={{ display: "block" }}
-          data-ad-client={ADSENSE_CLIENT}
-          data-ad-slot={slot}
-          data-ad-format="vertical"
-          data-full-width-responsive="false"
-        />
-      )}
+      <ins
+        ref={ref}
+        className="adsbygoogle"
+        style={{ display: "block", textAlign: kind === "inArticle" ? "center" : undefined }}
+        data-ad-client={ADSENSE_CLIENT}
+        data-ad-slot={slot}
+        {...shape}
+      />
     </aside>
   );
 }

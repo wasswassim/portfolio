@@ -143,6 +143,8 @@ export default async function ArticlePage(props: Props) {
               <QuickGuide summary={translation.summary} headings={headings} lang={lang} dict={dict} />
               <ArticleBody body={translation.body} lang={lang} dict={dict} adPositions={inArticleAdPositions(article.id, translation.body)} />
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
+              {/* Horizontal ad at the end of the post: after the reading, away from navigation and the reviews */}
+              {articleHasAds(article.id) && <AdSlot kind="bottom" label={dict.ads.label} />}
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-end" className="blog-newsletter--end" />
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
             </article>
