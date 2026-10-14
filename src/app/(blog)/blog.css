@@ -825,10 +825,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-rform-legend { padding: 0; margin-block-end: 0.6rem; font-weight: 600; }
 .blog-rform-rateline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
 .blog-rform-tiles { display: flex; gap: 0.3rem; }
-.blog-rform-tiles label { position: relative; display: grid; place-items: center; inline-size: 2.75rem; block-size: 2.75rem; border-radius: 0.3rem; background: var(--tile-off); border: 1px solid color-mix(in srgb, var(--fg) 45%, transparent); cursor: pointer; transition: background-color 0.15s ease; }
+.blog-rform-tiles label { position: relative; display: grid; place-items: center; inline-size: 2.75rem; block-size: 2.75rem; border-radius: 0.3rem; background: var(--bg); border: 1px solid color-mix(in srgb, var(--fg) 45%, transparent); cursor: pointer; transition: background-color 0.15s ease; }
 .blog-rform-tiles input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
-.blog-rform-tiles svg { inline-size: 1.7rem; block-size: 1.7rem; fill: #fff; }
+.blog-rform-tiles svg { inline-size: 1.7rem; block-size: 1.7rem; fill: color-mix(in srgb, var(--fg) 30%, transparent); transition: fill 0.15s ease; }
 .blog-rform-tiles label.is-on { background: var(--tone); border-color: var(--tone); }
+.blog-rform-tiles label.is-on svg { fill: #fff; }
 .blog-rform-tiles label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
 .blog-rform-level { min-inline-size: 5rem; font-weight: 600; }
 .blog-rform-more { display: flex; flex-direction: column; gap: 0.9rem; margin-block-start: 1.1rem; padding-block-start: 1.1rem; border-block-start: 1px solid var(--border); }
@@ -848,7 +849,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-rform-done { max-inline-size: 44rem; margin-block: 0.4rem 1.6rem; padding: 1.2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); font-weight: 600; }
 @media (pointer: coarse) { .blog-rform input, .blog-rform textarea { font-size: 16px; } }
 @media (forced-colors: active) { .blog-rform-tiles label { border: 1px solid CanvasText; } .blog-rform-tiles label.is-on { background: Highlight; } }
-@media (prefers-reduced-motion: reduce) { .blog-rform-tiles label { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .blog-rform-tiles label, .blog-rform-tiles svg { transition: none; } }
 @media (prefers-reduced-motion: reduce) { .blog-rbadge { transition: none; } .blog-rbadge:hover { transform: none; } }
 
 /* ── Review carousel under the post header (one review per slide, scroll-snap track) ── */
