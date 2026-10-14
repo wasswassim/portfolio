@@ -177,7 +177,7 @@ export const en: ArticleTranslation = {
     {
       type: "ol",
       items: [
-        "List every diploma and transcript of your school path, and check the name against your passport.",
+        "List every diploma and transcript of your school path, and check the name against your passport. For a Master's, add your Bachelor's degree, all your university transcripts and the study plan of your Bachelor's years: universities use it to check that your Bachelor's meets the Master's entry requirements.",
         "Get each one authenticated by the competent Tunisian ministry.",
         "Make front-and-back copies and have them certified at the municipality.",
         "Have the certified copies apostilled by a notary.",

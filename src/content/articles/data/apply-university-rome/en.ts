@@ -60,6 +60,24 @@ export const en: ArticleTranslation = {
       ],
     },
 
+    { type: "h3", id: "application-file", text: "What goes in your application file" },
+    {
+      type: "p",
+      text: "Each university lists its own documents in the call. The list below is the one the agency I used gave me: check each item against your course's call (recommendation letters and a portfolio are only asked for some courses), and prepare the papers early, in several certified copies, legalised and translated as explained in the [documents guide](article:documents-for-italy):",
+    },
+    {
+      type: "ul",
+      items: [
+        "**Every applicant**: your bac and its transcript, a colour copy of your passport's photo page, a motivation letter and a Europass CV (in the language of the course), and passport photos.",
+        "**For a Master's, add**: your Bachelor's degree, all your university transcripts, internship and participation certificates, the study plan of your Bachelor's years (subjects and hours), 2 recommendation letters from professors, and a portfolio for Design, Architecture or Multimedia courses.",
+        "**Your language certificate**: IELTS Academic or another English certificate at B2 for an English-taught course, B2 in Italian for an Italian-taught one.",
+      ],
+    },
+    {
+      type: "p",
+      text: "If you prefer to go through an agency, see [how the WSC Tunisia agency works, step by step](article:wsc-tunisia).",
+    },
+
     { type: "h2", id: "public-universities", text: "3. How do you apply to Sapienza, Tor Vergata or Roma Tre?" },
     {
       type: "p",

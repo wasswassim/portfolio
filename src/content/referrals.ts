@@ -49,7 +49,7 @@ export const REFERRALS = {
     cta: { en: "Get the 5 USD welcome reward on RedotPay", fr: "Obtenir la récompense de bienvenue de 5 USD sur RedotPay", ar: "احصل على مكافأة الترحيب 5 USD على RedotPay" },
     logo: "/blog/brand/logo-redotpay.webp",
     brand: { bg: "#fdecee", fg: "#2b0a0d", button: "#e6323e", buttonText: "#ffffff" },
-    articles: ["redotpay-tunisia", "international-card-tunisia"],
+    articles: ["redotpay-tunisia", "international-card-tunisia", "wsc-tunisia"],
   },
   revolut: {
     name: "Revolut",

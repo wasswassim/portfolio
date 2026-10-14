@@ -73,6 +73,11 @@ export const fr: ArticleTranslation = {
       ],
     },
 
+    {
+      type: "p",
+      text: "Si vous préférez payer une agence pour ces étapes, [comment fonctionne l’agence WSC Tunisie, avec ses frais](article:wsc-tunisia) montre ce qu’elle fait à chaque étape.",
+    },
+
     { type: "h2", id: "why-start-now", text: "3. Pourquoi commencer dès maintenant pour la rentrée 2027/28 ?" },
     {
       type: "p",

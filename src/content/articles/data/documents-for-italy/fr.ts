@@ -177,7 +177,7 @@ export const fr: ArticleTranslation = {
     {
       type: "ol",
       items: [
-        "Listez chaque diplôme et relevé de votre parcours, et comparez le nom avec votre passeport.",
+        "Listez chaque diplôme et relevé de votre parcours, et comparez le nom avec votre passeport. Pour un master, ajoutez votre diplôme de licence, tous vos relevés universitaires et le plan d’études de vos années de licence : les universités s’en servent pour vérifier que votre licence remplit les conditions d’accès du master.",
         "Faites authentifier chacun par le ministère tunisien compétent.",
         "Faites des copies recto verso et certifiez-les conformes à la municipalité.",
         "Faites apostiller les copies conformes chez un notaire.",

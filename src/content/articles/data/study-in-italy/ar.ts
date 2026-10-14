@@ -74,6 +74,11 @@ export const ar: ArticleTranslation = {
       ],
     },
 
+    {
+      type: "p",
+      text: "إذا كنت تفضّل الدفع لوكالة تتولى هذه المراحل، فإن [كيف تعمل وكالة WSC تونس ومعاليمها](article:wsc-tunisia) يوضح ما تقوم به في كل مرحلة.",
+    },
+
     { type: "h2", id: "why-start-now", text: "3. لماذا يجب أن تبدأ الآن لسنة 2027/28؟" },
     {
       type: "p",

@@ -73,6 +73,11 @@ export const en: ArticleTranslation = {
       ],
     },
 
+    {
+      type: "p",
+      text: "If you would rather pay an agency to handle these stages, [how the WSC Tunisia agency works, with its fees](article:wsc-tunisia) shows what one does at each stage.",
+    },
+
     { type: "h2", id: "why-start-now", text: "3. Why should you start now for the 2027/28 intake?" },
     {
       type: "p",

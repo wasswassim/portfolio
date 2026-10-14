@@ -60,6 +60,24 @@ export const fr: ArticleTranslation = {
       ],
     },
 
+    { type: "h3", id: "application-file", text: "Ce que contient votre dossier de candidature" },
+    {
+      type: "p",
+      text: "Chaque université liste ses propres documents dans l’appel. La liste ci-dessous est celle que m’a remise l’agence par laquelle je suis passé : comparez chaque élément avec l’appel de votre cursus (les lettres de recommandation et le portfolio ne sont demandés que pour certains cursus), et préparez les pièces tôt, en plusieurs copies conformes, légalisées et traduites comme expliqué dans le [guide des documents](article:documents-for-italy) :",
+    },
+    {
+      type: "ul",
+      items: [
+        "**Pour tous les candidats** : votre bac et son relevé de notes, une copie couleur de la page photo du passeport, une lettre de motivation et un CV Europass (dans la langue du cursus), et des photos d’identité.",
+        "**Pour un master, ajoutez** : votre diplôme de licence, tous vos relevés de notes universitaires, vos attestations de stage et de participation, le plan d’études de vos années de licence (matières et heures), 2 lettres de recommandation de professeurs, et un portfolio pour les cursus de design, d’architecture ou de multimédia.",
+        "**Votre certificat de langue** : l’IELTS Academic ou un autre certificat d’anglais de niveau B2 pour un cursus en anglais, le B2 en italien pour un cursus en italien.",
+      ],
+    },
+    {
+      type: "p",
+      text: "Si vous préférez passer par une agence, voir [comment fonctionne l’agence WSC Tunisie, étape par étape](article:wsc-tunisia).",
+    },
+
     { type: "h2", id: "public-universities", text: "3. Comment candidater à Sapienza, Tor Vergata ou Roma Tre ?" },
     {
       type: "p",
