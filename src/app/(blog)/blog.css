@@ -805,10 +805,42 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-review-stars { display: inline-flex; }
 .blog-review-text { margin: 0; font-size: 0.92rem; line-height: 1.6; color: var(--fg);
   display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; line-clamp: 6; overflow: hidden; }
-.blog-reviews-actions { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-block-start: 1.4rem; }
 .blog-reviews-btn { display: inline-flex; align-items: center; padding: 0.65rem 1.15rem; border-radius: 999px; background: var(--accent); color: var(--paper, #fff);
   font-size: 0.88rem; font-weight: 600; }
 .blog-reviews-btn:hover { filter: brightness(1.08); }
+.blog-reviews-btn { border: 0; font: inherit; font-weight: 600; cursor: pointer; justify-content: center; }
+.blog-reviews-btn:disabled { opacity: 0.6; cursor: progress; }
+.blog-reviews-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.blog-reviews-empty { margin: 0 0 0.4rem; color: var(--muted); }
+/* Review form under the reviews */
+.blog-rform { display: flex; flex-direction: column; gap: 0.9rem; max-inline-size: 42rem; margin-block-start: 1.6rem; padding: 1.2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); }
+.blog-rform-title { margin: 0; font-size: 1.05rem; font-weight: 600; }
+.blog-rform-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.9rem; }
+@media (min-width: 40rem) { .blog-rform-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.blog-rform-field { display: flex; flex-direction: column; gap: 0.3rem; min-inline-size: 0; }
+.blog-rform label, .blog-rform legend { font-size: 0.85rem; color: var(--muted); }
+.blog-rform input:not([type="checkbox"]):not([type="radio"]), .blog-rform textarea { min-block-size: 2.75rem; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 0.6rem; background: var(--bg); color: var(--fg); font: inherit; }
+.blog-rform textarea { resize: vertical; line-height: 1.5; }
+.blog-rform input:focus-visible, .blog-rform textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.blog-rform-hint { margin: 0; font-size: 0.75rem; color: var(--muted); }
+.blog-rform-stars { margin: 0; padding: 0; border: 0; }
+.blog-rform-starrow { display: flex; gap: 0.25rem; margin-block-start: 0.3rem; }
+.blog-rform-starrow label { position: relative; display: grid; place-items: center; inline-size: 2.75rem; block-size: 2.75rem; border-radius: 0.6rem; cursor: pointer; }
+.blog-rform-starrow input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; }
+.blog-rform-starrow svg { inline-size: 1.8rem; block-size: 1.8rem; fill: color-mix(in srgb, var(--fg) 14%, transparent); transition: fill 0.15s ease; }
+.blog-rform-starrow label.is-on svg { fill: var(--star, #f2b01e); }
+.blog-rform-starrow label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 1px; }
+.blog-rform-consent { display: flex; gap: 0.55rem; align-items: flex-start; line-height: 1.4; }
+.blog-rform-consent input { flex: none; inline-size: 1.5rem; block-size: 1.5rem; margin-block-start: 0.1rem; accent-color: var(--accent); }
+.blog-rform .blog-reviews-btn { align-self: flex-start; min-block-size: 2.75rem; }
+.blog-rform-status:empty { display: none; }
+.blog-rform-status { margin: 0; font-size: 0.85rem; color: var(--danger, #b42318); }
+.blog-rform-privacy { margin: 0; font-size: 0.78rem; color: var(--muted); }
+.blog-rform-privacy a { color: var(--muted); text-decoration: underline; }
+.blog-rform-done { max-inline-size: 42rem; margin-block-start: 1.6rem; padding: 1.2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); font-weight: 600; }
+@media (pointer: coarse) { .blog-rform input, .blog-rform textarea { font-size: 16px; } }
+@media (forced-colors: active) { .blog-rform-starrow label.is-on svg { fill: Highlight; } }
+@media (prefers-reduced-motion: reduce) { .blog-rform-starrow svg { transition: none; } }
 @media (prefers-reduced-motion: reduce) { .blog-rbadge { transition: none; } .blog-rbadge:hover { transform: none; } }
 
 /* ── Review carousel under the post header (one review per slide, scroll-snap track) ── */

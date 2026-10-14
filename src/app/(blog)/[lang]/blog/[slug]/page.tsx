@@ -151,7 +151,7 @@ export default async function ArticlePage(props: Props) {
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-side" className="blog-newsletter--side" />
             </SideColumn>
           </div>
-          <ReviewsSection lang={lang} dict={dict} />
+          <ReviewsSection lang={lang} dict={dict} path={path} />
         </main>
         <BlogFooter lang={lang} dict={dict} />
       </div>
