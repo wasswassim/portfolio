@@ -9,6 +9,7 @@ import { averageOf, useReviews } from "@/lib/reviews-store";
 import { Stars } from "./Stars";
 import ReviewCarousel from "./ReviewCarousel";
 import ReviewForm from "./ReviewForm";
+import ReportReview from "./ReportReview";
 
 // Reader reviews come from Supabase (see lib/reviews-store.ts): pages are built with the reviews of build
 // time and refreshed live in the browser, and a sent review is published at once. The badge and the carousel stay hidden until
@@ -107,6 +108,7 @@ export function ReviewsSection({ lang, path }: { lang: Lang; path: string }) {
               </div>
               <span className="blog-review-stars" role="img" aria-label={r.stars(rev.rating)}><Stars value={rev.rating} /></span>
               <p className="blog-review-text" lang={rev.lang} dir="auto">{rev.body}</p>
+              {!rev.id.startsWith("local-") && <ReportReview review={rev} page={SITE_URL + path} labels={r.report} />}
             </li>
           ))}
         </ul>

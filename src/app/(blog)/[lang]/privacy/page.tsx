@@ -26,7 +26,7 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
       ] },
       { h: "Reviews", id: "reviews", p: [
         "If you send a review with the form at the bottom of a post, your name, rating, review, the page you were on and your email address if you give one are stored in a database run by Supabase on servers in the European Union (Frankfurt). Your name, rating, review and the date are published on the blog at once. Your email address is never published and is used only if I need to reply to you. To limit spam, a scrambled (hashed) form of your IP address is stored with the review.",
-        "A copy of each review is sent to me by email through EmailJS (emailjs.com), the service that also runs the contact form. The legal basis is your consent, given by sending the review. Write to me to have your review changed or removed at any time; I may also remove reviews that are spam, abusive or off-topic.",
+        "A copy of each review is sent to me by email through EmailJS (emailjs.com), the service that also runs the contact form. The legal basis is your consent, given by sending the review. Write to me to have your review changed or removed at any time; I may also remove reviews that are spam, abusive or off-topic. Each review has a Report link: a report reaches me by email with the review, and I decide whether to remove it.",
       ] },
       { h: "Website statistics", p: [
         "The blog uses Ahrefs Analytics to count visits and see which pages are read. It does not use advertising cookies and is not used to identify you.",
@@ -51,7 +51,7 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
       ] },
       { h: "Avis", id: "reviews", p: [
         "Si vous envoyez un avis avec le formulaire en bas d’un article, votre nom, votre note, votre avis, la page où vous étiez et votre adresse e-mail si vous la donnez sont enregistrés dans une base de données gérée par Supabase, sur des serveurs situés dans l’Union européenne (Francfort). Votre nom, votre note, votre avis et la date sont publiés sur le blog immédiatement. Votre adresse e-mail n’est jamais publiée et ne sert que si je dois vous répondre. Pour limiter le spam, une forme brouillée (hachée) de votre adresse IP est enregistrée avec l’avis.",
-        "Une copie de chaque avis m’est envoyée par e-mail via EmailJS (emailjs.com), le service qui gère aussi le formulaire de contact. La base légale est votre consentement, donné en envoyant l’avis. Écrivez-moi pour faire modifier ou supprimer votre avis à tout moment ; je peux aussi supprimer les avis qui sont du spam, injurieux ou hors sujet.",
+        "Une copie de chaque avis m’est envoyée par e-mail via EmailJS (emailjs.com), le service qui gère aussi le formulaire de contact. La base légale est votre consentement, donné en envoyant l’avis. Écrivez-moi pour faire modifier ou supprimer votre avis à tout moment ; je peux aussi supprimer les avis qui sont du spam, injurieux ou hors sujet. Chaque avis a un lien Signaler : le signalement me parvient par e-mail avec l’avis, et je décide de le supprimer ou non.",
       ] },
       { h: "Statistiques du site", p: [
         "Le blog utilise Ahrefs Analytics pour compter les visites et voir quelles pages sont lues. Aucun cookie publicitaire n'est utilisé et ces données ne servent pas à vous identifier.",
@@ -76,7 +76,7 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
       ] },
       { h: "التقييمات", id: "reviews", p: [
         "إذا أرسلت تقييمًا عبر الاستمارة في أسفل المقال، يُحفظ اسمك وتقييمك ورأيك والصفحة التي كنت فيها وبريدك الإلكتروني إن أعطيته في قاعدة بيانات تديرها Supabase على خوادم داخل الاتحاد الأوروبي (فرانكفورت). يُنشر اسمك وتقييمك ورأيك والتاريخ في المدونة فورًا. ولا يُنشر بريدك الإلكتروني أبدًا، ويُستعمل فقط إذا احتجت إلى الرد عليك. وللحد من الرسائل المزعجة، تُحفظ مع التقييم صيغة مشفّرة (hash) من عنوان IP الخاص بك.",
-        "تصلني نسخة من كل تقييم بالبريد الإلكتروني عبر EmailJS (emailjs.com)، وهي الخدمة التي تشغّل أيضًا استمارة الاتصال. الأساس القانوني هو موافقتك، التي تعطيها بإرسال التقييم. راسلني لتعديل تقييمك أو حذفه في أي وقت؛ ويمكنني أيضًا حذف التقييمات المزعجة أو المسيئة أو الخارجة عن الموضوع.",
+        "تصلني نسخة من كل تقييم بالبريد الإلكتروني عبر EmailJS (emailjs.com)، وهي الخدمة التي تشغّل أيضًا استمارة الاتصال. الأساس القانوني هو موافقتك، التي تعطيها بإرسال التقييم. راسلني لتعديل تقييمك أو حذفه في أي وقت؛ ويمكنني أيضًا حذف التقييمات المزعجة أو المسيئة أو الخارجة عن الموضوع. لكل تقييم رابط إبلاغ: يصلني البلاغ بالبريد الإلكتروني مع التقييم، وأقرر حذفه أو إبقاءه.",
       ] },
       { h: "إحصائيات الموقع", p: [
         "تستعمل المدونة Ahrefs Analytics لعدّ الزيارات ومعرفة الصفحات المقروءة. لا تُستعمل ملفات تعريف ارتباط إعلانية ولا تُستعمل هذه البيانات للتعرف على هويتك.",

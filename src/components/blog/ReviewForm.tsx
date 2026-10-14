@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { addReview } from "@/lib/reviews-store";
+import { notifyOwner } from "@/lib/notify-owner";
 
 export type ReviewFormLabels = {
   rate: string;
@@ -25,48 +26,11 @@ export type ReviewFormLabels = {
   privacyLink: string;
 };
 
-// The review is saved to Supabase and published at once; a copy also reaches the owner's inbox through
-// the contact form's EmailJS service, so he sees new reviews (and can delete one in the Supabase dashboard).
-const EMAILJS = {
-  serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID?.trim(),
-  templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID?.trim(),
-  publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY?.trim(),
-};
-
+// The review is saved to Supabase and published at once; a copy reaches the owner by email (lib/notify-owner.ts),
+// and only he can delete a review (Supabase dashboard).
 type Status = "idle" | "sending" | "success" | "error" | "rate" | "links";
 
 const STAR = "M10 1.5l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9L4.7 18l1.1-6L1.4 7.8l6-.8z";
-
-/** Email copy of a new review to the owner; a failure here never affects the published review. */
-function notifyOwner(r: { name: string; email: string; rating: number; body: string; lang: string; page: string }) {
-  const { serviceId, templateId, publicKey } = EMAILJS;
-  if (!serviceId || !templateId || !publicKey) return;
-  import("@emailjs/browser")
-    .then(({ default: emailjs }) =>
-      // Field names match {{name}}, {{email}}, {{subject}}, {{message}} and {{time}} in the template
-      emailjs.send(
-        serviceId,
-        templateId,
-        {
-          name: r.name,
-          email: r.email || "(not given)",
-          subject: `New blog review: ${r.rating}/5 from ${r.name}`,
-          message: [
-            `Rating: ${r.rating}/5`,
-            `Name shown: ${r.name}`,
-            `Language of the page: ${r.lang}`,
-            `Page: ${r.page}`,
-            "Already published. To remove it: Supabase > wassimgatri-blog-reviews > Table Editor > reviews.",
-            "",
-            r.body,
-          ].join("\n"),
-          time: new Date().toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }),
-        },
-        { publicKey },
-      ),
-    )
-    .catch((err) => console.error("[EmailJS] review copy not sent:", err));
-}
 
 /**
  * Review box at the bottom of every post, in the "rate first" pattern of review sites: five star
@@ -114,7 +78,12 @@ export default function ReviewForm({ lang, page, labels }: { lang: string; page:
       return;
     }
     setStatus("success");
-    notifyOwner({ name, email, rating, body, lang, page });
+    notifyOwner({
+      subject: `New blog review: ${rating}/5 from ${name}`,
+      name,
+      email,
+      message: [`Rating: ${rating}/5`, `Name shown: ${name}`, `Language of the page: ${lang}`, `Page: ${page}`, "Already published. To remove it: Supabase > wassimgatri-blog-reviews > Table Editor > reviews.", "", body].join("\n"),
+    });
   };
 
   if (status === "success") {
