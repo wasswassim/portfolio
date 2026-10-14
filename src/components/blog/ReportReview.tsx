@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { notifyOwner } from "@/lib/notify-owner";
+import { track } from "@/lib/analytics";
 
 export type ReportLabels = { report: string; confirm: string; yes: string; cancel: string; done: string };
 
@@ -45,6 +46,7 @@ export default function ReportReview({ review, page, labels }: { review: { id: s
       /* private mode: the report is still sent */
     }
     setStep("done");
+    track("review_reported");
   };
 
   if (step === "done") return <p className="blog-review-report" role="status">{labels.done}</p>;

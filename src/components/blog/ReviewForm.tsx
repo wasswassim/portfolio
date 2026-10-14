@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { addReview } from "@/lib/reviews-store";
 import { notifyOwner } from "@/lib/notify-owner";
+import { track } from "@/lib/analytics";
 
 export type ReviewFormLabels = {
   rate: string;
@@ -78,6 +79,7 @@ export default function ReviewForm({ lang, page, labels }: { lang: string; page:
       return;
     }
     setStatus("success");
+    track("review_submitted", { rating, page_language: lang });
     notifyOwner({
       subject: `New blog review: ${rating}/5 from ${name}`,
       name,

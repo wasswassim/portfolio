@@ -6,6 +6,8 @@ import { langStaticParams, toLang } from "@/lib/i18n/params";
 import { SITE_URL } from "@/lib/seo/site";
 import { ADSENSE_CLIENT } from "@/lib/ads";
 import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import BlogEvents from "@/components/analytics/BlogEvents";
 import ViewTransitionTypes from "@/components/blog/ViewTransitionTypes";
 
 // Second root layout (route group "(blog)"): it owns <html lang dir> so every
@@ -53,11 +55,12 @@ export default async function BlogRootLayout({
     <html lang={lang} dir={DIR[lang]} className={`${syne.variable} ${bebasNeue.variable} ${plexArabic.variable}`}>
       <head>
         <ViewTransitionTypes />
-        {/* AdSense: ad units and Google's consent message for EU/UK visitors (Privacy & messaging) */}
-        <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossOrigin="anonymous" />
+        {/* Consent defaults, then Google Analytics and AdSense (ad units + Google's consent message) */}
+        <GoogleAnalytics adsense />
       </head>
       <body>
         <AhrefsAnalytics />
+        <BlogEvents lang={lang} />
         {children}
       </body>
     </html>

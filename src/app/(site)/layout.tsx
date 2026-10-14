@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { ADSENSE_CLIENT } from "@/lib/ads";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import { Syne, Bebas_Neue } from "next/font/google";
 import "../globals.css";
 import CustomCursor from "@/components/layout/CustomCursor";
@@ -62,6 +63,7 @@ export default function RootLayout({
       <head>
         {/* Hero video host — open the connection before the video tag is parsed */}
         <link rel="preconnect" href="https://d8j0ntlcm91z4.cloudfront.net" />
+        <GoogleAnalytics />
       </head>
       <body
         className={`${syne.variable} ${bebasNeue.variable}`}
