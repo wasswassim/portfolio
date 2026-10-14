@@ -17,7 +17,7 @@ import { SeriesNav, SeriesStrip } from "@/components/blog/SeriesNav";
 import QuickGuide from "@/components/blog/QuickGuide";
 import NewsletterCard from "@/components/blog/NewsletterCard";
 import OfferButtons from "@/components/blog/OfferButtons";
-import { GoogleRatingBadge, GoogleReviewsCarousel, GoogleReviewsSection } from "@/components/blog/GoogleReviews";
+import { RatingBadge, ReviewsCarousel, ReviewsSection } from "@/components/blog/Reviews";
 import SideColumn from "@/components/blog/SideColumn";
 
 export const dynamicParams = false;
@@ -137,7 +137,7 @@ export default async function ArticlePage(props: Props) {
               </p>
               {series && <SeriesStrip position={series} lang={lang} dict={dict} />}
               {referral && <p className="blog-disclosure" role="note">{dict.referral.disclosure}</p>}
-              <GoogleReviewsCarousel lang={lang} dict={dict} />
+              <ReviewsCarousel lang={lang} dict={dict} />
               <QuickGuide summary={translation.summary} headings={headings} lang={lang} dict={dict} />
               <ArticleBody body={translation.body} lang={lang} dict={dict} />
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
@@ -145,13 +145,13 @@ export default async function ArticlePage(props: Props) {
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
             </article>
             <SideColumn>
-              <GoogleRatingBadge lang={lang} dict={dict} />
+              <RatingBadge lang={lang} dict={dict} />
               <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
               <OfferButtons lang={lang} dict={dict} />
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-side" className="blog-newsletter--side" />
             </SideColumn>
           </div>
-          <GoogleReviewsSection lang={lang} dict={dict} />
+          <ReviewsSection lang={lang} dict={dict} />
         </main>
         <BlogFooter lang={lang} dict={dict} />
       </div>

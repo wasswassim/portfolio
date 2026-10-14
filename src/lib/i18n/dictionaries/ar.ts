@@ -1,11 +1,21 @@
 import type { Dictionary } from "./en";
 
+/** "n reviews" with Arabic plural forms: 1, 2, 3-10, 11-99, 100+ */
+const arReviews = (n: number) => {
+  const r = n % 100;
+  if (n === 1) return "تقييم واحد";
+  if (n === 2) return "تقييمان";
+  if (r >= 3 && r <= 10) return `${n} تقييمات`;
+  if (r >= 11) return `${n} تقييمًا`;
+  return `${n} تقييم`;
+};
+
 export const ar: Dictionary = {
   blogName: "بناء حياة في إيطاليا",
   blogTagline: "أدلة عملية وملاحظات صادقة حول الانتقال إلى إيطاليا والدراسة والعمل فيها.",
   nav: { home: "الأعمال", blog: "المدونة", language: "اللغة", skip: "انتقل إلى المحتوى" },
   landing: { imageCredit: "صورة بالأقمار الصناعية: NASA MODIS", seoTitle: "بناء حياة في إيطاليا: أدلة الانتقال والعمل", metaDescription: "أدلة عملية مبنية على مصادر رسمية للانتقال إلى إيطاليا والدراسة والعمل فيها، بقلم وسيم قطري، بالعربية والإنجليزية والفرنسية.", other: "متوفر بلغات أخرى", heading: "بناء حياة في إيطاليا", empty: "لا توجد مقالات بهذه اللغة حتى الآن.", read: "اقرأ المقال", search: { label: "ابحث في الأدلة", placeholder: "ابحث عن دليل", clear: "امسح البحث", one: "دليل واحد مطابق", results: "عدد الأدلة المطابقة: {n}", none: "لا يوجد دليل يطابق بحثك." } },
-  reviews: { title: "ماذا يقول القرّاء", from: "تقييمات Google", count: (n: number) => `${n} تقييم على Google`, badgeLabel: (s: string, n: number) => `التقييم ${s} من 5 حسب ${n} تقييم على Google.`, stars: (r: number) => `${r} من 5 نجوم`, readOnGoogle: "اقرأ على Google", seeAll: (n: number) => `شاهد كل التقييمات (${n}) على Google`, write: "اكتب تقييمًا", prev: "التقييم السابق", next: "التقييم التالي", slide: (i: number, n: number) => `التقييم ${i} من ${n}` },
+  reviews: { title: "ماذا يقول القرّاء", from: "تقييمات القرّاء", count: (n: number) => arReviews(n), badgeLabel: (s: string, n: number) => `التقييم ${s} من 5 حسب ${arReviews(n)} من القرّاء.`, goTo: "انتقل إلى التقييمات", stars: (r: number) => `${r} من 5 نجوم`, write: "أرسل لي تقييمك", prev: "التقييم السابق", next: "التقييم التالي", slide: (i: number, n: number) => `التقييم ${i} من ${n}` },
   article: { by: "بقلم", published: "نُشر في", updated: "آخر تحديث", verified: "آخر تحقق", back: "كل المقالات", notVerified: "لم يتم التحقق منه بعد من مصدر رسمي.", guide: "الدليل", summary: "باختصار", toc: "في هذا المقال", faq: "أسئلة شائعة", sources: "المصادر", photos: "الصور:", keyFacts: "أهم المعلومات", readTime: (n: number) => `${n} دقيقة للقراءة` },
   series: { label: "سلسلة", continue: "تابع السلسلة", part: (n: number, total: number) => `الجزء ${n} من ${total}`, next: "الخطوة التالية", previous: "الخطوة السابقة", allParts: "عرض كل الأجزاء", parts: (n: number) => `عدد الأجزاء: ${n}`, start: "ابدأ من هنا" },
   fees: { title: "مصاريف يجب توقعها", source: "المصدر", checked: (d: string) => `تم التحقق في ${d}`, total: "المجموع", per: { month: "/ شهريًا", year: "/ سنويًا" }, aboutTnd: (n: number) => `حوالي ${n.toLocaleString("en-US")} د.ت`, rate: (r: string, d: string) => `المبالغ بالدينار حسب سعر البنك المركزي ${r} د.ت لليورو (${d}).`, estimate: "تقديرات بتاريخ أكتوبر 2026؛ تحقق من المصدر قبل الدفع.", hub: "كيف يدفع التونسيون هذه المصاريف" },

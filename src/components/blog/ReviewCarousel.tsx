@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { GoogleMark, Stars } from "./GoogleIcons";
+import type { Lang } from "@/lib/i18n/config";
+import { Stars } from "./Stars";
 
-export type CarouselSlide = { author: string; rating: number; ratingLabel: string; text: string; lang: string; date: string; dateText: string; uri: string };
+export type CarouselSlide = { author: string; rating: number; ratingLabel: string; text: string; lang: Lang; date: string; dateText: string };
 export type CarouselLabels = {
   region: string;
-  /** e.g. "Rated 4.8 out of 5 from 12 Google reviews." */
+  /** Name of the scrollable list itself, different from the region */
+  track: string;
+  /** e.g. "Rated 4.8 out of 5 from 12 reader reviews." */
   summary: string;
   score: string;
   count: string;
@@ -14,16 +17,14 @@ export type CarouselLabels = {
   next: string;
   /** One label per slide, e.g. "Review 2 of 5" */
   slides: string[];
-  readOnGoogle: string;
-  newTab: string;
 };
 
 /**
- * Compact Google-review carousel under the post header: one review per slide, swipe or arrows,
+ * Compact reader-review carousel under the post header: one review per slide, swipe or arrows,
  * dots below. No autoplay (moving content would need a pause control, WCAG 2.2.2).
  * The slides are a scroll-snap track, so it also works by plain scrolling without JS.
  */
-export default function ReviewCarousel({ slides, labels, mapsUri, rating }: { slides: CarouselSlide[]; labels: CarouselLabels; mapsUri: string; rating: number }) {
+export default function ReviewCarousel({ slides, labels, sectionHref, rating }: { slides: CarouselSlide[]; labels: CarouselLabels; sectionHref: string; rating: number }) {
   const track = useRef<HTMLUListElement>(null);
   const [index, setIndex] = useState(0);
   // Slide we are moving to: quick repeated clicks keep advancing while the smooth scroll runs
@@ -60,11 +61,11 @@ export default function ReviewCarousel({ slides, labels, mapsUri, rating }: { sl
   return (
     <section className="blog-rcar" aria-roledescription="carousel" aria-label={labels.region}>
       <div className="blog-rcar-head">
-        <a className="blog-rcar-sum" href={mapsUri} target="_blank" rel="noopener noreferrer" aria-label={labels.summary + " " + labels.newTab}>
-          <GoogleMark className="blog-rcar-g" />
-          <span className="blog-rcar-score">{labels.score}</span>
+        <a className="blog-rcar-sum" href={sectionHref}>
+          <span className="blog-sr">{labels.summary}</span>
+          <span className="blog-rcar-score" aria-hidden="true">{labels.score}</span>
           <Stars value={rating} />
-          <span className="blog-rcar-count">{labels.count}</span>
+          <span className="blog-rcar-count" aria-hidden="true">{labels.count}</span>
         </a>
         {slides.length > 1 && (
           <span className="blog-rcar-nav">
@@ -77,19 +78,14 @@ export default function ReviewCarousel({ slides, labels, mapsUri, rating }: { sl
           </span>
         )}
       </div>
-      <ul ref={track} className="blog-rcar-track" tabIndex={0} aria-label={labels.region}>
+      <ul ref={track} className="blog-rcar-track" tabIndex={0} aria-label={labels.track}>
         {slides.map((s, i) => (
           <li key={i} data-i={i} className="blog-rcar-slide" role="group" aria-roledescription="slide" aria-label={labels.slides[i]}>
             <span className="blog-rcar-stars" role="img" aria-label={s.ratingLabel}><Stars value={s.rating} /></span>
-            <p className="blog-rcar-text" lang={s.lang || undefined} dir="auto">“{s.text}”</p>
+            <p className="blog-rcar-text" lang={s.lang} dir="auto">“{s.text}”</p>
             <p className="blog-rcar-by">
-              <span className="blog-rcar-author">{s.author}</span>
-              {s.date && <time dateTime={s.date}>{s.dateText}</time>}
-              {s.uri && (
-                <a href={s.uri} target="_blank" rel="noopener noreferrer nofollow">
-                  {labels.readOnGoogle}<span className="blog-sr">{" " + labels.newTab}</span>
-                </a>
-              )}
+              <bdi className="blog-rcar-author">{s.author}</bdi>
+              <time dateTime={s.date}>{s.dateText}</time>
             </p>
           </li>
         ))}
