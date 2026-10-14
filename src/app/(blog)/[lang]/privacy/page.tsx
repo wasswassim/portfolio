@@ -16,7 +16,7 @@ type Section = { h: string; p: string[]; id?: string };
 const COPY: Record<Lang, { title: string; description: string; updated: string; sections: Section[] }> = {
   en: {
     title: "Privacy",
-    description: "How the Building a Life in Italy blog handles your data: the newsletter sent with Brevo, Ahrefs Analytics, how long data is kept and your rights.",
+    description: "How the Building a Life in Italy blog handles your data: the Brevo newsletter, reader reviews, Google AdSense ads, Ahrefs Analytics and your rights.",
     updated: "Last updated: 14 October 2026",
     sections: [
       { h: "Who is responsible", p: [`Wassim Gatri runs this blog and is responsible for the data described here. Contact: ${CONTACT}.`] },
@@ -27,6 +27,10 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
       { h: "Reviews", id: "reviews", p: [
         "If you send a review with the form at the bottom of a post, your name, rating, review, the page you were on and your email address if you give one are stored in a database run by Supabase on servers in the European Union (Frankfurt). Your name, rating, review and the date are published on the blog at once. Your email address is never published and is used only if I need to reply to you. To limit spam, a scrambled (hashed) form of your IP address is stored with the review.",
         "A copy of each review is sent to me by email through EmailJS (emailjs.com), the service that also runs the contact form. The legal basis is your consent, given by sending the review. Write to me to have your review changed or removed at any time; I may also remove reviews that are spam, abusive or off-topic. Each review has a Report link: a report reaches me by email with the review, and I decide whether to remove it.",
+      ] },
+      { h: "Advertising", id: "advertising", p: [
+        "Blog posts may show ads from Google AdSense. Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites. Google's use of advertising cookies enables it and its partners to serve ads to you based on your visit to this site and/or other sites on the Internet. See how Google uses information from sites that use its services: https://policies.google.com/technologies/partner-sites",
+        "You can opt out of personalised advertising in Google's Ads Settings (https://adssettings.google.com), and out of other vendors' personalised ads at https://www.aboutads.info/choices or https://www.youronlinechoices.eu. Visitors from the European Economic Area, the UK and Switzerland first see a consent message from Google (a certified consent platform) and can change their choice at any time with the privacy and cookie settings link it adds to the page. If you decline, ads may still appear but are not personalised.",
       ] },
       { h: "Website statistics", p: [
         "The blog uses Ahrefs Analytics to count visits and see which pages are read. It does not use advertising cookies and is not used to identify you.",
@@ -41,7 +45,7 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
   },
   fr: {
     title: "Confidentialité",
-    description: "Comment le blog Building a Life in Italy traite vos données : la newsletter envoyée avec Brevo, Ahrefs Analytics, la durée de conservation et vos droits.",
+    description: "Comment le blog Building a Life in Italy traite vos données : newsletter Brevo, avis des lecteurs, annonces Google AdSense, Ahrefs Analytics et vos droits.",
     updated: "Dernière mise à jour : 14 octobre 2026",
     sections: [
       { h: "Responsable", p: [`Wassim Gatri édite ce blog et est responsable des données décrites ici. Contact : ${CONTACT}.`] },
@@ -52,6 +56,10 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
       { h: "Avis", id: "reviews", p: [
         "Si vous envoyez un avis avec le formulaire en bas d’un article, votre nom, votre note, votre avis, la page où vous étiez et votre adresse e-mail si vous la donnez sont enregistrés dans une base de données gérée par Supabase, sur des serveurs situés dans l’Union européenne (Francfort). Votre nom, votre note, votre avis et la date sont publiés sur le blog immédiatement. Votre adresse e-mail n’est jamais publiée et ne sert que si je dois vous répondre. Pour limiter le spam, une forme brouillée (hachée) de votre adresse IP est enregistrée avec l’avis.",
         "Une copie de chaque avis m’est envoyée par e-mail via EmailJS (emailjs.com), le service qui gère aussi le formulaire de contact. La base légale est votre consentement, donné en envoyant l’avis. Écrivez-moi pour faire modifier ou supprimer votre avis à tout moment ; je peux aussi supprimer les avis qui sont du spam, injurieux ou hors sujet. Chaque avis a un lien Signaler : le signalement me parvient par e-mail avec l’avis, et je décide de le supprimer ou non.",
+      ] },
+      { h: "Publicité", id: "advertising", p: [
+        "Les articles du blog peuvent afficher des annonces Google AdSense. Des fournisseurs tiers, dont Google, utilisent des cookies pour diffuser des annonces en fonction de vos visites précédentes sur ce site ou sur d’autres sites. Les cookies publicitaires de Google lui permettent, ainsi qu’à ses partenaires, de vous proposer des annonces en fonction de vos visites sur ce site et/ou sur d’autres sites Internet. Voir comment Google utilise les informations des sites qui utilisent ses services : https://policies.google.com/technologies/partner-sites",
+        "Vous pouvez désactiver la publicité personnalisée dans les paramètres des annonces de Google (https://adssettings.google.com), et celle des autres fournisseurs sur https://www.aboutads.info/choices ou https://www.youronlinechoices.eu. Les visiteurs de l’Espace économique européen, du Royaume-Uni et de la Suisse voient d’abord un message de consentement de Google (une plateforme de consentement certifiée) et peuvent changer leur choix à tout moment avec le lien de paramètres de confidentialité et de cookies qu’il ajoute à la page. Si vous refusez, des annonces peuvent encore s’afficher, mais elles ne sont pas personnalisées.",
       ] },
       { h: "Statistiques du site", p: [
         "Le blog utilise Ahrefs Analytics pour compter les visites et voir quelles pages sont lues. Aucun cookie publicitaire n'est utilisé et ces données ne servent pas à vous identifier.",
@@ -66,7 +74,7 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
   },
   ar: {
     title: "الخصوصية",
-    description: "كيف تتعامل مدونة بناء حياة في إيطاليا مع بياناتك: النشرة البريدية المرسلة عبر Brevo، وAhrefs Analytics، ومدة الحفظ، وحقوقك.",
+    description: "كيف تتعامل مدونة بناء حياة في إيطاليا مع بياناتك: النشرة البريدية عبر Brevo، وتقييمات القرّاء، وإعلانات Google AdSense، وAhrefs Analytics، وحقوقك.",
     updated: "آخر تحديث: 14 أكتوبر 2026",
     sections: [
       { h: "المسؤول عن البيانات", p: [`يدير وسيم القاطري هذه المدونة وهو المسؤول عن البيانات المذكورة هنا. للتواصل: ${CONTACT}.`] },
@@ -77,6 +85,10 @@ const COPY: Record<Lang, { title: string; description: string; updated: string; 
       { h: "التقييمات", id: "reviews", p: [
         "إذا أرسلت تقييمًا عبر الاستمارة في أسفل المقال، يُحفظ اسمك وتقييمك ورأيك والصفحة التي كنت فيها وبريدك الإلكتروني إن أعطيته في قاعدة بيانات تديرها Supabase على خوادم داخل الاتحاد الأوروبي (فرانكفورت). يُنشر اسمك وتقييمك ورأيك والتاريخ في المدونة فورًا. ولا يُنشر بريدك الإلكتروني أبدًا، ويُستعمل فقط إذا احتجت إلى الرد عليك. وللحد من الرسائل المزعجة، تُحفظ مع التقييم صيغة مشفّرة (hash) من عنوان IP الخاص بك.",
         "تصلني نسخة من كل تقييم بالبريد الإلكتروني عبر EmailJS (emailjs.com)، وهي الخدمة التي تشغّل أيضًا استمارة الاتصال. الأساس القانوني هو موافقتك، التي تعطيها بإرسال التقييم. راسلني لتعديل تقييمك أو حذفه في أي وقت؛ ويمكنني أيضًا حذف التقييمات المزعجة أو المسيئة أو الخارجة عن الموضوع. لكل تقييم رابط إبلاغ: يصلني البلاغ بالبريد الإلكتروني مع التقييم، وأقرر حذفه أو إبقاءه.",
+      ] },
+      { h: "الإعلانات", id: "advertising", p: [
+        "قد تعرض مقالات المدونة إعلانات Google AdSense. يستعمل مزوّدون من أطراف ثالثة، ومن بينهم Google، ملفات تعريف الارتباط (cookies) لعرض إعلانات حسب زياراتك السابقة لهذا الموقع أو لمواقع أخرى. وتتيح ملفات تعريف الارتباط الإعلانية لـ Google ولشركائها عرض إعلانات عليك حسب زيارتك لهذا الموقع و/أو لمواقع أخرى على الإنترنت. اطّلع على كيفية استعمال Google للمعلومات من المواقع التي تستعمل خدماتها: https://policies.google.com/technologies/partner-sites",
+        "يمكنك إيقاف الإعلانات المخصّصة من إعدادات الإعلانات في Google (https://adssettings.google.com)، وإيقاف إعلانات المزوّدين الآخرين المخصّصة عبر https://www.aboutads.info/choices أو https://www.youronlinechoices.eu. يرى زوّار المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا أولًا رسالة موافقة من Google (منصّة موافقة معتمدة)، ويمكنهم تغيير اختيارهم في أي وقت عبر رابط إعدادات الخصوصية وملفات تعريف الارتباط الذي تضيفه إلى الصفحة. إذا رفضت، قد تظهر إعلانات لكنها لا تكون مخصّصة.",
       ] },
       { h: "إحصائيات الموقع", p: [
         "تستعمل المدونة Ahrefs Analytics لعدّ الزيارات ومعرفة الصفحات المقروءة. لا تُستعمل ملفات تعريف ارتباط إعلانية ولا تُستعمل هذه البيانات للتعرف على هويتك.",

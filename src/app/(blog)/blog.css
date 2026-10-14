@@ -882,3 +882,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-rcar-dot::before { content: ""; inline-size: 0.45rem; block-size: 0.45rem; border-radius: 50%; background: color-mix(in srgb, var(--fg) 22%, transparent); transition: background-color 0.2s ease, inline-size 0.2s ease; }
 .blog-rcar-dot[aria-current="true"]::before { inline-size: 1.1rem; border-radius: 999px; background: var(--accent); }
 @media (prefers-reduced-motion: reduce) { .blog-rcar-dot::before { transition: none; } }
+
+/* ── AdSense units: invisible until Google fills them, removed when it has no ad ── */
+.blog-ad { margin: 0; }
+.blog-ad-label { display: none; margin: 0 0 0.4rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-align: center; }
+:lang(ar) .blog-ad-label { letter-spacing: 0; font-size: 0.78rem; }
+.blog-ad:has(ins[data-ad-status="unfilled"]) { display: none; }
+.blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 2rem; }
+.blog-ad:has(ins[data-ad-status="filled"]) .blog-ad-label { display: block; }
+.blog-side .blog-ad { flex: none; }
+.blog-side .blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 0; }
+@media (width < 64rem) { .blog-ad--side { display: none; } }

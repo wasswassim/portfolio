@@ -4,6 +4,7 @@ import "../blog.css";
 import { DIR } from "@/lib/i18n/config";
 import { langStaticParams, toLang } from "@/lib/i18n/params";
 import { SITE_URL } from "@/lib/seo/site";
+import { ADSENSE_CLIENT } from "@/lib/ads";
 import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
 import ViewTransitionTypes from "@/components/blog/ViewTransitionTypes";
 
@@ -32,6 +33,8 @@ export function generateStaticParams() {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  // AdSense site ownership
+  other: { "google-adsense-account": ADSENSE_CLIENT },
 };
 
 export const viewport: Viewport = {
@@ -50,6 +53,8 @@ export default async function BlogRootLayout({
     <html lang={lang} dir={DIR[lang]} className={`${syne.variable} ${bebasNeue.variable} ${plexArabic.variable}`}>
       <head>
         <ViewTransitionTypes />
+        {/* AdSense: ad units and Google's consent message for EU/UK visitors (Privacy & messaging) */}
+        <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossOrigin="anonymous" />
       </head>
       <body>
         <AhrefsAnalytics />

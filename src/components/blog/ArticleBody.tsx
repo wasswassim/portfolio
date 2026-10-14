@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import type { Lang } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n";
 import type { Block } from "@/content/articles/types";
@@ -5,6 +6,7 @@ import Image from "next/image";
 import Inline from "./Inline";
 import FeeBox from "./FeeBox";
 import ReferralCard from "./ReferralCard";
+import AdSlot from "./AdSlot";
 
 function BlockView({ block, lang, dict }: { block: Block; lang: Lang; dict: Dictionary }) {
   const t = (text: string) => <Inline lang={lang} text={text} />;
@@ -216,15 +218,23 @@ export default function ArticleBody({
   lang,
   dict,
   className = "",
+  adPositions = [],
 }: {
   body: Block[];
   lang: Lang;
   dict: Dictionary;
   className?: string;
+  /** Block indexes before which an in-article ad goes (see inArticleAdPositions in lib/ads.ts) */
+  adPositions?: number[];
 }) {
   return (
     <div className={`blog-prose ${className}`.trim()}>
-      {body.map((block, i) => <BlockView key={i} block={block} lang={lang} dict={dict} />)}
+      {body.map((block, i) => (
+        <Fragment key={i}>
+          {adPositions.includes(i) && <AdSlot kind="inArticle" label={dict.ads.label} />}
+          <BlockView block={block} lang={lang} dict={dict} />
+        </Fragment>
+      ))}
     </div>
   );
 }

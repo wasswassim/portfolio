@@ -19,6 +19,8 @@ import NewsletterCard from "@/components/blog/NewsletterCard";
 import OfferButtons from "@/components/blog/OfferButtons";
 import { RatingBadge, ReviewsCarousel, ReviewsSection } from "@/components/blog/Reviews";
 import SideColumn from "@/components/blog/SideColumn";
+import AdSlot from "@/components/blog/AdSlot";
+import { articleHasAds, inArticleAdPositions } from "@/lib/ads";
 
 export const dynamicParams = false;
 
@@ -139,7 +141,7 @@ export default async function ArticlePage(props: Props) {
               {referral && <p className="blog-disclosure" role="note">{dict.referral.disclosure}</p>}
               <ReviewsCarousel lang={lang} />
               <QuickGuide summary={translation.summary} headings={headings} lang={lang} dict={dict} />
-              <ArticleBody body={translation.body} lang={lang} dict={dict} />
+              <ArticleBody body={translation.body} lang={lang} dict={dict} adPositions={inArticleAdPositions(article.id, translation.body)} />
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-end" className="blog-newsletter--end" />
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
@@ -149,6 +151,7 @@ export default async function ArticlePage(props: Props) {
               <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
               <OfferButtons lang={lang} dict={dict} />
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-side" className="blog-newsletter--side" />
+              {articleHasAds(article.id) && <AdSlot kind="side" label={dict.ads.label} />}
             </SideColumn>
           </div>
           <ReviewsSection lang={lang} path={path} />

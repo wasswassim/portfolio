@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { ADSENSE_CLIENT } from "@/lib/ads";
 import { Syne, Bebas_Neue } from "next/font/google";
 import "../globals.css";
 import CustomCursor from "@/components/layout/CustomCursor";
@@ -43,6 +44,8 @@ export const metadata: Metadata = {
     images: [PORTRAIT],
   },
   twitter: { card: "summary", title: TITLE, description: DESCRIPTION, images: [PORTRAIT.url] },
+  // AdSense site ownership (the homepage shows no ads)
+  other: { "google-adsense-account": ADSENSE_CLIENT },
 };
 
 export const viewport: Viewport = {
