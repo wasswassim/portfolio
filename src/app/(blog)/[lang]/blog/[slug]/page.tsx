@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LANGS, DEFAULT_LANG, LOCALE, isLang, type Lang } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n";
-import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
+import { aboutPath, articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
 import { allArticleParams, articleBySlug, formerArticleParams, seriesPosition, slugForFormerSlug } from "@/content/articles";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { JsonLd, personLd, blogPostingLd, breadcrumbLd, faqLd, videoLd } from "@/lib/seo/jsonld";
@@ -16,6 +16,7 @@ import ArticleBody from "@/components/blog/ArticleBody";
 import { SeriesNav, SeriesStrip } from "@/components/blog/SeriesNav";
 import QuickGuide from "@/components/blog/QuickGuide";
 import NewsletterCard from "@/components/blog/NewsletterCard";
+import AuthorBox from "@/components/blog/AuthorBox";
 import OfferButtons from "@/components/blog/OfferButtons";
 import { RatingBadge, ReviewsCarousel, ReviewsSection } from "@/components/blog/Reviews";
 import SideColumn from "@/components/blog/SideColumn";
@@ -129,7 +130,7 @@ export default async function ArticlePage(props: Props) {
                 <p className="blog-subtitle"><BidiText lang={lang}>{translation.subtitle}</BidiText></p>
               )}
               <p className="blog-meta">
-                <span>{dict.article.by} <a href={SITE_URL} rel="author">{SITE_NAME}</a></span>
+                <span>{dict.article.by} <a href={aboutPath(lang)} rel="author">{SITE_NAME}</a></span>
                 <span>{dict.article.published} <time dateTime={article.publishedAt}>{fmt(article.publishedAt)}</time></span>
                 <span>{dict.article.updated} <time dateTime={article.updatedAt}>{fmt(article.updatedAt)}</time></span>
                 <span>{dict.article.readTime(minutes)}</span>
@@ -146,6 +147,7 @@ export default async function ArticlePage(props: Props) {
               {/* End-of-post in-article ad, after the last block and before the "Next step" card */}
               {articleHasAds(article.id) && <AdSlot kind="inArticle" label={dict.ads.label} />}
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
+              <AuthorBox lang={lang} />
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-end" className="blog-newsletter--end" />
               {!article.lastVerified && <p className="blog-unverified">{dict.article.notVerified}</p>}
             </article>

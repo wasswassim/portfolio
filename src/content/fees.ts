@@ -90,6 +90,18 @@ export const FEES = {
     sourceUrl: "https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/quanto-costa-un-visto-e-come-pagare/", lastVerified: V,
     note: { en: "Paid in dinars (395.700 TND). Confirm the amount for your visa type with the visa centre", fr: "Payé en dinars (395,700 TND). Confirmez le montant pour votre type de visa auprès du centre", ar: "يُدفع بالدينار (395.700 د.ت). تأكد من المبلغ الخاص بنوع تأشيرتك لدى المركز" },
   },
+  "visa-centre-fee": {
+    label: { en: "Almaviva visa-centre service fee", fr: "Frais de service du centre de visa Almaviva", ar: "معلوم خدمة مركز التأشيرات Almaviva" },
+    amount: 68.3, currency: "TND", per: "once",
+    sourceUrl: "https://ambtunisi.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-straniero/visti/quanto-costa-un-visto-e-come-pagare/", lastVerified: V,
+    note: { en: "Paid in cash with the visa fee", fr: "Payés en espèces avec les frais de visa", ar: "يُدفع نقدًا مع معلوم التأشيرة" },
+  },
+  "visa-blocked-amount": {
+    label: { en: "Blocked amount for the study visa (2026/27)", fr: "Montant bloqué pour le visa d'études (2026/27)", ar: "المبلغ المجمّد لتأشيرة الدراسة (2026/27)" },
+    amount: 10179.85, currency: "EUR", per: "year",
+    sourceUrl: "https://ambtunisi.esteri.it/it/news/dall_ambasciata/2026/06/iscriversi-alle-universita-italiane-a-a-2026-2027-condizioni-per-la-concessione-del-visto-per-studio-immatricolazione-universitaria/", lastVerified: V,
+    note: { en: "Your own money, released at EUR 783.06 a month for 13 months", fr: "Votre propre argent, libéré à 783,06 EUR par mois pendant 13 mois", ar: "مالك الخاص، يُحرَّر بمقدار 783.06 يورو شهريًا لمدة 13 شهرًا" },
+  },
   "cimea-cv": {
     label: { en: "CIMEA comparability + verification", fr: "CIMEA comparabilité + vérification", ar: "CIMEA: المقارنة والتحقق" },
     amount: 300, currency: "EUR", per: "once",
@@ -134,6 +146,18 @@ export const FEES = {
     amount: 67, currency: "EUR", per: "once",
     sourceUrl: "https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario", lastVerified: V,
     note: { en: "Plus a EUR 16 stamp per copy for every 4 pages. Landlord and tenant are jointly liable", fr: "Plus un timbre de 16 EUR par exemplaire, toutes les 4 pages. Bailleur et locataire sont solidairement responsables", ar: "إضافة إلى طابع بـ 16 يورو لكل نسخة عن كل 4 صفحات. المالك والمتسوغ مسؤولان بالتضامن" },
+  },
+  "disco-residence": {
+    label: { en: "DiSCo residence place", fr: "Place en résidence DiSCo", ar: "مكان في مبيت DiSCo" },
+    amount: 200, amountMax: 298, currency: "EUR", per: "month",
+    sourceUrl: "https://laziodisco.it/wp-content/uploads/2026/07/BANDO-DIRITTO-ALLO-STUDIO-ENG-26-27.pdf", lastVerified: V,
+    note: { en: "For DiSCo winners only, deducted from the scholarship", fr: "Pour les boursiers DiSCo uniquement, déduit de la bourse", ar: "للمتحصلين على منحة DiSCo فقط، ويُخصم من المنحة" },
+  },
+  "rome-private-room": {
+    label: { en: "Private single room near a Rome university", fr: "Chambre individuelle privée près d'une université de Rome", ar: "غرفة فردية خاصة قرب جامعة في روما" },
+    amount: 500, amountMax: 700, currency: "EUR", per: "month",
+    sourceUrl: "https://www.newsistruzione.it/2026/08/22/affitti-studenti-roma-caro-casa-2026/", lastVerified: V,
+    note: { en: "Typical range for a standard single room in 2026 (SoloAffitti data); EUR 350-600 near Tor Vergata, EUR 600-750 near LUMSA, up to EUR 1,000 or more in the most sought-after areas", fr: "Fourchette habituelle pour une chambre individuelle standard en 2026 (données SoloAffitti) ; 350-600 EUR près de Tor Vergata, 600-750 EUR près de la LUMSA, jusqu'à 1 000 EUR ou plus dans les quartiers les plus demandés", ar: "النطاق المعتاد لغرفة فردية عادية في 2026 (بيانات SoloAffitti)؛ 350-600 يورو قرب Tor Vergata، و600-750 يورو قرب LUMSA، وقد تبلغ 1000 يورو أو أكثر في الأحياء الأكثر طلبًا" },
   },
   "nulla-osta-stamp": {
     label: { en: "Stamp on the nulla osta application (employer)", fr: "Timbre sur la demande de nulla osta (employeur)", ar: "الطابع على مطلب nulla osta (المشغّل)" },
@@ -239,6 +263,8 @@ export function feeById(id: FeeId): Fee {
 
 /** Sum of several fees in the same currency (totals are computed, never stored). */
 export function sumFees(ids: FeeId[]): number {
+  const currencies = new Set(ids.map((id) => FEES[id].currency));
+  if (currencies.size > 1 || currencies.has("%")) throw new Error("sumFees: fees in different currencies or percentages: " + ids.join(", "));
   return Math.round(ids.reduce((s, id) => s + FEES[id].amount, 0) * 100) / 100;
 }
 

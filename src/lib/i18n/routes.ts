@@ -4,6 +4,7 @@ import { LANGS, type Lang } from "./config";
 export const homePath = (): string => "/";
 export const blogPath = (lang: Lang): string => `/${lang}/blog/`;
 export const articlePath = (lang: Lang, slug: string): string => `/${lang}/blog/${slug}/`;
+export const aboutPath = (lang: Lang): string => `/${lang}/about/`;
 
 /** hreflang map ("en" | "fr" | "ar" | "x-default") from a per-language path builder. */
 export function languageAlternates(

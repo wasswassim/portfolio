@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { LANGS } from "@/lib/i18n/config";
-import { articlePath, blogPath, homePath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
+import { aboutPath, articlePath, blogPath, homePath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
 import { ARTICLES, langsWithArticles } from "@/content/articles";
 import { absoluteUrl } from "@/lib/seo/site";
 
@@ -25,6 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: landingAlternates },
     });
   }
+
+  // Author page (E-E-A-T): every byline links to it
+  const aboutAlternates = absAll(languageAlternates(aboutPath, aboutPath("en")));
+  for (const lang of LANGS) entries.push({ url: abs(aboutPath(lang)), alternates: { languages: aboutAlternates } });
 
   for (const article of ARTICLES) {
     const pathFor = (l: (typeof LANGS)[number]) => {

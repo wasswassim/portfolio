@@ -900,3 +900,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-cards > .blog-cards-ad { grid-column: 1 / -1; list-style: none; }
 .blog-cards > .blog-cards-ad:has(ins[data-ad-status="unfilled"]) { display: none; }
 .blog-cards-ad .blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 0; }
+
+/* Author box at the end of a post, and the author page */
+.blog-author { display: flex; gap: 1rem; align-items: flex-start; margin-block-start: 2.5rem; padding: 1.1rem 1.2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); }
+.blog-author-photo { flex: none; inline-size: 4rem; block-size: 4rem; border-radius: 50%; object-fit: cover; }
+.blog-author-name { font-weight: 600; }
+.blog-author-role { font-size: 0.82rem; color: var(--muted); margin-block-end: 0.5rem; }
+.blog-author-bio { font-size: 0.95rem; line-height: 1.6; }
+.blog-author-more { display: inline-flex; align-items: center; min-block-size: 44px; font-size: 0.8rem; text-decoration: underline; text-underline-offset: 0.2em; }
+.blog-about-head { display: flex; gap: 1.2rem; align-items: center; margin-block-end: 1.5rem; }
+.blog-about-photo { flex: none; inline-size: 6.5rem; block-size: 6.5rem; border-radius: 50%; object-fit: cover; }
+@media (max-width: 480px) { .blog-author { flex-direction: column; } }

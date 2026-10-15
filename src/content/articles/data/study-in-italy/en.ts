@@ -9,7 +9,7 @@ export const en: ArticleTranslation = {
   metaDescription:
     "Study in Italy for Tunisian students: the 7 steps to a Bachelor, Master or PhD in Rome, the 2027/28 deadlines and costs, from EUR 456 in year one at Sapienza.",
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
-  keywords: ["study in Italy for Tunisian students", "study in Italy", "study in Rome for Tunisian students", "Italian universities for Tunisian students", "cost of studying in Italy", "study in Italy 2027/28 deadlines"],
+  keywords: ["study in Italy for Tunisian students", "study in Italy", "study in Rome for Tunisian students", "Italian universities for Tunisian students", "study in Italy 2027/28 deadlines"],
   summary:
     "To study in Italy as a Tunisian student in 2027/28, you apply to a university in Rome first, then complete the pre-enrolment, then request the study visa by 31 October 2027 while showing EUR 10,179.85 blocked at your bank. Start in autumn 2026: documents take months, LUISS applications close on 10 February 2027, and the first year at Sapienza costs from EUR 456 in fees.",
   body: [
@@ -146,6 +146,10 @@ export const en: ArticleTranslation = {
     {
       type: "p",
       text: "Sapienza and Tor Vergata figures are flat fees for students from Tunisia (Tor Vergata: unless you have an ISEE parificato). Check with your university, and compare fees and entry rules in [the five Rome universities side by side](article:apply-university-rome#compare-universities).",
+    },
+    {
+      type: "p",
+      text: "For the whole first year with rent, health, transport and the money you can transfer, see [the 2026/27 first-year budget for Tunisian students in Rome](article:first-year-budget).",
     },
 
     { type: "h2", id: "money-plan", text: "6. How does your money reach you in Italy?" },

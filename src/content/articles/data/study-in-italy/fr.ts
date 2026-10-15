@@ -9,7 +9,7 @@ export const fr: ArticleTranslation = {
   metaDescription:
     "Étudier en Italie pour les Tunisiens : 7 étapes vers une Licence, un Master ou un doctorat à Rome, dates 2027/28 et coûts, dès 456 EUR en 1re année à Sapienza.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
-  keywords: ["étudier en Italie pour les Tunisiens", "étudier en Italie", "étudier à Rome pour les Tunisiens", "études en Italie étudiants tunisiens", "coût des études en Italie", "étudier en Italie dates 2027/28"],
+  keywords: ["étudier en Italie pour les Tunisiens", "étudier en Italie", "étudier à Rome pour les Tunisiens", "études en Italie étudiants tunisiens", "étudier en Italie dates 2027/28"],
   summary:
     "Pour étudier en Italie en tant qu'étudiant tunisien en 2027/28, vous candidatez d'abord auprès d'une université à Rome, puis vous faites la préinscription, puis vous demandez le visa d'études avant le 31 octobre 2027 en justifiant 10 179,85 EUR bloqués dans votre banque. Commencez dès l'automne 2026 : les documents prennent des mois, les candidatures LUISS ferment le 10 février 2027 et la première année à Sapienza coûte à partir de 456 EUR de frais.",
   body: [
@@ -146,6 +146,10 @@ export const fr: ArticleTranslation = {
     {
       type: "p",
       text: "Les montants de Sapienza et de Tor Vergata sont des forfaits pour les étudiants tunisiens (Tor Vergata : sauf si vous avez un ISEE parificato). Vérifiez auprès de votre université, et comparez frais et conditions d'accès dans [les cinq universités de Rome côte à côte](article:apply-university-rome#compare-universities).",
+    },
+    {
+      type: "p",
+      text: "Pour toute la première année avec le loyer, la santé, les transports et l'argent que vous pouvez transférer, voir [le budget de la première année 2026/27 pour les étudiants tunisiens à Rome](article:first-year-budget).",
     },
 
     { type: "h2", id: "money-plan", text: "6. Comment votre argent arrive-t-il en Italie ?" },
