@@ -109,7 +109,7 @@ export default async function BlogLandingPage({ params }: Props) {
               };
             })}
             labels={{
-            ad: dict.ads.label, ...dict.landing.search, read: dict.landing.read }}
+            ...dict.landing.search, read: dict.landing.read }}
           />
         )}
         </div>

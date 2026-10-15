@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { ADSENSE_CLIENT, AD_SLOTS, FEED_LAYOUT_KEY } from "@/lib/ads";
+import { ADSENSE_CLIENT, AD_SLOTS } from "@/lib/ads";
 
 declare global {
   interface Window {
@@ -10,11 +10,11 @@ declare global {
 }
 
 /**
- * One AdSense unit. The whole block, label included, stays hidden until Google fills it, and is
+ * One AdSense unit, with no label. The whole block stays hidden until Google fills it, and is
  * removed from the layout when Google has no ad for it (AdSense sets data-ad-status on the <ins>;
  * see .blog-ad in blog.css). Renders nothing while the unit id is not configured in lib/ads.ts.
  */
-export default function AdSlot({ kind, label }: { kind: keyof typeof AD_SLOTS; label: string }) {
+export default function AdSlot({ kind }: { kind: keyof typeof AD_SLOTS }) {
   const ref = useRef<HTMLModElement>(null);
   const slot = AD_SLOTS[kind];
 
@@ -29,8 +29,8 @@ export default function AdSlot({ kind, label }: { kind: keyof typeof AD_SLOTS; l
     } catch (err) {
       console.error("[AdSense]", err);
     }
-    // "filled" can still mean an empty ad (e.g. while the site is under review): show the label and
-    // spacing only once the unit really has height, so a label never sits above a blank space
+    // "filled" can still mean an empty ad (e.g. while the site is under review): add the spacing
+    // only once the unit really has height, so a blank ad leaves no gap
     const box = ins.parentElement;
     if (!box || typeof ResizeObserver === "undefined") return;
     const ro = new ResizeObserver(() => box.toggleAttribute("data-visible", ins.offsetHeight > 20));
@@ -43,12 +43,9 @@ export default function AdSlot({ kind, label }: { kind: keyof typeof AD_SLOTS; l
   const shape: Record<string, string> =
     kind === "inArticle"
       ? { "data-ad-layout": "in-article", "data-ad-format": "fluid" }
-      : kind === "feed"
-        ? { "data-ad-layout-key": FEED_LAYOUT_KEY, "data-ad-format": "fluid" }
-        : { "data-ad-format": "vertical", "data-full-width-responsive": "false" };
+      : { "data-ad-format": "vertical", "data-full-width-responsive": "false" };
   return (
-    <aside className={`blog-ad blog-ad--${kind}`} aria-label={label}>
-      <p className="blog-ad-label">{label}</p>
+    <div className={`blog-ad blog-ad--${kind}`}>
       <ins
         ref={ref}
         className="adsbygoogle"
@@ -57,6 +54,6 @@ export default function AdSlot({ kind, label }: { kind: keyof typeof AD_SLOTS; l
         data-ad-slot={slot}
         {...shape}
       />
-    </aside>
+    </div>
   );
 }

@@ -231,7 +231,7 @@ export default function ArticleBody({
     <div className={`blog-prose ${className}`.trim()}>
       {body.map((block, i) => (
         <Fragment key={i}>
-          {adPositions.includes(i) && <AdSlot kind="inArticle" label={dict.ads.label} />}
+          {adPositions.includes(i) && <AdSlot kind="inArticle" />}
           <BlockView block={block} lang={lang} dict={dict} />
         </Fragment>
       ))}

@@ -8,7 +8,7 @@ const L = "en";
 // check reads them as text), so update them when fees.ts changes. fr.ts and ar.ts mirror the heading ids.
 export const en: ArticleTranslation = {
   slug: "cost-of-studying-in-italy-tunisian-students",
-  title: "How much does studying in Rome cost a Tunisian student? The 2026/27 first-year budget",
+  title: "How much does studying in Rome cost for a Tunisian student? The 2026/27 first-year budget",
   subtitle: "Every official fee from Tunis to your first year at Sapienza, in euros and dinars, with rent and the money you can transfer",
   seoTitle: "Cost of Studying in Italy for Tunisians: 2026/27 Budget",
   metaDescription:
@@ -34,7 +34,7 @@ export const en: ArticleTranslation = {
       text: `This page adds up every fee our guides quote, from the visa in Tunis to the first year of university, using one example: a Bachelor's or Master's student at Sapienza in the lowest fee band, the flat fee for students from Tunisia. The blocked amount for the visa (${eur(L, B.blocked)}) is not in the total: it is your own money, released to you every month to live on.`,
     },
 
-    { type: "h2", id: "total", text: "1. How much does the first year in Rome cost a Tunisian student?" },
+    { type: "h2", id: "total", text: "1. How much does the first year in Rome cost for a Tunisian student?" },
     {
       type: "p",
       text: `The first year in Rome costs a Tunisian student about ${eur(L, B.fixed)} in fixed official fees, plus ${range(L, B.privateRoom.min, B.privateRoom.max)} for 12 months in a private room. Each line below is detailed in the next sections.`,

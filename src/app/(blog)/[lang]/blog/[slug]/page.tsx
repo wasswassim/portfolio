@@ -145,7 +145,7 @@ export default async function ArticlePage(props: Props) {
               <QuickGuide summary={translation.summary} headings={headings} lang={lang} dict={dict} />
               <ArticleBody body={translation.body} lang={lang} dict={dict} adPositions={inArticleAdPositions(article.id, translation.body, words)} />
               {/* End-of-post in-article ad, after the last block and before the "Next step" card */}
-              {articleHasAds(article.id) && <AdSlot kind="inArticle" label={dict.ads.label} />}
+              {articleHasAds(article.id) && <AdSlot kind="inArticle" />}
               {series && <SeriesNav position={series} lang={lang} dict={dict} />}
               <AuthorBox lang={lang} />
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-end" className="blog-newsletter--end" />
@@ -156,7 +156,7 @@ export default async function ArticlePage(props: Props) {
               <GuideCard summary={translation.summary} headings={headings} guide={guide} lang={lang} dict={dict} />
               <OfferButtons lang={lang} dict={dict} />
               <NewsletterCard lang={lang} dict={dict} idPrefix="newsletter-side" className="blog-newsletter--side" />
-              {articleHasAds(article.id) && <AdSlot kind="side" label={dict.ads.label} />}
+              {articleHasAds(article.id) && <AdSlot kind="side" />}
             </SideColumn>
           </div>
           <ReviewsSection lang={lang} path={path} />

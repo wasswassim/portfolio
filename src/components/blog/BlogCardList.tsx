@@ -1,10 +1,8 @@
 "use client";
 
-import { Fragment, useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Lang } from "@/lib/i18n/config";
 import BidiText from "./BidiText";
-import AdSlot from "./AdSlot";
-import { FEED_AFTER_CARDS } from "@/lib/ads";
 
 export type BlogCardItem = {
   id: string;
@@ -19,7 +17,6 @@ export type BlogCardItem = {
 
 export type BlogSearchLabels = {
   /** Label above the in-feed ad */
-  ad: string;
   label: string;
   placeholder: string;
   clear: string;
@@ -115,14 +112,7 @@ export default function BlogCardList({ lang, items, labels }: { lang: Lang; item
       </div>
       <ul className="blog-list blog-cards">
         {items.map((it, i) => (
-          <Fragment key={it.id}>
-          {/* In-feed ad between rows of cards; left out while searching so results stay together */}
-          {!query && FEED_AFTER_CARDS.includes(i) && (
-            <li className="blog-cards-ad">
-              <AdSlot kind="feed" label={labels.ad} />
-            </li>
-          )}
-          <li className="blog-card" hidden={!visible[i]}>
+          <li key={it.id} className="blog-card" hidden={!visible[i]}>
             <a href={it.href}>
               <span className="blog-meta">
                 <span className="blog-cat">{it.category}</span>
@@ -136,7 +126,6 @@ export default function BlogCardList({ lang, items, labels }: { lang: Lang; item
               </span>
             </a>
           </li>
-          </Fragment>
         ))}
       </ul>
     </>

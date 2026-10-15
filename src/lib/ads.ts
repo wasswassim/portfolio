@@ -6,15 +6,11 @@ export const ADSENSE_CLIENT = "ca-pub-1706908723349838";
 /**
  * Ad unit ids from AdSense > Ads > By ad unit. While a slot is empty, that placement renders nothing.
  * - side: the display unit as a vertical ad in the side column, under the newsletter card (desktop only)
- * - feed: the in-feed unit, between the post cards of the blog list
  * - inArticle: the in-article unit, used at the top and in the middle of a post and at its end
  */
-export const AD_SLOTS = { side: "5068499934", feed: "4344866190", inArticle: "7794735622" };
-/** Layout key of the in-feed unit (from its AdSense code) */
-export const FEED_LAYOUT_KEY = "-gw-3+1f-3d+2z";
-/** The in-feed ad comes after these card positions (1-based) on the blog list, when not searching.
- *  Multiples of 6 so the ad always starts a new row in the 1-, 2- and 3-column grids (no empty cells). */
-export const FEED_AFTER_CARDS = [6, 12];
+// No ads on the blog list (owner decision 2026-10-15: the cards stay clean). The in-feed unit
+// 4344866190 is unused. Ads carry no "Advertisements" label (optional under AdSense policy).
+export const AD_SLOTS = { side: "5068499934", inArticle: "7794735622" };
 
 /** Posts that never show ads (owner decision 2026-10-14: crypto top-ups for residents of Tunisia). */
 const NO_ADS_ARTICLES = new Set(["redotpay-tunisia"]);
