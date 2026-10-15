@@ -29,6 +29,13 @@ export default function AdSlot({ kind, label }: { kind: keyof typeof AD_SLOTS; l
     } catch (err) {
       console.error("[AdSense]", err);
     }
+    // "filled" can still mean an empty ad (e.g. while the site is under review): show the label and
+    // spacing only once the unit really has height, so a label never sits above a blank space
+    const box = ins.parentElement;
+    if (!box || typeof ResizeObserver === "undefined") return;
+    const ro = new ResizeObserver(() => box.toggleAttribute("data-visible", ins.offsetHeight > 20));
+    ro.observe(ins);
+    return () => ro.disconnect();
   }, []);
 
   if (!slot) return null;

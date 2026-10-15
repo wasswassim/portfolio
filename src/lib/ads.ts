@@ -12,8 +12,9 @@ export const ADSENSE_CLIENT = "ca-pub-1706908723349838";
 export const AD_SLOTS = { side: "5068499934", feed: "4344866190", inArticle: "7794735622" };
 /** Layout key of the in-feed unit (from its AdSense code) */
 export const FEED_LAYOUT_KEY = "-gw-3+1f-3d+2z";
-/** The in-feed ad comes after these card positions (1-based) on the blog list, when not searching */
-export const FEED_AFTER_CARDS = [4, 10];
+/** The in-feed ad comes after these card positions (1-based) on the blog list, when not searching.
+ *  Multiples of 6 so the ad always starts a new row in the 1-, 2- and 3-column grids (no empty cells). */
+export const FEED_AFTER_CARDS = [6, 12];
 
 /** Posts that never show ads (owner decision 2026-10-14: crypto top-ups for residents of Tunisia). */
 const NO_ADS_ARTICLES = new Set(["redotpay-tunisia"]);

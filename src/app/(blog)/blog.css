@@ -891,15 +891,15 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-ad-label { display: none; margin: 0 0 0.4rem; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); text-align: center; }
 :lang(ar) .blog-ad-label { letter-spacing: 0; font-size: 0.78rem; }
 .blog-ad:has(ins[data-ad-status="unfilled"]) { display: none; }
-.blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 2rem; }
-.blog-ad:has(ins[data-ad-status="filled"]) .blog-ad-label { display: block; }
+.blog-ad[data-visible]:has(ins[data-ad-status="filled"]) { margin-block: 2rem; }
+.blog-ad[data-visible]:has(ins[data-ad-status="filled"]) .blog-ad-label { display: block; }
 .blog-side .blog-ad { flex: none; }
-.blog-side .blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 0; }
+.blog-side .blog-ad[data-visible]:has(ins[data-ad-status="filled"]) { margin-block: 0; }
 @media (width < 64rem) { .blog-ad--side { display: none; } }
 /* In-feed ad on the blog list: a full row between rows of cards, gone when Google has no ad */
 .blog-cards > .blog-cards-ad { grid-column: 1 / -1; list-style: none; }
 .blog-cards > .blog-cards-ad:has(ins[data-ad-status="unfilled"]) { display: none; }
-.blog-cards-ad .blog-ad:has(ins[data-ad-status="filled"]) { margin-block: 0; }
+.blog-cards-ad .blog-ad[data-visible]:has(ins[data-ad-status="filled"]) { margin-block: 0; }
 
 /* Author box at the end of a post, and the author page */
 .blog-author { display: flex; gap: 1rem; align-items: flex-start; margin-block-start: 2.5rem; padding: 1.1rem 1.2rem; border: 1px solid var(--border); border-radius: 1rem; background: var(--surface); }
