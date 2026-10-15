@@ -26,7 +26,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "C'est la partie 3 de notre [guide pour étudier en Italie pour les Tunisiens](article:study-in-italy). La partie 2 explique [comment s'inscrire dans une université en Italie](article:apply-university-rome) ; celle-ci couvre les papiers dont vous aurez besoin pour la candidature, le visa et la bourse.",
+      text: "C'est la partie 3 de notre [guide pour étudier en Italie pour les Tunisiens](article:study-in-italy). La partie 2 explique [comment s'inscrire dans une université en Italie](article:apply-university-rome). Celle-ci couvre les papiers dont vous aurez besoin pour la candidature, le visa et la bourse.",
     },
 
     { type: "h2", id: "start-early", text: "1. Pourquoi commencer vos documents plusieurs mois à l'avance ?" },
@@ -63,7 +63,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Apportez **tout votre parcours scolaire** : chaque diplôme obtenu et les relevés qui vont avec, pas seulement le dernier. Vérifiez que votre nom est écrit **exactement comme dans votre passeport** sur chaque page ; sinon, corrigez-le maintenant, car la même orthographe doit figurer sur votre [préinscription Universitaly](article:apply-university-rome#universitaly-pre-enrolment) et votre dossier de visa.",
+      text: "Apportez **tout votre parcours scolaire** : chaque diplôme obtenu et les relevés qui vont avec, pas seulement le dernier. Vérifiez que votre nom est écrit **exactement comme dans votre passeport** sur chaque page. Sinon, corrigez-le maintenant, car la même orthographe doit figurer sur votre [préinscription Universitaly](article:apply-university-rome#universitaly-pre-enrolment) et votre dossier de visa.",
     },
     { type: "h3", id: "step-certified-copies", text: "Étape 2 : les copies conformes à la municipalité" },
     {
@@ -96,7 +96,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "tip",
       title: "Vérifiez avant de tout traduire",
-      text: "Certaines universités acceptent les documents en français ou en anglais sans traduction italienne (le guide de Roma Tre le prévoit, sauf indication contraire). Demandez à votre université la langue exigée ; le visa et la bourse DiSCo peuvent quand même demander l'italien.",
+      text: "Certaines universités acceptent les documents en français ou en anglais sans traduction italienne (le guide de Roma Tre le prévoit, sauf indication contraire). Demandez à votre université la langue exigée. Le visa et la bourse DiSCo peuvent quand même demander l'italien.",
     },
 
     { type: "h2", id: "dov-or-cimea", text: "4. Faut-il une Dichiarazione di Valore ou une attestation CIMEA ?" },
@@ -124,8 +124,8 @@ export const fr: ArticleTranslation = {
       head: ["Quoi", "Dichiarazione di Valore", "CIMEA Comparabilité + Vérification"],
       rows: [
         ["Où", "Ambassade d'Italie à Tunis, rendez-vous sur Prenot@mi", "En ligne sur DiploMe"],
-        ["Coût", "Gratuite pour poursuivre des études en Italie (avec preuve d'admission) ; sinon l'équivalent de 50 EUR en TND", "300 EUR par diplôme"],
-        ["Délai", "Non publié", "60 jours ouvrables pour la comparabilité (30 avec l'option urgente, +100 EUR) ; vérification environ 60 jours ouvrables, selon la réponse de votre établissement"],
+        ["Coût", "Gratuite pour poursuivre des études en Italie (avec preuve d'admission). Sinon l'équivalent de 50 EUR en TND", "300 EUR par diplôme"],
+        ["Délai", "Non publié", "60 jours ouvrables pour la comparabilité (30 avec l'option urgente, +100 EUR). Vérification environ 60 jours ouvrables, selon la réponse de votre établissement"],
       ],
     },
     { type: "h3", id: "step-book-dov", text: "Comment demander la DOV" },
@@ -212,7 +212,7 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Combien de temps prend une attestation CIMEA pour un diplôme tunisien ?",
-          a: "La comparabilité prend environ 60 jours ouvrables (30 avec l'option urgente, qui coûte 100 EUR de plus), et la vérification environ 60 jours ouvrables, selon la rapidité de réponse de votre établissement tunisien. Le forfait coûte 300 EUR. La demande se fait en ligne sur la plateforme DiploMe du CIMEA ; la Tunisie n'étant pas partie à la Convention de Lisbonne, la comparabilité gratuite ne s'applique pas.",
+          a: "La comparabilité prend environ 60 jours ouvrables (30 avec l'option urgente, qui coûte 100 EUR de plus), et la vérification environ 60 jours ouvrables, selon la rapidité de réponse de votre établissement tunisien. Le forfait coûte 300 EUR. La demande se fait en ligne sur la plateforme DiploMe du CIMEA. La Tunisie n'étant pas partie à la Convention de Lisbonne, la comparabilité gratuite ne s'applique pas.",
         },
         {
           q: "Faut-il traduire des documents déjà en français ?",
@@ -249,7 +249,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026, pour l'année universitaire 2027/28. Les tarifs, les délais et les règles de l'Ambassade peuvent changer ; consultez la page de l'Ambassade, le CIMEA et l'appel 2027/28 de votre université avant de commencer.",
+      text: "Dernière vérification : octobre 2026, pour l'année universitaire 2027/28. Les tarifs, les délais et les règles de l'Ambassade peuvent changer. Consultez la page de l'Ambassade, le CIMEA et l'appel 2027/28 de votre université avant de commencer.",
     },
   ],
   guide: [
@@ -258,7 +258,7 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Nouveau depuis le 30 mars 2026", value: "Authentification par le ministère avant l'apostille" },
         { label: "Apostille", value: "Chez un notaire tunisien, 10 ou 20 TND par document" },
-        { label: "Traduction", value: "Traducteur d'une liste officielle ; apostille aussi sur la traduction" },
+        { label: "Traduction", value: "Traducteur d'une liste officielle. Apostille aussi sur la traduction" },
         { label: "Valeur du diplôme", value: "DOV (gratuite pour étudier) ou CIMEA (300 EUR) : demandez à votre université" },
       ],
     },

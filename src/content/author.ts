@@ -28,9 +28,9 @@ export const AUTHOR_COPY: Record<
         h: "Who I am",
         items: [
           "Tunisian, studying for a Master's in Digital Marketing at LUMSA University in Rome",
-          "Background in Business Information Systems",
+          "Background in Business Information Systems, with agentic engineering skills",
           "Web designer and digital marketer",
-          "I speak Arabic, French, English and Italian",
+          "I speak 4 languages: Arabic, French, English and Italian",
         ],
       },
       {
@@ -45,7 +45,7 @@ export const AUTHOR_COPY: Record<
           "Every rule and fee links to its official source: the Italian Embassy in Tunis, universities, DiSCo, the Central Bank of Tunisia, Poste Italiane.",
           "Every post shows when it was updated and when its facts were last verified, and I re-check the fees every year.",
           "When something comes from my own experience rather than an official rule, I say so (\"in my experience\").",
-          "Some posts contain partner links, always marked as such; the blog also shows Google ads. Neither changes what I recommend.",
+          "Some posts contain partner links, always marked as such. The blog also shows Google ads. Neither changes what I recommend.",
           "Nobody pays me to write about an agency, a bank or a university.",
         ],
       },
@@ -67,9 +67,9 @@ export const AUTHOR_COPY: Record<
         h: "Qui je suis",
         items: [
           "Tunisien, en master de marketing digital à l'université LUMSA de Rome",
-          "Formation en informatique de gestion (Business Information Systems)",
+          "Formation en informatique de gestion (Business Information Systems), avec des compétences en ingénierie agentique (agentic engineering)",
           "Web designer et marketeur digital",
-          "Je parle arabe, français, anglais et italien",
+          "Je parle 4 langues : arabe, français, anglais et italien",
         ],
       },
       {
@@ -84,7 +84,7 @@ export const AUTHOR_COPY: Record<
           "Chaque règle et chaque frais renvoie à sa source officielle : l'ambassade d'Italie à Tunis, les universités, DiSCo, la Banque centrale de Tunisie, Poste Italiane.",
           "Chaque article indique sa date de mise à jour et la date de dernière vérification, et je revérifie les frais chaque année.",
           "Quand une information vient de mon expérience et non d'une règle officielle, je le précise (« d'après mon expérience »).",
-          "Certains articles contiennent des liens partenaires, toujours signalés ; le blog affiche aussi des annonces Google. Ni l'un ni l'autre ne change ce que je recommande.",
+          "Certains articles contiennent des liens partenaires, toujours signalés. Le blog affiche aussi des annonces Google. Ni l'un ni l'autre ne change ce que je recommande.",
           "Personne ne me paie pour parler d'une agence, d'une banque ou d'une université.",
         ],
       },
@@ -106,9 +106,9 @@ export const AUTHOR_COPY: Record<
         h: "من أنا",
         items: [
           "تونسي، أدرس الماجستير في التسويق الرقمي بجامعة LUMSA في روما",
-          "تكويني الأساسي في نظم المعلومات التجارية (Business Information Systems)",
+          "تكويني الأساسي في نظم المعلومات التجارية (Business Information Systems)، مع مهارات في الهندسة الوكيلية (agentic engineering)",
           "مصمم مواقع ومسوّق رقمي",
-          "أتكلم العربية والفرنسية والإنجليزية والإيطالية",
+          "أتكلم 4 لغات: العربية والفرنسية والإنجليزية والإيطالية",
         ],
       },
       {
@@ -123,7 +123,7 @@ export const AUTHOR_COPY: Record<
           "كل قاعدة وكل معلوم مرتبط بمصدره الرسمي: السفارة الإيطالية بتونس، والجامعات، وDiSCo، والبنك المركزي التونسي، وPoste Italiane.",
           "كل مقال يبيّن تاريخ تحديثه وتاريخ آخر تحقق من معلوماته، وأعيد التحقق من المعاليم كل سنة.",
           "عندما تأتي معلومة من تجربتي الشخصية وليس من قاعدة رسمية، أذكر ذلك («حسب تجربتي»).",
-          "بعض المقالات تحتوي على روابط شركاء، وهي دائمًا مُعلَّمة؛ كما تعرض المدونة إعلانات Google. لا هذا ولا ذاك يغيّر ما أنصح به.",
+          "بعض المقالات تحتوي على روابط شركاء، وهي دائمًا مُعلَّمة. كما تعرض المدونة إعلانات Google. لا هذا ولا ذاك يغيّر ما أنصح به.",
           "لا أحد يدفع لي لأكتب عن وكالة أو بنك أو جامعة.",
         ],
       },

@@ -89,7 +89,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "لاستعمال PayPal، اربط أولًا بطاقتك الدولية بالحساب؛ ويشرح دليلنا حول [البطاقة التكنولوجية الدولية في تونس](article:technology-card-tunisia) كيف تتحصّل عليها. قد يقتطع PayPal مبلغًا صغيرًا مؤقتًا لتأكيد البطاقة ثم يرجعه بعد التحقق ([رسوم PayPal في تونس](https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN)).",
+      text: "لاستعمال PayPal، اربط أولًا بطاقتك الدولية بالحساب. ويشرح دليلنا حول [البطاقة التكنولوجية الدولية في تونس](article:technology-card-tunisia) كيف تتحصّل عليها. قد يقتطع PayPal مبلغًا صغيرًا مؤقتًا لتأكيد البطاقة ثم يرجعه بعد التحقق ([رسوم PayPal في تونس](https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN)).",
     },
     {
       type: "p",
@@ -171,7 +171,7 @@ export const ar: ArticleTranslation = {
       items: [
         "بعد إدخال بريدك الإلكتروني، اختر `Carta di credito o debito`.",
         "اكتب اسم صاحب البطاقة ورقمها وتاريخ انتهاء صلاحيتها ورمز CVV.",
-        "اختر مزوّدًا؛ ليس من الضروري أن يكون بنكك.",
+        "اختر مزوّدًا. ليس من الضروري أن يكون بنكك.",
         "تأكد من المبلغ مع العمولة، ثم اضغط على `Paga`.",
         "وافق على الدفع في صفحة بنكك أو تطبيقه (مرحلة 3-D Secure).",
       ],

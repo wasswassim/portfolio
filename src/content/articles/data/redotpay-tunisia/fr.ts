@@ -52,10 +52,10 @@ export const fr: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**Plafonds** : jusqu'à 100 000 USD par opération ; retraits 3 par jour et 30 par mois, jusqu'à 3 750 USD par jour sur une carte en USD (moins dans certains pays) (tableau des frais et plafonds).",
+        "**Plafonds** : jusqu'à 100 000 USD par opération. Retraits 3 par jour et 30 par mois, jusqu'à 3 750 USD par jour sur une carte en USD (moins dans certains pays) (tableau des frais et plafonds).",
         "**KYC** : photo de votre pièce d'identité originale, scan du visage, adresse et 4 ou 5 questions sur votre métier et l'origine des fonds (vérification d'identité).",
         "**Qui garde l'argent** : les soldes sont détenus par Red Dot Trust Ltd, une société fiduciaire de Hong Kong. Les conditions précisent que le compte n'est pas un compte bancaire.",
-        "**Binance Pay** : Binance a mis fin à Binance Pay sur RedotPay le 3 avril 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)) ; une recharge depuis Binance passe donc désormais par un retrait crypto classique vers une adresse de dépôt RedotPay (voir la partie sur la recharge en P2P ci-dessous).",
+        "**Binance Pay** : Binance a mis fin à Binance Pay sur RedotPay le 3 avril 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)). Une recharge depuis Binance passe donc désormais par un retrait crypto classique vers une adresse de dépôt RedotPay (voir la partie sur la recharge en P2P ci-dessous).",
       ],
     },
 
@@ -75,21 +75,21 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "p2p-redotpay-marketplace", text: "Voie 1 : le P2P Marketplace de RedotPay" },
     {
       type: "p",
-      text: "Dans l'application RedotPay, le P2P Marketplace permet d'acheter de l'USDT ou de l'USDC à un autre utilisateur ; les cryptos arrivent directement sur votre solde RedotPay, sans transfert entre applications. Les cryptos du vendeur restent sous séquestre pendant la commande. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges : les précautions habituelles du P2P s'appliquent donc.",
+      text: "Dans l'application RedotPay, le P2P Marketplace permet d'acheter de l'USDT ou de l'USDC à un autre utilisateur. Les cryptos arrivent directement sur votre solde RedotPay, sans transfert entre applications. Les cryptos du vendeur restent sous séquestre pendant la commande. RedotPay indique que son P2P « ne garantit pas le règlement » des échanges : les précautions habituelles du P2P s'appliquent donc.",
     },
     { type: "h3", id: "p2p-binance-deposit", text: "Voie 2 : Binance P2P, puis un dépôt sur RedotPay" },
     {
       type: "p",
-      text: "Achetez de l'USDT ou de l'USDC sur Binance P2P, puis retirez-les de Binance vers votre **adresse de dépôt RedotPay**. Dans RedotPay, ouvrez la page de dépôt et choisissez d'abord le jeton et le réseau ; dans Binance, choisissez exactement **le même jeton et le même réseau** (par exemple de l'USDT sur Tron (TRC20) vers une adresse USDT TRC20). Le réseau prélève des frais de retrait, et une erreur de réseau peut faire perdre les fonds : suivez les étapes de sécurité pour les stablecoins ci-dessous et envoyez d'abord un petit test.",
+      text: "Achetez de l'USDT ou de l'USDC sur Binance P2P, puis retirez-les de Binance vers votre **adresse de dépôt RedotPay**. Dans RedotPay, ouvrez la page de dépôt et choisissez d'abord le jeton et le réseau. Dans Binance, choisissez exactement **le même jeton et le même réseau** (par exemple de l'USDT sur Tron (TRC20) vers une adresse USDT TRC20). Le réseau prélève des frais de retrait, et une erreur de réseau peut faire perdre les fonds : suivez les étapes de sécurité pour les stablecoins ci-dessous et envoyez d'abord un petit test.",
     },
     { type: "h3", id: "p2p-order-steps", text: "Comment se déroule une commande avec séquestre" },
     {
       type: "steps",
       items: [
-        { title: "Choisir une annonce", text: "Dans la zone P2P, vous choisissez le vendeur ; en Express, le système le choisit. Lisez ses conditions et regardez son taux de réussite." },
+        { title: "Choisir une annonce", text: "Dans la zone P2P, vous choisissez le vendeur. En Express, le système le choisit. Lisez ses conditions et regardez son taux de réussite." },
         { title: "Les cryptos sont bloquées", text: "Dès la commande passée, les cryptos du vendeur sont réservées sous séquestre." },
         { title: "Payer hors de l'application", text: "Payez avec le moyen indiqué dans la commande, depuis un compte **à votre nom**, dans le délai prévu (souvent 15 à 45 minutes)." },
-        { title: "Notifier, puis attendre", text: "Appuyez sur « Transféré, notifier le vendeur » seulement après avoir payé. Le vendeur vérifie et libère les cryptos. N'annulez jamais après avoir payé ; utilisez plutôt le bouton Appel ([guide Binance](https://www.binance.com/en/support/faq/detail/360039384951))." },
+        { title: "Notifier, puis attendre", text: "Appuyez sur « Transféré, notifier le vendeur » seulement après avoir payé. Le vendeur vérifie et libère les cryptos. N'annulez jamais après avoir payé. Utilisez plutôt le bouton Appel ([guide Binance](https://www.binance.com/en/support/faq/detail/360039384951))." },
       ],
     },
     { type: "h3", id: "p2p-fees", text: "Les frais et la règle du nom" },
@@ -109,7 +109,7 @@ export const fr: ArticleTranslation = {
       head: ["Arnaque", "Comment la repérer"],
       rows: [
         ["Fausse preuve de paiement", "Vérifiez votre propre application bancaire, jamais une capture d'écran."],
-        ["Faux SMS", "Connectez-vous à votre compte ; un SMS peut être falsifié."],
+        ["Faux SMS", "Connectez-vous à votre compte. Un SMS peut être falsifié."],
         ["Paiement par un tiers", "Le nom du payeur diffère du nom vérifié."],
         ["Intermédiaire caché", "L'échange commence sur Telegram ou WhatsApp."],
         ["Faux support", "Binance n'envoie jamais d'e-mail pour finir une commande P2P."],
@@ -126,13 +126,13 @@ export const fr: ArticleTranslation = {
       caption: "Les deux cartes sur lesquelles les Tunisiens s'interrogent le plus, en octobre 2026.",
       head: ["", "RedotPay", "Carte technologique (CTI)"],
       rows: [
-        ["Qui peut l'ouvrir", "Les citoyens tunisiens ne sont pas exclus ; validation non garantie", "Résidents tunisiens ayant au moins le bac"],
+        ["Qui peut l'ouvrir", "Les citoyens tunisiens ne sont pas exclus. Validation non garantie", "Résidents tunisiens ayant au moins le bac"],
         ["Réseau", "Visa", "Non indiqué sur les pages des émetteurs"],
         ["Frais de carte", "10 USD virtuelle, 100 USD physique, pas de frais mensuels", "Selon l'émetteur (Banque Zitouna : 20 TND par an)"],
         ["Coût de change / conversion", "1,2 % de change + 1 % de conversion", "Taux et frais de votre banque"],
         ["Plafonds", "100 000 USD par opération", "1 000 TND par année civile"],
         ["Alimentation", "Dépôt crypto, carte bancaire (3 %), P2P", "Dinars dans une banque tunisienne ou à La Poste"],
-        ["Statut juridique pour un résident de Tunisie", "Aucun texte d'autorisation ; exposé au code des changes (partie 6)", "Légal, pour les usages listés par la BCT"],
+        ["Statut juridique pour un résident de Tunisie", "Aucun texte d'autorisation. Exposé au code des changes (partie 6)", "Légal, pour les usages listés par la BCT"],
         ["Principaux risques", "Gels, pas de garantie des dépôts, procès", "Liste d'usages autorisés étroite"],
       ],
     },
@@ -228,7 +228,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "warning",
       title: "Risques à connaître avant de déposer",
-      text: "Les conditions permettent à RedotPay de geler ou fermer un compte « à tout moment, sans préavis », et aucune garantie des dépôts n'est mentionnée. Des utilisateurs sur [Trustpilot](https://www.trustpilot.com/review/www.redotpay.com) signalent des fonds bloqués pendant des semaines lors de contrôles sur l'origine des fonds. En août 2026, des filiales de Binance ont poursuivi les cofondateurs de RedotPay à Hong Kong pour environ 472,8 millions USD ; ce ne sont que des allégations, aucune décision n'a été signalée, et RedotPay dit se défendre.",
+      text: "Les conditions permettent à RedotPay de geler ou fermer un compte « à tout moment, sans préavis », et aucune garantie des dépôts n'est mentionnée. Des utilisateurs sur [Trustpilot](https://www.trustpilot.com/review/www.redotpay.com) signalent des fonds bloqués pendant des semaines lors de contrôles sur l'origine des fonds. En août 2026, des filiales de Binance ont poursuivi les cofondateurs de RedotPay à Hong Kong pour environ 472,8 millions USD. Ce ne sont que des allégations, aucune décision n'a été signalée, et RedotPay dit se défendre.",
     },
 
     {
@@ -242,11 +242,11 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Existe-t-il un code promo RedotPay ?",
-          a: "Oui : le code promo j2eb5 donne une récompense de bienvenue de 5 USD sur un nouveau compte RedotPay, comme l'affiche la page d'inscription de RedotPay en octobre 2026. Saisissez le code à l'inscription, car il ne peut pas être ajouté après. La récompense doit être utilisée sous 30 jours et ne paie pas les frais de carte ; les frais, plafonds et formules sont les mêmes qu'une inscription normale.",
+          a: "Oui : le code promo j2eb5 donne une récompense de bienvenue de 5 USD sur un nouveau compte RedotPay, comme l'affiche la page d'inscription de RedotPay en octobre 2026. Saisissez le code à l'inscription, car il ne peut pas être ajouté après. La récompense doit être utilisée sous 30 jours et ne paie pas les frais de carte. Les frais, plafonds et formules sont les mêmes qu'une inscription normale.",
         },
         {
           q: "Combien coûte la carte RedotPay ?",
-          a: "La carte virtuelle RedotPay coûte 10 USD et la carte physique 100 USD, sans frais mensuels ni annuels. Un paiement dans une autre devise ajoute 1,2 %, et la conversion des cryptos pour payer ajoute 1 %. RedotPay publie les frais et plafonds à jour dans le tableau des frais et plafonds de son centre d'aide ; ils changent avec le temps, vérifiez-les avant de commander une carte.",
+          a: "La carte virtuelle RedotPay coûte 10 USD et la carte physique 100 USD, sans frais mensuels ni annuels. Un paiement dans une autre devise ajoute 1,2 %, et la conversion des cryptos pour payer ajoute 1 %. RedotPay publie les frais et plafonds à jour dans le tableau des frais et plafonds de son centre d'aide. Ils changent avec le temps, vérifiez-les avant de commander une carte.",
         },
         {
           q: "Comment recharger RedotPay avec des USDT achetés sur Binance ?",
@@ -291,17 +291,17 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026. Les frais, pays acceptés et réseaux changent ; vérifiez dans les applications RedotPay et Binance avant tout envoi. Le code des changes tunisien pourrait être réformé : surveillez l'adoption du projet de loi 115/2025.",
+      text: "Dernière vérification : octobre 2026. Les frais, pays acceptés et réseaux changent. Vérifiez dans les applications RedotPay et Binance avant tout envoi. Le code des changes tunisien pourrait être réformé : surveillez l'adoption du projet de loi 115/2025.",
     },
   ],
   guide: [
     {
       type: "keyFacts",
       items: [
-        { label: "Carte RedotPay", value: "Visa ; 10 USD virtuelle, 100 USD physique, sans frais mensuels" },
+        { label: "Carte RedotPay", value: "Visa. 10 USD virtuelle, 100 USD physique, sans frais mensuels" },
         { label: "Coût d'un paiement en euros", value: "1,2 % de change + 1 % de conversion crypto" },
         { label: "Recharge", value: "Dépôt crypto, carte bancaire (3 %) ou P2P (RedotPay ou Binance)" },
-        { label: "Résidents de Tunisie", value: "Aucun texte n'autorise les cryptos ; exposition juridique" },
+        { label: "Résidents de Tunisie", value: "Aucun texte n'autorise les cryptos. Exposition juridique" },
       ],
     },
     { type: "h2", id: "payment-path", text: "Le parcours des paiements en bref" },

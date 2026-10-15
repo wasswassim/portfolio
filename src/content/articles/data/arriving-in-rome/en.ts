@@ -101,7 +101,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-questura", text: "Step 4: go to the Questura for fingerprints" },
     {
       type: "p",
-      text: "At the post office you also receive a convocation letter with your appointment at the Questura, where your fingerprints are taken. Check the status of your permit on the [Polizia di Stato permit portal](https://questure.poliziadistato.it/stranieri/) with your receipt details. The Polizia di Stato gives about 60 days for processing; Sapienza warns it can take about 90.",
+      text: "At the post office you also receive a convocation letter with your appointment at the Questura, where your fingerprints are taken. Check the status of your permit on the [Polizia di Stato permit portal](https://questure.poliziadistato.it/stranieri/) with your receipt details. The Polizia di Stato gives about 60 days for processing. Sapienza warns it can take about 90.",
     },
     {
       type: "figure",
@@ -195,12 +195,12 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "If the ISEEUP is done correctly, the first payments follow; see [when DiSCo pays the scholarship](article:lazio-disco-scholarship#payments).",
+      text: "If the ISEEUP is done correctly, the first payments follow. See [when DiSCo pays the scholarship](article:lazio-disco-scholarship#payments).",
     },
     { type: "h3", id: "health-cover", text: "Choose your health cover" },
     {
       type: "p",
-      text: "You do not have to register with the national health service (SSN), which costs about EUR 700 a year ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)): private health insurance valid in Italy for the whole length of your permit is accepted instead. In my experience, a health insurance policy taken in Tunisia, for example through your Tunisian bank when you open your study file, replaces the EUR 700 SSN registration; check that it covers Italy for the whole permit period. Check the current SSN amount with your ASL or university.",
+      text: "You do not have to register with the national health service (SSN), which costs about EUR 700 a year ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)): private health insurance valid in Italy for the whole length of your permit is accepted instead. In my experience, a health insurance policy taken in Tunisia, for example through your Tunisian bank when you open your study file, replaces the EUR 700 SSN registration. Check that it covers Italy for the whole permit period. Check the current SSN amount with your ASL or university.",
     },
     {
       type: "fees",
@@ -234,7 +234,7 @@ export const en: ArticleTranslation = {
         ["Postepay Evolution", "EUR 5 + EUR 19 a year (confirmed)", "Gives you an IBAN for DiSCo and rent."],
         ["Public transport pass", "EUR 35 a month or EUR 250 a year (confirmed)", "Check student offers on the ATAC website."],
         ["SIM card and first month", "Check current prices", "Compare offers before you buy."],
-        ["Food for the month", "Check current prices", "Cook at home; DiSCo meals start only once the grant is assigned."],
+        ["Food for the month", "Check current prices", "Cook at home. DiSCo meals start only once the grant is assigned."],
         ["Room: first rent and deposit", "Check current prices", "Budget the first rent and the deposit together."],
         ["Emergency reserve", "10 to 15% of the allowance", "Do not touch it unless you have to."],
       ],
@@ -246,7 +246,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Buy second-hand on [Subito](https://www.subito.it): furniture, a bike, books. And never pay a room deposit before you have seen the room; read [how to avoid student housing scams in Rome](article:student-housing-rome#avoid-scams).",
+      text: "Buy second-hand on [Subito](https://www.subito.it): furniture, a bike, books. And never pay a room deposit before you have seen the room. Read [how to avoid student housing scams in Rome](article:student-housing-rome#avoid-scams).",
     },
 
     { type: "h2", id: "student-work", text: "7. Can you work with a student residence permit in Italy?" },
@@ -328,7 +328,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026. Amounts are those published in 2026; DiSCo dates are projected for 2027/28 and must be confirmed in the new call. Check the official pages before you pay or travel.",
+      text: "Last verified: October 2026. Amounts are those published in 2026. DiSCo dates are projected for 2027/28 and must be confirmed in the new call. Check the official pages before you pay or travel.",
     },
   ],
   guide: [

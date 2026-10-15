@@ -39,8 +39,8 @@ export const REFERRALS = {
       ar: "تعرض صفحة التسجيل في RedotPay مكافأة ترحيبية بقيمة 5 USD للمستخدمين الجدد. يجب استعمالها خلال 30 يومًا ولا يمكن دفع معلوم البطاقة بها. لا يمكن إدخال الرمز إلا عند التسجيل.",
     },
     benefits: {
-      en: ["A 5 USD welcome reward on your new account (to use within 30 days; it cannot pay the card fee).", "The promo code j2eb5 is filled in for you: it can only be added when you register, not later.", "Same fees, limits and plans as a normal sign-up.", "It supports these free guides, at no extra cost to you."],
-      fr: ["Une récompense de bienvenue de 5 USD sur votre nouveau compte (à utiliser sous 30 jours ; elle ne paie pas les frais de carte).", "Le code promo j2eb5 est rempli pour vous : il ne peut être ajouté qu'à l'inscription, pas après.", "Mêmes frais, plafonds et formules qu'une inscription normale.", "Cela soutient ces guides gratuits, sans coût supplémentaire pour vous."],
+      en: ["A 5 USD welcome reward on your new account (to use within 30 days, it cannot pay the card fee).", "The promo code j2eb5 is filled in for you: it can only be added when you register, not later.", "Same fees, limits and plans as a normal sign-up.", "It supports these free guides, at no extra cost to you."],
+      fr: ["Une récompense de bienvenue de 5 USD sur votre nouveau compte (à utiliser sous 30 jours, elle ne paie pas les frais de carte).", "Le code promo j2eb5 est rempli pour vous : il ne peut être ajouté qu'à l'inscription, pas après.", "Mêmes frais, plafonds et formules qu'une inscription normale.", "Cela soutient ces guides gratuits, sans coût supplémentaire pour vous."],
       ar: ["مكافأة ترحيبية بقيمة 5 USD في حسابك الجديد (تُستعمل خلال 30 يومًا ولا تغطي معلوم البطاقة).", "الرمز الترويجي j2eb5 يُدرج تلقائيًا: لا يمكن إضافته إلا عند التسجيل، وليس بعده.", "نفس الرسوم والسقوف والباقات كالتسجيل العادي.", "يدعم ذلك هذه الأدلة المجانية دون أي تكلفة إضافية عليك."],
     },
     termsUrl: "https://helpcenter.redotpay.com/en/articles/10339296-invite-friends-and-earn-rewards",

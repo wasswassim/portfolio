@@ -11,7 +11,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["bourse DiSCo Lazio pour les étudiants tunisiens", "bourse DiSCo Lazio 2027/28", "bourse d'études en Italie", "bourse DiSCo Rome", "ISEEUP", "ISEE parificato"],
   summary:
-    "La bourse DiSCo Lazio pour les étudiants tunisiens verse à un étudiant hors site inscrit dans une université de Rome ou ailleurs dans le Latium 6 571,11 EUR par an en argent, ou 7 556,78 EUR pour les revenus familiaux les plus bas, plus deux repas gratuits par jour (valeurs 2026/27 ; les suppléments et la retenue logement modifient le montant final) ; en première année, le classement se fait uniquement sur les données économiques de la famille. Pour 2027/28, vous postulez en ligne vers juin-juillet 2027 sans SPID, vous préparez à l'avance vos documents familiaux en Tunisie, puis vous signez l'ISEEUP dans un CAF partenaire de DiSCo après votre arrivée.",
+    "La bourse DiSCo Lazio pour les étudiants tunisiens verse à un étudiant hors site inscrit dans une université de Rome ou ailleurs dans le Latium 6 571,11 EUR par an en argent, ou 7 556,78 EUR pour les revenus familiaux les plus bas, plus deux repas gratuits par jour (valeurs 2026/27, les suppléments et la retenue logement modifient le montant final). En première année, le classement se fait uniquement sur les données économiques de la famille. Pour 2027/28, vous postulez en ligne vers juin-juillet 2027 sans SPID, vous préparez à l'avance vos documents familiaux en Tunisie, puis vous signez l'ISEEUP dans un CAF partenaire de DiSCo après votre arrivée.",
   body: [
     {
       type: "callout",
@@ -73,7 +73,7 @@ export const fr: ArticleTranslation = {
     {
       type: "fees",
       title: "Ce que vous payez quand même pour vous inscrire, même boursier DiSCo",
-      text: "Les boursiers paient quand même la taxe régionale du Latium et le timbre fiscal. Le guide 2026/27 de Tor Vergata précise que si ce paiement n'est pas validé, vous n'êtes pas inscrit et vous perdez les avantages DiSCo ; vérifiez les règles de votre université.",
+      text: "Les boursiers paient quand même la taxe régionale du Latium et le timbre fiscal. Le guide 2026/27 de Tor Vergata précise que si ce paiement n'est pas validé, vous n'êtes pas inscrit et vous perdez les avantages DiSCo. Vérifiez les règles de votre université.",
       feeIds: ["lazio-regional-tax", "uni-stamp"],
       total: true,
       tnd: true,
@@ -167,14 +167,14 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "iseeup", text: "6. Comment obtenir votre ISEEUP dans un CAF partenaire ?" },
     {
       type: "p",
-      text: "Vous obtenez votre ISEEUP en le signant dans un CAF partenaire de DiSCo Lazio après votre arrivée à Rome ; le service est gratuit et vous apportez votre passeport et vos documents familiaux traduits et apostillés. L'ISEEUP (aussi appelé ISEE parificato) est l'indicateur économique des étudiants dont les revenus et le patrimoine sont à l'étranger :",
+      text: "Vous obtenez votre ISEEUP en le signant dans un CAF partenaire de DiSCo Lazio après votre arrivée à Rome. Le service est gratuit et vous apportez votre passeport et vos documents familiaux traduits et apostillés. L'ISEEUP (aussi appelé ISEE parificato) est l'indicateur économique des étudiants dont les revenus et le patrimoine sont à l'étranger :",
     },
     {
       type: "ul",
       items: [
         "Prenez rendez-vous dans un CAF de la [liste des CAF partenaires de DiSCo](https://laziodisco.it/wp-content/uploads/2025/06/CAF-convenzionati-nel-Lazio-1.pdf). Le service est gratuit.",
         "Apportez votre passeport et vos documents familiaux traduits et apostillés. Le CAF fait aussi la vérification d'identité.",
-        "Signez l'ISEEUP vers le **10 décembre** au plus tard (date prévue pour 2027 ; à vérifier dans l'appel).",
+        "Signez l'ISEEUP vers le **10 décembre** au plus tard (date prévue pour 2027, à vérifier dans l'appel).",
       ],
     },
     {
@@ -201,7 +201,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Le permis et les deux versements (mon expérience)",
-      text: "D'après mon expérience et celle d'autres étudiants, le premier versement arrive une fois que vous avez déposé le **récépissé (ricevuta)** du permis de séjour dans votre profil DiSCo Lazio, tandis que le second exige la **carte de séjour** elle-même. Si votre carte n'est pas arrivée et que le second versement n'est pas payé, pas de panique : vous n'êtes pas exclu. Soyez patient ; une fois la carte reçue et déposée, le versement arrive lors de l'une des prochaines périodes de paiement annoncées par DiSCo Lazio. Vérifiez les conditions officielles dans l'appel en cours.",
+      text: "D'après mon expérience et celle d'autres étudiants, le premier versement arrive une fois que vous avez déposé le **récépissé (ricevuta)** du permis de séjour dans votre profil DiSCo Lazio, tandis que le second exige la **carte de séjour** elle-même. Si votre carte n'est pas arrivée et que le second versement n'est pas payé, pas de panique : vous n'êtes pas exclu. Soyez patient. Une fois la carte reçue et déposée, le versement arrive lors de l'une des prochaines périodes de paiement annoncées par DiSCo Lazio. Vérifiez les conditions officielles dans l'appel en cours.",
     },
     {
       type: "p",
@@ -215,7 +215,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "keep-the-grant", text: "8. Combien de crédits faut-il pour garder la bourse DiSCo ?" },
     {
       type: "p",
-      text: "En première année de licence, de cycle unique ou de master, vous devez obtenir **20 crédits avant le 10 août** pour garder la bourse DiSCo Lazio (appel 2026/27 ; en doctorat, la bourse est confirmée à l'admission en deuxième année). Si vous n'atteignez les 20 crédits qu'au 30 novembre, DiSCo Lazio réduit la bourse de 50 %. Si vous les manquez encore, la bourse est révoquée et vous devez rembourser ce que vous avez reçu. Les années suivantes ont leurs propres exigences de crédits dans l'appel.",
+      text: "En première année de licence, de cycle unique ou de master, vous devez obtenir **20 crédits avant le 10 août** pour garder la bourse DiSCo Lazio (appel 2026/27, en doctorat, la bourse est confirmée à l'admission en deuxième année). Si vous n'atteignez les 20 crédits qu'au 30 novembre, DiSCo Lazio réduit la bourse de 50 %. Si vous les manquez encore, la bourse est révoquée et vous devez rembourser ce que vous avez reçu. Les années suivantes ont leurs propres exigences de crédits dans l'appel.",
     },
 
     {

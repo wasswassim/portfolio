@@ -11,7 +11,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["student jobs in Rome", "part-time job Rome student", "student permit work hours Italy", "Subito lavoro Roma", "temp agencies Rome", "150 ore Sapienza"],
   summary:
-    "The easiest way to find a student job in Rome is a free job-seeker ad on Subito, because most student jobs in Rome are in cafés and restaurants; Indeed, temp agencies (which cannot charge workers) and university 150-ore collaborations paying EUR 1,295 for 150 hours at Sapienza come next. On an Italian study permit you can work as an employee for up to 20 hours a week and 1,040 hours a year with a declared contract, and the 20 hours are a weekly ceiling, not an average (verified October 2026).",
+    "The easiest way to find a student job in Rome is a free job-seeker ad on Subito, because most student jobs in Rome are in cafés and restaurants. Indeed, temp agencies (which cannot charge workers) and university 150-ore collaborations paying EUR 1,295 for 150 hours at Sapienza come next. On an Italian study permit you can work as an employee for up to 20 hours a week and 1,040 hours a year with a declared contract, and the 20 hours are a weekly ceiling, not an average (verified October 2026).",
   body: [
     {
       type: "callout",
@@ -76,7 +76,7 @@ export const en: ArticleTranslation = {
         "**Languages**: Arabic, French and English, plus your honest Italian level.",
         "**Availability**: the days and times you can work, within 20 hours a week.",
         "**Area**: the neighbourhood you live in and how far you can travel.",
-        "**Photo**: optional; a clear, friendly one can help.",
+        "**Photo**: optional. A clear, friendly one can help.",
         "**Contact**: ask employers to write to you through the app chat.",
       ],
     },
@@ -87,7 +87,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Of course, a few things come first. You need an **Italian SIM card**, because Subito verifies your account by SMS and does not accept +216 numbers; an **IBAN** for your salary ([how to open a bank account in Italy as a student](article:bank-account-italy-student)); and your **codice fiscale** ([how to get your codice fiscale in Italy](article:arriving-in-rome#codice-fiscale)). Your **residenza** is a nice-to-have, not a must, since not every student plans to stay in Italy for good, but it makes some local procedures easier ([how to register your residenza in Rome](article:residenza-rome)).",
+      text: "Of course, a few things come first. You need an **Italian SIM card**, because Subito verifies your account by SMS and does not accept +216 numbers. An **IBAN** for your salary ([how to open a bank account in Italy as a student](article:bank-account-italy-student)). And your **codice fiscale** ([how to get your codice fiscale in Italy](article:arriving-in-rome#codice-fiscale)). Your **residenza** is a nice-to-have, not a must, since not every student plans to stay in Italy for good, but it makes some local procedures easier ([how to register your residenza in Rome](article:residenza-rome)).",
     },
     {
       type: "callout",
@@ -111,9 +111,9 @@ export const en: ArticleTranslation = {
       head: ["Type", "What it is", "Watch out"],
       rows: [
         ["Part-time employment contract", "The standard route: a declared contract with fixed weekly hours", "No more than 20 hours a week in the contract"],
-        ["Occasional work (PrestO)", "Short INPS-managed jobs, capped at EUR 5,000 a year per worker", "No official source says whether these hours count toward the 20; ask the employer or a patronato"],
-        ["On-call contract (contratto a chiamata)", "Called in when needed; for people under 24 (work ending by age 25) or over 55, or for jobs listed in collective agreements", "Your weekly 20-hour cap still applies"],
-        ["University 150-ore collaboration", "Paid campus work, not an employment contract", "One per academic year; see section 5"],
+        ["Occasional work (PrestO)", "Short INPS-managed jobs, capped at EUR 5,000 a year per worker", "No official source says whether these hours count toward the 20. Ask the employer or a patronato"],
+        ["On-call contract (contratto a chiamata)", "Called in when needed. For people under 24 (work ending by age 25) or over 55, or for jobs listed in collective agreements", "Your weekly 20-hour cap still applies"],
+        ["University 150-ore collaboration", "Paid campus work, not an employment contract", "One per academic year. See section 5"],
       ],
     },
     { type: "h3", id: "exams-and-renewal", text: "Keep your exams on track" },
@@ -125,7 +125,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "indeed", text: "3. How do you apply for student jobs in Rome on Indeed?" },
     {
       type: "p",
-      text: "To apply for student jobs in Rome on Indeed, search [it.indeed.com](https://it.indeed.com) for “part time studenti” with Roma as the location, then apply with your CV. Upload your CV or build one on Indeed ([upload a CV](https://support.indeed.com/hc/en-us/articles/4408783727629-Uploading-a-Resume-File-to-Your-Profile)); some jobs let you apply directly with **Indeed Apply**, others send you to the employer's site. Set a **job alert** so new offers reach your inbox ([job alerts](https://support.indeed.com/hc/en-us/articles/204488890-Starting-Stopping-and-Managing-Job-Alerts)).",
+      text: "To apply for student jobs in Rome on Indeed, search [it.indeed.com](https://it.indeed.com) for “part time studenti” with Roma as the location, then apply with your CV. Upload your CV or build one on Indeed ([upload a CV](https://support.indeed.com/hc/en-us/articles/4408783727629-Uploading-a-Resume-File-to-Your-Profile)). Some jobs let you apply directly with **Indeed Apply**, others send you to the employer's site. Set a **job alert** so new offers reach your inbox ([job alerts](https://support.indeed.com/hc/en-us/articles/204488890-Starting-Stopping-and-Managing-Job-Alerts)).",
     },
     {
       type: "callout",
@@ -178,7 +178,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "If you hold a Lazio DiSCo scholarship, the DiSCo call says the scholarship is **compatible** with 150-ore collaborations; see [how the Lazio DiSCo scholarship works for Tunisian students](article:lazio-disco-scholarship).",
+      text: "If you hold a Lazio DiSCo scholarship, the DiSCo call says the scholarship is **compatible** with 150-ore collaborations. See [how the Lazio DiSCo scholarship works for Tunisian students](article:lazio-disco-scholarship).",
     },
     {
       type: "ul",
@@ -271,7 +271,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026. The 150-ore figures come from Sapienza's 2025/26 call; check the new call each autumn. Subito and Indeed can change their rules at any time.",
+      text: "Last verified: October 2026. The 150-ore figures come from Sapienza's 2025/26 call. Check the new call each autumn. Subito and Indeed can change their rules at any time.",
     },
   ],
   guide: [

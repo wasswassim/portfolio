@@ -14,7 +14,7 @@ export const AUTHOR = {
   jobTitle: "Web Designer & Digital Marketer",
   description:
     "Tunisian web designer and digital marketer based in Tunisia and Italy, studying for a Master's in Digital Marketing at LUMSA University in Rome. Writes practical guides, based on official sources, for Tunisians who study, work and settle in Italy.",
-  knowsAbout: ["Web design", "Digital marketing", "SEO", "Studying in Italy", "Working in Italy", "Moving from Tunisia to Italy"],
+  knowsAbout: ["Web design", "Digital marketing", "SEO", "Agentic engineering", "Studying in Italy", "Working in Italy", "Moving from Tunisia to Italy"],
   knowsLanguage: ["ar", "fr", "en", "it"],
 };
 

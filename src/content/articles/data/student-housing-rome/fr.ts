@@ -97,10 +97,10 @@ export const fr: ArticleTranslation = {
       caption: "Où chercher une chambre à Rome, et à quoi faire attention.",
       head: ["Option", "Idéal pour", "Attention"],
       rows: [
-        ["Résidence DiSCo", "Le coût le plus bas, si vous obtenez la bourse", "Uniquement via l'appel annuel ; pas une preuve pour le visa"],
+        ["Résidence DiSCo", "Le coût le plus bas, si vous obtenez la bourse", "Uniquement via l'appel annuel. Pas une preuve pour le visa"],
         ["Service logement de l'université", "Conseils et contacts fiables", "Aide à la recherche, pas une chambre garantie"],
         ["[HousingAnywhere](https://housinganywhere.com), [Uniplaces](https://www.uniplaces.com), [Spotahome](https://www.spotahome.com)", "Réserver depuis la Tunisie avant d'arriver", "Lisez les conditions d'annulation et les frais du site"],
-        ["[Immobiliare.it](https://www.immobiliare.it), [Idealista](https://www.idealista.it)", "Beaucoup d'annonces, chambres et appartements", "Surtout en italien ; vérifiez qui publie l'annonce"],
+        ["[Immobiliare.it](https://www.immobiliare.it), [Idealista](https://www.idealista.it)", "Beaucoup d'annonces, chambres et appartements", "Surtout en italien. Vérifiez qui publie l'annonce"],
         ["[Subito](https://www.subito.it)", "Chambres de propriétaires privés", "Les arnaques sont fréquentes sur les petites annonces : ne payez jamais avant de voir"],
       ],
     },
@@ -120,7 +120,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Un nouveau bail doit être [enregistré auprès de l'Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) dans les 30 jours. Le propriétaire comme le locataire peuvent l'enregistrer, et les deux sont solidairement responsables de la taxe ; en général c'est le propriétaire qui le fait, alors demandez une preuve d'enregistrement et gardez-en une copie. Pour signer, on peut vous demander un codice fiscale : vous pouvez l'obtenir dans n'importe quel bureau de l'Agenzia delle Entrate (voir [comment obtenir votre codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+      text: "Un nouveau bail doit être [enregistré auprès de l'Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) dans les 30 jours. Le propriétaire comme le locataire peuvent l'enregistrer, et les deux sont solidairement responsables de la taxe. En général c'est le propriétaire qui le fait, alors demandez une preuve d'enregistrement et gardez-en une copie. Pour signer, on peut vous demander un codice fiscale : vous pouvez l'obtenir dans n'importe quel bureau de l'Agenzia delle Entrate (voir [comment obtenir votre codice fiscale](article:arriving-in-rome#codice-fiscale)).",
     },
     {
       type: "fees",
@@ -171,7 +171,7 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Peut-on demander une résidence DiSCo sans la bourse ?",
-          a: "Non. DiSCo Lazio n'a pas de demande de logement séparée : la place en résidence se demande dans la même candidature DiSCo en ligne que la bourse, avec les mêmes conditions de revenus et les mêmes délais. Pour 2027/28, la candidature DiSCo est attendue vers juin-juillet 2027, avec un classement logement vers la mi-septembre ; vérifiez les dates dans l'appel 2027/28.",
+          a: "Non. DiSCo Lazio n'a pas de demande de logement séparée : la place en résidence se demande dans la même candidature DiSCo en ligne que la bourse, avec les mêmes conditions de revenus et les mêmes délais. Pour 2027/28, la candidature DiSCo est attendue vers juin-juillet 2027, avec un classement logement vers la mi-septembre. Vérifiez les dates dans l'appel 2027/28.",
         },
         {
           q: "Faut-il un codice fiscale pour louer une chambre à Rome ?",
@@ -214,7 +214,7 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Résidence DiSCo", value: "Environ 200 à 298 EUR/mois en 2026/27, retenus sur la bourse" },
         { label: "Comment la demander", value: "Uniquement dans la candidature DiSCo annuelle" },
-        { label: "Enregistrement du bail", value: "Dans les 30 jours, par l'une ou l'autre partie ; demandez la preuve" },
+        { label: "Enregistrement du bail", value: "Dans les 30 jours, par l'une ou l'autre partie. Demandez la preuve" },
         { label: "Règle d'or", value: "Ne jamais payer avant d'avoir vu la chambre" },
       ],
     },

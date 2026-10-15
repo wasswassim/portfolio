@@ -13,7 +13,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["pay Italian university fees from Tunisia", "pay Italian tuition from Tunisia", "pay enrolment fees in Italy from Tunisia", "international card Tunisia", "pay in euros from Tunisia", "transfer university fees abroad from Tunisia"],
   summary:
-    "In 2026, the safest legal way to pay Italian university fees from Tunisia is a bank transfer: exam and application fees against an invoice, tuition through your study file at one bank. For smaller online payments, the technology card (1,000 TND a year) can work, and PayPal on pagoPA with a linked RedotPay card is the final solution when a Tunisian card is refused; read the crypto-card warnings first.",
+    "In 2026, the safest legal way to pay Italian university fees from Tunisia is a bank transfer: exam and application fees against an invoice, tuition through your study file at one bank. For smaller online payments, the technology card (1,000 TND a year) can work, and PayPal on pagoPA with a linked RedotPay card is the final solution when a Tunisian card is refused. Read the crypto-card warnings first.",
   body: [
     {
       type: "callout",
@@ -34,16 +34,16 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "which-method", text: "1. Which payment method fits which Italian fee?" },
     {
       type: "p",
-      text: "A bank transfer fits application, exam and tuition fees; the technology card and PayPal fit only small online amounts, such as the regional tax and the revenue stamp on a pagoPA notice.",
+      text: "A bank transfer fits application, exam and tuition fees. The technology card and PayPal fit only small online amounts, such as the regional tax and the revenue stamp on a pagoPA notice.",
     },
     {
       type: "table",
       caption: "Italian fees and the methods that can work from Tunisia (checked October 2026).",
       head: ["Fee", "How it is collected", "What can work from Tunisia"],
       rows: [
-        ["Application, CIMEA and entrance-test fees", "Online, on the university or CIMEA portal", "Bank transfer against the invoice; technology card or PayPal for small amounts (ask your bank)"],
+        ["Application, CIMEA and entrance-test fees", "Online, on the university or CIMEA portal", "Bank transfer against the invoice. Technology card or PayPal for small amounts (ask your bank)"],
         ["Tuition instalments", "pagoPA notice or university invoice", "Bank transfer under your study file"],
-        ["Regional tax and revenue stamp", "pagoPA notice with the first instalment", "Card or PayPal on pagoPA; cash at a tabaccheria or an Italian card once you arrive"],
+        ["Regional tax and revenue stamp", "pagoPA notice with the first instalment", "Card or PayPal on pagoPA. Cash at a tabaccheria or an Italian card once you arrive"],
         ["Residence permit kit", "At an Italian post office, after arrival", "Paid in Italy, see [residence permit costs in Rome](article:arriving-in-rome#residence-permit)"],
       ],
     },
@@ -104,7 +104,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "tip",
       title: "Ask before you rely on it",
-      text: "Many Italian universities issue pagoPA notices rather than a plain bank account number. In my experience, study agencies in Tunisia pay these notices for students as a normal service, and you can also pay one yourself by card, with PayPal or in cash at a tabaccheria once you are in Italy; ask your bank whether it can pay a notice by transfer.",
+      text: "Many Italian universities issue pagoPA notices rather than a plain bank account number. In my experience, study agencies in Tunisia pay these notices for students as a normal service, and you can also pay one yourself by card, with PayPal or in cash at a tabaccheria once you are in Italy. Ask your bank whether it can pay a notice by transfer.",
     },
 
     { type: "h2", id: "technology-card", text: "3. Option 2: can the technology card (CTI) pay Italian fees?" },
@@ -133,7 +133,7 @@ export const en: ArticleTranslation = {
       width: 1600,
       height: 400,
       alt: "PayPal logo",
-      caption: "PayPal is a trademark of PayPal, Inc.; the logo is shown only to identify the service.",
+      caption: "PayPal is a trademark of PayPal, Inc.. The logo is shown only to identify the service.",
       credit: {
         text: "Logo: PayPal, Public domain, via Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
@@ -289,7 +289,7 @@ export const en: ArticleTranslation = {
       items: [
         { label: "Safest route", value: "Bank transfer: fees against an invoice, tuition through your study file" },
         { label: "Technology card", value: "1,000 TND per calendar year (about EUR 297)" },
-        { label: "PayPal on pagoPA", value: "EUR 1.50 to EUR 2.50 fee; pay in full" },
+        { label: "PayPal on pagoPA", value: "EUR 1.50 to EUR 2.50 fee. Pay in full" },
         { label: "Crypto", value: "No Tunisian text authorises it" },
       ],
     },

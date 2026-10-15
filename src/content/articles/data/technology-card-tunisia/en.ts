@@ -71,17 +71,17 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "issuers", text: "3. Which banks and La Poste offices issue the CTI?" },
     {
       type: "p",
-      text: "Banque Zitouna, BTK Bank, Banque de Tunisie and La Poste Tunisienne publish official pages for the CTI; other banks also issue the card, often without a product page online, and each issuer sets its own fees and merchant filters.",
+      text: "Banque Zitouna, BTK Bank, Banque de Tunisie and La Poste Tunisienne publish official pages for the CTI. Other banks also issue the card, often without a product page online, and each issuer sets its own fees and merchant filters.",
     },
     {
       type: "table",
       caption: "What issuers publish about the CTI (pages checked 10 October 2026). Fees not shown here could not be verified: ask your bank.",
       head: ["Issuer", "What to know", "Yearly fee"],
       rows: [
-        ["Banque Zitouna", "Also asks that you work in new technologies or a related field; online payments limited to app-store licences, filtered by merchant code", "20 TND"],
+        ["Banque Zitouna", "Also asks that you work in new technologies or a related field. Online payments limited to app-store licences, filtered by merchant code", "20 TND"],
         ["BTK Bank", "Prepaid card, reloadable up to the yearly limit", "Ask your bank"],
         ["Banque de Tunisie", "Internet use only, allowance usable over the calendar year", "Ask your bank"],
-        ["La Poste Tunisienne", "Needs an active postal account (CCP); ready in about 24 hours; managed on e-dinar", "Renewal 3 TND; issue fee not listed"],
+        ["La Poste Tunisienne", "Needs an active postal account (CCP). Ready in about 24 hours. Managed on e-dinar", "Renewal 3 TND. Issue fee not listed"],
         ["Other banks", "No current official product page found", "Ask your bank"],
       ],
     },
@@ -191,7 +191,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "Which route fits each fee (our reading of the BCT texts; confirm with your bank).",
+      caption: "Which route fits each fee (our reading of the BCT texts, confirm with your bank).",
       head: ["Fee", "On the CTI?", "Clearer legal route"],
       rows: [
         ["Sapienza application fee", "Grey zone", "Bank transfer with the invoice (application file fees)"],
@@ -215,7 +215,7 @@ export const en: ArticleTranslation = {
       width: 1600,
       height: 400,
       alt: "PayPal logo",
-      caption: "PayPal is a trademark of PayPal, Inc.; the logo is shown only to identify the service.",
+      caption: "PayPal is a trademark of PayPal, Inc.. The logo is shown only to identify the service.",
       credit: {
         text: "Logo: PayPal, Public domain, via Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
@@ -234,8 +234,8 @@ export const en: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "If that return is not ready yet, the return for the year before is accepted, and the current one must reach the bank **by 15 July**; otherwise the bank suspends the allowance.",
-        "At La Poste, bring the expired card, your CIN and the tax receipt (quittance de déclaration des impôts); renewal costs 3 TND ([idaraty.tn](https://idaraty.tn/fr/procedures/renouvellement-de-la-carte-technologique-internationale-la-poste-personne-physique)).",
+        "If that return is not ready yet, the return for the year before is accepted, and the current one must reach the bank **by 15 July**. Otherwise the bank suspends the allowance.",
+        "At La Poste, bring the expired card, your CIN and the tax receipt (quittance de déclaration des impôts). Renewal costs 3 TND ([idaraty.tn](https://idaraty.tn/fr/procedures/renouvellement-de-la-carte-technologique-internationale-la-poste-personne-physique)).",
         "The La Poste card itself is extended for 5 years, but you must reactivate it at a post office.",
       ],
     },

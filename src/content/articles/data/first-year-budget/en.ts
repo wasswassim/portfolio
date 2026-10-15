@@ -111,7 +111,7 @@ export const en: ArticleTranslation = {
     { type: "fees", feeIds: ["visa-blocked-amount"], tnd: true },
     {
       type: "p",
-      text: "Food and personal spending are not in this budget because there is no official figure for them; the monthly release of the blocked amount is the benchmark to plan with. See [how the blocked account works with a Tunisian bank](article:italy-student-visa).",
+      text: "Food and personal spending are not in this budget because there is no official figure for them. The monthly release of the blocked amount is the benchmark to plan with. See [how the blocked account works with a Tunisian bank](article:italy-student-visa).",
     },
 
     { type: "h2", id: "money-transfers", text: "8. How much money can you send from Tunisia?" },
@@ -125,7 +125,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "disco-scholarship", text: "9. How much of this can the DiSCo scholarship cover?" },
     {
       type: "p",
-      text: `A DiSCo Lazio scholarship pays an out-of-town student ${eur(L, B.discoBase)} a year in 2026/27, and up to ${eur(L, B.discoMax)} for the lowest incomes, plus meals. That covers a large part of the first-year budget; a DiSCo residence place is then deducted from it.`,
+      text: `A DiSCo Lazio scholarship pays an out-of-town student ${eur(L, B.discoBase)} a year in 2026/27, and up to ${eur(L, B.discoMax)} for the lowest incomes, plus meals. That covers a large part of the first-year budget. A DiSCo residence place is then deducted from it.`,
     },
     { type: "fees", title: "DiSCo Lazio scholarship 2026/27", feeIds: ["disco-base", "disco-max", "disco-meals"] },
     { type: "p", text: "Eligibility and the documents are in [the Lazio DiSCo scholarship for Tunisian students](article:lazio-disco-scholarship)." },
@@ -178,7 +178,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026, for the 2026/27 academic year. Fees and the blocked amount change every year; check each official page before you pay.",
+      text: "Last verified: October 2026, for the 2026/27 academic year. Fees and the blocked amount change every year. Check each official page before you pay.",
     },
   ],
   guide: [

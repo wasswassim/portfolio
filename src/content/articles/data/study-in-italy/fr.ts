@@ -96,11 +96,11 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "calendar", text: "4. Calendrier des dates limites 2027/28" },
     {
       type: "p",
-      text: "Le calendrier 2027/28 des étudiants tunisiens va d'octobre 2026, quand les candidatures LUISS ouvrent, au **31 octobre 2027**, date limite pour demander le visa d'études ; le permis de séjour et l'ISEEUP de DiSCo suivent après l'arrivée.",
+      text: "Le calendrier 2027/28 des étudiants tunisiens va d'octobre 2026, quand les candidatures LUISS ouvrent, au **31 octobre 2027**, date limite pour demander le visa d'études. Le permis de séjour et l'ISEEUP de DiSCo suivent après l'arrivée.",
     },
     {
       type: "table",
-      caption: "Les principales dates de l'année universitaire 2027/28. Les dates « prévues » suivent le calendrier 2026/27 ; vérifiez l'appel 2027/28.",
+      caption: "Les principales dates de l'année universitaire 2027/28. Les dates « prévues » suivent le calendrier 2026/27. Vérifiez l'appel 2027/28.",
       head: ["Quand", "Étape", "Pour en savoir plus"],
       rows: [
         ["Octobre à décembre 2026", "Choisir vos formations, obtenir un certificat de langue, lancer la chaîne des documents", "[Trouver une formation](article:apply-university-rome#find-a-course), [légaliser les documents](article:documents-for-italy#legalise-documents)"],
@@ -108,7 +108,7 @@ export const fr: ArticleTranslation = {
         ["Prévu vers décembre 2026 à mai 2027", "Candidater à Sapienza (MoveIn), Tor Vergata (Delphi) et Roma Tre (GOMP)", "[Universités publiques](article:apply-university-rome#public-universities)"],
         ["Après l'admission", "Préinscription Universitaly (chaque université fixe sa date)", "[Préinscription Universitaly](article:apply-university-rome#universitaly-pre-enrolment)"],
         ["Prévu vers le 10 juin au 22 juillet 2027", "Demande de bourse et de logement DiSCo", "[S'inscrire chez DiSCo](article:lazio-disco-scholarship#register)"],
-        ["Juin à septembre 2027", "Compte bloqué, assurance, premier logement ; le centre de visas vous envoie le rendez-vous", "[Compte bloqué](article:italy-student-visa#blocked-account)"],
+        ["Juin à septembre 2027", "Compte bloqué, assurance, premier logement. Le centre de visas vous envoie le rendez-vous", "[Compte bloqué](article:italy-student-visa#blocked-account)"],
         ["**31 octobre 2027**", "Date limite pour demander le visa d'études (Licence et Master)", "[Rendez-vous visa](article:italy-student-visa#almaviva-appointment)"],
         ["Dans les 8 jours ouvrables après l'arrivée", "Kit de permis de séjour à la poste", "[Permis de séjour](article:arriving-in-rome#residence-permit)"],
         ["Prévu vers le 10 décembre 2027", "Signer l'ISEEUP dans un CAF partenaire de DiSCo", "[ISEEUP](article:lazio-disco-scholarship#iseeup)"],
@@ -122,16 +122,16 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "Les principaux coûts, avec l'année de chaque montant. Les montants peuvent changer ; vérifiez chaque page officielle avant de payer.",
+      caption: "Les principaux coûts, avec l'année de chaque montant. Les montants peuvent changer. Vérifiez chaque page officielle avant de payer.",
       head: ["Poste", "Montant", "Remarque"],
       rows: [
-        ["Frais de candidature", "Sapienza 30 EUR par candidature (+ 10 EUR de vérification) ; Tor Vergata 30 à 50 EUR par formation ; LUISS 150 EUR ; LUMSA 100 EUR", "Montants 2026/27, LUISS 2027/28"],
-        ["Apostille", "10 TND (même ressort) ou 20 TND par document", "Chez un notaire tunisien ; la traduction n'a pas de tarif officiel"],
-        ["Valeur académique du diplôme", "Dichiarazione di Valore gratuite pour les études ; CIMEA 300 EUR par diplôme", "Votre université indique laquelle elle accepte"],
-        ["Visa d'études", "50 EUR (170,600 TND) + 68,300 TND de frais du centre de visas", "En espèces, en TND ; peut changer"],
+        ["Frais de candidature", "Sapienza 30 EUR par candidature (+ 10 EUR de vérification). Tor Vergata 30 à 50 EUR par formation. LUISS 150 EUR. LUMSA 100 EUR", "Montants 2026/27, LUISS 2027/28"],
+        ["Apostille", "10 TND (même ressort) ou 20 TND par document", "Chez un notaire tunisien. La traduction n'a pas de tarif officiel"],
+        ["Valeur académique du diplôme", "Dichiarazione di Valore gratuite pour les études. CIMEA 300 EUR par diplôme", "Votre université indique laquelle elle accepte"],
+        ["Visa d'études", "50 EUR (170,600 TND) + 68,300 TND de frais du centre de visas", "En espèces, en TND. Peut changer"],
         ["Somme bloquée", "10 179,85 EUR (2026/27)", "Pas des frais : votre argent, 783,06 EUR sur 13 mois"],
         ["Permis de séjour", "Environ 116,46 EUR", "Timbre fiscal, frais postaux et coût du titre"],
-        ["Frais d'inscription par an", "Sapienza 300 EUR + 140 EUR de taxe régionale + 16 EUR de timbre = 456 EUR en 1re année (tranche la plus basse) ; Tor Vergata 1 000 EUR (2 500 EUR certaines formations en anglais) ; LUMSA 4 390 EUR ; LUISS 15 000 EUR", "Roma Tre dépend de votre ISEE"],
+        ["Frais d'inscription par an", "Sapienza 300 EUR + 140 EUR de taxe régionale + 16 EUR de timbre = 456 EUR en 1re année (tranche la plus basse). Tor Vergata 1 000 EUR (2 500 EUR certaines formations en anglais). LUMSA 4 390 EUR. LUISS 15 000 EUR", "Roma Tre dépend de votre ISEE"],
         ["Compte italien", "Postepay Evolution 5 EUR + 19 EUR par an", "Carte prépayée avec IBAN"],
       ],
     },
@@ -208,7 +208,7 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Ce guide couvre-t-il les études de médecine en Italie ?",
-          a: "Non, pas encore. L'Italie a réformé l'accès à la médecine en 2025 et les règles pour les étudiants internationaux ne sont pas publiées. Ce guide d'études ajoutera la médecine dès que ces règles seront officielles ; pour l'instant, il couvre la Licence, le Master et le doctorat à Sapienza, Tor Vergata, Roma Tre, LUISS et LUMSA.",
+          a: "Non, pas encore. L'Italie a réformé l'accès à la médecine en 2025 et les règles pour les étudiants internationaux ne sont pas publiées. Ce guide d'études ajoutera la médecine dès que ces règles seront officielles. Pour l'instant, il couvre la Licence, le Master et le doctorat à Sapienza, Tor Vergata, Roma Tre, LUISS et LUMSA.",
         },
       ],
     },
@@ -243,7 +243,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026. Les dates concernent l'année universitaire 2027/28 ; les dates « prévues » suivent le calendrier 2026/27 et doivent être confirmées dans chaque nouvel appel. Vérifiez toujours auprès de l'université, d'Universitaly, de DiSCo et de l'Ambassade d'Italie en Tunisie avant d'agir.",
+      text: "Dernière vérification : octobre 2026. Les dates concernent l'année universitaire 2027/28. Les dates « prévues » suivent le calendrier 2026/27 et doivent être confirmées dans chaque nouvel appel. Vérifiez toujours auprès de l'université, d'Universitaly, de DiSCo et de l'Ambassade d'Italie en Tunisie avant d'agir.",
     },
   ],
   guide: [

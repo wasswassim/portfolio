@@ -97,10 +97,10 @@ export const en: ArticleTranslation = {
       caption: "Where to look for a room in Rome, and what to watch out for.",
       head: ["Option", "Good for", "Watch out"],
       rows: [
-        ["DiSCo residence", "Lowest cost, if you win the scholarship", "Only through the yearly call; not proof for the visa"],
+        ["DiSCo residence", "Lowest cost, if you win the scholarship", "Only through the yearly call. Not proof for the visa"],
         ["University housing desk", "Advice and trusted contacts", "Help to search, not a guaranteed room"],
         ["[HousingAnywhere](https://housinganywhere.com), [Uniplaces](https://www.uniplaces.com), [Spotahome](https://www.spotahome.com)", "Booking from Tunisia before you arrive", "Read the cancellation rules and platform fees"],
-        ["[Immobiliare.it](https://www.immobiliare.it), [Idealista](https://www.idealista.it)", "Many listings, rooms and whole flats", "Mostly in Italian; check who the advertiser is"],
+        ["[Immobiliare.it](https://www.immobiliare.it), [Idealista](https://www.idealista.it)", "Many listings, rooms and whole flats", "Mostly in Italian. Check who the advertiser is"],
         ["[Subito](https://www.subito.it)", "Rooms from private owners", "Most scams happen on open classifieds: never pay before seeing"],
       ],
     },
@@ -120,7 +120,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "A new lease must be [registered with the Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) within 30 days. Either the owner or the tenant can register it, and both are jointly liable for the tax; usually the owner does it, so ask for proof of registration and keep a copy. To sign a lease you may need a codice fiscale: you can get one at any Agenzia delle Entrate office (see [how to get your codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+      text: "A new lease must be [registered with the Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) within 30 days. Either the owner or the tenant can register it, and both are jointly liable for the tax. Usually the owner does it, so ask for proof of registration and keep a copy. To sign a lease you may need a codice fiscale: you can get one at any Agenzia delle Entrate office (see [how to get your codice fiscale](article:arriving-in-rome#codice-fiscale)).",
     },
     {
       type: "fees",
@@ -171,7 +171,7 @@ export const en: ArticleTranslation = {
         },
         {
           q: "Can I apply for a DiSCo residence without the scholarship?",
-          a: "No. DiSCo Lazio has no separate housing application: you request a residence place in the same online DiSCo application as the scholarship, with the same income rules and deadlines. For 2027/28, the DiSCo application is expected around June-July 2027, with housing rankings around mid-September; confirm the dates in the 2027/28 call.",
+          a: "No. DiSCo Lazio has no separate housing application: you request a residence place in the same online DiSCo application as the scholarship, with the same income rules and deadlines. For 2027/28, the DiSCo application is expected around June-July 2027, with housing rankings around mid-September. Confirm the dates in the 2027/28 call.",
         },
         {
           q: "Do I need a codice fiscale to rent a room in Rome?",
@@ -214,7 +214,7 @@ export const en: ArticleTranslation = {
       items: [
         { label: "DiSCo residence", value: "About EUR 200-298/month in 2026/27, deducted from the scholarship" },
         { label: "How to request it", value: "Only in the yearly DiSCo application" },
-        { label: "Lease registration", value: "Within 30 days, by either party; ask for proof" },
+        { label: "Lease registration", value: "Within 30 days, by either party. Ask for proof" },
         { label: "Golden rule", value: "Never pay before seeing the room" },
       ],
     },

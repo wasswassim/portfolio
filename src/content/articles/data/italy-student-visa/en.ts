@@ -246,7 +246,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026. The amounts and lists above come from the 2026/27 notices; the 31 October 2027 deadline is confirmed for 2027/28. Check the Embassy's new notice for 2027/28 before you block funds or pay fees.",
+      text: "Last verified: October 2026. The amounts and lists above come from the 2026/27 notices. The 31 October 2027 deadline is confirmed for 2027/28. Check the Embassy's new notice for 2027/28 before you block funds or pay fees.",
     },
   ],
   guide: [
@@ -254,7 +254,7 @@ export const en: ArticleTranslation = {
       type: "keyFacts",
       items: [
         { label: "Visa", value: "Visa D “Immatricolazione Università”, 365 days" },
-        { label: "Appointment", value: "Emailed by Almaviva after Universitaly validation; cannot be changed" },
+        { label: "Appointment", value: "Emailed by Almaviva after Universitaly validation. Cannot be changed" },
         { label: "Blocked amount", value: "EUR 10,179.85 (2026/27)" },
         { label: "Deadline 2027/28", value: "31 October 2027 (Bachelor's and Master's)" },
       ],

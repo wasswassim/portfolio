@@ -52,7 +52,7 @@ export const en: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**Limits**: up to 100,000 USD per transaction; ATM withdrawals 3 a day and 30 a month, up to 3,750 USD a day on a USD card (lower in some countries) (fee and limit table).",
+        "**Limits**: up to 100,000 USD per transaction. ATM withdrawals 3 a day and 30 a month, up to 3,750 USD a day on a USD card (lower in some countries) (fee and limit table).",
         "**KYC**: a photo of your original ID, a face scan, your home address and 4-5 questions on your job and source of funds (identity verification).",
         "**Who holds the money**: balances are held by Red Dot Trust Ltd, a Hong Kong trust company. The Terms say the account is not a bank account.",
         "**Binance Pay**: Binance ended Binance Pay support on RedotPay on 3 April 2026 ([Cointelegraph](https://cointelegraph.com/news/binance-redotpay-lawsuit-alleged-473-million-losses)), so a Binance top-up now goes through a normal crypto withdrawal to a RedotPay deposit address (see the P2P top-up section below).",
@@ -80,16 +80,16 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "p2p-binance-deposit", text: "Route 2: Binance P2P, then a deposit to RedotPay" },
     {
       type: "p",
-      text: "Buy USDT or USDC on Binance P2P, then withdraw it from Binance to your **RedotPay deposit address**. In RedotPay, open the deposit page and pick the coin and network first; in Binance, choose exactly the **same coin and the same network** (for example USDT on Tron (TRC20) to a USDT TRC20 address). The network charges a withdrawal fee, and a mismatch can mean lost funds: follow the stablecoin safety steps below and send a small test first.",
+      text: "Buy USDT or USDC on Binance P2P, then withdraw it from Binance to your **RedotPay deposit address**. In RedotPay, open the deposit page and pick the coin and network first. In Binance, choose exactly the **same coin and the same network** (for example USDT on Tron (TRC20) to a USDT TRC20 address). The network charges a withdrawal fee, and a mismatch can mean lost funds: follow the stablecoin safety steps below and send a small test first.",
     },
     { type: "h3", id: "p2p-order-steps", text: "How an escrow order works, step by step" },
     {
       type: "steps",
       items: [
-        { title: "Choose an ad", text: "In the P2P zone you pick a seller; in Express the system picks one. Read the seller's terms and check their completion rate." },
+        { title: "Choose an ad", text: "In the P2P zone you pick a seller. In Express the system picks one. Read the seller's terms and check their completion rate." },
         { title: "The crypto is locked", text: "When you place the order, the seller's crypto is reserved in escrow." },
         { title: "Pay outside the app", text: "Pay with the method shown in the order, from an account in **your own name**, within the payment window (often 15 to 45 minutes)." },
-        { title: "Notify, then wait", text: "Tap \"Transferred, notify seller\" only after paying. The seller checks and releases the crypto. Never cancel after paying; use the Appeal button instead ([Binance guide](https://www.binance.com/en/support/faq/detail/360039384951))." },
+        { title: "Notify, then wait", text: "Tap \"Transferred, notify seller\" only after paying. The seller checks and releases the crypto. Never cancel after paying. Use the Appeal button instead ([Binance guide](https://www.binance.com/en/support/faq/detail/360039384951))." },
       ],
     },
     { type: "h3", id: "p2p-fees", text: "Fees and the name rule" },
@@ -109,7 +109,7 @@ export const en: ArticleTranslation = {
       head: ["Scam", "How to spot it"],
       rows: [
         ["Fake proof of payment", "Check your own bank app, never a screenshot."],
-        ["Fake SMS", "Log in to your account; texts can be forged."],
+        ["Fake SMS", "Log in to your account. Texts can be forged."],
         ["Third-party payment", "The payer's name differs from the verified name."],
         ["Man in the middle", "The deal starts on Telegram or WhatsApp."],
         ["Fake support", "Binance never emails you to finish a P2P order."],
@@ -126,13 +126,13 @@ export const en: ArticleTranslation = {
       caption: "The two cards Tunisians ask about most, as of October 2026.",
       head: ["", "RedotPay", "Technology card (CTI)"],
       rows: [
-        ["Who can open it", "Tunisian citizens are not excluded; approval not guaranteed", "Tunisian residents with at least the baccalaureate"],
+        ["Who can open it", "Tunisian citizens are not excluded. Approval not guaranteed", "Tunisian residents with at least the baccalaureate"],
         ["Card network", "Visa", "Not stated on issuer pages"],
         ["Card fee", "10 USD virtual, 100 USD physical, no monthly fee", "Varies by issuer (Banque Zitouna: 20 TND a year)"],
         ["FX / conversion cost", "1.2% FX + 1% conversion", "Your bank's rate and fees"],
         ["Limits", "100,000 USD per transaction", "1,000 TND per calendar year"],
         ["How it is funded", "Crypto deposit, bank card (3%), P2P", "Dinars at a Tunisian bank or La Poste"],
-        ["Legal status for residents of Tunisia", "No authorising text; exposed under the exchange code (section 6)", "Legal, for the uses listed by the BCT"],
+        ["Legal status for residents of Tunisia", "No authorising text. Exposed under the exchange code (section 6)", "Legal, for the uses listed by the BCT"],
         ["Main risks", "Freezes, no deposit insurance, lawsuit", "Narrow list of allowed uses"],
       ],
     },
@@ -228,7 +228,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "warning",
       title: "Risks to know before you deposit",
-      text: "The Terms allow RedotPay to freeze or close an account \"at any time, without notice\", and no deposit insurance is mentioned. Users on [Trustpilot](https://www.trustpilot.com/review/www.redotpay.com) report funds blocked for weeks during source-of-funds checks. In August 2026, Binance affiliates sued RedotPay's co-founders in Hong Kong for about USD 472.8 million; these are allegations, no ruling has been reported, and RedotPay says it is defending itself.",
+      text: "The Terms allow RedotPay to freeze or close an account \"at any time, without notice\", and no deposit insurance is mentioned. Users on [Trustpilot](https://www.trustpilot.com/review/www.redotpay.com) report funds blocked for weeks during source-of-funds checks. In August 2026, Binance affiliates sued RedotPay's co-founders in Hong Kong for about USD 472.8 million. These are allegations, no ruling has been reported, and RedotPay says it is defending itself.",
     },
 
     {
@@ -291,17 +291,17 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026. Fees, supported countries and networks change; check the RedotPay and Binance apps before you send anything. The Tunisian exchange code may be reformed: watch for the adoption of bill 115/2025.",
+      text: "Last verified: October 2026. Fees, supported countries and networks change. Check the RedotPay and Binance apps before you send anything. The Tunisian exchange code may be reformed: watch for the adoption of bill 115/2025.",
     },
   ],
   guide: [
     {
       type: "keyFacts",
       items: [
-        { label: "RedotPay card", value: "Visa; 10 USD virtual, 100 USD physical, no monthly fee" },
+        { label: "RedotPay card", value: "Visa. 10 USD virtual, 100 USD physical, no monthly fee" },
         { label: "Cost on a euro payment", value: "1.2% FX + 1% crypto conversion" },
         { label: "Top-up", value: "Crypto deposit, bank card (3%) or P2P (RedotPay or Binance)" },
-        { label: "Residents of Tunisia", value: "No text authorises crypto; legally exposed" },
+        { label: "Residents of Tunisia", value: "No text authorises crypto. Legally exposed" },
       ],
     },
     { type: "h2", id: "payment-path", text: "The payment path in brief" },

@@ -11,7 +11,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["work contract in Italy", "work contract in Italy for Tunisians", "Nulla Osta al lavoro", "Italy work visa for Tunisians", "National Visa D for work in Italy", "Contratto di soggiorno"],
   summary:
-    "For Tunisians on the training-abroad route, a work contract in Italy comes from an Italian employer, who also files the Nulla Osta request; the worker cannot file it alone. Once the Nulla Osta is issued, you apply for a National Visa D from Tunisia, then, within 8 working days of entering Italy (official guide, verified October 2026), ask the Sportello Unico for an appointment to sign the Contratto di soggiorno.",
+    "For Tunisians on the training-abroad route, a work contract in Italy comes from an Italian employer, who also files the Nulla Osta request. The worker cannot file it alone. Once the Nulla Osta is issued, you apply for a National Visa D from Tunisia, then, within 8 working days of entering Italy (official guide, verified October 2026), ask the Sportello Unico for an appointment to sign the Contratto di soggiorno.",
   body: [
     {
       type: "callout",
@@ -161,7 +161,7 @@ export const en: ArticleTranslation = {
     {
       type: "fees",
       title: "Residence permit kit at the post office",
-      text: "The total assumes a permit of up to 1 year; for a permit of more than 1 year and up to 2 years the contribution is EUR 50, so the total is EUR 126.46",
+      text: "The total assumes a permit of up to 1 year. For a permit of more than 1 year and up to 2 years the contribution is EUR 50, so the total is EUR 126.46",
       feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
       total: true,
     },
@@ -298,8 +298,8 @@ export const en: ArticleTranslation = {
       items: [
         { label: "Who files the Nulla Osta", value: "The Italian employer, not the worker" },
         { label: "Visa", value: "National Visa D, requested from Tunisia" },
-        { label: "Deadline after training", value: "Counted from the end of training; confirm the current figure with the Ministry" },
-        { label: "Contratto di soggiorno", value: "Ask for the appointment within 8 working days of entering Italy (official guide); confirm with the Sportello Unico" },
+        { label: "Deadline after training", value: "Counted from the end of training. Confirm the current figure with the Ministry" },
+        { label: "Contratto di soggiorno", value: "Ask for the appointment within 8 working days of entering Italy (official guide). Confirm with the Sportello Unico" },
       ],
     },
     { type: "h2", id: "path-in-brief", text: "The full path in brief" },

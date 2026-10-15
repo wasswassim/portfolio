@@ -246,7 +246,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026. Les montants et listes ci-dessus proviennent des avis 2026/27 ; la date limite du 31 octobre 2027 est confirmée pour 2027/28. Consultez le nouvel avis de l'Ambassade pour 2027/28 avant de bloquer des fonds ou de payer des frais.",
+      text: "Dernière vérification : octobre 2026. Les montants et listes ci-dessus proviennent des avis 2026/27. La date limite du 31 octobre 2027 est confirmée pour 2027/28. Consultez le nouvel avis de l'Ambassade pour 2027/28 avant de bloquer des fonds ou de payer des frais.",
     },
   ],
   guide: [
@@ -254,7 +254,7 @@ export const fr: ArticleTranslation = {
       type: "keyFacts",
       items: [
         { label: "Visa", value: "Visa D « Immatricolazione Università », 365 jours" },
-        { label: "Rendez-vous", value: "Envoyé par Almaviva après la validation Universitaly ; non modifiable" },
+        { label: "Rendez-vous", value: "Envoyé par Almaviva après la validation Universitaly. Non modifiable" },
         { label: "Montant bloqué", value: "10 179,85 EUR (2026/27)" },
         { label: "Date limite 2027/28", value: "31 octobre 2027 (Licence et Master)" },
       ],

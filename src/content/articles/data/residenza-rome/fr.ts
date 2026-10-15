@@ -22,7 +22,7 @@ export const fr: ArticleTranslation = {
     { type: "p", text: "**Vous avez une chambre et une demande de permis de séjour à Rome. Comment déclarer votre residenza à l'anagrafe, et est-ce que ça vaut la peine ?**" },
     {
       type: "p",
-      text: "La réponse courte : remplissez la *dichiarazione di residenza*, joignez votre passeport, votre permesso di soggiorno (ou son récépissé ; celui d'un premier permis peut ne pas suffire dans tous les Municipi : vérifiez avant) et votre bail ou la déclaration du propriétaire, puis envoyez le tout par **un seul** canal : le service en ligne de Roma Capitale, la PEC, la lettre recommandée ou le guichet. C'est gratuit. Vous êtes inscrit en 2 jours ouvrables, et la Polizia Locale vérifie dans les 45 jours que vous habitez vraiment à l'adresse.",
+      text: "La réponse courte : remplissez la *dichiarazione di residenza*, joignez votre passeport, votre permesso di soggiorno (ou son récépissé, celui d'un premier permis peut ne pas suffire dans tous les Municipi : vérifiez avant) et votre bail ou la déclaration du propriétaire, puis envoyez le tout par **un seul** canal : le service en ligne de Roma Capitale, la PEC, la lettre recommandée ou le guichet. C'est gratuit. Vous êtes inscrit en 2 jours ouvrables, et la Polizia Locale vérifie dans les 45 jours que vous habitez vraiment à l'adresse.",
     },
     {
       type: "p",
@@ -133,7 +133,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "Calendrier après l'envoi de la déclaration (DL 5/2012, art. 5 ; DPR 223/1989, art. 19).",
+      caption: "Calendrier après l'envoi de la déclaration (DL 5/2012, art. 5, DPR 223/1989, art. 19).",
       head: ["Quand", "Ce qui se passe"],
       rows: [
         ["Sous 2 jours ouvrables", "La commune vous inscrit."],
@@ -223,7 +223,7 @@ export const fr: ArticleTranslation = {
         },
         {
           q: "Combien de temps faut-il pour obtenir la residenza à Rome ?",
-          a: "La residenza à Rome est confirmée en 45 jours au maximum. La commune de Rome vous inscrit en 2 jours ouvrables, et votre résidence compte dès le jour de la déclaration. La Polizia Locale vérifie ensuite l'adresse dans les 45 jours ; sans preavviso di rigetto (avis de rejet) dans ce délai, la residenza est confirmée par silenzio-assenso.",
+          a: "La residenza à Rome est confirmée en 45 jours au maximum. La commune de Rome vous inscrit en 2 jours ouvrables, et votre résidence compte dès le jour de la déclaration. La Polizia Locale vérifie ensuite l'adresse dans les 45 jours. Sans preavviso di rigetto (avis de rejet) dans ce délai, la residenza est confirmée par silenzio-assenso.",
         },
         {
           q: "Peut-on voyager en Europe avec une carte d'identité italienne ?",
@@ -270,7 +270,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026. Les procédures varient d'un Municipio à l'autre et peuvent changer ; consultez la page de votre Municipio sur comune.roma.it avant d'envoyer votre déclaration ou de réserver un guichet.",
+      text: "Dernière vérification : octobre 2026. Les procédures varient d'un Municipio à l'autre et peuvent changer. Consultez la page de votre Municipio sur comune.roma.it avant d'envoyer votre déclaration ou de réserver un guichet.",
     },
   ],
   guide: [

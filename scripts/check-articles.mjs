@@ -87,6 +87,10 @@ for (const folder of folders) {
     (texts[id] ??= {})[lang] = t;
 
     if (/TODO/.test(t)) errors.push(where + ": still contains TODO from the template");
+    // House style: no semicolons in reader-facing text (they read as machine-written). Split the sentence instead.
+    // URLs are skipped: some official links (Normattiva) contain ";"
+    const semi = t.split("\n").find((l) => /("|`)[^"`\n]*[;؛][^"`\n]*("|`)/.test(l.replace(/https?:\/\/[^\s)"`]*/g, "")));
+    if (semi) errors.push(where + ": semicolon in the text, write two sentences instead: " + semi.trim().slice(0, 80));
 
     const slug = t.match(/^\s{2}slug:\s*"([^"]+)"/m)?.[1];
     if (!slug) errors.push(where + ": missing slug");

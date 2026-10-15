@@ -81,14 +81,14 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "public-universities", text: "3. How do you apply to Sapienza, Tor Vergata or Roma Tre?" },
     {
       type: "p",
-      text: "You apply to Sapienza on MoveIn, to Tor Vergata on Delphi and to Roma Tre on GOMP, because each public university in Rome uses its own portal. Dates below are from the 2026/27 calls; 2027/28 is expected to follow a similar pattern, so check the 2027/28 call.",
+      text: "You apply to Sapienza on MoveIn, to Tor Vergata on Delphi and to Roma Tre on GOMP, because each public university in Rome uses its own portal. Dates below are from the 2026/27 calls. 2027/28 is expected to follow a similar pattern, so check the 2027/28 call.",
     },
     { type: "h3", id: "sapienza", text: "Sapienza: MoveIn, then Infostud" },
     {
       type: "steps",
       items: [
         { title: "Check the requirements", text: "Read [Sapienza admissions](https://www.uniroma1.it/en/en/admissions) and the [2026/27 academic requirements (PDF)](https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf). Some English-taught Bachelor's courses ask for a SAT score of 960 or more, or a TOLC." },
-        { title: "Apply on MoveIn", text: "Create an account on [MoveIn](https://sapienza.gomovein.com/), upload your documents and pick your course. Each application costs EUR 30 (no waiver), with a maximum of 2; the eligibility check costs EUR 10." },
+        { title: "Apply on MoveIn", text: "Create an account on [MoveIn](https://sapienza.gomovein.com/), upload your documents and pick your course. Each application costs EUR 30 (no waiver), with a maximum of 2. The eligibility check costs EUR 10." },
         { title: "Watch the window", text: "In 2026/27 it ran from 22 December 2025 to 15 May 2026 for non-EU visa applicants. For 2027/28 it is expected to open around December 2026 (check the 2027/28 call)." },
         { title: "After admission", text: "Do the Universitaly pre-enrolment (deadline 30 June in 2026), then register on [Infostud](https://www.studenti.uniroma1.it/webapps/infostud/registrazione). Questions: recruitment@uniroma1.it." },
       ],
@@ -126,7 +126,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "private-universities", text: "4. How do you apply to the private universities LUISS and LUMSA?" },
     {
       type: "p",
-      text: "You apply to LUISS through the Luiss Test or international certifications, and to LUMSA through an online admission test; both private universities still require the Universitaly pre-enrolment after admission.",
+      text: "You apply to LUISS through the Luiss Test or international certifications, and to LUMSA through an online admission test. Both private universities still require the Universitaly pre-enrolment after admission.",
     },
     { type: "h3", id: "luiss", text: "LUISS: the Luiss Test" },
     {
@@ -146,7 +146,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "How to apply to each university in Rome (2026/27 calls unless stated; check the 2027/28 call)",
+      caption: "How to apply to each university in Rome (2026/27 calls unless stated, check the 2027/28 call)",
       head: ["University", "How to apply", "Typical window", "Application fee"],
       rows: [
         ["Sapienza", "MoveIn, then Universitaly and Infostud", "About December to May", "EUR 30 each (max 2)"],
@@ -233,7 +233,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "PhD candidates apply with their Master's degree and transcripts. A selected PhD candidate still does the Universitaly pre-enrolment; there is no fixed visa date for the PhD, but apply for the visa before teaching starts.",
+      text: "PhD candidates apply with their Master's degree and transcripts. A selected PhD candidate still does the Universitaly pre-enrolment. There is no fixed visa date for the PhD, but apply for the visa before teaching starts.",
     },
 
     {

@@ -11,7 +11,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["job étudiant Rome", "petit boulot étudiant Rome", "heures de travail permis de séjour étudiant Italie", "Subito lavoro Roma", "agence d’intérim Rome", "150 ore Sapienza"],
   summary:
-    "Le plus simple pour trouver un job étudiant à Rome est une annonce gratuite de candidat sur Subito, car la plupart des jobs étudiants à Rome sont dans les cafés et les restaurants ; viennent ensuite Indeed, les agences d’intérim (qui ne peuvent rien facturer aux travailleurs) et les collaborations universitaires 150 ore, payées 1 295 EUR pour 150 heures à Sapienza. Avec un permis de séjour italien pour études, vous pouvez travailler comme salarié jusqu’à 20 heures par semaine et 1 040 heures par an avec un contrat déclaré, et les 20 heures sont un plafond hebdomadaire, pas une moyenne (vérifié en octobre 2026).",
+    "Le plus simple pour trouver un job étudiant à Rome est une annonce gratuite de candidat sur Subito, car la plupart des jobs étudiants à Rome sont dans les cafés et les restaurants. Viennent ensuite Indeed, les agences d’intérim (qui ne peuvent rien facturer aux travailleurs) et les collaborations universitaires 150 ore, payées 1 295 EUR pour 150 heures à Sapienza. Avec un permis de séjour italien pour études, vous pouvez travailler comme salarié jusqu’à 20 heures par semaine et 1 040 heures par an avec un contrat déclaré, et les 20 heures sont un plafond hebdomadaire, pas une moyenne (vérifié en octobre 2026).",
   body: [
     {
       type: "callout",
@@ -76,7 +76,7 @@ export const fr: ArticleTranslation = {
         "**Langues** : arabe, français et anglais, plus votre niveau réel d’italien.",
         "**Disponibilités** : les jours et horaires où vous pouvez travailler, dans la limite de 20 heures par semaine.",
         "**Quartier** : où vous habitez et jusqu’où vous pouvez vous déplacer.",
-        "**Photo** : facultative ; une photo nette et souriante peut aider.",
+        "**Photo** : facultative. Une photo nette et souriante peut aider.",
         "**Contact** : demandez aux employeurs de vous écrire via le chat de l’application.",
       ],
     },
@@ -87,7 +87,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Bien sûr, quelques étapes viennent avant. Il vous faut une **carte SIM italienne**, car Subito vérifie votre compte par SMS et n’accepte pas les numéros en +216 ; un **IBAN** pour le salaire ([comment ouvrir un compte bancaire en Italie quand on est étudiant](article:bank-account-italy-student)) ; et votre **codice fiscale** ([comment obtenir son codice fiscale en Italie](article:arriving-in-rome#codice-fiscale)). La **residenza** est un plus, pas une obligation, car tous les étudiants ne comptent pas rester en Italie toute leur vie, mais elle facilite certaines démarches locales ([comment faire sa residenza à Rome](article:residenza-rome)).",
+      text: "Bien sûr, quelques étapes viennent avant. Il vous faut une **carte SIM italienne**, car Subito vérifie votre compte par SMS et n’accepte pas les numéros en +216. Un **IBAN** pour le salaire ([comment ouvrir un compte bancaire en Italie quand on est étudiant](article:bank-account-italy-student)). Et votre **codice fiscale** ([comment obtenir son codice fiscale en Italie](article:arriving-in-rome#codice-fiscale)). La **residenza** est un plus, pas une obligation, car tous les étudiants ne comptent pas rester en Italie toute leur vie, mais elle facilite certaines démarches locales ([comment faire sa residenza à Rome](article:residenza-rome)).",
     },
     {
       type: "callout",
@@ -111,9 +111,9 @@ export const fr: ArticleTranslation = {
       head: ["Type", "De quoi il s’agit", "Attention"],
       rows: [
         ["Contrat salarié à temps partiel", "La voie normale : un contrat déclaré avec un horaire hebdomadaire fixe", "Pas plus de 20 heures par semaine dans le contrat"],
-        ["Travail occasionnel (PrestO)", "Missions courtes gérées par l’INPS, plafonnées à 5 000 EUR par an et par travailleur", "Aucune source officielle ne dit si ces heures comptent dans les 20 ; demandez à l’employeur ou à un patronato"],
-        ["Contrat à l’appel (contratto a chiamata)", "On vous appelle selon les besoins ; ouvert aux moins de 24 ans (travail terminé avant 25 ans) ou aux plus de 55 ans, ou pour les emplois prévus par les conventions collectives", "Votre plafond de 20 heures par semaine s’applique toujours"],
-        ["Collaboration universitaire 150 ore", "Travail rémunéré sur le campus, pas un contrat de travail", "Une par année universitaire ; voir la partie 5"],
+        ["Travail occasionnel (PrestO)", "Missions courtes gérées par l’INPS, plafonnées à 5 000 EUR par an et par travailleur", "Aucune source officielle ne dit si ces heures comptent dans les 20. Demandez à l’employeur ou à un patronato"],
+        ["Contrat à l’appel (contratto a chiamata)", "On vous appelle selon les besoins. Ouvert aux moins de 24 ans (travail terminé avant 25 ans) ou aux plus de 55 ans, ou pour les emplois prévus par les conventions collectives", "Votre plafond de 20 heures par semaine s’applique toujours"],
+        ["Collaboration universitaire 150 ore", "Travail rémunéré sur le campus, pas un contrat de travail", "Une par année universitaire. Voir la partie 5"],
       ],
     },
     { type: "h3", id: "exams-and-renewal", text: "Gardez le rythme des examens" },
@@ -125,7 +125,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "indeed", text: "3. Comment postuler à un job étudiant à Rome sur Indeed ?" },
     {
       type: "p",
-      text: "Pour postuler à un job étudiant à Rome sur Indeed, cherchez « part time studenti » sur [it.indeed.com](https://it.indeed.com) avec Roma comme lieu, puis postulez avec votre CV. Téléversez votre CV ou créez-en un sur Indeed ([importer un CV](https://support.indeed.com/hc/en-us/articles/4408783727629-Uploading-a-Resume-File-to-Your-Profile)) ; certaines offres permettent de postuler directement avec **Indeed Apply**, d’autres renvoient vers le site de l’employeur. Activez une **alerte emploi** pour recevoir les nouvelles offres par e-mail ([alertes emploi](https://support.indeed.com/hc/en-us/articles/204488890-Starting-Stopping-and-Managing-Job-Alerts)).",
+      text: "Pour postuler à un job étudiant à Rome sur Indeed, cherchez « part time studenti » sur [it.indeed.com](https://it.indeed.com) avec Roma comme lieu, puis postulez avec votre CV. Téléversez votre CV ou créez-en un sur Indeed ([importer un CV](https://support.indeed.com/hc/en-us/articles/4408783727629-Uploading-a-Resume-File-to-Your-Profile)). Certaines offres permettent de postuler directement avec **Indeed Apply**, d’autres renvoient vers le site de l’employeur. Activez une **alerte emploi** pour recevoir les nouvelles offres par e-mail ([alertes emploi](https://support.indeed.com/hc/en-us/articles/204488890-Starting-Stopping-and-Managing-Job-Alerts)).",
     },
     {
       type: "callout",
@@ -178,7 +178,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Si vous avez la bourse DiSCo du Latium, l’appel DiSCo indique que la bourse est **compatible** avec les collaborations 150 ore ; voir [comment fonctionne la bourse DiSCo Lazio pour les étudiants tunisiens](article:lazio-disco-scholarship).",
+      text: "Si vous avez la bourse DiSCo du Latium, l’appel DiSCo indique que la bourse est **compatible** avec les collaborations 150 ore. Voir [comment fonctionne la bourse DiSCo Lazio pour les étudiants tunisiens](article:lazio-disco-scholarship).",
     },
     {
       type: "ul",
@@ -271,7 +271,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026. Les chiffres des 150 ore viennent de l’appel 2025/26 de la Sapienza ; vérifiez le nouvel appel chaque automne. Subito et Indeed peuvent changer leurs règles à tout moment.",
+      text: "Dernière vérification : octobre 2026. Les chiffres des 150 ore viennent de l’appel 2025/26 de la Sapienza. Vérifiez le nouvel appel chaque automne. Subito et Indeed peuvent changer leurs règles à tout moment.",
     },
   ],
   guide: [

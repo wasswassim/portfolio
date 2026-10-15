@@ -110,7 +110,7 @@ export const fr: ArticleTranslation = {
     { type: "fees", feeIds: ["visa-blocked-amount"], tnd: true },
     {
       type: "p",
-      text: "La nourriture et les dépenses personnelles ne figurent pas dans ce budget car il n'existe pas de chiffre officiel ; le versement mensuel du montant bloqué est la référence pour vous organiser. Voir [comment fonctionne le compte bloqué avec une banque tunisienne](article:italy-student-visa).",
+      text: "La nourriture et les dépenses personnelles ne figurent pas dans ce budget car il n'existe pas de chiffre officiel. Le versement mensuel du montant bloqué est la référence pour vous organiser. Voir [comment fonctionne le compte bloqué avec une banque tunisienne](article:italy-student-visa).",
     },
 
     { type: "h2", id: "money-transfers", text: "8. Combien d'argent pouvez-vous envoyer de Tunisie ?" },
@@ -124,7 +124,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "disco-scholarship", text: "9. Quelle part de ce budget la bourse DiSCo peut-elle couvrir ?" },
     {
       type: "p",
-      text: `La bourse DiSCo Lazio verse à un étudiant hors siège ${eur(L, B.discoBase)} par an en 2026/27, et jusqu'à ${eur(L, B.discoMax)} pour les revenus les plus bas, plus les repas. Elle couvre une grande partie du budget de la première année ; une place en résidence DiSCo en est ensuite déduite.`,
+      text: `La bourse DiSCo Lazio verse à un étudiant hors siège ${eur(L, B.discoBase)} par an en 2026/27, et jusqu'à ${eur(L, B.discoMax)} pour les revenus les plus bas, plus les repas. Elle couvre une grande partie du budget de la première année. Une place en résidence DiSCo en est ensuite déduite.`,
     },
     { type: "fees", title: "Bourse DiSCo Lazio 2026/27", feeIds: ["disco-base", "disco-max", "disco-meals"] },
     { type: "p", text: "Les conditions et les documents sont dans [la bourse DiSCo du Latium pour les étudiants tunisiens](article:lazio-disco-scholarship)." },
@@ -177,7 +177,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026, pour l'année universitaire 2026/27. Les frais et le montant bloqué changent chaque année ; vérifiez chaque page officielle avant de payer.",
+      text: "Dernière vérification : octobre 2026, pour l'année universitaire 2026/27. Les frais et le montant bloqué changent chaque année. Vérifiez chaque page officielle avant de payer.",
     },
   ],
   guide: [

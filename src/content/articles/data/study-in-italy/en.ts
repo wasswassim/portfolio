@@ -96,11 +96,11 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "calendar", text: "4. Calendar of deadlines for 2027/28" },
     {
       type: "p",
-      text: "The 2027/28 calendar for Tunisian students runs from October 2026, when LUISS applications open, to **31 October 2027**, the last date to request the study visa; the residence permit and the DiSCo ISEEUP follow after arrival.",
+      text: "The 2027/28 calendar for Tunisian students runs from October 2026, when LUISS applications open, to **31 October 2027**, the last date to request the study visa. The residence permit and the DiSCo ISEEUP follow after arrival.",
     },
     {
       type: "table",
-      caption: "The main dates for the 2027/28 academic year. Dates marked “expected” follow the 2026/27 pattern; check the 2027/28 call.",
+      caption: "The main dates for the 2027/28 academic year. Dates marked “expected” follow the 2026/27 pattern. Check the 2027/28 call.",
       head: ["When", "Step", "Where to read more"],
       rows: [
         ["October to December 2026", "Choose your courses, get a language certificate, start the document chain", "[Find a course](article:apply-university-rome#find-a-course), [legalise documents](article:documents-for-italy#legalise-documents)"],
@@ -108,7 +108,7 @@ export const en: ArticleTranslation = {
         ["Expected around December 2026 to May 2027", "Apply to Sapienza (MoveIn), Tor Vergata (Delphi) and Roma Tre (GOMP)", "[Public universities](article:apply-university-rome#public-universities)"],
         ["After admission", "Universitaly pre-enrolment (each university sets its own date)", "[Universitaly pre-enrolment](article:apply-university-rome#universitaly-pre-enrolment)"],
         ["Expected around 10 June to 22 July 2027", "DiSCo scholarship and housing application", "[Register with DiSCo](article:lazio-disco-scholarship#register)"],
-        ["June to September 2027", "Blocked account, insurance, first accommodation; the visa centre emails your appointment", "[Blocked account](article:italy-student-visa#blocked-account)"],
+        ["June to September 2027", "Blocked account, insurance, first accommodation. The visa centre emails your appointment", "[Blocked account](article:italy-student-visa#blocked-account)"],
         ["**31 October 2027**", "Last date to request the study visa (Bachelor and Master)", "[Visa appointment](article:italy-student-visa#almaviva-appointment)"],
         ["Within 8 working days of arrival", "Residence permit kit at the post office", "[Residence permit](article:arriving-in-rome#residence-permit)"],
         ["Expected around 10 December 2027", "Sign the ISEEUP at a DiSCo partner CAF", "[ISEEUP](article:lazio-disco-scholarship#iseeup)"],
@@ -122,16 +122,16 @@ export const en: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "The main costs, with the year of each figure. Amounts can change; check each official page before paying.",
+      caption: "The main costs, with the year of each figure. Amounts can change. Check each official page before paying.",
       head: ["Item", "Amount", "Note"],
       rows: [
-        ["Application fees", "Sapienza EUR 30 per application (+ EUR 10 eligibility check); Tor Vergata EUR 30 to 50 per course; LUISS EUR 150; LUMSA EUR 100", "2026/27 figures, LUISS 2027/28"],
-        ["Apostille", "10 TND (same jurisdiction) or 20 TND per document", "From a Tunisian notary; translation has no official tariff"],
-        ["Academic value of your diploma", "Dichiarazione di Valore free for study; CIMEA EUR 300 per qualification", "Your university says which one it accepts"],
-        ["Study visa", "EUR 50 (170.600 TND) + 68.300 TND visa-centre fee", "Paid in cash in TND; can change"],
+        ["Application fees", "Sapienza EUR 30 per application (+ EUR 10 eligibility check). Tor Vergata EUR 30 to 50 per course. LUISS EUR 150. LUMSA EUR 100", "2026/27 figures, LUISS 2027/28"],
+        ["Apostille", "10 TND (same jurisdiction) or 20 TND per document", "From a Tunisian notary. Translation has no official tariff"],
+        ["Academic value of your diploma", "Dichiarazione di Valore free for study. CIMEA EUR 300 per qualification", "Your university says which one it accepts"],
+        ["Study visa", "EUR 50 (170.600 TND) + 68.300 TND visa-centre fee", "Paid in cash in TND. Can change"],
         ["Blocked amount", "EUR 10,179.85 (2026/27)", "Not a fee: your own money, EUR 783.06 for 13 months"],
         ["Residence permit", "About EUR 116.46", "Stamp, postal fee and permit fee"],
-        ["Tuition per year", "Sapienza EUR 300 + EUR 140 regional tax + EUR 16 stamp = EUR 456 in year 1 (lowest band); Tor Vergata EUR 1,000 (EUR 2,500 some English courses); LUMSA EUR 4,390; LUISS EUR 15,000", "Roma Tre depends on your ISEE"],
+        ["Tuition per year", "Sapienza EUR 300 + EUR 140 regional tax + EUR 16 stamp = EUR 456 in year 1 (lowest band). Tor Vergata EUR 1,000 (EUR 2,500 some English courses). LUMSA EUR 4,390. LUISS EUR 15,000", "Roma Tre depends on your ISEE"],
         ["Italian account", "Postepay Evolution EUR 5 + EUR 19 per year", "Prepaid card with an IBAN"],
       ],
     },
@@ -208,7 +208,7 @@ export const en: ArticleTranslation = {
         },
         {
           q: "Does this guide cover Medicine in Italy?",
-          a: "No, not yet. Italy reformed access to Medicine in 2025, and the rules for international students have not been published. This study guide will add Medicine once those rules are official; for now it covers Bachelor's, Master's and PhD courses at Sapienza, Tor Vergata, Roma Tre, LUISS and LUMSA.",
+          a: "No, not yet. Italy reformed access to Medicine in 2025, and the rules for international students have not been published. This study guide will add Medicine once those rules are official. For now it covers Bachelor's, Master's and PhD courses at Sapienza, Tor Vergata, Roma Tre, LUISS and LUMSA.",
         },
       ],
     },
@@ -243,7 +243,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026. Dates are for the 2027/28 academic year; dates marked “expected” follow the 2026/27 calendar and must be confirmed in each new call. Always check the university, Universitaly, DiSCo and the Italian Embassy in Tunisia before you act.",
+      text: "Last verified: October 2026. Dates are for the 2027/28 academic year. Dates marked “expected” follow the 2026/27 calendar and must be confirmed in each new call. Always check the university, Universitaly, DiSCo and the Italian Embassy in Tunisia before you act.",
     },
   ],
   guide: [

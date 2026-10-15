@@ -123,7 +123,7 @@ export const FEES = {
     label: { en: "Lazio regional tax for the right to study", fr: "Taxe régionale du Latium pour le droit aux études", ar: "الضريبة الجهوية لـ Lazio للحق في الدراسة" },
     amount: 140, currency: "EUR", per: "year",
     sourceUrl: "https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo", lastVerified: V,
-    note: { en: "Paid by almost every student, DiSCo winners included; exemptions are in your university's fee rules", fr: "Payée par presque tous les étudiants, boursiers DiSCo compris ; les exemptions figurent dans le règlement des frais de votre université", ar: "يدفعها تقريبًا كل الطلبة، بمن فيهم المتحصلون على منحة DiSCo؛ حالات الإعفاء مذكورة في نظام المعاليم بجامعتك" },
+    note: { en: "Paid by almost every student, DiSCo winners included. Exemptions are in your university's fee rules", fr: "Payée par presque tous les étudiants, boursiers DiSCo compris. Les exemptions figurent dans le règlement des frais de votre université", ar: "يدفعها تقريبًا كل الطلبة، بمن فيهم المتحصلون على منحة DiSCo. حالات الإعفاء مذكورة في نظام المعاليم بجامعتك" },
   },
   "uni-stamp": {
     label: { en: "Revenue stamp on enrolment", fr: "Timbre fiscal à l'inscription", ar: "الطابع الجبائي عند التسجيل" },
@@ -157,7 +157,7 @@ export const FEES = {
     label: { en: "Private single room near a Rome university", fr: "Chambre individuelle privée près d'une université de Rome", ar: "غرفة فردية خاصة قرب جامعة في روما" },
     amount: 500, amountMax: 700, currency: "EUR", per: "month",
     sourceUrl: "https://www.newsistruzione.it/2026/08/22/affitti-studenti-roma-caro-casa-2026/", lastVerified: V,
-    note: { en: "Typical range for a standard single room in 2026 (SoloAffitti data); EUR 350-600 near Tor Vergata, EUR 600-750 near LUMSA, up to EUR 1,000 or more in the most sought-after areas", fr: "Fourchette habituelle pour une chambre individuelle standard en 2026 (données SoloAffitti) ; 350-600 EUR près de Tor Vergata, 600-750 EUR près de la LUMSA, jusqu'à 1 000 EUR ou plus dans les quartiers les plus demandés", ar: "النطاق المعتاد لغرفة فردية عادية في 2026 (بيانات SoloAffitti)؛ 350-600 يورو قرب Tor Vergata، و600-750 يورو قرب LUMSA، وقد تبلغ 1000 يورو أو أكثر في الأحياء الأكثر طلبًا" },
+    note: { en: "Typical range for a standard single room in 2026 (SoloAffitti data). EUR 350-600 near Tor Vergata, EUR 600-750 near LUMSA, up to EUR 1,000 or more in the most sought-after areas", fr: "Fourchette habituelle pour une chambre individuelle standard en 2026 (données SoloAffitti). 350-600 EUR près de Tor Vergata, 600-750 EUR près de la LUMSA, jusqu'à 1 000 EUR ou plus dans les quartiers les plus demandés", ar: "النطاق المعتاد لغرفة فردية عادية في 2026 (بيانات SoloAffitti). 350-600 يورو قرب Tor Vergata، و600-750 يورو قرب LUMSA، وقد تبلغ 1000 يورو أو أكثر في الأحياء الأكثر طلبًا" },
   },
   "nulla-osta-stamp": {
     label: { en: "Stamp on the nulla osta application (employer)", fr: "Timbre sur la demande de nulla osta (employeur)", ar: "الطابع على مطلب nulla osta (المشغّل)" },

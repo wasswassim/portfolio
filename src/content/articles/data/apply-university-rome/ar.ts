@@ -82,14 +82,14 @@ export const ar: ArticleTranslation = {
     { type: "h2", id: "public-universities", text: "3. كيف تترشح في Sapienza أو Tor Vergata أو Roma Tre؟" },
     {
       type: "p",
-      text: "تترشح في Sapienza على MoveIn، وفي Tor Vergata على Delphi، وفي Roma Tre على GOMP، لأن لكل جامعة عمومية في روما منصتها الخاصة. التواريخ التالية مأخوذة من إعلانات 2026/27؛ ومن المتوقع أن تتبع 2027/28 نمطًا مشابهًا، فتحقق من إعلان 2027/28.",
+      text: "تترشح في Sapienza على MoveIn، وفي Tor Vergata على Delphi، وفي Roma Tre على GOMP، لأن لكل جامعة عمومية في روما منصتها الخاصة. التواريخ التالية مأخوذة من إعلانات 2026/27. ومن المتوقع أن تتبع 2027/28 نمطًا مشابهًا، فتحقق من إعلان 2027/28.",
     },
     { type: "h3", id: "sapienza", text: "Sapienza: منصة MoveIn ثم Infostud" },
     {
       type: "steps",
       items: [
         { title: "تحقق من الشروط", text: "اقرأ صفحة [القبول في Sapienza](https://www.uniroma1.it/en/en/admissions) و[الشروط الأكاديمية 2026/27 (PDF)](https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf). بعض الإجازات المدرَّسة بالإنجليزية تطلب نتيجة SAT لا تقل عن 960، أو اختبار TOLC." },
-        { title: "ترشح على MoveIn", text: "أنشئ حسابًا على [MoveIn](https://sapienza.gomovein.com/)، وارفع وثائقك واختر اختصاصك. كل ترشح بـ 30 يورو (دون إعفاء)، وبحد أقصى ترشحان؛ والتحقق من الأهلية بـ 10 يورو." },
+        { title: "ترشح على MoveIn", text: "أنشئ حسابًا على [MoveIn](https://sapienza.gomovein.com/)، وارفع وثائقك واختر اختصاصك. كل ترشح بـ 30 يورو (دون إعفاء)، وبحد أقصى ترشحان. والتحقق من الأهلية بـ 10 يورو." },
         { title: "انتبه لفترة الترشح", text: "في 2026/27 امتدت من 22 ديسمبر 2025 إلى 15 ماي 2026 للطلاب من خارج الاتحاد الأوروبي الذين يحتاجون تأشيرة. أما في 2027/28 فمن المتوقع أن تُفتح في حدود ديسمبر 2026 (تحقق من إعلان 2027/28)." },
         { title: "بعد القبول", text: "أكمل التسجيل المسبق على Universitaly (آخر أجل كان 30 جوان في 2026)، ثم سجّل على [Infostud](https://www.studenti.uniroma1.it/webapps/infostud/registrazione). للأسئلة: recruitment@uniroma1.it." },
       ],
@@ -127,7 +127,7 @@ export const ar: ArticleTranslation = {
     { type: "h2", id: "private-universities", text: "4. كيف تترشح في الجامعتين الخاصتين LUISS وLUMSA؟" },
     {
       type: "p",
-      text: "تترشح في LUISS عبر Luiss Test أو بشهادات دولية، وفي LUMSA عبر اختبار قبول عن بعد؛ وفي الجامعتين الخاصتين يبقى التسجيل المسبق على Universitaly إلزاميًا بعد القبول.",
+      text: "تترشح في LUISS عبر Luiss Test أو بشهادات دولية، وفي LUMSA عبر اختبار قبول عن بعد. وفي الجامعتين الخاصتين يبقى التسجيل المسبق على Universitaly إلزاميًا بعد القبول.",
     },
     { type: "h3", id: "luiss", text: "LUISS: اختبار Luiss Test" },
     {
@@ -147,7 +147,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "كيف تترشح في كل جامعة في روما (إعلانات 2026/27 ما لم يُذكر غير ذلك؛ تحقق من إعلان 2027/28)",
+      caption: "كيف تترشح في كل جامعة في روما (إعلانات 2026/27 ما لم يُذكر غير ذلك، تحقق من إعلان 2027/28)",
       head: ["الجامعة", "طريقة الترشح", "الفترة المعتادة", "معلوم الترشح"],
       rows: [
         ["Sapienza", "MoveIn، ثم Universitaly وInfostud", "تقريبًا من ديسمبر إلى ماي", "30 يورو للترشح (ترشحان كحد أقصى)"],
@@ -234,7 +234,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "يترشح طلاب الدكتوراه بشهادة الماجستير وكشوف الأعداد. والمترشح الذي يتم اختياره يكمل أيضًا التسجيل المسبق على Universitaly؛ لا يوجد أجل ثابت لتأشيرة الدكتوراه، لكن قدّم طلب التأشيرة قبل انطلاق الدروس.",
+      text: "يترشح طلاب الدكتوراه بشهادة الماجستير وكشوف الأعداد. والمترشح الذي يتم اختياره يكمل أيضًا التسجيل المسبق على Universitaly. لا يوجد أجل ثابت لتأشيرة الدكتوراه، لكن قدّم طلب التأشيرة قبل انطلاق الدروس.",
     },
 
     {

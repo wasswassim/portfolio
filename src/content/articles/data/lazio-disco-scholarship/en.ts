@@ -11,7 +11,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["Lazio DiSCo scholarship for Tunisian students", "DiSCo Lazio scholarship 2027/28", "scholarships in Italy", "DiSCo scholarship Rome", "ISEEUP", "ISEE parificato"],
   summary:
-    "The Lazio DiSCo scholarship for Tunisian students gives an off-site student enrolled at a university in Rome or elsewhere in Lazio EUR 6,571.11 a year in cash, or EUR 7,556.78 for the lowest family incomes, plus two free meals a day (2026/27 values; supplements and housing deductions change the final amount), ranked for first-years on family economic data only. For 2027/28 you apply online around June-July 2027 without SPID, prepare your family documents from Tunisia in advance, then sign the ISEEUP at a DiSCo partner CAF after you arrive.",
+    "The Lazio DiSCo scholarship for Tunisian students gives an off-site student enrolled at a university in Rome or elsewhere in Lazio EUR 6,571.11 a year in cash, or EUR 7,556.78 for the lowest family incomes, plus two free meals a day (2026/27 values, supplements and housing deductions change the final amount), ranked for first-years on family economic data only. For 2027/28 you apply online around June-July 2027 without SPID, prepare your family documents from Tunisia in advance, then sign the ISEEUP at a DiSCo partner CAF after you arrive.",
   body: [
     {
       type: "callout",
@@ -73,7 +73,7 @@ export const en: ArticleTranslation = {
     {
       type: "fees",
       title: "What you still pay to enrol, even as a DiSCo winner",
-      text: "Winners still pay the Lazio regional tax and the revenue stamp. Tor Vergata's 2026/27 guide warns that if this payment is not validated you are not enrolled and lose the DiSCo benefits; check your university's rules.",
+      text: "Winners still pay the Lazio regional tax and the revenue stamp. Tor Vergata's 2026/27 guide warns that if this payment is not validated you are not enrolled and lose the DiSCo benefits. Check your university's rules.",
       feeIds: ["lazio-regional-tax", "uni-stamp"],
       total: true,
       tnd: true,
@@ -167,14 +167,14 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "iseeup", text: "6. How do you get your ISEEUP at a partner CAF?" },
     {
       type: "p",
-      text: "You get your ISEEUP by signing it at a DiSCo Lazio partner CAF after you arrive in Rome; the service is free and you bring your passport and your translated, apostilled family documents. The ISEEUP (also called ISEE parificato) is the economic indicator for students with income and assets abroad:",
+      text: "You get your ISEEUP by signing it at a DiSCo Lazio partner CAF after you arrive in Rome. The service is free and you bring your passport and your translated, apostilled family documents. The ISEEUP (also called ISEE parificato) is the economic indicator for students with income and assets abroad:",
     },
     {
       type: "ul",
       items: [
         "Book an appointment at a CAF on the [list of DiSCo partner CAFs](https://laziodisco.it/wp-content/uploads/2025/06/CAF-convenzionati-nel-Lazio-1.pdf). The service is free.",
         "Bring your passport and your translated, apostilled family documents. The CAF also does the identity check.",
-        "Sign the ISEEUP by about **10 December** (expected for 2027; check the call).",
+        "Sign the ISEEUP by about **10 December** (expected for 2027, check the call).",
       ],
     },
     {
@@ -201,7 +201,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "The permit and the two instalments (my experience)",
-      text: "In my experience and that of other students, the first instalment is paid once you upload the residence permit **receipt (ricevuta)** to your DiSCo Lazio profile, while the second instalment needs the **permit card** itself. If your card has not arrived and the second instalment is not paid, do not panic: you are not excluded. Be patient; once you have the card and upload it, the instalment is paid in one of the next payment runs announced by DiSCo Lazio. Check the current call for the official conditions.",
+      text: "In my experience and that of other students, the first instalment is paid once you upload the residence permit **receipt (ricevuta)** to your DiSCo Lazio profile, while the second instalment needs the **permit card** itself. If your card has not arrived and the second instalment is not paid, do not panic: you are not excluded. Be patient. Once you have the card and upload it, the instalment is paid in one of the next payment runs announced by DiSCo Lazio. Check the current call for the official conditions.",
     },
     {
       type: "p",
@@ -215,7 +215,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "keep-the-grant", text: "8. How many credits do you need to keep the DiSCo scholarship?" },
     {
       type: "p",
-      text: "First-year Bachelor's, single-cycle and Master's students must earn **20 credits by 10 August** to keep the DiSCo Lazio scholarship (2026/27 call; PhD students are confirmed when admitted to the second year). If you reach the 20 credits only by 30 November, DiSCo Lazio cuts the scholarship by 50%. If you miss that too, the scholarship is revoked and you must pay back what you received. Later years have their own credit requirements in the call.",
+      text: "First-year Bachelor's, single-cycle and Master's students must earn **20 credits by 10 August** to keep the DiSCo Lazio scholarship (2026/27 call, PhD students are confirmed when admitted to the second year). If you reach the 20 credits only by 30 November, DiSCo Lazio cuts the scholarship by 50%. If you miss that too, the scholarship is revoked and you must pay back what you received. Later years have their own credit requirements in the call.",
     },
 
     {

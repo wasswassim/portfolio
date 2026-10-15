@@ -26,7 +26,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "This is part 3 of our [guide to studying in Italy for Tunisian students](article:study-in-italy). Part 2 explains [how to apply to university in Rome](article:apply-university-rome); this part covers the paperwork you need for the application, the visa and the scholarship.",
+      text: "This is part 3 of our [guide to studying in Italy for Tunisian students](article:study-in-italy). Part 2 explains [how to apply to university in Rome](article:apply-university-rome). This part covers the paperwork you need for the application, the visa and the scholarship.",
     },
 
     { type: "h2", id: "start-early", text: "1. Why should you start your documents months ahead?" },
@@ -63,7 +63,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Bring your **full school path**: every diploma you hold and the transcripts that go with it, not only the last one. Check that your name is spelt **exactly as in your passport** on every page; if it is not, fix it now, because the same spelling must appear on your [Universitaly pre-enrolment](article:apply-university-rome#universitaly-pre-enrolment) and your visa file.",
+      text: "Bring your **full school path**: every diploma you hold and the transcripts that go with it, not only the last one. Check that your name is spelt **exactly as in your passport** on every page. If it is not, fix it now, because the same spelling must appear on your [Universitaly pre-enrolment](article:apply-university-rome#universitaly-pre-enrolment) and your visa file.",
     },
     { type: "h3", id: "step-certified-copies", text: "Step 2: certified copies at the municipality" },
     {
@@ -96,7 +96,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "tip",
       title: "Check before you translate everything",
-      text: "Some universities accept documents in French or English without an Italian translation (Roma Tre's guide says so unless stated otherwise). Ask your university which language it needs; the visa and the DiSCo scholarship may still ask for Italian.",
+      text: "Some universities accept documents in French or English without an Italian translation (Roma Tre's guide says so unless stated otherwise). Ask your university which language it needs. The visa and the DiSCo scholarship may still ask for Italian.",
     },
 
     { type: "h2", id: "dov-or-cimea", text: "4. Do you need a Dichiarazione di Valore or a CIMEA statement?" },
@@ -124,8 +124,8 @@ export const en: ArticleTranslation = {
       head: ["What", "Dichiarazione di Valore", "CIMEA Comparability + Verification"],
       rows: [
         ["Where", "Italian Embassy in Tunis, booked on Prenot@mi", "Online on DiploMe"],
-        ["Cost", "Free for continuing studies in Italy (with proof of admission); otherwise EUR 50 equivalent in TND", "EUR 300 per qualification"],
-        ["Time", "Not published", "60 working days for comparability (30 with the urgent option, +EUR 100); verification about 60 working days, depending on your institution's reply"],
+        ["Cost", "Free for continuing studies in Italy (with proof of admission). Otherwise EUR 50 equivalent in TND", "EUR 300 per qualification"],
+        ["Time", "Not published", "60 working days for comparability (30 with the urgent option, +EUR 100). Verification about 60 working days, depending on your institution's reply"],
       ],
     },
     { type: "h3", id: "step-book-dov", text: "How to request the DOV" },
@@ -185,7 +185,7 @@ export const en: ArticleTranslation = {
         "Have the translations apostilled too.",
         "Ask your university whether it wants a DOV or CIMEA, then book Prenot@mi or apply on DiploMe.",
         "Prepare the civil-status and family papers the same way, for the visa and DiSCo.",
-        "Keep scans of everything; the originals are checked again when you [finalise your enrolment in Rome](article:arriving-in-rome#finalise-enrolment).",
+        "Keep scans of everything. The originals are checked again when you [finalise your enrolment in Rome](article:arriving-in-rome#finalise-enrolment).",
       ],
     },
 
@@ -212,7 +212,7 @@ export const en: ArticleTranslation = {
         },
         {
           q: "How long does a CIMEA statement take for a Tunisian diploma?",
-          a: "Comparability takes about 60 working days (30 with the urgent option, which costs EUR 100 more), and verification about 60 working days, depending on how fast your Tunisian institution answers. The package costs EUR 300. You apply online on CIMEA's DiploMe platform; because Tunisia is not a party to the Lisbon Recognition Convention, the free comparability option does not apply.",
+          a: "Comparability takes about 60 working days (30 with the urgent option, which costs EUR 100 more), and verification about 60 working days, depending on how fast your Tunisian institution answers. The package costs EUR 300. You apply online on CIMEA's DiploMe platform. Because Tunisia is not a party to the Lisbon Recognition Convention, the free comparability option does not apply.",
         },
         {
           q: "Do I have to translate documents that are already in French?",
@@ -249,7 +249,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026, for the 2027/28 academic year. Fees, processing times and the Embassy's rules can change; check the Embassy page, CIMEA and your university's 2027/28 call before you start.",
+      text: "Last verified: October 2026, for the 2027/28 academic year. Fees, processing times and the Embassy's rules can change. Check the Embassy page, CIMEA and your university's 2027/28 call before you start.",
     },
   ],
   guide: [
@@ -258,7 +258,7 @@ export const en: ArticleTranslation = {
       items: [
         { label: "New since 30 March 2026", value: "Ministry authentication before the apostille" },
         { label: "Apostille", value: "By a Tunisian notary, 10 or 20 TND per document" },
-        { label: "Translation", value: "Translator on an official list; apostille on the translation too" },
+        { label: "Translation", value: "Translator on an official list. Apostille on the translation too" },
         { label: "Academic value", value: "DOV (free for study) or CIMEA (EUR 300): ask your university" },
       ],
     },

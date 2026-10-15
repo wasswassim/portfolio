@@ -101,7 +101,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "step-questura", text: "Étape 4 : aller à la Questura pour les empreintes" },
     {
       type: "p",
-      text: "À la poste, vous recevez aussi une convocation avec votre rendez-vous à la Questura, où l’on relève vos empreintes digitales. Suivez l’état de votre permis sur le [portail de la Polizia di Stato](https://questure.poliziadistato.it/stranieri/) avec les données de votre récépissé. La Polizia di Stato indique environ 60 jours de traitement ; la Sapienza prévient que cela peut prendre environ 90 jours.",
+      text: "À la poste, vous recevez aussi une convocation avec votre rendez-vous à la Questura, où l’on relève vos empreintes digitales. Suivez l’état de votre permis sur le [portail de la Polizia di Stato](https://questure.poliziadistato.it/stranieri/) avec les données de votre récépissé. La Polizia di Stato indique environ 60 jours de traitement. La Sapienza prévient que cela peut prendre environ 90 jours.",
     },
     {
       type: "figure",
@@ -195,12 +195,12 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Si l’ISEEUP est fait correctement, les premiers paiements suivent ; voir [quand DiSCo verse la bourse](article:lazio-disco-scholarship#payments).",
+      text: "Si l’ISEEUP est fait correctement, les premiers paiements suivent. Voir [quand DiSCo verse la bourse](article:lazio-disco-scholarship#payments).",
     },
     { type: "h3", id: "health-cover", text: "Choisir votre couverture santé" },
     {
       type: "p",
-      text: "Vous n’êtes pas obligé de vous inscrire au service national de santé (SSN), qui coûte environ 700 EUR par an ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)) : une assurance santé privée valable en Italie pendant toute la durée de votre permis est acceptée à la place. D’après mon expérience, une assurance santé souscrite en Tunisie, par exemple auprès de votre banque tunisienne lors de l’ouverture du dossier études, remplace l’inscription au SSN à 700 EUR ; vérifiez qu’elle couvre l’Italie pendant toute la durée du permis. Vérifiez le montant actuel du SSN auprès de votre ASL ou de votre université.",
+      text: "Vous n’êtes pas obligé de vous inscrire au service national de santé (SSN), qui coûte environ 700 EUR par an ([Tor Vergata, 2024](https://web.uniroma2.it/en/contenuto/health-insurance)) : une assurance santé privée valable en Italie pendant toute la durée de votre permis est acceptée à la place. D’après mon expérience, une assurance santé souscrite en Tunisie, par exemple auprès de votre banque tunisienne lors de l’ouverture du dossier études, remplace l’inscription au SSN à 700 EUR. Vérifiez qu’elle couvre l’Italie pendant toute la durée du permis. Vérifiez le montant actuel du SSN auprès de votre ASL ou de votre université.",
     },
     {
       type: "fees",
@@ -234,7 +234,7 @@ export const fr: ArticleTranslation = {
         ["Postepay Evolution", "5 EUR + 19 EUR par an (confirmé)", "Vous donne un IBAN pour DiSCo et le loyer."],
         ["Abonnement de transport", "35 EUR par mois ou 250 EUR par an (confirmé)", "Vérifiez les offres étudiantes sur le site de l’ATAC."],
         ["Carte SIM et premier mois", "Vérifiez les prix actuels", "Comparez les offres avant d’acheter."],
-        ["Nourriture du mois", "Vérifiez les prix actuels", "Cuisinez chez vous ; les repas DiSCo ne commencent qu’une fois la bourse attribuée."],
+        ["Nourriture du mois", "Vérifiez les prix actuels", "Cuisinez chez vous. Les repas DiSCo ne commencent qu’une fois la bourse attribuée."],
         ["Chambre : premier loyer et caution", "Vérifiez les prix actuels", "Prévoyez ensemble le premier loyer et la caution."],
         ["Réserve d’urgence", "10 à 15 % de l’allocation", "N’y touchez qu’en cas de besoin."],
       ],
@@ -246,7 +246,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Achetez d’occasion sur [Subito](https://www.subito.it) : meubles, vélo, livres. Et ne payez jamais la caution d’une chambre avant de l’avoir vue ; lisez [comment éviter les arnaques au logement étudiant à Rome](article:student-housing-rome#avoid-scams).",
+      text: "Achetez d’occasion sur [Subito](https://www.subito.it) : meubles, vélo, livres. Et ne payez jamais la caution d’une chambre avant de l’avoir vue. Lisez [comment éviter les arnaques au logement étudiant à Rome](article:student-housing-rome#avoid-scams).",
     },
 
     { type: "h2", id: "student-work", text: "7. Peut-on travailler avec un permis de séjour étudiant en Italie ?" },
@@ -328,7 +328,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Note de mise à jour",
-      text: "Dernière vérification : octobre 2026. Les montants sont ceux publiés en 2026 ; les dates DiSCo sont projetées pour 2027/28 et doivent être confirmées dans le nouvel appel. Vérifiez les pages officielles avant de payer ou de voyager.",
+      text: "Dernière vérification : octobre 2026. Les montants sont ceux publiés en 2026. Les dates DiSCo sont projetées pour 2027/28 et doivent être confirmées dans le nouvel appel. Vérifiez les pages officielles avant de payer ou de voyager.",
     },
   ],
   guide: [

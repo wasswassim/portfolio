@@ -13,7 +13,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["WSC Tunisia", "World Study Center Tunis", "agency to study in Italy from Tunisia", "study in Italy agency Tunisia", "WSC Tunisia fees", "World Study Center Sousse"],
   summary:
-    "WSC Tunisia (World Study Center) is the Tunis study-abroad agency that handled my move to study in Rome, and it is on the Ministry of Higher Education's official list of approved study-abroad offices. In 2026, its 5 steps (pre-enrolment, language test, DiSCo scholarship, visa, departure) cost 5,500 TND, paid in three parts as each step is done (1,600, 2,500 and 1,400 TND). You collect every document yourself; the agency checks them, sends them to a sworn translator and builds the files, and every step is also explained for free in our study guide if you cannot pay an agency.",
+    "WSC Tunisia (World Study Center) is the Tunis study-abroad agency that handled my move to study in Rome, and it is on the Ministry of Higher Education's official list of approved study-abroad offices. In 2026, its 5 steps (pre-enrolment, language test, DiSCo scholarship, visa, departure) cost 5,500 TND, paid in three parts as each step is done (1,600, 2,500 and 1,400 TND). You collect every document yourself. The agency checks them, sends them to a sworn translator and builds the files, and every step is also explained for free in our study guide if you cannot pay an agency.",
   body: [
     {
       type: "callout",
@@ -28,13 +28,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The agency does not collect your papers for you. You go out, get every document and bring it to them; WSC checks each one, sends it to a sworn translator and builds the files. If you cannot afford an agency, you can follow the same steps for free with our [guide to studying in Italy for Tunisian students](article:study-in-italy): I link the matching part at each step below.",
+      text: "The agency does not collect your papers for you. You go out, get every document and bring it to them. WSC checks each one, sends it to a sworn translator and builds the files. If you cannot afford an agency, you can follow the same steps for free with our [guide to studying in Italy for Tunisian students](article:study-in-italy): I link the matching part at each step below.",
     },
 
     { type: "h2", id: "who-is-wsc", text: "1. Who is WSC Tunisia, and why did I trust it?" },
     {
       type: "p",
-      text: "WSC is a study-abroad agency with offices in Tunis and Sousse. Both offices are on the [Ministry of Higher Education's official list of approved study-abroad intermediary offices](https://www.mes.tn/image.php?id=19999), the only offices the Ministry vouches for. On [its website](https://wsctunisia.com/), WSC gives its approval number (04/07) and more than 26 years of experience (as stated in October 2026); Italy is one of its main destinations, next to Romania, Germany and Spain. I trusted it because it did what the step sheet said: I followed its 5 steps and I am now studying in Rome.",
+      text: "WSC is a study-abroad agency with offices in Tunis and Sousse. Both offices are on the [Ministry of Higher Education's official list of approved study-abroad intermediary offices](https://www.mes.tn/image.php?id=19999), the only offices the Ministry vouches for. On [its website](https://wsctunisia.com/), WSC gives its approval number (04/07) and more than 26 years of experience (as stated in October 2026). Italy is one of its main destinations, next to Romania, Germany and Spain. I trusted it because it did what the step sheet said: I followed its 5 steps and I am now studying in Rome.",
     },
     {
       type: "p",
@@ -43,7 +43,7 @@ export const en: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**An approval you can check** on the [Ministry's list of approved offices](https://www.mes.tn/image.php?id=19999), and a real office you can visit (WSC's Tunis office is at 6 rue de Mahdia, 3rd floor; phone 71 285 510).",
+        "**An approval you can check** on the [Ministry's list of approved offices](https://www.mes.tn/image.php?id=19999), and a real office you can visit (WSC's Tunis office is at 6 rue de Mahdia, 3rd floor, phone 71 285 510).",
         "**A written list of steps and fees** (WSC gives one on paper), and a receipt for every payment.",
         "**No promise of a guaranteed admission, scholarship or visa.** For the Dichiarazione di Valore, the Italian Embassy warns that nobody can sell you a faster appointment: see [the Embassy's warning about paid DOV appointments](article:documents-for-italy#which-university-accepts).",
       ],
@@ -59,7 +59,7 @@ export const en: ArticleTranslation = {
       caption: "WSC's steps and fees in 2026, as written on its step sheet (ask the agency for its current prices).",
       head: ["Step", "What happens", "WSC fee"],
       rows: [
-        ["1. Pre-enrolment file", "You bring your documents; WSC checks them, has them translated and applies to the universities", "1,600 TND"],
+        ["1. Pre-enrolment file", "You bring your documents. WSC checks them, has them translated and applies to the universities", "1,600 TND"],
         ["2. Language test", "You take IELTS Academic at the British Council (a B2-level score), or prove B2 in Italian for an Italian-taught course", "No separate WSC fee"],
         ["3. Scholarship file", "Your DiSCo scholarship file and a place in a student residence, prepared at the same time as the pre-enrolment", "2,500 TND"],
         ["4. Visa file", "The blocked bank amount, your parents' income and 6 months of their bank statements", "1,400 TND"],
@@ -118,7 +118,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "language-test", text: "4. Which language test does the agency ask for?" },
     {
       type: "p",
-      text: "For an English-taught course, WSC asks for **IELTS Academic with a B2-level score** (the band your course's call sets), taken at the [British Council in Tunisia](https://www.britishcouncil.tn/en/exam/ielts). For an Italian-taught course, you need **B2 in Italian** instead. You pay the test centre directly; it is not part of the agency fee. Some universities accept other certificates or run their own test, so check your course: [entry requirements for each course](article:apply-university-rome#find-a-course).",
+      text: "For an English-taught course, WSC asks for **IELTS Academic with a B2-level score** (the band your course's call sets), taken at the [British Council in Tunisia](https://www.britishcouncil.tn/en/exam/ielts). For an Italian-taught course, you need **B2 in Italian** instead. You pay the test centre directly. It is not part of the agency fee. Some universities accept other certificates or run their own test, so check your course: [entry requirements for each course](article:apply-university-rome#find-a-course).",
     },
 
     { type: "h2", id: "university-fees", text: "5. Which fees does the agency ask you to pay besides its own?" },
@@ -135,14 +135,14 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "You can also pay these fees yourself: compare the four legal ways in [how Tunisians pay Italian university fees](article:international-card-tunisia), from a bank transfer to the [international technology card](article:technology-card-tunisia). For a pagoPA notice, see [how to pay pagoPA with PayPal](article:pay-pagopa-from-abroad#pay-with-paypal); when your Tunisian card is declined, a [RedotPay](ref:redotpay) card linked to PayPal is the last resort, explained in [the PayPal and RedotPay route](article:international-card-tunisia#paypal-pagopa).",
+      text: "You can also pay these fees yourself: compare the four legal ways in [how Tunisians pay Italian university fees](article:international-card-tunisia), from a bank transfer to the [international technology card](article:technology-card-tunisia). For a pagoPA notice, see [how to pay pagoPA with PayPal](article:pay-pagopa-from-abroad#pay-with-paypal). When your Tunisian card is declined, a [RedotPay](ref:redotpay) card linked to PayPal is the last resort, explained in [the PayPal and RedotPay route](article:international-card-tunisia#paypal-pagopa).",
     },
     {
       type: "table",
       caption: "Who can pay the university fees, and how.",
       head: ["Option", "How it works", "Good for"],
       rows: [
-        ["The agency pays", "You give WSC the amount in dinars; it pays with its international method", "Not having to deal with foreign payments"],
+        ["The agency pays", "You give WSC the amount in dinars. It pays with its international method", "Not having to deal with foreign payments"],
         ["Bank transfer", "Your bank pays the university against its invoice", "Larger fees, the safest legal route"],
         ["Technology card (CTI)", "A Tunisian card for online payments, 1,000 TND a year", "Small online fees"],
         ["PayPal + RedotPay", "A RedotPay card linked to PayPal, for pagoPA and online fees", "When your Tunisian card is declined"],
@@ -153,13 +153,13 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "scholarship-file", text: "6. How do you prepare the fiscal documents for the scholarship?" },
     {
       type: "p",
-      text: "The scholarship step is the DiSCo Lazio grant, which WSC's sheet puts between EUR 6,000 and 8,000 a year (in the 2026/27 call, EUR 6,571.11 a year for most off-site students, up to EUR 7,556.78 for the lowest incomes and less for higher ones; it is a ranking on family income, not a guarantee, and a residence place is deducted from it). The agency prepares it **at the same time as the pre-enrolment**, together with the request for a place in a student residence. Your part is the family's fiscal documents, and they take the longest:",
+      text: "The scholarship step is the DiSCo Lazio grant, which WSC's sheet puts between EUR 6,000 and 8,000 a year (in the 2026/27 call, EUR 6,571.11 a year for most off-site students, up to EUR 7,556.78 for the lowest incomes and less for higher ones, it is a ranking on family income, not a guarantee, and a residence place is deducted from it). The agency prepares it **at the same time as the pre-enrolment**, together with the request for a place in a student residence. Your part is the family's fiscal documents, and they take the longest:",
     },
     {
       type: "ol",
       items: [
         "**Family composition**: an official document listing each member with date of birth.",
-        "**Income of each family member** for year N-2 (2025 for 2027/28): for an employee, a salary or income certificate from the employer; for a self-employed parent, the tax return filed with the tax office; for a retired parent, the pension certificate.",
+        "**Income of each family member** for year N-2 (2025 for 2027/28): for an employee, a salary or income certificate from the employer. For a self-employed parent, the tax return filed with the tax office. For a retired parent, the pension certificate.",
         "**A document for every member without income** that says so explicitly: DiSCo refuses self-declarations, and the family's total income cannot be zero.",
         "**Real estate** owned at 31 December, with the surface in square metres (a property certificate), or a document stating there is none.",
         "**Bank balances** of the family at 31 December, from each bank, or a document stating there are none.",
@@ -168,13 +168,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Check that every document shows the same names as the passports and the same year, then the agency sends them to the sworn translator; each one needs an apostille on the original and on the translation. After you arrive in Rome, you sign your ISEEUP at a partner CAF with these papers. Every detail is in [the DiSCo family documents](article:lazio-disco-scholarship#family-documents) and [how to get your ISEEUP](article:lazio-disco-scholarship#iseeup).",
+      text: "Check that every document shows the same names as the passports and the same year, then the agency sends them to the sworn translator. Each one needs an apostille on the original and on the translation. After you arrive in Rome, you sign your ISEEUP at a partner CAF with these papers. Every detail is in [the DiSCo family documents](article:lazio-disco-scholarship#family-documents) and [how to get your ISEEUP](article:lazio-disco-scholarship#iseeup).",
     },
 
     { type: "h2", id: "visa-file", text: "7. How does the visa file work with the agency?" },
     {
       type: "p",
-      text: "The visa step rests on money: a **blocked amount at a Tunisian bank**, your parents' income and **6 months of their bank statements**. WSC's sheet says 35,000 TND; the Italian Embassy asked for EUR 10,179.85 for 2026/27, about 34,300 TND at the BCT rate of 7 October 2026 (the bank converts on the day you block, so ask it for the exact dinar amount). The agency checks that the amounts match across your papers and builds the file; you open the student file and block the money at your bank. See [how the blocked account works](article:italy-student-visa#blocked-account) and [the 15 documents of the student visa](article:italy-student-visa#visa-documents).",
+      text: "The visa step rests on money: a **blocked amount at a Tunisian bank**, your parents' income and **6 months of their bank statements**. WSC's sheet says 35,000 TND. The Italian Embassy asked for EUR 10,179.85 for 2026/27, about 34,300 TND at the BCT rate of 7 October 2026 (the bank converts on the day you block, so ask it for the exact dinar amount). The agency checks that the amounts match across your papers and builds the file. You open the student file and block the money at your bank. See [how the blocked account works](article:italy-student-visa#blocked-account) and [the 15 documents of the student visa](article:italy-student-visa#visa-documents).",
     },
     { type: "h3", id: "visa-appointment", text: "How the appointment works" },
     {
@@ -200,7 +200,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "do-it-yourself", text: "8. Can you do all of this yourself without an agency?" },
     {
       type: "p",
-      text: "Yes. Every step WSC handles is a public procedure that you can do yourself. The agency saves you time, checks your papers, works with translators it knows and pays foreign fees for you; doing it yourself saves the 5,500 TND. If you go alone, follow our free guide in this order:",
+      text: "Yes. Every step WSC handles is a public procedure that you can do yourself. The agency saves you time, checks your papers, works with translators it knows and pays foreign fees for you. Doing it yourself saves the 5,500 TND. If you go alone, follow our free guide in this order:",
     },
     {
       type: "table",
@@ -270,7 +270,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last checked: October 2026. WSC's fees and steps are its 2026 prices, from its step sheet and its website; the agency can change them. Scholarship and visa amounts are from the 2026/27 calls; check the 2027/28 figures before you plan.",
+      text: "Last checked: October 2026. WSC's fees and steps are its 2026 prices, from its step sheet and its website. The agency can change them. Scholarship and visa amounts are from the 2026/27 calls. Check the 2027/28 figures before you plan.",
     },
   ],
   guide: [

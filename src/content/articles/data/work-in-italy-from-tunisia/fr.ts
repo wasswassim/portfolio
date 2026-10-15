@@ -63,7 +63,7 @@ export const fr: ArticleTranslation = {
       width: 1600,
       height: 791,
       alt: "Façade du Palazzo Chigi à Rome, avec les drapeaux italien et européen au-dessus de l'entrée",
-      caption: "Le Palazzo Chigi à Rome, siège du gouvernement italien. Les quotas du Decreto Flussi sont fixés par un décret du gouvernement ; cette voie fonctionne en dehors de ces quotas.",
+      caption: "Le Palazzo Chigi à Rome, siège du gouvernement italien. Les quotas du Decreto Flussi sont fixés par un décret du gouvernement. Cette voie fonctionne en dehors de ces quotas.",
       credit: {
         text: "Photo : Blackcat (Sergio D'Afflitto), CC BY-SA 4.0, via Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:Palazzo_Chigi_Roma_giugno_2024.jpg",
@@ -81,7 +81,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "who-can-apply", text: "2. Qui peut utiliser la voie de la formation ?" },
     {
       type: "p",
-      text: "Seul un Tunisien qui fait partie d'un programme de formation agréé et remplit les conditions fixées par ce programme peut utiliser la voie de la formation ; elle ne s'applique pas automatiquement à tout Tunisien qui souhaite travailler en Italie.",
+      text: "Seul un Tunisien qui fait partie d'un programme de formation agréé et remplit les conditions fixées par ce programme peut utiliser la voie de la formation. Elle ne s'applique pas automatiquement à tout Tunisien qui souhaite travailler en Italie.",
     },
     {
       type: "p",
@@ -217,7 +217,7 @@ export const fr: ArticleTranslation = {
     { type: "h3", id: "step-match-requirements", text: "Étape 2 : vérifiez que votre métier correspond aux conditions de l'offre" },
     {
       type: "p",
-      text: "Chaque offre fixe ses propres conditions. On peut vous demander, par exemple, un diplôme de formation professionnelle (par exemple un BTP, brevet de technicien professionnel, ou un BTS, brevet de technicien supérieur), un certificat d'aptitude, une expérience professionnelle documentée, un permis de conduire professionnel pour certains postes, ou d'autres conditions liées au métier ou au programme. Ne vous fiez pas à une liste générale publiée sur les réseaux sociaux ; lisez l'offre officielle elle-même.",
+      text: "Chaque offre fixe ses propres conditions. On peut vous demander, par exemple, un diplôme de formation professionnelle (par exemple un BTP, brevet de technicien professionnel, ou un BTS, brevet de technicien supérieur), un certificat d'aptitude, une expérience professionnelle documentée, un permis de conduire professionnel pour certains postes, ou d'autres conditions liées au métier ou au programme. Ne vous fiez pas à une liste générale publiée sur les réseaux sociaux. Lisez l'offre officielle elle-même.",
     },
     {
       type: "p",
@@ -236,7 +236,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "documents", text: "5. Quels documents faut-il pour postuler ?" },
     {
       type: "p",
-      text: "La plupart des offres pour l'Italie demandent une carte d'identité et un passeport valides, un diplôme professionnel ou un certificat d'aptitude, et une preuve de l'expérience professionnelle ; la liste exacte dépend de chaque offre. Préparez le dossier à l'avance, car le délai de candidature de certaines offres est court.",
+      text: "La plupart des offres pour l'Italie demandent une carte d'identité et un passeport valides, un diplôme professionnel ou un certificat d'aptitude, et une preuve de l'expérience professionnelle. La liste exacte dépend de chaque offre. Préparez le dossier à l'avance, car le délai de candidature de certaines offres est court.",
     },
     {
       type: "ul",
@@ -308,7 +308,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "avoid-scams", text: "8. Comment repérer une fausse offre d'emploi en Italie ?" },
     {
       type: "p",
-      text: "Une offre d'emploi en Italie est une arnaque quand quelqu'un demande de l'argent en échange d'un contrat, d'un emploi ou d'un visa garanti ; les vraies offres passent par des canaux officiels comme l'ANETI, et le Nulla Osta est demandé par l'employeur italien.",
+      text: "Une offre d'emploi en Italie est une arnaque quand quelqu'un demande de l'argent en échange d'un contrat, d'un emploi ou d'un visa garanti. Les vraies offres passent par des canaux officiels comme l'ANETI, et le Nulla Osta est demandé par l'employeur italien.",
     },
     {
       type: "callout",

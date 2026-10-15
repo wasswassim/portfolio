@@ -11,7 +11,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["payer pagoPA depuis l’étranger", "payer pagoPA avec PayPal", "paiement pagoPA Tunisie", "carte internationale pagoPA", "checkout.pagopa.it", "avviso di pagamento"],
   summary:
-    "Payer un avis pagoPA depuis l’étranger ou depuis la Tunisie est un paiement normal et simple : en ligne sur checkout.pagopa.it par carte ou PayPal, sans SPID, ou en espèces dans un bureau de tabac (tabaccheria) ou un bureau de poste une fois en Italie. En octobre 2026, PayPal coûte 1,50 EUR (2,50 EUR au-delà de 248,50 EUR), plus environ 4 % si PayPal convertit la devise ; d’après mon expérience, beaucoup d’étudiants tunisiens font aussi payer l’avis par une agence d’études en Tunisie.",
+    "Payer un avis pagoPA depuis l’étranger ou depuis la Tunisie est un paiement normal et simple : en ligne sur checkout.pagopa.it par carte ou PayPal, sans SPID, ou en espèces dans un bureau de tabac (tabaccheria) ou un bureau de poste une fois en Italie. En octobre 2026, PayPal coûte 1,50 EUR (2,50 EUR au-delà de 248,50 EUR), plus environ 4 % si PayPal convertit la devise. D’après mon expérience, beaucoup d’étudiants tunisiens font aussi payer l’avis par une agence d’études en Tunisie.",
   body: [
     {
       type: "callout",
@@ -53,9 +53,9 @@ export const fr: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**Sapienza** : vous générez le paiement sur Infostud et vous le réglez uniquement via pagoPA ; le règlement précise qu’aucun autre moyen n’est accepté ([règlement des frais Sapienza 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
+        "**Sapienza** : vous générez le paiement sur Infostud et vous le réglez uniquement via pagoPA. Le règlement précise qu’aucun autre moyen n’est accepté ([règlement des frais Sapienza 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
         "**Tor Vergata** : les 30 EUR de frais de candidature se paient via pagoPA ([procédure de candidature](https://web.uniroma2.it/allegato/45147/contenuto/application_procedure)), et les frais d’inscription sont générés sur Delphi.",
-        "**Taxe régionale du Latium** : 140 EUR plus un timbre de 16 EUR, payés avec la première tranche par presque tous les étudiants d’une université publique du Latium, candidats DiSCo compris ; les exonérations figurent dans le règlement des frais de votre université ([Sapienza : taxe régionale et timbre](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
+        "**Taxe régionale du Latium** : 140 EUR plus un timbre de 16 EUR, payés avec la première tranche par presque tous les étudiants d’une université publique du Latium, candidats DiSCo compris. Les exonérations figurent dans le règlement des frais de votre université ([Sapienza : taxe régionale et timbre](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
       ],
     },
     {
@@ -87,11 +87,11 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Pour utiliser PayPal, liez d’abord votre carte internationale au compte ; notre guide de la [carte technologique internationale en Tunisie](article:technology-card-tunisia) explique comment l’obtenir. PayPal peut prélever un petit montant temporaire pour confirmer la carte, remboursé après vérification ([frais PayPal Tunisie](https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN)).",
+      text: "Pour utiliser PayPal, liez d’abord votre carte internationale au compte. Notre guide de la [carte technologique internationale en Tunisie](article:technology-card-tunisia) explique comment l’obtenir. PayPal peut prélever un petit montant temporaire pour confirmer la carte, remboursé après vérification ([frais PayPal Tunisie](https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN)).",
     },
     {
       type: "p",
-      text: "Un compte PayPal tunisien est un contrat avec PayPal Pte. Ltd., une société de Singapour. Il permet de payer et d’envoyer ; la réception d’argent n’est proposée que « là où elle est disponible », et le site tunisien de PayPal ne met en avant que le paiement et l’envoi ([conditions d’utilisation PayPal, Tunisie](https://www.paypal.com/tn/legalhub/paypal/useragreement-full?locale.x=en_TN)). Cette limite ne bloque pas un paiement pagoPA, puisque régler un avis est un paiement, pas une réception d’argent.",
+      text: "Un compte PayPal tunisien est un contrat avec PayPal Pte. Ltd., une société de Singapour. Il permet de payer et d’envoyer. La réception d’argent n’est proposée que « là où elle est disponible », et le site tunisien de PayPal ne met en avant que le paiement et l’envoi ([conditions d’utilisation PayPal, Tunisie](https://www.paypal.com/tn/legalhub/paypal/useragreement-full?locale.x=en_TN)). Cette limite ne bloque pas un paiement pagoPA, puisque régler un avis est un paiement, pas une réception d’argent.",
     },
     {
       type: "callout",
@@ -111,7 +111,7 @@ export const fr: ArticleTranslation = {
       width: 1600,
       height: 400,
       alt: "Logo de PayPal",
-      caption: "PayPal est une marque de PayPal, Inc. ; le logo sert seulement à identifier le service.",
+      caption: "PayPal est une marque de PayPal, Inc.. Le logo sert seulement à identifier le service.",
       credit: {
         text: "Logo : PayPal, domaine public, via Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
@@ -150,7 +150,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les frais de conversion PayPal d’environ 4 % s’appliquent quand PayPal convertit la devise pour vous ; vérifiez le montant final sur votre relevé après le paiement.",
+      text: "Les frais de conversion PayPal d’environ 4 % s’appliquent quand PayPal convertit la devise pour vous. Vérifiez le montant final sur votre relevé après le paiement.",
     },
     {
       type: "callout",
@@ -169,14 +169,14 @@ export const fr: ArticleTranslation = {
       items: [
         "Après votre e-mail, choisissez **Carta di credito o debito**.",
         "Tapez le nom du titulaire, le numéro de carte, la date d’expiration et le CVV.",
-        "Choisissez un prestataire ; ce n’est pas forcément votre banque.",
+        "Choisissez un prestataire. Ce n’est pas forcément votre banque.",
         "Vérifiez le montant commission comprise, puis appuyez sur **Paga**.",
         "Validez le paiement sur la page ou l’application de votre banque (l’étape 3-D Secure).",
       ],
     },
     {
       type: "table",
-      caption: "Commissions par carte sur checkout.pagopa.it selon le montant de l’avis (données de coûts pagoPA, relevé du 10 octobre 2026 ; elles changent).",
+      caption: "Commissions par carte sur checkout.pagopa.it selon le montant de l’avis (données de coûts pagoPA, relevé du 10 octobre 2026, elles changent).",
       head: ["Montant de l’avis", "Offres carte", "Commission"],
       rows: [
         ["16 EUR", "24", "0,25 à 1,50 EUR"],
@@ -231,7 +231,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Votre université valide ensuite le paiement sur son portail, souvent après quelques jours. Vérifiez Infostud ou Delphi ; si rien n’apparaît après environ une semaine, envoyez le reçu au secrétariat étudiant. Tor Vergata prévient que si le paiement de la taxe régionale n’est pas validé, vous n’êtes pas inscrit et vous perdez vos avantages DiSCo ([guide de l’étudiant Tor Vergata 2026/27](https://www-2023.studenti.uniroma2.it/wp-content/uploads/2026/07/Guida-dello-Studente-2026_2027v5.pdf)).",
+      text: "Votre université valide ensuite le paiement sur son portail, souvent après quelques jours. Vérifiez Infostud ou Delphi. Si rien n’apparaît après environ une semaine, envoyez le reçu au secrétariat étudiant. Tor Vergata prévient que si le paiement de la taxe régionale n’est pas validé, vous n’êtes pas inscrit et vous perdez vos avantages DiSCo ([guide de l’étudiant Tor Vergata 2026/27](https://www-2023.studenti.uniroma2.it/wp-content/uploads/2026/07/Guida-dello-Studente-2026_2027v5.pdf)).",
     },
 
     {

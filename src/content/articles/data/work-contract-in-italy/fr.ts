@@ -164,7 +164,7 @@ export const fr: ArticleTranslation = {
     {
       type: "fees",
       title: "Kit du permis de séjour à la poste",
-      text: "Le total vaut pour un permis jusqu'à 1 an ; pour un permis de plus d'un an et jusqu'à 2 ans, la contribution est de 50 EUR, soit 126,46 EUR au total",
+      text: "Le total vaut pour un permis jusqu'à 1 an. Pour un permis de plus d'un an et jusqu'à 2 ans, la contribution est de 50 EUR, soit 126,46 EUR au total",
       feeIds: ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y"],
       total: true,
     },
@@ -301,8 +301,8 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Qui dépose le Nulla Osta", value: "L'employeur italien, et non le travailleur" },
         { label: "Visa", value: "National Visa D, demandé depuis la Tunisie" },
-        { label: "Délai après la formation", value: "Compté depuis la fin de la formation ; vérifiez le chiffre actuel auprès du ministère" },
-        { label: "Contratto di soggiorno", value: "Demander le rendez-vous dans les 8 jours ouvrables suivant l'entrée en Italie (guide officiel) ; à confirmer auprès du Sportello Unico" },
+        { label: "Délai après la formation", value: "Compté depuis la fin de la formation. Vérifiez le chiffre actuel auprès du ministère" },
+        { label: "Contratto di soggiorno", value: "Demander le rendez-vous dans les 8 jours ouvrables suivant l'entrée en Italie (guide officiel). À confirmer auprès du Sportello Unico" },
       ],
     },
     { type: "h2", id: "path-in-brief", text: "Le parcours complet en bref" },

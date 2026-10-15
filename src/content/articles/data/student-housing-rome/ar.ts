@@ -98,10 +98,10 @@ export const ar: ArticleTranslation = {
       caption: "أين تبحث عن غرفة في روما، وما الذي يجب الانتباه إليه.",
       head: ["الخيار", "مناسب لـ", "انتبه إلى"],
       rows: [
-        ["إقامة DiSCo", "أقل تكلفة، إن حصلت على المنحة", "فقط عبر الإعلان السنوي؛ ليست إثباتًا للتأشيرة"],
+        ["إقامة DiSCo", "أقل تكلفة، إن حصلت على المنحة", "فقط عبر الإعلان السنوي. ليست إثباتًا للتأشيرة"],
         ["مكتب السكن في الجامعة", "نصائح وجهات اتصال موثوقة", "مساعدة في البحث، لا غرفة مضمونة"],
         ["[HousingAnywhere](https://housinganywhere.com) و[Uniplaces](https://www.uniplaces.com) و[Spotahome](https://www.spotahome.com)", "الحجز وأنت في تونس قبل الوصول", "اقرأ شروط الإلغاء ومعاليم المنصة"],
-        ["[Immobiliare.it](https://www.immobiliare.it) و[Idealista](https://www.idealista.it)", "إعلانات كثيرة لغرف وشقق كاملة", "غالبًا بالإيطالية؛ تحقق من صاحب الإعلان"],
+        ["[Immobiliare.it](https://www.immobiliare.it) و[Idealista](https://www.idealista.it)", "إعلانات كثيرة لغرف وشقق كاملة", "غالبًا بالإيطالية. تحقق من صاحب الإعلان"],
         ["[Subito](https://www.subito.it)", "غرف من مالكين خواص", "أغلب الاحتيال يقع في الإعلانات المفتوحة: لا تدفع أبدًا قبل المعاينة"],
       ],
     },
@@ -121,7 +121,7 @@ export const ar: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "يجب [تسجيل عقد الكراء الجديد لدى Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) خلال 30 يومًا. يمكن للمالك أو للمتسوغ تسجيله، وكلاهما مسؤول بالتضامن عن المعلوم؛ وعادة ما يقوم به المالك، لذا اطلب إثبات التسجيل واحتفظ بنسخة منه. وقد تحتاج إلى codice fiscale لإمضاء العقد: يمكنك الحصول عليه من أي مكتب لـAgenzia delle Entrate (اطلع على [كيفية الحصول على codice fiscale](article:arriving-in-rome#codice-fiscale)).",
+      text: "يجب [تسجيل عقد الكراء الجديد لدى Agenzia delle Entrate](https://www.agenziaentrate.gov.it/portale/schede/fabbricatiterreni/registrazione-di-un-nuovo-contratto/schedainfo-regime-ordinario) خلال 30 يومًا. يمكن للمالك أو للمتسوغ تسجيله، وكلاهما مسؤول بالتضامن عن المعلوم. وعادة ما يقوم به المالك، لذا اطلب إثبات التسجيل واحتفظ بنسخة منه. وقد تحتاج إلى codice fiscale لإمضاء العقد: يمكنك الحصول عليه من أي مكتب لـAgenzia delle Entrate (اطلع على [كيفية الحصول على codice fiscale](article:arriving-in-rome#codice-fiscale)).",
     },
     {
       type: "fees",
@@ -172,7 +172,7 @@ export const ar: ArticleTranslation = {
         },
         {
           q: "هل يمكنني طلب إقامة DiSCo دون المنحة؟",
-          a: "لا. ليس لدى DiSCo Lazio طلب سكن منفصل: يُطلب المكان في الإقامة في نفس طلب DiSCo الإلكتروني الخاص بالمنحة، بنفس شروط الدخل ونفس الآجال. بالنسبة لسنة 2027/28، يُتوقع أن يكون طلب DiSCo في حدود جوان-جويلية 2027، وترتيب السكن في حدود منتصف سبتمبر؛ تحقق من التواريخ في إعلان 2027/28.",
+          a: "لا. ليس لدى DiSCo Lazio طلب سكن منفصل: يُطلب المكان في الإقامة في نفس طلب DiSCo الإلكتروني الخاص بالمنحة، بنفس شروط الدخل ونفس الآجال. بالنسبة لسنة 2027/28، يُتوقع أن يكون طلب DiSCo في حدود جوان-جويلية 2027، وترتيب السكن في حدود منتصف سبتمبر. تحقق من التواريخ في إعلان 2027/28.",
         },
         {
           q: "هل أحتاج إلى codice fiscale لكراء غرفة في روما؟",
@@ -215,7 +215,7 @@ export const ar: ArticleTranslation = {
       items: [
         { label: "إقامة DiSCo", value: "حوالي 200 إلى 298 يورو شهريًا في 2026/27، تُخصم من المنحة" },
         { label: "طريقة الطلب", value: "فقط في طلب DiSCo السنوي" },
-        { label: "تسجيل عقد الكراء", value: "خلال 30 يومًا، من أي من الطرفين؛ اطلب الإثبات" },
+        { label: "تسجيل عقد الكراء", value: "خلال 30 يومًا، من أي من الطرفين. اطلب الإثبات" },
         { label: "القاعدة الذهبية", value: "لا تدفع أبدًا قبل معاينة الغرفة" },
       ],
     },

@@ -11,7 +11,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["open a bank account in Italy as a student", "bank account Italy student", "student bank account in Rome", "best bank in Italy for international students", "documents to open a bank account in Italy", "Revolut Italian IBAN", "conto di base", "Wise card Tunisia", "open a Revolut account in Italy"],
   summary:
-    "To open a bank account in Italy as a student, get your Italian codice fiscale first; in my experience, Intesa Sanpaolo then opened a normal current account with my passport and proof of enrolment, and its XME Conto Silver costs EUR 5.90 a month as of October 2026. Revolut gives Italy residents an Italian IBAN in the app, Wise is an easy backup with a EUR 7 card, and anyone legally staying in the EU has a legal right to a basic account (conto di base).",
+    "To open a bank account in Italy as a student, get your Italian codice fiscale first. In my experience, Intesa Sanpaolo then opened a normal current account with my passport and proof of enrolment, and its XME Conto Silver costs EUR 5.90 a month as of October 2026. Revolut gives Italy residents an Italian IBAN in the app, Wise is an easy backup with a EUR 7 card, and anyone legally staying in the EU has a legal right to a basic account (conto di base).",
   body: [
     {
       type: "callout",
@@ -32,7 +32,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "what-you-need", text: "1. What documents do you need to open a bank account in Italy?" },
     {
       type: "p",
-      text: "To open a bank account in Italy, you need an Italian **codice fiscale** and your passport; in my case, Intesa Sanpaolo also asked for proof of enrolment. Get the codice fiscale first, because every Italian bank asks for it. The codice fiscale normally comes with your residence permit application; see [how to get your codice fiscale in Rome](article:arriving-in-rome#codice-fiscale).",
+      text: "To open a bank account in Italy, you need an Italian **codice fiscale** and your passport. In my case, Intesa Sanpaolo also asked for proof of enrolment. Get the codice fiscale first, because every Italian bank asks for it. The codice fiscale normally comes with your residence permit application. See [how to get your codice fiscale in Rome](article:arriving-in-rome#codice-fiscale).",
     },
     {
       type: "callout",
@@ -120,11 +120,11 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "revolut-tessera-sanitaria", text: "If the app asks for a Tessera Sanitaria" },
     {
       type: "p",
-      text: "During onboarding, the Revolut app may ask for a **Tessera Sanitaria** (the Italian health card), which most new students do not have yet. In my experience and that of other students, uploading the official **codice fiscale document** instead worked. The codice fiscale document may be rejected at first; resubmitting it usually sends the account to manual review by a person. My review took 3 business days and was approved.",
+      text: "During onboarding, the Revolut app may ask for a **Tessera Sanitaria** (the Italian health card), which most new students do not have yet. In my experience and that of other students, uploading the official **codice fiscale document** instead worked. The codice fiscale document may be rejected at first. Resubmitting it usually sends the account to manual review by a person. My review took 3 business days and was approved.",
     },
     {
       type: "p",
-      text: "Once approved, the Revolut account gives you an Italian IBAN straight in the app; if you want one, you can sign up through the partner link below.",
+      text: "Once approved, the Revolut account gives you an Italian IBAN straight in the app. If you want one, you can sign up through the partner link below.",
     },
     { type: "referral", provider: "revolut" },
     {
@@ -137,13 +137,13 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "compare", text: "4. Intesa, Revolut, Wise or conto di base: side by side" },
     {
       type: "table",
-      caption: "The four options for a student in Rome (prices as of October 2026; check each provider before you sign up).",
+      caption: "The four options for a student in Rome (prices as of October 2026, check each provider before you sign up).",
       head: ["Option", "Monthly cost", "IBAN and documents", "Best for"],
       rows: [
-        ["Intesa Sanpaolo XME Conto Silver", "EUR 5.90 (EUR 2.90 with a salary)", "Italian IBAN; codice fiscale, passport, enrolment proof (my case)", "Your main account for rent, DiSCo and a salary"],
-        ["Revolut", "Standard free; Plus EUR 3.99", "Italian IBAN for Italy residents; ID, selfie, Italian address", "A fast account from the app"],
-        ["Wise", "No monthly fee; card EUR 7 once", "EUR account details; ID, selfie, address in an eligible country", "A backup card and cheap currency conversion"],
-        ["Conto di base (Intesa)", "EUR 30 a year; free with ISEE under EUR 11,600", "Italian IBAN; ID, codice fiscale, legal stay in the EU", "When a bank refuses a normal account"],
+        ["Intesa Sanpaolo XME Conto Silver", "EUR 5.90 (EUR 2.90 with a salary)", "Italian IBAN. Codice fiscale, passport, enrolment proof (my case)", "Your main account for rent, DiSCo and a salary"],
+        ["Revolut", "Standard free. Plus EUR 3.99", "Italian IBAN for Italy residents. ID, selfie, Italian address", "A fast account from the app"],
+        ["Wise", "No monthly fee. Card EUR 7 once", "EUR account details. ID, selfie, address in an eligible country", "A backup card and cheap currency conversion"],
+        ["Conto di base (Intesa)", "EUR 30 a year. Free with ISEE under EUR 11,600", "Italian IBAN. ID, codice fiscale, legal stay in the EU", "When a bank refuses a normal account"],
       ],
     },
 
@@ -168,7 +168,7 @@ export const en: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "Registration and the account are free; the physical card is EUR 7 (Wise card fees).",
+        "Registration and the account are free. The physical card is EUR 7 (Wise card fees).",
         "ATM withdrawals are free up to EUR 250 a month, then 2.69% of the extra.",
         "Currency conversion starts from 0.2%, depending on the currency (Wise pricing).",
       ],
@@ -199,13 +199,13 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "The right to a conto di base is not absolute: anti-money-laundering checks still apply. If a bank refuses, **ask for the reason in writing**; the Bank of Italy expects banks to explain refusals.",
+      text: "The right to a conto di base is not absolute: anti-money-laundering checks still apply. If a bank refuses, **ask for the reason in writing**. The Bank of Italy expects banks to explain refusals.",
     },
 
     { type: "h2", id: "which-to-choose", text: "7. Which account should you open first?" },
     {
       type: "p",
-      text: "In my experience, most students in Rome should open a current account at Intesa Sanpaolo first; Revolut, Wise and the conto di base cover the other cases.",
+      text: "In my experience, most students in Rome should open a current account at Intesa Sanpaolo first. Revolut, Wise and the conto di base cover the other cases.",
     },
     {
       type: "ul",
@@ -218,7 +218,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Whatever account you choose, the IBAN must be in your own name, because DiSCo Lazio pays the scholarship to your account; see [when DiSCo Lazio pays the scholarship](article:lazio-disco-scholarship#payments).",
+      text: "Whatever account you choose, the IBAN must be in your own name, because DiSCo Lazio pays the scholarship to your account. See [when DiSCo Lazio pays the scholarship](article:lazio-disco-scholarship#payments).",
     },
     {
       type: "p",

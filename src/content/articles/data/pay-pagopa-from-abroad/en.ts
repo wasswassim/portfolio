@@ -12,7 +12,7 @@ export const en: ArticleTranslation = {
   imageAlt: "The Colosseum in Rome with a giant Italian flag hanging from its side and crowds in front",
   keywords: ["pay pagoPA from abroad", "pay pagoPA with PayPal", "pay pagoPA from Tunisia", "pagoPA foreign card", "checkout.pagopa.it", "avviso di pagamento"],
   summary:
-    "Paying a pagoPA notice from abroad or from Tunisia is a normal, simple payment: pay online on checkout.pagopa.it by card or PayPal, without SPID, or in cash at a tabaccheria or post office once you are in Italy. As of October 2026, PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 4% if PayPal converts the currency; in my experience, many Tunisian students also have a study agency in Tunisia pay the notice for them.",
+    "Paying a pagoPA notice from abroad or from Tunisia is a normal, simple payment: pay online on checkout.pagopa.it by card or PayPal, without SPID, or in cash at a tabaccheria or post office once you are in Italy. As of October 2026, PayPal costs EUR 1.50 (EUR 2.50 above EUR 248.50) plus about 4% if PayPal converts the currency. In my experience, many Tunisian students also have a study agency in Tunisia pay the notice for them.",
   body: [
     {
       type: "callout",
@@ -54,9 +54,9 @@ export const en: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "**Sapienza**: you generate the payment on Infostud and pay it only through pagoPA; the rules say no other method is accepted ([Sapienza fee rules 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
+        "**Sapienza**: you generate the payment on Infostud and pay it only through pagoPA. The rules say no other method is accepted ([Sapienza fee rules 2026/27](https://www.uniroma1.it/sites/default/files/field_file_allegati/regolamento2026-2027.pdf)).",
         "**Tor Vergata**: the EUR 30 application fee is paid through pagoPA ([application procedure](https://web.uniroma2.it/allegato/45147/contenuto/application_procedure)), and enrolment fees are generated on Delphi.",
-        "**Lazio regional tax**: EUR 140 plus a EUR 16 stamp, paid with the first instalment by almost every student at a public university in Lazio, DiSCo applicants included; exemptions are listed in your university's fee rules ([Sapienza: regional tax and stamp](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
+        "**Lazio regional tax**: EUR 140 plus a EUR 16 stamp, paid with the first instalment by almost every student at a public university in Lazio, DiSCo applicants included. Exemptions are listed in your university's fee rules ([Sapienza: regional tax and stamp](https://www.uniroma1.it/it/content/tassa-regionale-il-diritto-allo-studio-e-imposta-di-bollo)).",
       ],
     },
     {
@@ -88,11 +88,11 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "To use PayPal, link your international card to the account first; our guide to the [international technology card in Tunisia](article:technology-card-tunisia) explains how to get one. PayPal may place a small temporary charge to confirm the card and refunds it after verification ([PayPal Tunisia fees](https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN)).",
+      text: "To use PayPal, link your international card to the account first. Our guide to the [international technology card in Tunisia](article:technology-card-tunisia) explains how to get one. PayPal may place a small temporary charge to confirm the card and refunds it after verification ([PayPal Tunisia fees](https://www.paypal.com/tn/digital-wallet/paypal-consumer-fees?locale.x=en_TN)).",
     },
     {
       type: "p",
-      text: "A Tunisian PayPal account is a contract with PayPal Pte. Ltd., a Singapore company. It lets you pay and send; receiving money is offered only “where available”, and PayPal's Tunisian site promotes only paying and sending ([PayPal user agreement, Tunisia](https://www.paypal.com/tn/legalhub/paypal/useragreement-full?locale.x=en_TN)). That limit does not block a pagoPA payment, because paying a notice is a payment, not a receipt of money.",
+      text: "A Tunisian PayPal account is a contract with PayPal Pte. Ltd., a Singapore company. It lets you pay and send. Receiving money is offered only “where available”, and PayPal's Tunisian site promotes only paying and sending ([PayPal user agreement, Tunisia](https://www.paypal.com/tn/legalhub/paypal/useragreement-full?locale.x=en_TN)). That limit does not block a pagoPA payment, because paying a notice is a payment, not a receipt of money.",
     },
     {
       type: "callout",
@@ -112,7 +112,7 @@ export const en: ArticleTranslation = {
       width: 1600,
       height: 400,
       alt: "PayPal logo",
-      caption: "PayPal is a trademark of PayPal, Inc.; the logo is shown only to identify the service.",
+      caption: "PayPal is a trademark of PayPal, Inc.. The logo is shown only to identify the service.",
       credit: {
         text: "Logo: PayPal, Public domain, via Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
@@ -151,7 +151,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "PayPal's conversion fee of about 4% applies when PayPal converts the currency for you; check the final amount on your bank statement after you pay.",
+      text: "PayPal's conversion fee of about 4% applies when PayPal converts the currency for you. Check the final amount on your bank statement after you pay.",
     },
     {
       type: "callout",
@@ -170,14 +170,14 @@ export const en: ArticleTranslation = {
       items: [
         "After your email, choose **Carta di credito o debito**.",
         "Type the holder's name, card number, expiry date and CVV.",
-        "Choose a provider; it does not have to be your bank.",
+        "Choose a provider. It does not have to be your bank.",
         "Check the amount with the fee included, then press **Paga**.",
         "Approve the payment on your bank's page or app (the 3-D Secure step).",
       ],
     },
     {
       type: "table",
-      caption: "Card fees on checkout.pagopa.it by notice amount (pagoPA cost data, snapshot of 10 October 2026; fees change).",
+      caption: "Card fees on checkout.pagopa.it by notice amount (pagoPA cost data, snapshot of 10 October 2026, fees change).",
       head: ["Notice amount", "Card offers", "Provider fee"],
       rows: [
         ["EUR 16", "24", "EUR 0.25 to 1.50"],
@@ -232,7 +232,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Your university then validates the payment on its portal, often after a few days. Check Infostud or Delphi; if nothing appears after about a week, send the receipt to the student office. Tor Vergata warns that if the regional tax payment is not validated, you are not enrolled and you lose your DiSCo benefits ([Tor Vergata student guide 2026/27](https://www-2023.studenti.uniroma2.it/wp-content/uploads/2026/07/Guida-dello-Studente-2026_2027v5.pdf)).",
+      text: "Your university then validates the payment on its portal, often after a few days. Check Infostud or Delphi. If nothing appears after about a week, send the receipt to the student office. Tor Vergata warns that if the regional tax payment is not validated, you are not enrolled and you lose your DiSCo benefits ([Tor Vergata student guide 2026/27](https://www-2023.studenti.uniroma2.it/wp-content/uploads/2026/07/Guida-dello-Studente-2026_2027v5.pdf)).",
     },
 
     {

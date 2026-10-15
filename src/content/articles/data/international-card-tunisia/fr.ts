@@ -11,7 +11,7 @@ export const fr: ArticleTranslation = {
   imageAlt: "Le Colisée de Rome avec un immense drapeau italien suspendu sur son flanc et la foule devant",
   keywords: ["payer les frais d’inscription en Italie depuis la Tunisie", "frais d’inscription Italie", "payer une université italienne depuis la Tunisie", "carte internationale Tunisie", "payer en euros depuis la Tunisie", "virement des frais de scolarité à l’étranger"],
   summary:
-    "En 2026, la voie légale la plus sûre pour payer vos frais d’inscription en Italie depuis la Tunisie est le virement bancaire : frais de dossier et d’examen sur facture, frais de scolarité via votre dossier études dans une seule banque. Pour les petits paiements en ligne, la carte technologique (1 000 TND par an) peut fonctionner, et PayPal sur pagoPA avec une carte RedotPay reliée est la solution finale quand une carte tunisienne est refusée ; lisez d’abord les avertissements sur les cartes crypto.",
+    "En 2026, la voie légale la plus sûre pour payer vos frais d’inscription en Italie depuis la Tunisie est le virement bancaire : frais de dossier et d’examen sur facture, frais de scolarité via votre dossier études dans une seule banque. Pour les petits paiements en ligne, la carte technologique (1 000 TND par an) peut fonctionner, et PayPal sur pagoPA avec une carte RedotPay reliée est la solution finale quand une carte tunisienne est refusée. Lisez d’abord les avertissements sur les cartes crypto.",
   body: [
     {
       type: "callout",
@@ -32,16 +32,16 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "which-method", text: "1. Quelle méthode pour quels frais italiens ?" },
     {
       type: "p",
-      text: "Le virement convient aux frais de candidature, d’examen et de scolarité ; la carte technologique et PayPal ne conviennent qu’aux petits montants en ligne, comme la taxe régionale et le timbre fiscal d’un avis pagoPA.",
+      text: "Le virement convient aux frais de candidature, d’examen et de scolarité. La carte technologique et PayPal ne conviennent qu’aux petits montants en ligne, comme la taxe régionale et le timbre fiscal d’un avis pagoPA.",
     },
     {
       type: "table",
       caption: "Les frais italiens et les méthodes possibles en Tunisie (vérifié en octobre 2026).",
       head: ["Frais", "Mode de perception", "Ce qui peut marcher en Tunisie"],
       rows: [
-        ["Frais de candidature, CIMEA et tests d’entrée", "En ligne, sur le portail de l’université ou du CIMEA", "Virement sur facture ; carte technologique ou PayPal pour les petits montants (demandez à votre banque)"],
+        ["Frais de candidature, CIMEA et tests d’entrée", "En ligne, sur le portail de l’université ou du CIMEA", "Virement sur facture. Carte technologique ou PayPal pour les petits montants (demandez à votre banque)"],
         ["Tranches des frais de scolarité", "Avis pagoPA ou facture de l’université", "Virement dans le cadre de votre dossier études"],
-        ["Taxe régionale et timbre fiscal", "Avis pagoPA avec la première tranche", "Carte ou PayPal sur pagoPA ; espèces dans un bureau de tabac ou carte italienne une fois sur place"],
+        ["Taxe régionale et timbre fiscal", "Avis pagoPA avec la première tranche", "Carte ou PayPal sur pagoPA. Espèces dans un bureau de tabac ou carte italienne une fois sur place"],
         ["Kit du permis de séjour", "Dans un bureau de poste italien, après l’arrivée", "Payé en Italie, voir [le coût du permis de séjour à Rome](article:arriving-in-rome#residence-permit)"],
       ],
     },
@@ -102,7 +102,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "tip",
       title: "Demandez avant de compter dessus",
-      text: "Beaucoup d’universités italiennes émettent des avis pagoPA plutôt qu’un simple numéro de compte. D’après mon expérience, les agences d’études en Tunisie paient ces avis pour les étudiants de façon courante, et vous pouvez aussi le payer vous-même par carte, avec PayPal ou en espèces dans un bureau de tabac une fois en Italie ; demandez à votre banque si elle peut payer un avis par virement.",
+      text: "Beaucoup d’universités italiennes émettent des avis pagoPA plutôt qu’un simple numéro de compte. D’après mon expérience, les agences d’études en Tunisie paient ces avis pour les étudiants de façon courante, et vous pouvez aussi le payer vous-même par carte, avec PayPal ou en espèces dans un bureau de tabac une fois en Italie. Demandez à votre banque si elle peut payer un avis par virement.",
     },
 
     { type: "h2", id: "technology-card", text: "3. Option 2 : la carte technologique (CTI) peut-elle payer des frais italiens ?" },
@@ -131,7 +131,7 @@ export const fr: ArticleTranslation = {
       width: 1600,
       height: 400,
       alt: "Logo de PayPal",
-      caption: "PayPal est une marque de PayPal, Inc. ; le logo sert seulement à identifier le service.",
+      caption: "PayPal est une marque de PayPal, Inc.. Le logo sert seulement à identifier le service.",
       credit: {
         text: "Logo : PayPal, domaine public, via Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
@@ -287,7 +287,7 @@ export const fr: ArticleTranslation = {
       items: [
         { label: "Voie la plus sûre", value: "Virement : frais sur facture, scolarité via le dossier études" },
         { label: "Carte technologique", value: "1 000 TND par année civile (environ 297 EUR)" },
-        { label: "PayPal sur pagoPA", value: "Commission de 1,50 à 2,50 EUR ; payez en une fois" },
+        { label: "PayPal sur pagoPA", value: "Commission de 1,50 à 2,50 EUR. Payez en une fois" },
         { label: "Crypto", value: "Aucun texte tunisien ne l’autorise" },
       ],
     },

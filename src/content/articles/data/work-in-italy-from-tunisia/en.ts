@@ -63,7 +63,7 @@ export const en: ArticleTranslation = {
       width: 1600,
       height: 791,
       alt: "Façade of Palazzo Chigi in Rome, with the Italian and European Union flags above the entrance",
-      caption: "Palazzo Chigi in Rome, seat of the Italian government. The Decreto Flussi quotas are set by a government decree; this route works outside them.",
+      caption: "Palazzo Chigi in Rome, seat of the Italian government. The Decreto Flussi quotas are set by a government decree. This route works outside them.",
       credit: {
         text: "Photo: Blackcat (Sergio D'Afflitto), CC BY-SA 4.0, via Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:Palazzo_Chigi_Roma_giugno_2024.jpg",
@@ -81,7 +81,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "who-can-apply", text: "2. Who can use the training-abroad route?" },
     {
       type: "p",
-      text: "Only a Tunisian who is part of an approved training program and meets the conditions set by that program can use the training-abroad route; it does not apply automatically to every Tunisian who wants to work in Italy.",
+      text: "Only a Tunisian who is part of an approved training program and meets the conditions set by that program can use the training-abroad route. It does not apply automatically to every Tunisian who wants to work in Italy.",
     },
     {
       type: "p",
@@ -217,7 +217,7 @@ export const en: ArticleTranslation = {
     { type: "h3", id: "step-match-requirements", text: "Step 2: Make sure your occupation matches the offer's requirements" },
     {
       type: "p",
-      text: "Each offer sets its own requirements. You may be asked, for example, for a vocational training diploma (for example a BTP, brevet de technicien professionnel, or a BTS, brevet de technicien supérieur, the Tunisian vocational diplomas), a certificate of competence, documented work experience, a professional driving licence for some jobs, or other requirements tied to the occupation or the program. Do not rely on a general list posted on social media; read the official offer itself.",
+      text: "Each offer sets its own requirements. You may be asked, for example, for a vocational training diploma (for example a BTP, brevet de technicien professionnel, or a BTS, brevet de technicien supérieur, the Tunisian vocational diplomas), a certificate of competence, documented work experience, a professional driving licence for some jobs, or other requirements tied to the occupation or the program. Do not rely on a general list posted on social media. Read the official offer itself.",
     },
     {
       type: "p",
@@ -236,7 +236,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "documents", text: "5. Which documents do Tunisians need to apply?" },
     {
       type: "p",
-      text: "Most offers for Italy ask for a valid national ID card and passport, a vocational diploma or competence certificate, and proof of work experience; the exact list depends on each offer. Prepare the file in advance, because the application window for some job offers is short.",
+      text: "Most offers for Italy ask for a valid national ID card and passport, a vocational diploma or competence certificate, and proof of work experience. The exact list depends on each offer. Prepare the file in advance, because the application window for some job offers is short.",
     },
     {
       type: "ul",
@@ -308,7 +308,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "avoid-scams", text: "8. How do you spot a fake job offer for Italy?" },
     {
       type: "p",
-      text: "A job offer for Italy is a scam when someone asks for money in exchange for a guaranteed contract, job or visa; genuine offers go through official channels such as ANETI, and the Nulla Osta is requested by the Italian employer.",
+      text: "A job offer for Italy is a scam when someone asks for money in exchange for a guaranteed contract, job or visa. Genuine offers go through official channels such as ANETI, and the Nulla Osta is requested by the Italian employer.",
     },
     {
       type: "callout",

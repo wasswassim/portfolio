@@ -43,7 +43,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Chaque université de Rome fixe ses propres dates de candidature : il n'y a pas de date limite nationale unique, et le [calendrier 2027/28 des échéances d'études pour les Tunisiens](article:study-in-italy#calendar) les remet dans l'ordre. La médecine a de nouvelles règles d'accès (loi 26/2025) dont les modalités pour les étudiants internationaux ne sont pas encore publiées ; la médecine n'est donc pas traitée dans ce guide.",
+      text: "Chaque université de Rome fixe ses propres dates de candidature : il n'y a pas de date limite nationale unique, et le [calendrier 2027/28 des échéances d'études pour les Tunisiens](article:study-in-italy#calendar) les remet dans l'ordre. La médecine a de nouvelles règles d'accès (loi 26/2025) dont les modalités pour les étudiants internationaux ne sont pas encore publiées. La médecine n'est donc pas traitée dans ce guide.",
     },
 
     { type: "h2", id: "find-a-course", text: "2. Comment trouver un cours et vérifier ses conditions d'accès ?" },
@@ -81,14 +81,14 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "public-universities", text: "3. Comment candidater à Sapienza, Tor Vergata ou Roma Tre ?" },
     {
       type: "p",
-      text: "Vous candidatez à Sapienza sur MoveIn, à Tor Vergata sur Delphi et à Roma Tre sur GOMP, car chaque université publique de Rome utilise son propre portail. Les dates ci-dessous viennent des appels 2026/27 ; 2027/28 devrait suivre un calendrier proche, vérifiez donc l'appel 2027/28.",
+      text: "Vous candidatez à Sapienza sur MoveIn, à Tor Vergata sur Delphi et à Roma Tre sur GOMP, car chaque université publique de Rome utilise son propre portail. Les dates ci-dessous viennent des appels 2026/27. 2027/28 devrait suivre un calendrier proche, vérifiez donc l'appel 2027/28.",
     },
     { type: "h3", id: "sapienza", text: "Sapienza : MoveIn, puis Infostud" },
     {
       type: "steps",
       items: [
         { title: "Vérifier les conditions", text: "Lisez la page [admissions de Sapienza](https://www.uniroma1.it/en/en/admissions) et les [conditions académiques 2026/27 (PDF)](https://www.uniroma1.it/sites/default/files/field_file_allegati/academic_requirements_movein_2026-2027_web_20260608.pdf). Certaines Licences en anglais demandent un score SAT d'au moins 960, ou un TOLC." },
-        { title: "Candidater sur MoveIn", text: "Créez un compte sur [MoveIn](https://sapienza.gomovein.com/), téléversez vos documents et choisissez votre cours. Chaque candidature coûte 30 EUR (sans exonération), 2 au maximum ; la vérification d'éligibilité coûte 10 EUR." },
+        { title: "Candidater sur MoveIn", text: "Créez un compte sur [MoveIn](https://sapienza.gomovein.com/), téléversez vos documents et choisissez votre cours. Chaque candidature coûte 30 EUR (sans exonération), 2 au maximum. La vérification d'éligibilité coûte 10 EUR." },
         { title: "Surveiller la période", text: "En 2026/27, elle allait du 22 décembre 2025 au 15 mai 2026 pour les candidats non européens avec visa. Pour 2027/28, elle devrait ouvrir vers décembre 2026 (vérifiez l'appel 2027/28)." },
         { title: "Après l'admission", text: "Faites la préinscription Universitaly (date limite 30 juin en 2026), puis inscrivez-vous sur [Infostud](https://www.studenti.uniroma1.it/webapps/infostud/registrazione). Questions : recruitment@uniroma1.it." },
       ],
@@ -126,7 +126,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "private-universities", text: "4. Comment candidater aux universités privées LUISS et LUMSA ?" },
     {
       type: "p",
-      text: "Vous candidatez à la LUISS par le Luiss Test ou par des certifications internationales, et à la LUMSA par un test d'admission en ligne ; dans les deux universités privées, la préinscription Universitaly reste obligatoire après l'admission.",
+      text: "Vous candidatez à la LUISS par le Luiss Test ou par des certifications internationales, et à la LUMSA par un test d'admission en ligne. Dans les deux universités privées, la préinscription Universitaly reste obligatoire après l'admission.",
     },
     { type: "h3", id: "luiss", text: "LUISS : le Luiss Test" },
     {
@@ -146,7 +146,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "Comment candidater dans chaque université de Rome (appels 2026/27 sauf mention contraire ; vérifiez l'appel 2027/28)",
+      caption: "Comment candidater dans chaque université de Rome (appels 2026/27 sauf mention contraire, vérifiez l'appel 2027/28)",
       head: ["Université", "Comment candidater", "Période habituelle", "Frais de candidature"],
       rows: [
         ["Sapienza", "MoveIn, puis Universitaly et Infostud", "Environ de décembre à mai", "30 EUR chacune (2 max.)"],
@@ -233,7 +233,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "p",
-      text: "Les candidats au doctorat présentent leur Master et leurs relevés de notes. Un doctorant sélectionné fait quand même la préinscription Universitaly ; il n'y a pas de date fixe pour le visa du doctorat, mais faites la demande de visa avant le début des cours.",
+      text: "Les candidats au doctorat présentent leur Master et leurs relevés de notes. Un doctorant sélectionné fait quand même la préinscription Universitaly. Il n'y a pas de date fixe pour le visa du doctorat, mais faites la demande de visa avant le début des cours.",
     },
 
     {

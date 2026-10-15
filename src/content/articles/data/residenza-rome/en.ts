@@ -22,7 +22,7 @@ export const en: ArticleTranslation = {
     { type: "p", text: "**You have a room and a residence permit request in Rome. How do you register your residenza at the anagrafe, and is it worth it?**" },
     {
       type: "p",
-      text: "The short answer: fill in the *dichiarazione di residenza*, attach your passport, your permesso di soggiorno (or its receipt; a first-permit receipt may not be enough in every Municipio: check first) and your lease or the owner's declaration, and send it through **one** channel: the Roma Capitale online service, PEC, registered post or the counter. It is free. You are registered within 2 working days, and the Polizia Locale checks that you really live there within 45 days.",
+      text: "The short answer: fill in the *dichiarazione di residenza*, attach your passport, your permesso di soggiorno (or its receipt, a first-permit receipt may not be enough in every Municipio: check first) and your lease or the owner's declaration, and send it through **one** channel: the Roma Capitale online service, PEC, registered post or the counter. It is free. You are registered within 2 working days, and the Polizia Locale checks that you really live there within 45 days.",
     },
     {
       type: "p",
@@ -32,7 +32,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "why-residenza", text: "1. Do you need residenza as a student in Rome?" },
     {
       type: "p",
-      text: "Residenza is not strictly required for a student in Rome, but it is useful if you stay for your whole degree. Residenza (*iscrizione anagrafica*) means the Comune di Roma records your usual home (*dimora abituale*) at the anagrafe. Residenza is different from the permesso di soggiorno, which you request first; see [how to apply for the residence permit for study in Italy](article:arriving-in-rome#residence-permit). Registering residenza at the Rome anagrafe matters for three reasons:",
+      text: "Residenza is not strictly required for a student in Rome, but it is useful if you stay for your whole degree. Residenza (*iscrizione anagrafica*) means the Comune di Roma records your usual home (*dimora abituale*) at the anagrafe. Residenza is different from the permesso di soggiorno, which you request first. See [how to apply for the residence permit for study in Italy](article:arriving-in-rome#residence-permit). Registering residenza at the Rome anagrafe matters for three reasons:",
     },
     {
       type: "ul",
@@ -133,7 +133,7 @@ export const en: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "Timeline after you send the declaration (DL 5/2012, art. 5; DPR 223/1989, art. 19).",
+      caption: "Timeline after you send the declaration (DL 5/2012, art. 5, DPR 223/1989, art. 19).",
       head: ["When", "What happens"],
       rows: [
         ["Within 2 working days", "The Comune registers you."],
@@ -223,7 +223,7 @@ export const en: ArticleTranslation = {
         },
         {
           q: "How long does residenza take in Rome?",
-          a: "Residenza in Rome takes up to 45 days to be confirmed. The Comune di Roma registers you within 2 working days, and your residence counts from the day you declared it. The Polizia Locale then checks the address within 45 days; if you receive no preavviso di rigetto (notice of rejection) in that time, the residenza is confirmed by silenzio-assenso.",
+          a: "Residenza in Rome takes up to 45 days to be confirmed. The Comune di Roma registers you within 2 working days, and your residence counts from the day you declared it. The Polizia Locale then checks the address within 45 days. If you receive no preavviso di rigetto (notice of rejection) in that time, the residenza is confirmed by silenzio-assenso.",
         },
         {
           q: "Can I travel in Europe with an Italian identity card?",
@@ -270,7 +270,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "note",
       title: "Update note",
-      text: "Last verified: October 2026. Procedures differ between Municipi and can change; check your Municipio page on comune.roma.it before you send your declaration or book a counter.",
+      text: "Last verified: October 2026. Procedures differ between Municipi and can change. Check your Municipio page on comune.roma.it before you send your declaration or book a counter.",
     },
   ],
   guide: [

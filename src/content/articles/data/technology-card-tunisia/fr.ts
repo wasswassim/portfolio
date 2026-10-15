@@ -71,17 +71,17 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "issuers", text: "3. Quelles banques et quels bureaux de La Poste délivrent la CTI ?" },
     {
       type: "p",
-      text: "Banque Zitouna, BTK Bank, Banque de Tunisie et La Poste Tunisienne publient des pages officielles sur la CTI ; d’autres banques délivrent aussi la carte, souvent sans page produit en ligne, et chaque émetteur fixe ses propres frais et filtres marchands.",
+      text: "Banque Zitouna, BTK Bank, Banque de Tunisie et La Poste Tunisienne publient des pages officielles sur la CTI. D’autres banques délivrent aussi la carte, souvent sans page produit en ligne, et chaque émetteur fixe ses propres frais et filtres marchands.",
     },
     {
       type: "table",
       caption: "Ce que les émetteurs publient sur la CTI (pages consultées le 10 octobre 2026). Les frais absents n’ont pas pu être vérifiés : demandez à votre banque.",
       head: ["Émetteur", "À savoir", "Frais annuels"],
       rows: [
-        ["Banque Zitouna", "Demande aussi de travailler dans les nouvelles technologies ou un domaine proche ; paiements en ligne limités aux licences d’app stores, filtrés par code marchand", "20 TND"],
+        ["Banque Zitouna", "Demande aussi de travailler dans les nouvelles technologies ou un domaine proche. Paiements en ligne limités aux licences d’app stores, filtrés par code marchand", "20 TND"],
         ["BTK Bank", "Carte prépayée, rechargeable jusqu’au plafond annuel", "Demandez à votre banque"],
         ["Banque de Tunisie", "Usage Internet uniquement, allocation utilisable sur l’année civile", "Demandez à votre banque"],
-        ["La Poste Tunisienne", "Compte courant postal (CCP) actif exigé ; prête en 24 heures environ ; gérée sur e-dinar", "Renouvellement 3 TND ; frais d’émission non publiés"],
+        ["La Poste Tunisienne", "Compte courant postal (CCP) actif exigé. Prête en 24 heures environ. Gérée sur e-dinar", "Renouvellement 3 TND. Frais d’émission non publiés"],
         ["Autres banques", "Aucune page produit officielle à jour trouvée", "Demandez à votre banque"],
       ],
     },
@@ -191,7 +191,7 @@ export const fr: ArticleTranslation = {
     },
     {
       type: "table",
-      caption: "Quelle voie pour chaque frais (notre lecture des textes BCT ; à confirmer avec votre banque).",
+      caption: "Quelle voie pour chaque frais (notre lecture des textes BCT, à confirmer avec votre banque).",
       head: ["Frais", "Avec la CTI ?", "Voie légale plus claire"],
       rows: [
         ["Frais de candidature Sapienza", "Zone grise", "Virement bancaire sur facture (frais d’examen de dossier)"],
@@ -215,7 +215,7 @@ export const fr: ArticleTranslation = {
       width: 1600,
       height: 400,
       alt: "Logo de PayPal",
-      caption: "PayPal est une marque de PayPal, Inc. ; le logo sert seulement à identifier le service.",
+      caption: "PayPal est une marque de PayPal, Inc.. Le logo sert seulement à identifier le service.",
       credit: {
         text: "Logo : PayPal, domaine public, via Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:PayPal_2024.svg",
@@ -234,8 +234,8 @@ export const fr: ArticleTranslation = {
     {
       type: "ul",
       items: [
-        "Si cette déclaration n’est pas encore disponible, celle de l’année précédente est acceptée, et la nouvelle doit parvenir à la banque **avant le 15 juillet** ; sinon la banque suspend l’allocation.",
-        "À La Poste, apportez la carte expirée, votre CIN et la quittance de déclaration des impôts ; le renouvellement coûte 3 TND ([idaraty.tn](https://idaraty.tn/fr/procedures/renouvellement-de-la-carte-technologique-internationale-la-poste-personne-physique)).",
+        "Si cette déclaration n’est pas encore disponible, celle de l’année précédente est acceptée, et la nouvelle doit parvenir à la banque **avant le 15 juillet**. Sinon la banque suspend l’allocation.",
+        "À La Poste, apportez la carte expirée, votre CIN et la quittance de déclaration des impôts. Le renouvellement coûte 3 TND ([idaraty.tn](https://idaraty.tn/fr/procedures/renouvellement-de-la-carte-technologique-internationale-la-poste-personne-physique)).",
         "La carte de La Poste est prolongée de 5 ans, mais vous devez la réactiver dans un bureau de poste.",
       ],
     },
