@@ -30,6 +30,10 @@ const BOOT = [
   "gtag('js',new Date());",
   `gtag('config','${GA_ID}');`,
   load(`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`),
+  // Google's consent message (AdSense > Privacy & messaging), on every page so a choice made anywhere
+  // updates the signals above. adsbygoogle.js does not load it by itself, so this is Google's own tag.
+  load(`https://fundingchoicesmessages.google.com/i/${ADSENSE_CLIENT.replace(/^ca-/, "")}?ers=1`),
+  "(function signalGooglefcPresent(){if(!window.frames['googlefcPresent']){if(document.body){var f=document.createElement('iframe');f.style.cssText='width:0;height:0;border:none;z-index:-1000;left:-1000px;top:-1000px;display:none';f.name='googlefcPresent';document.body.appendChild(f);}else{setTimeout(signalGooglefcPresent,0);}}})();",
 ];
 
 /** `adsense`: also load AdSense (blog pages: ad units and Google's consent message), after the defaults. */
