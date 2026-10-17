@@ -5,11 +5,16 @@ import type { ChibiSceneApi, Vec3 } from "@chibi3d/runtime";
 import type { KeyboardScene } from "./scene";
 
 export type KeyboardSection = "hero" | "skills" | "projects" | "contact";
+// `id` is the page section that triggers a keyboard pose. Rebrand: the Quran verse section (#verse)
+// takes the template's "Tech Stack" pose, and the pose holds through the about and tools sections.
 const SCROLL_SECTIONS = [
-  { id: "skills", previous: "hero", threshold: 0.5 },
-  { id: "projects", previous: "skills", threshold: 0.7 },
-  { id: "contact", previous: "projects", threshold: 0.3 },
+  { id: "verse", pose: "skills", previous: "hero", threshold: 0.5 },
+  { id: "projects", pose: "projects", previous: "skills", threshold: 0.7 },
+  // The services section ("how we can work together") already takes the final contact pose
+  { id: "services", pose: "contact", previous: "projects", threshold: 0.3 },
 ] as const;
+/** Page section (URL hash) for each keyboard pose */
+export const SECTION_HASH: Record<KeyboardSection, string> = { hero: "", skills: "verse", projects: "projects", contact: "services" };
 
 type Vector = { x: number; y: number; z: number };
 const vector = (v: Vec3): Vector => ({ x: v[0], y: v[1], z: v[2] });
@@ -68,7 +73,9 @@ export function createKeyboardMotion(
     const [centerX, centerY, centerZ] = scene.document.camera.target;
     const size = fit * (section === "hero" ? 0.8 : section === "contact" ? 0.75 : section === "skills" ? (mobile ? 0.88 : 1.05) : 0.95);
     const right = !mobile && section === "hero" ? 2.5 : !mobile && section === "contact" ? 3.8 : 0;
-    const up = mobile && section === "hero" ? -1.8 : section === "contact" ? -0.8 : 0;
+    // Rebrand: the verse block is taller than the template's one-line "Tech Stack" title, so the
+    // keyboard sits lower in that pose
+    const up = mobile && section === "hero" ? -1.8 : section === "contact" ? -0.8 : section === "skills" ? (mobile ? -0.6 : -1.1) : 0;
     return {
       // The placement origin is the keyboard's geometry center, independent of its labels.
       position: {
@@ -159,17 +166,17 @@ export function createKeyboardMotion(
   };
   const syncSection = () => {
     let next: KeyboardSection = "hero";
-    for (const { id, threshold } of SCROLL_SECTIONS) {
-      if ((document.getElementById(id)?.getBoundingClientRect().top ?? Infinity) <= window.innerHeight * threshold) next = id;
+    for (const { id, pose, threshold } of SCROLL_SECTIONS) {
+      if ((document.getElementById(id)?.getBoundingClientRect().top ?? Infinity) <= window.innerHeight * threshold) next = pose;
     }
     return next;
   };
   const triggers = SCROLL_SECTIONS
     .filter(({ id }) => document.getElementById(id))
-    .map(({ id, previous, threshold }) => ScrollTrigger.create({
+    .map(({ id, pose, previous, threshold }) => ScrollTrigger.create({
       trigger: `#${id}`,
       start: `top ${threshold * 100}%`,
-      onEnter: () => { if (revealed) applySection(id); },
+      onEnter: () => { if (revealed) applySection(pose); },
       onLeaveBack: () => { if (revealed) applySection(previous); },
     }));
   const resize = () => { if (revealed) applySection(syncSection(), true); };

@@ -7,7 +7,7 @@ import { setSceneStatus } from "@/components/home/scene-health";
 import { usePreloader } from "../preloader";
 import { createKeyboardScene, resolveKeyboardAsset, type KeyboardSkill } from "./scene";
 import { createKeyInput, isTypingTarget } from "./input";
-import { createKeyboardMotion, type KeyboardSection } from "./motion";
+import { SECTION_HASH, createKeyboardMotion, type KeyboardSection } from "./motion";
 import { useKeyboardSounds } from "./use-keyboard-sounds";
 import { useAdaptiveGraphics } from "./use-adaptive-graphics";
 
@@ -94,7 +94,7 @@ export default function KeyboardScene({ maxDpr }: { maxDpr: number }) {
     const controller = createKeyboardMotion(api.current, scene, (next) => {
       setSection(next);
       input.releaseAll();
-      const hash = next === "hero" ? "" : `#${next}`;
+      const hash = SECTION_HASH[next] ? `#${SECTION_HASH[next]}` : "";
       window.history.replaceState(window.history.state, "", window.location.pathname + window.location.search + hash);
     }, markActive);
     motion.current = controller;

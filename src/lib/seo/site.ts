@@ -11,7 +11,7 @@ export function absoluteUrl(path: string): string {
 // Author entity (Person JSON-LD). Facts match the home page description; keep them in sync.
 export const AUTHOR = {
   image: "/img/wassimage.webp",
-  jobTitle: "Web Designer & Digital Marketer",
+  jobTitle: "Full Stack Entrepreneur",
   description:
     "Tunisian web designer and digital marketer based in Tunisia and Italy, studying for a Master's in Digital Marketing at LUMSA University in Rome. Writes practical guides, based on official sources, for Tunisians who study, work and settle in Italy.",
   knowsAbout: ["Web design", "Digital marketing", "SEO", "Agentic engineering", "Studying in Italy", "Working in Italy", "Moving from Tunisia to Italy"],
