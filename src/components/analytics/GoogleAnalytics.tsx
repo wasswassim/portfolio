@@ -23,6 +23,8 @@ const load = (src: string, crossOrigin = false) =>
   "document.head.appendChild(s);})();";
 
 const BOOT = [
+  // Local test builds never report to the real property (Google's documented opt-out flag)
+  `if(/^(localhost|127\\.0\\.0\\.1)$/.test(location.hostname))window['ga-disable-${GA_ID}']=true;`,
   "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}",
   `gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:${JSON.stringify(CONSENT_REGIONS)},wait_for_update:500});`,
   "gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});",
