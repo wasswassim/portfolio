@@ -13,7 +13,7 @@ export const metadata: Metadata = buildMetadata({
   title: TITLE,
   description: DESCRIPTION,
   languages: { en: "/", "x-default": "/" },
-  image: { src: "/img/wassimage.webp", width: 832, height: 1280, alt: "Wassim Gatri" },
+  image: { src: "/img/wassimage.webp", width: 854, height: 1169, alt: "Wassim Gatri" },
 });
 
 export default function Page() {

@@ -13,8 +13,8 @@ export default function AboutSection() {
           {/* eslint-disable-next-line @next/next/no-img-element -- static export, no image optimiser */}
           <img
             src="/img/wassimage.webp"
-            width={832}
-            height={1280}
+            width={854}
+            height={1169}
             alt="Wassim Gatri"
             className="pointer-events-auto size-40 rounded-full border border-border object-cover object-[50%_20%] shadow-[0_0_60px_-15px_rgba(255,255,255,0.35)] md:size-52"
           />
