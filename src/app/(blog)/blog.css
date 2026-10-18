@@ -908,3 +908,21 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-about-head { display: flex; gap: 1.2rem; align-items: center; margin-block-end: 1.5rem; }
 .blog-about-photo { flex: none; inline-size: 6.5rem; block-size: 6.5rem; border-radius: 50%; object-fit: cover; }
 @media (max-width: 480px) { .blog-author { flex-direction: column; } }
+
+/* ── Rebrand: the homepage's buttons and cursor on the blog ──
+   Buttons: the template's rounded-md corners (--radius), a slight dim on hover and the focus ring.
+   The elastic cursor (components/blog/BlogCursor.tsx) hugs these controls; its ring is white on the
+   navy pages and navy on the gray article pages. */
+:root { --radius: 0.5rem; --cursor-ring: #ffffff; }
+html:has(.blog-paper) { --cursor-ring: #020817; }
+.blog-newsletter-form button, .blog-reviews-btn, .blog-reviews-more, .blog-referral-cta {
+  border-radius: var(--radius); transition: opacity 0.2s ease, background-color 0.2s ease, filter 0.2s ease;
+}
+.blog-newsletter-form button:hover, .blog-reviews-btn:hover { filter: none; opacity: 0.85; }
+.blog-referral-cta:hover, .blog-reviews-more:hover { background: var(--hover); }
+.blog-newsletter-form button:focus-visible, .blog-reviews-btn:focus-visible, .blog-reviews-more:focus-visible, .blog-referral-cta:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .blog-newsletter-form button, .blog-reviews-btn, .blog-reviews-more, .blog-referral-cta { transition: none; }
+}

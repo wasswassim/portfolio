@@ -11,7 +11,6 @@ import React, {
   useState,
 } from "react";
 import { gsap } from "gsap";
-import { cn } from "./ui";
 import { usePreloader } from "./preloader";
 import { usePerfProfile } from "./use-perf-profile";
 
@@ -106,7 +105,8 @@ function measure(el: HTMLElement): Base {
   };
 }
 
-function ElasticCursor() {
+/** `targets`: elements the cursor hugs (CSS selector). The blog passes its own buttons. */
+function ElasticCursor({ targets = ".cursor-can-hover" }: { targets?: string }) {
   const isBlogPost = false;
 
   const { loadingPercent, isLoading } = usePreloader();
@@ -334,7 +334,7 @@ function ElasticCursor() {
         if (active.el) release();
         return;
       }
-      const t = target?.closest?.(".cursor-can-hover") as HTMLElement | null;
+      const t = target?.closest?.(targets) as HTMLElement | null;
       if (t === active.el) return;
       if (active.el) release();
       if (t) acquire(t);
@@ -366,7 +366,7 @@ function ElasticCursor() {
       window.removeEventListener("scroll", onScroll);
       if (active.el) release();
     };
-  }, [isMobile, isBlogPost]);
+  }, [isMobile, isBlogPost, targets]);
 
   // Preloader uses the blob as a loading bar.
   useEffect(() => {
@@ -390,10 +390,15 @@ function ElasticCursor() {
       <div
         ref={jellyRef}
         id={"jelly-id"}
-        className={cn(
-          "jelly-blob fixed left-0 top-0 border-2 border-black dark:border-white pointer-events-none will-change-transform"
-        )}
+        className="jelly-blob"
+        // Inline styles, not Tailwind: the blog pages do not load Tailwind
         style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
+          pointerEvents: "none",
+          willChange: "transform",
+          border: "2px solid var(--cursor-ring, #fff)",
           width: CURSOR_DIAMETER,
           height: CURSOR_DIAMETER,
           borderRadius: CURSOR_DIAMETER / 2,
@@ -404,8 +409,15 @@ function ElasticCursor() {
       ></div>
       <div
         ref={dotRef}
-        className="w-3 h-3 rounded-full fixed left-0 top-0 pointer-events-none will-change-transform"
         style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
+          width: 12,
+          height: 12,
+          borderRadius: "50%",
+          pointerEvents: "none",
+          willChange: "transform",
           opacity: 0,
           backdropFilter: "invert(100%)",
           zIndex: 101,

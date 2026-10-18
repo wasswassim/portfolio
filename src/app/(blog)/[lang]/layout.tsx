@@ -8,6 +8,7 @@ import { ADSENSE_CLIENT } from "@/lib/ads";
 import AhrefsAnalytics from "@/components/analytics/AhrefsAnalytics";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import BlogEvents from "@/components/analytics/BlogEvents";
+import BlogCursor from "@/components/blog/BlogCursor";
 import ViewTransitionTypes from "@/components/blog/ViewTransitionTypes";
 
 // Second root layout (route group "(blog)"): it owns <html lang dir> so every
@@ -61,6 +62,7 @@ export default async function BlogRootLayout({
       <body>
         <AhrefsAnalytics />
         <BlogEvents lang={lang} />
+        <BlogCursor />
         {children}
       </body>
     </html>
