@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { AUTHOR_LINKEDIN, AUTHOR_TIKTOK } from "@/content/author";
 import { CURRENT_PROJECT } from "@/content/projects";
+import { navLinks, navText } from "@/content/site-nav";
 import Preloader from "./preloader";
 import Particles from "./particles";
 import ElasticCursor from "./elastic-cursor";
@@ -22,6 +23,8 @@ const LINKS: LinkItem[] = [
   { title: "TikTok", text: "@wassimgatri1", href: AUTHOR_TIKTOK, external: true },
   { title: "GitHub", text: "My code and projects", href: "https://github.com/wasswassim", external: true },
 ];
+
+const FOOTER_LINKS = [...navLinks("en").filter((l) => l.id !== "links").map((l) => ({ href: l.href, label: l.label })), { href: "/en/privacy/", label: navText("en").privacy }];
 
 function Stars() {
   const { particleCount, maxDpr } = usePerfProfile();
@@ -78,7 +81,14 @@ export default function LinksPage() {
             );
           })}
         </ul>
-        <p className="mt-12 text-xs text-muted-foreground">© <span suppressHydrationWarning>{new Date().getFullYear()}</span> Wassim Gatri</p>
+        <nav aria-label="Footer" className="mt-12">
+          <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
+            {FOOTER_LINKS.map((l) => (
+              <li key={l.href}><Link href={l.href} className="underline-offset-4 hover:text-foreground hover:underline">{l.label}</Link></li>
+            ))}
+          </ul>
+        </nav>
+        <p className="mt-4 text-xs text-muted-foreground">© <span suppressHydrationWarning>{new Date().getFullYear()}</span> Wassim Gatri</p>
       </main>
     </Preloader>
   );

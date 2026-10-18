@@ -1,22 +1,14 @@
 import type { Lang } from "@/lib/i18n/config";
 import type { Dictionary } from "@/lib/i18n";
-import { blogPath, homePath } from "@/lib/i18n/routes";
+import { navLinks, navText } from "@/content/site-nav";
 
-/** Footer with the same entries as the site menu (portfolio sections, blog) plus the privacy page. */
+/** Footer with the same links as the site menu (src/content/site-nav.ts), the privacy page and the design credit. */
 export default function BlogFooter({ lang, dict }: { lang: Lang; dict: Dictionary }) {
-  const n = dict.footerNav;
-  const links = [
-    { label: n.home, href: homePath() },
-    { label: n.skills, href: homePath() + "#skills" },
-    { label: n.about, href: homePath() + "#about" },
-    { label: n.work, href: homePath() + "#work" },
-    { label: n.contact, href: homePath() + "#contact" },
-    { label: n.blog, href: blogPath(lang) },
-    { label: n.privacy, href: `/${lang}/privacy/` },
-  ];
+  const t = navText(lang);
+  const links = [...navLinks(lang).map((l) => ({ label: l.label, href: l.href })), { label: t.privacy, href: `/${lang}/privacy/` }];
   return (
     <footer className="blog-footer">
-      <nav aria-label={n.label} className="blog-footer-nav">
+      <nav aria-label={t.navLabel} className="blog-footer-nav">
         <ul>
           {links.map((l) => (
             <li key={l.href}><a href={l.href}>{l.label}</a></li>
@@ -24,7 +16,11 @@ export default function BlogFooter({ lang, dict }: { lang: Lang; dict: Dictionar
         </ul>
       </nav>
       <span>
-        &copy; {new Date().getFullYear()} {dict.footer.rights}
+        &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> {dict.footer.rights}
+        <br />
+        <a href="https://github.com/Naresh-Khatri/3d-portfolio" target="_blank" rel="noopener noreferrer" className="blog-footer-credit">
+          Design: Naresh Khatri&apos;s 3D Portfolio
+        </a>
       </span>
     </footer>
   );

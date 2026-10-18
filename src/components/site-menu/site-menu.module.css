@@ -1,0 +1,123 @@
+/* The site menu, ported from Naresh Khatri's 3D portfolio header (MIT): a "Menu" button with a
+   two-line burger, and a panel that drops down with very large link words. Plain CSS (the blog pages
+   do not load Tailwind); the panel is always the dark navy theme. */
+
+.toggle {
+  position: relative;
+  z-index: 1001;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  padding: 0 4px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 15px;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+.toggle:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; border-radius: 6px; }
+
+
+.label { position: relative; display: grid; }
+.label > span { grid-area: 1 / 1; transition: opacity 0.35s ease; }
+.label > span:nth-child(2) { opacity: 0; }
+.open .label > span:nth-child(1) { opacity: 0; }
+.open .label > span:nth-child(2) { opacity: 1; }
+
+.burger { position: relative; width: 22.5px; pointer-events: none; }
+.burger::before,
+.burger::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transition: transform 1s cubic-bezier(0.76, 0, 0.24, 1), top 1s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.burger::after { top: -4px; }
+.burger::before { top: 4px; }
+.open .burger::after { transform: rotate(45deg); top: -1px; }
+.open .burger::before { transform: rotate(-45deg); top: 1px; }
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 998;
+  background: rgba(2, 8, 23, 0.55);
+}
+
+.panel {
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  z-index: 999;
+  overflow: hidden;
+  background: rgba(2, 8, 23, 0.92);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1e293b;
+  color: #f8fafc;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 104px clamp(16px, 4vw, 32px) 24px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  border-radius: 8px;
+  color: #94a3b8;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.link[aria-current] { color: #f8fafc; text-decoration: underline; text-underline-offset: 0.15em; }
+.link:focus-visible { outline: 2px solid #f8fafc; outline-offset: 2px; }
+
+.word {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 30px 0 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.15;
+}
+.word > span { display: inline-block; white-space: pre; }
+[dir="rtl"] .word { padding: 10px 0 0 30px; font-family: var(--font-arabic), var(--font-display), system-ui, sans-serif; }
+
+.image { display: none; }
+
+@media (min-width: 1000px) {
+  .wrapper { padding-top: 120px; }
+  .word { font-size: 4.6vw; padding-inline-end: 2vw; }
+  [dir="rtl"] .word { padding-inline: 2vw 0; }
+  .image {
+    display: block;
+    flex: none;
+    width: 420px;
+    height: 380px;
+    margin-top: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .image img { width: 100%; height: 100%; object-fit: cover; }
+}

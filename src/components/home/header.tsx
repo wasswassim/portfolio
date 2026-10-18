@@ -5,15 +5,11 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { usePreloader } from "./preloader";
 import { usePerfProfile } from "./use-perf-profile";
-import { buttonClass, cn } from "./ui";
+import { cn } from "./ui";
+import SiteMenu from "@/components/site-menu/site-menu";
 
-// Top bar in the template's style: transparent over the hero, blurred once the page scrolls.
-const NAV = [
-  { href: "/stack/", label: "Stack" },
-  { href: "/en/blog/", label: "Blog" },
-  { href: "/#contact", label: "Let's talk", cta: true },
-];
-
+// Top bar in the template's style: name on the left, the Menu button on the right; transparent over
+// the hero, blurred once the page scrolls.
 export default function Header() {
   const { isLoading } = usePreloader();
   const { reducedMotion } = usePerfProfile();
@@ -41,15 +37,7 @@ export default function Header() {
         <Link href="/" className="whitespace-nowrap font-display text-sm font-bold tracking-wide hover:underline hover:underline-offset-4">
           Wassim Gatri
         </Link>
-        <ul className="flex items-center gap-0.5 sm:gap-1 md:gap-3">
-          {NAV.map((item) => (
-            <li key={item.href}>
-              <Link href={item.href} className={item.cta ? buttonClass("default", "min-h-9 px-2.5 sm:px-3") : buttonClass("ghost", "min-h-9 px-2 sm:px-3")}>
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <SiteMenu />
       </nav>
     </motion.header>
   );

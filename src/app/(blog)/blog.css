@@ -926,3 +926,7 @@ html:has(.blog-paper) { --cursor-ring: #020817; }
 @media (prefers-reduced-motion: reduce) {
   .blog-newsletter-form button, .blog-reviews-btn, .blog-reviews-more, .blog-referral-cta { transition: none; }
 }
+
+/* Site menu (components/site-menu): the header stays above the menu panel, which opens under it */
+.blog-header { position: relative; z-index: 1000; background: var(--bg); }
+.blog-footer-credit { display: inline-block; margin-block-start: 0.25rem; font-size: 0.7rem; color: var(--muted); text-decoration: underline; text-underline-offset: 0.2em; }
