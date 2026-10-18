@@ -1,8 +1,13 @@
 # Wassim Gatri
 
-> Tunisian web designer and digital marketer based in Tunisia and Italy, studying for a Master's in Digital Marketing at LUMSA University in Rome. Writes practical guides, based on official sources, for Tunisians who study, work and settle in Italy. Guides are written in Arabic, French and English, with each fact checked against an official Italian or Tunisian source and dated.
+> Tunisian full stack entrepreneur based in Tunisia and Italy: web and app design, marketing campaigns, SEO, AEO and GEO, and agentic AI automation. Studying for a Master's in Digital Marketing at LUMSA University in Rome. Writes practical guides, based on official sources, for Tunisians who study, work and settle in Italy. Guides are written in Arabic, French and English, with each fact checked against an official Italian or Tunisian source and dated.
 
-Author: Wassim Gatri, Web Designer & Digital Marketer (https://wassimgatri.com). Each guide lists its official sources at the end and shows when it was last verified.
+Author: Wassim Gatri, Full Stack Entrepreneur (https://wassimgatri.com). Each guide lists its official sources at the end and shows when it was last verified.
+
+## Work with me
+
+- [Homepage](https://wassimgatri.com/): who I am, my projects (current project: Quran Edits, an AI studio for Quran recitation videos) and how we can work together: web and app design, e-commerce product pages, campaign analysis, Meta and TikTok ads, SEO, AEO and GEO, agentic AI automation and partnerships.
+- [My stack](https://wassimgatri.com/stack/): the AI, development, design and marketing tools and the devices I work with.
 
 ## English: https://wassimgatri.com/en/blog/
 
