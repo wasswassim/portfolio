@@ -12,7 +12,7 @@ export const BEFORE_LEAVING: FeeId[] = ["sapienza-application", "visa-study-d"];
 export const ON_ARRIVAL: FeeId[] = ["permit-stamp", "permit-postal", "permit-card", "permit-contribution-1y", "postepay-issue"];
 export const UNIVERSITY: FeeId[] = ["sapienza-band-a", "lazio-regional-tax", "uni-stamp"];
 export const YEARLY_LIVING: FeeId[] = ["ssn-voluntary", "atac-annual", "postepay-year"];
-export const FIXED: FeeId[] = [...BEFORE_LEAVING, ...ON_ARRIVAL, ...UNIVERSITY, ...YEARLY_LIVING];
+const FIXED: FeeId[] = [...BEFORE_LEAVING, ...ON_ARRIVAL, ...UNIVERSITY, ...YEARLY_LIVING];
 
 const MONTHS = 12;
 const round2 = (n: number) => Math.round(n * 100) / 100;

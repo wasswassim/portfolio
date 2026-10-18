@@ -7,7 +7,7 @@ import { cn } from "./ui";
 // Written by scripts/fetch-stack-logos.mjs: the tools that have a logo file in public/assets/stack
 const LOGOS = new Set<string>(LOGO_SLUGS);
 
-export const hasLogo = (slug: string) => LOGOS.has(slug);
+const hasLogo = (slug: string) => LOGOS.has(slug);
 
 export default function ToolLogo({ tool, size = "md" }: { tool: Tool; size?: "sm" | "md" }) {
   const box = size === "sm" ? "size-12 rounded-xl p-2.5" : "size-14 rounded-2xl p-3";

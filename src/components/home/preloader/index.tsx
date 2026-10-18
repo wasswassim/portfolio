@@ -2,9 +2,7 @@
 import {
   useState,
   useEffect,
-  createContext,
   ReactNode,
-  useContext,
   useRef,
   useCallback,
 } from "react";
@@ -15,30 +13,14 @@ import Loader from "./loader";
 import gsap from "gsap";
 import { usePerfProfile } from "@/components/home/use-perf-profile";
 
-type PreloaderContextType = {
-  isLoading: boolean;
-  loadingPercent: number;
-  bypassLoading: () => void;
-};
-const INITIAL: PreloaderContextType = {
-  isLoading: true,
-  loadingPercent: 0,
-  bypassLoading: () => {},
-};
-export const preloaderContext = createContext<PreloaderContextType>(INITIAL);
+import { preloaderContext } from "./context";
+export { usePreloader } from "./context";
 
 type PreloaderProps = {
   children: ReactNode;
   disabled?: boolean;
 };
 
-export const usePreloader = () => {
-  const context = useContext(preloaderContext);
-  if (!context) {
-    throw new Error("usePreloader must be used within a PreloaderProvider");
-  }
-  return context;
-};
 const LOADING_TIME = 2.5;
 function Preloader({ children, disabled = false }: PreloaderProps) {
   const pathname = usePathname();

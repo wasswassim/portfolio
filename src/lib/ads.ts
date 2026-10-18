@@ -25,7 +25,7 @@ export const articleHasAds = (articleId: string) => !NO_ADS_ARTICLES.has(article
 const KEEP_AWAY: ReadonlySet<Block["type"]> = new Set(["referral", "fees", "steps", "table", "callout"]);
 
 /** Posts under this many words are short: no middle ad, only the top and end ones */
-export const SHORT_POST_WORDS = 1500;
+const SHORT_POST_WORDS = 1500;
 
 /**
  * Indexes of the body blocks before which an in-article ad goes, always before a section heading (h2):

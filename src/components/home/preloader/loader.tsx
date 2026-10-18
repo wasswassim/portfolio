@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { opacity, slideUp } from "./anim";
-import { usePreloader } from ".";
+import { usePreloader } from "./context";
 
 const steps = [
   "10%",

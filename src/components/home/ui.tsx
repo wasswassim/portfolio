@@ -77,17 +77,6 @@ export function SectionWrapper({ id, className, children, ariaLabelledby }: { id
   );
 }
 
-export function SectionHeader({ id, title, desc, className, sticky = true }: { id: string; title: ReactNode; desc?: ReactNode; className?: string; sticky?: boolean }) {
-  return (
-    <div className={cn(sticky && "sticky top-[70px]", "mb-16", className)}>
-      <BoxReveal width="100%">
-        <h2 id={`${id}-title`} className="text-center text-4xl font-bold text-foreground md:text-7xl">{title}</h2>
-      </BoxReveal>
-      {desc && <p className="mx-auto mt-3 max-w-3xl text-center text-base font-normal text-muted-foreground">{desc}</p>}
-    </div>
-  );
-}
-
 export const Card = forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => (
   // A background passed in className replaces the default one (two bg- utilities would clash)
   <div ref={ref} className={cn("pointer-events-auto rounded-lg border border-border text-card-foreground shadow-sm backdrop-blur-sm", !/\bbg-/.test(className ?? "") && "bg-card/70", className)} {...props} />

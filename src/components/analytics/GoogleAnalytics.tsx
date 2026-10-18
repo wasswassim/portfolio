@@ -8,7 +8,7 @@ import { ADSENSE_CLIENT } from "@/lib/ads";
 // Privacy & messaging), which updates these signals itself. Elsewhere they are granted by default.
 // The Google scripts (gtag.js and, on the blog, adsbygoogle.js) are added by this inline script after the
 // defaults are set: React hoists <script async src> above inline scripts, which could run a tag first.
-export const GA_ID = "G-6RCMQC1GVB";
+const GA_ID = "G-6RCMQC1GVB";
 
 // EU/EEA member states, plus the UK and Switzerland (ISO 3166-1 alpha-2)
 const CONSENT_REGIONS = [

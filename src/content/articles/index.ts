@@ -71,7 +71,7 @@ for (const series of SERIES) {
   }
 }
 
-export function articleById(id: string): Article | undefined {
+function articleById(id: string): Article | undefined {
   return ARTICLES.find((a) => a.id === id);
 }
 

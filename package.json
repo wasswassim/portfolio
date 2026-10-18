@@ -11,7 +11,8 @@
     "new-article": "node scripts/new-article.mjs",
     "prebuild": "node scripts/fetch-reviews.mjs && node scripts/check-articles.mjs",
     "clean": "rimraf .next",
-    "dev:clean": "rimraf .next && next dev"
+    "dev:clean": "rimraf .next && next dev",
+    "stack:logos": "node scripts/fetch-stack-logos.mjs"
   },
   "dependencies": {
     "@chibi3d/runtime": "0.5.0",
