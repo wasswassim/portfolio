@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LANGS, type Lang } from "@/lib/i18n/config";
 import { langStaticParams, toLang, type LangPageProps as Props } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n";
@@ -68,6 +69,9 @@ export default async function AboutPage({ params }: Props) {
                   {s.items && <ul>{s.items.map((i) => <li key={i}><BidiText lang={lang}>{i}</BidiText></li>)}</ul>}
                 </section>
               ))}
+              <p>
+                <Link href="/">{c.portfolio}</Link>
+              </p>
               <p>
                 {c.contact} <a href={`mailto:${AUTHOR_EMAIL}`}>{AUTHOR_EMAIL}</a> · <a href={AUTHOR_LINKEDIN} rel="me noopener noreferrer" target="_blank">LinkedIn</a>
               </p>

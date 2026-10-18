@@ -1,4 +1,5 @@
 import type { Lang } from "@/lib/i18n/config";
+import Link from "next/link";
 import { aboutPath } from "@/lib/i18n/routes";
 import { SITE_NAME } from "@/lib/seo/site";
 import { AUTHOR_AVATAR, AUTHOR_COPY } from "@/content/author";
@@ -15,7 +16,10 @@ export default function AuthorBox({ lang }: { lang: Lang }) {
         <p className="blog-author-name">{SITE_NAME}</p>
         <p className="blog-author-role"><BidiText lang={lang}>{c.role}</BidiText></p>
         <p className="blog-author-bio"><BidiText lang={lang}>{c.short}</BidiText></p>
-        <a className="blog-author-more" href={aboutPath(lang)} rel="author">{c.more}</a>
+        <p className="blog-author-links">
+          <a className="blog-author-more" href={aboutPath(lang)} rel="author">{c.more}</a>
+          <Link className="blog-author-more" href="/">{c.portfolio}</Link>
+        </p>
       </div>
     </aside>
   );
