@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { useEffect, useRef, useState } from "react";
 import { AUTHOR_EMAIL } from "@/content/author";
 import { BoxReveal, Card, SectionWrapper, buttonClass } from "../ui";
+import { usePerfProfile } from "../use-perf-profile";
 
 // "Let's work together", as in the template: a contact card on the left (the 3D keyboard floats on
 // the right). The card plays the former hero video behind the form. Same EmailJS template as before:
@@ -18,30 +19,42 @@ const EMAILJS = {
 
 type Status = "idle" | "sending" | "success" | "error";
 const field =
-  "pointer-events-auto w-full rounded-md border border-input bg-background/60 px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
+  "pointer-events-auto w-full rounded-md border border-input bg-background/60 px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring";
 
 export default function ContactSection() {
   const formRef = useRef<HTMLFormElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const [status, setStatus] = useState<Status>("idle");
+  const { reducedMotion } = usePerfProfile();
+  // Spam guard: one message per minute from this page
+  const lastSent = useRef(0);
 
   // Play the video only while it is on screen (it is muted and decorative)
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (reducedMotion) return;
     const io = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) video.play().catch(() => {});
       else video.pause();
     });
     io.observe(video);
     return () => io.disconnect();
-  }, []);
+  }, [reducedMotion]);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = formRef.current;
     if (!form) return;
+    // Honeypot: bots fill the hidden "website" field; pretend it worked and send nothing
+    if ((form.elements.namedItem("website") as HTMLInputElement | null)?.value) {
+      setStatus("success");
+      return;
+    }
+    if (Date.now() - lastSent.current < 60_000) {
+      setStatus("success");
+      return;
+    }
     if (!EMAILJS.serviceId || !EMAILJS.templateId || !EMAILJS.publicKey) {
       console.error("[EmailJS] Missing NEXT_PUBLIC_EMAILJS_* env vars at build time.");
       setStatus("error");
@@ -52,6 +65,7 @@ export default function ContactSection() {
     setStatus("sending");
     try {
       await emailjs.sendForm(EMAILJS.serviceId, EMAILJS.templateId, form, { publicKey: EMAILJS.publicKey });
+      lastSent.current = Date.now();
       setStatus("success");
       form.reset();
     } catch (err) {
@@ -64,9 +78,9 @@ export default function ContactSection() {
     <SectionWrapper id="contact" ariaLabelledby="contact-title" className="mx-auto min-h-screen max-w-7xl py-24">
       <div className="mb-14">
         <BoxReveal width="100%">
-          <h2 id="contact-title" className="text-center text-4xl font-bold md:text-7xl">
-            LET&apos;S WORK <br />
-            TOGETHER
+          <h2 id="contact-title" className="text-center text-4xl font-bold uppercase md:text-7xl">
+            Let&apos;s work <br />
+            together
           </h2>
         </BoxReveal>
       </div>
@@ -91,8 +105,15 @@ export default function ContactSection() {
               <a href={`mailto:${AUTHOR_EMAIL}`} className="pointer-events-auto text-foreground underline underline-offset-4">{AUTHOR_EMAIL}</a>{" "}
               or leave your details here.
             </p>
-            <form ref={formRef} onSubmit={onSubmit} method="post" className="mt-6 flex flex-col gap-4">
+            <form ref={formRef} onSubmit={onSubmit} className="mt-6 flex flex-col gap-4">
               <input type="hidden" name="time" />
+              {/* Honeypot, hidden from people and screen readers */}
+              <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+                <label>
+                  Website
+                  <input type="text" name="website" tabIndex={-1} autoComplete="off" defaultValue="" />
+                </label>
+              </div>
               <div className="grid gap-4 sm:grid-cols-2">
                 <label className="flex flex-col gap-1.5 text-sm">
                   Name

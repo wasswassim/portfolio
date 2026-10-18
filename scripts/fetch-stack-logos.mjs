@@ -13,6 +13,7 @@ const tools = [...src.matchAll(/^\s*\{ slug: "([^"]+)", name: "([^"]+)".*$/gm)].
 });
 
 // Logos sit on white tiles, so take the variant drawn for light backgrounds
+const UNSAFE = /<script|\son\w+\s*=|foreignObject|javascript:|href\s*=\s*["']https?:/i;
 const pick = (route) => (typeof route === "string" ? route : route?.light ?? route?.dark);
 const missing = [];
 for (const t of tools) {
@@ -22,7 +23,9 @@ for (const t of tools) {
     continue;
   }
   try {
-    const hits = await (await fetch("https://api.svgl.app?search=" + encodeURIComponent(t.svgl))).json();
+    const res = await fetch("https://api.svgl.app?search=" + encodeURIComponent(t.svgl), { signal: AbortSignal.timeout(10_000) });
+    if (!res.ok) throw new Error("search HTTP " + res.status);
+    const hits = await res.json();
     // Prefer the entry named exactly like the tool or the search term (SVGL also returns product variants)
     const norm = (v) => v.toLowerCase().replace(/[^a-z0-9]/g, "");
     const best = Array.isArray(hits) && hits.length
@@ -33,8 +36,12 @@ for (const t of tools) {
       missing.push(t.name);
       continue;
     }
-    const svg = await (await fetch(url)).text();
+    const logo = await fetch(url, { signal: AbortSignal.timeout(10_000) });
+    if (!logo.ok) throw new Error("logo HTTP " + logo.status);
+    const svg = await logo.text();
     if (!svg.includes("<svg")) throw new Error("not an svg");
+    // Opened directly, an SVG is a same-origin document: refuse anything that could run code or load more
+    if (UNSAFE.test(svg)) throw new Error("unsafe content in the svg");
     writeFileSync(file, svg);
     console.log("ok", t.slug, "<-", best.title);
   } catch (e) {

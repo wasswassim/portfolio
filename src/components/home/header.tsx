@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { usePreloader } from "./preloader";
+import { usePerfProfile } from "./use-perf-profile";
 import { buttonClass, cn } from "./ui";
 
 // Top bar in the template's style: transparent over the hero, blurred once the page scrolls.
@@ -15,6 +16,7 @@ const NAV = [
 
 export default function Header() {
   const { isLoading } = usePreloader();
+  const { reducedMotion } = usePerfProfile();
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -25,9 +27,11 @@ export default function Header() {
 
   return (
     <motion.header
-      initial={{ y: -80 }}
+      initial={reducedMotion ? false : { y: -80 }}
       animate={{ y: isLoading ? -80 : 0 }}
-      transition={{ duration: 0.8, delay: isLoading ? 0 : 0.6 }}
+      transition={{ duration: reducedMotion ? 0 : 0.8, delay: isLoading || reducedMotion ? 0 : 0.6 }}
+      // Off screen while the preloader runs: its links leave the tab order too
+      inert={isLoading}
       className={cn(
         "fixed inset-x-0 top-0 z-[1000] transition-colors duration-500",
         scrolled ? "bg-background/70 backdrop-blur-md" : "bg-transparent",

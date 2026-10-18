@@ -16,7 +16,8 @@ export default function VerseSection() {
   const { disable3D, ready } = usePerfProfile();
   const sceneStatus = useSceneStatus();
   // Without the 3D keyboard (reduced motion, no WebGL, scene failure) the keys show as an HTML grid
-  const showGrid = !ready || disable3D || sceneStatus !== "ready";
+  // While the scene loads, the 3D layout is already reserved so the page does not jump
+  const showGrid = ready && (disable3D || sceneStatus === "failed");
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => ScrollTrigger.refresh());
@@ -33,7 +34,7 @@ export default function VerseSection() {
         <h2 id="verse-title" className="sr-only">A verse that guides my work</h2>
         <BoxReveal width="100%">
           <figure>
-            <p className="text-sm text-muted-foreground">قال الله تعالى:</p>
+            <p lang="ar" dir="rtl" className="text-sm text-muted-foreground">قال الله تعالى:</p>
             <blockquote lang="ar" dir="rtl" className={cn(amiri.className, "mt-2 text-3xl leading-[1.8] text-foreground md:text-5xl")}>
               «وَأَنْ لَيْسَ لِلْإِنسَانِ إِلَّا مَا سَعَى»
             </blockquote>
@@ -57,10 +58,10 @@ export default function VerseSection() {
           <li
             key={skill.name}
             style={{ "--skill": skill.color } as CSSProperties}
-            className="group pointer-events-auto relative flex flex-col items-center justify-center gap-3 overflow-hidden rounded-2xl border border-border/60 bg-secondary/20 p-5 backdrop-blur-sm transition-[transform,border-color] duration-300 hover:-translate-y-1 hover:border-[var(--skill)]"
+            className="group pointer-events-auto relative flex flex-col items-center justify-center gap-3 overflow-hidden rounded-2xl border border-border/60 bg-secondary/20 p-5 backdrop-blur-sm transition-[translate,border-color] duration-300 hover:-translate-y-1 hover:border-[var(--skill)]"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element -- small static SVG logos */}
-            <img src={skill.icon} alt="" width={44} height={44} loading="lazy" className="size-9 object-contain md:size-11" />
+            {/* eslint-disable-next-line @next/next/no-img-element -- local SVG logos (the same files as the 3D keys) */}
+            <img src={skill.keyboardIcon ?? skill.icon} alt="" width={44} height={44} loading="lazy" className="size-9 object-contain md:size-11" />
             <span className="text-center text-xs font-medium text-foreground/80 md:text-sm">{skill.label}</span>
           </li>
         ))}

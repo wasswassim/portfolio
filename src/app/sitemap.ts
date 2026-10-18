@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const latestUpdate = ARTICLES.map((a) => a.updatedAt).sort().at(-1);
 
-  const entries: MetadataRoute.Sitemap = [{ url: abs(homePath()) }, { url: abs("/stack/") }];
+  const entries: MetadataRoute.Sitemap = [{ url: abs(homePath()) }, { url: abs("/stack/") }, { url: abs("/links/") }];
 
   const live = langsWithArticles();
   const landingFor = (l: (typeof LANGS)[number]) => (live.includes(l) ? blogPath(l) : null);

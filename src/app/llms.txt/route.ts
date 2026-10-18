@@ -37,6 +37,11 @@ export function GET() {
     "",
     `Author: ${SITE_NAME}, ${AUTHOR.jobTitle} (${SITE_URL}). Each guide lists its official sources at the end and shows when it was last verified.`,
     "",
+    "## Work with me",
+    "",
+    `- [Homepage](${SITE_URL}/): who I am, my projects (current project: Quran Edits, an AI studio for Quran recitation videos) and how we can work together: web and app design, e-commerce product pages, campaign analysis, Meta and TikTok ads, SEO, AEO and GEO, agentic AI automation and partnerships.`,
+    `- [My stack](${SITE_URL}/stack/): the AI, development, design and marketing tools and the devices I work with.`,
+    "",
     ...live.map(section),
     "",
   ].join("\n");

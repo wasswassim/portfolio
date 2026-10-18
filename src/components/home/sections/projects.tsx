@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { CURRENT_PROJECT, PROJECTS, type Project } from "@/content/projects";
 import { BoxReveal, Reveal, SectionWrapper, buttonClass, cn } from "../ui";
+import { usePerfProfile } from "../use-perf-profile";
 
 // Projects, as in the template (the keyboard flips and the bongo cat taps behind this section):
 // the current project as a large non-clickable card, then cards that open a small presentation.
@@ -37,7 +38,7 @@ function CurrentProject({ dir = "ltr" }: { dir?: "ltr" | "rtl" }) {
                   Discover {p.name} <Arrow />
                 </a>
               ) : (
-                <span className={buttonClass("outline", "cursor-default opacity-70")} aria-disabled="true">Coming soon</span>
+                <span className="inline-flex min-h-10 items-center rounded-md border border-input px-4 py-2 text-sm font-medium opacity-70">Coming soon</span>
               )}
             </div>
           </div>
@@ -51,29 +52,48 @@ function CurrentProject({ dir = "ltr" }: { dir?: "ltr" | "rtl" }) {
 
 function ProjectDialog({ project, onClose }: { project: Project; onClose: () => void }) {
   const ref = useRef<HTMLDialogElement>(null);
+  const { reducedMotion } = usePerfProfile();
+  const onCloseRef = useRef(onClose);
+  useEffect(() => { onCloseRef.current = onClose; }, [onClose]);
   useEffect(() => {
     const dialog = ref.current;
-    dialog?.showModal();
-    return () => dialog?.close();
+    if (!dialog) return;
+    if (!dialog.open) dialog.showModal();
+    // Native listener: the "close" event fires for the X button, the backdrop and Escape
+    const handle = () => onCloseRef.current();
+    dialog.addEventListener("close", handle);
+    return () => {
+      dialog.removeEventListener("close", handle);
+      if (dialog.open) dialog.close();
+    };
   }, []);
+  // Close through the browser (X button, backdrop, Escape) so it returns focus to the card;
+  // the native "close" event then unmounts the dialog
+  const close = () => ref.current?.close();
   return (
     <dialog
       ref={ref}
-      onClose={onClose}
-      onClick={(e) => { if (e.target === ref.current) onClose(); }}
+      onClick={(e) => { if (e.target === ref.current) close(); }}
       aria-labelledby={`project-${project.id}-title`}
       // pointer-events-auto: <main> disables pointer events for the 3D canvas, and the dialog inherits
       // that (no wheel scrolling); data-lenis-prevent lets it scroll natively instead of the page
       data-lenis-prevent
-      className="pointer-events-auto m-auto max-h-[85vh] w-[min(56rem,calc(100vw-2rem))] overflow-y-auto overscroll-contain rounded-xl border border-border bg-background p-0 text-foreground backdrop:bg-black/70 backdrop:backdrop-blur-sm"
+      className="pointer-events-auto m-auto w-[min(56rem,calc(100vw-2rem))] overflow-hidden rounded-xl border border-border bg-background p-0 text-foreground backdrop:bg-black/70 backdrop:backdrop-blur-sm"
     >
-      <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}>
+      {/* The scroll area sits inside the dialog, so a click on its scrollbar is not a click on the
+          dialog element itself (which means the backdrop) */}
+      <motion.div
+        initial={reducedMotion ? false : { opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: reducedMotion ? 0 : 0.35 }}
+        className="max-h-[85vh] overflow-y-auto overscroll-contain"
+      >
         <div className="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-border bg-background/85 px-6 py-4 backdrop-blur-sm md:px-8">
           <div className="flex min-w-0 items-center gap-3">
             <h3 id={`project-${project.id}-title`} className="truncate text-xl font-bold md:text-2xl">{project.title}</h3>
             <span className="shrink-0 rounded-full border border-border px-3 py-0.5 text-[11px] uppercase tracking-widest text-muted-foreground">{project.category}</span>
           </div>
-          <button type="button" onClick={onClose} className={buttonClass("ghost", "px-3")} aria-label="Close">
+          <button type="button" onClick={close} className={buttonClass("ghost", "px-3")} aria-label="Close">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
           </button>
         </div>
@@ -100,7 +120,7 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: () => void
       type="button"
       onClick={onOpen}
       aria-haspopup="dialog"
-      className="group pointer-events-auto relative block aspect-[3/2] w-full overflow-hidden rounded-lg text-left ring-1 ring-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      className="group pointer-events-auto relative block aspect-[3/2] w-full overflow-hidden rounded-lg text-left ring-1 ring-white/5 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- static export, no image optimiser */}
       <img src={project.image.src} width={project.image.width} height={project.image.height} alt="" loading="lazy" className="absolute inset-0 size-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]" />

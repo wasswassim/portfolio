@@ -39,10 +39,10 @@ export default function HeroSection() {
                 <div className="flex gap-3">
                   {/* The template's "Hire Me" button and its little plea on hover */}
                   <span className="group relative">
-                    <a href="#contact" aria-describedby="hire-me-tip" className={buttonClass("outline")}>Hire Me</a>
+                    <a href="#contact" className={buttonClass("outline")}>Hire Me</a>
+                    {/* Decorative, so hidden from screen readers */}
                     <span
-                      id="hire-me-tip"
-                      role="tooltip"
+                      aria-hidden="true"
                       className="pointer-events-none absolute top-full left-1/2 z-10 mt-2 -translate-x-1/2 scale-95 whitespace-nowrap rounded-md bg-foreground px-3 py-1.5 text-sm text-background opacity-0 shadow-md transition duration-200 group-focus-within:scale-100 group-focus-within:opacity-100 group-hover:scale-100 group-hover:opacity-100"
                     >
                       pls 🥹 🙏

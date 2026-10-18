@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="relative z-10 flex w-full shrink-0 flex-col items-center gap-3 border-t border-border bg-background/60 px-4 py-6 text-center backdrop-blur-sm md:flex-row md:justify-between md:px-8 md:text-left">
       <p className="text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Wassim Gatri. All rights reserved.
+        © <span suppressHydrationWarning>{new Date().getFullYear()}</span> Wassim Gatri. All rights reserved.
         <br />
         Design inspired by{" "}
         <a href="https://github.com/Naresh-Khatri/3d-portfolio" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground">
