@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Syne, Bebas_Neue, IBM_Plex_Sans_Arabic } from "next/font/google";
+import { Space_Grotesk, Unbounded, IBM_Plex_Sans_Arabic } from "next/font/google";
 import "../blog.css";
 import { DIR } from "@/lib/i18n/config";
 import { langStaticParams, toLang } from "@/lib/i18n/params";
@@ -14,9 +14,9 @@ import ViewTransitionTypes from "@/components/blog/ViewTransitionTypes";
 // blog page ships the correct language and direction in its static HTML.
 // No Preloader, cursor, Lenis or GSAP here; see (site)/layout.tsx for the homepage.
 
-// Same fonts and CSS variable names as the homepage so the blog looks native.
-const syne = Syne({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
-const bebasNeue = Bebas_Neue({ variable: "--font-bebas", subsets: ["latin"], weight: "400", display: "swap" });
+// Same fonts as the homepage (Space Grotesk for text, Unbounded for headings) so the blog looks native.
+const grotesk = Space_Grotesk({ variable: "--font-grotesk", subsets: ["latin"], display: "swap" });
+const unbounded = Unbounded({ variable: "--font-unbounded", subsets: ["latin"], display: "swap" });
 // Arabic only: the CSS applies it under :lang(ar). preload:false keeps en/fr pages
 // from preloading a font they never use.
 const plexArabic = IBM_Plex_Sans_Arabic({
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#0a0a0a",
+  themeColor: "#020817",
 };
 
 export default async function BlogRootLayout({
@@ -52,7 +52,7 @@ export default async function BlogRootLayout({
   const { lang: raw } = await params;
   const lang = toLang(raw);
   return (
-    <html lang={lang} dir={DIR[lang]} className={`${syne.variable} ${bebasNeue.variable} ${plexArabic.variable}`}>
+    <html lang={lang} dir={DIR[lang]} className={`${grotesk.variable} ${unbounded.variable} ${plexArabic.variable}`}>
       <head>
         <ViewTransitionTypes />
         {/* Consent defaults, then Google Analytics and AdSense (ad units + Google's consent message) */}
