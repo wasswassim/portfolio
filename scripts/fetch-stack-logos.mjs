@@ -1,7 +1,7 @@
 // One-off helper: downloads the logo of every tool in src/content/stack.ts from SVGL
 // (https://svgl.app, the brand-logo library) into public/assets/stack/<slug>.svg.
 // Run: node scripts/fetch-stack-logos.mjs   (existing files are kept; delete one to refetch it)
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const src = readFileSync(new URL("../src/content/stack.ts", import.meta.url), "utf8");
 const outDir = new URL("../public/assets/stack/", import.meta.url);
@@ -42,3 +42,9 @@ for (const t of tools) {
   }
 }
 console.log("\nNo SVGL logo (initials shown):", missing.join(", ") || "none");
+
+// The list of tools that have a logo file, read by components/home/tool-logo.tsx
+const slugs = new Set(tools.map((t) => t.slug));
+const have = readdirSync(outDir).map((f) => f.replace(/\.svg$/, "")).filter((s) => slugs.has(s)).sort();
+writeFileSync(new URL("../src/content/stack-logos.json", import.meta.url), JSON.stringify(have, null, 1) + "\n");
+console.log("stack-logos.json:", have.length, "logos");

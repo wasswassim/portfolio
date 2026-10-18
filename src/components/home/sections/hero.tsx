@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { AUTHOR_LINKEDIN } from "@/content/author";
 import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal, ScrollDownIcon, SectionWrapper, buttonClass } from "../ui";
@@ -38,7 +37,17 @@ export default function HeroSection() {
                   <a href="#contact" className={buttonClass("default", "w-full")}>Let&apos;s work together</a>
                 </BoxReveal>
                 <div className="flex gap-3">
-                  <Link href="/stack/" className={buttonClass("outline")}>My stack</Link>
+                  {/* The template's "Hire Me" button and its little plea on hover */}
+                  <span className="group relative">
+                    <a href="#contact" aria-describedby="hire-me-tip" className={buttonClass("outline")}>Hire Me</a>
+                    <span
+                      id="hire-me-tip"
+                      role="tooltip"
+                      className="pointer-events-none absolute top-full left-1/2 z-10 mt-2 -translate-x-1/2 scale-95 whitespace-nowrap rounded-md bg-foreground px-3 py-1.5 text-sm text-background opacity-0 shadow-md transition duration-200 group-focus-within:scale-100 group-focus-within:opacity-100 group-hover:scale-100 group-hover:opacity-100"
+                    >
+                      pls 🥹 🙏
+                    </span>
+                  </span>
                   <a href={AUTHOR_LINKEDIN} target="_blank" rel="me noopener noreferrer" className={buttonClass("outline", "px-3")} aria-label="LinkedIn (opens in a new tab)">
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" /></svg>
                   </a>

@@ -101,8 +101,9 @@ const BUTTON = {
 };
 
 export function buttonClass(variant: keyof typeof BUTTON = "default", className?: string) {
+  // cursor-can-hover: the elastic cursor (./elastic-cursor.tsx) hugs these
   return cn(
-    "pointer-events-auto inline-flex min-h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50",
+    "cursor-can-hover pointer-events-auto inline-flex min-h-10 items-center justify-center gap-2 whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50",
     BUTTON[variant],
     className,
   );

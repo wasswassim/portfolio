@@ -62,8 +62,10 @@ function ProjectDialog({ project, onClose }: { project: Project; onClose: () => 
       onClose={onClose}
       onClick={(e) => { if (e.target === ref.current) onClose(); }}
       aria-labelledby={`project-${project.id}-title`}
+      // pointer-events-auto: <main> disables pointer events for the 3D canvas, and the dialog inherits
+      // that (no wheel scrolling); data-lenis-prevent lets it scroll natively instead of the page
       data-lenis-prevent
-      className="m-auto max-h-[85vh] w-[min(56rem,calc(100vw-2rem))] overflow-y-auto rounded-xl border border-border bg-background p-0 text-foreground backdrop:bg-black/70 backdrop:backdrop-blur-sm"
+      className="pointer-events-auto m-auto max-h-[85vh] w-[min(56rem,calc(100vw-2rem))] overflow-y-auto overscroll-contain rounded-xl border border-border bg-background p-0 text-foreground backdrop:bg-black/70 backdrop:backdrop-blur-sm"
     >
       <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }}>
         <div className="sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-border bg-background/85 px-6 py-4 backdrop-blur-sm md:px-8">

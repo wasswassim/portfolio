@@ -6,6 +6,7 @@ import Particles from "./particles";
 import SmoothScroll from "./smooth-scroll";
 import Header from "./header";
 import Footer from "./footer";
+import ElasticCursor from "./elastic-cursor";
 import ToolLogo from "./tool-logo";
 import { usePerfProfile } from "./use-perf-profile";
 import { BlurIn, Card, Reveal } from "./ui";
@@ -24,6 +25,7 @@ export default function StackPage() {
     <Preloader disabled>
       <SmoothScroll>
         <Stars />
+        <ElasticCursor />
         <Header />
         <main id="main" className="mx-auto max-w-6xl px-4 pt-32 pb-24">
           <BlurIn>

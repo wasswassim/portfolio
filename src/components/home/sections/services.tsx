@@ -16,6 +16,11 @@ const SERVICES = [
     icon: icon(<><rect x="3" y="4" width="18" height="14" rx="2" /><path d="M3 8h18M8 21h8" /></>),
   },
   {
+    title: "E-commerce product pages",
+    text: "I redesign and customise your product pages for a higher conversion rate: clearer offer, trust signals, faster loading and a checkout path with less friction.",
+    icon: icon(<><path d="M6 7h12l-1 13H7z" /><path d="M9 7a3 3 0 0 1 6 0" /><path d="m10 14 1.5 1.5L15 12" /></>),
+  },
+  {
     title: "Campaign analysis",
     text: "I read your marketing campaigns and their numbers to show what to optimise next, and when it is safe to scale.",
     icon: icon(<><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" /></>),

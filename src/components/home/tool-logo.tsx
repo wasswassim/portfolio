@@ -1,16 +1,11 @@
 import type { Tool } from "@/content/stack";
+import LOGO_SLUGS from "@/content/stack-logos.json";
 import { cn } from "./ui";
 
 // Logo of a tool on a light tile (most brand marks are drawn for light backgrounds).
 // Tools without an SVGL logo show their initials.
-const LOGOS = new Set([
-  "claude", "claude-code", "chatgpt", "opencode", "perplexity", "whisper", "codex", "gemini", "grok", "kimi", "manus", "openrouter",
-  "github", "cloudflare", "n8n", "docker", "shadcn-ui", "radix-ui", "ark-ui", "svgl", "stripe",
-  "figma", "affinity", "canva", "midjourney", "instagram-edits", "premiere-pro",
-  "meta-ads", "tiktok-ads", "google-workspace", "google-meet",
-  "raycast", "arc", "telegram",
-  "macbook-pro", "mac-mini", "iphone", "raspberry-pi-500", "ray-ban-meta",
-]);
+// Written by scripts/fetch-stack-logos.mjs: the tools that have a logo file in public/assets/stack
+const LOGOS = new Set<string>(LOGO_SLUGS);
 
 export const hasLogo = (slug: string) => LOGOS.has(slug);
 

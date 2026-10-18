@@ -6,6 +6,7 @@ import Particles from "./particles";
 import SmoothScroll from "./smooth-scroll";
 import Header from "./header";
 import Footer from "./footer";
+import ElasticCursor from "./elastic-cursor";
 import { usePerfProfile } from "./use-perf-profile";
 import HeroSection from "./sections/hero";
 import VerseSection from "./sections/verse";
@@ -29,6 +30,7 @@ export default function HomePage() {
       <SmoothScroll>
         <Stars />
         <AnimatedBackground />
+        <ElasticCursor />
         <Header />
         <main id="main" className="canvas-overlay-mode relative">
           <HeroSection />
