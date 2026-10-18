@@ -34,7 +34,7 @@ export default function HeroSection() {
               </BlurIn>
               <div className="mt-8 flex w-fit flex-col gap-3">
                 <BoxReveal delay={2} width="100%">
-                  <a href="#contact" className={buttonClass("default", "w-full")}>Let&apos;s work together</a>
+                  <a href="#services" className={buttonClass("default", "w-full")}>Let&apos;s work together</a>
                 </BoxReveal>
                 <div className="flex gap-3">
                   {/* The template's "Hire Me" button and its little plea on hover */}
