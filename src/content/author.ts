@@ -5,6 +5,7 @@ import type { Lang } from "@/lib/i18n/config";
 export const AUTHOR_EMAIL = "wassimgatri4@gmail.com";
 /** 240px square crop of /img/wassimage.webp for the author box and page */
 export const AUTHOR_AVATAR = "/img/wassim-avatar.webp";
+export const AUTHOR_TIKTOK = "https://www.tiktok.com/@wassimgatri1";
 export const AUTHOR_LINKEDIN = "https://www.linkedin.com/in/wassim-gatri-683a12259/";
 
 type Section = { h: string; p?: string[]; items?: string[] };

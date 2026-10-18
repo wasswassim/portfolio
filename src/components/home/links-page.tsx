@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { AUTHOR_EMAIL, AUTHOR_LINKEDIN } from "@/content/author";
+import { AUTHOR_LINKEDIN, AUTHOR_TIKTOK } from "@/content/author";
 import { CURRENT_PROJECT } from "@/content/projects";
 import Preloader from "./preloader";
 import Particles from "./particles";
@@ -14,13 +14,13 @@ import { BlurIn, Reveal, cn } from "./ui";
 type LinkItem = { title: string; text: string; href: string | null; external?: boolean; badge?: string };
 
 const LINKS: LinkItem[] = [
-  { title: "Home", text: "Who I am and how we can work together", href: "/" },
+  { title: "Portfolio", text: "Who I am, my projects and how we can work together", href: "/" },
   { title: "Building a Life in Italy", text: "Free guides for Tunisians who study, work and settle in Italy", href: "/en/blog/" },
   { title: CURRENT_PROJECT.name, text: CURRENT_PROJECT.tagline, href: CURRENT_PROJECT.url, external: true, badge: CURRENT_PROJECT.url ? "New" : "Soon" },
   { title: "My stack", text: "The tools and devices I work with", href: "/stack/" },
   { title: "LinkedIn", text: "My professional profile", href: AUTHOR_LINKEDIN, external: true },
+  { title: "TikTok", text: "@wassimgatri1", href: AUTHOR_TIKTOK, external: true },
   { title: "GitHub", text: "My code and projects", href: "https://github.com/wasswassim", external: true },
-  { title: "Email me", text: AUTHOR_EMAIL, href: `mailto:${AUTHOR_EMAIL}` },
 ];
 
 function Stars() {

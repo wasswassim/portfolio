@@ -22,6 +22,7 @@ export const AUTHOR = {
 export const SOCIAL_PROFILES = [
   "https://github.com/wasswassim",
   "https://www.linkedin.com/in/wassim-gatri-683a12259/",
+  "https://www.tiktok.com/@wassimgatri1",
 ];
 
 // 1.91:1 share card used when an article has no image of its own

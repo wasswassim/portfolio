@@ -1,9 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { BoxReveal, Card, Reveal, SectionWrapper } from "../ui";
 
 // Who I am, where I am and how we can work together, in the owner's words from the author page
-// (src/content/author.ts). The blog is not mentioned here on purpose.
+// (src/content/author.ts), with a link to the blog (owner's request 2026-10-18).
 export default function AboutSection() {
   return (
     <SectionWrapper id="about" ariaLabelledby="about-title" className="flex min-h-screen w-full items-center py-24">
@@ -23,7 +24,10 @@ export default function AboutSection() {
         </BoxReveal>
         <Reveal delay={0.1}>
           <p className="mt-6 text-lg leading-relaxed text-foreground/85 md:text-xl">
-            I&apos;m Wassim Gatri, a Tunisian full stack entrepreneur living between Tunis and Rome. My background is in
+            I&apos;m Wassim Gatri, a Tunisian full stack entrepreneur living between Tunis and Rome. I&apos;m currently documenting
+            my experience and the solutions I found in my blog,{" "}
+            <Link href="/en/blog/" className="pointer-events-auto font-semibold underline underline-offset-4 hover:text-foreground">Building a Life in Italy</Link>:
+            free guides, checked against official sources, for Tunisians who study, work and settle in Italy. My background is in
             Business Information Systems, and I&apos;m studying for a Master&apos;s in Digital Marketing at LUMSA University in
             Rome. I design and build websites and apps, plan and analyse marketing campaigns, and work with{" "}
             <mark className="rounded bg-primary px-1.5 py-0.5 font-semibold text-primary-foreground">agentic engineering</mark>{" "}
