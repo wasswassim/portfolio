@@ -19,6 +19,8 @@ import { residenzaRome } from "./data/residenza-rome/article";
 import { studentJobsRome } from "./data/student-jobs-rome/article";
 import { wscTunisia } from "./data/wsc-tunisia/article";
 import { firstYearBudget } from "./data/first-year-budget/article";
+import { residenceFormRome } from "./data/residence-form-rome/article";
+import { iseeParificatoDocuments } from "./data/isee-parificato-documents/article";
 import { SERIES, type Series } from "./series";
 import type { Article, ArticleTranslation } from "./types";
 
@@ -42,6 +44,8 @@ export const ARTICLES: readonly Article[] = [
   studentJobsRome,
   wscTunisia,
   firstYearBudget,
+  residenceFormRome,
+  iseeParificatoDocuments,
 ];
 
 // Fail the build on content mistakes: duplicate heading ids would break the table of

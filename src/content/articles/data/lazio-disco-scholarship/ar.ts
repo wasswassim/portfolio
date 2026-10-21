@@ -162,7 +162,7 @@ export const ar: ArticleTranslation = {
       type: "callout",
       tone: "warning",
       title: "قاعدتان تؤديان إلى إقصاء الطلاب",
-      text: "التصريح على الشرف (autocertificazione) غير مقبول: كل رقم يحتاج إلى وثيقة رسمية. ولا يمكن أن يكون مجموع دخل العائلة صفرًا. إذا كان هناك أي غموض، راسل DiSCo على urp@laziodisco.it قبل جمع وثائقك.",
+      text: "التصريح على الشرف (autocertificazione) غير مقبول: كل رقم يحتاج إلى وثيقة رسمية. ولا يمكن أن يكون مجموع دخل العائلة صفرًا. إذا كان هناك أي غموض، راسل DiSCo على urp@laziodisco.it قبل جمع وثائقك. كل وثيقة، ومن أين تستخرجها في تونس، مشروحة في [وثائق الـ ISEE parificato](article:isee-parificato-documents).",
     },
 
     { type: "h2", id: "iseeup", text: "6. كيف تحصل على ISEEUP في CAF شريك؟" },

@@ -161,7 +161,7 @@ export const en: ArticleTranslation = {
       type: "callout",
       tone: "warning",
       title: "Two rules that exclude students",
-      text: "Self-certification is not accepted: every figure needs an official document. And the total family income cannot be zero. If anything is unclear, ask DiSCo at urp@laziodisco.it before you collect your documents.",
+      text: "Self-certification is not accepted: every figure needs an official document. And the total family income cannot be zero. If anything is unclear, ask DiSCo at urp@laziodisco.it before you collect your documents. Each document, with where to get it in Tunisia, is explained in [the documents for the ISEE parificato](article:isee-parificato-documents).",
     },
 
     { type: "h2", id: "iseeup", text: "6. How do you get your ISEEUP at a partner CAF?" },

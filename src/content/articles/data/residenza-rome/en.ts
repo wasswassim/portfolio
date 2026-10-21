@@ -56,7 +56,7 @@ export const en: ArticleTranslation = {
     { type: "h2", id: "documents", text: "2. Which documents do non-EU citizens need for residenza in Rome?" },
     {
       type: "p",
-      text: "For residenza in Rome, a non-EU citizen sends the signed *dichiarazione di residenza* with a copy of the passport, the permesso di soggiorno and a housing title (a registered lease or the owner's declaration). The form is the ministerial *dichiarazione di residenza*, with the extra list for non-EU citizens (*Allegato A*), on the [Roma Capitale change of residence page](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). Fill in every field of the form marked with an asterisk, or the anagrafe rejects the file.",
+      text: "For residenza in Rome, a non-EU citizen sends the signed *dichiarazione di residenza* with a copy of the passport, the permesso di soggiorno and a housing title (a registered lease or the owner's declaration). The form is the ministerial *dichiarazione di residenza*, with the extra list for non-EU citizens (*Allegato A*), on the [Roma Capitale change of residence page](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). Fill in every field of the form marked with an asterisk, or the anagrafe rejects the file. For a box-by-box walkthrough, see [how to fill out the dichiarazione di residenza](article:residence-form-rome).",
     },
     {
       type: "callout",

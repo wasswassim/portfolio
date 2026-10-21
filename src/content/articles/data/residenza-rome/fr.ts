@@ -56,7 +56,7 @@ export const fr: ArticleTranslation = {
     { type: "h2", id: "documents", text: "2. Quels documents un non-Européen doit-il fournir pour la residenza à Rome ?" },
     {
       type: "p",
-      text: "Pour la residenza à Rome, un citoyen non européen envoie la *dichiarazione di residenza* signée avec une copie du passeport, du permesso di soggiorno et d'un titre de logement (bail enregistré ou déclaration du propriétaire). Le formulaire est la *dichiarazione di residenza* ministérielle, avec la liste supplémentaire pour les non-Européens (*Allegato A*), sur la [page de Roma Capitale sur le changement de résidence](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). Remplissez tous les champs du formulaire marqués d'un astérisque, sinon l'anagrafe rejette le dossier.",
+      text: "Pour la residenza à Rome, un citoyen non européen envoie la *dichiarazione di residenza* signée avec une copie du passeport, du permesso di soggiorno et d'un titre de logement (bail enregistré ou déclaration du propriétaire). Le formulaire est la *dichiarazione di residenza* ministérielle, avec la liste supplémentaire pour les non-Européens (*Allegato A*), sur la [page de Roma Capitale sur le changement de résidence](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). Remplissez tous les champs du formulaire marqués d'un astérisque, sinon l'anagrafe rejette le dossier. Pour le détail case par case, voir [comment remplir la dichiarazione di residenza](article:residence-form-rome).",
     },
     {
       type: "callout",

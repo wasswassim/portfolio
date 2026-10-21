@@ -57,7 +57,7 @@ export const ar: ArticleTranslation = {
     { type: "h2", id: "documents", text: "2. ما هي الوثائق التي يحتاجها غير الأوروبي للـ residenza في روما؟" },
     {
       type: "p",
-      text: "للـ residenza في روما، يرسل المواطن غير الأوروبي *dichiarazione di residenza* ممضاة مع نسخة من جواز السفر وPermesso di soggiorno وسند السكن (عقد كراء مسجَّل أو تصريح المالك). المطبوعة هي *dichiarazione di residenza* الوزارية، مع القائمة الإضافية لغير الأوروبيين (*Allegato A*)، وتجدها في [صفحة Roma Capitale لتغيير الإقامة](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). املأ كل خانة في المطبوعة عليها نجمة، وإلا يرفض الـ anagrafe الملف.",
+      text: "للـ residenza في روما، يرسل المواطن غير الأوروبي *dichiarazione di residenza* ممضاة مع نسخة من جواز السفر وPermesso di soggiorno وسند السكن (عقد كراء مسجَّل أو تصريح المالك). المطبوعة هي *dichiarazione di residenza* الوزارية، مع القائمة الإضافية لغير الأوروبيين (*Allegato A*)، وتجدها في [صفحة Roma Capitale لتغيير الإقامة](https://www.comune.roma.it/web/it/scheda-servizi.page?contentId=INF35641&pagina=3). املأ كل خانة في المطبوعة عليها نجمة، وإلا يرفض الـ anagrafe الملف. وللشرح خانة بخانة، راجع [كيف تملأ استمارة dichiarazione di residenza](article:residence-form-rome).",
     },
     {
       type: "callout",

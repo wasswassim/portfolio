@@ -161,7 +161,7 @@ export const fr: ArticleTranslation = {
       type: "callout",
       tone: "warning",
       title: "Deux règles qui excluent des étudiants",
-      text: "L'autocertification n'est pas acceptée : chaque chiffre doit reposer sur un document officiel. Et le revenu total de la famille ne peut pas être égal à zéro. En cas de doute, écrivez à DiSCo (urp@laziodisco.it) avant de rassembler vos documents.",
+      text: "L'autocertification n'est pas acceptée : chaque chiffre doit reposer sur un document officiel. Et le revenu total de la famille ne peut pas être égal à zéro. En cas de doute, écrivez à DiSCo (urp@laziodisco.it) avant de rassembler vos documents. Chaque document, et où l'obtenir en Tunisie, est expliqué dans [les documents pour l'ISEE parificato](article:isee-parificato-documents).",
     },
 
     { type: "h2", id: "iseeup", text: "6. Comment obtenir votre ISEEUP dans un CAF partenaire ?" },
