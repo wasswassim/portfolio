@@ -249,6 +249,36 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .blog-cards > li { animation: none !important; }
 @media (prefers-reduced-motion: reduce) { .blog-search { transition: none; } }
 
+/* Ask box: what the blog answers, a large search field and suggested questions, above the cards */
+.blog-ask { margin-block: clamp(1rem, 3vw, 1.75rem) 1.5rem; padding: clamp(1.1rem, 3vw, 1.75rem);
+  border: 1px solid var(--border); border-radius: 1.25rem; background: var(--surface); }
+.blog-ask-title { font-family: var(--font-display); font-size: clamp(1.15rem, 2.6vw, 1.45rem); font-weight: 600; line-height: 1.3; }
+.blog-ask-intro { margin-block-start: 0.5rem; max-inline-size: 46rem; color: var(--muted); font-size: 0.95rem; }
+.blog-ask .blog-search-row { margin-block: 1.1rem 0.9rem; }
+.blog-ask .blog-search { inline-size: min(100%, 42rem); block-size: 3.1rem; }
+.blog-ask .blog-search-input { font-size: 1rem; }
+.blog-ask-try { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
+.blog-ask-try-label { font-size: 0.8rem; color: var(--muted); }
+.blog-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; padding: 0; margin: 0; }
+.blog-chip { min-block-size: 2.25rem; padding: 0.35rem 0.85rem; border: 1px solid var(--border); border-radius: 999px; background: transparent;
+  color: var(--fg); font: inherit; font-size: 0.8rem; cursor: pointer; transition: border-color 0.2s ease, background-color 0.2s ease; }
+.blog-chip:hover { border-color: var(--muted); background: var(--hover); }
+.blog-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.blog-chip[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: var(--bg); }
+/* Quick answer: the FAQ entry of the best guide that matches the question */
+.blog-answer { margin-block-end: 1.5rem; padding: 1rem 1.25rem; border: 1px solid var(--border); border-inline-start: 3px solid var(--soft-green);
+  border-radius: 0.75rem; background: var(--surface); }
+.blog-answer-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--soft-green); }
+:lang(ar) .blog-answer-label { letter-spacing: 0; }
+.blog-answer-q { margin-block-start: 0.35rem; font-weight: 600; }
+.blog-answer-a { margin-block-start: 0.35rem; color: var(--muted); font-size: 0.92rem; max-inline-size: 48rem; }
+.blog-answer-link { display: inline-block; margin-block-start: 0.6rem; font-size: 0.85rem; color: var(--fg); text-decoration: underline; text-underline-offset: 0.2em; }
+.blog-none { margin-block-end: 1.25rem; color: var(--muted); font-size: 0.92rem; }
+.blog-best { padding-inline: 0.55rem; border-radius: 999px; background: var(--soft-green); color: var(--bg); font-weight: 600; }
+.blog-cards .blog-card-best a { border-color: var(--soft-green); }
+@media (prefers-reduced-motion: reduce) { .blog-chip { transition: none; } }
+@media (forced-colors: active) { .blog-chip[aria-pressed="true"] { forced-color-adjust: none; border: 2px solid Highlight; } }
+
 .blog-meta { font-size: 0.75rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; }
 .blog-meta .blog-cat { color: var(--soft-green); }
 .blog-meta .blog-part { padding-inline: 0.55rem; border: 1px solid var(--border); border-radius: 999px; color: var(--fg); }

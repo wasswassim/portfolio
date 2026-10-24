@@ -11,8 +11,25 @@ import BlogHeader from "@/components/blog/BlogHeader";
 import BlogFooter from "@/components/blog/BlogFooter";
 import BidiText from "@/components/blog/BidiText";
 import BlogCardList, { type BlogCardItem } from "@/components/blog/BlogCardList";
+import type { ArticleTranslation } from "@/content/articles/types";
+import type { SearchDoc } from "@/lib/blog-search";
 
 export const dynamicParams = false;
+
+// Markdown to plain text for the search index: links keep their anchor, emphasis marks go
+const plain = (s: string) => s.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/[*_`]/g, "");
+
+/** What the list search looks at for one post: keywords, summary, section headings and FAQ. */
+function searchDoc(t: ArticleTranslation, extra: string[]): SearchDoc {
+  const blocks = [...t.body, ...(t.guide ?? [])];
+  return {
+    title: t.title,
+    description: [t.metaDescription, ...extra].join(" "),
+    keywords: (t.keywords ?? []).join(" "),
+    body: [t.summary, ...blocks.flatMap((b) => (b.type === "h2" || b.type === "h3" ? [b.text] : []))].map(plain).join(" "),
+    faq: blocks.flatMap((b) => (b.type === "faq" ? b.items.map(({ q, a }) => ({ q: plain(q), a: plain(a) })) : [])),
+  };
+}
 
 export function generateStaticParams() {
   return langStaticParams();
@@ -97,19 +114,21 @@ export default async function BlogLandingPage({ params }: Props) {
             lang={lang}
             items={items.map(({ article, translation }): BlogCardItem => {
               const series = seriesPosition(article, lang);
+              const part = series ? dict.series.part(series.part, series.total) : undefined;
+              const category = dict.categories[article.category];
               return {
                 id: article.id,
                 href: articlePath(lang, translation.slug),
                 title: translation.title,
                 description: translation.metaDescription,
-                category: dict.categories[article.category],
+                category,
                 date: article.publishedAt,
                 dateText: dateFmt.format(new Date(article.publishedAt)),
-                part: series && dict.series.part(series.part, series.total),
+                part,
+                search: searchDoc(translation, [category, part ?? ""]),
               };
             })}
-            labels={{
-            ...dict.landing.search, read: dict.landing.read }}
+            labels={{ ...dict.landing.search, read: dict.landing.read }}
           />
         )}
         </div>
