@@ -12,11 +12,7 @@ export default function Footer() {
       <p className="text-xs text-muted-foreground">
         © <span suppressHydrationWarning>{new Date().getFullYear()}</span> Wassim Gatri. All rights reserved.
         <br />
-        Design inspired by{" "}
-        <a href="https://github.com/Naresh-Khatri/3d-portfolio" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-foreground">
-          Naresh Khatri&apos;s 3D Portfolio
-        </a>
-        .
+        Design inspired by Naresh Khatri&apos;s 3D Portfolio.
       </p>
       <nav aria-label="Footer">
         <ul className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs">

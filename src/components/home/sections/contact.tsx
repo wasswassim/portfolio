@@ -2,7 +2,6 @@
 
 import emailjs from "@emailjs/browser";
 import { useEffect, useRef, useState } from "react";
-import { AUTHOR_EMAIL } from "@/content/author";
 import { BoxReveal, Card, SectionWrapper, buttonClass } from "../ui";
 import { usePerfProfile } from "../use-perf-profile";
 
@@ -101,9 +100,7 @@ export default function ContactSection() {
           <div className="relative p-6 md:p-8">
             <h3 className="text-3xl font-bold md:text-4xl">Contact form</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Write to me directly at{" "}
-              <a href={`mailto:${AUTHOR_EMAIL}`} className="pointer-events-auto text-foreground underline underline-offset-4">{AUTHOR_EMAIL}</a>{" "}
-              or leave your details here.
+              Tell me what you have in mind and leave your details here. I will get back to you by email.
             </p>
             <form ref={formRef} onSubmit={onSubmit} className="mt-6 flex flex-col gap-4">
               <input type="hidden" name="time" />
@@ -137,7 +134,7 @@ export default function ContactSection() {
               </button>
               <p role="status" className="min-h-5 text-sm">
                 {status === "success" && "Thank you, your message is on its way. I'll reply soon."}
-                {status === "error" && `Your message could not be sent. Please write to ${AUTHOR_EMAIL}.`}
+                {status === "error" && "Your message could not be sent. Please try again in a moment."}
               </p>
             </form>
           </div>

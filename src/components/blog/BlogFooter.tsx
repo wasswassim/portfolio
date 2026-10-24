@@ -18,9 +18,7 @@ export default function BlogFooter({ lang, dict }: { lang: Lang; dict: Dictionar
       <span>
         &copy; <span suppressHydrationWarning>{new Date().getFullYear()}</span> {dict.footer.rights}
         <br />
-        <a href="https://github.com/Naresh-Khatri/3d-portfolio" target="_blank" rel="noopener noreferrer" className="blog-footer-credit">
-          Design: Naresh Khatri&apos;s 3D Portfolio
-        </a>
+        <span className="blog-footer-credit">Design inspired by Naresh Khatri&apos;s 3D Portfolio.</span>
       </span>
     </footer>
   );
