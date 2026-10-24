@@ -29,6 +29,17 @@ export default function SiteMenu({ lang = "en" }: { lang?: Lang }) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
+  // The blur on the other links follows a mouse. On touch screens there is no cursor to move
+  // away, and opening the menu focuses the first link, so the rest would open blurred: skip it.
+  const [canHover, setCanHover] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const update = () => setCanHover(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
   // Where we are (path + hash), to mark the current link
   useEffect(() => {
     const update = () => setCurrent(location.pathname + location.hash);
@@ -125,7 +136,7 @@ export default function SiteMenu({ lang = "en" }: { lang?: Lang }) {
                           <motion.p
                             className={styles.word}
                             animate={
-                              hovered !== null && hovered !== i
+                              canHover && hovered !== null && hovered !== i
                                 ? { filter: "blur(4px)", opacity: 0.6, transition: { duration: d(0.3) } }
                                 : { filter: "blur(0px)", opacity: 1, transition: { duration: d(0.3) } }
                             }
