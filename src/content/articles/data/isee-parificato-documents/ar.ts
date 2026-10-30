@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "isee-parificato-documents-scholarship-italy",
   title: "ما هي وثائق الـ ISEE parificato (التصريح الضريبي الأجنبي) لاستكمال طلب المنحة الدراسية في إيطاليا؟",
+  shortTitle: "وثائق ISEE parificato",
   subtitle: "كل وثيقة عائلية تونسية يطلبها الـ CAF، ماذا تثبت ومن أين تستخرجها",
   seoTitle: "وثائق الـ ISEE parificato للطلبة التونسيين",
   metaDescription:

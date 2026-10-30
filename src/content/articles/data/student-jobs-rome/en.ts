@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "student-jobs-rome",
   title: "Student Jobs in Rome for Tunisians",
+  shortTitle: "Student Jobs in Rome",
   subtitle: "Subito first, then Indeed, temp agencies and campus jobs, within the 20-hour rule",
   seoTitle: "Student Jobs in Rome for Tunisians: Subito, 20-Hour Rule",
   metaDescription:

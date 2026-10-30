@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "job-etudiant-rome",
   title: "Job étudiant à Rome pour les Tunisiens",
+  shortTitle: "Job étudiant à Rome",
   subtitle: "Subito d’abord, puis Indeed, les agences d’intérim et les jobs sur le campus, dans la limite des 20 heures",
   seoTitle: "Job étudiant à Rome pour les Tunisiens : Subito, 20 h",
   metaDescription:

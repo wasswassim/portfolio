@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "arrivee-a-rome-etudiant",
   title: "Permis de séjour étudiant en Italie : arriver à Rome",
+  shortTitle: "Permis de séjour étudiant",
   subtitle: "Vos 30 premiers jours à Rome pour les étudiants tunisiens : kit du permis, codice fiscale, inscription, DiSCo et premier budget",
   seoTitle: "Permis de séjour étudiant Italie : 30 premiers jours à Rome",
   metaDescription:

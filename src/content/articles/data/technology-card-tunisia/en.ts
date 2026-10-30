@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "international-technology-card-tunisia",
   title: "Tunisia's International Technology Card (CTI)",
+  shortTitle: "Tunisia's International Technology Card",
   subtitle: "Limit, Documents, How to Apply, Allowed Uses and Renewal",
   seoTitle: "International Technology Card Tunisia (CTI): 2026 Guide",
   metaDescription:

@@ -3,14 +3,17 @@ import { LANGS, DEFAULT_LANG, DIR, LANG_LABEL, LOCALE, type Lang } from "@/lib/i
 import { langStaticParams, toLang, type LangPageProps as Props } from "@/lib/i18n/params";
 import { getDictionary } from "@/lib/i18n";
 import { articlePath, blogPath, languageAlternates, preferredPath } from "@/lib/i18n/routes";
-import { articlesForLang, langsWithArticles, seriesPosition } from "@/content/articles";
+import { articlesForLang, langsWithArticles, resolveArticleLink, seriesPosition } from "@/content/articles";
+import { stripMarkup } from "@/content/articles/blocks";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { SITE_NAME } from "@/lib/seo/site";
-import { JsonLd, personLd, blogLd, breadcrumbLd } from "@/lib/seo/jsonld";
+import { JsonLd, personLd, blogLd, breadcrumbLd, collectionPageLd, faqLd } from "@/lib/seo/jsonld";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogFooter from "@/components/blog/BlogFooter";
 import BidiText from "@/components/blog/BidiText";
 import BlogCardList, { type BlogCardItem } from "@/components/blog/BlogCardList";
+import BlogPersonas from "@/components/blog/BlogPersonas";
+import BlogFaq from "@/components/blog/BlogFaq";
 import type { ArticleTranslation } from "@/content/articles/types";
 import type { SearchDoc } from "@/lib/blog-search";
 
@@ -29,6 +32,15 @@ function searchDoc(t: ArticleTranslation, extra: string[]): SearchDoc {
     body: [t.summary, ...blocks.flatMap((b) => (b.type === "h2" || b.type === "h3" ? [b.text] : []))].map(plain).join(" "),
     faq: blocks.flatMap((b) => (b.type === "faq" ? b.items.map(({ q, a }) => ({ q: plain(q), a: plain(a) })) : [])),
   };
+}
+
+// Inline drops a link it cannot resolve, so a mistyped article id in the FAQ fails the build instead
+function checkFaqLinks(lang: Lang, items: readonly { a: string }[]) {
+  for (const { a } of items) {
+    for (const [, href] of a.matchAll(/\]\((article:[^)\s]+)\)/g)) {
+      if (!resolveArticleLink(lang, href)) throw new Error(`Blog index FAQ (${lang}): broken link "${href}"`);
+    }
+  }
 }
 
 export function generateStaticParams() {
@@ -61,6 +73,8 @@ export default async function BlogLandingPage({ params }: Props) {
     : [];
   const switcherPaths = Object.fromEntries(LANGS.map((l) => [l, blogPath(l)])) as Record<Lang, string>;
   const dateFmt = new Intl.DateTimeFormat(LOCALE[lang], { dateStyle: "long", timeZone: "UTC" });
+  const faq = dict.landing.faq;
+  checkFaqLinks(lang, faq.items);
 
   return (
     <>
@@ -70,9 +84,9 @@ export default async function BlogLandingPage({ params }: Props) {
         {/* Hero: satellite view of Italy (NASA MODIS, public domain) behind the title, via CSS */}
         <section className="blog-hero">
           <div className="blog-hero-inner">
-            <p className="blog-eyebrow">{dict.nav.blog}</p>
+            <p className="blog-eyebrow"><BidiText lang={lang}>{dict.blogName}</BidiText></p>
             <h1 className="blog-h1"><BidiText lang={lang}>{dict.landing.heading}</BidiText></h1>
-            <p className="blog-lead"><BidiText lang={lang}>{dict.blogTagline}</BidiText></p>
+            <p className="blog-lead"><BidiText lang={lang}>{dict.landing.lead}</BidiText></p>
           </div>
           <a
             className="blog-hero-credit"
@@ -128,9 +142,11 @@ export default async function BlogLandingPage({ params }: Props) {
                 search: searchDoc(translation, [category, part ?? ""]),
               };
             })}
-            labels={{ ...dict.landing.search, read: dict.landing.read }}
+            labels={{ ...dict.landing.search, read: dict.landing.read, allGuides: dict.landing.allGuides }}
+            between={<BlogPersonas lang={lang} dict={dict} />}
           />
         )}
+        {items.length > 0 && <BlogFaq lang={lang} title={faq.title} items={faq.items} />}
         </div>
       </main>
       <BlogFooter lang={lang} dict={dict} />
@@ -142,7 +158,20 @@ export default async function BlogLandingPage({ params }: Props) {
             { name: SITE_NAME, path: "/" },
             { name: dict.blogName, path: blogPath(lang) },
           ]),
-        ]}
+          ...(items.length > 0
+            ? [
+                collectionPageLd({
+                  lang,
+                  path: blogPath(lang),
+                  name: dict.landing.heading,
+                  description: dict.landing.metaDescription,
+                  // Same order as the cards
+                  items: items.map(({ translation }) => ({ name: translation.title, path: articlePath(lang, translation.slug) })),
+                }),
+                faqLd(faq.items.map(({ q, a }) => ({ q, a: stripMarkup(a) }))),
+              ]
+            : []),
+        ].filter((d) => d !== null)}
       />
     </>
   );

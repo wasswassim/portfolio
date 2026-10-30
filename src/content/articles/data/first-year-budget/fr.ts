@@ -8,6 +8,7 @@ const L = "fr";
 export const fr: ArticleTranslation = {
   slug: "cout-des-etudes-en-italie-pour-les-tunisiens",
   title: "Combien coûtent les études à Rome pour un étudiant tunisien ? Le budget de la première année 2026/27",
+  shortTitle: "Coût des études à Rome 2026/27",
   subtitle: "Tous les frais officiels, de Tunis à votre première année à la Sapienza, en euros et en dinars, avec le loyer et l'argent que vous pouvez transférer",
   seoTitle: "Coût des études en Italie pour les Tunisiens : 2026/27",
   metaDescription:

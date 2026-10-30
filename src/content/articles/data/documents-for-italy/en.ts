@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "apostille-translation-documents-italy",
   title: "Apostille Tunisian Diploma for Italy",
+  shortTitle: "Apostille Tunisian Diploma",
   subtitle: "Legalisation, Translation, DOV or CIMEA",
   seoTitle: "Apostille Tunisian Diploma for Italy: 2026 Step by Step",
   metaDescription:

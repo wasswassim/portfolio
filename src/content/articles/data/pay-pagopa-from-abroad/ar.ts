@@ -6,6 +6,7 @@ export const ar: ArticleTranslation = {
   slug: "pay-pagopa-with-paypal-for-tunisians",
   formerSlugs: ["pay-pagopa-with-paypal-from-tunisia"],
   title: "كيف يدفع التونسيون إشعار pagoPA من الخارج",
+  shortTitle: "دفع إشعار pagoPA",
   subtitle: "عبر PayPal أو بطاقة دولية وبدون SPID: الخطوات والرسوم وماذا تفعل إذا فشل الدفع",
   seoTitle: "دفع pagoPA من الخارج عبر PayPal أو بطاقة دولية",
   metaDescription:

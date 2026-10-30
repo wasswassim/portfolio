@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "demander-la-residenza-a-rome",
   title: "Comment demander la residenza à Rome",
+  shortTitle: "La residenza à Rome",
   subtitle: "Inscription à l'anagrafe et carta d'identità pour étudiants étrangers",
   seoTitle: "Residenza à Rome : l'inscription à l'anagrafe pas à pas",
   metaDescription:

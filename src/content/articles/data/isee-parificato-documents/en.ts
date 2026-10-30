@@ -5,6 +5,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "isee-parificato-documents-scholarship-italy",
   title: "What Are the Documents for the ISEE Parificato (Foreign Tax Declaration) to Complete Your Scholarship Request in Italy?",
+  shortTitle: "ISEE Parificato documents",
   subtitle: "Each Tunisian family document the CAF asks for, what it proves and where to get it",
   seoTitle: "ISEE Parificato Documents for Tunisian Students",
   metaDescription:

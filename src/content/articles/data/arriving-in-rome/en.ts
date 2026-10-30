@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "arriving-in-rome-as-a-student",
   title: "Residence Permit for Study in Italy: Arriving in Rome",
+  shortTitle: "Residence Permit for Study",
   subtitle: "Your first 30 days as a Tunisian student: the permit kit, codice fiscale, enrolment, DiSCo and a first budget",
   seoTitle: "Residence Permit for Study in Italy: First 30 Days in Rome",
   metaDescription:

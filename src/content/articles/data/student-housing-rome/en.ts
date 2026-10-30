@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "student-housing-rome",
   title: "Student Housing in Rome for Tunisian Students",
+  shortTitle: "Student Housing in Rome",
   subtitle: "DiSCo residences, university housing services, rooms in shared flats and how to avoid rental scams",
   seoTitle: "Student Housing in Rome 2026/27: DiSCo, Rooms, Scams",
   metaDescription:

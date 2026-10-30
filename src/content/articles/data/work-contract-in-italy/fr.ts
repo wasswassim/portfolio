@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "contrat-de-travail-en-italie",
   title: "Contrat de travail en Italie pour les Tunisiens",
+  shortTitle: "Contrat de travail en Italie",
   subtitle: "Le Nulla Osta, le visa D et vos premières démarches après l'arrivée en Italie",
   seoTitle: "Contrat de travail en Italie : Nulla Osta et visa D",
   metaDescription:

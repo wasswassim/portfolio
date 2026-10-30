@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "italy-student-visa-tunisia",
   title: "Italy Student Visa for Tunisian Students",
+  shortTitle: "Italy Student Visa",
   subtitle: "The Almaviva Appointment, 15 Documents, Blocked Account and Fees, Step by Step",
   seoTitle: "Italy Student Visa for Tunisian Students (2027/28)",
   metaDescription:

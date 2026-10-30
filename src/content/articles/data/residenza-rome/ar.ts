@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "how-to-apply-for-residenza-in-rome",
   title: "كيف تطلب الريزيدنزا في روما",
+  shortTitle: "الريزيدنزا في روما",
   subtitle: "التسجيل في anagrafe وبطاقة الهوية (carta d'identità) للطالب الأجنبي",
   seoTitle: "الإقامة (residenza) في روما: التسجيل في anagrafe خطوة بخطوة",
   metaDescription:

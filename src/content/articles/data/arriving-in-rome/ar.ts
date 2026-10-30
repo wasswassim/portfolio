@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "arriving-in-rome-as-a-student",
   title: "بطاقة الإقامة للدراسة في إيطاليا: الوصول إلى روما",
+  shortTitle: "بطاقة الإقامة للدراسة",
   subtitle: "أول 30 يومًا للطالب التونسي في روما: ظرف الإقامة، وcodice fiscale، والتسجيل، وDiSCo، وميزانية الشهر الأول",
   seoTitle: "بطاقة الإقامة للدراسة في إيطاليا: أول 30 يومًا في روما",
   metaDescription:

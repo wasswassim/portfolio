@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev`
   slug: "italy-student-visa-tunisia",
   title: "فيزا الدراسة في إيطاليا للطلاب التونسيين",
+  shortTitle: "فيزا الدراسة في إيطاليا",
   subtitle: "موعد Almaviva والوثائق الخمس عشرة وشهادة تجميد المبلغ والمعاليم، خطوة بخطوة",
   seoTitle: "فيزا الدراسة في إيطاليا للطلاب التونسيين 2027/28",
   metaDescription:

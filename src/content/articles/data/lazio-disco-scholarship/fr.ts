@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "bourse-disco-lazio",
   title: "Bourse DiSCo Lazio pour les étudiants tunisiens à Rome",
+  shortTitle: "Bourse DiSCo Lazio",
   subtitle: "Conditions, demande sans SPID, ISEEUP et dates de paiement pour 2027/28",
   seoTitle: "Bourse DiSCo Lazio pour les étudiants tunisiens 2027/28",
   metaDescription:

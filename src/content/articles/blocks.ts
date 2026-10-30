@@ -21,7 +21,7 @@ export function headingIdsOf(blocks: Block[]): string[] {
   return headingsOf(blocks).map((h) => h.id);
 }
 
-function stripMarkup(text: string): string {
+export function stripMarkup(text: string): string {
   return text
     .replace(/\[([^\]]+)\]\((?:[^()\s]|\([^()\s]*\))+\)/g, "$1")
     .replace(/\*\*([^*]+)\*\*/g, "$1")

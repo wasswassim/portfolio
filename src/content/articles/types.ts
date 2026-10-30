@@ -94,6 +94,8 @@ export type ArticleTranslation = {
   /** Old slugs of this page: each one gets a static page that forwards to the current URL */
   formerSlugs?: string[];
   title: string;
+  /** Short link label (e.g. on the blog index persona cards). Falls back to the title. */
+  shortTitle?: string;
   /** Second line under the H1 when the full title is long (e.g. what the guide covers) */
   subtitle?: string;
   seoTitle: string;

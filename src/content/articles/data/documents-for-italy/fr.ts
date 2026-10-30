@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "legalisation-traduction-documents-italie",
   title: "Apostille du diplôme tunisien pour l'Italie",
+  shortTitle: "Apostille du diplôme tunisien",
   subtitle: "Légalisation, traduction, DOV ou CIMEA",
   seoTitle: "Apostille diplôme tunisien pour l'Italie : étapes 2026",
   metaDescription:

@@ -5,6 +5,7 @@ export const en: ArticleTranslation = {
   slug: "pay-pagopa-with-paypal-for-tunisians",
   formerSlugs: ["pay-pagopa-with-paypal-from-tunisia"],
   title: "How to Pay a pagoPA Notice from Abroad or from Tunisia",
+  shortTitle: "Pay a pagoPA notice",
   subtitle: "With PayPal or an international card, without SPID: the steps, the fees and what to do if the payment fails",
   seoTitle: "Pay pagoPA from Abroad with PayPal or a Card (2026)",
   metaDescription:

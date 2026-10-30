@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "payer-pagopa-avec-paypal-tunisie",
   title: "Payer un avis pagoPA depuis l’étranger",
+  shortTitle: "Payer un avis pagoPA",
   subtitle: "Avec PayPal ou une carte internationale tunisienne, sans SPID : les étapes, les frais et que faire si le paiement échoue",
   seoTitle: "Payer pagoPA depuis l’étranger avec PayPal ou une carte",
   metaDescription:

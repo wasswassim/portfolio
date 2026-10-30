@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "visa-etudiant-italie-tunisiens",
   title: "Visa étudiant Italie pour les Tunisiens",
+  shortTitle: "Visa étudiant Italie",
   subtitle: "Le rendez-vous Almaviva, les 15 documents, l'attestation de blocage et les frais, étape par étape",
   seoTitle: "Visa étudiant Italie pour les Tunisiens (2027/28)",
   metaDescription:

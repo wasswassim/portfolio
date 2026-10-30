@@ -100,6 +100,13 @@ export function resolveArticleLink(lang: Lang, href: string): string | null {
   return t ? articlePath(lang, t.slug) + (m?.[2] ?? "") : null;
 }
 
+/** Path and short label of an article in a language, for links built in code. Throws (fails the build) when it has no translation there. */
+export function articleLink(lang: Lang, id: string): { href: string; label: string } {
+  const t = articleById(id)?.translations[lang];
+  if (!t) throw new Error(`Article "${id}" has no ${lang} translation`);
+  return { href: articlePath(lang, t.slug), label: t.shortTitle ?? t.title };
+}
+
 export type SeriesPart = { article: Article; translation: ArticleTranslation; part: number };
 
 export type SeriesPosition = {

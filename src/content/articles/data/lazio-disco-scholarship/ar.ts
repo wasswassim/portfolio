@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "lazio-disco-scholarship",
   title: "منحة DiSCo Lazio للطلاب التونسيين في روما",
+  shortTitle: "منحة DiSCo Lazio",
   subtitle: "الشروط، التقديم دون SPID، وISEEUP ومواعيد الدفعات لسنة 2027/28",
   seoTitle: "منحة ديسكو لازيو DiSCo للطلاب التونسيين 2027/28",
   metaDescription:

@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "logement-etudiant-rome",
   title: "Logement étudiant à Rome pour les Tunisiens",
+  shortTitle: "Logement étudiant à Rome",
   subtitle: "Résidences DiSCo, services logement des universités, chambres en colocation et arnaques à éviter",
   seoTitle: "Logement étudiant à Rome 2026/27 : DiSCo, chambres, arnaques",
   metaDescription:

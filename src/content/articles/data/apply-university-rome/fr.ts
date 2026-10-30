@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "inscription-universite-rome",
   title: "Inscription à l'université en Italie pour les Tunisiens",
+  shortTitle: "Inscription à l'université en Italie",
   subtitle: "Candidater à Sapienza, Tor Vergata, Roma Tre, LUISS ou LUMSA, puis faire la préinscription Universitaly",
   seoTitle: "Inscription université en Italie pour les Tunisiens 2027/28",
   metaDescription:

@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "documents-isee-parificato-bourse-italie",
   title: "Quels sont les documents pour l'ISEE parificato (déclaration fiscale étrangère) pour compléter sa demande de bourse en Italie ?",
+  shortTitle: "Documents de l'ISEE parificato",
   subtitle: "Chaque document familial tunisien demandé par le CAF, ce qu'il prouve et où l'obtenir",
   seoTitle: "Documents pour l'ISEE parificato : étudiants tunisiens",
   metaDescription:

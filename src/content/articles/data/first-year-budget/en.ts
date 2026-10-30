@@ -9,6 +9,7 @@ const L = "en";
 export const en: ArticleTranslation = {
   slug: "cost-of-studying-in-italy-tunisian-students",
   title: "How much does studying in Rome cost for a Tunisian student? The 2026/27 first-year budget",
+  shortTitle: "Cost of studying in Rome 2026/27",
   subtitle: "Every official fee from Tunis to your first year at Sapienza, in euros and dinars, with rent and the money you can transfer",
   seoTitle: "Cost of Studying in Italy for Tunisians: 2026/27 Budget",
   metaDescription:

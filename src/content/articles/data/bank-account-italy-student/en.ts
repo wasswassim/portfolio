@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "open-bank-account-italy-student",
   title: "How to Open a Bank Account in Italy as a Student",
+  shortTitle: "Bank Account in Italy",
   subtitle: "Intesa Sanpaolo, Revolut, Wise and the Conto di Base in Rome",
   seoTitle: "Open a Bank Account in Italy as a Student (2026)",
   metaDescription:

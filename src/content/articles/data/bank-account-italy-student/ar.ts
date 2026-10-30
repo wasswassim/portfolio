@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "open-bank-account-italy-student",
   title: "كيف تفتح حسابًا بنكيًا في إيطاليا كطالب",
+  shortTitle: "حساب بنكي في إيطاليا",
   subtitle: "Intesa Sanpaolo وRevolut وWise وconto di base في روما",
   seoTitle: "فتح حساب بنكي في إيطاليا للطلبة: دليل 2026",
   metaDescription:

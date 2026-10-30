@@ -8,6 +8,7 @@ const L = "ar";
 export const ar: ArticleTranslation = {
   slug: "cost-of-studying-in-italy-tunisian-students",
   title: "كم تكلّف الدراسة في روما بالنسبة للطالب التونسي؟ ميزانية السنة الأولى 2026/27",
+  shortTitle: "تكلفة الدراسة في روما 2026/27",
   subtitle: "كل المعاليم الرسمية، من التأشيرة في تونس إلى سنتك الأولى في Sapienza، باليورو والدينار، مع الكراء والمبالغ التي يمكنك تحويلها",
   seoTitle: "تكاليف الدراسة في إيطاليا للتونسيين: ميزانية 2026/27",
   metaDescription:

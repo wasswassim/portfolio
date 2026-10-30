@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "international-technology-card-tunisia",
   title: "البطاقة التكنولوجية الدولية (CTI) في تونس",
+  shortTitle: "البطاقة التكنولوجية الدولية",
   subtitle: "السقف والوثائق وطريقة الطلب والاستعمالات المسموح بها والتجديد",
   seoTitle: "البطاقة التكنولوجية الدولية في تونس (CTI): دليل 2026",
   metaDescription:

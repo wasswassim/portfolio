@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "student-jobs-rome",
   title: "العمل أثناء الدراسة في روما للطلاب التونسيين",
+  shortTitle: "العمل الطلابي في روما",
   subtitle: "Subito أولًا، ثم Indeed ووكالات التشغيل والعمل في الجامعة، في حدود 20 ساعة",
   seoTitle: "العمل أثناء الدراسة في روما للتونسيين: Subito و20 ساعة",
   metaDescription:

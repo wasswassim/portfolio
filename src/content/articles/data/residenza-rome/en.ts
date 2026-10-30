@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "how-to-apply-for-residenza-in-rome",
   title: "How to Apply for Residenza in Rome",
+  shortTitle: "Residenza in Rome",
   subtitle: "Anagrafe Registration and Carta d'Identità for Foreign Students",
   seoTitle: "Residenza in Rome: Anagrafe Registration Step by Step",
   metaDescription:

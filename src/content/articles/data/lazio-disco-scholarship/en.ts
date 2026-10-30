@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "lazio-disco-scholarship",
   title: "Lazio DiSCo Scholarship for Tunisian Students in Rome",
+  shortTitle: "Lazio DiSCo Scholarship",
   subtitle: "Eligibility, applying without SPID, the ISEEUP and payment dates for 2027/28",
   seoTitle: "Lazio DiSCo Scholarship for Tunisian Students 2027/28",
   metaDescription:

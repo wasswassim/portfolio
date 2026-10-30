@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "carte-technologique-internationale",
   title: "Carte technologique internationale (CTI) en Tunisie",
+  shortTitle: "Carte technologique internationale",
   subtitle: "Plafond, documents, demande, usages autorisés et renouvellement",
   seoTitle: "Carte technologique Tunisie : plafond, Poste, banques 2026",
   metaDescription:

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import type { Lang } from "@/lib/i18n/config";
 import { track } from "@/lib/analytics";
 import { bestFaq, prepare, queryTerms, search, type SearchDoc } from "@/lib/blog-search";
@@ -46,6 +46,8 @@ export type BlogSearchLabels = {
   /** Link from the quick answer to the guide */
   fullGuide: string;
   read: string;
+  /** Heading above the cards */
+  allGuides: string;
 };
 
 const ANSWER_MAX = 320;
@@ -56,9 +58,10 @@ const looksPersonal = (s: string) => /@|\d{6,}|[a-z]{6}\d{2}[a-z]\d{2}[a-z]\d{3}
 /**
  * The ask box (intro, search field, suggested questions) and one card per post. Typing a question
  * or a keyword ranks the guides, best first, and shows the matching FAQ answer when there is one.
- * Every card stays in the static HTML for crawlers.
+ * Every card stays in the static HTML for crawlers. `between` (server-rendered content) sits between
+ * the ask box and the cards and is hidden while a search runs, so results stay right under the box.
  */
-export default function BlogCardList({ lang, items, labels }: { lang: Lang; items: BlogCardItem[]; labels: BlogSearchLabels }) {
+export default function BlogCardList({ lang, items, labels, between }: { lang: Lang; items: BlogCardItem[]; labels: BlogSearchLabels; between?: ReactNode }) {
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const docs = useMemo(() => items.map((it) => it.search), [items]);
@@ -187,25 +190,30 @@ export default function BlogCardList({ lang, items, labels }: { lang: Lang; item
       )}
       {none && <p className="blog-none"><BidiText lang={lang}>{labels.noneHint}</BidiText></p>}
 
-      <ul className="blog-list blog-cards">
-        {shown.map((it, i) => (
-          <li key={it.id} className={active && !none && i === 0 ? "blog-card blog-card-best" : "blog-card"}>
-            <a href={it.href} onClick={clickFrom(it.id, i + 1, "card")}>
-              <span className="blog-meta">
-                {active && !none && i === 0 && <span className="blog-best">{labels.best}</span>}
-                <span className="blog-cat">{it.category}</span>
-                <time dateTime={it.date}>{it.dateText}</time>
-                {it.part && <span className="blog-part">{it.part}</span>}
-              </span>
-              <h2><BidiText lang={lang}>{it.title}</BidiText></h2>
-              <p><BidiText lang={lang}>{it.description}</BidiText></p>
-              <span className="blog-meta">
-                {labels.read} <span className="blog-arrow" aria-hidden="true">→</span>
-              </span>
-            </a>
-          </li>
-        ))}
-      </ul>
+      {between && <div className="blog-between" hidden={active}>{between}</div>}
+
+      <section className="blog-all" aria-labelledby="blog-all-title">
+        <h2 id="blog-all-title" className="blog-section-title"><BidiText lang={lang}>{labels.allGuides}</BidiText></h2>
+        <ul className="blog-list blog-cards">
+          {shown.map((it, i) => (
+            <li key={it.id} className={active && !none && i === 0 ? "blog-card blog-card-best" : "blog-card"}>
+              <a href={it.href} onClick={clickFrom(it.id, i + 1, "card")}>
+                <span className="blog-meta">
+                  {active && !none && i === 0 && <span className="blog-best">{labels.best}</span>}
+                  <span className="blog-cat">{it.category}</span>
+                  <time dateTime={it.date}>{it.dateText}</time>
+                  {it.part && <span className="blog-part">{it.part}</span>}
+                </span>
+                <h3><BidiText lang={lang}>{it.title}</BidiText></h3>
+                <p><BidiText lang={lang}>{it.description}</BidiText></p>
+                <span className="blog-meta">
+                  {labels.read} <span className="blog-arrow" aria-hidden="true">→</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
     </>
   );
 }

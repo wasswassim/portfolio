@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const en: ArticleTranslation = {
   slug: "work-contract-in-italy",
   title: "Work Contract in Italy for Tunisians",
+  shortTitle: "Work Contract in Italy",
   subtitle: "The Nulla Osta, the Visa D and your first steps after arriving in Italy",
   seoTitle: "Work Contract in Italy for Tunisians: Nulla Osta, Visa D",
   metaDescription:

@@ -4,6 +4,7 @@ import type { ArticleTranslation } from "../../types";
 export const fr: ArticleTranslation = {
   slug: "payer-frais-universite-italie-carte-internationale",
   title: "Payer ses frais d’inscription en Italie : guide pour les Tunisiens",
+  shortTitle: "Payer ses frais d’inscription en Italie",
   subtitle: "Quatre moyens de paiement comparés : virement, carte technologique, PayPal avec une carte RedotPay et compte italien",
   seoTitle: "Payer ses frais d’inscription en Italie pour les Tunisiens",
   metaDescription:

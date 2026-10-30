@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "work-contract-in-italy",
   title: "عقد عمل في إيطاليا للتونسيين",
+  shortTitle: "عقد عمل في إيطاليا",
   subtitle: "Nulla Osta وتأشيرة D وأولى خطواتك بعد الوصول إلى إيطاليا",
   seoTitle: "عقد عمل في إيطاليا للتونسيين: Nulla Osta وتأشيرة D",
   metaDescription:

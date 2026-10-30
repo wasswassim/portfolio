@@ -40,6 +40,33 @@ export const blogLd = (lang: string, path: string, name: string, description: st
   publisher: { "@id": AUTHOR_ID },
 });
 
+/** A listing page (the blog index): its guides as an ItemList, in display order. */
+export const collectionPageLd = (a: {
+  lang: string;
+  path: string;
+  name: string;
+  description: string;
+  items: { name: string; path: string }[];
+}): JsonLdValue => ({
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: a.name,
+  description: a.description,
+  inLanguage: a.lang,
+  url: absoluteUrl(a.path),
+  author: { "@id": AUTHOR_ID },
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: a.items.length,
+    itemListElement: a.items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: absoluteUrl(item.path),
+      name: item.name,
+    })),
+  },
+});
+
 export const breadcrumbLd = (items: { name: string; path: string }[]): JsonLdValue => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",

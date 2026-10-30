@@ -5,6 +5,7 @@ export const ar: ArticleTranslation = {
   // Latin on purpose: non-ASCII slugs 500 in `next dev` (percent-encoded request vs raw param)
   slug: "student-housing-rome",
   title: "السكن الطلابي في روما للطلبة التونسيين",
+  shortTitle: "السكن الطلابي في روما",
   subtitle: "إقامات DiSCo، وخدمات السكن في الجامعات، والغرف في الشقق المشتركة، وكيف تتجنب الاحتيال في الكراء",
   seoTitle: "السكن الطلابي في روما 2026/27: إقامات DiSCo والغرف والاحتيال",
   metaDescription:
