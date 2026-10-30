@@ -107,6 +107,21 @@ export function articleLink(lang: Lang, id: string): { href: string; label: stri
   return { href: articlePath(lang, t.slug), label: t.shortTitle ?? t.title };
 }
 
+export type ArticlePhoto = { src: string; width: number; height: number; alt: string; credit?: { text: string; url: string } };
+
+/** A picture from an article (figure or gallery tile), with its alt text and credit in that language. Throws when it is not there. */
+export function articlePhoto(lang: Lang, id: string, src: string): ArticlePhoto {
+  const t = articleById(id)?.translations[lang];
+  for (const b of t ? [...t.body, ...(t.guide ?? [])] : []) {
+    if (b.type === "figure" && b.src === src) return { src, width: b.width, height: b.height, alt: b.alt, credit: b.credit };
+    if (b.type === "gallery") {
+      const item = b.items.find((i) => i.src === src);
+      if (item) return { src, width: item.width, height: item.height, alt: item.alt, credit: item.credit };
+    }
+  }
+  throw new Error(`Article "${id}" (${lang}) has no picture "${src}"`);
+}
+
 export type SeriesPart = { article: Article; translation: ArticleTranslation; part: number };
 
 export type SeriesPosition = {
