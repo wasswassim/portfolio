@@ -1,0 +1,57 @@
+name: SEO opportunity report
+
+# Weekly Search Console pull -> ranked report (scripts/seo/run.ts), kept as a build artifact.
+# Read-only: no build, no commits, no deploy. Needs the repository secret GSC_SERVICE_ACCOUNT_JSON
+# (the service-account key JSON) and the repository variable GSC_SITE_URL
+# (e.g. sc-domain:wassimgatri.com). Settings → Secrets and variables → Actions.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: seo-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # The Google client libraries need Node 22+ (deploy.yml stays on its own version)
+      - name: Setup Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Test the report logic
+        run: npm run test:seo
+
+      - name: Build the report
+        run: npm run seo:report
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          GSC_SITE_URL: ${{ vars.GSC_SITE_URL }}
+
+      - name: Upload the report
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: seo-opportunities-${{ github.run_number }}
+          path: reports/seo/
+          retention-days: 30
+          if-no-files-found: warn

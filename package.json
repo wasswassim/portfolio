@@ -10,6 +10,8 @@
     "check:articles": "node scripts/check-articles.mjs",
     "new-article": "node scripts/new-article.mjs",
     "check:secrets": "node scripts/check-secrets.mjs",
+    "seo:report": "tsx scripts/seo/run.ts",
+    "test:seo": "tsx --test scripts/seo/__tests__/*.test.ts",
     "prebuild": "node scripts/check-secrets.mjs && node scripts/fetch-reviews.mjs && node scripts/check-articles.mjs",
     "clean": "rimraf .next",
     "dev:clean": "rimraf .next && next dev",
@@ -30,14 +32,17 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@googleapis/searchconsole": "^11.0.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.15",
+    "google-auth-library": "^11.3.2",
     "rimraf": "^6.1.3",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
