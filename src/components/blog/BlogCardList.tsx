@@ -96,7 +96,7 @@ export default function BlogCardList({ lang, items, labels, between }: { lang: L
   useEffect(() => {
     const id = window.setTimeout(() => {
       const q = query.trim();
-      if (q.length >= 3 && !looksPersonal(q)) track("search", { search_term: q.slice(0, 100), results: ranked.length, language: lang });
+      if (q.length >= 3 && !looksPersonal(q)) track("search", { search_term: q.slice(0, 100), results: ranked.length, page_language: lang });
     }, 1500);
     return () => window.clearTimeout(id);
   }, [query, ranked.length, lang]);
