@@ -33,6 +33,16 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# Google service-account keys: keep them outside the repo (e.g. ~/.secrets/);
+# scripts/check-secrets.mjs fails the build if one is ever committable
+/secrets/
+*service-account*.json
+wassimgatri-seo-*.json
+*.key.json
+
+# SEO opportunity reports (scripts/seo), uploaded as CI artifacts instead
+/reports/seo/
+
 # vercel
 .vercel
 

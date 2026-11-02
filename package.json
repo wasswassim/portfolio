@@ -9,7 +9,8 @@
     "lint": "eslint",
     "check:articles": "node scripts/check-articles.mjs",
     "new-article": "node scripts/new-article.mjs",
-    "prebuild": "node scripts/fetch-reviews.mjs && node scripts/check-articles.mjs",
+    "check:secrets": "node scripts/check-secrets.mjs",
+    "prebuild": "node scripts/check-secrets.mjs && node scripts/fetch-reviews.mjs && node scripts/check-articles.mjs",
     "clean": "rimraf .next",
     "dev:clean": "rimraf .next && next dev",
     "stack:logos": "node scripts/fetch-stack-logos.mjs"
