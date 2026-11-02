@@ -298,7 +298,8 @@ export function classify(
   let matchedArticle: string | null = matched?.id ?? null;
   if (landing?.former) {
     category = "former-slug";
-    matchedArticle = landing.id;
+    // The query may belong to another post: report that one, so the fix links or redirects to it
+    matchedArticle = matched?.id ?? landing.id;
   } else if (landing) {
     const landingScore = rankPosts(g.query, entries).find((m) => m.id === landing.id)?.score ?? 0;
     if (competing.size >= 2) category = "cannibalization-or-link";

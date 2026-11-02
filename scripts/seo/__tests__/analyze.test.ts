@@ -157,6 +157,10 @@ test("classify: every category", () => {
   const former = one([row("work in italy tunisians", "/en/blog/work-in-italy-from-tunisia/", 100, 15)]);
   assert.equal(former.category, "former-slug");
   assert.equal(former.articleId, "work");
+  // A renamed URL ranking for another post's query reports that post
+  const elsewhere = one([row("work contract in italy", "/en/blog/work-in-italy-from-tunisia/", 100, 15)]);
+  assert.equal(elsewhere.category, "former-slug");
+  assert.equal(elsewhere.matchedArticle, "contract");
 });
 
 test("score: more missing clicks and closer to page 1 rank higher; gaps get a bonus", () => {
