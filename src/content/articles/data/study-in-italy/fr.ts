@@ -191,6 +191,10 @@ export const fr: ArticleTranslation = {
       title: "Questions fréquentes",
       items: [
         {
+          q: "Peut-on étudier en Italie juste après le bac tunisien ?",
+          a: "Oui. Une Licence (Laurea) en Italie demande un diplôme de fin d'études secondaires après au moins 12 ans de scolarité, ce que remplit le bac tunisien. Il faut aussi un niveau B2 dans la langue du cours, et certains cours ajoutent un test d'aptitude, alors lisez l'appel de votre cours exact. Voyez [comment trouver un cours et vérifier ses conditions d'admission](article:apply-university-rome#find-a-course) et [comment légaliser votre bac pour l'Italie](article:documents-for-italy#legalise-documents).",
+        },
+        {
           q: "Un étudiant tunisien peut-il étudier gratuitement en Italie ?",
           a: "Non, pas complètement. Les frais d'inscription publics à Rome peuvent être bas : Sapienza demande un forfait de 300 EUR par an pour la tranche de la Tunisie, plus 140 EUR de taxe régionale et un timbre de 16 EUR. La bourse DiSCo Lazio peut couvrir le coût de la vie pour les étudiants qui y ont droit, mais chaque étudiant tunisien paie quand même les frais de candidature, de documents et de visa, et doit justifier la somme bloquée pour le visa.",
         },

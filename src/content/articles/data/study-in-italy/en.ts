@@ -191,6 +191,10 @@ export const en: ArticleTranslation = {
       title: "Frequently asked questions",
       items: [
         {
+          q: "Can I study in Italy right after the Tunisian bac?",
+          a: "Yes. A Bachelor's (Laurea) in Italy needs a secondary diploma after at least 12 years of school, and the Tunisian bac meets that. You also need B2 in the language of the course, and some courses add an aptitude test, so read the call of your exact course. See [how to find a course and check its entry requirements](article:apply-university-rome#find-a-course) and [how to legalise your bac for Italy](article:documents-for-italy#legalise-documents).",
+        },
+        {
           q: "Can a Tunisian student study in Italy for free?",
           a: "No, not completely. Public tuition in Rome can be low: Sapienza charges a flat EUR 300 a year for Tunisia's band, plus the EUR 140 regional tax and a EUR 16 stamp. The DiSCo Lazio scholarship can cover living costs for students who qualify, but every Tunisian student still pays application, document and visa fees and must show the blocked amount for the visa.",
         },

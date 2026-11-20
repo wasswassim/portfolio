@@ -9,7 +9,7 @@ export const studyInItaly: Article = {
   id: "study-in-italy",
   category: "studies",
   publishedAt: "2026-10-09",
-  updatedAt: "2026-10-12",
+  updatedAt: "2026-11-20",
   lastVerified: "2026-10-09",
   image: { src: "/blog/og-colosseum.jpg", width: 1200, height: 630 },
   translations: { en, fr, ar },
