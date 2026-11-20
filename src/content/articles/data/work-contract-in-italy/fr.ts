@@ -6,7 +6,7 @@ export const fr: ArticleTranslation = {
   title: "Contrat de travail en Italie pour les Tunisiens",
   shortTitle: "Contrat de travail en Italie",
   subtitle: "Le Nulla Osta, le visa D et vos premières démarches après l'arrivée en Italie",
-  seoTitle: "Contrat de travail en Italie : Nulla Osta et visa D",
+  seoTitle: "Contrat de travail en Italie pour les Tunisiens : visa D",
   metaDescription:
     "Contrat de travail en Italie pour les Tunisiens : l'employeur dépose le Nulla Osta, vous demandez le visa D, puis vous signez le Contratto di soggiorno.",
   imageAlt: "Le Colisée à Rome, avec un immense drapeau italien accroché sur le côté et la foule devant",
