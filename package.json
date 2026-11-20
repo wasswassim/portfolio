@@ -11,6 +11,7 @@
     "new-article": "node scripts/new-article.mjs",
     "check:secrets": "node scripts/check-secrets.mjs",
     "seo:report": "tsx scripts/seo/run.ts",
+    "seo:serp": "tsx scripts/seo/serp.ts",
     "test:seo": "tsx --test scripts/seo/__tests__/*.test.ts",
     "prebuild": "node scripts/check-secrets.mjs && node scripts/fetch-reviews.mjs && node scripts/check-articles.mjs",
     "clean": "rimraf .next",
