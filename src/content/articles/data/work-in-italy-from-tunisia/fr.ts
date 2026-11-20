@@ -29,6 +29,10 @@ export const fr: ArticleTranslation = {
       type: "p",
       text: "Mais un point essentiel doit être clair : il ne s'agit pas d'un visa de travail ouvert à tous les Tunisiens, et cela ne veut pas dire que le gouvernement italien accorde automatiquement un contrat de travail à chaque candidat. Il faut remplir les conditions d'un programme agréé, puis la procédure d'embauche et la demande de Nulla Osta suivent la voie légale.",
     },
+    {
+      type: "p",
+      text: "Vous cherchez des offres d'emploi en Italie pour les Tunisiens ? La partie 7 montre [où trouver les offres d'emploi officielles pour l'Italie](article:work-in-italy-from-tunisia#find-job-offers) et comment les distinguer des fausses.",
+    },
 
     {
       type: "video",
@@ -287,7 +291,7 @@ export const fr: ArticleTranslation = {
       text: "Une fois la formation terminée, l'étape de l'embauche commence avec un employeur italien. Lisez [comment les Tunisiens obtiennent un contrat de travail en Italie après la formation](article:work-contract-in-italy#work-contract) pour la suite.",
     },
 
-    { type: "h2", id: "find-job-offers", text: "7. Où sont publiées les offres d'emploi officielles pour l'Italie ?" },
+    { type: "h2", id: "find-job-offers", text: "7. Où trouver les offres d'emploi en Italie pour les Tunisiens ?" },
     {
       type: "p",
       text: "Les offres d'emploi officielles pour l'Italie sont publiées par l'ANETI et ANETI International, dans l'annonce officielle de chaque programme, et sur les sites du ministère italien du Travail et du Portale Integrazione Migranti, pas dans les groupes des réseaux sociaux.",
